@@ -5,7 +5,7 @@ permalink: "/blog/hello-world"
 image-url: "images/cover.jpg"
 image-title: "Cover"
 author-name: "Your Name"
-author-image: "/images/authors/mladen.jpg"
+author-image: "/images/authors/mladen.png"
 posted-on: "2025-06-01"
 read-time: "5 min"
 ---

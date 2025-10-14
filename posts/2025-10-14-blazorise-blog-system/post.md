@@ -5,7 +5,7 @@ permalink: "/blog/blazorise-blog-system"
 image-url: "images/cover.jpg"
 image-title: "Blazorise Blog System Architecture"
 author-name: "John Developer"
-author-image: "/images/authors/mladen.jpg"
+author-image: "/images/authors/mladen.png"
 posted-on: "2025-10-14"
 read-time: "12 min"
 ---
