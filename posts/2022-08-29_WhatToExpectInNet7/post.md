@@ -6,7 +6,7 @@ canonical: /blog/what-to-expect-in-net7
 image-url: img/NET7.png
 image-title: What To Expect In .NET 7
 author-name: James Amattey
-author-image: james
+author-image: "/assets/img/authors/james.png"
 posted-on: August 23rd, 2022
 read-time: 5 min
 ---

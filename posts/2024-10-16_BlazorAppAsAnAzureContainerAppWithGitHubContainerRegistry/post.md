@@ -6,7 +6,7 @@ canonical: /blog/publishing-blazor-app-azure-container-app-github-container-regi
 image-url: img/hero.webp
 image-text: Publish Blazor App to Azure Container with GitHub Registry
 author-name: Jan Tesař
-author-image: tesy
+author-image: "/assets/img/authors/tesy.png"
 posted-on: October 16th, 2024
 read-time: 10 min
 ---

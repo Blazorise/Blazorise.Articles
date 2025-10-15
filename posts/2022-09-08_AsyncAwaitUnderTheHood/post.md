@@ -6,7 +6,7 @@ canonical: /blog/async-await-what-happens-under-the-hood
 image-url: img/AsyncAwait_What_Happens_Under_The_Hood.png
 image-text: Practical CSS Tips For Developers
 author-name: Andre Santarosa
-author-image: andresantarosa
+author-image: "/assets/img/authors/andresantarosa.png"
 posted-on: September 8th, 2022
 read-time: 13 min
 ---

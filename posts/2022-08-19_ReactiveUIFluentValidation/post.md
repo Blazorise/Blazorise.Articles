@@ -6,7 +6,7 @@ canonical: /blog/reactive-ui-blazorise-fluent-validation
 image-url: img/ReactiveUI_Blazorise_FluentValidation.png
 image-title: ReactiveUI, Blazorise & FluentValidation?
 author-name: Rich Bryant
-author-image: richbryant
+author-image: "/assets/img/authors/richbryant.png"
 posted-on: August 19th, 2022
 read-time: 5 min
 ---

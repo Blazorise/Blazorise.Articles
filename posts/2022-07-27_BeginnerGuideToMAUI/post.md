@@ -6,7 +6,7 @@ canonical: /blog/a-beginners-guide-to-maui
 image-url: img/A_Beginners_Guide_To_NET_MAUI.png
 image-title: A Beginner's Guide To .NET MAUI
 author-name: James Amattey
-author-image: james
+author-image: "/assets/img/authors/james.png"
 posted-on: July 27, 2022
 read-time: 4 min
 ---

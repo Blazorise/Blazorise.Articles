@@ -6,7 +6,7 @@ canonical: /blog/exploring-webassembly-the-underlying-technology-behind-blazor-w
 image-url: img/the_underlying_technology_behind_blazor_wasm.png
 image-title: Exploring WebAssembly, The Underlying Technology Behind Blazor WASM
 author-name: James Amattey
-author-image: james
+author-image: "/assets/img/authors/james.png"
 posted-on: July 13th, 2022
 read-time: 4 min
 ---

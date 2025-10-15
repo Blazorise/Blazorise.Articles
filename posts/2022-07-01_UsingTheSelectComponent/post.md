@@ -6,7 +6,7 @@ canonical: /blog/how-to-handle-select-with-primitive-and-complex-types
 image-url: img/Blazorise-Select-Component.png
 image-title: How to handle binding of primitive and complex types with Blazorise Select component
 author-name: David Moreira
-author-image: david
+author-image: "/assets/img/authors/david.png"
 posted-on: July 1st, 2022
 read-time: 4 min
 ---

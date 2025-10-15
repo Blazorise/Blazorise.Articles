@@ -6,7 +6,7 @@ canonical: /blog/create-a-tabbed-login-form-with-blazorise-components
 image-url: img/Create_A_Tabbed_Login_and_Register_Page_In_5_Minutes_In_Blazor_With_Blazorise_Components.png
 image-title: Create A  Tabbed Login and Register Page With Blazorise Components In 5 Minutes
 author-name: James Amattey
-author-image: james
+author-image: "/assets/img/authors/james.png"
 posted-on: August 12th, 2022
 read-time: 5 min
 ---

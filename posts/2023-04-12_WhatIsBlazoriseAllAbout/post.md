@@ -6,7 +6,7 @@ canonical: /blog/what-is-blazorise-all-about
 image-url: img/blog/2023-04-12/what-is-blazorise-all-about.png
 image-text: What is Blazorise all About
 author-name: Tihana Jukić
-author-image: tihana
+author-image: "/assets/img/authors/tihana.png"
 posted-on: April 14th, 2023
 read-time: 8 min
 ---

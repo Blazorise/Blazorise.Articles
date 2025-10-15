@@ -6,7 +6,7 @@ canonical: /blog/how-to-create-social-media-share-buttons
 image-url: img/how-to-create-social-media-share-buttons.png
 image-title: How to create social media share buttons with Blazorise
 author-name: Giorgi
-author-image: giorgi
+author-image: "/assets/img/authors/giorgi.png"
 posted-on: Jun 12th, 2024
 read-time: 5 min
 ---

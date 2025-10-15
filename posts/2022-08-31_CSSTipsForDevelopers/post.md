@@ -6,7 +6,7 @@ canonical: /blog/practical-css-tips-for-developers
 image-url: img/css.png
 image-text: Practical CSS Tips For Developers
 author-name: James Amattey
-author-image: james
+author-image: "/assets/img/authors/james.png"
 posted-on: August1 31st, 2022
 read-time: 3 min
 ---

@@ -6,7 +6,7 @@ canonical: /blog/introducing-the-blazorise-mvc-award-program
 image-url: img/introducing-the-blazorise-mvc-award-program.png
 image-text: Introducing The Blazorise MVC Award Program
 author-name: Tihana Jukić
-author-image: tihana
+author-image: "/assets/img/authors/tihana.png"
 posted-on: December 5th, 2022
 read-time: 4 min
 ---

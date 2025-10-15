@@ -6,7 +6,7 @@ canonical: /blog/2022-blazorise-goals
 image-url: img/blog/2023-03-03/2022-blazorise-goals.png
 image-text: 2022 Blazorise Goals
 author-name: Tihana Jukić
-author-image: tihana
+author-image: "/assets/img/authors/tihana.png"
 posted-on: March 3rd, 2023
 read-time: 9 min
 ---
