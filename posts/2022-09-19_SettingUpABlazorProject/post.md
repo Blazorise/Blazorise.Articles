@@ -8,7 +8,7 @@ image-text: Create A New Blazor Project
 author-name: James Amattey
 author-image: "/assets/img/authors/james.png"
 category: Blazor
-posted-on: September 19th, 2022
+posted-on: 2022-09-19
 read-time: 3 min
 ---
 

@@ -8,7 +8,7 @@ image-text: What is Blazorise all About
 author-name: Tihana Jukić
 author-image: "/assets/img/authors/tihana.png"
 category: Community
-posted-on: April 14th, 2023
+posted-on: 2023-04-14
 read-time: 8 min
 ---
 

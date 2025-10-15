@@ -8,7 +8,7 @@ image-title: Exploring WebAssembly, The Underlying Technology Behind Blazor WASM
 author-name: James Amattey
 author-image: "/assets/img/authors/james.png"
 category: Blazor
-posted-on: July 13th, 2022
+posted-on: 2022-07-13
 read-time: 4 min
 ---
 

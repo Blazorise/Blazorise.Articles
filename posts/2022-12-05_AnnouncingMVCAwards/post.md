@@ -8,7 +8,7 @@ image-text: Introducing The Blazorise MVC Award Program
 author-name: Tihana Jukić
 author-image: "/assets/img/authors/tihana.png"
 category: Community
-posted-on: December 5th, 2022
+posted-on: 2022-12-05
 read-time: 4 min
 ---
 

@@ -8,7 +8,7 @@ image-title: Blazorise Form Validation With Data Annotations: A Beginner's Guide
 author-name: Mladen Macanović
 author-image: "/assets/img/authors/mladen.png"
 category: How To Guides
-posted-on: June 9th, 2022
+posted-on: 2022-06-09
 read-time: 5 min
 ---
 

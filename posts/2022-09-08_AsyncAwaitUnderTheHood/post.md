@@ -8,7 +8,7 @@ image-text: Practical CSS Tips For Developers
 author-name: Andre Santarosa
 author-image: "/assets/img/authors/andresantarosa.png"
 category: Community
-posted-on: September 8th, 2022
+posted-on: 2022-09-08
 read-time: 13 min
 ---
 

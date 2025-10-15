@@ -8,7 +8,7 @@ image-text: Publish Blazor App to Azure Container with GitHub Registry
 author-name: Jan Tesař
 author-image: "/assets/img/authors/tesy.png"
 category: Community
-posted-on: October 16th, 2024
+posted-on: 2024-10-16
 read-time: 10 min
 ---
 

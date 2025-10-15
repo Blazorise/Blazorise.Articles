@@ -8,7 +8,7 @@ image-title: A Beginner's Guide To .NET MAUI
 author-name: James Amattey
 author-image: "/assets/img/authors/james.png"
 category: Blazor
-posted-on: July 27, 2022
+posted-on: 2022-07-27
 read-time: 4 min
 ---
 

@@ -8,7 +8,7 @@ image-title: What is Blazor WASM
 author-name: James Amattey
 author-image: "/assets/img/authors/james.png"
 category: Blazor
-posted-on: July 20th, 2022
+posted-on: 2022-07-20
 read-time: 5 min
 ---
 

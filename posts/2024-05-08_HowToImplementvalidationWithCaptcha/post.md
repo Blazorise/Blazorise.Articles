@@ -8,7 +8,7 @@ image-title: How to implement validation with captcha
 author-name: David Moreira
 author-image: "/assets/img/authors/david.png"
 category: How To Guides
-posted-on: May 8th, 2024
+posted-on: 2024-05-08
 read-time: 5 min
 ---
 

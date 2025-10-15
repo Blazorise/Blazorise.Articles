@@ -8,7 +8,7 @@ image-title: Create A  Tabbed Login and Register Page With Blazorise Components 
 author-name: James Amattey
 author-image: "/assets/img/authors/james.png"
 category: How To Guides
-posted-on: August 12th, 2022
+posted-on: 2022-08-12
 read-time: 5 min
 ---
 

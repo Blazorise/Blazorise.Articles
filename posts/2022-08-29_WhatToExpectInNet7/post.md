@@ -8,7 +8,7 @@ image-title: What To Expect In .NET 7
 author-name: James Amattey
 author-image: "/assets/img/authors/james.png"
 category: Blazor
-posted-on: August 23rd, 2022
+posted-on: 2022-08-23
 read-time: 5 min
 ---
 

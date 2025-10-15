@@ -8,7 +8,7 @@ image-text: The Importance of JavaScript in Blazorise
 author-name: Toni Sokolov
 author-image: "/assets/img/authors/tonis.png"
 category: Community
-posted-on: July 4th, 2023
+posted-on: 2023-07-04
 read-time: 5 min
 ---
 

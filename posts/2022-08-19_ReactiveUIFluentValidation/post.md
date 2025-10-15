@@ -8,7 +8,7 @@ image-title: ReactiveUI, Blazorise & FluentValidation?
 author-name: Rich Bryant
 author-image: "/assets/img/authors/richbryant.png"
 category: Community
-posted-on: August 19th, 2022
+posted-on: 2022-08-19
 read-time: 5 min
 ---
 
