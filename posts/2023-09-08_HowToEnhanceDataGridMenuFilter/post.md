@@ -25,7 +25,7 @@ Contextual filtering that makes sense as per your column types is currently not 
 
 Let's talk about how we can make this work by using the `DataGrid` tools that we have at our disposal.
 
-![Custom Filter Menu Example](img/blog/2023-09-08/custom-filter-menu-example.png)
+![Custom Filter Menu Example](img/custom-filter-menu-example.png)
 
 ### Custom Filter Method
 

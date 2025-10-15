@@ -68,7 +68,7 @@ We will use the Azure Portal to create the container app. Alternatively, you cou
 1. Go to the Azure Portal and search for **Container Apps**.
 2. Click **Create** and fill in the form, similar to the screenshot below:
 
-    ![Container App Creation](img/blog/2024-10-16/img-18.png)
+    ![Container App Creation](img/img-18.png)
 
 For this tutorial, I’ve created a dedicated resource group called `testingRG`.
 
@@ -76,7 +76,7 @@ During the process, you’ll need to create a **Container Apps Environment**. Ju
 
 3. In the **Resources** section, adjust the resource allocation to **0.25 CPU** and **0.5 GB** of memory. This keeps costs down. You can scale these settings later if needed.
 
-    ![Resource Allocation](img/blog/2024-10-16/img-17.png)
+    ![Resource Allocation](img/img-17.png)
 
 4. Check the `Use quickstart image` option. This will deploy a basic container image, letting us focus on setting up the pipeline to deploy our Blazor app later.
 
@@ -224,7 +224,7 @@ Take this JSON output and go to your GitHub repository:
 
 Use the secret name (e.g., `AZURECONTAINERAPPTEST3_SPN`) in the Azure login step.
 
-![Adding Secret](img/blog/2024-10-16/img.png)
+![Adding Secret](img/img.png)
 
 ### Update container app
 
@@ -293,11 +293,11 @@ To fix this:
 2. Navigate to **Settings** -> **Ingress**.
 3. Change the **TargetPort** to `8080` to match the port exposed in your Dockerfile.
 
-![Port Mismatch Fix](img/blog/2024-10-16/img-1.png)
+![Port Mismatch Fix](img/img-1.png)
 
 Once updated, your app should now be running. You can verify this by going to **Overview** -> **Application URL** to check the live version of your app.
 
-![App Running](img/blog/2024-10-16/img-3.png)
+![App Running](img/img-3.png)
 
 
 ## Scaling to 0 Replicas
@@ -314,7 +314,7 @@ To configure scaling to 0 replicas:
 2. Navigate to **Scale** in the side menu.
 3. Set the **Minimum replicas** to `0` and **Maximum replicas** to your desired value (for example, `1`).
 
-![Scale Settings](img/blog/2024-10-16/img-14.png)
+![Scale Settings](img/img-14.png)
 
 By doing this, the app will scale down to 0 replicas during periods of inactivity, and Azure will automatically bring it back online when traffic hits.
 

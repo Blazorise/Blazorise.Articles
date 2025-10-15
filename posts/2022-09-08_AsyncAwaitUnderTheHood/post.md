@@ -47,7 +47,7 @@ We start the program. When this happens until we type something the program is i
 
 Supposing we are using a synchronous OS call we would be ending up with something like the diagram below.
 
-![Sync code](img/blog/2022-09-08/sync.png)
+![Sync code](img/sync.png)
 
 > The CPU will not wait for your processing to finish, it will continue the round-robin process, but our thread will not process anything else until we get the return of the content.
 
@@ -55,7 +55,7 @@ Notice that while the OS is reading the data from the disk our thread is still r
 
 If we use asynchronous computing we would be ending up with the diagram below
 
-![Async code](img/blog/2022-09-08/async.png)
+![Async code](img/async.png)
 
 > Now our thread is free to process other things while we don’t get the response from the Operating System
 
@@ -108,7 +108,7 @@ Now that we got Tasks also, it is time to understand the workflow of an asynchro
 
 Let’s get the content of the Task you performed
 
-![Read file](img/blog/2022-09-08/read_file.png)
+![Read file](img/read_file.png)
 
 > Response of an async method is always a Task
 

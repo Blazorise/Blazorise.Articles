@@ -347,7 +347,7 @@ Refer to the following code example.
 
 ## Breakdown
 
-![Explaining Validation Parts](img/blog/2022-06-09/Explaining-Validation-Parts.png)
+![Explaining Validation Parts](img/Explaining-Validation-Parts.png)
 
 1. We use `<Validations>` component to group all validations under a single submit request.
 2. **Model** parameter is used to give **Validations** enough information about the object and attributes that we are validating.
@@ -360,13 +360,13 @@ Launch the application if you have modified it in accordance with all of the cod
 
 In the left-hand navigation menu, click the **Home** button. The output will then look like the image below.
 
-![Form Validation Opened](img/blog/2022-06-09/Form-Validation-Opened.png)
+![Form Validation Opened](img/Form-Validation-Opened.png)
 
 Try to partially fill the form and click on the <Strong>Validate and Submit</Strong> button. You should see some of the errors.
 
 If you fill the entire form form and submit you should see the following message.
 
-![Form Validation Opened](img/blog/2022-06-09/Form-Validation-Success.png)
+![Form Validation Opened](img/Form-Validation-Success.png)
 
 Thus, we have created the form and included the Blazorise form validation in our Blazor WebAssembly application.
 

@@ -3,7 +3,7 @@ title: What is Blazorise all About
 description: Blazorise, an open-source system, has evolved into a comprehensive Blazor UI component library offering state-of-the-art solutions for startups and enterprises.
 permalink: /blog/what-is-blazorise-all-about
 canonical: /blog/what-is-blazorise-all-about
-image-url: img/blog/2023-04-12/what-is-blazorise-all-about.png
+image-url: img/what-is-blazorise-all-about.png
 image-text: What is Blazorise all About
 author-name: Tihana Jukić
 author-image: "/assets/img/authors/tihana.png"
@@ -31,7 +31,7 @@ With the multitude of CSS frameworks available, developers are often faced with 
 
 This approach can be beneficial for several reasons. First, developers can choose the framework best suits their skills and experience. Some developers may be more familiar with specific frameworks than others. Allowing them to choose from CSS frameworks can help them feel more comfortable and confident in their work. Allowing multiple CSS frameworks can also provide more flexibility and customization options. Different frameworks may have different strengths and weaknesses, and allowing developers to mix and match can lead to more tailored and unique designs.
 
-![Multiple CSS framework](img/blog/2023-04-12/multiple-css-frameworks.png)
+![Multiple CSS framework](img/multiple-css-frameworks.png)
 
 ### Simple Syntax
 
@@ -83,7 +83,7 @@ Blazorise offers many premium web components that meet various web development n
 
 Blazorise components are tailored to ensure users enjoy an optimal experience while reducing usage costs. Its focus on performance and design sets us apart from our competition and ensures that our components always deliver exceptional results. Choose Blazorise for your next web development project and discover the difference for yourself.
 
-![Ease of Use](img/blog/2023-04-12/ease-of-use.png)
+![Ease of Use](img/ease-of-use.png)
 
 **Among the many components that Blazorise provides, some stand out in terms of their ease of use and flexibility.**
 

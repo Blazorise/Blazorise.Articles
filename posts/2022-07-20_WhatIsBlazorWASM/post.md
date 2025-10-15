@@ -23,7 +23,7 @@ Blazor WASM (or Blazor WebAssembly) is a single-page web application framework b
 
 Traditionally, all web pages are structured with HTML, styled with CSS, and use Javascript to introduce dynamic interactivity. C# as a language was not built to run natively in browsers. However, [with the presence of WebAssembly](https://blazorise.com/blog/exploring-webassembly-the-underlying-technology-behind-blazor-wasm), the browser can now host the .NET runtime, which makes it possible to run and execute C# Code.
 
-![Blazor WebAssembly Source: Microsoft](img/blog/2022-07-20/blazor-webassembly.png)
+![Blazor WebAssembly Source: Microsoft](img/blazor-webassembly.png)
 
 ---
 

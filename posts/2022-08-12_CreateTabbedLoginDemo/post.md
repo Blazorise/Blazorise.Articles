@@ -178,7 +178,7 @@ Add variable definitions in the `@@code` section of the razor page
 
 By the end, your razor page should look something like this.
 
-![Login screen](img/blog/2022-08-12/login-screen.png)
+![Login screen](img/login-screen.png)
 
 And the full code that includes a register page.
 

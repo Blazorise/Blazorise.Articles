@@ -63,17 +63,17 @@ There are two types of Blazor Applications.
 
 For this example, we will demonstrate how to use the **Visual Studio IDE** to create a Blazor Application. Open your Visual Studio IDE after installation and create a new project.
 
-![Create project](img/blog/2022-09-19/create-project.png)
+![Create project](img/create-project.png)
 
 In the **Create New Project Dialog** box, search for Blazor. Select **Blazor WebAssembly App** to create a Blazor client-side application or a Blazor Server App to create a server-side blazor application.
 
-![Pick Blazor](img/blog/2022-09-19/pick-blazor.png)
+![Pick Blazor](img/pick-blazor.png)
 
 Click the next button to continue to the project configuration page. Here, you can name your Blazor application and select the target framework plus a host of other configurations.
 
 Leave all default selections and click create button. This will scaffold your application into a solution directory.
 
-![Solution explorer](img/blog/2022-09-19/solution-explorer-after-project-create.png)
+![Solution explorer](img/solution-explorer-after-project-create.png)
 
 > In naming your application, always begin the first letter in uppercase. This is more of a best practice than a rule. If your app name contains two or more words, write the first letter of each word in uppercase, as with our example `BlazorApp`.
 
@@ -85,7 +85,7 @@ Command line applications allow you to run commands and talk directly to the she
 
 Create a Blazor WebAssembly or Server application by running the following commands respectively. To check if you have .NET installed, run the command `dotnet --info` to display all the information about your copy of dotnet.
 
-![dotnet info](img/blog/2022-09-19/dotnet-info.png)
+![dotnet info](img/dotnet-info.png)
 
 Blazor WebAssembly
 

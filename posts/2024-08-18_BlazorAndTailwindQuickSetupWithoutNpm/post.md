@@ -28,7 +28,7 @@ Now use any tailwind class. And it will just work.
 </div>
 ```
 
-![hello](img/blog/2024-08-18/img.png)
+![hello](img/img.png)
 
 ## TailwindCSS CDN is Not for Production
 
@@ -186,7 +186,7 @@ Now this code:
 
 Should result in:
 
-![hello](img/blog/2024-08-18/img.png)
+![hello](img/img.png)
 
 
 ## Workflow with TailwindCSS

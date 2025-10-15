@@ -57,7 +57,7 @@ We want to validate this property and display a localized error message if the v
 
 ```
 
-![Validation Standard Error Message](img/blog/2023-09-15/validation-fail-standard-error-message.png)
+![Validation Standard Error Message](img/validation-fail-standard-error-message.png)
 
 As we can see in the screenshot above, by default, the `DataAnnotations` validation will display the error message in English, with two arguments that have been inserted in the message
 

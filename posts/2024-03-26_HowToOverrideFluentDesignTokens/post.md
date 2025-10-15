@@ -33,23 +33,23 @@ Start by visiting the [Fluent Theme Designer](https://react.fluentui.dev/?path=/
 
 You'll be presented with the Fluent Theme Designer interface.
 
-![Fluent Theme Designer](img/blog/2024-03-26/react-theme-designer.png)
+![Fluent Theme Designer](img/react-theme-designer.png)
 
 ### 2. Export The Theme Settings
 
 After customizing the theme colors and settings to your liking, name your theme and then use the browser Developer Tools to inspect the theme generator (we'll use Chrome for our examples). Right-click on the theme generator to open the Developer Tools.
 
-![Fluent Theme Designer Inspect](img/blog/2024-03-26/react-theme-designer-inspect.png)
+![Fluent Theme Designer Inspect](img/react-theme-designer-inspect.png)
 
 ### 3. Copy Design Tokens
 
 Within the Developer Tools, locate the CSS variables containing the design tokens, identifiable by the name `.fui-FluentProvider`.
 
-![Design Tokens 1](img/blog/2024-03-26/design-tokens-1.png)
+![Design Tokens 1](img/design-tokens-1.png)
 
 Right-click on this element and select **Copy rule** to copy the CSS variables to your clipboard.
 
-![Design Tokens 2](img/blog/2024-03-26/design-tokens-2.png)
+![Design Tokens 2](img/design-tokens-2.png)
 
 This will copy the entire content of the CSS variables into the clipboard.
 

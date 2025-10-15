@@ -160,7 +160,7 @@ And already, we are done! It's time to use your freshly created component! Insid
 
 ## Congratulations! You can now create ShareButtons in your Blazor web application!
 
-![Share buttons](img/blog/2024-05-17/share-buttons.png)
+![Share buttons](img/share-buttons.png)
 
 ---
 

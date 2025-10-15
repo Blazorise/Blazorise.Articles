@@ -62,7 +62,7 @@ Starting from .NET 6, MAUI shipped with fully integrated tooling and support in 
 
 You can either create a standalone MAUI app or an MAUI Blazor application. Further details on building an MAUI app to follow subsequently.
 
-![Microsoft's new UI framework for multi-platform development](img/blog/2022-07-27/maui.png)
+![Microsoft's new UI framework for multi-platform development](img/maui.png)
 
 ---
 

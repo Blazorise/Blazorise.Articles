@@ -23,7 +23,7 @@ The MVC (Most Valuable Contributor) Award is a global recognition program for re
 
 You can [learn more](https://github.com/Megabit/Blazorise/wiki/What-it-takes-to-be-a-Blazorise-MVC) about the Blazorise MVC Program, which seeks to recognize future community leaders.
 
-![MVC Award for Mitchel](img/blog/2022-12-05/mvc-mitchel.jpeg)
+![MVC Award for Mitchel](img/mvc-mitchel.jpeg)
 
 ## How to win the MVC Award? 🎲
 

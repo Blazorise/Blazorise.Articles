@@ -86,7 +86,7 @@ And then you're going to need a library.  [BlazoriseFluentValidation](https://gi
 
 Which, obviously enough, gives you this  
 
-![Register page](img/blog/2022-08-19/register-page.png)  
+![Register page](img/register-page.png)  
 
 So far so hoopy. But there's a few wrinkles. The button doesn't do anything. And it's just a class, this isn't ReactiveUI. So let's remedy that with a ViewModel. But wait. If I change this to a viewmodel, my validator won't work anymore! I really struggled with this one and eventually I bit the bullet and added a RegistrationViewModelValidator. Which was basically cut&paste.    
 

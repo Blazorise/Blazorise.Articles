@@ -19,7 +19,7 @@ In this blog post we will analyze new features currently available in preview 7 
 
 In 2016, Microsoft released .NET 3.0 as a cross-platform framework. Since the official release of .NET 5 in November, Microsoft has committed to an annual release cycle for .NET as it focuses on making .NET a multiplatform environment. The "new .NET" combines the power of Mono and .NET Core into a single framework that allows developers to create applications for any platform, forming the basis for the launch of products such as .NET MAUI.
 
-![Release Schedule](img/blog/2022-08-29/ReleaseCycle.png)
+![Release Schedule](img/ReleaseCycle.png)
 
 .NET releases in even numbers are the targetted for LTS and receive support and updates for three years, while odd number versions have short-term support for 18 months. This information is critical as it allows you to determine how far ahead you need to plan for a significant upgrade of your applications and the version compatibility of your Nuget packages.
 
