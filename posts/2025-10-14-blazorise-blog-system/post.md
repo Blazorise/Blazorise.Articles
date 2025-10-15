@@ -2,10 +2,10 @@
 title: "Building a Dynamic Blog System with Blazorise"
 description: "A deep dive into creating a runtime Markdown-based blog system for Blazorise, powered by GitHub and Markdig."
 permalink: "/blog/blazorise-blog-system"
-image-url: "images/cover.jpg"
+image-url: "img/cover.jpg"
 image-title: "Blazorise Blog System Architecture"
 author-name: "John Developer"
-author-image: "/images/authors/mladen.png"
+author-image: "/assets/img/authors/mladen.png"
 posted-on: "2025-10-14"
 read-time: "12 min"
 ---

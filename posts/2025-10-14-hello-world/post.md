@@ -2,10 +2,10 @@
 title: "Hello World"
 description: "Welcome to our new blog!"
 permalink: "/blog/hello-world"
-image-url: "images/cover.jpg"
+image-url: "img/cover.jpg"
 image-title: "Cover"
 author-name: "Your Name"
-author-image: "/images/authors/mladen.png"
+author-image: "/assets/img/authors/mladen.png"
 posted-on: "2025-06-01"
 read-time: "5 min"
 ---
