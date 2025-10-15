@@ -7,6 +7,7 @@ image-url: img/how_to_enhance_the_new_dataGrid_menu_filter.png
 image-title: How to enhance the new DataGrid menu filter
 author-name: David Moreira
 author-image: "/assets/img/authors/david.png"
+category: How To Guides
 posted-on: September 8th, 2023
 read-time: 5 min
 ---

@@ -7,6 +7,7 @@ image-url: img/create-new-blazor-app.png
 image-text: Create A New Blazor Project
 author-name: James Amattey
 author-image: "/assets/img/authors/james.png"
+category: Blazor
 posted-on: September 19th, 2022
 read-time: 3 min
 ---

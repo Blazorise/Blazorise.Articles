@@ -7,6 +7,7 @@ image-url: img/how-to-override-fluent-design-tokens.png
 image-title: How to override Fluent design tokens
 author-name: Mladen Macanovic
 author-image: "/assets/img/authors/mladen.png"
+category: How To Guides
 posted-on: March 26th, 2024
 read-time: 5 min
 ---

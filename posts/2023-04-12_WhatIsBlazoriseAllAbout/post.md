@@ -7,6 +7,7 @@ image-url: img/what-is-blazorise-all-about.png
 image-text: What is Blazorise all About
 author-name: Tihana Jukić
 author-image: "/assets/img/authors/tihana.png"
+category: Community
 posted-on: April 14th, 2023
 read-time: 8 min
 ---

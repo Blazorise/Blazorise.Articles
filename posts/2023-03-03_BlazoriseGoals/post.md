@@ -7,6 +7,7 @@ image-url: img/2022-blazorise-goals.png
 image-text: 2022 Blazorise Goals
 author-name: Tihana Jukić
 author-image: "/assets/img/authors/tihana.png"
+category: Community
 posted-on: March 3rd, 2023
 read-time: 9 min
 ---

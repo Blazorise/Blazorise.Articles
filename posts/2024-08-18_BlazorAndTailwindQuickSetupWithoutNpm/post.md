@@ -7,6 +7,7 @@ image-url: img/blazor-plus-tailwind.png
 image-text: Blazor and Tailwind - Quick Setup Without npm
 author-name: Jan Tesař
 author-image: "/assets/img/authors/tesy.png"
+category: Community
 posted-on: August 18th, 2024
 read-time: 8 min
 ---

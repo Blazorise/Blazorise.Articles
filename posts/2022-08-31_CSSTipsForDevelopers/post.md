@@ -7,6 +7,7 @@ image-url: img/css.png
 image-text: Practical CSS Tips For Developers
 author-name: James Amattey
 author-image: "/assets/img/authors/james.png"
+category: Blazor
 posted-on: August1 31st, 2022
 read-time: 3 min
 ---

@@ -7,6 +7,7 @@ image-url: img/how_to_handle_localization_in_blazorise_validation.png
 image-title: How to handle Localization in Blazorise Validation
 author-name: David Moreira
 author-image: "/assets/img/authors/david.png"
+category: How To Guides
 posted-on: September 15th, 2023
 read-time: 8 min
 ---
