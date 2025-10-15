@@ -3,7 +3,7 @@ title: Blazorise 2.0: Plans and Vision for the Future
 description: In this post, we outline the roadmap for Blazorise 1.7 and 2.0, detailing the new features, API changes, and other developments that will shape the future of the project.
 permalink: /blog/blazorise-2-plans-and-vision-for-the-future
 canonical: /blog/blazorise-2-plans-and-vision-for-the-future
-image-url: /img/blazorise-future.png
+image-url: img/blazorise-future.png
 image-text: Blazorise 2.0: Plans and Vision for the Future
 author-name: Mladen Macanović
 author-image: "/assets/img/authors/mladen.png"

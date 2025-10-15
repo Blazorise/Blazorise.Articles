@@ -3,7 +3,7 @@ title: How to create social media share buttons
 description: Discover how to create social media share buttons for your Blazor app! using the framework-agnostic component library Blazorise!
 permalink: /blog/how-to-create-social-media-share-buttons
 canonical: /blog/how-to-create-social-media-share-buttons
-image-url: /img/how-to-create-social-media-share-buttons.png
+image-url: img/how-to-create-social-media-share-buttons.png
 image-title: How to create social media share buttons with Blazorise
 author-name: Giorgi
 author-image: giorgi

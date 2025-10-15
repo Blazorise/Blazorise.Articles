@@ -3,7 +3,7 @@ title: Async/Await — What Happens Under The Hood
 description: Using Async/Await is simple, but there is a lot hidden in these two keywords. To fully understand how it works we will have to run through a bunch of concepts, some of them a little fuzzy but I expect to be able to unveil the mysteries behind Tasks, Threads and Concurrency. Grab your cup of coffee and come with me.
 permalink: /blog/async-await-what-happens-under-the-hood
 canonical: /blog/async-await-what-happens-under-the-hood
-image-url: /img/AsyncAwait_What_Happens_Under_The_Hood.png
+image-url: img/AsyncAwait_What_Happens_Under_The_Hood.png
 image-text: Practical CSS Tips For Developers
 author-name: Andre Santarosa
 author-image: andresantarosa

@@ -3,7 +3,7 @@ title: Practical CSS Tips For Developers
 description: In this blog post we will learn some practical tips for applying custom CSS to Blazor and Blazorise components.
 permalink: /blog/practical-css-tips-for-developers
 canonical: /blog/practical-css-tips-for-developers
-image-url: /img/css.png
+image-url: img/css.png
 image-text: Practical CSS Tips For Developers
 author-name: James Amattey
 author-image: james

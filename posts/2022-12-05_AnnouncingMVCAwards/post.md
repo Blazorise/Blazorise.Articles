@@ -3,7 +3,7 @@ title: Introducing The Blazorise MVC Award Program
 description: Outstanding achievements are accompanied by excellent results. They are occasionally recognized with awards. Blazorise improves day by day as a result of the activities of its numerous communities.
 permalink: /blog/introducing-the-blazorise-mvc-award-program
 canonical: /blog/introducing-the-blazorise-mvc-award-program
-image-url: /img/introducing-the-blazorise-mvc-award-program.png
+image-url: img/introducing-the-blazorise-mvc-award-program.png
 image-text: Introducing The Blazorise MVC Award Program
 author-name: Tihana Jukić
 author-image: tihana

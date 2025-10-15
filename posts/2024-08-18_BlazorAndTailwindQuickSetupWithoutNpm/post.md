@@ -3,7 +3,7 @@ title: Blazor and Tailwind - Quick Setup Without npm
 description: Learn how to seamlessly integrate TailwindCSS with Blazor for a streamlined and efficient web development experience without using npm.
 permalink: /blog/blazor-and-tailwind-quick-setup-without-npm
 canonical: /blog/blazor-and-tailwind-quick-setup-without-npm
-image-url: /img/blazor-plus-tailwind.png
+image-url: img/blazor-plus-tailwind.png
 image-text: Blazor and Tailwind - Quick Setup Without npm
 author-name: Jan Tesař
 author-image: tesy

@@ -3,7 +3,7 @@ title: Publish Blazor App to Azure Container with GitHub Registry
 description: Learn how to deploy a Blazor app on Azure Container Apps using GitHub Container Registry with a seamless CI/CD pipeline.
 permalink: /blog/publishing-blazor-app-azure-container-app-github-container-registry
 canonical: /blog/publishing-blazor-app-azure-container-app-github-container-registry
-image-url: /img/hero.webp
+image-url: img/hero.webp
 image-text: Publish Blazor App to Azure Container with GitHub Registry
 author-name: Jan Tesař
 author-image: tesy

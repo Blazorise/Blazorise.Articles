@@ -3,7 +3,7 @@ title: What is Blazorise all About
 description: Blazorise, an open-source system, has evolved into a comprehensive Blazor UI component library offering state-of-the-art solutions for startups and enterprises.
 permalink: /blog/what-is-blazorise-all-about
 canonical: /blog/what-is-blazorise-all-about
-image-url: /img/blog/2023-04-12/what-is-blazorise-all-about.png
+image-url: img/blog/2023-04-12/what-is-blazorise-all-about.png
 image-text: What is Blazorise all About
 author-name: Tihana Jukić
 author-image: tihana

@@ -3,7 +3,7 @@ title: How to implement validation with captcha
 description: Discover how to integrate the Blazorise CAPTCHA component with Blazorise validation for enhanced security.
 permalink: /blog/how-to-implement-validation-with-captcha
 canonical: /blog/how-to-implement-validation-with-captcha
-image-url: /img/how-to-implement-validation-with-captcha.png
+image-url: img/how-to-implement-validation-with-captcha.png
 image-title: How to implement validation with captcha
 author-name: David Moreira
 author-image: david

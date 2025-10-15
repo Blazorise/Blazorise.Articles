@@ -3,7 +3,7 @@ title: How To Create A Blazor Application
 description: So far, in our blog posts, we were mainly focused on creating the Blazor app by integrating it with the Blazorise library. This post will run you through the process of creating a new and basic Blazor application.
 permalink: /blog/create-a-blazor-application
 canonical: /blog/create-a-blazor-application
-image-url: /img/create-new-blazor-app.png
+image-url: img/create-new-blazor-app.png
 image-text: Create A New Blazor Project
 author-name: James Amattey
 author-image: james

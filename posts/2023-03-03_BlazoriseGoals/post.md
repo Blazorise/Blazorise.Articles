@@ -3,7 +3,7 @@ title: 2022 Blazorise Goals
 description: 2022 Blazorise Goals, The Year In Retrospect. Blazorise is an open-source UI component library for Blazor that allows developers to build web applications using C# instead of JavaScript.
 permalink: /blog/2022-blazorise-goals
 canonical: /blog/2022-blazorise-goals
-image-url: /img/blog/2023-03-03/2022-blazorise-goals.png
+image-url: img/blog/2023-03-03/2022-blazorise-goals.png
 image-text: 2022 Blazorise Goals
 author-name: Tihana Jukić
 author-image: tihana

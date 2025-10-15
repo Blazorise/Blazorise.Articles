@@ -3,7 +3,7 @@ title: The Importance of JavaScript in Blazorise
 description: Making JavaScript and Blazorise work was an essential step towards greater compatibility for the web app development using blazor components and our success.
 permalink: /blog/the-importance-of-javascript-in-blazorise
 canonical: /blog/the-importance-of-javascript-in-blazorise
-image-url: /img/the-importance-of-javascript-in-blazorise.png
+image-url: img/the-importance-of-javascript-in-blazorise.png
 image-text: The Importance of JavaScript in Blazorise
 author-name: Toni Sokolov
 author-image: tonis
