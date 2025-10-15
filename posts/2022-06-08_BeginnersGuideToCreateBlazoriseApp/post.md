@@ -3,7 +3,7 @@ title: How to create a Blazorise WASM application
 description: In this article we will learn how to create a Blazorise WebAssembly (WASM) application. As an example, we will also use basic Blazorise components to setup a simple form.
 permalink: /blog/how-to-create-a-blazorise-application-beginners-guide
 canonical: /blog/how-to-create-a-blazorise-application-beginners-guide
-image-url: img/2022-06-08/How_to_create_a_Blazorise_application_A_Beginners_Guide.png
+image-url: img/How_to_create_a_Blazorise_application_A_Beginners_Guide.png
 image-title: Blazorise WASM application: A Beginner's Guide
 author-name: Mladen Macanović
 author-image: "/assets/img/authors/mladen.png"
@@ -29,16 +29,16 @@ In this tutorial, we are going to use [Visual Studio 2022](https://visualstudio.
 First, we'll create a Blazor WebAssembly app. Please follow these steps to do so:
 
 1. Open Visual Studio 2022 and click on the **Create a new Project** option.
-2. In the Create a new Project dialog that opens, search for **Blazor** and select **Blazor WebAssembly App** from the search results. Then, click **Next**. Refer to the following image. ![Create a new project dialog](img/blog/2022-06-08/Create-a-new-project-dialog.png)
-3. Now you will be at the **Configure your new project** dialog. Provide the name for your application. Here, we are naming the application **BlazoriseSampleApplication**. Then, click **Next**. Refer to the following image. ![Configure your new project dialog](img/blog/2022-06-08/Configure-your-new-project-dialog.png)
-4. On the **Additional information** page, select the target framework **.NET 6.0** and set the authentication type to **None**. Also, check the options **Configure for HTTPS** and uncheck **ASP.NET Core hosted**, and then click on **Create**. Refer to the following image. ![Additional information dialog](img/blog/2022-06-08/Additional-information-dialog.png)
+2. In the Create a new Project dialog that opens, search for **Blazor** and select **Blazor WebAssembly App** from the search results. Then, click **Next**. Refer to the following image. ![Create a new project dialog](img/Create-a-new-project-dialog.png)
+3. Now you will be at the **Configure your new project** dialog. Provide the name for your application. Here, we are naming the application **BlazoriseSampleApplication**. Then, click **Next**. Refer to the following image. ![Configure your new project dialog](img/Configure-your-new-project-dialog.png)
+4. On the **Additional information** page, select the target framework **.NET 6.0** and set the authentication type to **None**. Also, check the options **Configure for HTTPS** and uncheck **ASP.NET Core hosted**, and then click on **Create**. Refer to the following image. ![Additional information dialog](img/Additional-information-dialog.png)
 
 ## Installing the Blazorise packages
 
 We have now completed our Blazor WebAssembly project. Continue by installing the **Blazorise NuGet** packages and configuring the project to use Blazorise.
 
-1. Right click on the project in solution explorer and click on **Manage NuGet Packages** from the dropdown menu. ![Manage NuGet Packages](img/blog/2022-06-08/Manage-NuGet-Packages.png)
-2. Navigate to the **Browse** tab and search for **Blazorise**. To install it, use the **Blazorise.Bootstrap5** package. Repeat for **Blazorise.Icons.FontAwesome** package. ![Install Blazorise NuGet](img/blog/2022-06-08/Install-Blazorise-NuGet.png)
+1. Right click on the project in solution explorer and click on **Manage NuGet Packages** from the dropdown menu. ![Manage NuGet Packages](img/Manage-NuGet-Packages.png)
+2. Navigate to the **Browse** tab and search for **Blazorise**. To install it, use the **Blazorise.Bootstrap5** package. Repeat for **Blazorise.Icons.FontAwesome** package. ![Install Blazorise NuGet](img/Install-Blazorise-NuGet.png)
 3. The next step is to change your **index.html** and include the Blazorise CSS source files: 
     ```html|StaticFilesExample
     <!DOCTYPE html>
@@ -141,7 +141,7 @@ You should now be able to run the Blazorise sample project without incident. Pre
 
 Wait for VisualStudio to complete the build process, and you should see the new application running in your browser. To see an example of a counter, click on the Counter button in the sidebar.
 
-![Counter Example](img/blog/2022-06-08/Counter-Example.png)
+![Counter Example](img/Counter-Example.png)
 
 ## Resource
 
