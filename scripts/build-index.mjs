@@ -45,9 +45,73 @@ function buildImageUrl(rootDir, fmImageUrl) {
   return `img/${filename}`;
 }
 
+// ---------- YAML auto-fix helpers ----------
+function needsQuoting(v) {
+  if (typeof v !== 'string') return false;
+  const s = v.trim();
+  if (s === '') return false;
+  // Quote only when it would break YAML as a plain scalar:
+  // - contains ": " (colon + space)
+  // - starts with "- " (list item)
+  // - contains " #" (inline comment)
+  // - leading/trailing whitespace
+  // - starts with special YAML chars
+  if (s.includes(': ')) return true;
+  if (s.startsWith('- ')) return true;
+  if (s.includes(' #')) return true;
+  if (v !== s) return true;
+  if (/^[\[\]\{\}&\*\?\|>!%@`]/.test(s)) return true;
+  return false;
+}
+
+function quote(v) {
+  // Use double quotes; escape inner quotes
+  return `"${String(v).replace(/"/g, '\\"')}"`;
+}
+
+// Pre-fix only the front matter block (top-of-file '---' ... '---')
+function fixFrontMatterText(rawMd) {
+  if (!rawMd.startsWith('---')) return rawMd;
+  // Find the closing fence on its own line
+  const boundary = rawMd.indexOf('\n---', 3);
+  if (boundary === -1) return rawMd;
+
+  const yamlBlock = rawMd.slice(3, boundary + 1); // includes the leading newline
+  const rest = rawMd.slice(boundary + 4);         // skip "\n---"
+
+  const fixedYaml = yamlBlock
+    .split('\n')
+    .map(line => {
+      // Only handle "key: value" (simple top-level scalars)
+      const m = /^([A-Za-z0-9_-]+)\s*:\s*(.*)$/.exec(line);
+      if (!m) return line;
+      const key = m[1];
+      let val = m[2];
+      // Already quoted?
+      const alreadyQuoted = /^"[^"]*"$/.test(val) || /^'[^']*'$/.test(val);
+      if (!alreadyQuoted && needsQuoting(val)) {
+        val = quote(val);
+        return `${key}: ${val}`;
+      }
+      return line;
+    })
+    .join('\n');
+
+  return `---${fixedYaml}\n---${rest}`;
+}
+
 function readFrontMatter(mdPath) {
-  const raw = fs.readFileSync(mdPath, 'utf8');
-  const parsed = matter(raw);
+  const raw0 = fs.readFileSync(mdPath, 'utf8');
+  // Try parse; if it fails, auto-fix YAML front matter then retry
+  let raw = raw0;
+  let parsed;
+  try {
+    parsed = matter(raw);
+  } catch (err) {
+    raw = fixFrontMatterText(raw0);
+    parsed = matter(raw); // Let it throw if still invalid – we want CI to fail loudly
+  }
+
   const fm = parsed.data || {};
   const body = parsed.content || '';
 
