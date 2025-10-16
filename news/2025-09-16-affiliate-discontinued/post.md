@@ -14,7 +14,7 @@ read-time: 2 min
 
 # Blazorise Affiliate Program Discontinued
 
-We are announcing the immediate removal of the Blazorise affiliate program. Unfortunately, the program has been misused by individuals and has become an operational burden for our team.{.lead}
+We are announcing the immediate removal of the Blazorise affiliate program. Unfortunately, the program has been misused by individuals and has become an operational burden for our team. {.lead}
 
 ## Why We're Removing the Program
 
