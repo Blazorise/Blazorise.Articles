@@ -32,11 +32,11 @@ This improvement is particularly beneficial for production environments where br
 
 We've introduced automation for generating and maintaining Blazorise API documentation, a significant step toward ensuring developers always have access to the most accurate and up-to-date information.
 
-Real-Time Accuracy: With automation, API documentation reflects the current state of the Blazorise codebase, minimizing outdated or incorrect information.
+**Real-Time Accuracy**: With automation, API documentation reflects the current state of the Blazorise codebase, minimizing outdated or incorrect information.
 
-Reduced Maintenance Overhead: Automated tools streamline the process of generating and updating documentation, allowing the Blazorise team to focus on feature development and bug fixes.
+**Reduced Maintenance Overhead**: Automated tools streamline the process of generating and updating documentation, allowing the Blazorise team to focus on feature development and bug fixes.
 
-Comprehensive Coverage By integrating automation, we've expanded the API documentation to include edge cases, advanced configurations, and lesser-known methods or parameters that were previously undocumented.
+**Comprehensive Coverage** By integrating automation, we've expanded the API documentation to include edge cases, advanced configurations, and lesser-known methods or parameters that were previously undocumented.
 
 The new automated system leverages Blazorise's metadata and code annotations to create robust API documentation that integrates seamlessly into the existing docs platform. This ensures that as the framework evolves, developers can rely on trustworthy and comprehensive documentation.
 
@@ -58,7 +58,7 @@ Your feedback is essential to us, and we appreciate your continued support and c
 
 ## Known incompatibilities
 
-As of now, there are no known incompatibilities with the previous Blazorise 1.6.x releases. We encourage all users to upgrade to 1.7.1.
+As of now, there are no known incompatibilities with the previous Blazorise **1.6.x** releases. We encourage all users to upgrade to **1.7.1**.
 
 If you experience any unexpected behavior change in your projects after upgrading to 1.7.1, please file an issue on GitHub.
 

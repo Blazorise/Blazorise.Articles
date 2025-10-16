@@ -14,7 +14,7 @@ read-time: 3 min
 
 # Maintenance release: Blazorise 1.2.2
 
-It’s been a while since our last stable release! And this is not the long anticipated 1.3, nor 2.0, but simply a Blazorise 1.2.2 maintenance release to fix a handful of issues in the current 1.2 stable branch.
+It’s been a while since our last stable release! And this is not the long anticipated 1.3, nor 2.0, but simply a **Blazorise 1.2.2** maintenance release to fix a handful of issues in the current 1.2 stable branch.
 
 But don’t worry – the feature release 1.3 is going forward as planned.
 

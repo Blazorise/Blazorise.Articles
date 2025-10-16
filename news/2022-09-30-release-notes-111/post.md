@@ -18,7 +18,7 @@ We released Blazorise 1.1 four days ago, and like any release, there are few rou
 
 So this 1.1.1 release fixes a number of regressions that users reported after the release, as well as various other fixes to pre-existing bugs and usability improvements.
 
-This is a safe and recommended update for all Blazorise 1.1.x users. It should have no major incidence on your projects, even complex ones in production, if you're already using 1.1-stable.
+**This is a safe and recommended update for all Blazorise 1.1.x users.** It should have no major incidence on your projects, even complex ones in production, if you're already using 1.1-stable.
 
 ## Changes
 

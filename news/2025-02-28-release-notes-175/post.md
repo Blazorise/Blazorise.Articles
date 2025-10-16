@@ -16,7 +16,7 @@ read-time: 3 min
 
 Blazorise 1.7.5 is a maintenance release focusing on bug fixes and refinements to improve stability and functionality across various components.
 
-This release addresses key issues related to the DataGrid, Markdown, Video, and Navbar (BarToggler) components, ensuring a smoother development experience. Notable improvements include enhanced Markdown file upload handling, better DataGrid cell focus behavior, and fixes for the Seeking event in the Video component. Additionally, several UI inconsistencies affecting FluentUI, Tailwind, and Bulma frameworks have been resolved. Read on for the full list of changes.
+This release addresses key issues related to the **DataGrid**, **Markdown**, **Video**, and **Navbar (BarToggler)** components, ensuring a smoother development experience. Notable improvements include enhanced Markdown file upload handling, better DataGrid cell focus behavior, and fixes for the Seeking event in the Video component. Additionally, several UI inconsistencies affecting **FluentUI, Tailwind, and Bulma** frameworks have been resolved. Read on for the full list of changes.
 
 ## Key Highlights in 1.7.5
 
@@ -53,14 +53,14 @@ Your feedback is essential to us, and we appreciate your continued support and c
 
 ## Known incompatibilities
 
-As of now, there are no known incompatibilities with the previous Blazorise 1.6.x releases. We encourage all users to upgrade to 1.7.5.
+As of now, there are no known incompatibilities with the previous Blazorise **1.6.x** releases. We encourage all users to upgrade to **1.7.5**.
 
 If you experience any unexpected behavior change in your projects after upgrading to 1.7.5, please file an issue on GitHub.
 
 ## Commercial Support
 
-Blazorise is an open-source project that thrives on community contributions and support. To sustain ongoing development and improvements, we offer commercial licenses that provide additional benefits while ensuring the project's long-term success.
+Blazorise is an open-source project that thrives on community contributions and support. To sustain ongoing development and improvements, we offer **commercial licenses** that provide additional benefits while ensuring the project's long-term success.
 
-With a commercial license, you gain access to premium forum support, private repositories, and exclusive community-licensed themes. Your support directly contributes to the enhancement of Blazorise and ensures its continuous growth.
+With a commercial license, you gain access to **premium forum support, private repositories, and exclusive community-licensed themes**. Your support directly contributes to the enhancement of Blazorise and ensures its continuous growth.
 
 To explore commercial licensing options, visit our website at Blazorise Commercial.

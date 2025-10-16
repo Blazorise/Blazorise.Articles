@@ -49,7 +49,7 @@ Your feedback is essential to us, and we appreciate your continued support and c
 
 ## Known incompatibilities
 
-As of now, there are no known incompatibilities with the previous Blazorise 1.6.x releases. We encourage all users to upgrade to 1.7.3.
+As of now, there are no known incompatibilities with the previous Blazorise **1.6.x** releases. We encourage all users to upgrade to **1.7.3**.
 
 If you experience any unexpected behavior change in your projects after upgrading to 1.7.3, please file an issue on GitHub.
 

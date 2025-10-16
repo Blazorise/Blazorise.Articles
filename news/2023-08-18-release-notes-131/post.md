@@ -14,7 +14,7 @@ read-time: 2 min
 
 # Maintenance release: Blazorise 1.3.1
 
-We hope you’ve been having a great experience building with Blazorise 1.3. Today, we’re pleased to announce the maintenance release of version 1.3.1, which brings some crucial bug fixes and documentation enhancements.
+We hope you’ve been having a great experience building with **Blazorise 1.3**. Today, we’re pleased to announce the maintenance release of version **1.3.1**, which brings some crucial bug fixes and documentation enhancements.
 
 ## What's New in 1.3.1
 
@@ -34,7 +34,7 @@ Your feedback and contributions are what make the Blazorise community thrive. Pl
 
 ## Known incompatibilities
 
-As of now, there are no known incompatibilities with the previous Blazorise 1.3.x releases. We encourage all users to upgrade to 1.3.1.
+As of now, there are no known incompatibilities with the previous Blazorise **1.3.x** releases. We encourage all users to upgrade to **1.3.1**.
 
 If you experience any unexpected behavior change in your projects after upgrading to 1.3.1, please file an issue on GitHub.
 

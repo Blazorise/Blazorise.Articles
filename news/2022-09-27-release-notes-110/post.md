@@ -16,34 +16,34 @@ read-time: 10 min
 
 It took us way too long, but finally, after six months of hard work, Blazorise 1.1 is out and comes packed with features and quality-of-life improvements!
 
-So, what happened at that time? To start, we have made a lot of improvements on blazorise.com. For example, we have improved documentation to include more examples and descriptions. Also, we added a search field for much faster navigation and more internal links between pages.
+So, what happened at that time? To start, we have made a lot of improvements on **blazorise.com**. For example, we have improved documentation to include more examples and descriptions. Also, we added a search field for much faster navigation and more internal links between pages.
 
 One of the most significant changes is that we have finally introduced new blog pages where we regularly write about C#, Blazor and .NET. Not to mention how-to guides and tutorials where you can learn more about Blazorise.
 
-There are no breaking changes in this release, but we will slowly start with some API changes by making existing APIs obsolete and introducing new APIs as replacements. Once we reach stable v2.0, the APIs marked with obsolete will eventually be removed.
+There are no breaking changes in this release, but we will slowly start with some API changes by making existing APIs obsolete and introducing new APIs as replacements. Once we reach stable **v2.0**, the APIs marked with obsolete will eventually be removed.
 
 Internal changes are hard to showcase, but if you are curious to learn a bit more, we have documented all changes in 1.1 ticket on GitHub. Also, don't forget to look at 1.0.x fixes, which are also included in this release.
 
-Blazorise 1.1 is compatible with Blazorise 1.0.x projects and is a recommended upgrade for all 1.0.x users.
+**Blazorise 1.1 is compatible with Blazorise 1.0.x projects and is a recommended upgrade for all 1.0.x users.**
 
 ## Blazorise 1.1 Highlights 💡
 
-- New FocusTrap component.
-- New Highlighter component.
-- New FluentValidation component.
-- New FilePicker component.
-- New ModalProvider component.
-- New LoadingIndicator component.
-- FileEdit performance improvements to WriteToStreamAsync and OpenReadStreamAsync APIs.
-- DataGrid improvements and new APIs.
+- New **FocusTrap** component.
+- New **Highlighter** component.
+- New **FluentValidation** component.
+- New **FilePicker** component.
+- New **ModalProvider** component.
+- New **LoadingIndicator** component.
+- **FileEdit** performance improvements to WriteToStreamAsync and OpenReadStreamAsync APIs.
+- **DataGrid** improvements and new APIs.
 
 ## Upgrade an existing project 👨‍🔧
 
 ### 1. Packages
 
-To upgrade an existing Blazorise applications from 1.0.x to 1.1:
+To upgrade an existing Blazorise applications from **1.0.x** to **1.1**:
 
-- Update all Blazorise.* package references to 1.1.
+- Update all **Blazorise.*** package references to **1.1**.
 
 ### 2. Tuple Values
 
@@ -55,7 +55,7 @@ To use them you will just need to define it as Row HorizontalGutter="32" Vertica
 
 ### 4. Recommended Removals
 
-The explicit usage of Markdown extension CSS and JS files are not needed and they can be safely removed from index.html or _Layout.cshtml files.
+The explicit usage of Markdown extension CSS and JS files are not needed and they can be safely removed from **index.html** or **_Layout.cshtml** files.
 
 - <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
 - <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
@@ -85,7 +85,7 @@ If you wish to use new component look at few of the examples we have created on 
 
 One of the most requested features we get from our community is a way to validate forms by using the FluentValidation library. In this Blazorise release, we are finally bringing it.
 
-The new FluentValidation component is created with the help of aladotnet, a community member that has implemented the feature on his GitHub repository and was willing to give it away as part of the Blazorise core repository. Fortunately, he did all the hard work. As a result, we have only made minor optimizations to the API and added examples to the documentation.
+The new **FluentValidation** component is created with the help of aladotnet, a community member that has implemented the feature on his GitHub repository and was willing to give it away as part of the Blazorise core repository. Fortunately, he did all the hard work. As a result, we have only made minor optimizations to the API and added examples to the documentation.
 
 Big thanks to aladotnet for his help in making it happen.
 
@@ -99,10 +99,10 @@ Added ShowDefaultSortIcon parameter to DataGrid. By enabling this parameter, a d
 
 Introduced PagerOptions with the following options:
 
-- Size : Configures the pager buttons size.
-- ButtonRowPosition : Configures the button row position.
-- PaginationPosition : Configures the pagination position.
-- TotalItemsPosition : Configures the total items position.
+- **Size** : Configures the pager buttons size.
+- **ButtonRowPosition** : Configures the button row position.
+- **PaginationPosition** : Configures the pagination position.
+- **TotalItemsPosition** : Configures the total items position.
 
 #### 3. ScrollRowOnEdit
 
@@ -122,7 +122,7 @@ Please do take note, that for the parameter to listen to changes and be able to 
 
 #### 6. PageSize
 
-Increased default PageSize parameter value from 5 to 10.
+Increased default PageSize parameter value from **5** to **10**.
 
 ### ModalProvider
 
@@ -150,9 +150,9 @@ Introduced SuggestSelectedItems parameter, enabling you to to show up already se
 
 Introduced AutocompleteSelectionMode
 
-- Default : Default mode. Selection is single.
-- Multiple : Multiple mode. Selection is multiple.
-- Checkbox : Checkbox mode. Selection is multiple with checkbox selection support.
+- **Default** : Default mode. Selection is single.
+- **Multiple** : Multiple mode. Selection is multiple.
+- **Checkbox** : Checkbox mode. Selection is multiple with checkbox selection support.
 
 You may still use the existing Multiple parameter to set the Autocomplete into Multiple selection mode, however take note that this Parameter has now been marked as Obsolete and will be removed in a future version. Please use the new SelectionMode Parameter.
 
@@ -175,7 +175,7 @@ This is specially useful for a use case reported by our users. When you have the
 
 #### 6. Improved keyboard support
 
-You can now select items and remove selection using keyboard alone. Use navigation arrows to select an item in the dropdown.In multi-select mode use Backspace to remove most recently selected item or use Shift-Tab and Enter key to remove any previously selected item.
+You can now select items and remove selection using keyboard alone. Use navigation arrows to select an item in the dropdown.In multi-select mode use Backspace to remove most recently selected item or use **Shift-Tab** and **Enter** key to remove any previously selected item.
 
 This feature is contributed by glutio, one of our community members, and we thank you for all the effor he has done.
 
@@ -252,11 +252,11 @@ Glutio was really productive with new features in this release.
 Improved keyboard support, and introduced of AutoSelectFirstItem on Autocomplete component.
     
     
-        He created an entirely new LoadingIndicator component.
+        He created an entirely new **LoadingIndicator** component.
 
 #### <Anchor To="https://github.com/Jimmys20" Target="Target.Blank">Jimmys20</Anchor>
 
-Jimmy helped us to improve Steps navigation by adding a constraint feature that enables us to control which step can be navigated.
+Jimmy helped us to improve **Steps** navigation by adding a constraint feature that enables us to control which step can be navigated.
 
 #### <Anchor To="https://github.com/EnsignPayton" Target="Target.Blank">EnsignPayton</Anchor>
 
@@ -264,7 +264,7 @@ A transient service in .NET dependency injection can lead to some nasty memory l
 
 #### <Anchor To="https://github.com/aladotnet" Target="Target.Blank">aladotnet</Anchor>
 
-The aladotnet has created a FluentValidation component and he was willing to give it away as part of the Blazorise core repository.
+The **aladotnet** has created a **FluentValidation** component and he was willing to give it away as part of the Blazorise core repository.
 
 ## Support 📞
 

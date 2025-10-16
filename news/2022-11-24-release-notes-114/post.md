@@ -16,7 +16,7 @@ read-time: 2 min
 
 We released Blazorise 1.1 just a few monght ago, and like any release, there are few rough edges to iron out which warrant making maintenance "patch" releases.
 
-This new Blazorise 1.1.4 is a hotfix release to solve this and a few other minor issues that were fixed in the meantime. Blazorise 1.1.4 is a recommended upgrade for all Blazorise 1.1 and Blazorise 1.1.3 users.
+This new **Blazorise 1.1.4** is a hotfix release to solve this and a few other minor issues that were fixed in the meantime. Blazorise 1.1.4 is a **recommended upgrade for all Blazorise 1.1 and Blazorise 1.1.3 users**.
 
 For a detailed overview of the changes that 1.1.4 included and which are also part of this new release, please read the 1.1 support notes.
 

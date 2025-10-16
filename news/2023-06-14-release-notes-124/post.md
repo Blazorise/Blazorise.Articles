@@ -14,7 +14,7 @@ read-time: 2 min
 
 # Maintenance release: Blazorise 1.2.4
 
-Welcome to the maintenance release of Blazorise v1.2.4!
+Welcome to the maintenance release of Blazorise **v1.2.4**!
 
 This release includes a number of important bug fixes and performance improvements that will enhance your overall user experience. Below is a detailed list of the changes we made:
 

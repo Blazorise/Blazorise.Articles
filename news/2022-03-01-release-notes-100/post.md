@@ -22,13 +22,13 @@ Throughout the last three years, the core of the Blazorise has seen a lot of imp
 
 ## Blazorise 1.0 Highlights 💡
 
-- Chart support for Chart.js v3.x
-- NumericPicker completely new input component for numeric values
-- Video extension to play HLS and DASH media with DRM protection
-- QRCode extension to generate QR codes
-- DatePicker improvements and fixes
-- Drag & Drop components to drag & drop any content
-- Cascading Type Parameter making it easier to write and define nested components
+- **Chart** support for Chart.js v3.x
+- **NumericPicker** completely new input component for numeric values
+- **Video** extension to play HLS and DASH media with DRM protection
+- **QRCode** extension to generate QR codes
+- **DatePicker** improvements and fixes
+- **Drag & Drop** components to drag & drop any content
+- **Cascading Type Parameter** making it easier to write and define nested components
 
 ## Migration 🛠
 
@@ -97,16 +97,16 @@ While at the moment they still have the same API, in the future, we will introdu
 
 We reworked animations, and they are now calculated dynamically in Blazor without the need for any JavaScript. Also, with an additional API, you now have more control over the animation.
 
-- Animated: Controls whether the modal should animate.
-- AnimationDuration: Sets the modal animation duration in ms.
+- **Animated**: Controls whether the modal should animate.
+- **AnimationDuration**: Sets the modal animation duration in ms.
 
 #### Render Mode
 
 You can now choose from three different rendering modes on the Modal component, similar to what we already have on the Tabs component.
 
-- Default: Always renders the modal HTML content to the DOM.
-- LazyLoad: Lazy loads modal, meaning the modal HTML content will only be rendered/loaded the first time it is visited.
-- LazyReload: Lazy loads modal every time, meaning the modal HTML content will have its HTML re-rendered to the DOM every time.
+- **Default**: Always renders the modal HTML content to the DOM.
+- **LazyLoad**: Lazy loads modal, meaning the modal HTML content will only be rendered/loaded the first time it is visited.
+- **LazyReload**: Lazy loads modal every time, meaning the modal HTML content will have its HTML re-rendered to the DOM every time.
 
 ### Cascading Type Parameter
 
@@ -181,7 +181,7 @@ The new component and its usage can be seen on Drag & Drop page.
 Introduced CloseOnSelection Parameter. You will be able to set this parameter to false, so the auto complete's dropdown does not close on selections.
     
         
-            Note: This feature will only work with multiple selection.
+            **Note:** This feature will only work with multiple selection.
 
 ### Dropdown
 

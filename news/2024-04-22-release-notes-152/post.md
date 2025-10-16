@@ -45,7 +45,7 @@ Your feedback and contributions are what make the Blazorise community thrive. Pl
 
 ## Known incompatibilities
 
-As of now, there are no known incompatibilities with the previous Blazorise 1.5.x releases. We encourage all users to upgrade to 1.5.2.
+As of now, there are no known incompatibilities with the previous Blazorise **1.5.x** releases. We encourage all users to upgrade to **1.5.2**.
 
 If you experience any unexpected behavior change in your projects after upgrading to 1.5.2, please file an issue on GitHub.
 

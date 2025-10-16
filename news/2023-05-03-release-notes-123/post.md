@@ -14,9 +14,9 @@ read-time: 2 min
 
 # Maintenance release: Blazorise 1.2.3
 
-We're super excited to share with you the latest maintenance release for Blazorise: version 1.2.3! 😃
+We're super excited to share with you the latest maintenance release for Blazorise: version **1.2.3**! 😃
 
-In this update, we've focused on making your Blazorise experience better than ever by improving stability, performance, and reliability. We've been listening to your valuable feedback and have worked hard to squash those pesky bugs and enhance the features you love. So, let's dive into what's new in Blazorise 1.2.3 and celebrate together as we continue on our journey to make Blazorise the friendliest and most enjoyable library for building modern, feature-rich web applications. 🚀
+In this update, we've focused on making your Blazorise experience better than ever by improving stability, performance, and reliability. We've been listening to your valuable feedback and have worked hard to squash those pesky bugs and enhance the features you love. So, let's dive into what's new in Blazorise **1.2.3** and celebrate together as we continue on our journey to make Blazorise the friendliest and most enjoyable library for building modern, feature-rich web applications. 🚀
 
 For a detailed overview of the bug fixes from the last version, read the 1.2 support notes.
 

@@ -14,7 +14,7 @@ read-time: 9 min
 
 # Announcing Blazorise 1.4 - Zadar
 
-Greetings to our amazing developer community! We're thrilled to announce the latest and greatest version of Blazorise – version 1.4.
+Greetings to our amazing developer community! We're thrilled to announce the latest and greatest version of Blazorise – version **1.4**.
 
 A few months have passed since the last major version, but given the number of new features included in this release, it has been well worth the wait.
 
@@ -28,19 +28,19 @@ And now, finally, dive in to learn about the new components, enhancements, and f
 
 Here's a summary of what’s new in this release:
 
-- .NET 8: full support
-- TransferList: new component for transferring items between two lists.
-- DatePicker: added input format mask
-- ColorPicker: added more options to control the UI elements
-- Sticky columns: added ability to set sticky columns on Table & DataGrid
-- Testing: new NuGet package for testing with bUnit
-- Licensing: added limitations for extension components
+- **.NET 8**: full support
+- **TransferList**: new component for transferring items between two lists.
+- **DatePicker**: added input format mask
+- **ColorPicker**: added more options to control the UI elements
+- **Sticky columns**: added ability to set sticky columns on Table & DataGrid
+- **Testing**: new NuGet package for testing with bUnit
+- **Licensing**: added limitations for extension components
 
 ## Upgrade an existing project 👨‍🔧
 
-To upgrade an existing Blazorise applications from 1.3.x to 1.4:
+To upgrade an existing Blazorise applications from **1.3.x** to **1.4**:
 
-- Update all Blazorise.* package references to 1.4.
+- Update all **Blazorise.*** package references to **1.4**.
 
 You should now be able to use Blazorise without any breaking changes to the API.
 
@@ -117,11 +117,11 @@ The FilterMode can now be individually set for each column. When specified, it w
 
 We've introduced a new TransferList component. This component facilitates various features for list management:
 
-Selection Options: Users can choose either single or multiple items for transfer, providing flexibility in how items are selected and moved.
+**Selection Options**: Users can choose either single or multiple items for transfer, providing flexibility in how items are selected and moved.
 
-Movement Flexibility: The component supports both individual item transfers and a 'move all' feature, allowing for efficient management of list contents whether moving one item at a time or all at once.
+**Movement Flexibility**: The component supports both individual item transfers and a 'move all' feature, allowing for efficient management of list contents whether moving one item at a time or all at once.
 
-Customizable Item Templates: To cater to different content needs, the TransferList component provides the option to use templates for items. This means you can render custom content within each item, tailoring the appearance and functionality to suit specific requirements.
+**Customizable Item Templates**: To cater to different content needs, the TransferList component provides the option to use templates for items. This means you can render custom content within each item, tailoring the appearance and functionality to suit specific requirements.
 
 To see it in action, visit the TransferList page
 
@@ -149,7 +149,7 @@ For more detailed information and examples, please refer to our DataGrid Fixed C
 
 ### Testing with bUnit
 
-Last but not the least. We're thrilled to introduce Blazorise.Tests.bUnit, a new NuGet package for efficiently testing Blazorise components. This addition enhances the testing framework and simplifies the testing process for Blazorise developers.
+Last but not the least. We're thrilled to introduce **Blazorise.Tests.bUnit**, a new **NuGet** package for efficiently testing Blazorise components. This addition enhances the testing framework and simplifies the testing process for Blazorise developers.
 
 Highlights:
 
@@ -162,7 +162,7 @@ For detailed instructions and support, refer to our testing documentation. We're
 
 ## Licensing changes
 
-In the Blazorise 1.4 release, we're also introducing an important update to our licensing system. This change is aimed at maintaining the quality and sustainability of our services. Under the new system, all unlicensed or free versions of Blazorise packages, including the DataGrid, will now have a data limit - for instance, DataGrid will be capped at a maximum of 1,000 rows.
+In the Blazorise **1.4** release, we're also introducing an important update to our licensing system. This change is aimed at maintaining the quality and sustainability of our services. Under the new system, all unlicensed or free versions of Blazorise packages, including the DataGrid, will now have a data limit - for instance, DataGrid will be capped at a maximum of 1,000 rows.
 
 For those using the Community user license, this limit will be extended to 10,000 rows, offering more flexibility. However, licensed users will enjoy the benefit of no limits, allowing for unrestricted usage.
 

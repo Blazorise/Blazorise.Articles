@@ -16,7 +16,7 @@ read-time: 2 min
 
 We released Blazorise 1.1.1 just a few weeks ago with a small array of bug fixes, but those nasty bugs are always lurking.
 
-This new Blazorise 1.1.2 is a hotfix release to solve this and a few other minor issues that were fixed in the meantime. Blazorise 1.1.1 is a recommended upgrade for all Blazorise 1.1 and Blazorise 1.1.1 users.
+This new **Blazorise 1.1.2** is a hotfix release to solve this and a few other minor issues that were fixed in the meantime. Blazorise 1.1.1 is a **recommended upgrade for all Blazorise 1.1 and Blazorise 1.1.1 users**.
 
 For a detailed overview of the changes that 1.1.2 included and which are also part of this new release, please read the 1.1.x support notes.
 

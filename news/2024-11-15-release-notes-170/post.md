@@ -20,14 +20,14 @@ Welcome to the Blazorise 1.7 release, packed with exciting new features, optimiz
 
 Here's a summary of what's new in this release:
 
-- .NET 9 Support: Blazorise 1.7 now fully supports .NET 9, enabling compatibility with the latest features, improved performance, and security benefits.
-- New PdfViewer Component: Easily render PDF documents with the new PdfViewer component, including zoom and navigation options. Ideal for integrating document viewing into your apps.
-- New Skeleton Component: Provide loading placeholders to enhance user experience, with a customizable Skeleton component for seamless integration and improved perceived performance.
-- RichTextEdit Table Support (Experimental): Support for tables is now available in the RichTextEdit component through a community-developed module, enhancing your text-editing capabilities.
-- Object Fit: flexible options for element scaling and positioning.
-- SelectedCell API: listen to the cell selection changes while navigating through DataGrid.
-- Chart: Tooltip callbacks
-- Optimizations: Optimized the internals of of Blazorise.
+- **.NET 9 Support**: Blazorise 1.7 now fully supports .NET 9, enabling compatibility with the latest features, improved performance, and security benefits.
+- **New PdfViewer Component**: Easily render PDF documents with the new PdfViewer component, including zoom and navigation options. Ideal for integrating document viewing into your apps.
+- **New Skeleton Component:** Provide loading placeholders to enhance user experience, with a customizable Skeleton component for seamless integration and improved perceived performance.
+- **RichTextEdit Table Support (Experimental):** Support for tables is now available in the RichTextEdit component through a community-developed module, enhancing your text-editing capabilities.
+- **Object Fit:** flexible options for element scaling and positioning.
+- **SelectedCell API:** listen to the cell selection changes while navigating through DataGrid.
+- **Chart:** Tooltip callbacks
+- **Optimizations**: Optimized the internals of of Blazorise.
 
 Dive into each section for a comprehensive overview of these features and learn how they can enhance your projects. We value your feedback and encourage you to share your thoughts as we continue to refine and improve Blazorise.
 
@@ -35,7 +35,7 @@ Dive into each section for a comprehensive overview of these features and learn 
 
 Upgrade your Blazorise application seamlessly with the following steps:
 
-Update all Blazorise.* package references to 1.7.
+Update all **Blazorise.*** package references to **1.7**.
 
 Blazorise should now work withut any major breaking change to the API, but there are some necessary changes that we had to do to make Blazorise better. Continue reading the Migration section for more details.
 
@@ -43,16 +43,16 @@ Blazorise should now work withut any major breaking change to the API, but there
 
 A few API changes and behavior updates have been introduced in Blazorise 1.7 to improve consistency and functionality. Here’s a summary:
 
-Video Component API Changes
+**Video Component API Changes**
 
 - Seeking: event changed from Func<Task> to Func<double, Task>
 - Seeked: event changed from Func<Task> to Func<double, Task>
 
-BarItem Behavior Change
+**BarItem Behavior Change**
 
 - BarItem no longer has cursor: pointer as the default behavior. This aligns with UX best practices, particularly for disabled items. Buttons and links within BarItem will still show the pointer cursor as before.
 
-ChartTooltips Tooltips renamed
+**ChartTooltips Tooltips renamed**
 
 - The option under the ChartPlugins.ChartTooltips.Tooltips had a typo. We had to rename it to the ChartPlugins.ChartTooltips.Tooltip.
 

@@ -26,7 +26,7 @@ Blazorise, like all enterprises, operates within a broader economic framework. S
 
 ## Pricing Adjustments and New Payment Model
 
-After careful consideration, we have decided to increase our Professional prices from $499 to $599 and our Enterprise prices from $899 to $999. These changes will become effective starting from July 15th, 2023. They reflect the increased cost of operations and the continuous enhancements, features, and improvements that we’re integrating into Blazorise. We want to assure our customers that these changes are necessary adjustments, allowing us to maintain and expand our offerings and deliver even better services.
+After careful consideration, we have decided to increase our Professional prices from **$499** to **$599** and our Enterprise prices from **$899** to **$999**. These changes will become effective starting from **July 15th, 2023**. They reflect the increased cost of operations and the continuous enhancements, features, and improvements that we’re integrating into Blazorise. We want to assure our customers that these changes are necessary adjustments, allowing us to maintain and expand our offerings and deliver even better services.
 
 We also understand that yearly payment commitments might not be ideal for everyone. To better accommodate different business needs, we're introducing a new monthly payment model. This model will offer more flexibility and allow our customers to manage their expenses more effectively.
 
@@ -34,10 +34,10 @@ We also understand that yearly payment commitments might not be ideal for everyo
 
 In addition to the pricing adjustments, we're revising our licensing terms. Under the previous terms, the commercial license was required only for enterprises generating more than $1M in annual revenue. This rule, though well-intentioned, ended up confusing users. We received dozens of emails from customers requesting clarification about the license terms.
 
-To alleviate this confusion and better reflect the value and costs of development and support of our product, we're implementing new licensing terms starting July 15th, 2023:
+To alleviate this confusion and better reflect the value and costs of development and support of our product, we're implementing new licensing terms starting **July 15th, 2023**:
 
-- The Community license, which will remain free, will be available exclusively for individual users.
-- All companies must purchase a Commercial license regardless of their size or revenue.
+- The **Community license**, which will remain free, will be available exclusively for individual users.
+- All companies must purchase a **Commercial license** regardless of their size or revenue.
 
 These changes aim to streamline our licensing process, provide clarity for all users, enable us to sustain better the costs of maintaining and enhancing our product and support our dedicated team that works tirelessly to ensure that Blazorise continues to be the leading solution for our users.
 
@@ -51,6 +51,6 @@ To offer unparalleled support to our customers and continually innovate, we need
 
 ## What This Means For Existing Subscribers
 
-We value the continuity of our existing customers. These changes will not affect your current subscription. If you are an existing subscriber, you will continue to enjoy the same prices as before, even after the new pricing takes effect on July 15th, 2023. This will remain the case until you choose to cancel your subscription.
+We value the continuity of our existing customers. These changes will not affect your current subscription. If you are an existing subscriber, you will continue to enjoy the same prices as before, even after the new pricing takes effect on **July 15th, 2023**. This will remain the case until you choose to cancel your subscription.
 
 In conclusion, we express our deepest appreciation for your understanding and continued support as we navigate these changes. Our commitment to delivering a high-quality product and superior customer experience remains unwavering. We welcome any feedback and are ready to address any concerns regarding these adjustments. Thank you for your trust in Blazorise. We look forward to continuing to serve you.

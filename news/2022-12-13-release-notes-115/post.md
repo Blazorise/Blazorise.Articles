@@ -16,7 +16,7 @@ read-time: 2 min
 
 A new maintenance release is now available to the general public. This release fixes some nasty bugs, particularly with the NumericPicker and Drag and Drop components.
 
-This new Blazorise 1.1.5 is a hotfix release to solve this and a few other minor issues that were fixed in the meantime. Blazorise 1.1.5 is a recommended upgrade for all Blazorise 1.1 and Blazorise 1.1.4 users.
+This new **Blazorise 1.1.5** is a hotfix release to solve this and a few other minor issues that were fixed in the meantime. Blazorise 1.1.5 is a **recommended upgrade for all Blazorise 1.1 and Blazorise 1.1.4 users**.
 
 For a detailed overview of the changes that 1.1.5 included and which are also part of this new release, please read the 1.1 support notes.
 

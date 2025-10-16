@@ -23,16 +23,16 @@ Old documentation will still be available at v094.blazorise.com.
 
 ## Blazorise 0.9.5 Highlights 💡
 
-- Bootstrap 5 Provider is our new completelly new CSS framework that we fully support.
-- .NET 6 is now fully supported with this release.
-- JavaScript Modules to load internal JavaScript on demand without the need for any manual code.
-- Autocomplete tags now has support for multiple selection that will show selected items as tags.
-- DataGrid improvements and optimizations.
-- Public Async methods make it easier to prevent race condition when calling component directly.
-- ColorPicker component based upon the excellent pickr library.
-- InputMask component based upon the excellent Input Mask plugin.
-- Theme improvements to make it even easier to customize your apps without the need for CSS.
-- ListView component for displaying a series of content in a contained scrollable view by providing a data source.
+- **Bootstrap 5 Provider** is our new completelly new CSS framework that we fully support.
+- **.NET 6** is now fully supported with this release.
+- **JavaScript Modules** to load internal JavaScript on demand without the need for any manual code.
+- **Autocomplete tags** now has support for multiple selection that will show selected items as tags.
+- **DataGrid** improvements and optimizations.
+- **Public Async methods** make it easier to prevent race condition when calling component directly.
+- **ColorPicker component** based upon the excellent pickr library.
+- **InputMask component** based upon the excellent Input Mask plugin.
+- **Theme improvements** to make it even easier to customize your apps without the need for CSS.
+- **ListView component** for displaying a series of content in a contained scrollable view by providing a data source.
 
 ## Migration 🛠
 
@@ -40,29 +40,29 @@ No big release can be done without some breaking changes and this release is no 
     release before 1.0, there was no other time. We tried to make the changes to a minimum but nevertheless, you will need to
     adjust your code. Here are the required steps that needs to be done:
 
-1. Changed all the following methods from synchronous to asynchronous.
+**1.** Changed all the following methods from synchronous to asynchronous.
 
-2. Remove NotificationType, Message, and Title parameters from the NotificationAlert.
+**2.** Remove NotificationType, Message, and Title parameters from the NotificationAlert.
 
-3. Remove Title component and replace it with the Heading component.
+**3.** Remove Title component and replace it with the Heading component.
 
-4. We've found that on Dropdown we had both a VisibleChanged and Toggled event, which served the same purpose. We've removed Toggled and changed VisibleChanged to a regular Blazor EventCallback.
+**4.** We've found that on Dropdown we had both a VisibleChanged and Toggled event, which served the same purpose. We've removed Toggled and changed VisibleChanged to a regular Blazor EventCallback.
 
     Replace any Toggled Parameter with the VisibleChanged Parameter.
 
     Change any VisibleChanged event you might've bound to be compliant with a regular Blazor EventCallback.
 
-5. While not strictly a breaking changes, it is advised to also rename all Left and Right values,
+**5.** While not strictly a breaking changes, it is advised to also rename all Left and Right values,
     eg. for TextAlignment and Direction. We have marked them as obsolete and they will be replaced with
     Start and End values. The purpose of the new values is the better naming support for the RTL support
     that should take place in the next Blazorise version.
 
-6. We've changed the DataGrid's RowSelectable evaluation to take in a RowSelectableEventArgs instead.
+**6.** We've changed the DataGrid's RowSelectable evaluation to take in a RowSelectableEventArgs instead.
     This way we can provide you with increased information on the selection being handled.
     This new RowSelectableEventArgs will still give you access to the current row item and additionaly to the type of selection being done, RowClick, MultiSelectClick, MultiSelectAll
     You will need to change your RowSelectable handlers to expect a RowSelectableEventArgs instead.
 
-7. Remove Blazorise static files from index.html> or _Layout.cshtml / _Host.cshtml. Files that are safe to be removed are:
+**7.** Remove Blazorise static files from index.html> or _Layout.cshtml / _Host.cshtml. Files that are safe to be removed are:
 
 - _content/Blazorise/blazorise.js
 - _content/Blazorise.Bootstrap/blazorise.bootstrap.js

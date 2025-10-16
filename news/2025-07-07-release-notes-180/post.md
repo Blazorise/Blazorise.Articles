@@ -16,16 +16,16 @@ read-time: 7 min
 
 When we released Blazorise 1.7, we promised that the next version would be a major one, 2.0. However, we realized that we still have a lot of work to do before releasing Blazorise 2.0, so we decided to release version 1.8 with some exciting new features and improvements in the meantime.
 
-Blazorise 1.8, codenamed Lokrum after the beautiful island in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
+Blazorise 1.8, codenamed **Lokrum** after the beautiful island in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
 
 ## Key Blazorise 1.8 Highlights 💡
 
 Here's a summary of what's new in this release:
 
-- Scheduler: A powerful new component for comprehensive event scheduling.
-- DataGrid: Enhanced column reordering and batch editing capabilities.
-- Chart Plugins: Improved lifecycle for better performance.
-- MessageService: New Choices method for streamlined user interaction.
+- **Scheduler**: A powerful new component for comprehensive event scheduling.
+- **DataGrid**: Enhanced column reordering and batch editing capabilities.
+- **Chart Plugins**: Improved lifecycle for better performance.
+- **MessageService**: New Choices method for streamlined user interaction.
 
 Dive deeper below to discover the full potential of these features.
 
@@ -33,7 +33,7 @@ Dive deeper below to discover the full potential of these features.
 
 To smoothly upgrade your application, follow these simple steps:
 
-Update all Blazorise.* package references to 1.8.
+Update all **Blazorise.*** package references to **1.8**.
 
 Blazorise should now work without any major breaking changes to the API.
 
@@ -71,7 +71,7 @@ As always, we have made improvements to the DataGrid component, one of the most 
 
 #### The New Method Overload
 
-Introduced the Task New( TItem newItem ) overload method, enabling the programmatic addition of new items to the batch edit collection when batch editing is enabled. This ensures that newly added items are tracked as unsaved changes, allowing them to be persisted upon saving or discarded upon cancellation.
+Introduced the Task New( TItem newItem ) overload method, enabling the programmatic addition of new items to the batch edit collection when batch editing is enabled. This ensures that newly added items are tracked as **unsaved changes**, allowing them to be persisted upon saving or discarded upon cancellation.
 
 #### Default Select Filter
 

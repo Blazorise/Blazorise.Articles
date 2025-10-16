@@ -16,21 +16,21 @@ read-time: 3 min
 
 Blazorise 1.8.1 is now available! This maintenance release focuses on resolving key issues and delivering refinements that improve overall stability, consistency, and usability across the framework.
 
-Although primarily a maintenance update, version 1.8.1 introduces meaningful improvements to components such as Bar, Badge, PdfViewer, and DataGrid, ensuring a smoother developer experience and more polished UI behavior.
+Although primarily a maintenance update, version 1.8.1 introduces meaningful improvements to components such as **Bar**, **Badge**, **PdfViewer**, and **DataGrid**, ensuring a smoother developer experience and more polished UI behavior.
 
 ## Key Highlights in 1.8.1
 
 ### Improved Component Stability
 
-Several critical bugs have been fixed, including issues with Divider styling, PdfViewer worker loading, and Badge close button colors. Additionally, exceptions in Splitter and ChartZoom components have been resolved, leading to a more stable runtime experience.
+Several critical bugs have been fixed, including issues with **Divider styling**, **PdfViewer worker loading**, and **Badge close button colors**. Additionally, exceptions in **Splitter** and **ChartZoom** components have been resolved, leading to a more stable runtime experience.
 
 ### Data & Layout Enhancements
 
-The DataGrid now correctly passes updated objects in the RowUpdated event, ensuring proper synchronization with your data source. The grouping drop area has also been visually improved by removing unnecessary light background styling. Meanwhile, the Bar can now be collapsed externally, and BarDropdownItem supports a new CustomMatch parameter for better navigation scenarios.
+The **DataGrid** now correctly passes updated objects in the **RowUpdated** event, ensuring proper synchronization with your data source. The grouping drop area has also been visually improved by removing unnecessary light background styling. Meanwhile, the **Bar** can now be collapsed externally, and **BarDropdownItem** supports a new CustomMatch parameter for better navigation scenarios.
 
 ### Developer Quality of Life
 
-The JSRichTextEditModule is now overridable, offering greater extensibility. We also added a dedicated unit test setup for Charts, helping ensure reliability and easier contributions moving forward.
+The **JSRichTextEditModule** is now overridable, offering greater extensibility. We also added a dedicated unit test setup for **Charts**, helping ensure reliability and easier contributions moving forward.
 
 ## Full Changelog
 
@@ -54,14 +54,14 @@ Your feedback is essential to us, and we appreciate your continued support and c
 
 ## Known incompatibilities
 
-As of now, there are no known incompatibilities with the previous Blazorise 1.7.x releases. We encourage all users to upgrade to 1.8.1.
+As of now, there are no known incompatibilities with the previous Blazorise **1.7.x** releases. We encourage all users to upgrade to **1.8.1**.
 
 If you experience any unexpected behavior change in your projects after upgrading to 1.8.1, please file an issue on GitHub.
 
 ## Commercial Support
 
-Blazorise is an open-source project that thrives on community contributions and support. To sustain ongoing development and improvements, we offer commercial licenses that provide additional benefits while ensuring the project's long-term success.
+Blazorise is an open-source project that thrives on community contributions and support. To sustain ongoing development and improvements, we offer **commercial licenses** that provide additional benefits while ensuring the project's long-term success.
 
-With a commercial license, you gain access to premium forum support, private repositories, and exclusive community-licensed themes. Your support directly contributes to the enhancement of Blazorise and ensures its continuous growth.
+With a commercial license, you gain access to **premium forum support, private repositories, and exclusive community-licensed themes**. Your support directly contributes to the enhancement of Blazorise and ensures its continuous growth.
 
 To explore commercial licensing options, visit our website at Blazorise Commercial.

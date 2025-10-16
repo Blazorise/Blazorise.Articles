@@ -20,7 +20,7 @@ We are pleased to announce the release of version 1.4.1, which includes importan
 
 ### Fix for Invalid Filename in inputmask.js
 
-Corrected the script reference for inputmask.js to fix loading errors caused by an invalid filename.
+Corrected the script reference for **inputmask.js** to fix loading errors caused by an invalid filename.
 
 ### TimePicker Default Display Value Null
 
@@ -47,7 +47,7 @@ Your feedback and contributions are what make the Blazorise community thrive. Pl
 
 ## Known incompatibilities
 
-As of now, there are no known incompatibilities with the previous Blazorise 1.4.x releases. We encourage all users to upgrade to 1.4.1.
+As of now, there are no known incompatibilities with the previous Blazorise **1.4.x** releases. We encourage all users to upgrade to **1.4.1**.
 
 If you experience any unexpected behavior change in your projects after upgrading to 1.4.1, please file an issue on GitHub.
 

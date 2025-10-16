@@ -20,10 +20,10 @@ read-time: 3 min
 
 Effective immediately, our pricing plans are changing as follows:
 
-- Annual Professional Plan: Previously $599 → Now €590/year
-- Annual Enterprise Plan: Previously $999 → Now €990/year
-- Monthly Professional Plan: Previously $59 → Now €59/month
-- Monthly Enterprise Plan: Previously $99 → Now €99/month
+- **Annual Professional Plan:** Previously $599 → Now €590/year
+- **Annual Enterprise Plan:** Previously $999 → Now €990/year
+- **Monthly Professional Plan:** Previously $59 → Now €59/month
+- **Monthly Enterprise Plan:** Previously $99 → Now €99/month
 
 ## Why the Change?
 

@@ -18,21 +18,21 @@ Another update for our 1.0 Blazorise is now available. Many improvements are inc
 
 ## Changes
 
-- [#3742](https://github.com/Megabit/Blazorise/pull/3742): FileEdit : Fix Missing UpdateFileStartedAsync on OpenReadStream + reset progress PR
+- [#3742](https://github.com/Megabit/Blazorise/pull/3742): FileEdit : Fix Missing UpdateFileStartedAsync on OpenReadStream + reset progress **PR**
 - [#3770](https://github.com/Megabit/Blazorise/issues/3770): Autocomplete Component, hides previous selected items in the dropdown
 - [#3815](https://github.com/Megabit/Blazorise/issues/3815): Error 'Chart' property not accessible for unidentified object.
 - [#3789](https://github.com/Megabit/Blazorise/issues/3789): DataGrid Validation causes an exception if a computed property is present in class
 - [#3758](https://github.com/Megabit/Blazorise/issues/3758): Button used for "Split Dropdown" does not close the dropdown
 - [#3799](https://github.com/Megabit/Blazorise/issues/3799): AutoComplete with Multiple has problems showing the selected values when they are set through parameter
 - [#3795](https://github.com/Megabit/Blazorise/issues/3795): DataGrid with EmptyTemplate in VirtualizeManualReadMode does not load data
-- [#3797](https://github.com/Megabit/Blazorise/pull/3797): A couple fixes for bugs related to rapid double-clicking of MessageAlert and Modal buttons PR
-- [#3786](https://github.com/Megabit/Blazorise/pull/3786): Docs: adds missing comments PR
+- [#3797](https://github.com/Megabit/Blazorise/pull/3797): A couple fixes for bugs related to rapid double-clicking of MessageAlert and Modal buttons **PR**
+- [#3786](https://github.com/Megabit/Blazorise/pull/3786): Docs: adds missing comments **PR**
 - [#3784](https://github.com/Megabit/Blazorise/issues/3784): Show suitable error when something is missing in validation
-- [#3852](https://github.com/Megabit/Blazorise/pull/3852): Fix border utility theme colors PR
+- [#3852](https://github.com/Megabit/Blazorise/pull/3852): Fix border utility theme colors **PR**
 - [#3767](https://github.com/Megabit/Blazorise/issues/3767): When InputMask bound value is set to null, InputMask does not update its value internally
 - [#3798](https://github.com/Megabit/Blazorise/issues/3798): DatePicker's DateChanged occurs when date is changed in parent and passed through parameter
 - [#3757](https://github.com/Megabit/Blazorise/issues/3757): NumericPicker: View/Display breaks when control's Disabled property is changed
-- [#3869](https://github.com/Megabit/Blazorise/pull/3869): DatePicker: Improve SetParametersAsync and prevent incorrect DateChanged or DatesChanged PR
+- [#3869](https://github.com/Megabit/Blazorise/pull/3869): DatePicker: Improve SetParametersAsync and prevent incorrect DateChanged or DatesChanged **PR**
 
 ## Support
 

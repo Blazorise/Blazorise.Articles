@@ -22,20 +22,20 @@ We hope you enjoy this new release and we can't wait to see what you build with 
 
 ## Blazorise 1.2 Highlights 💡
 
-- New Tailwind CSS provider.
-- New Chart DataLabels component.
-- New LottieAnimation component.
-- New Cropper component.
-- New Groupable feature in DataGrid.
-- Improvements on TreeView.
-- Improvements on Autocomplete.
-- New Licensing System.
+- New **Tailwind CSS** provider.
+- New **Chart DataLabels** component.
+- New **LottieAnimation** component.
+- New **Cropper** component.
+- New **Groupable** feature in **DataGrid**.
+- Improvements on **TreeView**.
+- Improvements on **Autocomplete**.
+- New **Licensing System**.
 
 ## Upgrade an existing Blazorise project 👨‍🔧
 
-To upgrade an existing Blazorise applications from 1.1.x to 1.2:
+To upgrade an existing Blazorise applications from **1.1.x** to **1.2**:
 
-- Update all Blazorise.* package references to 1.2.
+- Update all **Blazorise.*** package references to **1.2**.
 
 You should now be able to use Blazorise without any breaking changes.
 
@@ -159,7 +159,7 @@ We have also introduced various new APIs for controlling the text alignment, ver
 
 ## New Licensing System
 
-We are pleased to announce a new licensing system for Blazorise 1.2, designed to enhance the security of your Blazor applications. To begin using the new system, simply log in to your account on the Blazorise website and generate your unique Product Token. Once generated, you will need to define this token in your Blazor application during startup.
+We are pleased to announce a new licensing system for Blazorise 1.2, designed to enhance the security of your Blazor applications. To begin using the new system, simply log in to your account on the Blazorise website and generate your unique **Product Token**. Once generated, you will need to define this token in your Blazor application during startup.
 
 Please be advised that, at present, the ability to generate the product token is only available to our commercial users. However, we are working diligently to make this feature accessible to all users in the near future.
 

@@ -24,7 +24,7 @@ Resolved an issue where the SelectList component in the AntDesign provider was c
 
 ### NotificationService IntervalBeforeClose
 
-Addressed the bug where the IntervalBeforeClose parameter was not being respected in the NotificationService, causing notifications not to close as expected.
+Addressed the bug where the **IntervalBeforeClose** parameter was not being respected in the NotificationService, causing notifications not to close as expected.
 
 ### ModalProvider Parameter Reference Loss
 
@@ -47,7 +47,7 @@ Your feedback and contributions are what make the Blazorise community thrive. Pl
 
 ## Known incompatibilities
 
-As of now, there are no known incompatibilities with the previous Blazorise 1.4.x releases. We encourage all users to upgrade to 1.4.3.
+As of now, there are no known incompatibilities with the previous Blazorise **1.4.x** releases. We encourage all users to upgrade to **1.4.3**.
 
 If you experience any unexpected behavior change in your projects after upgrading to 1.4.3, please file an issue on GitHub.
 

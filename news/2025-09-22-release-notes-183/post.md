@@ -14,7 +14,7 @@ read-time: 2 min
 
 # Blazorise 1.8.3 – Maintenance Release
 
-Blazorise 1.8.3 is now available! While this is primarily a maintenance release, we went beyond small fixes to ensure a smoother experience for production apps. Alongside targeted DataGrid improvements, we've corrected a license banner condition issue-keeping Blazorise stable and professional for both community and commercial users.
+Blazorise 1.8.3 is now available! While this is primarily a maintenance release, we went beyond small fixes to ensure a smoother experience for production apps. Alongside targeted DataGrid improvements, we've corrected a **license banner condition** issue-keeping Blazorise stable and professional for both community and commercial users.
 
 ## What's New in 1.8.3
 
@@ -42,10 +42,10 @@ Everything that went into 1.8.3:
 
 ## Upgrading
 
-This update is fully compatible within the 1.8.x series. No breaking changes are expected, but review the fixes above if you depend on specific DataGrid behavior or license banner conditions.
+This update is fully compatible within the **1.8.x** series. No breaking changes are expected, but review the fixes above if you depend on specific DataGrid behavior or license banner conditions.
 
 ## Thank you & commercial support
 
-Blazorise grows through the support of our community and commercial partners. If you rely on Blazorise, consider our commercial licenses, they support ongoing development and provide benefits like priority support and premium themes.
+Blazorise grows through the support of our community and commercial partners. If you rely on Blazorise, consider our **commercial licenses**, they support ongoing development and provide benefits like priority support and premium themes.
 
 Explore licensing options here: Blazorise Commercial. Your support directly fuels Blazorise's future.

@@ -14,7 +14,7 @@ read-time: 3 min
 
 # Maintenance release: Blazorise 1.7.4
 
-We are excited to announce the release of Blazorise 1.7.4, bringing improvements, fixes, and better documentation for a smoother development experience. This release focuses on refining existing components and enhancing documentation to support developers using Blazorise.
+We are excited to announce the release of Blazorise **1.7.4**, bringing improvements, fixes, and better documentation for a smoother development experience. This release focuses on refining existing components and enhancing documentation to support developers using Blazorise.
 
 ## What's New in 1.7.4
 
@@ -44,7 +44,7 @@ Your feedback is essential to us, and we appreciate your continued support and c
 
 ## Known incompatibilities
 
-As of now, there are no known incompatibilities with the previous Blazorise 1.6.x releases. We encourage all users to upgrade to 1.7.4.
+As of now, there are no known incompatibilities with the previous Blazorise **1.6.x** releases. We encourage all users to upgrade to **1.7.4**.
 
 If you experience any unexpected behavior change in your projects after upgrading to 1.7.4, please file an issue on GitHub.
 

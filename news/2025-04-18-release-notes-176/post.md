@@ -14,7 +14,7 @@ read-time: 3 min
 
 # 🐣 Blazorise 1.7.6 – Maintenance Release
 
-We're excited to roll out Blazorise 1.7.6 just in time for the Easter holidays! This maintenance release brings a range of stability fixes, quality-of-life improvements, and some meaningful updates to the documentation experience. Whether you're planning to take a well-deserved break or push through some last-minute feature updates, this release is here to make things smoother.
+We're excited to roll out **Blazorise 1.7.6** just in time for the Easter holidays! This maintenance release brings a range of stability fixes, quality-of-life improvements, and some meaningful updates to the documentation experience. Whether you're planning to take a well-deserved break or push through some last-minute feature updates, this release is here to make things smoother.
 
 ## Key Highlights in 1.7.6
 
@@ -73,14 +73,14 @@ Your feedback is essential to us, and we appreciate your continued support and c
 
 ## Known incompatibilities
 
-As of now, there are no known incompatibilities with the previous Blazorise 1.6.x releases. We encourage all users to upgrade to 1.7.6.
+As of now, there are no known incompatibilities with the previous Blazorise **1.6.x** releases. We encourage all users to upgrade to **1.7.6**.
 
 If you experience any unexpected behavior change in your projects after upgrading to 1.7.6, please file an issue on GitHub.
 
 ## Commercial Support
 
-Blazorise is an open-source project that thrives on community contributions and support. To sustain ongoing development and improvements, we offer commercial licenses that provide additional benefits while ensuring the project's long-term success.
+Blazorise is an open-source project that thrives on community contributions and support. To sustain ongoing development and improvements, we offer **commercial licenses** that provide additional benefits while ensuring the project's long-term success.
 
-With a commercial license, you gain access to premium forum support, private repositories, and exclusive community-licensed themes. Your support directly contributes to the enhancement of Blazorise and ensures its continuous growth.
+With a commercial license, you gain access to **premium forum support, private repositories, and exclusive community-licensed themes**. Your support directly contributes to the enhancement of Blazorise and ensures its continuous growth.
 
 To explore commercial licensing options, visit our website at Blazorise Commercial.

@@ -14,7 +14,7 @@ read-time: 11 min
 
 # Announcing Blazorise 1.3
 
-Greetings to our amazing developer community! We're thrilled to announce the latest and greatest version of Blazorise – version 1.3.
+Greetings to our amazing developer community! We're thrilled to announce the latest and greatest version of Blazorise – version **1.3**.
 
 It has been far too long since the last major version, but given the number of new features included in this release, it has been well worth the wait.
 
@@ -24,28 +24,28 @@ Dive in to learn about the new components, enhancements, and features we've adde
 
 Here's a summary of what’s new in this release:
 
-- Offcanvas Component: Now offers dynamic appearance from top, bottom, left, or right of the screen. Comprising three main elements (Offcanvas, OffcanvasHeader, OffcanvasBody), it enhances the responsive design for both desktop and mobile.
-- Splitter Component: Craft resizable panels with new functionalities including GutterSize, MinSize, MaxSize, and more.
-- Signature Pad: Collect digital signatures effortlessly.
-- Charts.Annotation: Draw Lines and Boxes over the Charts.
-- DataGrid Enhancements: New FilterMode for dynamic column-based filtering.
+- **Offcanvas Component**: Now offers dynamic appearance from top, bottom, left, or right of the screen. Comprising three main elements (Offcanvas, OffcanvasHeader, OffcanvasBody), it enhances the responsive design for both desktop and mobile.
+- **Splitter Component**: Craft resizable panels with new functionalities including GutterSize, MinSize, MaxSize, and more.
+- **Signature Pad**: Collect digital signatures effortlessly.
+- **Charts.Annotation**: Draw Lines and Boxes over the Charts.
+- **DataGrid Enhancements**: New **FilterMode** for dynamic column-based filtering.
 - Improved parameters for DataGridSelectColumn.
 - CancellableRowChange and SavedRowItem improvements.
-- New ApplySorting method for programmatic column sorting.
+- New **ApplySorting** method for programmatic column sorting.
 - Predefined column filtering with FilterMethod.
-- Expandable row groups with ExpandGroups and CollapseGroups.
-- New ClearFilter overload.
-- New HeaderGroupCaption to group multiple column headers.
+- Expandable row groups with **ExpandGroups** and **CollapseGroups**.
+- New **ClearFilter** overload.
+- New **HeaderGroupCaption** to group multiple column headers.
 
-TreeView: Observable collections.
+**TreeView**: Observable collections.
 
-Utilities: CSS Grid, Text Size, List Styles, ...
+**Utilities**: CSS Grid, Text Size, List Styles, ...
 
 ## Upgrade an existing project 👨‍🔧
 
-To upgrade an existing Blazorise applications from 1.2.x to 1.3:
+To upgrade an existing Blazorise applications from **1.2.x** to **1.3**:
 
-- Update all Blazorise.* package references to 1.3.
+- Update all **Blazorise.*** package references to **1.3**.
 
 You should now be able to use Blazorise without any breaking changes to the API.
 
@@ -68,7 +68,7 @@ Please visit, observable data docs for more information.
 
 ### .NET 8 Support
 
-First and foremost, Blazorise 1.3 fully supports the new .NET 8 SDK. It is currently using the most recent preview 7.
+First and foremost, Blazorise 1.3 fully supports the new .NET 8 SDK. It is currently using the most recent **preview 7**.
 
 Generally the .NET 8 should be safe, and it should behave similarly to .NET 6 and .NET 7, but be aware we will consider this release of Blazorise with .NET 8 as an alpha until the final .NET 8 SDK version is released.
 
@@ -76,7 +76,7 @@ Plase try it, and if you find any issue please report it on our GitHub pages.
 
 ### Offcanvas Component
 
-The new Offcanvas component offers the flexibility to appear, or slide from the top, bottom, left, or right of your screen, making it highly adaptable to a variety of design contexts. This makes it a perfect fit for both desktop and mobile layouts, allowing you to create responsive designs with ease.
+The new Offcanvas component offers the flexibility to appear, or slide from the **top**, **bottom**, **left**, or **right** of your screen, making it highly adaptable to a variety of design contexts. This makes it a perfect fit for both desktop and mobile layouts, allowing you to create responsive designs with ease.
 
 We believe the Offcanvas component will offer our developers a new level of versatility when crafting unique user interfaces, making it easier to manage additional content or navigation in a user-friendly and accessible way.
 
@@ -84,11 +84,11 @@ We believe the Offcanvas component will offer our developers a new level of vers
 
 We're thrilled to announce the introduction of a new Splitter component in the latest update of Blazorise. This interactive and flexible layout component provides a way to create resizable panels in your application.
 
-GutterSize: Controls the width of the draggable area between sections, allowing users to adjust the relative sizes of the sections.
+**GutterSize**: Controls the width of the draggable area between sections, allowing users to adjust the relative sizes of the sections.
 
-MinSize: Specifies the minimum size to which a section can be resized, ensuring the usability and readability of content in each section.
+**MinSize**: Specifies the minimum size to which a section can be resized, ensuring the usability and readability of content in each section.
 
-MaxSize: Specifies the maximum size to which a section can be resized, ensuring the usability and readability of content in each section.
+**MaxSize**: Specifies the maximum size to which a section can be resized, ensuring the usability and readability of content in each section.
 
 and more
 
@@ -136,7 +136,7 @@ Please visit, datagrid filtering docs to find a new example showcasing this feat
 
 #### New FilterMethod
 
-You are now able to use pre defined filtering on a per-column basis by specifying FilterMethod on DataGridColumn.
+You are now able to use pre defined filtering on a per-column basis by specifying **FilterMethod** on **DataGridColumn**.
 
 #### New ClearFilter
 
@@ -150,7 +150,7 @@ The DataGridNumericColumn now renders a numeric filter input & applies the corre
 
 The new HeaderGroupCaption feature for the DataGrid component is something we are eager to share. With the help of this feature, you can combine several DataGrid column headers under a single, comprehensive caption.
 
-This is particularly helpful when you need to group related columns under a single heading for easier understanding and organization. For instance, you could put columns like "Price," "Discount," and "Total Cost" under a header group titled "Financial Details" in a DataGrid that displays product details.
+This is particularly helpful when you need to group related columns under a single heading for easier understanding and organization. For instance, you could put columns like **"Price,"** **"Discount,"** and **"Total Cost"** under a header group titled **"Financial Details"** in a DataGrid that displays product details.
 
 With this improvement, you can better structure your data and give users more information. By enabling more intuitive navigation through the DataGrid, grouping column headers using HeaderGroupCaption greatly improves the readability of complicated grids.
 
@@ -158,7 +158,7 @@ Please visit, DataGrid Header Group docs to find a new example showcasing this f
 
 #### DataGrid Select Column Data Binding
 
-The DataGridSelectColumn will now enable you to provide new parameters so you can quickly render a select structure. Similarly to how a regular SelectList works, you can define new parameters, Data, ValueField, and TextField that will help to danamically bind the underline select element.
+The DataGridSelectColumn will now enable you to provide new parameters so you can quickly render a select structure. Similarly to how a regular SelectList works, you can define new parameters, **Data**, **ValueField**, and **TextField** that will help to danamically bind the underline select element.
 
 Please visit, DataGridSelectColumn docs to find a new example showcasing this feature.
 
@@ -246,9 +246,9 @@ Fixed an issue where in some certain cases, if buttons existed inside the Dropdo
 
 ### Validation with IValidatableObject
 
-We've added support for IValidatableObject. This new feature enhances the flexibility and robustness of your form validation processes. By implementing the IValidatableObject interface in your models, you can now provide custom validation logic that is more complex and situation-specific than what can be achieved with simple data annotation validation.
+We've added support for **IValidatableObject**. This new feature enhances the flexibility and robustness of your form validation processes. By implementing the **IValidatableObject** interface in your models, you can now provide custom validation logic that is more complex and situation-specific than what can be achieved with simple data annotation validation.
 
-This interface includes the Validate method, which you can override to define your custom validation rules. This method is automatically invoked when performing model validation, ensuring that your custom rules are adhered to. This feature is useful when the validity of a property's value is dependent on another property's value, or when an intricate validation process is required.
+This interface includes the **Validate** method, which you can override to define your custom validation rules. This method is automatically invoked when performing model validation, ensuring that your custom rules are adhered to. This feature is useful when the validity of a property's value is dependent on another property's value, or when an intricate validation process is required.
 
 ### New Utilities 🧰
 
@@ -262,11 +262,11 @@ We believe this new grid system will offer our developers more control and creat
 
 #### Lists Style Image
 
-The ListStyleImage parameter allows you to define the marker images for list items. This gives you more flexibility and creativity in styling your lists, enhancing your user interface by going beyond the traditional bullet points or numerical markers. You can now use custom images to highlight or differentiate individual list items. It takes a string as its value, which should be Base64 encoded string that represents an image, or a URL of the image you wish to use as your list marker. Please note that the image URL must be enclosed in url() and the image should ideally be a small, suitable size for use as a list marker. The example can be found on Typography pages.
+The ListStyleImage parameter allows you to define the marker images for list items. This gives you more flexibility and creativity in styling your lists, enhancing your user interface by going beyond the traditional bullet points or numerical markers. You can now use custom images to highlight or differentiate individual list items. It takes a string as its value, which should be **Base64** encoded string that represents an image, or a **URL** of the image you wish to use as your list marker. Please note that the image URL must be enclosed in url() and the image should ideally be a small, suitable size for use as a list marker. The example can be found on Typography pages.
 
 #### Text Size
 
-The TextSize enum provides predefined sizes from extra small to extra large, as well as supporting various heading sizes from Heading1 (largest) to Heading6 (smallest). The example can be found on Typography pages.
+The **TextSize** enum provides predefined sizes from **extra small** to **extra large**, as well as supporting various heading sizes from **Heading1** (largest) to **Heading6** (smallest). The example can be found on Typography pages.
 
 ## Wrap Up
 

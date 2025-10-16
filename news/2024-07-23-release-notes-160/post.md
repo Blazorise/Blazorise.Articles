@@ -20,11 +20,11 @@ Welcome to the July 2024 Blazorise 1.6 update! In this version, we are excited t
 
 Here's a summary of what's new in this release:
 
-- Charts - Zoom Plugin: Enhance your data exploration with our new zoom and pan functionalities.
-- Video: updated to the new VidStack library
-- DataGrid: Dynamic Data Binding
-- DataGrid: Rapid Editing Mode
-- Table & DataGrid: Mobile Responsive Mode
+- **Charts - Zoom Plugin:** Enhance your data exploration with our new zoom and pan functionalities.
+- **Video**: updated to the new VidStack library
+- **DataGrid:** Dynamic Data Binding
+- **DataGrid:** Rapid Editing Mode
+- **Table & DataGrid:** Mobile Responsive Mode
 
 Dive into each section for a comprehensive overview of these features and learn how they can enhance your projects. We value your feedback and encourage you to share your thoughts as we continue to refine and improve Blazorise.
 
@@ -32,7 +32,7 @@ Dive into each section for a comprehensive overview of these features and learn 
 
 Upgrade your Blazorise application seamlessly with the following steps:
 
-Update all Blazorise.* package references to 1.6.
+Update all **Blazorise.*** package references to **1.6**.
 
 Enjoy the latest features without any breaking changes to the API.
 
@@ -40,15 +40,15 @@ Enjoy the latest features without any breaking changes to the API.
 
 ### Charts - Zoom Plugin
 
-We are excited to announce the addition of a Zoom plugin to the Chart component. This new feature significantly enhances the interactivity and usability of our charts, providing users with the ability to zoom in and out on specific areas, as well as pan around the chart. These functionalities allow for a more detailed and dynamic exploration of data.
+We are excited to announce the addition of a **Zoom** plugin to the **Chart** component. This new feature significantly enhances the interactivity and usability of our charts, providing users with the ability to zoom in and out on specific areas, as well as pan around the chart. These functionalities allow for a more detailed and dynamic exploration of data.
 
 Key Features:
 
-Zoom In/Out: Users can now zoom into specific areas of the chart to get a closer look at the data points and trends.
+**Zoom In/Out**: Users can now zoom into specific areas of the chart to get a closer look at the data points and trends.
 
-Panning: The ability to pan around the chart ensures that users can easily navigate to different sections of the chart without losing their zoomed-in view.
+**Panning**: The ability to pan around the chart ensures that users can easily navigate to different sections of the chart without losing their zoomed-in view.
 
-Enhanced Data Exploration: These new interactive capabilities make it easier to analyze and interpret data, leading to more insightful observations and decisions.
+**Enhanced Data Exploration**: These new interactive capabilities make it easier to analyze and interpret data, leading to more insightful observations and decisions.
 
 For more detailed information and instructions on how to use the Chart Zoom Plugin, please visit our documentation.
 
@@ -64,9 +64,9 @@ Given these advantages, we felt it was essential to update our component to take
 
 In addition to leveraging the core improvements of VidStack, we have also added a few small but impactful features to our component:
 
-Thumbnails: You can now specify URLs for video thumbnails, enhancing the visual preview of the video content.
+**Thumbnails:** You can now specify URLs for video thumbnails, enhancing the visual preview of the video content.
 
-ProtectionServerCertificateUrl: For HLS (HTTP Live Streaming) content, we have added support for specifying the Protection Server Certificate URL, improving the security and integrity of video streams.
+**ProtectionServerCertificateUrl:** For HLS (HTTP Live Streaming) content, we have added support for specifying the Protection Server Certificate URL, improving the security and integrity of video streams.
 
 We are confident that these updates will provide a superior video playback experience and look forward to the benefits they will bring.
 
@@ -76,7 +76,7 @@ The Blazorise DataGrid has received a multitude of new improvements in this upda
 
 #### 1. New Mobile Responsive Mode
 
-With the introduction of the new ResponsiveMode parameter in the underlying Table component, the DataGrid now supports TableResponsiveMode.Mobile. This mode renders a dedicated layout for mobile devices, where the columns are stacked on top of each other for better readability and usability on smaller screens.
+With the introduction of the new **ResponsiveMode** parameter in the underlying Table component, the DataGrid now supports **TableResponsiveMode.Mobile**. This mode renders a dedicated layout for mobile devices, where the columns are stacked on top of each other for better readability and usability on smaller screens.
 
 Please note that in this mode, the DataGrid may have limited functionality. Features such as caption templates, fixed headers, resizing, and others might not be compatible. This feature is highly opinionated, meaning it enforces a specific design philosophy aimed at optimizing mobile experience.
 
@@ -88,17 +88,17 @@ For more detailed information and to provide feedback, please visit our document
 
 In the DataGrid AutoGenerateColumns feature, we've added new attributes to the attribute based API to be able to further configure the way that the columns are rendered.
 
-[DisplayAttribute]: Represents an attribute that can be applied to properties or fields to specify the caption.
+**[DisplayAttribute]**: Represents an attribute that can be applied to properties or fields to specify the caption.
 
-[OrderAttribute]: Represents an attribute that can be applied to properties or fields to specify the order in which they should be displayed or edited.
+**[OrderAttribute]**: Represents an attribute that can be applied to properties or fields to specify the order in which they should be displayed or edited.
 
-[IgnoreFieldAttribute]: Represents an attribute that can be applied to properties or fields to specify they should not be automatically generated.
+**[IgnoreFieldAttribute]**: Represents an attribute that can be applied to properties or fields to specify they should not be automatically generated.
 
-[SelectAttribute]: Represents an attribute that can be applied to properties or fields to specify additional metadata for a select component.
+**[SelectAttribute]**: Represents an attribute that can be applied to properties or fields to specify additional metadata for a select component.
 
-[NumericAttribute]: Represents an attribute that can be applied to numeric properties or fields to specify additional metadata.
+**[NumericAttribute]**: Represents an attribute that can be applied to numeric properties or fields to specify additional metadata.
 
-[DateAttribute]: Represents an attribute that can be applied to date properties or fields to specify additional metadata.
+**[DateAttribute]**: Represents an attribute that can be applied to date properties or fields to specify additional metadata.
 
 For more detailed information, please visit our documentation.
 
@@ -116,7 +116,7 @@ The improved filtering system now dynamically renders numeric, select, check, da
 
 #### 5. Dynamic Data Binding
 
-With dynamic data binding, the DataGrid can now seamlessly bind to dynamic data sources, providing a more flexible and efficient way to handle data. Additionally, this feature includes support for ExpandoObject, enabling the DataGrid to work with dynamic objects that can have their properties added or removed at runtime.
+With dynamic data binding, the DataGrid can now seamlessly bind to dynamic data sources, providing a more flexible and efficient way to handle data. Additionally, this feature includes support for **ExpandoObject**, enabling the DataGrid to work with dynamic objects that can have their properties added or removed at runtime.
 
 This new capability enhances the usability of the DataGrid, particularly in scenarios where data structures are not known at compile time or can change dynamically.
 
@@ -128,11 +128,11 @@ Added a new .SetLoading() method so you're able to control the loading state of 
 
 #### 7. Rapid Editing Mode
 
-Introducing the new CellNavigable parameter for the Blazorise DataGrid. Enabling this feature allows you to navigate DataGrid cells using arrow keys, tabbing, and clicking, enhancing the ease of use and efficiency. This feature is especially useful when used in conjunction with DataGridEditMode.Cell, providing a seamless rapid editing experience. For more details and an updated example, please visit the Rapid Editing section on the DataGrid Editing page.
+Introducing the new **CellNavigable** parameter for the Blazorise DataGrid. Enabling this feature allows you to navigate DataGrid cells using arrow keys, tabbing, and clicking, enhancing the ease of use and efficiency. This feature is especially useful when used in conjunction with **DataGridEditMode.Cell**, providing a seamless rapid editing experience. For more details and an updated example, please visit the Rapid Editing section on the DataGrid Editing page.
 
 Find out an updated example for Rapid Editing in the DataGrid Editing page.
 
-We have also introduced the DataGridEditModeOptions to give you further customization over how your DataGrid handles edit operations. This new feature includes two additional CellEdit options, allowing you to enable or disable editing on a single or double click. These options offer more control over the editing experience, tailoring it to fit your specific needs.
+We have also introduced the **DataGridEditModeOptions** to give you further customization over how your DataGrid handles edit operations. This new feature includes two additional **CellEdit** options, allowing you to enable or disable editing on a single or double click. These options offer more control over the editing experience, tailoring it to fit your specific needs.
 
 ### New MaskPlaceholder on InputMask
 
@@ -142,7 +142,7 @@ Introduced a new MaskPlaceholder property on the InputMask component to provide 
 
 We have added a new parameter to the DatePicker component, named DisabledDays. It is now possible to disable any days of a week to be picked by the user.
 
-### Automatic <Code>rel</Code> Attribute for Blazorise Link Component
+### Automatic <code>rel</code> Attribute for Blazorise Link Component
 
 Links with Target="Target.Blank" now automatically include rel="noopener noreferrer" for enhanced security and privacy. This update prevents new pages from accessing the original page, reducing phishing risks, and ensures referrer information is not sent to the target site, thereby enhancing the security and privacy of external links by default.
 
@@ -152,7 +152,7 @@ As an ongoing process to improve security of Blazorise dependencies, we have upd
 
 ### Better form support in SSR mode
 
-In this release we have made some changes to enable beter support our input components like TextEdit, NumericEdit, etc. to work with server-side rendering. It works by automatically calculating the name attribute of form field which then helps it to properly POST the form.
+In this release we have made some changes to enable beter support our input components like TextEdit, NumericEdit, etc. to work with **server-side rendering**. It works by automatically calculating the name attribute of form field which then helps it to properly POST the form.
 
 #### Body Theme Font Options
 
