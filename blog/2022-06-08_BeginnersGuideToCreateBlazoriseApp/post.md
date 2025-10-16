@@ -6,7 +6,7 @@ canonical: /blog/how-to-create-a-blazorise-application-beginners-guide
 image-url: img/How_to_create_a_Blazorise_application_A_Beginners_Guide.png
 image-title: Blazorise WASM application: A Beginner's Guide
 author-name: Mladen Macanović
-author-image: "/assets/img/authors/mladen.png"
+author-image: /assets/img/authors/mladen.png
 category: How To Guides
 posted-on: 2022-06-08
 read-time: 5 min
