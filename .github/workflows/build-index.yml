@@ -1,0 +1,53 @@
+name: Build content index
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'blog/**'
+      - 'news/**'
+      - '.github/workflows/build-index.yml'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+
+permissions:
+  contents: write
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build index.json + posts.zip
+        run: node scripts/build-index.mjs
+
+      - name: Commit runtime artifacts
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add runtime/index.json runtime/version.json
+          # posts.zip is optional; comment out if you don't want it committed
+          if [ -f runtime/posts.zip ]; then git add runtime/posts.zip; fi
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(runtime): update content index [skip ci]"
+            git push
+          fi
