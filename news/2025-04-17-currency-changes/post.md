@@ -14,7 +14,7 @@ read-time: 3 min
 
 # Blazorise Pricing Update: Transitioning from USD to EUR
 
-<p class="lead">We're announcing an important update to the pricing structure for Blazorise. Effective immediately, all our product pricing will transition from USD to EUR.</p>
+We're announcing an important update to the pricing structure for Blazorise. Effective immediately, all our product pricing will transition from USD to EUR.{.lead}
 
 ## New Pricing Structure
 
