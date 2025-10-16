@@ -12,8 +12,6 @@ posted-on: 2025-10-08
 read-time: 2 min
 ---
 
-![Blazorise 1.8.4 – Maintenance Release](img/v184.png)
-
 # Blazorise 1.8.4 – Maintenance Release
 
 Blazorise 1.8.4 is a focused stability update. It addresses several community-reported issues to make everyday UX smoother, especially around Autocomplete and Validation, while adding small but meaningful improvements to DataGrid. If you're on the 1.8.x line, this release should feel like an easy drop-in with immediate quality-of-life benefits.
@@ -22,9 +20,15 @@ Blazorise 1.8.4 is a focused stability update. It addresses several community-re
 
 Key fixes and enhancements included in this release:
 
+### Autocomplete (Checkbox mode): reliable closing, no ghost overlay, correct alignment
+
 We resolved a group of UI issues where the Autocomplete dropdown in Checkbox mode would not close on blur, could leave a “ghost” overlay on the page, or appear slightly misaligned. The control now properly respects focus transitions, cleans up overlays, and positions the dropdown consistently across themes and providers. This noticeably improves multi-select workflows and keyboard navigation.
 
+### Autocomplete: faster, safer typing with robust cancellation
+
 Rapid typing previously risked overlapping lookups and out-of-order results. We now properly handle cancellation tokens for in-flight operations, ensuring stale requests are cancelled promptly. The result is a more responsive feel, fewer redundant lookups, and consistent, predictable suggestion lists, no flicker, no stale data.
+
+### ValidationRule.IsEmail: accepts valid emails again
 
 The IsEmail validation rule was rejecting some valid addresses. We updated the logic to correctly accept common real-world formats (e.g., subdomains, “+” tags, and longer TLDs). Forms depending on email validation should now pass as expected without custom workarounds.
 

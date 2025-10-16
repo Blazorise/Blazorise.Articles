@@ -12,9 +12,9 @@ posted-on: 2025-09-16
 read-time: 2 min
 ---
 
-![Blazorise Affiliate Program Discontinued](img/blazorise-affiliate-discontinued.png)
-
 # Blazorise Affiliate Program Discontinued
+
+<p class="lead">We are announcing the immediate removal of the Blazorise affiliate program. Unfortunately, the program has been misused by individuals and has become an operational burden for our team.</p>
 
 ## Why We're Removing the Program
 

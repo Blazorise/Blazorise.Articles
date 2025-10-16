@@ -12,8 +12,6 @@ posted-on: 2022-04-11
 read-time: 1 min
 ---
 
-![Update for the 1.0 release - patch 3](img/v103.png)
-
 # Update for the 1.0 release - patch 3
 
 Support for Blazorise v1.0.x is still going strong, and in this release, we're bringing more fixes and stability improvements. We hope it will help you solve any issues you might be experiencing before.

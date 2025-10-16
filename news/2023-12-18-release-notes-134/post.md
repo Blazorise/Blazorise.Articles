@@ -11,8 +11,6 @@ category: News
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.3.4](img/v134.png)
-
 # Maintenance release: Blazorise 1.3.4
 
 This maintenance release focuses on enhancing the overall stability and performance of the Blazorise framework.

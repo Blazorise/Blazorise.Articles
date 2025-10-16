@@ -12,8 +12,6 @@ posted-on: 2021-10-04
 read-time: 1 min
 ---
 
-![v0.9.4 - patch 5 release notes](img/v094-5.png)
-
 # v0.9.4 - patch 5 release notes
 
 ## Change Log

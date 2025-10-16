@@ -12,8 +12,6 @@ posted-on: 2023-03-20
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.2.2](img/v122.png)
-
 # Maintenance release: Blazorise 1.2.2
 
 It’s been a while since our last stable release! And this is not the long anticipated 1.3, nor 2.0, but simply a Blazorise 1.2.2 maintenance release to fix a handful of issues in the current 1.2 stable branch.

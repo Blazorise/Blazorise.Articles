@@ -12,8 +12,6 @@ posted-on: 2021-11-09
 read-time: 30 sec
 ---
 
-![v0.9.4 - patch 8 release notes](img/v094-8.png)
-
 # v0.9.4 - patch 8 release notes
 
 ## Change Log

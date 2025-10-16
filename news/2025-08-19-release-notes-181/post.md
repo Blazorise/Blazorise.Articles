@@ -12,8 +12,6 @@ posted-on: 2025-08-19
 read-time: 3 min
 ---
 
-![Blazorise 1.8.1 – Maintenance Release](img/v181.png)
-
 # Blazorise 1.8.1 – Maintenance Release
 
 Blazorise 1.8.1 is now available! This maintenance release focuses on resolving key issues and delivering refinements that improve overall stability, consistency, and usability across the framework.
@@ -22,9 +20,15 @@ Although primarily a maintenance update, version 1.8.1 introduces meaningful imp
 
 ## Key Highlights in 1.8.1
 
+### Improved Component Stability
+
 Several critical bugs have been fixed, including issues with Divider styling, PdfViewer worker loading, and Badge close button colors. Additionally, exceptions in Splitter and ChartZoom components have been resolved, leading to a more stable runtime experience.
 
+### Data & Layout Enhancements
+
 The DataGrid now correctly passes updated objects in the RowUpdated event, ensuring proper synchronization with your data source. The grouping drop area has also been visually improved by removing unnecessary light background styling. Meanwhile, the Bar can now be collapsed externally, and BarDropdownItem supports a new CustomMatch parameter for better navigation scenarios.
+
+### Developer Quality of Life
 
 The JSRichTextEditModule is now overridable, offering greater extensibility. We also added a dedicated unit test setup for Charts, helping ensure reliability and easier contributions moving forward.
 

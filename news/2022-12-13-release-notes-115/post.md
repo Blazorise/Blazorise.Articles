@@ -12,8 +12,6 @@ posted-on: 2022-12-13
 read-time: 2 min
 ---
 
-![Maintenance release: Blazorise 1.1.5](img/v115.png)
-
 # Maintenance release: Blazorise 1.1.5
 
 A new maintenance release is now available to the general public. This release fixes some nasty bugs, particularly with the NumericPicker and Drag and Drop components.

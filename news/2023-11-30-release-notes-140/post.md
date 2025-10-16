@@ -12,8 +12,6 @@ posted-on: 2023-12-08
 read-time: 9 min
 ---
 
-![Announcing Blazorise 1.4 - Zadar](img/v140.png)
-
 # Announcing Blazorise 1.4 - Zadar
 
 Greetings to our amazing developer community! We're thrilled to announce the latest and greatest version of Blazorise – version 1.4.
@@ -48,9 +46,13 @@ You should now be able to use Blazorise without any breaking changes to the API.
 
 ## New Features & Enhancements 🚀
 
+### Official .NET 8 Support
+
 We have made Blazorise fully compatible with .NET in our latest maintenance v1.3.3 release, but it is still worth mentioning. In this release, you can enjoy all the benefits of .NET Blazor SSR with Blazorise. We made a great deal to make it compatible on time with the .NET release back in November. We hope you will enjoy it as much as we do.
 
 Our web is also already running on .NET 8 faster than ever.
+
+### DatePicker input mask
 
 With the feedback from our community, we've introduced a new InputFormat parameter for the input mask. This feature lets developers define the input's format, ensuring consistency and data integrity.
 
@@ -58,7 +60,11 @@ At this moment, almost all date formats should be supported. The only feature th
 
 To see it in action, visit the DatePicker page
 
+### DataGrid improvements
+
 DataGrid is our most used component, and it is only natural that it receives so much work. We have made many new features to make it even better.
+
+#### 1. More filter modes
 
 With the introduction of the new DataGridFilterMode.Menu feature, we've found out that although it was an appreciated feature, users wanted even more contextual filtering support, i.e: numeric columns, with inbuilt 'less than'' or 'greater than' filtering method support.
 
@@ -72,7 +78,11 @@ We've now changed the DataGridColumn FilterMethod to be a specialized and contex
 If you're using the DataGridFilterMode.Menu feature, your date and numeric columns will now present the new filtering capabilities.
     Otherwise, you may also set the new filtering capabilities on your regular columns, but please take note that these will only work if the columns are of a numeric or date type.
 
+#### 2. Help labels
+
 It's a small feature but it still deserves to be mentioned. We have introduced a new HelpText parameter in the DataGridColumn that will render a small help text below the column field input when editing making your UX even better.
+
+#### 3. Cell editing
 
 We have lost count of how many times this feature was requested, and finally, we have made it possible. Our engineer, David, took much time and effort, but it was all worth it. The new editing mode will undoubtedly be of a great deal for everyone.
 
@@ -83,6 +93,8 @@ Every DataGrid edit-related feature, like validations, etc., should continue to 
 For an experience similar to Excel, we recommend using the Cell edit mode with the DataGridCommandColumn configured as EditCommandAllowed="false" DeleteCommandAllowed="false". Additionally you might even set the SaveCommandAllowed="false" CancelCommandAllowed="false", and use the Enter and Escape keys to Save and Cancel, respectively.
 
 It is of note that Tab and Shift+Tab will also work as expected. Whenever the user presses these keys, the cell value will be saved and the next or previous cell will be selected.
+
+#### 4. Batch editing and styling
 
 Batch editing is another feature that was requested so many times.
 
@@ -97,7 +109,11 @@ Additionally, we have introduced new Parameters to enhance customization options
 
 With these broader parameters now available, the DataGridColumn parameters CellClass and CellStyle are now considered outdated and will be phased out in an upcoming version.
 
+#### 5. Column based filtering
+
 The FilterMode can now be individually set for each column. When specified, it will supersede the overall DataGrid's FilterMode setting on a per-column basis.
+
+### TransferList
 
 We've introduced a new TransferList component. This component facilitates various features for list management:
 
@@ -109,19 +125,29 @@ Customizable Item Templates: To cater to different content needs, the TransferLi
 
 To see it in action, visit the TransferList page
 
+### ListGroup and ListView improvements
+
 In addition to the new TransferList component, we've also enhanced the ListGroup and ListView components by incorporating multiple selection support. This update is a part of our continuous efforts to improve user experience and functionality. Now, users can select multiple items within the ListGroup and ListView components, offering greater flexibility and efficiency in managing lists and item selections. This feature complements the TransferList component, ensuring a cohesive and versatile user experience across these different components.
 
+### Tabs rendering mode
+
 The TabsContent component now also supports the RenderMode feature. This is specially useful when you need to use the Tabs and TabsContent separately, since these are unable to communicate, you can now set the RenderMode in the TabsContent.
+
+### ColorPicker options
 
 In this Blazorise update, new customization features - ShowOpacitySlider, ShowHueSlider, and ShowInputField - have been added to the ColorPicker component. These options enhance user interaction by allowing adjustments in opacity, hue, and direct color value input.
 
 To see these features in action, visit the ColorPicker page in the Blazorise documentation.
+
+### Sticky Table and DataGrid columns
 
 We are excited to announce a new feature in our DataGrid and Table component in the latest Blazorise release. This feature introduces the ability to set fixed cells or columns to the left or right side of a DataGrid. This functionality is particularly useful for financial tables, reports, and dashboards, where key information needs to remain visible while scrolling through large amounts of data. We hope that this new feature will enhance your application's user experience and data presentation capabilities.
 
 The new feature allows users to anchor cells or columns to either the left (Start) or right (End) side of the DataGrid. This ensures that the fixed cells or columns remain visible and in place as users scroll through the table. To utilize this feature, set the FixedPosition attribute to TableColumnFixedPosition.Start for left-side anchoring or TableColumnFixedPosition.End for right-side anchoring on a cell. Additionally, you must enable fixed columns on a table with the FixedColumns attribute.
 
 For more detailed information and examples, please refer to our DataGrid Fixed Columns documentation.
+
+### Testing with bUnit
 
 Last but not the least. We're thrilled to introduce Blazorise.Tests.bUnit, a new NuGet package for efficiently testing Blazorise components. This addition enhances the testing framework and simplifies the testing process for Blazorise developers.
 

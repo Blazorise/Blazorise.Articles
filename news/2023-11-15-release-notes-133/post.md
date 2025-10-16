@@ -12,17 +12,21 @@ posted-on: 2023-11-15
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.3.3](img/v133.png)
-
 # Maintenance release: Blazorise 1.3.3
 
 We are pleased to announce the release of Blazorise 1.3.3. This maintenance release focuses on enhancing the overall stability and performance of the Blazorise framework. Key updates include migration to .NET 8, fixes for DatePicker validation, and improvements in DataGrid pagination handling.
 
 ## What's New in 1.3.3
 
+### Migration to .NET 8
+
 Blazorise 1.3.3 has been updated to be fully compatible with .NET 8. This ensures improved performance, security, and the latest features from the .NET framework. Developers migrating from older versions of .NET should refer to the .NET 8 migration documentation for a seamless transition.
 
+### Fixed: DatePicker Validation Not Showing
+
 Resolved an issue where the DatePicker validation messages were not displaying as expected. Validation messages for DatePicker controls will now appear correctly, providing users with necessary feedback on their input.
+
+### Improved: DataGrid ReadData Handling Pagination
 
 Addressed a bug in the DataGrid component where pagination was not properly handled during the ReadData event. Pagination within DataGrid is now more efficient, ensuring accurate data display and interaction for large datasets.
 

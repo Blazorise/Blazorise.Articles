@@ -12,8 +12,6 @@ posted-on: 2021-11-18
 read-time: 30 sec
 ---
 
-![v0.9.4 - patch 9 release notes](img/v094-9.png)
-
 # v0.9.4 - patch 9 release notes
 
 In this release we fixed the bug with Chart serialization introduced with the latest .NET 6.

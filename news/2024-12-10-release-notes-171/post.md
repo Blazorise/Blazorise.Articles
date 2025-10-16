@@ -12,19 +12,23 @@ posted-on: 2024-12-10
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.7.1](img/v171.png)
-
 # Maintenance release: Blazorise 1.7.1
 
 We're excited to announce the maintenance release of Blazorise 1.7.1! This release includes several bug fixes, enhancements, and updates to improve your development experience and streamline our documentation process.
 
 ## What's New in 1.7.1
 
+### Support for Components Without a Parameterless Constructor
+
 Previously, components in Blazor typically required a parameterless constructor due to limitations in the way the framework initializes and instantiates components. With this update, Blazorise now supports scenarios where components rely on constructors with parameters, enabling advanced use cases such as Dependency Injection.
+
+### Documentation Improvements
 
 In this release, we've updated all references to static files, such as stylesheets and scripts, to include query versioning. This change improves caching behavior and ensures that the correct versions of static assets are always loaded in your applications.
 
 This improvement is particularly beneficial for production environments where browser caching can lead to unexpected behavior when static files are updated. With query versioning, you get the peace of mind that your app always uses the right resources.
+
+### Automated API Documentation
 
 We've introduced automation for generating and maintaining Blazorise API documentation, a significant step toward ensuring developers always have access to the most accurate and up-to-date information.
 

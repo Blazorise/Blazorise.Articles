@@ -12,17 +12,21 @@ posted-on: 2024-04-22
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.6.1](img/v161.png)
-
 # Maintenance release: Blazorise 1.6.1
 
 One month ago we have released Blazorise 1.6 which came with many new features and improvements. Today we are pleased to announce the release of version 1.6.1, which includes important bug fixes and enhancements. This release focuses on improving stability and addressing key issues identified by our user community. We are grateful for the feedback and contributions that have helped us make Blazorise better with each update.
 
 ## Major Improvements in 1.6.1
 
+### FileEdit Button Text
+
 Fixed an issue where the FileEdit button text displayed the selected file name after selection. The fix was present only on Bootstrap 5, and the issue was fixed by changing the HTML structure of the FileEdit component. The button text now correctly displays the selected file name after selection.
 
+### Datagrid Detail Row Click
+
 Addressed the issue of disabling row clicks on the DataGrid's multi-selection checkbox. The solution involves using ClickStopPropagation to prevent click events from propagating when clicking near the checkbox. When the checkbox is actually clicked, the OnMultiSelectCheckClicked event is used to manually invoke HandleClick. To maintain the necessary functionality, a multiSelectPreventRowClick option was added to prevent triggering the DetailRow, while allowing other actions to continue as expected.
+
+### Autocomplete with Cropper
 
 Resolved issues with Autocomplete when used alongside Cropper. The problem was that cropper events were not properly disposed of, leading to conflicts with input elements that were listening for + and - keys. We have reported the issue to the Cropper team, who then fixed it. The Blazorise was subsequently updated to incorporate this fix.
 

@@ -12,8 +12,6 @@ posted-on: 2021-08-02
 read-time: 1 min
 ---
 
-![v0.9.4 - patch 3 release notes](img/v094-3.png)
-
 # v0.9.4 - patch 3 release notes
 
 The time for another set of bug fixes is here.

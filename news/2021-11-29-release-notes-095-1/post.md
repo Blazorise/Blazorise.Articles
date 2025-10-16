@@ -12,8 +12,6 @@ posted-on: 2021-11-29
 read-time: 1 min
 ---
 
-![First update for the 0.9.5 release](img/v095-1.png)
-
 # First update for the 0.9.5 release
 
 Hello, again!

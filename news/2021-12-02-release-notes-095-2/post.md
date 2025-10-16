@@ -12,8 +12,6 @@ posted-on: 2021-12-02
 read-time: 30 sec
 ---
 
-![Update for the 0.9.5 release - patch 2](img/v095-2.png)
-
 # Update for the 0.9.5 release - patch 2
 
 With the last update, we have accidentally made a small bug that in some cases could lead to a deadlock while releasing the JS modules. Hopefully, it didn't affect too many of you. It is now fixed and as always, it is advised to update your projects.

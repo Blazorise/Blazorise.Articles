@@ -12,8 +12,6 @@ posted-on: 2022-06-07
 read-time: 2 min
 ---
 
-![Update for the 1.0 release - patch 7](img/v107.png)
-
 # Update for the 1.0 release - patch 7
 
 In parallel to our work on the upcoming feature releases Blazorise 1.2 and our already released 1.1, we backport important fixes to the stable 1.0 branch for use in production.

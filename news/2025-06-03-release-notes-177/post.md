@@ -12,8 +12,6 @@ posted-on: 2025-04-18
 read-time: 3 min
 ---
 
-![🐣 Blazorise 1.7.7 – Maintenance Release](img/v177.png)
-
 # 🐣 Blazorise 1.7.7 – Maintenance Release
 
 We're happy to announce the release of Blazorise 1.7.7, a maintenance update that brings important bug fixes and enhancements to ensure a smoother and more stable experience for developers using Blazorise.
@@ -22,7 +20,11 @@ While this is a smaller release focused primarily on maintenance, it includes se
 
 ## Key Highlights in 1.7.7
 
+### Video: Bundle JS and CSS as a Single File
+
 Blazorise Video now supports bundling its JavaScript and CSS files into a single file. This enhancement reduces the number of HTTP requests and simplifies deployment. It's especially useful for scenarios where minimizing asset requests is critical.
+
+### DataGrid: Fix OldItem in RowUpdated Callback
 
 We've fixed a long-standing issue where the OldItem in the RowUpdated event was not correctly populated. This fix helps developers compare the updated values with the original ones more reliably.
 

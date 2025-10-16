@@ -12,8 +12,6 @@ posted-on: 2022-11-24
 read-time: 2 min
 ---
 
-![Maintenance release: Blazorise 1.1.4](img/v114.png)
-
 # Maintenance release: Blazorise 1.1.4
 
 We released Blazorise 1.1 just a few monght ago, and like any release, there are few rough edges to iron out which warrant making maintenance "patch" releases.

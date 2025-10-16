@@ -12,17 +12,21 @@ posted-on: 2025-01-17
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.7.3](img/v173.png)
-
 # Maintenance release: Blazorise 1.7.3
 
 We're excited to bring you Blazorise 1.7.3, a focused update addressing key issues and delivering important fixes for smoother and more reliable development. This release reflects feedback from the Blazorise community, and we're grateful for your continued support.
 
 ## What's New in 1.7.3
 
+### PDF Viewer Landscape PDF is Upside Down
+
 Fixed an issue where landscape-oriented PDFs displayed upside down in the PDF Viewer. The viewer now correctly renders landscape documents in their intended orientation.
 
+### Carousel: Fade Animation Not Working
+
 Fixed a problem where the fade animation for the Carousel component was not working correctly. Animations are now smooth and reliable across all supported themes.
+
+### Video Component for Offline Play
 
 The Video component now supports full offline functionality by bundling the necessary JavaScript library locally instead of downloading it from a CDN. This change ensures the component works seamlessly in offline or restricted network environments.
 

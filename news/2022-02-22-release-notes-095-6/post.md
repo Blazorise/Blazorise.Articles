@@ -12,8 +12,6 @@ posted-on: 2022-02-22
 read-time: 1 min
 ---
 
-![Update for the 0.9.5 release - patch 6](img/v095-6.png)
-
 # Update for the 0.9.5 release - patch 6
 
 We got busy working on the final v1.0, but the current version is still getting some love. Here you can see all the most critical issues fixed since the last minor release.

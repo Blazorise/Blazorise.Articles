@@ -12,8 +12,6 @@ posted-on: 2022-03-08
 read-time: 1 min
 ---
 
-![Update for the 1.0 release - patch 1](img/v101.png)
-
 # Update for the 1.0 release - patch 1
 
 I guess no big release can escape from some unintentional bugs. So in this regular update for v1.0, we're bringing some of the most critical fixes reported by the community.

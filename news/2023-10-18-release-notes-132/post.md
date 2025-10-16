@@ -12,19 +12,25 @@ posted-on: 2023-10-18
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.3.2](img/v132.png)
-
 # Maintenance release: Blazorise 1.3.2
 
 Blazorise, your  go-to component library for Blazor, has just released a maintenance update packed with valuable improvements. Let's dive into the key highlights:
 
 ## What's New in 1.3.2
 
+### Enhanced Validation
+
 Validation is crucial, and Blazorise now ensures error messages defined on ValidationError take top priority. This means users get immediate feedback, making your forms more user-friendly and reliable.
+
+### Safer RichTextEdit
 
 RichTextEdit's JavaScript invocation has been fixed for increased stability. You can trust it to deliver seamless text editing and formatting experiences without unexpected hiccups.
 
+### Autocomplete Fixes
+
 Autocomplete is now more robust, whether for simple text suggestions or complex data selection. Expect a smoother user experience in various scenarios.
+
+### Improved Documentation
 
 Documentation is your guide to Blazorise. With these updates, we made some small adjustments to understand and use the library effectively, reducing your learning curve.
 

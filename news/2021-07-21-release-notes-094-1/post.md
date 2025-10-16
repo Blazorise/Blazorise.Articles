@@ -12,8 +12,6 @@ posted-on: 2021-07-21
 read-time: 1 min
 ---
 
-![v0.9.4 - patch 1 release notes](img/v094-1.png)
-
 # v0.9.4 - patch 1 release notes
 
 There can never be any big release without some small issues. Blazorise v0.9.4 is no exception so we

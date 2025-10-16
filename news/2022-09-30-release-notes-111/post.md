@@ -12,8 +12,6 @@ posted-on: 2022-09-30
 read-time: 2 min
 ---
 
-![Maintenance release: Blazorise 1.1.1](img/v111.png)
-
 # Maintenance release: Blazorise 1.1.1
 
 We released Blazorise 1.1 four days ago, and like any release, there are few rough edges to iron out which warrant making maintenance "patch" releases (1.1.x). Such maintenance releases focus on fixing bugs and not on integrating new features. This helps guarantee that the overall production readiness of the stable branch keeps increasing.

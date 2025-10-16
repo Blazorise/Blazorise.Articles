@@ -12,8 +12,6 @@ posted-on: 2022-06-07
 read-time: 2 min
 ---
 
-![Update for the 1.0 release - patch 6](img/v106.png)
-
 # Update for the 1.0 release - patch 6
 
 Another update for Blazorise 1.0 is now available. This release contains numerous improvements as well as contributions from our community members. All of the modifications are listed below.

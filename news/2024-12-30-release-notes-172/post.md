@@ -12,21 +12,25 @@ posted-on: 2024-12-30
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.7.2](img/v172.png)
-
 # Maintenance release: Blazorise 1.7.2
 
 The Blazorise team is excited to announce the release of version 1.7.2, featuring a series of important bug fixes and improvements to enhance the stability, usability, and performance of the framework. This update addresses critical issues reported by the community and ensures a more seamless experience for developers building modern web applications with Blazorise.
 
 ## What's New in 1.7.2
 
+### Documentation Improvements
+
 Fixed an issue in the documentation where certain component names were incorrectly displayed or referenced. This ensures better accuracy and usability for developers referencing the documentation.
+
+### Improved Table Resizing
 
 Addressed multiple issues with table resizing and the Resizable feature to enhance functionality and compatibility:
 
 - Fixed an issue where table resizing did not work in responsive mode, ensuring seamless adjustments across various screen sizes.
 - Resolved compatibility problems with the Resizable feature when using the Bootstrap 5 provider, ensuring consistent behavior across supported frameworks.
 - Improved column resizing behavior to prevent neighboring columns from shrinking improperly and added horizontal scrollbar visibility for better usability in wide tables. These updates collectively provide a smoother and more reliable resizing experience for developers and end-users alike.
+
+### NumericPicker Alignment
 
 Fixed a visual misalignment issue with the NumericPicker component that caused elements to appear out of place. This update restores proper alignment across supported themes for a cleaner user interface.
 

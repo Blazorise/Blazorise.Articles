@@ -12,9 +12,9 @@ posted-on: 2023-06-06
 read-time: 4 min
 ---
 
-![Changes to Blazorise Plans and Licensing Terms](img/2023-blazorise-plans-change.png)
-
 # Changes to Blazorise Plans and Licensing Terms
+
+<p class="lead">In this article, we'd like to explain the changes to the payment model we will introduce soon.</p>
 
 ## Introduction
 

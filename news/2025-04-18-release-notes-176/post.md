@@ -12,15 +12,17 @@ posted-on: 2025-04-18
 read-time: 3 min
 ---
 
-![🐣 Blazorise 1.7.6 – Maintenance Release](img/v176.png)
-
 # 🐣 Blazorise 1.7.6 – Maintenance Release
 
 We're excited to roll out Blazorise 1.7.6 just in time for the Easter holidays! This maintenance release brings a range of stability fixes, quality-of-life improvements, and some meaningful updates to the documentation experience. Whether you're planning to take a well-deserved break or push through some last-minute feature updates, this release is here to make things smoother.
 
 ## Key Highlights in 1.7.6
 
+### DataGrid: Missing Columns on Null First Row
+
 We fixed a frustrating bug where DataGrid wouldn't generate columns if the first row in the data source contained null values. The improved logic now evaluates the full data set, ensuring reliable and complete column rendering.
+
+### Chart: Crash with Zoom Plugin
 
 Using the Chart component with the zoom plugin could previously result in runtime exceptions. That issue has been resolved, making zooming safe and functional again across all chart types.
 

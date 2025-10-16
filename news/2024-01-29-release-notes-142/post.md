@@ -12,17 +12,21 @@ posted-on: 2024-01-29
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.4.2](img/v142.png)
-
 # Maintenance release: Blazorise 1.4.2
 
 We are excited to announce the release of Blazorise 1.4.2. This version focuses on enhancing functionality and addressing specific issues raised by our community.
 
 ## What's New in 1.4.2
 
+### TreeView Duplicate Entries
+
 Resolved an issue where the TreeView control was displaying duplicate entries. This fix ensures that each entry in the TreeView control is unique, improving data accuracy and user interface experience.
 
+### DataGrid RowSelectable & DetailRowTrigger Conflict
+
 Fixed a conflicting behavior in the DataGrid component when using RowSelectable alongside DetailRowTrigger. This update brings more coherent interaction within the DataGrid, ensuring that both functionalities can work in tandem without issues.
+
+### AutoComplete Exception with Null SelectedTexts
 
 Addressed a problem where the AutoComplete component threw exceptions when the SelectedTexts property was null or unbound and the Backspace key was pressed in an empty field. The component now handles such scenarios gracefully, enhancing its stability and usability.
 

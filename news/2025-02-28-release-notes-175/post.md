@@ -12,8 +12,6 @@ posted-on: 2025-02-28
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.7.5](img/v175.png)
-
 # Maintenance release: Blazorise 1.7.5
 
 Blazorise 1.7.5 is a maintenance release focusing on bug fixes and refinements to improve stability and functionality across various components.
@@ -22,7 +20,11 @@ This release addresses key issues related to the DataGrid, Markdown, Video, and 
 
 ## Key Highlights in 1.7.5
 
+### Improved Markdown File Upload Handling
+
 Managing uploaded files in the Markdown component is now more efficient. With the newly merged uploaded files callback, developers can seamlessly process multiple file uploads without unnecessary complexities. This change enhances the Markdown editing experience by reducing errors and improving user workflow.
+
+### Better DataGrid Cell Editing Behavior
 
 A long-standing issue in the DataGrid where cancelling a cell edit would not restore focus has been fixed. Now, when a user cancels an edit, the focus properly returns to the relevant cell, ensuring a more intuitive and user-friendly interaction.
 

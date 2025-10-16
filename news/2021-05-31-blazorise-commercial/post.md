@@ -12,8 +12,6 @@ posted-on: 2021-05-31
 read-time: 2 min
 ---
 
-![Blazorise Commercial going live](img/blazorise-commercial-live.png)
-
 # Blazorise Commercial going live
 
 Since our last announcement about coming Blazorise licensing changes, we got some very positive comments from the community. As stated in our previous post, Blazorise will stay completely free for all, except for organizations that are exceeding $1M in annual revenue. This change was needed so that Blazorise could continue to grow and implement new features in a healthy and stable environment.

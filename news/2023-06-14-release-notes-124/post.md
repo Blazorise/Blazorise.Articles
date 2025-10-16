@@ -12,8 +12,6 @@ posted-on: 2023-06-14
 read-time: 2 min
 ---
 
-![Maintenance release: Blazorise 1.2.4](img/v124.png)
-
 # Maintenance release: Blazorise 1.2.4
 
 Welcome to the maintenance release of Blazorise v1.2.4!

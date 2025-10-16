@@ -12,8 +12,6 @@ posted-on: 2022-03-30
 read-time: 2 min
 ---
 
-![Update for the 1.0 release - patch 2](img/v102.png)
-
 # Update for the 1.0 release - patch 2
 
 In this update, we're bringing many fixes for the v1.0 release. One of the most significant problems that are now fixed is the problem with caching of JS files that would have an invalid version, and then the older, unsupported version would be used by the browser.

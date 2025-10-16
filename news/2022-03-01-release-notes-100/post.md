@@ -12,8 +12,6 @@ posted-on: 2022-03-04
 read-time: 7 min
 ---
 
-![Announcing Blazorise 1.0](img/v100.png)
-
 # Announcing Blazorise 1.0
 
 Today, we are happy to announce the long-awaited release of Blazorise 1.0. In this post, we're covering many new Blazorise features that will make your app development easier to build and use, along with some of the API changes required to get you started.
@@ -40,11 +38,15 @@ So, let's start.
 
 ## Highlights 🚀
 
+### Chart v3
+
 In this release, we bring long-awaited support for ChartJS v3. Unfortunately, it was impossible to leave support for previous versions considering there were too many breaking changes between v2 and v3.
 
 With Chart v3, we now support almost all v3 configuration settings. In addition, we took great care to document most of the dataset and option fields so that IntelliSense will give you suggestions on how to define the chart correctly.
 
 Since a lot was changed to support ChartJS v3 the migration would take too long to explain so it is best to follow the the Chart.js migration guide as a general rule.
+
+### NumericPicker
 
 The completely new NumericPicker component is created as a replacement for the NumericEdit component.
     All the formating features from NumericEdit are moved to the new component. This breaking change was needed because
@@ -57,38 +59,56 @@ NumericPicker component has many new features like:
 
 It can be seen in action on the NumericPicker page.
 
+### Video
+
 We worked hard to bring you a very new Video component based upon the excellent Plyr video player. The new component fully supports streaming media by implementing HLS and DASH playback media formats.
 
 The component is pretty flexible to use and has most of the video control methods like Play(), Pause(), Stop(), and many others, including also events that can give you the current state of the player.
 
 The new component and its usage can be seen on Video page.
 
+### DatePicker
+
 It is now possible to use date picker to select a range of dates and pick multiple dates. The new feature can be enabled with SelectionMode parameter. Once enabled, you need to use Dates parameters to read or set the days.
 
 The new component with examples can be seen on DatePicker page.
+
+### QRCode
 
 This component is created with the help from one of our community members, njannink. The QRCode component is based on QRCoder, and it is fully running on .NET code without any trace of JavaScript.
 
 You can see it in action on QRCode page.
 
+### Charts Trendline
+
 Charts.Trendline is a new extension and is used to draws a linear trendline in your Chart.
 
 You can see it in action on Trendline page.
 
+### Utilities
+
 There were  some changes in our color utilities. To prepare them for some advanced scenarios in the future, they are converted to be complex enums. The affected enums are Color, Background, TextColor, and Target. This change brings a new way of defining enums values, and it is now possible to define colors with custom names, e.g., Color="btn-purple".
 
 While at the moment they still have the same API, in the future, we will introduce some more advanced features that will allow us to chain options, e.g., Color="Color.Primary.WithGradient".
+
+### Modal
+
+#### Animations
 
 We reworked animations, and they are now calculated dynamically in Blazor without the need for any JavaScript. Also, with an additional API, you now have more control over the animation.
 
 - Animated: Controls whether the modal should animate.
 - AnimationDuration: Sets the modal animation duration in ms.
 
+#### Render Mode
+
 You can now choose from three different rendering modes on the Modal component, similar to what we already have on the Tabs component.
 
 - Default: Always renders the modal HTML content to the DOM.
 - LazyLoad: Lazy loads modal, meaning the modal HTML content will only be rendered/loaded the first time it is visited.
 - LazyReload: Lazy loads modal every time, meaning the modal HTML content will have its HTML re-rendered to the DOM every time.
+
+### Cascading Type Parameter
 
 .NET6 brought us a new feature, CascadingTypeParameter, that reduces the boilerplate code we need to write for Generic Parent/Child components.
     Please refer to <Blazorise.Link To="https://docs.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-6.0#infer-generic-types-based-on-ancestor-components">CascadingTypeParameter Microsoft Docs</Blazorise.Link>
@@ -102,7 +122,13 @@ The following components now have CascadingTypeParameter support:
 
 <DataGridAggregate Field="@@nameof( Employee.IsActive )" AggregationFunction=@@(DataGridAggregate<Employee>.TrueCount) />
 
+### DataGrid
+
+#### Scroll API
+
 Added ScrollTo Api to DataGrid. You may now use the ScrollToRow and ScrollToPixels API when FixedHeader or Virtualize is set on your DataGrid.
+
+#### Detail Row Trigger
 
 DetailRowTrigger has been changed to now have an argument of DetailRowTriggerEventArgs instead of an item. This will enable us to keep providing new features by adding to this context.
 
@@ -120,11 +146,19 @@ We've introduced the following DetailRowTrigger features:
 - Single By setting this property to true, only one DetailRowTemplate will be displayed at a time.
 - DetailRowTriggerType You may now select between two types, Manual and RowClick. By setting the type to Manual, you may further control the DetailRowTemplate display behavior programmatically by using the existing ToggleDetailRow.
 
+#### Click behavior
+
 Added PreventRowClick to DataGridColumn / DataGridCommandColumn. By setting this parameter to true, the column cell will not longer trigger the RowClicked and subsequent events.
+
+#### Validation
 
 Added ValidationItemCreator Parameter. You may use this parameter to provide and override the way to instantiate an item for validation purposes.
 
+#### Aggregates
+
 Added AggregateRowPosition Parameter to Datagrid. By setting the DataGridAggregateRowPosition, you will now be able to position the aggregate row, just like the pager.
+
+### FileEdit
 
 Added MaxFileSize Parameter, this will default to long.MaxValue
 
@@ -136,14 +170,20 @@ Added FileInvalidReason to the FileEndedEventArgs so you may track what went wro
 - TaskCancelled
 - UnexpectedError
 
+### Drag & Drop
+
 We're finally bringing support for a long-time requested drag & drop feature in this release. The new feature is comprised of DropContainer and DropZone components and is designed to be flexible and easy to use. It supports item templating, selectors for drop items, styling, and more.
 
 The new component and its usage can be seen on Drag & Drop page.
+
+### Auto Complete
 
 Introduced CloseOnSelection Parameter. You will be able to set this parameter to false, so the auto complete's dropdown does not close on selections.
     
         
             Note: This feature will only work with multiple selection.
+
+### Dropdown
 
 When using nested dropdowns, the nested dropdowns will now consider the configured direction.
 

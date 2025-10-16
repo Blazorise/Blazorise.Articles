@@ -12,8 +12,6 @@ posted-on: 2025-10-14
 read-time: 2 min
 ---
 
-![Blazorise 1.8.5 – Focused Stability Update](img/v185.png)
-
 # Blazorise 1.8.5 – Focused Stability Update
 
 Blazorise 1.8.5 continues our focus on polish and reliability within the 1.8.x line. This update resolves two important bugs affecting real-world projects: a TransferList selection issue and a Table event handling problem that could overload Blazor Server apps. These fixes ensure smoother interactivity and better performance, especially in SignalR-heavy environments.
@@ -22,7 +20,11 @@ Blazorise 1.8.5 continues our focus on polish and reliability within the 1.8.x l
 
 This release focuses on improving usability and stability in key interactive components.
 
+### TransferList: single item selection restored
+
 A regression had caused TransferList items to become unselectable in single-selection mode. We've corrected this behavior so you can once again select and move individual items as expected. Multi-selection and drag-drop workflows remain unaffected.
+
+### Table: prevent event bubbling and excessive SignalR traffic
 
 We've addressed a critical issue where unused mouse events inside the Table component could bubble up and flood SignalR on Blazor Server. The fix prevents unnecessary event propagation, reducing noise and improving responsiveness for data-heavy applications.
 

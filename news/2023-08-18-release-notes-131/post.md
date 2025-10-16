@@ -12,17 +12,19 @@ posted-on: 2023-08-19
 read-time: 2 min
 ---
 
-![Maintenance release: Blazorise 1.3.1](img/v131.png)
-
 # Maintenance release: Blazorise 1.3.1
 
 We hope you’ve been having a great experience building with Blazorise 1.3. Today, we’re pleased to announce the maintenance release of version 1.3.1, which brings some crucial bug fixes and documentation enhancements.
 
 ## What's New in 1.3.1
 
+### Validation System Fix
+
 The primary motivation behind this release is to address a bug that some of our users reported in the validation system. A small group of developers faced intermittent validation issues, where validations would sometimes not work as expected.
 
 We take such reports seriously and prioritize user experience above all else. We're glad to inform you that the bug has been resolved. You can now expect a smoother and more reliable validation experience when using Blazorise.
+
+### Documentation Improvements
 
 Your feedback is invaluable. Based on your input and our ongoing commitment to clarity, we've made some tweaks to the documentation. These updates should provide clearer guidance and enable developers to get up and running faster with Blazorise. Whether you're a seasoned developer or just getting started, we believe you'll find these enhancements beneficial.
 

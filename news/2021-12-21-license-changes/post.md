@@ -12,8 +12,6 @@ posted-on: 2021-12-21
 read-time: 3 min 10 sec
 ---
 
-![Announcing 2022 Blazorise Plans and Pricing Updates](img/blazorise-plans-change.png)
-
 # Announcing 2022 Blazorise Plans and Pricing Updates
 
 The foundational belief at the heart of Blazorise is as apparent today as the day we started it all: We believe that your APP workflow can always be made faster, smoother, and more straightforward.

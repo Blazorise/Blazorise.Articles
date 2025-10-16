@@ -12,15 +12,17 @@ posted-on: 2025-02-04
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.7.4](img/v174.png)
-
 # Maintenance release: Blazorise 1.7.4
 
 We are excited to announce the release of Blazorise 1.7.4, bringing improvements, fixes, and better documentation for a smoother development experience. This release focuses on refining existing components and enhancing documentation to support developers using Blazorise.
 
 ## What's New in 1.7.4
 
+### DateEdit Fix
+
 Resolved an issue where DateEdit was not working properly with seconds, improving date-time precision.
+
+### MemoEdit Auto-Sizing
 
 The border size is now considered when auto-sizing the MemoEdit component, ensuring a better fit.
 

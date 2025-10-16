@@ -12,8 +12,6 @@ posted-on: 2022-03-08
 read-time: 1 min
 ---
 
-![Update for the 0.9.5 release - patch 7](img/v095-7.png)
-
 # Update for the 0.9.5 release - patch 7
 
 Just a small release to fix an issue on TimePicker component.

@@ -12,8 +12,6 @@ posted-on: 2022-04-20
 read-time: 1 min
 ---
 
-![Update for the 1.0 release - patch 4](img/v104.png)
-
 # Update for the 1.0 release - patch 4
 
 In parallel to our work on the upcoming feature releases Blazorise 1.1, we regularly backport important fixes to the stable 1.0 branch for use in production.

@@ -12,17 +12,21 @@ posted-on: 2024-10-15
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.6.2](img/v162.png)
-
 # Maintenance release: Blazorise 1.6.2
 
 We are pleased to announce the release of version 1.6.2, which includes important bug fixes and enhancements. This release focuses on improving stability and addressing key issues identified by our user community. We encourage all users to update to this latest version to benefit from the improvements and fixes.
 
 ## Major Improvements in 1.6.2
 
+### NumericPicker Step Issue
+
 A bug was identified in the NumericPicker component, where using the up and down arrow keys caused the value to increment or decrement by 2 instead of the expected single-step behavior. This bug has been resolved, and the component now functions correctly, stepping by the correct increment value as intended.
 
+### DatePicker Incorrect Days and Weeks
+
 Users experienced a bug in the DatePicker component where incorrect days and weeks were displayed. This issue was causing confusion in selecting dates. The bug has been addressed, and the DatePicker now accurately reflects the correct calendar days and weeks for all users.
+
+### Field and RadioGroup Buttons Issue
 
 In Blazorise 1.6.1, an issue was identified affecting the layout and functionality of Field and RadioGroup buttons, specifically when using horizontal Field mode. The flex display was not functioning correctly, resulting in inconsistent alignment and interaction of these components. This bug has been resolved, ensuring that the Field and RadioGroup buttons now render and display properly in horizontal mode, with the flex layout working as intended. This fix enhances both the visual consistency and user interaction, providing a more reliable and responsive interface.
 

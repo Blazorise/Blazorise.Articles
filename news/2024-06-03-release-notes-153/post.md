@@ -12,17 +12,21 @@ posted-on: 2024-04-22
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.5.3](img/v153.png)
-
 # Maintenance release: Blazorise 1.5.3
 
 It's been a while, but we're excited to bring you the latest version of Blazorise! In version 1.5.3, we've focused on resolving numerous bugs and enhancing the overall stability and performance of the framework. Here are the most significant fixes included in this release:
 
 ## Major Improvements in 1.5.3
 
+### DataGrid Aggregation Issue
+
 The aggregate on a specific column was not correctly moved when multiple groupings were applied. We have corrected the logic to ensure that column aggregates are now properly aligned, even with multiple groupings, providing accurate data representation and analysis.
 
+### DatePicker Error Message
+
 Error handling for the DatePicker has been improved, ensuring that error messages are now displayed correctly, helping users to identify and correct input errors promptly.
+
+### Video DRM ProtectionHttpRequestHeaders Issue
 
 There was a problem with the HTTP request headers when using Video DRM protection, affecting media playback and security. The HTTP request headers for DRM-protected video content have been fixed, ensuring secure and smooth media playback.
 

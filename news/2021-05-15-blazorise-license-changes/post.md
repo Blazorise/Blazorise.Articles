@@ -12,8 +12,6 @@ posted-on: 2021-05-15
 read-time: 5 min
 ---
 
-![Changes to Blazorise License](img/blazorise-license-change.png)
-
 # Changes to Blazorise License
 
 ## Tl;Dr

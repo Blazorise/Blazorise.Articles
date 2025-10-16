@@ -12,8 +12,6 @@ posted-on: 2023-02-01
 read-time: 7 min
 ---
 
-![Announcing Blazorise 1.2](img/v120.png)
-
 # Announcing Blazorise 1.2
 
 We are excited to announce the release of Blazorise v1.2, which brings a number of new features, improvements, and bug fixes to the framework. This release marks a significant milestone for Blazorise and we are confident that it will provide an even better experience for our users.
@@ -43,6 +41,8 @@ You should now be able to use Blazorise without any breaking changes.
 
 ## New Features 🚀
 
+### Tailwind CSS Provider <Image Source="img/news/120/tailwind-logo.svg" Text="Tailwind logo" Style="height: 1.5rem;" />
+
 As part of our ongoing efforts to improve and enhance the functionality of Blazorise, we are excited to announce the release of a new Tailwind CSS provider for Blazorise, which was created on top of Flowbite with the courtesy of their creators.
 
 For those unfamiliar with Tailwind CSS, it is a utility-first CSS framework that allows developers to easily style their applications by providing a wide range of pre-designed classes that can be applied directly to HTML elements. It is a popular choice for many developers because of its simplicity and flexibility.
@@ -55,9 +55,13 @@ We would like to extend a special thank you to the creators of Flowbite for thei
 
 We hope you enjoy this new feature and we can't wait to see what you build with it!
 
+### Chart DataLabels
+
 The Chart DataLabels is a new feature that provides users with the ability to display data values for each data point in a chart. The Blazorise Chart DataLabels can be customized to suit individual needs, with options for font size, color, and position, allowing for a high degree of flexibility and control. With this new feature, Blazorise charts are now even more powerful and easier to use.
 
 The usage of new DataLabels component with examples can be see at DataLabels page.
+
+### LottieAnimation extension
 
 The LottieAnimation component allows you to easily incorporate beautiful, customizable animations into your Blazor applications using the Lottie Javascript library. The library's purpose is to allow applications to directly render animations exported from Adobe After Effects without needing to recreate the animation by hand in the HTML. It is simple to use and provides a seamless integration with Blazorise.
 
@@ -65,9 +69,13 @@ We are grateful to smfields for their contribution to the Blazorise community an
 
 To get started with the LottieAnimation component simply folllow the guide on our LottieAnimation page.
 
+### QRCode Icon
+
 It is now possible to add custom icons within the QRCode.
 
 The usage of new icon can be see on QRCode page.
+
+### Cropper Component
 
 When building an application, best practice requires reducing an image's surrounding noise and directing a user's attention to a specific part of the image. Image cropping is a method for manipulating images to remove any unwanted elements. By changing the aspect ratio or orientation, we can draw viewers' eyes to the photograph's primary subject and improve the overall composition. This applies to profile pictures or uploading images with specific dimensions.
 
@@ -77,17 +85,25 @@ As with many other components, the Cropper component is also created with the he
 
 The usage of new cropper component can be see on Cropper page.
 
+### Gap Utility
+
 Blazorise Gap Utility is a new feature that provides users with the ability to create gaps between elements in a responsive and flexible manner. This utility allows developers to easily manage spacing between elements and to ensure consistency in their layouts. With the Blazorise Gap Utility, users can control the size and behavior of gaps between elements with ease, making it simple to create beautiful, responsive designs.
+
+### Typography Lead component
 
 This component allows users to easily apply a larger, bolder font style to important text on their web pages, making it stand out and draw the reader's attention.
 
 This new component can be used to wrap any text element, and includes customization options for font size, font weight, and text color.
+
+### AccordionToggle component
 
 We have introduced a new AccordionToggle component that should be used instead of the Button component when building an Accordion.
 
 The Button component is no longer recommended for use inside an Accordion and may cause unexpected behavior. Using the AccordionToggle component will ensure that your Accordion functions as intended.
 
 To update your code, simply replace any instances of Button inside your Accordion with AccordionToggle.
+
+### TreeView improvements
 
 The TreeView component now supports a multiple selection mode, which allows users to select multiple nodes at the same time. To enable this mode, set the SelectionMode property to Multiple. When this mode is enabled, each node in the TreeView will display a checkbox next to its label. Users can then select or deselect nodes by clicking on the checkboxes. The selected nodes can be accessed through the SelectedNodes property, which returns a list of the selected nodes. You can also use the SelectedNodesChanged event to be notified when the selection changes.
 
@@ -102,13 +118,23 @@ In addition to these new APIs, we've also added a new feature called AutoExpandA
 
 We hope this new features will make it easier for users to work with the TreeView component.
 
+### Autocomplete improvements
+
+#### Highlight search
+
 Blazorise Autocomplete now includes a search highlight feature that allows users to easily locate items in the dropdown list. When a search value is entered, the matching items in the dropdown will be highlighted, making it easier to find and select the desired item. This feature is particularly useful when working with large lists of items and helps improve the overall user experience.
+
+#### Virtualize mode
 
 The Virtualize feature allows for loading data on demand while scrolling, which greatly improves the performance of the component when working with large datasets.
 
 With Virtualize, the Autocomplete component only loads the items that are currently visible in the list, and as the user scrolls, more items are loaded in the background. This allows for a much faster and smoother user experience, especially when working with large lists of items.
 
 To use the Virtualize feature, simply set the Virtualize property to "true" on the Autocomplete component.
+
+### DataGrid
+
+#### Grouping
 
 The new grouping feature for Blazorise DataGrid allows you to easily group and organize your data by specific columns. This can be useful for analyzing large sets of data and finding patterns or trends.
 
@@ -119,9 +145,15 @@ Overall, this new grouping feature provides more flexibility and control over ho
 
 The group feature can be seen on the DataGrid grouping page with various examples.
 
+#### New PageSelectorTemplate & PageSizesTemplate
+
 The new Blazorise DataGrid features include a PageSelectorTemplate and PageSizesTemplate. The PageSelectorTemplate allows users to customize the look and feel of the page selector, while the PageSizesTemplate allows users to customize the options for the number of items per page. These new templates provide increased flexibility and customization for the DataGrid, allowing developers to tailor the user experience to their specific needs.
 
+#### Navigable
+
 The new Navigable feature for Blazorise DataGrid allows you to navigate the grid by using the Arrow Up and Arrow Down Keys on your keyboard.
+
+#### Utilities
 
 We have also introduced various new APIs for controlling the text alignment, vertical alignment, flex, and gap utilities of DataGrid header, filter, and group cells. This will make it easier to customize the UI of the DataGrid.
 

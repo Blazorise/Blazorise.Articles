@@ -12,8 +12,6 @@ posted-on: 2023-02-21
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.2.1](img/v121.png)
-
 # Maintenance release: Blazorise 1.2.1
 
 With the main release 1.2.0, several small errors occurred during the development process, which we fixed and the correction of which was shown through this maintenance release. The errors have been fixed in the new 1.2.1 release.

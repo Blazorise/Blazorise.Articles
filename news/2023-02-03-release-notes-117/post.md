@@ -12,8 +12,6 @@ posted-on: 2023-02-03
 read-time: 2 min
 ---
 
-![Maintenance release: Blazorise 1.1.7](img/v117.png)
-
 # Maintenance release: Blazorise 1.1.7
 
 With the successful launch of 1.2, we're shifting our focus to the support branch. This maintenance release addresses a number of issues present in the 1.1.x branch, aimed at helping those still using it make the transition to the newest version, 1.2.

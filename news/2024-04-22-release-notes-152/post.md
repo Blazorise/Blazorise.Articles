@@ -12,17 +12,21 @@ posted-on: 2024-04-22
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.5.2](img/v152.png)
-
 # Maintenance release: Blazorise 1.5.2
 
 The latest update to Blazorise focuses on enhancing the developer experience by delivering key updates and resolving critical bugs, without adding new features. This release concentrates on improving component functionality, security, and usability, refining the framework to ensure a more seamless development process.
 
 ## What's New in 1.5.2
 
+### RichTextEdit Enhancement:
+
 The RichTextEdit component has been updated to leverage Quill JS 2.0. This upgrade provides improved performance and additional features for a better rich text editing experience.
 
+### DataGrid Navigation Issue
+
 Resolved an issue where tab navigation in DataGrid was broken when BatchEdit was set to true. Users can now navigate between cells using the tab key without any interruptions in batch edit mode.
+
+### Video Component - Custom Captions
 
 Fixed a bug in the Video component where the mapping of options for custom captions was not functioning correctly. Custom captions should now properly align with the specified options.
 

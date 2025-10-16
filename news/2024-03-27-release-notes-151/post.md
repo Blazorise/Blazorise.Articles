@@ -12,17 +12,21 @@ posted-on: 2024-03-27
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.5.1](img/v151.png)
-
 # Maintenance release: Blazorise 1.5.1
 
 The latest maintenance update for Blazorise is dedicated to enhancing the development experience through crucial bug fixes and updates, without introducing new features. This release targets improvements in component functionality, security, and usability, focusing on refining the framework for a smoother development process.
 
 ## What's New in 1.5.1
 
+### DataGrid ColumnChooser
+
 Corrected a problem that required the pager to be visible for the Column Chooser to show.
 
+### SignaturePad
+
 Corrected the resizing issue when loading an image via fromUrl in the SignaturePad component.
+
+### DatePicker ElementId
 
 Resolved the issue where ElementId was applied to the hidden input instead of the visible input.
 

@@ -12,8 +12,6 @@ posted-on: 2021-08-02
 read-time: 1 min
 ---
 
-![v0.9.4 - patch 2 release notes](img/v094-2.png)
-
 # v0.9.4 - patch 2 release notes
 
 This patch release brings more bug fixes than usual. Which makes sense considering how many changes we introduced with v0.9.4 release.

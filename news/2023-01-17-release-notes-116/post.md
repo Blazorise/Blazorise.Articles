@@ -12,8 +12,6 @@ posted-on: 2023-01-17
 read-time: 2 min
 ---
 
-![Maintenance release: Blazorise 1.1.6](img/v116.png)
-
 # Maintenance release: Blazorise 1.1.6
 
 We are excited to announce the release of Blazorise v1.1.6, the first maintenance update in the new 2023 year. This release includes several bug fixes and performance improvements. It is probably the last release before the new major release of 1.2 which will include new many features and improvements. We appreciate the feedback and contributions from our community, and are committed to continuing to improve Blazorise with regular updates. Please update to the latest version to take advantage of these improvements and prepare for the new major release of 1.2.

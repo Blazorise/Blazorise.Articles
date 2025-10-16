@@ -12,8 +12,6 @@ posted-on: 2023-05-03
 read-time: 2 min
 ---
 
-![Maintenance release: Blazorise 1.2.3](img/v123.png)
-
 # Maintenance release: Blazorise 1.2.3
 
 We're super excited to share with you the latest maintenance release for Blazorise: version 1.2.3! 😃

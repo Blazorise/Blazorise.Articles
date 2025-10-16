@@ -12,8 +12,6 @@ posted-on: 2022-11-08
 read-time: 4 min
 ---
 
-![<Text Style="text-decoration: line-through;">Maintenance</Text> Release: Blazorise 1.1.3](img/v113.png)
-
 # <Text Style="text-decoration: line-through;">Maintenance</Text> Release: Blazorise 1.1.3
 
 This Blazorise version was supposed to be just a minor maintenance release. Instead, we got a few relatively large features and announcements.

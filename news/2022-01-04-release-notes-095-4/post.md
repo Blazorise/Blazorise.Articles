@@ -12,8 +12,6 @@ posted-on: 2022-01-04
 read-time: 1 min
 ---
 
-![Update for the 0.9.5 release - patch 4](img/v095-4.png)
-
 # Update for the 0.9.5 release - patch 4
 
 This update fixes a nasty bug on DatePicker that incorrectly showed the weekdays. The bug was visible in all localized languages, and it should now be fixed.

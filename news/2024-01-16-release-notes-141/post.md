@@ -12,17 +12,21 @@ posted-on: 2024-01-16
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.4.1](img/v141.png)
-
 # Maintenance release: Blazorise 1.4.1
 
 We are pleased to announce the release of version 1.4.1, which includes important bug fixes and enhancements. This release focuses on improving stability and addressing key issues identified by our user community.
 
 ## What's New in 1.4.1
 
+### Fix for Invalid Filename in inputmask.js
+
 Corrected the script reference for inputmask.js to fix loading errors caused by an invalid filename.
 
+### TimePicker Default Display Value Null
+
 Modified the TimePicker component to provide a more intuitive default display, addressing the issue of it showing a Null value initially.
+
+### DataGridColumn Numeric Type Detection
 
 Enhanced the DataGridColumn's type detection to accurately recognize and handle various numeric types, resolving the issue of incorrect value type determination.
 

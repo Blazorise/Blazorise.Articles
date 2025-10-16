@@ -12,17 +12,21 @@ posted-on: 2024-03-13
 read-time: 3 min
 ---
 
-![Maintenance release: Blazorise 1.4.3](img/v143.png)
-
 # Maintenance release: Blazorise 1.4.3
 
 We're excited to announce the release of Blazorise version 1.4.3. This update includes critical bug fixes and enhancements to improve your development experience and the performance of your Blazorise applications. Here's what's new:
 
 ## What's New in 1.4.3
 
+### AntDesign SelectList size calculation
+
 Resolved an issue where the SelectList component in the AntDesign provider was calculating the wrong offset/size.
 
+### NotificationService IntervalBeforeClose
+
 Addressed the bug where the IntervalBeforeClose parameter was not being respected in the NotificationService, causing notifications not to close as expected.
+
+### ModalProvider Parameter Reference Loss
 
 Fixed an issue with ModalProvider losing parameter references when closing a popup, leading to inconsistent state behavior.
 

@@ -12,8 +12,6 @@ posted-on: 2021-12-20
 read-time: 1 min
 ---
 
-![Update for the 0.9.5 release - patch 3](img/v095-3.png)
-
 # Update for the 0.9.5 release - patch 3
 
 The new update fixes most of the problems on the DataGrid component. We also bring the new localizations, with the help of @@ItsTahaRehman.
