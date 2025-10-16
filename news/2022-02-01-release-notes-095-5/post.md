@@ -14,7 +14,7 @@ read-time: 1 min
 
 # Update for the 0.9.5 release - patch 5
 
-The final v1.0 is closing in, but we're still focused on bringing regular updates to the current 0.9.5 Blazorise version. We're fixing some nasty compatibility issues with JavaScript and some of the smaller issues with TimeEdit and MemoEdit components in this release.
+The final `v1.0` is closing in, but we're still focused on bringing regular updates to the current `0.9.5` Blazorise version. We're fixing some nasty compatibility issues with JavaScript and some of the smaller issues with TimeEdit and MemoEdit components in this release.
 
 Please update your projects and let us know if any problems arise.
 

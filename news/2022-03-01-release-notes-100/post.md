@@ -48,14 +48,14 @@ Since a lot was changed to support ChartJS v3 the migration would take too long 
 
 ### NumericPicker
 
-The completely new NumericPicker component is created as a replacement for the NumericEdit component.
-    All the formating features from NumericEdit are moved to the new component. This breaking change was needed because
-    we felt there was no need to support two similar  behavior components. So, NumericEdit is left to serve as
-    a native HTML input element, and all the custom and advanced stuff are now part of the new NumericPicker.
+The completely new `NumericPicker` component is created as a replacement for the `NumericEdit` component.
+    All the formating features from `NumericEdit` are moved to the new component. This breaking change was needed because
+    we felt there was no need to support two similar  behavior components. So, `NumericEdit` is left to serve as
+    a native HTML input element, and all the custom and advanced stuff are now part of the new `NumericPicker`.
 
-NumericPicker component has many new features like:
+`NumericPicker` component has many new features like:
 
-, and many more. We hope the new NumericPicker will serve you well.
+, and many more. We hope the new `NumericPicker` will serve you well.
 
 It can be seen in action on the NumericPicker page.
 
@@ -63,13 +63,13 @@ It can be seen in action on the NumericPicker page.
 
 We worked hard to bring you a very new Video component based upon the excellent Plyr video player. The new component fully supports streaming media by implementing HLS and DASH playback media formats.
 
-The component is pretty flexible to use and has most of the video control methods like Play(), Pause(), Stop(), and many others, including also events that can give you the current state of the player.
+The component is pretty flexible to use and has most of the video control methods like `Play()`, `Pause()`, `Stop()`, and many others, including also events that can give you the current state of the player.
 
 The new component and its usage can be seen on Video page.
 
 ### DatePicker
 
-It is now possible to use date picker to select a range of dates and pick multiple dates. The new feature can be enabled with SelectionMode parameter. Once enabled, you need to use Dates parameters to read or set the days.
+It is now possible to use date picker to select a range of dates and pick multiple dates. The new feature can be enabled with `SelectionMode` parameter. Once enabled, you need to use `Dates` parameters to read or set the days.
 
 The new component with examples can be seen on DatePicker page.
 
@@ -87,9 +87,9 @@ You can see it in action on Trendline page.
 
 ### Utilities
 
-There were  some changes in our color utilities. To prepare them for some advanced scenarios in the future, they are converted to be complex enums. The affected enums are Color, Background, TextColor, and Target. This change brings a new way of defining enums values, and it is now possible to define colors with custom names, e.g., Color="btn-purple".
+There were  some changes in our color utilities. To prepare them for some advanced scenarios in the future, they are converted to be complex enums. The affected enums are `Color`, `Background`, `TextColor`, and `Target`. This change brings a new way of defining enums values, and it is now possible to define colors with custom names, e.g., `Color="btn-purple"`.
 
-While at the moment they still have the same API, in the future, we will introduce some more advanced features that will allow us to chain options, e.g., Color="Color.Primary.WithGradient".
+While at the moment they still have the same API, in the future, we will introduce some more advanced features that will allow us to chain options, e.g., `Color="Color.Primary.WithGradient"`.
 
 ### Modal
 
@@ -102,7 +102,7 @@ We reworked animations, and they are now calculated dynamically in Blazor withou
 
 #### Render Mode
 
-You can now choose from three different rendering modes on the Modal component, similar to what we already have on the Tabs component.
+You can now choose from three different rendering modes on the Modal component, similar to what we already have on the `Tabs` component.
 
 - **Default**: Always renders the modal HTML content to the DOM.
 - **LazyLoad**: Lazy loads modal, meaning the modal HTML content will only be rendered/loaded the first time it is visited.
@@ -110,53 +110,53 @@ You can now choose from three different rendering modes on the Modal component, 
 
 ### Cascading Type Parameter
 
-.NET6 brought us a new feature, CascadingTypeParameter, that reduces the boilerplate code we need to write for Generic Parent/Child components.
+.NET6 brought us a new feature, `CascadingTypeParameter`, that reduces the boilerplate code we need to write for Generic Parent/Child components.
     Please refer to <Blazorise.Link To="https://docs.microsoft.com/en-us/aspnet/core/blazor/components/templated-components?view=aspnetcore-6.0#infer-generic-types-based-on-ancestor-components">CascadingTypeParameter Microsoft Docs</Blazorise.Link>
     for more information.
 
-The following components now have CascadingTypeParameter support:
+The following components now have `CascadingTypeParameter` support:
 
 - DataGrid
 - Select
 - RadioGroup
 
-<DataGridAggregate Field="@@nameof( Employee.IsActive )" AggregationFunction=@@(DataGridAggregate<Employee>.TrueCount) />
+`<DataGridAggregate Field="@@nameof( Employee.IsActive )" AggregationFunction=@@(DataGridAggregate<Employee>.TrueCount) />`
 
 ### DataGrid
 
 #### Scroll API
 
-Added ScrollTo Api to DataGrid. You may now use the ScrollToRow and ScrollToPixels API when FixedHeader or Virtualize is set on your DataGrid.
+Added `ScrollTo` Api to `DataGrid`. You may now use the `ScrollToRow` and `ScrollToPixels` API when `FixedHeader` or `Virtualize` is set on your `DataGrid`.
 
 #### Detail Row Trigger
 
-DetailRowTrigger has been changed to now have an argument of DetailRowTriggerEventArgs instead of an item. This will enable us to keep providing new features by adding to this context.
+`DetailRowTrigger` has been changed to now have an argument of `DetailRowTriggerEventArgs` instead of an item. This will enable us to keep providing new features by adding to this context.
 
 Whereas before you add:
 
-- DetailRowTrigger="((item)=> item.Salaries?.Count > 0 && item.Id == selectedEmployee?.Id)"
+- `DetailRowTrigger="((item)=> item.Salaries?.Count > 0 && item.Id == selectedEmployee?.Id)"`
 
 now you change to:
 
-- DetailRowTrigger="((context)=> context.Item.Salaries?.Count > 0 && context.Item.Id == selectedEmployee?.Id)"
+- `DetailRowTrigger="((context)=> context.Item.Salaries?.Count > 0 && context.Item.Id == selectedEmployee?.Id)"`
 
-We've introduced the following DetailRowTrigger features:
+We've introduced the following `DetailRowTrigger` features:
 
-- Toggleable Previously, if you selected an item where DetailRowTemplate was already showing, and if DetailRowTrigger evaluated to true, it would hide to DetailRow. By setting this to false, it now stays visible.
-- Single By setting this property to true, only one DetailRowTemplate will be displayed at a time.
-- DetailRowTriggerType You may now select between two types, Manual and RowClick. By setting the type to Manual, you may further control the DetailRowTemplate display behavior programmatically by using the existing ToggleDetailRow.
+- `Toggleable` Previously, if you selected an item where `DetailRowTemplate` was already showing, and if DetailRowTrigger evaluated to true, it would hide to DetailRow. By setting this to false, it now stays visible.
+- `Single` By setting this property to true, only one DetailRowTemplate will be displayed at a time.
+- `DetailRowTriggerType` You may now select between two types, Manual and RowClick. By setting the type to Manual, you may further control the DetailRowTemplate display behavior programmatically by using the existing `ToggleDetailRow`.
 
 #### Click behavior
 
-Added PreventRowClick to DataGridColumn / DataGridCommandColumn. By setting this parameter to true, the column cell will not longer trigger the RowClicked and subsequent events.
+Added `PreventRowClick` to `DataGridColumn` / `DataGridCommandColumn`. By setting this parameter to true, the column cell will not longer trigger the `RowClicked` and subsequent events.
 
 #### Validation
 
-Added ValidationItemCreator Parameter. You may use this parameter to provide and override the way to instantiate an item for validation purposes.
+Added `ValidationItemCreator` Parameter. You may use this parameter to provide and override the way to instantiate an item for validation purposes.
 
 #### Aggregates
 
-Added AggregateRowPosition Parameter to Datagrid. By setting the DataGridAggregateRowPosition, you will now be able to position the aggregate row, just like the pager.
+Added `AggregateRowPosition` Parameter to `Datagrid`. By setting the DataGridAggregateRowPosition, you will now be able to position the aggregate row, just like the pager.
 
 ### FileEdit
 
@@ -172,13 +172,13 @@ Added FileInvalidReason to the FileEndedEventArgs so you may track what went wro
 
 ### Drag & Drop
 
-We're finally bringing support for a long-time requested drag & drop feature in this release. The new feature is comprised of DropContainer and DropZone components and is designed to be flexible and easy to use. It supports item templating, selectors for drop items, styling, and more.
+We're finally bringing support for a long-time requested drag & drop feature in this release. The new feature is comprised of `DropContainer` and `DropZone` components and is designed to be flexible and easy to use. It supports item templating, selectors for drop items, styling, and more.
 
 The new component and its usage can be seen on Drag & Drop page.
 
 ### Auto Complete
 
-Introduced CloseOnSelection Parameter. You will be able to set this parameter to false, so the auto complete's dropdown does not close on selections.
+Introduced `CloseOnSelection` Parameter. You will be able to set this parameter to false, so the auto complete's dropdown does not close on selections.
     
         
             **Note:** This feature will only work with multiple selection.
@@ -193,7 +193,7 @@ Writing all-new features wouldn't make sense, as that would make this post way t
 
 ## Community PRs
 
-- Xeevis did great work by creating a new Blazorise.Icons.Bootstrap package to map Bootstrap icons. The list of mapped icons covers almost 100% of icons, except for some rarely used. We have already requested them on the Bootstrap official repository, and hopefully, they will be included soon.
+- Xeevis did great work by creating a new `Blazorise.Icons.Bootstrap` package to map Bootstrap icons. The list of mapped icons covers almost 100% of icons, except for some rarely used. We have already requested them on the Bootstrap official repository, and hopefully, they will be included soon.
 - njannink created a QRCode images. The new component is based on QRCoder, and it is fully running on .NET code without any trace of JavaScript.
 - WolfgangKluge helped to add a missing actions to our Markdown component.
 - ledpup Added support for the trendline plugin to the Chart extension.

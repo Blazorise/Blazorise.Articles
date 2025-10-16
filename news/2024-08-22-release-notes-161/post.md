@@ -24,11 +24,11 @@ Fixed an issue where the FileEdit button text displayed the selected file name a
 
 ### Datagrid Detail Row Click
 
-Addressed the issue of disabling row clicks on the DataGrid's multi-selection checkbox. The solution involves using ClickStopPropagation to prevent click events from propagating when clicking near the checkbox. When the checkbox is actually clicked, the OnMultiSelectCheckClicked event is used to manually invoke HandleClick. To maintain the necessary functionality, a multiSelectPreventRowClick option was added to prevent triggering the DetailRow, while allowing other actions to continue as expected.
+Addressed the issue of disabling row clicks on the DataGrid's multi-selection checkbox. The solution involves using `ClickStopPropagation` to prevent click events from propagating when clicking near the checkbox. When the checkbox is actually clicked, the `OnMultiSelectCheckClicked` event is used to manually invoke `HandleClick`. To maintain the necessary functionality, a `multiSelectPreventRowClick` option was added to prevent triggering the DetailRow, while allowing other actions to continue as expected.
 
 ### Autocomplete with Cropper
 
-Resolved issues with Autocomplete when used alongside Cropper. The problem was that cropper events were not properly disposed of, leading to conflicts with input elements that were listening for + and - keys. We have reported the issue to the Cropper team, who then fixed it. The Blazorise was subsequently updated to incorporate this fix.
+Resolved issues with `Autocomplete` when used alongside Cropper. The problem was that cropper events were not properly disposed of, leading to conflicts with input elements that were listening for `+` and `-` keys. We have reported the issue to the Cropper team, who then fixed it. The Blazorise was subsequently updated to incorporate this fix.
 
 ## Additional Improvements
 

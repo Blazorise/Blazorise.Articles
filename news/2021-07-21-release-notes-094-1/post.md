@@ -14,13 +14,13 @@ read-time: 1 min
 
 # v0.9.4 - patch 1 release notes
 
-There can never be any big release without some small issues. Blazorise v0.9.4 is no exception so we
+There can never be any big release without some small issues. Blazorise `v0.9.4` is no exception so we
     bring you all the bug fixes reported since the launch day.
 
 A lot of times we get reports regarding the JavaScript interop and having an invalid operation. Mostly the problem
     is because browsers tend to cache JS and CSS files and then are using an older version than the current application
     is expecting. The solution to the problem is easy. You just need to add a version parameter to the JS and CSS files
-    whenever you update Blazorise, eg. v=0.9.4.1.
+    whenever you update Blazorise, eg. `v=0.9.4.1`.
 
 ## Change Log
 

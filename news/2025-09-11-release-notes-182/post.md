@@ -38,13 +38,15 @@ The initial time is applied when the control first renders (or when it's cleared
 
 ### DataGrid Numeric Filtering Fix
 
-Numeric columns now default to **equals** instead of **contains** when filtering. This matches user expectations and avoids false positives (for example, filtering for 10 will no longer match 210).
+Numeric columns now default to **equals** instead of **contains** when filtering. This matches user expectations and avoids false positives (for example, filtering for `10` will no longer match `210`).
 
 ## Experimening
 
 ### Blazorise Outlook Clone
 
 We've also been experimenting with **Blazorise FluentUI** by building a small **Outlook clone**. It's a fun demo that shows how far you can go with the Blazorise FluentUI provider-layout, navigation, and productivity UX all in one place.
+
+![BlazoriseOutlookClone](img/outlook-clone.png)
 
 If you're curious, check out the source code here: github.com/Megabit/BlazoriseOutlookClone.
 

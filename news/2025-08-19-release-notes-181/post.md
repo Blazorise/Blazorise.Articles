@@ -26,7 +26,7 @@ Several critical bugs have been fixed, including issues with **Divider styling**
 
 ### Data & Layout Enhancements
 
-The **DataGrid** now correctly passes updated objects in the **RowUpdated** event, ensuring proper synchronization with your data source. The grouping drop area has also been visually improved by removing unnecessary light background styling. Meanwhile, the **Bar** can now be collapsed externally, and **BarDropdownItem** supports a new CustomMatch parameter for better navigation scenarios.
+The **DataGrid** now correctly passes updated objects in the **RowUpdated** event, ensuring proper synchronization with your data source. The grouping drop area has also been visually improved by removing unnecessary light background styling. Meanwhile, the **Bar** can now be collapsed externally, and **BarDropdownItem** supports a new `CustomMatch` parameter for better navigation scenarios.
 
 ### Developer Quality of Life
 

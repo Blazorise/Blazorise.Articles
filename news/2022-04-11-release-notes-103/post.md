@@ -28,7 +28,7 @@ Support for Blazorise v1.0.x is still going strong, and in this release, we're b
 - [#3688](https://github.com/Megabit/Blazorise/issues/3688): Prevent mouse wheel to change value on numeric picker
 - [#3686](https://github.com/Megabit/Blazorise/issues/3686): Autocomplete Multiple -> css bug
 - [#3684](https://github.com/Megabit/Blazorise/issues/3684): Change disabled Check color.
-- [#3681](https://github.com/Megabit/Blazorise/issues/3681): DataGrid MultiSelect : Cannot provide a value for property BehaviourProvider.
+- [#3681](https://github.com/Megabit/Blazorise/issues/3681): DataGrid MultiSelect : Cannot provide a value for property `BehaviourProvider`.
 - [#3664](https://github.com/Megabit/Blazorise/issues/3664): Bug drawing chart after show/hide dataset.
 - [#3682](https://github.com/Megabit/Blazorise/issues/3682): RightAligned of dropdown not work well.
 

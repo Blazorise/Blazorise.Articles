@@ -14,17 +14,17 @@ read-time: 1 min
 
 # Update for the 0.9.5 release - patch 6
 
-We got busy working on the final v1.0, but the current version is still getting some love. Here you can see all the most critical issues fixed since the last minor release.
+We got busy working on the final `v1.0`, but the current version is still getting some love. Here you can see all the most critical issues fixed since the last minor release.
 
 Please update your projects and let us know if any problems arise.
 
 ## Change Log
 
-- [#3318](https://github.com/Megabit/Blazorise/issues/3318): DataGrid "Cannot create an abstract class" when UseValidation=true
+- [#3318](https://github.com/Megabit/Blazorise/issues/3318): DataGrid "Cannot create an abstract class" when `UseValidation=true`
 - [#3414](https://github.com/Megabit/Blazorise/issues/3414): Datagrid: Investigate Save/Cancel btns inline edit mode
 - [#3442](https://github.com/Megabit/Blazorise/issues/3442): DataGrid: ArgumentNullException on select all
 - [#3386](https://github.com/Megabit/Blazorise/issues/3386): DataGrid: Sync SelectedRows to children components
-- [#3452](https://github.com/Megabit/Blazorise/issues/3452): TableRow: Draggable="true" not working
+- [#3452](https://github.com/Megabit/Blazorise/issues/3452): TableRow: `Draggable="true"` not working
 - [#3480](https://github.com/Megabit/Blazorise/issues/3480): Datagrid: selection stops working
 
 ## Support

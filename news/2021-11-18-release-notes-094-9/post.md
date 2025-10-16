@@ -16,12 +16,12 @@ read-time: 30 sec
 
 In this release we fixed the bug with Chart serialization introduced with the latest .NET 6.
 
-Please note that this will probably be the last 0.9.4 update and everyone is advised to update their projects
+Please note that this will probably be the last `0.9.4` update and everyone is advised to update their projects
     to the latest 0.9.5 release.
 
 ## Change Log
 
-- [#3116](https://github.com/Megabit/Blazorise/issues/3116): Charts JsonNumberHandlingAttribute
+- [#3116](https://github.com/Megabit/Blazorise/issues/3116): Charts `JsonNumberHandlingAttribute`
 
 ## Support
 

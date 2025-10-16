@@ -36,40 +36,40 @@ Old documentation will still be available at v094.blazorise.com.
 
 ## Migration 🛠
 
-No big release can be done without some breaking changes and this release is no exception. Considering this is the last 0.9.*
-    release before 1.0, there was no other time. We tried to make the changes to a minimum but nevertheless, you will need to
+No big release can be done without some breaking changes and this release is no exception. Considering this is the last `0.9.*`
+    release before `1.0`, there was no other time. We tried to make the changes to a minimum but nevertheless, you will need to
     adjust your code. Here are the required steps that needs to be done:
 
 **1.** Changed all the following methods from synchronous to asynchronous.
 
-**2.** Remove NotificationType, Message, and Title parameters from the NotificationAlert.
+**2.** Remove `NotificationType`, `Message`, and `Title` parameters from the NotificationAlert.
 
-**3.** Remove Title component and replace it with the Heading component.
+**3.** Remove `Title` component and replace it with the `Heading` component.
 
-**4.** We've found that on Dropdown we had both a VisibleChanged and Toggled event, which served the same purpose. We've removed Toggled and changed VisibleChanged to a regular Blazor EventCallback.
+**4.** We've found that on `Dropdown` we had both a `VisibleChanged` and `Toggled` event, which served the same purpose. We've removed `Toggled` and changed `VisibleChanged` to a regular Blazor `EventCallback`.
 
-    Replace any Toggled Parameter with the VisibleChanged Parameter.
+    Replace any `Toggled` Parameter with the `VisibleChanged` Parameter.
 
-    Change any VisibleChanged event you might've bound to be compliant with a regular Blazor EventCallback.
+    Change any `VisibleChanged` event you might've bound to be compliant with a regular Blazor `EventCallback`.
 
-**5.** While not strictly a breaking changes, it is advised to also rename all Left and Right values,
-    eg. for TextAlignment and Direction. We have marked them as obsolete and they will be replaced with
-    Start and End values. The purpose of the new values is the better naming support for the RTL support
+**5.** While not strictly a breaking changes, it is advised to also rename all `Left` and `Right` values,
+    eg. for `TextAlignment` and `Direction`. We have marked them as obsolete and they will be replaced with
+    `Start` and `End` values. The purpose of the new values is the better naming support for the RTL support
     that should take place in the next Blazorise version.
 
-**6.** We've changed the DataGrid's RowSelectable evaluation to take in a RowSelectableEventArgs instead.
+**6.** We've changed the `DataGrid`'s `RowSelectable` evaluation to take in a `RowSelectableEventArgs` instead.
     This way we can provide you with increased information on the selection being handled.
-    This new RowSelectableEventArgs will still give you access to the current row item and additionaly to the type of selection being done, RowClick, MultiSelectClick, MultiSelectAll
-    You will need to change your RowSelectable handlers to expect a RowSelectableEventArgs instead.
+    This new `RowSelectableEventArgs` will still give you access to the current row item and additionaly to the type of selection being done, `RowClick`, `MultiSelectClick`, `MultiSelectAll`
+    You will need to change your `RowSelectable` handlers to expect a `RowSelectableEventArgs` instead.
 
-**7.** Remove Blazorise static files from index.html> or _Layout.cshtml / _Host.cshtml. Files that are safe to be removed are:
+**7.** Remove Blazorise static files from `index.html`> or `_Layout.cshtml` / `_Host.cshtml`. Files that are safe to be removed are:
 
-- _content/Blazorise/blazorise.js
-- _content/Blazorise.Bootstrap/blazorise.bootstrap.js
-- _content/Blazorise.Charts/blazorise.charts.js
-- _content/Blazorise.Charts.Streaming/blazorise.charts.streaming.js
-- _content/Blazorise.DataGrid/blazorise.datagrid.js
-- _content/Blazorise.Markdown/blazorise.markdown.js
+- `_content/Blazorise/blazorise.js`
+- `_content/Blazorise.Bootstrap/blazorise.bootstrap.js`
+- `_content/Blazorise.Charts/blazorise.charts.js`
+- `_content/Blazorise.Charts.Streaming/blazorise.charts.streaming.js`
+- `_content/Blazorise.DataGrid/blazorise.datagrid.js`
+- `_content/Blazorise.Markdown/blazorise.markdown.js`
 
 ## Highlights 🚀
 
@@ -84,18 +84,18 @@ Now that the .NET 6 is out it is only natural that we want to support it. The ol
 
 ### JavaScript modules
 
-We have refactored major parts of Blazorise internals to make use of JavaScript modules. As a result of all the hard work, we have made it easier to set up Blazorise projects, and manually importing Javascript static files is not needed anymore. All Blazorise static files can safely be removed from all your index.html and _Layout.cshtml / _Host.cshtml files.
+We have refactored major parts of Blazorise internals to make use of JavaScript modules. As a result of all the hard work, we have made it easier to set up Blazorise projects, and manually importing Javascript static files is not needed anymore. All Blazorise static files can safely be removed from all your `index.html` and `_Layout.cshtml` / `_Host.cshtml` files.
 
 ### Autocomplete:
 
 #### 1. Multiple Selection Support
 
-Autocomplete now has support for multiple selection by setting the new Multiple parameter to true. You have two extra Parameters at your disposal to handle the multiple values.
-    SelectedValues and SelectedTexts
+`Autocomplete` now has support for multiple selection by setting the new `Multiple` parameter to true. You have two extra Parameters at your disposal to handle the multiple values.
+    `SelectedValues` and `SelectedTexts`
 
 #### 2. ItemContent template
 
-Autocomplete now has the ability to optionally enrinch each value presented to the user with your custom html, by providing a RenderFragment, called ItemContent.
+`Autocomplete` now has the ability to optionally enrinch each value presented to the user with your custom html, by providing a `RenderFragment`, called `ItemContent`.
 
 Both examples can be seen on the Autocomplete page.
 
@@ -103,36 +103,36 @@ Both examples can be seen on the Autocomplete page.
 
 #### Null Coalescing
 
-DataGrid Field now supports null coalescing, meaning you can now provide objects with null data, and DataGrid will set the Default Value for the respective Field Type.
+`DataGrid` `Field` now supports null coalescing, meaning you can now provide objects with null data, and `DataGrid` will set the `Default` Value for the respective `Field` `Type`.
 
 #### Sort Field
 
-Introduced a new SortField Parameter, that allows you to define a different Property or Field of a column to be considered by the sorting mechanism.
+Introduced a new `SortField` Parameter, that allows you to define a different Property or Field of a column to be considered by the sorting mechanism.
 
 #### DetailRowTemplate
 
-DataGrid DetailRowTemplate feature has been slightly reworked. Now it will evaluate DetailRowTrigger on click, avoiding multiple calls to this on datagrid re-renders.
+`DataGrid` `DetailRowTemplate` feature has been slightly reworked. Now it will evaluate `DetailRowTrigger` on click, avoiding multiple calls to this on datagrid re-renders.
 
-We've also introduced a new public API ToggleDetailRow so you can programatically toggle the row. By default, it evaluates DetailRowTrigger, but you may use the provided flag forceDetailRow to just force the row to show the DetailRowTemplate
+We've also introduced a new public API `ToggleDetailRow` so you can programatically toggle the row. By default, it evaluates `DetailRowTrigger`, but you may use the provided flag `forceDetailRow` to just force the row to show the `DetailRowTemplate`
 
-We've still maintained the old behaviour, if DetailRowTemplate is defined, every row will display DetailRowTemplate, if DetailRowTrigger is defined, this will still be evaluated for every row, but now only once the row is first initialized and no longer on every re-render.
+We've still maintained the old behaviour, if `DetailRowTemplate` is defined, every row will display `DetailRowTemplate`, if `DetailRowTrigger` is defined, this will still be evaluated for every row, but now only once the row is first initialized and no longer on every re-render.
 
-To disable this behaviour you may use the new Parameter DetailRowStartsVisible and DetailRowTemplate will only be evaluated on click and if programatically called.
+To disable this behaviour you may use the new `Parameter` `DetailRowStartsVisible` and `DetailRowTemplate` will only be evaluated on click and if programatically called.
 
 #### DataGridColumn Non Mandatory Field Parameter
 
-DataGridColumn no longer requires Field to work. You may provide a DataGridColumn with no Field, however do take note, DataGrid will not do any internal management for these columns for you.
+`DataGridColumn` no longer requires `Field` to work. You may provide a `DataGridColumn` with no `Field`, however do take note, `DataGrid` will not do any internal management for these columns for you.
 
 All of the mentioned features and examples can be seen under the DataGrid pages.
 
 ### Public Async methods
 
-For a long time, most of our public methods were made as synchronous, eg. modal.Show(), which made it hard to play nicely with the asynchronous calls that were done internally by the Blazorise. In this release, we made the decision to convert them all to asynchronous which I think in the long run will be worth all the extra work. The result is unfortunately a breaking change so you should go through your projects and carefully update the changed calls. You can find all the changes in the migration section of this page.
+For a long time, most of our public methods were made as synchronous, eg. `modal.Show()`, which made it hard to play nicely with the asynchronous calls that were done internally by the Blazorise. In this release, we made the decision to convert them all to asynchronous which I think in the long run will be worth all the extra work. The result is unfortunately a breaking change so you should go through your projects and carefully update the changed calls. You can find all the changes in the migration section of this page.
 
 ### ColorPicker component
 
 In many cases, a native color input is not good enough. For instance, native color input doesn't support opacity value or localization.
-    With the introduction of the ColorPicker component, all of these limitations are now history. You can define any color,
+    With the introduction of the `ColorPicker` component, all of these limitations are now history. You can define any color,
     including the alpha value. You can localize the buttons, define a custom pallette for quick coloring, show or hide certain buttons,
     and many new features.
 
@@ -150,9 +150,9 @@ Theming also received some much needed changes.
 
 #### Color variables for RGB(A) values
 
-Along with the --b-theme-primary CSS variable we are now generating additional RGB(A) variables,
-    namelly, --b-theme-primary-r, --b-theme-primary-g, --b-theme-primary-b,
-    and --b-theme-primary-a.
+Along with the `--b-theme-primary` CSS variable we are now generating additional RGB(A) variables,
+    namelly, `--b-theme-primary-r`, `--b-theme-primary-g`, `--b-theme-primary-b`,
+    and `--b-theme-primary-a`.
 
 #### Nullable options
 
@@ -162,7 +162,7 @@ Not so much big of a change but nevertheless, is needed. When defining theme opt
 #### Body options
 
 It is now possible to define the body background and text color. Once defined it will also properly assign the
-    color for the TextColor.Body typography color value, where needed.
+    color for the `TextColor.Body` typography color value, where needed.
 
 #### Spacing options
 
@@ -172,15 +172,15 @@ So far if you wanted to change the margin and padding sizes you would need to re
 
       
 
-    SpacingOptions = new() { Is1 = ".5rem", Is2 = "1rem" }
+    `SpacingOptions = new() { Is1 = ".5rem", Is2 = "1rem" }`
 
 ### Tabs
 
-Introduced a new Parameter TabsRenderMode which essentially defines how the tab content will load.
+Introduced a new Parameter `TabsRenderMode` which essentially defines how the tab content will load.
 
 ### DropdownList
 
-DropdownList and DropdownMenu now support Scrolling as an opt-in feature. To set this, use the provided parameter MaxMenuHeight.
+`DropdownList` and `DropdownMenu` now support Scrolling as an opt-in feature. To set this, use the provided parameter `MaxMenuHeight`.
     This will make it so your DropdownLists with a lot of data, no longer keep growing indefinitely in size, going out of the page bounds.
 
 ### InputMask component
@@ -191,7 +191,7 @@ You can see examples at the InputMask page.
 
 ### ListView component
 
-Introduced the new ListView extension, which is based on our ListGroup behind the covers, so you may make use of the ListGroup underlying APIs.
+Introduced the new `ListView` extension, which is based on our `ListGroup` behind the covers, so you may make use of the `ListGroup` underlying APIs.
 
 List views are a flexible and powerful component for displaying a series of content in a contained scrollable view by providing a data source.
 
@@ -199,7 +199,7 @@ You can see examples at the ListView page.
 
 ### Localization
 
-The DatePicker and TimePicker pickers are now fully localized with our localization system.
+The `DatePicker` and `TimePicker` pickers are now fully localized with our localization system.
 
 ### Thank you!
 

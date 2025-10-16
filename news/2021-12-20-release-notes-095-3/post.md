@@ -19,8 +19,8 @@ The new update fixes most of the problems on the DataGrid component. We also bri
 ## Change Log
 
 - [#3149](https://github.com/Megabit/Blazorise/issues/3149): Problem in PopupClosing Event of Datagrid.
-- [#3192](https://github.com/Megabit/Blazorise/issues/3192): DataGridMultiSelectColumn produces DataGridSelectReason.RowClick.
-- [#3194](https://github.com/Megabit/Blazorise/issues/3194): DataGridMaxHeigh Missing in DataGrid FixedHeaderDataGridHeight ignored on Virtualize=true.
+- [#3192](https://github.com/Megabit/Blazorise/issues/3192): DataGridMultiSelectColumn produces `DataGridSelectReason.RowClick`.
+- [#3194](https://github.com/Megabit/Blazorise/issues/3194): DataGridMaxHeigh Missing in DataGrid FixedHeaderDataGridHeight ignored on `Virtualize=true`.
 - [#3207](https://github.com/Megabit/Blazorise/issues/3207): Documentation - Docs/Components/Selects/SelectPage.razor could use more detail.
 - [#1705](https://github.com/Megabit/Blazorise/issues/1705): Datagrid - Unselect child data grid.
 - [#3233](https://github.com/Megabit/Blazorise/issues/3233): Datagrid SelectedRows not Resetting/Clearing as expected.

@@ -17,7 +17,7 @@ read-time: 30 sec
 ## Change Log
 
 - [#3054](https://github.com/Megabit/Blazorise/issues/3054): DataGrid: Object Type shows no TextEdit when in edit mode
-- [#3037](https://github.com/Megabit/Blazorise/issues/3037): DisposeAsync() causes Dispose() to not be called
+- [#3037](https://github.com/Megabit/Blazorise/issues/3037): `DisposeAsync()` causes `Dispose()` to not be called
 - [#3110](https://github.com/Megabit/Blazorise/issues/3110): Update 0.9.4.x to .NET 6
 
 ## Support

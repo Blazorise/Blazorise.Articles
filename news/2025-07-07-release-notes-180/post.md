@@ -41,7 +41,9 @@ Blazorise should now work without any major breaking changes to the API.
 
 ### Scheduler Component
 
-The most significant addition in this release is the Scheduler component. This powerful new component allows you to create and manage events in a calendar-like interface, making it ideal for applications that require scheduling functionality.
+The most significant addition in this release is the `Scheduler` component. This powerful new component allows you to create and manage events in a calendar-like interface, making it ideal for applications that require scheduling functionality.
+
+![Scheduler component](img/feature-scheduler.png)
 
 We built it fully using Blazorise core elements, without any dependencies on third-party libraries, making it easy to customize and extend to fit your specific needs. In the end, we succeeded in creating a fully functional scheduler component that is both powerful and flexible.
 
@@ -51,61 +53,65 @@ You can see it in action in the Scheduler documentation pages.
 
 ### PdfViewer Component Enhancements
 
-The PdfViewer component has received several enhancements in this release, making it more powerful and user-friendly.
+The `PdfViewer` component has received several enhancements in this release, making it more powerful and user-friendly.
 
 #### PrintRequested Event
 
-Thanks to community contributor 11bthornton, the component now supports the PrintRequested event callback, which triggers when the user requests to print the PDF document. It is a small but significant improvement that enhances the user experience.
+Thanks to community contributor 11bthornton, the component now supports the `PrintRequested` event callback, which triggers when the user requests to print the PDF document. It is a small but significant improvement that enhances the user experience.
 
 #### Download Feature
 
-PdfViewer now includes built-in support for downloading the displayed PDF document. When enabled, a download button appears in the viewer toolbar, allowing users to save the PDF to their device. It supports both direct file URLs and base64-encoded data sources.
+`PdfViewer` now includes built-in support for downloading the displayed PDF document. When enabled, a download button appears in the viewer toolbar, allowing users to save the PDF to their device. It supports both direct file URLs and base64-encoded data sources.
+
+![Pdf component](img/feature-pdf.png)
 
 #### Toolbar Localization
 
-The PdfViewer component is now fully localized, allowing you to customize the toolbar text based on the current culture. This is particularly useful for applications that need to support multiple languages, ensuring accessibility and usability for all users.
+The `PdfViewer` component is now fully localized, allowing you to customize the toolbar text based on the current culture. This is particularly useful for applications that need to support multiple languages, ensuring accessibility and usability for all users.
 
 ### DataGrid Enhancements
 
-As always, we have made improvements to the DataGrid component, one of the most popular components in Blazorise. This time we focused on enhancing batch editing capabilities, adding new features, and improving the overall user experience.
+As always, we have made improvements to the `DataGrid` component, one of the most popular components in Blazorise. This time we focused on enhancing batch editing capabilities, adding new features, and improving the overall user experience.
 
 #### The New Method Overload
 
-Introduced the Task New( TItem newItem ) overload method, enabling the programmatic addition of new items to the batch edit collection when batch editing is enabled. This ensures that newly added items are tracked as **unsaved changes**, allowing them to be persisted upon saving or discarded upon cancellation.
+Introduced the `Task New( TItem newItem )` overload method, enabling the programmatic addition of new items to the batch edit collection when batch editing is enabled. This ensures that newly added items are tracked as **unsaved changes**, allowing them to be persisted upon saving or discarded upon cancellation.
 
 #### Default Select Filter
 
-New parameters FilterDefaultItemText, FilterDefaultItemValue, FilterDefaultItemDisabled, and FilterDefaultItemHidden allow customizing the default item shown in filter dropdowns of DataGridSelectColumn. This gives developers more control over filter presentation and improves user experience when working with dropdown filters.
+New parameters `FilterDefaultItemText`, `FilterDefaultItemValue`, `FilterDefaultItemDisabled`, and `FilterDefaultItemHidden` allow customizing the default item shown in filter dropdowns of `DataGridSelectColumn`. This gives developers more control over filter presentation and improves user experience when working with dropdown filters.
 
 #### EditState for EditTemplate
 
-The EditTemplate of DataGridColumn now includes an EditState argument. This allows you to determine the current edit state of the row, enabling customization of the template based on whether the row is in edit mode or not.
+The `EditTemplate` of `DataGridColumn` now includes an `EditState` argument. This allows you to determine the current edit state of the row, enabling customization of the template based on whether the row is in edit mode or not.
 
 #### Add Caption to DataGrid
 
-Based on our work with TableCaption, the DataGrid now supports a Caption property. This can be used to provide additional context about the displayed data, which is especially useful for accessibility. The caption is rendered as a caption element, improving the grid's semantic structure.
+Based on our work with `TableCaption`, the `DataGrid` now supports a `Caption` property. This can be used to provide additional context about the displayed data, which is especially useful for accessibility. The caption is rendered as a `caption` element, improving the grid's semantic structure.
 
 You can see it in action in our new DataGrid Accessibility section.
 
 #### GroupSeparator for Numeric Columns
 
-The DataGridNumericColumn component now includes a GroupSeparator parameter. This allows you to specify a custom group separator for numeric columns, enhancing the readability of large numbers by grouping digits in a more user-friendly way.
+The `DataGridNumericColumn` component now includes a `GroupSeparator` parameter. This allows you to specify a custom group separator for numeric columns, enhancing the readability of large numbers by grouping digits in a more user-friendly way.
 
 #### Reordering Columns
 
-The DataGrid component now supports reordering columns by dragging and dropping them. By simply enabling the Reorderable parameter on the DataGridColumn, users can rearrange columns to their preferred order. This feature enhances user experience by allowing customization of the grid layout according to user preferences.
+The `DataGrid` component now supports reordering columns by dragging and dropping them. By simply enabling the `Reorderable` parameter on the `DataGridColumn`, users can rearrange columns to their preferred order. This feature enhances user experience by allowing customization of the grid layout according to user preferences.
 
-On top of that, we have also added a ResetDisplayOrder method to the DataGrid component, which allows you to reset the column order to the default state. This can be useful in scenarios where you want to provide users with the option to revert any changes made to the column order.
+![Reordering Columns](img/feature-datagrid-reordering.png)
+
+On top of that, we have also added a `ResetDisplayOrder` method to the `DataGrid` component, which allows you to reset the column order to the default state. This can be useful in scenarios where you want to provide users with the option to revert any changes made to the column order.
 
 ### DatePicker Enhancements
 
 #### Week Numbers
 
-The DatePicker component now includes a ShowWeekNumbers parameter. When enabled, the calendar displays ISO week numbers alongside each row. This can be helpful for planning or referencing by week.
+The `DatePicker` component now includes a `ShowWeekNumbers` parameter. When enabled, the calendar displays ISO week numbers alongside each row. This can be helpful for planning or referencing by week.
 
 #### Calendar Buttons
 
-The DatePicker component now includes a ShowTodayButton parameter, and a ShowClearButton parameter. When enabled, these buttons appear on the calendar, allowing users to quickly select the current date or clear the selected date, respectively. This enhances usability and provides a more intuitive experience for users interacting with the date picker.
+The `DatePicker` component now includes a `ShowTodayButton` parameter, and a `ShowClearButton` parameter. When enabled, these buttons appear on the calendar, allowing users to quickly select the current date or clear the selected date, respectively. This enhances usability and provides a more intuitive experience for users interacting with the date picker.
 
 ### Chart Enhancements
 
@@ -115,33 +121,33 @@ This release introduces a major optimization to the Chart plugin system by centr
 
 The refactoring addresses longstanding pain points related to plugin lifecycle management and ensures that disposal and initialization are consistently handled. This unified approach not only improves maintainability but also helps prevent potential bugs across all plugins.
 
-As part of this effort, it was also noted that some plugins, such as the Streaming plugin, may require implementations of methods like OnParametersSetAsync to ensure all configuration parameters are properly updated during the component lifecycle.
+As part of this effort, it was also noted that some plugins, such as the Streaming plugin, may require implementations of methods like `OnParametersSetAsync` to ensure all configuration parameters are properly updated during the component lifecycle.
 
 #### Renamed Chart Options
 
-We had a wrongly named option on the DoughnutChartOptions, and PieChartOptions classes. The CutoutPercentage property has been renamed to Cutout. This change aligns with the Chart.js documentation and ensures consistency across the API. Since the field was already wrongly named, this change should not break any existing code. However, if you were using the CutoutPercentage property, you will need to update your code to use the new Cutout property.
+We had a wrongly named option on the `DoughnutChartOptions`, and `PieChartOptions` classes. The `CutoutPercentage` property has been renamed to `Cutout`. This change aligns with the Chart.js documentation and ensures consistency across the API. Since the field was already wrongly named, this change should not break any existing code. However, if you were using the `CutoutPercentage` property, you will need to update your code to use the new `Cutout` property.
 
-To make it more flexible we have also made it an object type, so you can use it as a percentage or a number. This change allows you to specify the cutout value in either pixels or as a percentage of the chart's radius, providing greater flexibility in how you configure your charts.
+To make it more flexible we have also made it an `object` type, so you can use it as a percentage or a number. This change allows you to specify the cutout value in either pixels or as a percentage of the chart's radius, providing greater flexibility in how you configure your charts.
 
 #### Chart Zoom Plugin
 
-We have introduced new set of APIs for the ChartZoom plugin. The new API are Zoomed, SetZoomLevel, and GetZoomLevel, and ResetZoomLevel. These new APIs provide a more intuitive and flexible way to manage zoom levels in your charts. The Zoomed event is triggered when the chart is zoomed, allowing you to respond to zoom changes in real-time. The SetZoomLevel method allows you to programmatically set the zoom level of the chart, while the GetZoomLevel method allows you to retrieve the current zoom level. Finally, the ResetZoomLevel method allows you to reset the zoom level of the chart to its original state.
+We have introduced new set of APIs for the `ChartZoom` plugin. The new API are `Zoomed`, `SetZoomLevel`, and `GetZoomLevel`, and `ResetZoomLevel`. These new APIs provide a more intuitive and flexible way to manage zoom levels in your charts. The `Zoomed` event is triggered when the chart is zoomed, allowing you to respond to zoom changes in real-time. The `SetZoomLevel` method allows you to programmatically set the zoom level of the chart, while the `GetZoomLevel` method allows you to retrieve the current zoom level. Finally, the `ResetZoomLevel` method allows you to reset the zoom level of the chart to its original state.
 
-The ChartZoom plugin has been updated to support the latest chartjs-plugin-zoom.js version. It is recommended to update your references to use new https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.2.0/dist/chartjs-plugin-zoom.min.js to ensure compatibility with the latest features and bug fixes.
+The `ChartZoom` plugin has been updated to support the latest `chartjs-plugin-zoom.js` version. It is recommended to update your references to use new `https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.2.0/dist/chartjs-plugin-zoom.min.js` to ensure compatibility with the latest features and bug fixes.
 
 ### Autocomplete Disabled Items
 
-The Autocomplete component now supports disabling specific items in the suggestion list. You can provide a function to determine which items should be inactive, preventing users from selecting them. This is helpful in cases where some options shouldn't be available for interaction.
+The `Autocomplete` component now supports disabling specific items in the suggestion list. You can provide a function to determine which items should be inactive, preventing users from selecting them. This is helpful in cases where some options shouldn't be available for interaction.
 
 ### RichTextEdit Enhancements
 
 #### Export Semantic HTML
 
-The RichTextEdit component now includes an GetHtmlAsync overload that allows you to export the current content as semantic HTML. This is particularly useful for applications that require clean and structured HTML output, such as when saving or sharing content.
+The `RichTextEdit` component now includes an `GetHtmlAsync` overload that allows you to export the current content as semantic HTML. This is particularly useful for applications that require clean and structured HTML output, such as when saving or sharing content.
 
 #### Image and Video Resizing
 
-We've introduced a new resizing feature for images and videos within the RichTextEdit component. Users can now directly resize multimedia content within the editor, enhancing flexibility and providing a smoother editing experience. This functionality can be conveniently enabled or disabled via the UseResize parameter, allowing easy customization to meet your project's specific needs.
+We've introduced a new resizing feature for images and videos within the `RichTextEdit` component. Users can now directly resize multimedia content within the editor, enhancing flexibility and providing a smoother editing experience. This functionality can be conveniently enabled or disabled via the `UseResize` parameter, allowing easy customization to meet your project's specific needs.
 
 For comprehensive guidance, including usage instructions and integration examples, please refer to our RichTextEdit documentation.
 
@@ -149,41 +155,41 @@ For comprehensive guidance, including usage instructions and integration example
 
 #### RouterTabs Localization Support
 
-RouterTabs now supports localization, allowing dynamic tab titles based on the current culture. Titles can be set via resource files or other localization strategies, ensuring consistency with the app's language settings.
+`RouterTabs` now supports localization, allowing dynamic tab titles based on the current culture. Titles can be set via resource files or other localization strategies, ensuring consistency with the app's language settings.
 
 #### Cropper Component Enhancements
 
-The Cropper component has been enhanced with the ImageLoadingFailed event, which triggers when an image fails to load. This event provides a way to handle errors and display a custom message or image in place of the failed image.
+The `Cropper` component has been enhanced with the `ImageLoadingFailed` event, which triggers when an image fails to load. This event provides a way to handle errors and display a custom message or image in place of the failed image.
 
 #### Customizable TimePicker Increments
 
-The TimePicker component now supports HourIncrement and MinuteIncrement parameters. These allow you to customize the step intervals shown in the time selection dropdown.
+The `TimePicker` component now supports `HourIncrement` and `MinuteIncrement` parameters. These allow you to customize the step intervals shown in the time selection dropdown.
 
 #### Table Caption
 
-The Table component now has a TableCaption child component, allowing you to add a caption to the table. This caption can be used to provide additional context or information about the data being displayed in the table. The caption element is usually used for accesibility purposes, and it is recommended to use it when the table contains a lot of data or when the table is complex.
+The `Table` component now has a `TableCaption` child component, allowing you to add a caption to the table. This caption can be used to provide additional context or information about the data being displayed in the table. The `caption` element is usually used for accesibility purposes, and it is recommended to use it when the table contains a lot of data or when the table is complex.
 
 #### Flex Basis Utilities
 
-We have introduced a new new Flex.Basis utiities that will help more easily set the flex-basis property in your app without the need to write custom CSS. The new utilities are Flex.Basis.Auto, Flex.Basis.Full, and Flex.Basis.Is0.
+We have introduced a new new `Flex.Basis` utiities that will help more easily set the flex-basis property in your app without the need to write custom CSS. The new utilities are `Flex.Basis.Auto`, `Flex.Basis.Full`, and `Flex.Basis.Is0`.
 
 #### Multiple Highlights for Highlighter Component
 
-The Highlighter component now supports highlighting multiple phrases within the same text using the new HighlightedTexts parameter. This enhancement allows developers to pass a list of strings to be highlighted simultaneously, replacing the previous limitation of only a single HighlightedText. The update enables more dynamic and flexible highlighting scenarios, such as multi-word search, filtering, and complex keyword matching, all with minimal changes to existing implementations.
+The `Highlighter` component now supports highlighting multiple phrases within the same text using the new `HighlightedTexts` parameter. This enhancement allows developers to pass a list of strings to be highlighted simultaneously, replacing the previous limitation of only a single `HighlightedText`. The update enables more dynamic and flexible highlighting scenarios, such as multi-word search, filtering, and complex keyword matching, all with minimal changes to existing implementations.
 
 #### Choices on MessageService
 
-The MessageService now supports the Choices method, allowing you to display a list of options in a message dialog. This feature is useful for scenarios where you want to present users with multiple choices and handle their selection accordingly.
+The `MessageService` now supports the `Choices` method, allowing you to display a list of options in a message dialog. This feature is useful for scenarios where you want to present users with multiple choices and handle their selection accordingly.
 
 #### Culture-specific overloads for Text Localization
 
-The ITextLocalizer interface now includes overloads for the GetString method that accept a CultureInfo parameter. The CultureInfo parameter can be used to specify the desired culture for localization, enabling you to retrieve strings that are tailored to the user's language and region. This is particularly useful in scenarios where you need to support multiple languages or regions within your application.
+The `ITextLocalizer` interface now includes overloads for the `GetString` method that accept a `CultureInfo` parameter. The `CultureInfo` parameter can be used to specify the desired culture for localization, enabling you to retrieve strings that are tailored to the user's language and region. This is particularly useful in scenarios where you need to support multiple languages or regions within your application.
 
 ### Contribution from Community
 
 #### Steps Lazy Loading
 
-The Steps component now supports lazy loading, and is working simillar to our Tabs component. This means that the content of each step is only loaded when the step is activated, which can improve performance and reduce initial load times for applications with many steps or complex content.
+The `Steps` component now supports lazy loading, and is working simillar to our Tabs component. This means that the content of each step is only loaded when the step is activated, which can improve performance and reduce initial load times for applications with many steps or complex content.
 
 This feature was contributed by " Title="Link to brhinescot">brhinescot, and we appreciate their contribution to the Blazorise community.
 

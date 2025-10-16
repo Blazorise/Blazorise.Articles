@@ -22,7 +22,7 @@ In any case, Blazorise should be much stable now so just grab new NuGets and upd
 
 ## Change Log
 
-- [#2706](https://github.com/Megabit/Blazorise/issues/2706): Bulma class .is-rounded is wrongly set
+- [#2706](https://github.com/Megabit/Blazorise/issues/2706): Bulma class `.is-rounded` is wrongly set
 - [#2704](https://github.com/Megabit/Blazorise/issues/2704): In documentation, services link leads to a 404
 - [#2709](https://github.com/Megabit/Blazorise/issues/2709): Tooltip doesn't display when Inline is true
 - [#2702](https://github.com/Megabit/Blazorise/issues/2702): Modal dialog moves content

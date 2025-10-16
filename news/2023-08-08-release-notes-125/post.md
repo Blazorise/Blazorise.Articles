@@ -26,7 +26,7 @@ Here are the main changes since 1.2.0:
 
 - [#4834](https://github.com/Megabit/Blazorise/pull/4834): Prevents the JS call on each Dispose() when the JSDragDropModule has not Init
 - [#4860](https://github.com/Megabit/Blazorise/issues/4860): Json serialisation error for .net 8
-- [#4821](https://github.com/Megabit/Blazorise/issues/4821): Docs:: Image Cropper \ Blazorise extend documentation for MaximumReceiveMessageSize
+- [#4821](https://github.com/Megabit/Blazorise/issues/4821): Docs:: Image Cropper \ Blazorise extend documentation for `MaximumReceiveMessageSize`
 - [#4849](https://github.com/Megabit/Blazorise/issues/4849): Docs: Add Refresh method to the DropContainer
 - [#4761](https://github.com/Megabit/Blazorise/issues/4761): Modal XL class repeating
 - [#4766](https://github.com/Megabit/Blazorise/issues/4766): Switch theming not calculating focus border

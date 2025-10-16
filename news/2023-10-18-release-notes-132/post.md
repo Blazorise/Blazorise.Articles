@@ -20,7 +20,7 @@ Blazorise, your  go-to component library for Blazor, has just released a mainten
 
 ### Enhanced Validation
 
-Validation is crucial, and Blazorise now ensures error messages defined on ValidationError take top priority. This means users get immediate feedback, making your forms more user-friendly and reliable.
+Validation is crucial, and Blazorise now ensures error messages defined on `ValidationError` take top priority. This means users get immediate feedback, making your forms more user-friendly and reliable.
 
 ### Safer RichTextEdit
 

@@ -17,7 +17,7 @@ read-time: 1 min
 The time for another set of bug fixes is here.
 
 One of the most critical issues was again connected to the DataGrid validation process which has proven to be very nasty to fix.
-    It took us a little longer than expected but we finally managed to do it. As a result, RecursiveObjectActivator is
+    It took us a little longer than expected but we finally managed to do it. As a result, `RecursiveObjectActivator` is
     now working quite nicely and we already see some new features that will be possible to do with it in the future :)
 
 <Blazorise.Link To="https://github.com/David-Moreira">David</Blazorise.Link> was also able to do some optimization with data-annotation validations that we failed to predict before the 0.9.4 release. So all is good now I hope.
@@ -26,10 +26,10 @@ While not critical, the bug fixes for the other issues are still welcome and are
 
 ## Change Log
 
-- [#2768](https://github.com/Megabit/Blazorise/issues/2768): RecursiveObjectActivator Cyclic Object Traversal
+- [#2768](https://github.com/Megabit/Blazorise/issues/2768): `RecursiveObjectActivator` Cyclic Object Traversal
 - [#2754](https://github.com/Megabit/Blazorise/issues/2754): Problem with Layout After Blazorise Update
 - [#2769](https://github.com/Megabit/Blazorise/issues/2769): Dropdown toggled-event stops working the second time you open the dropdown
-- [#2779](https://github.com/Megabit/Blazorise/issues/2779): Modal Error - Cannot read property 'style' of null at Object.resetAdjustments
+- [#2779](https://github.com/Megabit/Blazorise/issues/2779): Modal Error - Cannot read property 'style' of null at `Object.resetAdjustments`
 - [#2785](https://github.com/Megabit/Blazorise/issues/2785): DataGrid begin edit
 - [#2777](https://github.com/Megabit/Blazorise/issues/2777): Unable to display manually display validation errors using inline editor of DataGrid
 - [#2702](https://github.com/Megabit/Blazorise/issues/2702): Modal dialog moves content

@@ -57,11 +57,15 @@ We hope you enjoy this new feature and we can't wait to see what you build with 
 
 ### Chart DataLabels
 
+![Feature Image Chart DataLabels component](img/feature-datalabels.png)
+
 The Chart DataLabels is a new feature that provides users with the ability to display data values for each data point in a chart. The Blazorise Chart DataLabels can be customized to suit individual needs, with options for font size, color, and position, allowing for a high degree of flexibility and control. With this new feature, Blazorise charts are now even more powerful and easier to use.
 
 The usage of new DataLabels component with examples can be see at DataLabels page.
 
 ### LottieAnimation extension
+
+![Feature Lottie component](img/feature-lottie.png)
 
 The LottieAnimation component allows you to easily incorporate beautiful, customizable animations into your Blazor applications using the Lottie Javascript library. The library's purpose is to allow applications to directly render animations exported from Adobe After Effects without needing to recreate the animation by hand in the HTML. It is simple to use and provides a seamless integration with Blazorise.
 
@@ -79,7 +83,9 @@ The usage of new icon can be see on QRCode page.
 
 When building an application, best practice requires reducing an image's surrounding noise and directing a user's attention to a specific part of the image. Image cropping is a method for manipulating images to remove any unwanted elements. By changing the aspect ratio or orientation, we can draw viewers' eyes to the photograph's primary subject and improve the overall composition. This applies to profile pictures or uploading images with specific dimensions.
 
-The new Cropper component handles all of that. You can now upload an image and then select part of it, rotate, scale, and crop it. You can also add a preview by adding a CropperViewer whenever on a page, and it will automatically synchronize with the latest selection.
+![Feature Cropper component](img/feature-cropper.png)
+
+The new `Cropper` component handles all of that. You can now upload an image and then select part of it, rotate, scale, and crop it. You can also add a preview by adding a `CropperViewer` whenever on a page, and it will automatically synchronize with the latest selection.
 
 As with many other components, the Cropper component is also created with the help of our community member njannink. We will need to send him a larger MVC award gift next year 😊.
 
@@ -105,16 +111,18 @@ To update your code, simply replace any instances of Button inside your Accordio
 
 ### TreeView improvements
 
-The TreeView component now supports a multiple selection mode, which allows users to select multiple nodes at the same time. To enable this mode, set the SelectionMode property to Multiple. When this mode is enabled, each node in the TreeView will display a checkbox next to its label. Users can then select or deselect nodes by clicking on the checkboxes. The selected nodes can be accessed through the SelectedNodes property, which returns a list of the selected nodes. You can also use the SelectedNodesChanged event to be notified when the selection changes.
+The TreeView component now supports a multiple selection mode, which allows users to select multiple nodes at the same time. To enable this mode, set the `SelectionMode` property to `Multiple`. When this mode is enabled, each node in the TreeView will display a checkbox next to its label. Users can then select or deselect nodes by clicking on the checkboxes. The selected nodes can be accessed through the `SelectedNodes` property, which returns a list of the selected nodes. You can also use the `SelectedNodesChanged` event to be notified when the selection changes.
+
+![Feature TreeView component](img/feature-treeview.png)
 
 Several new APIs for the Blazorise TreeView component have also included in this release! These APIs include:
 
-- GetChildNodesAsync: allows you to retrieve the child nodes of a specific node asynchronously.
-- HasChildNodesAsync: allows you to check if a specific node has child nodes asynchronously.
-- ExpandAll: expands all nodes in the tree.
-- CollapseAll: collapses all nodes in the tree.
+- `GetChildNodesAsync`: allows you to retrieve the child nodes of a specific node asynchronously.
+- `HasChildNodesAsync`: allows you to check if a specific node has child nodes asynchronously.
+- `ExpandAll`: expands all nodes in the tree.
+- `CollapseAll`: collapses all nodes in the tree.
 
-In addition to these new APIs, we've also added a new feature called AutoExpandAll. This feature will automatically expand all nodes in the tree on the first load only.
+In addition to these new APIs, we've also added a new feature called `AutoExpandAll`. This feature will automatically expand all nodes in the tree on the first load only.
 
 We hope this new features will make it easier for users to work with the TreeView component.
 
@@ -124,22 +132,26 @@ We hope this new features will make it easier for users to work with the TreeVie
 
 Blazorise Autocomplete now includes a search highlight feature that allows users to easily locate items in the dropdown list. When a search value is entered, the matching items in the dropdown will be highlighted, making it easier to find and select the desired item. This feature is particularly useful when working with large lists of items and helps improve the overall user experience.
 
+![Feature Autocomplete Highlight](img/feature-autocomplete.png)
+
 #### Virtualize mode
 
-The Virtualize feature allows for loading data on demand while scrolling, which greatly improves the performance of the component when working with large datasets.
+The `Virtualize` feature allows for loading data on demand while scrolling, which greatly improves the performance of the component when working with large datasets.
 
-With Virtualize, the Autocomplete component only loads the items that are currently visible in the list, and as the user scrolls, more items are loaded in the background. This allows for a much faster and smoother user experience, especially when working with large lists of items.
+With `Virtualize`, the Autocomplete component only loads the items that are currently visible in the list, and as the user scrolls, more items are loaded in the background. This allows for a much faster and smoother user experience, especially when working with large lists of items.
 
-To use the Virtualize feature, simply set the Virtualize property to "true" on the Autocomplete component.
+To use the Virtualize feature, simply set the `Virtualize` property to `"true"` on the Autocomplete component.
 
 ### DataGrid
 
 #### Grouping
 
+![Feature Image DataGrid grouping](img/feature-datagrid-grouping.png)
+
 The new grouping feature for Blazorise DataGrid allows you to easily group and organize your data by specific columns. This can be useful for analyzing large sets of data and finding patterns or trends.
 
-- The Groupable and Grouping parameters allow you to specify which columns can be grouped and which should be used for grouping. You can also provide a custom GroupBy function to define how the data should be grouped.
-- The ShowGrouping on DataGrid feature allows you to drag and drop groupable columns onto a designated group area, making it easy to rearrange and experiment with different groupings. This feature is helpful for creating ad-hoc analysis and reporting.
+- The `Groupable` and `Grouping` parameters allow you to specify which columns can be grouped and which should be used for grouping. You can also provide a custom `GroupBy` function to define how the data should be grouped.
+- The `ShowGrouping` on DataGrid feature allows you to drag and drop groupable columns onto a designated group area, making it easy to rearrange and experiment with different groupings. This feature is helpful for creating ad-hoc analysis and reporting.
 
 Overall, this new grouping feature provides more flexibility and control over how you organize and analyze your data within the Blazorise DataGrid.
 
@@ -151,7 +163,7 @@ The new Blazorise DataGrid features include a PageSelectorTemplate and PageSizes
 
 #### Navigable
 
-The new Navigable feature for Blazorise DataGrid allows you to navigate the grid by using the Arrow Up and Arrow Down Keys on your keyboard.
+The new `Navigable` feature for Blazorise DataGrid allows you to navigate the grid by using the Arrow Up and Arrow Down Keys on your keyboard.
 
 #### Utilities
 

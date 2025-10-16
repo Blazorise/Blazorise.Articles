@@ -53,14 +53,14 @@ You should now be able to use Blazorise without any breaking changes to the API.
 
 Before we continue we need to make sure that you're familiar with some behaviour changes in this release.
 
-DataGrid : The data collection no longer automatically updates upon mutating the collection, for example, by using methods like Add or Remove.
+`DataGrid` : The data collection no longer automatically updates upon mutating the collection, for example, by using methods like `Add` or `Remove`.
 
-While this feature was good to have by default, the way it was implemented, was a general performance hit on DataGrid usage, even if it wasn't in the interest of the consumer to use it.
+While this feature was good to have by default, the way it was implemented, was a general performance hit on `DataGrid` usage, even if it wasn't in the interest of the consumer to use it.
 
 As such we now recommended the following, either:
 
-- Invoke gridRef.Reload(); when you're done mutating your collection;
-- Have your data be observable by using any implementation of the INotifyCollectionChanged, like the ObservableCollection. The example below ilustrates this.
+- Invoke `gridRef.Reload();` when you're done mutating your collection;
+- Have your data be observable by using any implementation of the `INotifyCollectionChanged`, like the `ObservableCollection`. The example below ilustrates this.
 
 Please visit, observable data docs for more information.
 
@@ -82,6 +82,8 @@ We believe the Offcanvas component will offer our developers a new level of vers
 
 ### Splitter Component
 
+![Feature Splitter component](img/feature-splitter.png)
+
 We're thrilled to announce the introduction of a new Splitter component in the latest update of Blazorise. This interactive and flexible layout component provides a way to create resizable panels in your application.
 
 **GutterSize**: Controls the width of the draggable area between sections, allowing users to adjust the relative sizes of the sections.
@@ -100,6 +102,8 @@ The usage of new Splitter component can be see on Splitter page.
 
 ### SignaturePad
 
+![Feature SignaturePad component](img/feature-signaturepad.png)
+
 The SignaturePad is a crucial component in Blazorise that enables users to sign and submit documents electronically. With this update, developers can now capture and store signatures in a secure and reliable manner, ensuring the authenticity and integrity of the documents.
 
 This component will make it easier for developers to create applications that require the collection of digital signatures, saving time and effort for both the users and the developers. We hope this update will be beneficial to our users and help them create more efficient and effective applications.
@@ -113,6 +117,8 @@ We have added localization support to the MessageProvider. This update will allo
 The MessageProvider is a vital component in Blazorise that enables the display of notifications, alerts, and other messages to users. With the added localization support, developers can now customize the messages displayed to users based on their preferred language and locale.
 
 ### Draw Lines and Boxes over the Charts
+
+![Feature Charts Annotation component](img/feature-chartannotations.png)
 
 This innovative extension is based on the powerful chartjs-plugin-annotation and offers a new level of flexibility and functionality for your chart visualizations.
 
@@ -130,7 +136,9 @@ There are so many new features, APIs, and other improvements on the DataGrid com
 
 #### New FilterMode
 
-There is now a new FilterMode option that allows you to specify a new Filter Mode. By setting the FilterMode to the new DataGridFilterMode.Menu, the DataGrid will now show a filter icon by each column allowing your users to dinamically customize the filter to apply on per column basis.
+![DataGrid FilterMode features](img/feature-datagrid-fildermode.png)
+
+There is now a new `FilterMode` option that allows you to specify a new Filter Mode. By setting the `FilterMode` to the new `DataGridFilterMode.Menu`, the `DataGrid` will now show a filter icon by each column allowing your users to dinamically customize the filter to apply on per column basis.
 
 Please visit, datagrid filtering docs to find a new example showcasing this feature.
 
@@ -140,15 +148,15 @@ You are now able to use pre defined filtering on a per-column basis by specifyin
 
 #### New ClearFilter
 
-Added a new ClearFilter overload. You are now able to clear the filter on specific columns.
+Added a new `ClearFilter` overload. You are now able to clear the filter on specific columns.
 
 #### Numeric Filtering
 
-The DataGridNumericColumn now renders a numeric filter input & applies the corresponding specific numeric configuration you've assigned it.
+The `DataGridNumericColumn` now renders a numeric filter input & applies the corresponding specific numeric configuration you've assigned it.
 
 #### Grouping Header Captions
 
-The new HeaderGroupCaption feature for the DataGrid component is something we are eager to share. With the help of this feature, you can combine several DataGrid column headers under a single, comprehensive caption.
+The new `HeaderGroupCaption` feature for the DataGrid component is something we are eager to share. With the help of this feature, you can combine several DataGrid column headers under a single, comprehensive caption.
 
 This is particularly helpful when you need to group related columns under a single heading for easier understanding and organization. For instance, you could put columns like **"Price,"** **"Discount,"** and **"Total Cost"** under a header group titled **"Financial Details"** in a DataGrid that displays product details.
 
@@ -158,25 +166,25 @@ Please visit, DataGrid Header Group docs to find a new example showcasing this f
 
 #### DataGrid Select Column Data Binding
 
-The DataGridSelectColumn will now enable you to provide new parameters so you can quickly render a select structure. Similarly to how a regular SelectList works, you can define new parameters, **Data**, **ValueField**, and **TextField** that will help to danamically bind the underline select element.
+The `DataGridSelectColumn` will now enable you to provide new parameters so you can quickly render a select structure. Similarly to how a regular `SelectList` works, you can define new parameters, **Data**, **ValueField**, and **TextField** that will help to danamically bind the underline select element.
 
 Please visit, DataGridSelectColumn docs to find a new example showcasing this feature.
 
 #### Providing saved Item clone while saving
 
-We've modified the callback CancellableRowChange argument in the RowInserting, RowUpdating, and RowRemoving callbacks to now provide both an OldItem and NewItem properties.
+We've modified the callback `CancellableRowChange` argument in the `RowInserting`, `RowUpdating`, and `RowRemoving` callbacks to now provide both an `OldItem` and `NewItem` properties.
 
-OldItem will replace the regular existing Item as it's easier to understand what it represents.
+`OldItem` will replace the regular existing `Item` as it's easier to understand what it represents.
 
-Item is now marked as obsolete and will be removed in a future release.
+`Item` is now marked as obsolete and will be removed in a future release.
 
-NewItem is a deep clone of the item that's being inserted or updated with the updated edit values.
+`NewItem` is a deep clone of the item that's being inserted or updated with the updated edit values.
 
-The existing .Values; dictionary will still exist, but this allows you to promptly get a mapped TItem without having to write your own mapping code from the Dictionary.
+The existing `.Values;` dictionary will still exist, but this allows you to promptly get a mapped `TItem` without having to write your own mapping code from the `Dictionary`.
 
 #### Apply Sorting Programatically
 
-Introduced a new ApplySorting() method that allows you to programatically define the columns that you'd like the grid to be sorted on.
+Introduced a new `ApplySorting()` method that allows you to programatically define the columns that you'd like the grid to be sorted on.
 
 🏆 This features was contributed by danm-de.
 
@@ -184,52 +192,58 @@ Please visit, datagrid sorting docs for more information.
 
 #### Expandable Row Groups
 
-Introduced ExpandGroups() and CollapseGroups() methods that allows you to programatically expand or collapse specific groups.
+Introduced `ExpandGroups()` and `CollapseGroups()` methods that allows you to programatically expand or collapse specific groups.
 
 These new methods provide you with more control over how the data is presented and viewed, allowing you to tailor the user experience to specific usage scenarios and user preferences.
 
 ### Display an overlay element while hovering over the row
 
-Introduced a new RowOverlayTemplate that allows you to render an overlay with adittional information on top of the row. This feature is partically useful when you wish to provide more context about the data being presented to the user.
+Introduced a new `RowOverlayTemplate` that allows you to render an overlay with adittional information on top of the row. This feature is partically useful when you wish to provide more context about the data being presented to the user.
 
 Please visit, Row Overlay docs for more information.
 
 ### Show Required Indicator on a Field Label
 
-A new RequiredIndicator parameter was introduced. By enabling this parameter. The label will display a a required indicator by appending a relevant class which by default will render an asterix by the label with the theme's danger color. Which you can of course override the css class to your liking.
+A new `RequiredIndicator` parameter was introduced. By enabling this parameter. The label will display a a required indicator by appending a relevant class which by default will render an asterix by the label with the theme's danger color. Which you can of course override the css class to your liking.
 
 ### Dropdown with Checkboxes
 
-We have added a new Checkbox parameter to the DropdownItem so you may now render dropdown items with checkboxes. You can also track the state of each one by binding to the new Checked and CheckedChanged parameters.
+![Feature Dropdown with Checkboxes](img/feature-dropdown-check.png)
+
+We have added a new `Checkbox` parameter to the `DropdownItem` so you may now render dropdown items with checkboxes. You can also track the state of each one by binding to the new `Checked` and `CheckedChanged` parameters.
 
 ### DropdownList selection with checkboxes
 
-Introduced a new SelectionMode parameter, which allows the selection of a new Checkbox mode, that will set the DropdownList into a multiple selection mode. You can track the state of the selection by binding to the new SelectedValues and SelectedValuesChanged parameters.
+![Feature Dropdown with Checkboxes](img/feature-dropdownlist-selection.png)
+
+Introduced a new `SelectionMode` parameter, which allows the selection of a new Checkbox mode, that will set the `DropdownList` into a multiple selection mode. You can track the state of the selection by binding to the new `SelectedValues` and `SelectedValuesChanged` parameters.
 
 ### Remove Nodes from TreeView
 
-🏆 With the contribution by our community member JTtheGeek, we now have a RemoveNode() method that allows you to remove a node from the TreeView if it's found.
+🏆 With the contribution by our community member JTtheGeek, we now have a `RemoveNode()` method that allows you to remove a node from the TreeView if it's found.
 
-It is also possible to make node children collections observable (retrieved by GetChildNodes() / GetChildNodesAsync() ) and any changes to them should be reflected on the UI.
+It is also possible to make node children collections observable (retrieved by `GetChildNodes()` / `GetChildNodesAsync()` ) and any changes to them should be reflected on the UI.
 
-On top of it, you can also make use of IsDisabled() callback method to disable each node dynamically.
+On top of it, you can also make use of `IsDisabled()` callback method to disable each node dynamically.
 
 ### New APIs added to Autocomplete
 
-We have added a new FreeTypingNotFoundTemplate parameter so you may provide a custom template when the user types in a value that is not found in the data source and FreeTyping is enabled.
+We have added a new `FreeTypingNotFoundTemplate` parameter so you may provide a custom template when the user types in a value that is not found in the data source and `FreeTyping` is enabled.
 
 This is useful when you want to provide a message for the user related to an item that's not in the data source. For example, presenting the following message for the Singapore text that's not in the data source: Add "Singapore"?
 
-We have added a new AutocompleteTagContext parameter so you may customize tags to your liking when using Autocomplete multiple selection mode.
+We have added a new `AutocompleteTagContext` parameter so you may customize tags to your liking when using `Autocomplete` multiple selection mode.
 
-We've added EventCallbacks for the events that we currently listen to in the Autocomplete, these are called when the Autocomplete finishes handling the corresponding event.
+We've added EventCallbacks for the events that we currently listen to in the `Autocomplete`, these are called when the `Autocomplete` finishes handling the corresponding event.
 
-- SearchTextChanged
-- SearchKeyDown
-- SearchFocus
-- SearchBlur
+- `SearchTextChanged`
+- `SearchKeyDown`
+- `SearchFocus`
+- `SearchBlur`
 
 ### Play Videos from multiple sources with diferent qualities
+
+![Feature Video sources](img/feature-video.png)
 
 In this release, we've added a significant enhancement to the Blazorise Video player. Users now have the ability to define multiple sources for a single video, each with different qualities. This includes options for 576p, 720p, and 1080p. The chosen video file, hosted at a unique URL for each quality, will load based on the user's preference or network conditions. By default, the player is set to display the video in 720p. This new feature offers users a more tailored and efficient video viewing experience by adapting to their specific needs and conditions.
 
@@ -238,9 +252,9 @@ In this release, we've added a significant enhancement to the Blazorise Video pl
 We've migrated the underlying library that takes care of dynamically "anchor position" the dropdown menu according to the UI constraints. It has been migrated from Popper to the newer Floating UI library.
     Behaviour should remain unchanged and your dropdown menus should still be cleverly positioned!
 
-Added a new PositionStrategy parameter, that allows you to set the positioning strategy for your dropdown. Please read Floating UI Strategy for more details on how it can affect the positioning of your dropdown.
+Added a new `PositionStrategy` parameter, that allows you to set the positioning strategy for your dropdown. Please read Floating UI Strategy for more details on how it can affect the positioning of your dropdown.
 
-Added a new DropdownMenuTargetId parameter, that allows you to set a custom anchor element id for the dropdown menu. This is useful when you want the dropdown menu to be anchored from a different element than the toggle button.
+Added a new `DropdownMenuTargetId` parameter, that allows you to set a custom anchor element id for the dropdown menu. This is useful when you want the dropdown menu to be anchored from a different element than the toggle button.
 
 Fixed an issue where in some certain cases, if buttons existed inside the Dropdown the menu positioning would not be handled correctly.
 
@@ -254,6 +268,8 @@ This interface includes the **Validate** method, which you can override to defin
 
 #### CSS Grid
 
+![Feature CSS Grid](img/feature-cssgrid.png)
+
 The CSS Grid is a two-dimensional layout model, comprised of 12 columns and up to 6 rows, providing a robust structure for building complex layouts. This structure allows developers to craft visually appealing and responsive designs that will adapt seamlessly across various devices and screen sizes.
 
 One of the standout features is its built-in responsiveness with mobile breakpoints. This ensures that the layout will automatically adjust to provide an optimal viewing experience on different devices, from large desktop monitors down to mobile phones. The alignment and positioning within the grid have been carefully designed to offer a straightforward yet powerful way to arrange your components.
@@ -262,9 +278,13 @@ We believe this new grid system will offer our developers more control and creat
 
 #### Lists Style Image
 
+![Feature Lists Style Image](img/feature-liststyle.png)
+
 The ListStyleImage parameter allows you to define the marker images for list items. This gives you more flexibility and creativity in styling your lists, enhancing your user interface by going beyond the traditional bullet points or numerical markers. You can now use custom images to highlight or differentiate individual list items. It takes a string as its value, which should be **Base64** encoded string that represents an image, or a **URL** of the image you wish to use as your list marker. Please note that the image URL must be enclosed in url() and the image should ideally be a small, suitable size for use as a list marker. The example can be found on Typography pages.
 
 #### Text Size
+
+![Feature Text Size](img/feature-textsize.png)
 
 The **TextSize** enum provides predefined sizes from **extra small** to **extra large**, as well as supporting various heading sizes from **Heading1** (largest) to **Heading6** (smallest). The example can be found on Typography pages.
 

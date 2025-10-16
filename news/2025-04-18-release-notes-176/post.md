@@ -28,7 +28,7 @@ Using the Chart component with the zoom plugin could previously result in runtim
 
 ## FileEdit: AOT Compilation Fix
 
-A critical fix addresses a NotSupportedException thrown by FileEdit when used in AOT (Ahead-of-Time) compiled environments. It now works properly under AOT, making it safe to use in trimmed and precompiled deployments.
+A critical fix addresses a `NotSupportedException` thrown by FileEdit when used in AOT (Ahead-of-Time) compiled environments. It now works properly under AOT, making it safe to use in trimmed and precompiled deployments.
 
 We encourage you to update to version 1.7.6 to benefit from these fixes and improvements. As always, please report any issues or provide feedback to help us continue improving.
 

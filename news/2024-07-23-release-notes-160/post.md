@@ -56,6 +56,8 @@ For more detailed information and instructions on how to use the Chart Zoom Plug
 
 We have updated our Video extension component to work with the new VidStack library. Previously, we were utilizing the Plyr library for our video playback needs. However, over time, Plyr has gradually been replaced by the newer and more advanced VidStack library.
 
+![Feature Video Component](img/video.png)
+
 The decision to transition to VidStack was driven by several compelling reasons. First and foremost, VidStack offers a host of new features that were not available in Plyr. These features enhance the overall user experience by providing more robust and versatile functionality. Additionally, VidStack is significantly more stable, which means fewer bugs and crashes, leading to a smoother and more reliable performance.
 
 Moreover, the VidStack library is designed with modern web development practices in mind, making it easier to integrate and maintain. It supports the latest web technologies and standards, ensuring that our video extension component remains up-to-date and compatible with future advancements.
@@ -78,6 +80,8 @@ The Blazorise DataGrid has received a multitude of new improvements in this upda
 
 With the introduction of the new **ResponsiveMode** parameter in the underlying Table component, the DataGrid now supports **TableResponsiveMode.Mobile**. This mode renders a dedicated layout for mobile devices, where the columns are stacked on top of each other for better readability and usability on smaller screens.
 
+![Feature Mobile Responsive Mode](img/mobile-mode.png)
+
 Please note that in this mode, the DataGrid may have limited functionality. Features such as caption templates, fixed headers, resizing, and others might not be compatible. This feature is highly opinionated, meaning it enforces a specific design philosophy aimed at optimizing mobile experience.
 
 We consider this feature experimental and are actively seeking feedback to improve it further.
@@ -86,7 +90,7 @@ For more detailed information and to provide feedback, please visit our document
 
 #### 2. New Attributes for Auto Generate Columns
 
-In the DataGrid AutoGenerateColumns feature, we've added new attributes to the attribute based API to be able to further configure the way that the columns are rendered.
+In the `DataGrid` `AutoGenerateColumns` feature, we've added new attributes to the attribute based API to be able to further configure the way that the columns are rendered.
 
 **[DisplayAttribute]**: Represents an attribute that can be applied to properties or fields to specify the caption.
 
@@ -104,7 +108,7 @@ For more detailed information, please visit our documentation.
 
 #### 3. Generate ODataQuery API
 
-We have introduced a new feature to enhance the functionality of the Blazorise DataGrid with OData support. A new extension method, ToODataString(), has been added to the ReadData and DataGridReadDataEventArgs. This method allows users to generate an OData query string easily.
+We have introduced a new feature to enhance the functionality of the Blazorise DataGrid with OData support. A new extension method, `ToODataString()`, has been added to the `ReadData` and `DataGridReadDataEventArgs`. This method allows users to generate an OData query string easily.
 
 This addition simplifies the process of creating OData queries, making it more straightforward to integrate and interact with OData services. The ability to generate these query strings programmatically enhances the flexibility and power of data operations within the DataGrid component.
 
@@ -124,11 +128,13 @@ For more detailed information, please visit our documentation.
 
 #### 6. Manual loading state
 
-Added a new .SetLoading() method so you're able to control the loading state of the DataGrid.
+Added a new `.SetLoading()` method so you're able to control the loading state of the DataGrid.
 
 #### 7. Rapid Editing Mode
 
 Introducing the new **CellNavigable** parameter for the Blazorise DataGrid. Enabling this feature allows you to navigate DataGrid cells using arrow keys, tabbing, and clicking, enhancing the ease of use and efficiency. This feature is especially useful when used in conjunction with **DataGridEditMode.Cell**, providing a seamless rapid editing experience. For more details and an updated example, please visit the Rapid Editing section on the DataGrid Editing page.
+
+![Feature Rapid Editing Mode](img/rapid-editing.png)
 
 Find out an updated example for Rapid Editing in the DataGrid Editing page.
 
@@ -136,15 +142,15 @@ We have also introduced the **DataGridEditModeOptions** to give you further cust
 
 ### New MaskPlaceholder on InputMask
 
-Introduced a new MaskPlaceholder property on the InputMask component to provide additional information to the user about the valid input format. While the change is not groundbreaking, it is a small but important step towards improving the user experience.
+Introduced a new `MaskPlaceholder` property on the `InputMask` component to provide additional information to the user about the valid input format. While the change is not groundbreaking, it is a small but important step towards improving the user experience.
 
 ### Disable Days Of Week In DatePicker
 
-We have added a new parameter to the DatePicker component, named DisabledDays. It is now possible to disable any days of a week to be picked by the user.
+We have added a new parameter to the `DatePicker` component, named `DisabledDays`. It is now possible to disable any days of a week to be picked by the user.
 
-### Automatic <code>rel</code> Attribute for Blazorise Link Component
+### Automatic `rel` Attribute for Blazorise Link Component
 
-Links with Target="Target.Blank" now automatically include rel="noopener noreferrer" for enhanced security and privacy. This update prevents new pages from accessing the original page, reducing phishing risks, and ensures referrer information is not sent to the target site, thereby enhancing the security and privacy of external links by default.
+Links with `Target="Target.Blank"` now automatically include `rel="noopener noreferrer"` for enhanced security and privacy. This update prevents new pages from accessing the original page, reducing phishing risks, and ensures referrer information is not sent to the target site, thereby enhancing the security and privacy of external links by default.
 
 ### Updated NumericPicker library
 
@@ -152,11 +158,11 @@ As an ongoing process to improve security of Blazorise dependencies, we have upd
 
 ### Better form support in SSR mode
 
-In this release we have made some changes to enable beter support our input components like TextEdit, NumericEdit, etc. to work with **server-side rendering**. It works by automatically calculating the name attribute of form field which then helps it to properly POST the form.
+In this release we have made some changes to enable beter support our input components like TextEdit, NumericEdit, etc. to work with **server-side rendering**. It works by automatically calculating the `name` attribute of form field which then helps it to properly POST the form.
 
 #### Body Theme Font Options
 
-Added few more options to easily define font options for the document body element. It is now possible to define font-family, font-size, font-style, font-weight. All by defining the FontOptions on Blazorise theme.
+Added few more options to easily define font options for the document body element. It is now possible to define `font-family`, `font-size`, `font-style`, `font-weight`. All by defining the FontOptions on Blazorise theme.
 
 ## Wrap Up ️🔚
 

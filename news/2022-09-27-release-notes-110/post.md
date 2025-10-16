@@ -34,7 +34,7 @@ Internal changes are hard to showcase, but if you are curious to learn a bit mor
 - New **FilePicker** component.
 - New **ModalProvider** component.
 - New **LoadingIndicator** component.
-- **FileEdit** performance improvements to WriteToStreamAsync and OpenReadStreamAsync APIs.
+- **FileEdit** performance improvements to `WriteToStreamAsync` and `OpenReadStreamAsync` APIs.
 - **DataGrid** improvements and new APIs.
 
 ## Upgrade an existing project 👨‍🔧
@@ -47,7 +47,7 @@ To upgrade an existing Blazorise applications from **1.0.x** to **1.1**:
 
 ### 2. Tuple Values
 
-Due to a bug in Visual Studio razor tooling you might experience problems if you try to define tuple values as a component parameter. In Blazorise case, this problem might manifest itself on the Row component. For example if you have Row Gutter="(32, 16)" you will get build errors. To workaround it we have introduced new parameters, named HorizontalGutter, and VerticalGutter.
+Due to a bug in Visual Studio razor tooling you might experience problems if you try to define tuple values as a component parameter. In Blazorise case, this problem might manifest itself on the Row component. For example if you have Row Gutter="(32, 16)" you will get build errors. To workaround it we have introduced new parameters, named `HorizontalGutter`, and `VerticalGutter`.
 
 To use them you will just need to define it as Row HorizontalGutter="32" VerticalGutter="16".
 
@@ -57,9 +57,9 @@ To use them you will just need to define it as Row HorizontalGutter="32" Vertica
 
 The explicit usage of Markdown extension CSS and JS files are not needed and they can be safely removed from **index.html** or **_Layout.cshtml** files.
 
-- <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
-- <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
-- <script src="https://cdn.jsdelivr.net/highlight.js/latest/highlight.min.js"></script>
+- `<link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">`
+- `<script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>`
+- `<script src="https://cdn.jsdelivr.net/highlight.js/latest/highlight.min.js"></script>`
 
 ## New Features 🚀
 
@@ -73,7 +73,7 @@ First, we must mention that Blazorise 1.1 fully supports the new .NET 7 SDK. Cur
 
 As a continuous work to improve AODA compatibility we have created a new FocusTrap component. FocusTrap is a component that manages focus for its descendants. This is useful when implementing overlays such as modal dialogs, which should not allow the input focus to escape while open.
 
-The new component is already part of the Modal which can be controlled by setting the FocusTrap parameter. If you wish to use new component on its own then you can look at the example on the FocusTrap page.
+The new component is already part of the `Modal` which can be controlled by setting the `FocusTrap` parameter. If you wish to use new component on its own then you can look at the example on the FocusTrap page.
 
 ### Highlighter component
 
@@ -93,11 +93,11 @@ Big thanks to aladotnet for his help in making it happen.
 
 #### 1. Sort Icon
 
-Added ShowDefaultSortIcon parameter to DataGrid. By enabling this parameter, a default sort icon will now display.
+Added `ShowDefaultSortIcon` parameter to `DataGrid`. By enabling this parameter, a default sort icon will now display.
 
 #### 2. PagerOptions
 
-Introduced PagerOptions with the following options:
+Introduced `PagerOptions` with the following options:
 
 - **Size** : Configures the pager buttons size.
 - **ButtonRowPosition** : Configures the button row position.
@@ -106,23 +106,23 @@ Introduced PagerOptions with the following options:
 
 #### 3. ScrollRowOnEdit
 
-Added ScrollRowOnEdit parameter to DataGrid VirtualizeOptions. When Virtualize is set, you may now disable the behaviour of scrolling the row to the top on edit when on DataGridEditMode.Inline or DataGridEditMode.Form by setting this new option to false.
+Added `ScrollRowOnEdit` parameter to `DataGrid` `VirtualizeOptions`. When `Virtualize` is set, you may now disable the behaviour of scrolling the row to the top on edit when on `DataGridEditMode.Inline` or `DataGridEditMode.Form` by setting this new option to false.
 
 #### 4. SelectedRowIndex
 
-Added SelectedRowIndex getter to DataGrid. This is an helper so you can quickly find the Zero-based index of your SelectedRow. It can be an useful API in conjuction with the ScrollToRow method, that takes in a Zero-based index of DataGrid row to scroll to.
+Added `SelectedRowIndex` getter to `DataGrid`. This is an helper so you can quickly find the Zero-based index of your `SelectedRow`. It can be an useful API in conjuction with the `ScrollToRow` method, that takes in a Zero-based index of `DataGrid` row to scroll to.
 
 #### 5. SortOrder
 
-Added SortOrder parameter to DataGrid so when the DataGrid sorting mechanism is set to multiple, you are able to configure the order of which the sorting of the columns takes place, this is specially useful, if you want to start the DataGrid sorted a certain way.
-    Please do take note, that for the parameter to listen to changes and be able to dynamically be adjusted to the DataGrid changes, you should use bind-SortOrder.
-    An example is when you have a Column A with a SortOrder of 2 And Column B with a SortOrder of 1, the moment the user removes the sorting out of Column B, the DataGrid will attempt to reset the SortOrder back to 0 as to accomodate the natural multiple sorting rules.
+Added `SortOrder` parameter to `DataGrid` so when the `DataGrid` sorting mechanism is set to multiple, you are able to configure the order of which the sorting of the columns takes place, this is specially useful, if you want to start the `DataGrid` sorted a certain way.
+    Please do take note, that for the parameter to listen to changes and be able to dynamically be adjusted to the `DataGrid` changes, you should use `bind-SortOrder`.
+    An example is when you have a Column A with a `SortOrder` of 2 And Column B with a `SortOrder` of 1, the moment the user removes the sorting out of Column B, the `DataGrid` will attempt to reset the `SortOrder` back to 0 as to accomodate the natural multiple sorting rules.
 
-Please do take note, that for the parameter to listen to changes and be able to dynamically be adjusted to the DataGrid changes, you should use bind-SortOrder. An example is when you have a Column A with a SortOrder of 2 And Column B with a SortOrder of 1, the moment the user removes the sorting out of Column B, the DataGrid will attempt to reset the SortOrder back to 0 as to accomodate the natural multiple sorting rules.
+Please do take note, that for the parameter to listen to changes and be able to dynamically be adjusted to the `DataGrid` changes, you should use `bind-SortOrder`. An example is when you have a Column A with a `SortOrder` of 2 And Column B with a `SortOrder` of 1, the moment the user removes the sorting out of Column B, the `DataGrid` will attempt to reset the `SortOrder` back to 0 as to accomodate the natural multiple sorting rules.
 
 #### 6. PageSize
 
-Increased default PageSize parameter value from **5** to **10**.
+Increased default `PageSize` parameter value from **5** to **10**.
 
 ### ModalProvider
 
@@ -140,25 +140,25 @@ The Autocomplete component has received a lot of love in this release. Feature-w
 
 #### 1. ReadData
 
-Now it is possible to use the ReadData parameter to connect to an outside data source and load Autocomplete data on demand according to the user's searched text.
+Now it is possible to use the `ReadData` parameter to connect to an outside data source and load Autocomplete data on demand according to the user's searched text.
 
 #### 2. SuggestSelectedItems
 
-Introduced SuggestSelectedItems parameter, enabling you to to show up already selected items in the dropdown menu.
+Introduced `SuggestSelectedItems` parameter, enabling you to to show up already selected items in the dropdown menu.
 
 #### 3. AutocompleteSelectionMode
 
-Introduced AutocompleteSelectionMode
+Introduced `AutocompleteSelectionMode`
 
 - **Default** : Default mode. Selection is single.
 - **Multiple** : Multiple mode. Selection is multiple.
 - **Checkbox** : Checkbox mode. Selection is multiple with checkbox selection support.
 
-You may still use the existing Multiple parameter to set the Autocomplete into Multiple selection mode, however take note that this Parameter has now been marked as Obsolete and will be removed in a future version. Please use the new SelectionMode Parameter.
+You may still use the existing `Multiple` parameter to set the `Autocomplete` into Multiple selection mode, however take note that this Parameter has now been marked as `Obsolete` and will be removed in a future version. Please use the new `SelectionMode` Parameter.
 
 #### 4. ConfirmKey
 
-Introduced ConfirmKey parameter, you are now able to costumize the keyboard keys that should be considered as a Confirmation Key.
+Introduced `ConfirmKey` parameter, you are now able to costumize the keyboard keys that should be considered as a Confirmation Key.
     Take note :
     If the value has a printed representation, this attribute's value is the same as the char attribute.
     Otherwise, it's one of the key value strings specified in 'Key values'.
@@ -167,11 +167,11 @@ Take note: If the value has a printed representation, this attribute's value is 
 
 #### 5. AutoPreSelect
 
-Introduced AutoPreSelect, this defaults to true, keeping the current behaviour. By setting it to false, the dropdown that shows the options, will no longer auto select the first item.
+Introduced `AutoPreSelect`, this defaults to true, keeping the current behaviour. By setting it to false, the dropdown that shows the options, will no longer auto select the first item.
     This is specially useful for a use case reported by our users.
-    When you have the AutoComplete set to Multiple + FreeTyping, and want to allow your user to just press the Confirm Key to accept the currently typed text.
+    When you have the `AutoComplete` set to `Multiple` + `FreeTyping`, and want to allow your user to just press the Confirm Key to accept the currently typed text.
 
-This is specially useful for a use case reported by our users. When you have the AutoComplete set to Multiple + FreeTyping, and want to allow your user to just press the Confirm Key to accept the currently typed text.
+This is specially useful for a use case reported by our users. When you have the `AutoComplete` set to `Multiple` + `FreeTyping`, and want to allow your user to just press the Confirm Key to accept the currently typed text.
 
 #### 6. Improved keyboard support
 
@@ -181,7 +181,7 @@ This feature is contributed by glutio, one of our community members, and we than
 
 #### 6. AutoSelectFirstItem
 
-Introduced AutoSelectFirstItem parameter for single-select mode. Use this parameter to automatically select the first item from Data during Autocomplete initialization.
+Introduced `AutoSelectFirstItem` parameter for single-select mode. Use this parameter to automatically select the first item from `Data` during `Autocomplete` initialization.
 
 This feature is also contributed by glutio, one of our community members.
 
@@ -189,22 +189,22 @@ This feature is also contributed by glutio, one of our community members.
 
 #### 1. Rendering Improvements
 
-We've noticed that WriteToStreamAsync would not update progress on the UI and also freeze when using this API on WebAssembly. This is currently inherit to Blazor WebAssembly as it is single threaded, we've improved on this so the UI should now be able to update while using this API.
+We've noticed that `WriteToStreamAsync` would not update progress on the UI and also freeze when using this API on WebAssembly. This is currently inherit to Blazor WebAssembly as it is single threaded, we've improved on this so the UI should now be able to update while using this API.
 
 #### 2. Cancellation Support
 
-Added missing CancellationToken to OpenReadStreamAsync so is is now possible to cancel the upload on demand.
+Added missing `CancellationToken` to `OpenReadStreamAsync` so is is now possible to cancel the upload on demand.
 
 #### 3. Byte Array Stream Support
 
-Both WriteToStreamAsync and OpenReadStreamAsync should now be more performant as we made changes to accomodate the following new features in .NET6
+Both `WriteToStreamAsync` and `OpenReadStreamAsync` should now be more performant as we made changes to accomodate the following new features in .NET6
     <Blazorise.Link To="https://docs.microsoft.com/en-us/aspnet/core/blazor/javascript-interoperability/call-dotnet-from-javascript?view=aspnetcore-6.0#byte-array-support">Byte Array Support</Blazorise.Link>
     <Blazorise.Link To="https://docs.microsoft.com/en-us/aspnet/core/blazor/javascript-interoperability/call-dotnet-from-javascript?view=aspnetcore-6.0#stream-from-javascript-to-net">Stream from Javascript Support</Blazorise.Link>
-    We now highly advise the usage of the OpenReadStreamAsync on Blazor WebAssembly as it is very performant.
+    We now highly advise the usage of the `OpenReadStreamAsync` on Blazor WebAssembly as it is very performant.
 
 ### FilePicker
 
-The new FilePicker will give you an enhanced File Upload control, with more out of the box options then our FileEdit component.
+The new `FilePicker` will give you an enhanced File Upload control, with more out of the box options then our `FileEdit` component.
 
 - Listing, detailing and controlling the look of the selected files.
 - Clear and upload buttons with built in progress bar.
@@ -214,10 +214,10 @@ The new component with many examples and code samples can be see at FilePicker c
 
 ### ListView
 
-Introduced ItemTemplate parameter, you may now costumize the content that renders in each of the ListView's items.
+Introduced `ItemTemplate` parameter, you may now costumize the content that renders in each of the `ListView`'s items.
 
-Introduced a much needed missing ValueField Parameter, so you may uniquely identify each item in your list.
-    This has been introduced with a return value of String for now. However we plan to make it return a generic type TValue in a future version, much like some of our other ValueField based components, so you can choose what type does your unique value return.
+Introduced a much needed missing `ValueField` Parameter, so you may uniquely identify each item in your list.
+    This has been introduced with a return value of `String` for now. However we plan to make it return a generic type `TValue` in a future version, much like some of our other `ValueField` based components, so you can choose what type does your unique value return.
 
 ### Loading Indicator
 
@@ -227,7 +227,7 @@ To see it in action with various examples just open the Loading Indicator page.
 
 ### Other improvements
 
-All our Clicked parameters on a Button, Link, Tab, and other components, can now recieve a MouseEventArgs as an event parameter. This feature will allow you to determine how the clicked event was raised and what buttons and keys were pressed.
+All our `Clicked` parameters on a Button, Link, Tab, and other components, can now recieve a `MouseEventArgs` as an event parameter. This feature will allow you to determine how the clicked event was raised and what buttons and keys were pressed.
 
 ## PRs
 
@@ -237,7 +237,7 @@ This feature was created by Jimmys20, one of our community members.
 
 Basic steps navigation has no constraints, so it is possible to jump to any steps by clicking on them. However, this is usually impossible in real-world scenarios as sometimes a user is required to enter valid data before proceeding to the next step.
 
-To control the navigation between the steps, it is now possible to use NavigationAllowed parameter, which acts as a function that has all the information you need to validate the page switch.
+To control the navigation between the steps, it is now possible to use `NavigationAllowed` parameter, which acts as a function that has all the information you need to validate the page switch.
 
 The new feature can be seen on Step component page.
 
