@@ -44,7 +44,7 @@ In this release, we bring long-awaited support for ChartJS v3. Unfortunately, it
 
 With Chart v3, we now support almost all v3 configuration settings. In addition, we took great care to document most of the dataset and option fields so that IntelliSense will give you suggestions on how to define the chart correctly.
 
-Since a lot was changed to support ChartJS v3 the migration would take too long to explain so it is best to follow the the Chart.js migration guide as a general rule.
+Since a lot was changed to support ChartJS v3 the migration would take too long to explain so it is best to follow the the [Chart.js migration guide](https://www.chartjs.org/docs/latest/migration/v3-migration.html) as a general rule.
 
 ### NumericPicker
 
@@ -57,37 +57,37 @@ The completely new `NumericPicker` component is created as a replacement for the
 
 , and many more. We hope the new `NumericPicker` will serve you well.
 
-It can be seen in action on the NumericPicker page.
+It can be seen in action on the [NumericPicker page](docs/components/numeric-picker).
 
 ### Video
 
-We worked hard to bring you a very new Video component based upon the excellent Plyr video player. The new component fully supports streaming media by implementing HLS and DASH playback media formats.
+We worked hard to bring you a very new Video component based upon the excellent [Plyr](https://plyr.io/) video player. The new component fully supports streaming media by implementing [HLS](https://github.com/video-dev/hls.js/) and [DASH](https://github.com/Dash-Industry-Forum/dash.js) playback media formats.
 
 The component is pretty flexible to use and has most of the video control methods like `Play()`, `Pause()`, `Stop()`, and many others, including also events that can give you the current state of the player.
 
-The new component and its usage can be seen on Video page.
+The new component and its usage can be seen on [Video page](docs/extensions/video).
 
 ### DatePicker
 
 It is now possible to use date picker to select a range of dates and pick multiple dates. The new feature can be enabled with `SelectionMode` parameter. Once enabled, you need to use `Dates` parameters to read or set the days.
 
-The new component with examples can be seen on DatePicker page.
+The new component with examples can be seen on [DatePicker page](docs/components/date-picker).
 
 ### QRCode
 
-This component is created with the help from one of our community members, njannink. The QRCode component is based on QRCoder, and it is fully running on .NET code without any trace of JavaScript.
+This component is created with the help from one of our community members, [njannink](https://github.com/njannink). The QRCode component is based on [QRCoder](https://github.com/codebude/QRCoder), and it is fully running on .NET code without any trace of JavaScript.
 
-You can see it in action on QRCode page.
+You can see it in action on [QRCode page](docs/extensions/qrcode).
 
 ### Charts Trendline
 
 Charts.Trendline is a new extension and is used to draws a linear trendline in your Chart.
 
-You can see it in action on Trendline page.
+You can see it in action on [Trendline page](docs/extensions/chart-trendline).
 
 ### Utilities
 
-There were  some changes in our color utilities. To prepare them for some advanced scenarios in the future, they are converted to be complex enums. The affected enums are `Color`, `Background`, `TextColor`, and `Target`. This change brings a new way of defining enums values, and it is now possible to define colors with custom names, e.g., `Color="btn-purple"`.
+There were  some changes in our color utilities. To prepare them for some advanced scenarios in the future, they are converted to be [complex enums](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/enumeration-classes-over-enum-types). The affected enums are `Color`, `Background`, `TextColor`, and `Target`. This change brings a new way of defining enums values, and it is now possible to define colors with custom names, e.g., `Color="btn-purple"`.
 
 While at the moment they still have the same API, in the future, we will introduce some more advanced features that will allow us to chain options, e.g., `Color="Color.Primary.WithGradient"`.
 
@@ -174,7 +174,7 @@ Added FileInvalidReason to the FileEndedEventArgs so you may track what went wro
 
 We're finally bringing support for a long-time requested drag & drop feature in this release. The new feature is comprised of `DropContainer` and `DropZone` components and is designed to be flexible and easy to use. It supports item templating, selectors for drop items, styling, and more.
 
-The new component and its usage can be seen on Drag & Drop page.
+The new component and its usage can be seen on [Drag & Drop page](docs/components/dragdrop).
 
 ### Auto Complete
 
@@ -189,16 +189,16 @@ When using nested dropdowns, the nested dropdowns will now consider the configur
 
 ## Let's stop here!
 
-Writing all-new features wouldn't make sense, as that would make this post way too long. If you want to see a full list of all that has changed, go to our GitHub page.
+Writing all-new features wouldn't make sense, as that would make this post way too long. If you want to see a full list of all that has changed, go to our [GitHub page](https://github.com/Megabit/Blazorise/issues/3127).
 
 ## Community PRs
 
-- Xeevis did great work by creating a new `Blazorise.Icons.Bootstrap` package to map Bootstrap icons. The list of mapped icons covers almost 100% of icons, except for some rarely used. We have already requested them on the Bootstrap official repository, and hopefully, they will be included soon.
-- njannink created a QRCode images. The new component is based on QRCoder, and it is fully running on .NET code without any trace of JavaScript.
-- WolfgangKluge helped to add a missing actions to our Markdown component.
-- ledpup Added support for the trendline plugin to the Chart extension.
-- soenneker helped to add a a range option to the DatePicker component.
-- gkochera fixed the sort templates in DataGrid extension.
+- [Xeevis](https://github.com/Xeevis) did great work by creating a new `Blazorise.Icons.Bootstrap` package to map [Bootstrap icons](https://icons.getbootstrap.com/#install). The list of mapped icons covers almost 100% of icons, except for some rarely used. We have already requested them on the Bootstrap official repository, and hopefully, they will be included soon.
+- [njannink](https://github.com/njannink) created a QRCode images. The new component is based on [QRCoder](https://github.com/codebude/QRCoder), and it is fully running on .NET code without any trace of JavaScript.
+- [WolfgangKluge](https://github.com/WolfgangKluge) helped to add a missing actions to our Markdown component.
+- [ledpup](https://github.com/ledpup) Added support for the trendline plugin to the Chart extension.
+- [soenneker](https://github.com/soenneker) helped to add a a range option to the DatePicker component.
+- [gkochera](https://github.com/gkochera) fixed the sort templates in DataGrid extension.
 
 ## Thanks, and stay tuned for more
 

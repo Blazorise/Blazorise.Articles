@@ -14,7 +14,7 @@ read-time: 1 min
 
 # Update for the 1.0 release - patch 1
 
-I guess no big release can escape from some unintentional bugs. So in this regular update for v1.0, we're bringing some of the most critical fixes reported by the community.
+I guess no [big release](news/release-notes/100) can escape from some unintentional bugs. So in this regular update for v1.0, we're bringing some of the most critical fixes reported by the community.
 
 Please update your projects and let us know if any problems arise.
 
@@ -35,4 +35,4 @@ Megabit Ltd, a small organization based in Croatia, maintains the open-source co
 
 If you want to help the project and are already a part of a large organization, please consider purchasing a commercial license to help us become a sustainable business. Then we'll be able to continue working on Blazorise.
 
-With a commercial license, you get premium forum support as well as access to our private repositories and community-licensed themes. To learn more, visit us at Blazorise Commercial.
+With a commercial license, you get premium forum support as well as access to our private repositories and community-licensed themes. To learn more, visit us at [Blazorise Commercial](commercial).

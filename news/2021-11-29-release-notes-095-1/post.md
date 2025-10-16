@@ -18,7 +18,7 @@ Hello, again!
 
 In this release, we bring you some very important fixes for the v0.9.5 that we received from the community. One of the major issues we got was
     the bug with the newly introduced JS modules, where some nasty null exceptions would occur in rare cases. I must admit it was hard to track and reproduce
-    but we managed to fix it. David help on tracking the real problem and helping
+    but we managed to fix it. [David](https://github.com/David-Moreira "David Moreira") help on tracking the real problem and helping
     with testing was the most valuable.
 
 Not to mention, other reported issues are also fixed and you can see them all below.
@@ -45,4 +45,4 @@ Megabit Ltd, a small organization based in Croatia, maintains the open-source co
 
 If you want to help the project and are already a part of a large organization, please consider purchasing a commercial license to help us become a sustainable business. Then we'll be able to continue working on Blazorise.
 
-With a commercial license, you get premium forum support as well as access to our private repositories and community-licensed themes. To learn more, visit us at Blazorise Commercial.
+With a commercial license, you get premium forum support as well as access to our private repositories and community-licensed themes. To learn more, visit us at [Blazorise Commercial](commercial).

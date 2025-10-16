@@ -18,7 +18,7 @@ We're super excited to share with you the latest maintenance release for Blazori
 
 In this update, we've focused on making your Blazorise experience better than ever by improving stability, performance, and reliability. We've been listening to your valuable feedback and have worked hard to squash those pesky bugs and enhance the features you love. So, let's dive into what's new in Blazorise **1.2.3** and celebrate together as we continue on our journey to make Blazorise the friendliest and most enjoyable library for building modern, feature-rich web applications. 🚀
 
-For a detailed overview of the bug fixes from the last version, read the 1.2 support notes.
+For a detailed overview of the bug fixes from the last version, read the [1.2 support notes](https://github.com/Megabit/Blazorise/issues/4560).
 
 ## Changes
 
@@ -39,10 +39,10 @@ Here are the main changes since 1.2.0:
 
 As of now, there are no known incompatibilities with the previous Blazorise 1.2.x releases. We encourage all users to upgrade to 1.2.3.
 
-If you experience any unexpected behavior change in your projects after upgrading to 1.2.3, please file an issue on GitHub.
+If you experience any unexpected behavior change in your projects after upgrading to 1.2.3, please [file an issue on GitHub](https://github.com/Megabit/Blazorise/issues).
 
 ## Commercial Support
 
 Blazorise, an open-source component library, is maintained by Megabit Ltd, a small organization based in Croatia. We are strong advocates of the open-source ecosystem, which is why we offer Blazorise through our Community licenses at no cost. However, if you are part of a large organization and would like to support the project, we suggest purchasing a commercial license to help us maintain a sustainable business. This will enable us to continue developing Blazorise.
 
-With a commercial license, you will have access to premium forum support, private repositories and community-licensed themes. To learn more about commercial licenses, please visit our website at Blazorise Commercial.
+With a commercial license, you will have access to premium forum support, private repositories and community-licensed themes. To learn more about commercial licenses, please visit our website at [Blazorise Commercial](https://blazorise.com/commercial).

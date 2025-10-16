@@ -75,7 +75,7 @@ Your feedback is essential to us, and we appreciate your continued support and c
 
 As of now, there are no known incompatibilities with the previous Blazorise **1.6.x** releases. We encourage all users to upgrade to **1.7.6**.
 
-If you experience any unexpected behavior change in your projects after upgrading to 1.7.6, please file an issue on GitHub.
+If you experience any unexpected behavior change in your projects after upgrading to 1.7.6, please [file an issue on GitHub](https://github.com/Megabit/Blazorise/issues).
 
 ## Commercial Support
 
@@ -83,4 +83,4 @@ Blazorise is an open-source project that thrives on community contributions and 
 
 With a commercial license, you gain access to **premium forum support, private repositories, and exclusive community-licensed themes**. Your support directly contributes to the enhancement of Blazorise and ensures its continuous growth.
 
-To explore commercial licensing options, visit our website at Blazorise Commercial.
+To explore commercial licensing options, visit our website at [Blazorise Commercial](https://blazorise.com/commercial).

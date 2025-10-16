@@ -72,9 +72,9 @@ The ObjectFit utility is designed to give developers precise control over how el
 
 ![Object Fit Utility](img/objectfit.png)
 
-This utility is especially useful for HTML replaced element such as img, video, iframe.
+This utility is especially useful for HTML [replaced element](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element) such as img, video, iframe.
 
-Be sure to update your projects to incorporate these new capabilities and refer to the updated documentation for guidance on implementation.
+Be sure to update your projects to incorporate these new capabilities and refer to the [updated documentation](docs/helpers/utilities/object-fit) for guidance on implementation.
 
 ### Video Improvements
 
@@ -148,13 +148,13 @@ We are excited to introduce the new PdfViewer component in version 1.7. This com
 
 In this initial release, the PdfViewer supports read-only mode, allowing users to view and navigate through PDF files. We are planning to add text selection and other interactive features in future updates.
 
-For detailed usage instructions and integration examples, please visit the PdfViewer documentation.
+For detailed usage instructions and integration examples, please visit the [PdfViewer documentation](docs/extensions/pdfviewer).
 
 ### New RouterTabs Component
 
 We are excited to introduce the new RouterTabs component! Once set up, this component automatically generates tabs for each page that the user navigates to, streamlining tabbed navigation across your application.
 
-For further details and setup instructions, check out the RouterTabs Documentation.
+For further details and setup instructions, check out the [RouterTabs Documentation](docs/extensions/routertabs "RouterTabs Docs").
 
 ### Updated Icons
 
@@ -162,7 +162,7 @@ All icons have been updated to use `public const string` instead of `public stat
 
 FontAwesome icons have also been upgraded to version 6.6.0, bringing new icons and fixes to some existing ones. This enhancement ensures that your applications have access to the latest icon options and improvements.
 
-This change was made by our community member mtbayley. We are grateful for his contribution and we are looking forward to more contributions from him.
+This change was made by our community member [mtbayley](https://github.com/mtbayley "Link to mtbayley"). We are grateful for his contribution and we are looking forward to more contributions from him.
 
 ### RichTextEdit Table Support
 
@@ -178,7 +178,7 @@ Since this module is unofficial, we have marked table support in RichTextEdit as
 
 The latest update introduces flexible text decoration options in Blazorise. You can now easily apply underline, line-through, and overline styles to text, or remove decorations altogether with the none option. These enhancements allow for more refined text styling and improved design flexibility in your applications.
 
-For more details and examples, visit the Text Decoration documentation.
+For more details and examples, visit the [Text Decoration documentation](docs/components/typography "Link to Text Decoration documentation").
 
 ### Radio Group Button Colors
 
@@ -204,7 +204,7 @@ The new Skeleton component enhances user experience by providing loading placeho
 
 ![Skeleton Component](img/skeleton.png)
 
-For more information on how to use the Skeleton component and customize loading placeholders, refer to the Skeleton documentation.
+For more information on how to use the Skeleton component and customize loading placeholders, refer to the [Skeleton documentation](docs/components/skeleton).
 
 ### Improved Flex Utilities
 

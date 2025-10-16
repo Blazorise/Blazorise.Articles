@@ -62,13 +62,13 @@ As such we now recommended the following, either:
 - Invoke `gridRef.Reload();` when you're done mutating your collection;
 - Have your data be observable by using any implementation of the `INotifyCollectionChanged`, like the `ObservableCollection`. The example below ilustrates this.
 
-Please visit, observable data docs for more information.
+Please visit, [observable data docs](docs/extensions/datagrid/binding-data/observable) for more information.
 
 ## New Features & Enhancements 🚀
 
 ### .NET 8 Support
 
-First and foremost, Blazorise 1.3 fully supports the new .NET 8 SDK. It is currently using the most recent **preview 7**.
+First and foremost, Blazorise 1.3 fully supports the new [.NET 8 SDK](https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-8-preview-7/ "Link to .NET 8 SDK"). It is currently using the most recent **preview 7**.
 
 Generally the .NET 8 should be safe, and it should behave similarly to .NET 6 and .NET 7, but be aware we will consider this release of Blazorise with .NET 8 as an alpha until the final .NET 8 SDK version is released.
 
@@ -76,7 +76,7 @@ Plase try it, and if you find any issue please report it on our GitHub pages.
 
 ### Offcanvas Component
 
-The new Offcanvas component offers the flexibility to appear, or slide from the **top**, **bottom**, **left**, or **right** of your screen, making it highly adaptable to a variety of design contexts. This makes it a perfect fit for both desktop and mobile layouts, allowing you to create responsive designs with ease.
+The new [Offcanvas component](docs/components/offcanvas "Link to Offcanvas component") offers the flexibility to appear, or slide from the **top**, **bottom**, **left**, or **right** of your screen, making it highly adaptable to a variety of design contexts. This makes it a perfect fit for both desktop and mobile layouts, allowing you to create responsive designs with ease.
 
 We believe the Offcanvas component will offer our developers a new level of versatility when crafting unique user interfaces, making it easier to manage additional content or navigation in a user-friendly and accessible way.
 
@@ -84,7 +84,7 @@ We believe the Offcanvas component will offer our developers a new level of vers
 
 ![Feature Splitter component](img/feature-splitter.png)
 
-We're thrilled to announce the introduction of a new Splitter component in the latest update of Blazorise. This interactive and flexible layout component provides a way to create resizable panels in your application.
+We're thrilled to announce the introduction of a new [Splitter component](docs/extensions/splitter "Link to Splitter component") in the latest update of Blazorise. This interactive and flexible layout component provides a way to create resizable panels in your application.
 
 **GutterSize**: Controls the width of the draggable area between sections, allowing users to adjust the relative sizes of the sections.
 
@@ -94,11 +94,11 @@ We're thrilled to announce the introduction of a new Splitter component in the l
 
 and more
 
-🏆 We would like to express our sincere thanks to smfields, a dedicated member of our community, who initially developed this feature. He has generously granted us the rights to include it in Blazorise, enabling all users of our library to benefit from this versatile component.
+🏆 We would like to express our sincere thanks to [smfields](https://github.com/smfields "Link to smfields GitHub"), a dedicated member of our community, who initially developed this feature. He has generously granted us the rights to include it in Blazorise, enabling all users of our library to benefit from this versatile component.
 
 We look forward to seeing the creative ways in which you'll incorporate this new feature into your projects!
 
-The usage of new Splitter component can be see on Splitter page.
+The usage of new Splitter component can be see on [Splitter page](docs/extensions/splitter "Splitter page").
 
 ### SignaturePad
 
@@ -108,11 +108,11 @@ The SignaturePad is a crucial component in Blazorise that enables users to sign 
 
 This component will make it easier for developers to create applications that require the collection of digital signatures, saving time and effort for both the users and the developers. We hope this update will be beneficial to our users and help them create more efficient and effective applications.
 
-The usage of new SignaturePad component can be see on SignaturePad page.
+The usage of new SignaturePad component can be see on [SignaturePad page](docs/extensions/signaturepad "Link to SignaturePad page").
 
 ### Message Provider
 
-We have added localization support to the MessageProvider. This update will allow developers to create applications that can support multiple languages and locales.
+We have added localization support to the [MessageProvider](docs/services/message-provider "MessageProvider page"). This update will allow developers to create applications that can support multiple languages and locales.
 
 The MessageProvider is a vital component in Blazorise that enables the display of notifications, alerts, and other messages to users. With the added localization support, developers can now customize the messages displayed to users based on their preferred language and locale.
 
@@ -120,9 +120,9 @@ The MessageProvider is a vital component in Blazorise that enables the display o
 
 ![Feature Charts Annotation component](img/feature-chartannotations.png)
 
-This innovative extension is based on the powerful chartjs-plugin-annotation and offers a new level of flexibility and functionality for your chart visualizations.
+This innovative extension is based on the powerful [chartjs-plugin-annotation](https://www.chartjs.org/chartjs-plugin-annotation/latest/ "Link to chart Chart Annotation plugin") and offers a new level of flexibility and functionality for your chart visualizations.
 
-The Charts Annotation extension lets you draw lines, boxes, points, labels, polygons, and ellipses directly on the chart area, adding context and enhancing data visualization. This feature is versatile and can be used in conjunction with line, bar, scatter, and bubble charts, providing meaningful insights for your data sets.
+The [Charts Annotation](docs/extensions/chart-annotation "Link to Charts Annotation") extension lets you draw lines, boxes, points, labels, polygons, and ellipses directly on the chart area, adding context and enhancing data visualization. This feature is versatile and can be used in conjunction with line, bar, scatter, and bubble charts, providing meaningful insights for your data sets.
 
 Whether you're using linear, logarithmic, time, or category scales, you'll find the annotations provide a new dimension to your charts. However, please note that annotations will not work on charts that do not have two or more axes, including pie, radar, and polar area charts.
 
@@ -140,7 +140,7 @@ There are so many new features, APIs, and other improvements on the DataGrid com
 
 There is now a new `FilterMode` option that allows you to specify a new Filter Mode. By setting the `FilterMode` to the new `DataGridFilterMode.Menu`, the `DataGrid` will now show a filter icon by each column allowing your users to dinamically customize the filter to apply on per column basis.
 
-Please visit, datagrid filtering docs to find a new example showcasing this feature.
+Please visit, [datagrid filtering docs](docs/extensions/datagrid/features/filtering) to find a new example showcasing this feature.
 
 #### New FilterMethod
 
@@ -162,13 +162,13 @@ This is particularly helpful when you need to group related columns under a sing
 
 With this improvement, you can better structure your data and give users more information. By enabling more intuitive navigation through the DataGrid, grouping column headers using HeaderGroupCaption greatly improves the readability of complicated grids.
 
-Please visit, DataGrid Header Group docs to find a new example showcasing this feature.
+Please visit, [DataGrid Header Group docs](docs/extensions/datagrid/features/header-group "Link to DataGrid Header Group docs") to find a new example showcasing this feature.
 
 #### DataGrid Select Column Data Binding
 
 The `DataGridSelectColumn` will now enable you to provide new parameters so you can quickly render a select structure. Similarly to how a regular `SelectList` works, you can define new parameters, **Data**, **ValueField**, and **TextField** that will help to danamically bind the underline select element.
 
-Please visit, DataGridSelectColumn docs to find a new example showcasing this feature.
+Please visit, [DataGridSelectColumn docs](docs/extensions/datagrid/columns "Link to DataGridSelectColumn docs") to find a new example showcasing this feature.
 
 #### Providing saved Item clone while saving
 
@@ -186,9 +186,9 @@ The existing `.Values;` dictionary will still exist, but this allows you to prom
 
 Introduced a new `ApplySorting()` method that allows you to programatically define the columns that you'd like the grid to be sorted on.
 
-🏆 This features was contributed by danm-de.
+🏆 This features was contributed by [danm-de](https://github.com/danm-de "Link to danm-de GitHub").
 
-Please visit, datagrid sorting docs for more information.
+Please visit, [datagrid sorting docs](docs/extensions/datagrid/features/sorting) for more information.
 
 #### Expandable Row Groups
 
@@ -200,7 +200,7 @@ These new methods provide you with more control over how the data is presented a
 
 Introduced a new `RowOverlayTemplate` that allows you to render an overlay with adittional information on top of the row. This feature is partically useful when you wish to provide more context about the data being presented to the user.
 
-Please visit, Row Overlay docs for more information.
+Please visit, [Row Overlay docs](docs/extensions/datagrid/templates/row-overlay "Link to Row Overlay docs") for more information.
 
 ### Show Required Indicator on a Field Label
 
@@ -220,7 +220,7 @@ Introduced a new `SelectionMode` parameter, which allows the selection of a new 
 
 ### Remove Nodes from TreeView
 
-🏆 With the contribution by our community member JTtheGeek, we now have a `RemoveNode()` method that allows you to remove a node from the TreeView if it's found.
+🏆 With the contribution by our community member [JTtheGeek](https://github.com/JTtheGeek "Link to JTtheGeek GitHub"), we now have a `RemoveNode()` method that allows you to remove a node from the TreeView if it's found.
 
 It is also possible to make node children collections observable (retrieved by `GetChildNodes()` / `GetChildNodesAsync()` ) and any changes to them should be reflected on the UI.
 
@@ -245,14 +245,14 @@ We've added EventCallbacks for the events that we currently listen to in the `Au
 
 ![Feature Video sources](img/feature-video.png)
 
-In this release, we've added a significant enhancement to the Blazorise Video player. Users now have the ability to define multiple sources for a single video, each with different qualities. This includes options for 576p, 720p, and 1080p. The chosen video file, hosted at a unique URL for each quality, will load based on the user's preference or network conditions. By default, the player is set to display the video in 720p. This new feature offers users a more tailored and efficient video viewing experience by adapting to their specific needs and conditions.
+In this release, we've added a significant enhancement to the [Blazorise Video player](docs/extensions/video). Users now have the ability to define multiple sources for a single video, each with different qualities. This includes options for 576p, 720p, and 1080p. The chosen video file, hosted at a unique URL for each quality, will load based on the user's preference or network conditions. By default, the player is set to display the video in 720p. This new feature offers users a more tailored and efficient video viewing experience by adapting to their specific needs and conditions.
 
 ### Improved Dropdown Positioning
 
-We've migrated the underlying library that takes care of dynamically "anchor position" the dropdown menu according to the UI constraints. It has been migrated from Popper to the newer Floating UI library.
+We've migrated the underlying library that takes care of dynamically "anchor position" the dropdown menu according to the UI constraints. It has been migrated from [Popper](https://popper.js.org/) to the newer [Floating UI](https://floating-ui.com/) library.
     Behaviour should remain unchanged and your dropdown menus should still be cleverly positioned!
 
-Added a new `PositionStrategy` parameter, that allows you to set the positioning strategy for your dropdown. Please read Floating UI Strategy for more details on how it can affect the positioning of your dropdown.
+Added a new `PositionStrategy` parameter, that allows you to set the positioning strategy for your dropdown. Please read [Floating UI Strategy](https://floating-ui.com/docs/computeposition#strategy "Link to Floating UI Strategy") for more details on how it can affect the positioning of your dropdown.
 
 Added a new `DropdownMenuTargetId` parameter, that allows you to set a custom anchor element id for the dropdown menu. This is useful when you want the dropdown menu to be anchored from a different element than the toggle button.
 
@@ -270,7 +270,7 @@ This interface includes the **Validate** method, which you can override to defin
 
 ![Feature CSS Grid](img/feature-cssgrid.png)
 
-The CSS Grid is a two-dimensional layout model, comprised of 12 columns and up to 6 rows, providing a robust structure for building complex layouts. This structure allows developers to craft visually appealing and responsive designs that will adapt seamlessly across various devices and screen sizes.
+The [CSS Grid](docs/helpers/utilities/css-grid "Link to CSS Grid") is a two-dimensional layout model, comprised of 12 columns and up to 6 rows, providing a robust structure for building complex layouts. This structure allows developers to craft visually appealing and responsive designs that will adapt seamlessly across various devices and screen sizes.
 
 One of the standout features is its built-in responsiveness with mobile breakpoints. This ensures that the layout will automatically adjust to provide an optimal viewing experience on different devices, from large desktop monitors down to mobile phones. The alignment and positioning within the grid have been carefully designed to offer a straightforward yet powerful way to arrange your components.
 
@@ -280,13 +280,13 @@ We believe this new grid system will offer our developers more control and creat
 
 ![Feature Lists Style Image](img/feature-liststyle.png)
 
-The ListStyleImage parameter allows you to define the marker images for list items. This gives you more flexibility and creativity in styling your lists, enhancing your user interface by going beyond the traditional bullet points or numerical markers. You can now use custom images to highlight or differentiate individual list items. It takes a string as its value, which should be **Base64** encoded string that represents an image, or a **URL** of the image you wish to use as your list marker. Please note that the image URL must be enclosed in url() and the image should ideally be a small, suitable size for use as a list marker. The example can be found on Typography pages.
+The ListStyleImage parameter allows you to define the marker images for list items. This gives you more flexibility and creativity in styling your lists, enhancing your user interface by going beyond the traditional bullet points or numerical markers. You can now use custom images to highlight or differentiate individual list items. It takes a string as its value, which should be **Base64** encoded string that represents an image, or a **URL** of the image you wish to use as your list marker. Please note that the image URL must be enclosed in url() and the image should ideally be a small, suitable size for use as a list marker. The example can be found on [Typography](docs/components/typography) pages.
 
 #### Text Size
 
 ![Feature Text Size](img/feature-textsize.png)
 
-The **TextSize** enum provides predefined sizes from **extra small** to **extra large**, as well as supporting various heading sizes from **Heading1** (largest) to **Heading6** (smallest). The example can be found on Typography pages.
+The **TextSize** enum provides predefined sizes from **extra small** to **extra large**, as well as supporting various heading sizes from **Heading1** (largest) to **Heading6** (smallest). The example can be found on [Typography](docs/components/typography) pages.
 
 ## Wrap Up
 

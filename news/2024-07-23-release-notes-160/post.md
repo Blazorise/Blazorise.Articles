@@ -50,11 +50,11 @@ Key Features:
 
 **Enhanced Data Exploration**: These new interactive capabilities make it easier to analyze and interpret data, leading to more insightful observations and decisions.
 
-For more detailed information and instructions on how to use the Chart Zoom Plugin, please visit our documentation.
+For more detailed information and instructions on how to use the Chart Zoom Plugin, please visit our [documentation](docs/extensions/chart-zoom).
 
 ### Video Component - update to new library
 
-We have updated our Video extension component to work with the new VidStack library. Previously, we were utilizing the Plyr library for our video playback needs. However, over time, Plyr has gradually been replaced by the newer and more advanced VidStack library.
+We have updated our [Video extension component](docs/extensions/video) to work with the new [VidStack](https://www.vidstack.io/) library. Previously, we were utilizing the [Plyr](https://plyr.io/) library for our video playback needs. However, over time, Plyr has gradually been replaced by the newer and more advanced VidStack library.
 
 ![Feature Video Component](img/video.png)
 
@@ -78,7 +78,7 @@ The Blazorise DataGrid has received a multitude of new improvements in this upda
 
 #### 1. New Mobile Responsive Mode
 
-With the introduction of the new **ResponsiveMode** parameter in the underlying Table component, the DataGrid now supports **TableResponsiveMode.Mobile**. This mode renders a dedicated layout for mobile devices, where the columns are stacked on top of each other for better readability and usability on smaller screens.
+With the introduction of the new **ResponsiveMode** parameter in the underlying [Table component](docs/components/table), the DataGrid now supports **TableResponsiveMode.Mobile**. This mode renders a dedicated layout for mobile devices, where the columns are stacked on top of each other for better readability and usability on smaller screens.
 
 ![Feature Mobile Responsive Mode](img/mobile-mode.png)
 
@@ -86,7 +86,7 @@ Please note that in this mode, the DataGrid may have limited functionality. Feat
 
 We consider this feature experimental and are actively seeking feedback to improve it further.
 
-For more detailed information and to provide feedback, please visit our documentation.
+For more detailed information and to provide feedback, please visit our [documentation](docs/extensions/datagrid/features/mobile-mode).
 
 #### 2. New Attributes for Auto Generate Columns
 
@@ -104,7 +104,7 @@ In the `DataGrid` `AutoGenerateColumns` feature, we've added new attributes to t
 
 **[DateAttribute]**: Represents an attribute that can be applied to date properties or fields to specify additional metadata.
 
-For more detailed information, please visit our documentation.
+For more detailed information, please visit our [documentation](docs/extensions/datagrid/features/auto-generate-columns).
 
 #### 3. Generate ODataQuery API
 
@@ -124,7 +124,7 @@ With dynamic data binding, the DataGrid can now seamlessly bind to dynamic data 
 
 This new capability enhances the usability of the DataGrid, particularly in scenarios where data structures are not known at compile time or can change dynamically.
 
-For more detailed information, please visit our documentation.
+For more detailed information, please visit our [documentation](docs/extensions/datagrid/binding-data/dynamic).
 
 #### 6. Manual loading state
 
@@ -136,7 +136,7 @@ Introducing the new **CellNavigable** parameter for the Blazorise DataGrid. Enab
 
 ![Feature Rapid Editing Mode](img/rapid-editing.png)
 
-Find out an updated example for Rapid Editing in the DataGrid Editing page.
+Find out an updated example for Rapid Editing in the [DataGrid Editing](docs/extensions/datagrid/features/editing "Link to DataGrid Editing") page.
 
 We have also introduced the **DataGridEditModeOptions** to give you further customization over how your DataGrid handles edit operations. This new feature includes two additional **CellEdit** options, allowing you to enable or disable editing on a single or double click. These options offer more control over the editing experience, tailoring it to fit your specific needs.
 

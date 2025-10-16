@@ -61,7 +61,7 @@ We hope you enjoy this new feature and we can't wait to see what you build with 
 
 The Chart DataLabels is a new feature that provides users with the ability to display data values for each data point in a chart. The Blazorise Chart DataLabels can be customized to suit individual needs, with options for font size, color, and position, allowing for a high degree of flexibility and control. With this new feature, Blazorise charts are now even more powerful and easier to use.
 
-The usage of new DataLabels component with examples can be see at DataLabels page.
+The usage of new DataLabels component with examples can be see at [DataLabels page](docs/extensions/chart-datalabels).
 
 ### LottieAnimation extension
 
@@ -71,13 +71,13 @@ The LottieAnimation component allows you to easily incorporate beautiful, custom
 
 We are grateful to smfields for their contribution to the Blazorise community and for bringing this exciting new feature to our users.
 
-To get started with the LottieAnimation component simply folllow the guide on our LottieAnimation page.
+To get started with the LottieAnimation component simply folllow the guide on our [LottieAnimation page](docs/extensions/lottie-animation).
 
 ### QRCode Icon
 
 It is now possible to add custom icons within the QRCode.
 
-The usage of new icon can be see on QRCode page.
+The usage of new icon can be see on [QRCode page](docs/extensions/qrcode).
 
 ### Cropper Component
 
@@ -89,7 +89,7 @@ The new `Cropper` component handles all of that. You can now upload an image and
 
 As with many other components, the Cropper component is also created with the help of our community member njannink. We will need to send him a larger MVC award gift next year 😊.
 
-The usage of new cropper component can be see on Cropper page.
+The usage of new cropper component can be see on [Cropper page](docs/extensions/cropper).
 
 ### Gap Utility
 
@@ -155,7 +155,7 @@ The new grouping feature for Blazorise DataGrid allows you to easily group and o
 
 Overall, this new grouping feature provides more flexibility and control over how you organize and analyze your data within the Blazorise DataGrid.
 
-The group feature can be seen on the DataGrid grouping page with various examples.
+The group feature can be seen on the [DataGrid grouping page](docs/extensions/datagrid/features/grouping) with various examples.
 
 #### New PageSelectorTemplate & PageSizesTemplate
 

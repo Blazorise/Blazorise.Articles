@@ -48,4 +48,4 @@ This update is fully compatible within the **1.8.x** series. No breaking changes
 
 Blazorise grows through the support of our community and commercial partners. If you rely on Blazorise, consider our **commercial licenses**, they support ongoing development and provide benefits like priority support and premium themes.
 
-Explore licensing options here: Blazorise Commercial. Your support directly fuels Blazorise's future.
+Explore licensing options here: [Blazorise Commercial](https://blazorise.com/pricing). Your support directly fuels Blazorise's future.

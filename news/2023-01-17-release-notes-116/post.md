@@ -16,7 +16,7 @@ read-time: 2 min
 
 We are excited to announce the release of Blazorise v1.1.6, the first maintenance update in the new 2023 year. This release includes several bug fixes and performance improvements. It is probably the last release before the new major release of 1.2 which will include new many features and improvements. We appreciate the feedback and contributions from our community, and are committed to continuing to improve Blazorise with regular updates. Please update to the latest version to take advantage of these improvements and prepare for the new major release of 1.2.
 
-For a detailed overview of the changes that 1.1.6 included and which are also part of this new release, please read the 1.1 support notes.
+For a detailed overview of the changes that 1.1.6 included and which are also part of this new release, please read the [1.1 support notes](https://github.com/Megabit/Blazorise/issues/4147).
 
 ## Changes
 
@@ -32,10 +32,10 @@ Here are the main changes since 1.1.5-stable:
 
 As of now, there are no known incompatibilities with the previous Blazorise 1.1.x releases. We encourage all users to upgrade to 1.1.6.
 
-If you experience any unexpected behavior change in your projects after upgrading to 1.1.6, please file an issue on GitHub.
+If you experience any unexpected behavior change in your projects after upgrading to 1.1.6, please [file an issue on GitHub](https://github.com/Megabit/Blazorise/issues).
 
 ## Support
 
 Blazorise, an open-source component library, is maintained by Megabit Ltd, a small organization based in Croatia. We are strong advocates of the open-source ecosystem, which is why we offer Blazorise through our Community licenses at no cost. However, if you are part of a large organization and would like to support the project, we suggest purchasing a commercial license to help us maintain a sustainable business. This will enable us to continue developing Blazorise.
 
-With a commercial license, you will have access to premium forum support, private repositories and community-licensed themes. To learn more about commercial licenses, please visit our website at Blazorise Commercial.
+With a commercial license, you will have access to premium forum support, private repositories and community-licensed themes. To learn more about commercial licenses, please visit our website at [Blazorise Commercial](https://blazorise.com/commercial/).

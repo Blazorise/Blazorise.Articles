@@ -14,7 +14,7 @@ read-time: 9 min
 
 # Announcing Blazorise 1.5 - Dubrovnik
 
-We're pleased to announce the release of Blazorise version 1.5, codename Dubrovnik, bringing with it new features, improvements, and important upgrades aimed at enhancing your development experience. This update reflects our ongoing efforts to refine and expand the Blazorise toolkit in response to the needs of our developer community.
+We're pleased to announce the release of Blazorise version 1.5, codename [Dubrovnik](https://en.wikipedia.org/wiki/Dubrovnik "Link to Dubrovnik wikipedia"), bringing with it new features, improvements, and important upgrades aimed at enhancing your development experience. This update reflects our ongoing efforts to refine and expand the Blazorise toolkit in response to the needs of our developer community.
 
 This release introduces a range of new features and enhancements designed to support the creation of dynamic, efficient, and visually appealing applications. We've also focused on addressing and resolving issues reported in previous versions to ensure a more stable and reliable foundation for your projects.
 
@@ -50,7 +50,7 @@ The introduction of the new **Blazorise Fluent 2** provider stands as the highli
 
 ![Feature Fluent UI 2 Provider](img/fluentui.png)
 
-Based on the Microsoft Fluent 2 design system, this provider's integration across all Blazorise components has been a significant focus. Our team dedicated considerable resources to this effort, ensuring seamless user interface consistency and modernity.
+Based on the Microsoft [Fluent 2 design system](https://fluent2.microsoft.design/ "Link to Fluent 2 design system"), this provider's integration across all Blazorise components has been a significant focus. Our team dedicated considerable resources to this effort, ensuring seamless user interface consistency and modernity.
 
 In doing so, we addressed the need for integrating a plethora of previously absent functionalities from the native Fluent Design specifications:
 
@@ -60,7 +60,7 @@ In doing so, we addressed the need for integrating a plethora of previously abse
 
 **Advanced Utilities**: Integrating utilities for flex, grid, and typography further empowers developers to craft responsive and aesthetically pleasing layouts easily.
 
-To learn more about integrating the Blazorise Fluent provider into your project follow the Blazorise Fluent 2 Usage Guide page.
+To learn more about integrating the Blazorise Fluent provider into your project follow the [Blazorise Fluent 2 Usage Guide](docs/usage/fluent2 "Link to Blazorise Fluent 2 Usage Guide page") page.
 
 ### Fluent Icons
 
@@ -82,11 +82,11 @@ We're excited to announce the addition of the Toast component in Blazorise 1.5. 
 
 ![Feature Toast component](img/toast-component.png)
 
-For guidance on utilizing this new component, please refer to the example provided on the Toast page.
+For guidance on utilizing this new component, please refer to the example provided on the [Toast](docs/components/toast "Link to Toast page") page.
 
 ### Progress Bar: Indeterminate State
 
-The Progress Bar component has been enriched with the addition of an **Indeterminate** state. This feature is specifically designed to represent operations whose end time is not determinable, offering a dynamic way to signify that a process is actively underway but its duration remains uncertain. This enhancement significantly boosts the user interface by introducing a visual representation for tasks that are currently in progress.
+The [Progress Bar component](docs/components/progress "Link to Progress Bar component") has been enriched with the addition of an **Indeterminate** state. This feature is specifically designed to represent operations whose end time is not determinable, offering a dynamic way to signify that a process is actively underway but its duration remains uncertain. This enhancement significantly boosts the user interface by introducing a visual representation for tasks that are currently in progress.
 
 ![Feature Progress Bar Indeterminate State](img/progress-bar-indeterminate.png)
 
@@ -114,7 +114,7 @@ Although we aim to migrate to the newer AntDesign 5.1 version in a forthcoming B
 
 A new feature has been added for the efficient management of DataGrid states, allowing the saving and loading of DataGrid states as needed through a centralized API. Utilize the newly introduced `LoadState` and `GetState` methods for managing the DataGrid's state efficiently.
 
-For practical applications of this feature, refer to the DataGrid State Management page.
+For practical applications of this feature, refer to the [DataGrid State Management](docs/extensions/datagrid/features/state-management "Link to DataGrid State Management") page.
 
 #### 2. PreventRowClick
 
@@ -136,7 +136,7 @@ The **Rating** component has been updated to allow the display of additional inf
 
 ![Feature Rating Tooltip](img/rating-tooltip.png)
 
-For a details example of this feature, refer to the Rating component page.
+For a details example of this feature, refer to the [Rating component](docs/components/rating "Link to Rating component") page.
 
 ### DropdownList
 
@@ -168,7 +168,7 @@ For those who prefer a more streamlined navigation experience, there's the optio
 
 ### RichTextEdit
 
-As with many other features in this release we have updated internals of RichTextEdit to work with the latest version of Quill JS library. This update means there will be less security risks that were reported by using an older version.
+As with many other features in this release we have updated internals of RichTextEdit to work with the latest version of [Quill JS](https://github.com/quilljs/quill "Link to Quill JS") library. This update means there will be less security risks that were reported by using an older version.
 
 We also made dynamic loading of RichTextEdit JavaScript files obsolete, and made it work similar to all other Blazorise components. JavaScript files are now loaded as a JS module.
 

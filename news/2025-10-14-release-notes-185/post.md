@@ -43,4 +43,4 @@ This release is a safe, drop-in update for all **1.8.x** users. No breaking chan
 
 Each small fix contributes to a better, more reliable Blazorise experience. Thank you to everyone who reports issues and supports our work. Your feedback directly shapes every maintenance release.
 
-Explore our commercial licensing options here: Blazorise Commercial. Your support helps us maintain and improve Blazorise at a professional standard.
+Explore our commercial licensing options here: [Blazorise Commercial](https://blazorise.com/commercial "Link to Blazorise Commercial"). Your support helps us maintain and improve Blazorise at a professional standard.

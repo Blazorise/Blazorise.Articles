@@ -19,7 +19,7 @@ Today, we are happy to announce the release of Blazorise 0.9.5. In this post, we
 
 As you have probably noticed, we're also bringing completely new documentation pages built on top of Blazorise. When Blazorise was first created almost four years ago, Blazor was limited to very basic features. There was no server-side, no way to do the proper SEO, etc. And so, the only way to do the proper documentation at the time was to use GitHub pages. As time went by, with all the work on new features, documentation was always last to go. But this time Blazorise's documentation is built from the ground up, completely with Blazor and Blazorise. We now support real code examples, copy/paste snippets, hide/show code. Many new examples are included and with time we will include even more of them. We hope you will enjoy using the new docs as much as we enjoyed creating them.
 
-Old documentation will still be available at v094.blazorise.com.
+Old documentation will still be available at [v094.blazorise.com](https://v094.blazorise.com/).
 
 ## Blazorise 0.9.5 Highlights 💡
 
@@ -29,8 +29,8 @@ Old documentation will still be available at v094.blazorise.com.
 - **Autocomplete tags** now has support for multiple selection that will show selected items as tags.
 - **DataGrid** improvements and optimizations.
 - **Public Async methods** make it easier to prevent race condition when calling component directly.
-- **ColorPicker component** based upon the excellent pickr library.
-- **InputMask component** based upon the excellent Input Mask plugin.
+- **ColorPicker component** based upon the excellent [pickr](https://github.com/Simonwep/pickr) library.
+- **InputMask component** based upon the excellent [Input Mask plugin](https://github.com/RobinHerbots/Inputmask).
 - **Theme improvements** to make it even easier to customize your apps without the need for CSS.
 - **ListView component** for displaying a series of content in a contained scrollable view by providing a data source.
 
@@ -76,7 +76,7 @@ No big release can be done without some breaking changes and this release is no 
 ### Bootstrap 5
 
 First and foremost, with this release, we finally introduce a new Bootstrap 5 provider. The new Bootstrap 5 is already put
-    to a test and is now running our new documentation pages. You can also see it in our demos.
+    to a test and is now running our new documentation pages. You can also see it in [our demos](https://bootstrap5demo.blazorise.com/).
 
 ### .NET 6
 
@@ -84,7 +84,7 @@ Now that the .NET 6 is out it is only natural that we want to support it. The ol
 
 ### JavaScript modules
 
-We have refactored major parts of Blazorise internals to make use of JavaScript modules. As a result of all the hard work, we have made it easier to set up Blazorise projects, and manually importing Javascript static files is not needed anymore. All Blazorise static files can safely be removed from all your `index.html` and `_Layout.cshtml` / `_Host.cshtml` files.
+We have refactored major parts of Blazorise internals to make use of [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules). As a result of all the hard work, we have made it easier to set up Blazorise projects, and manually importing Javascript static files is not needed anymore. All Blazorise static files can safely be removed from all your `index.html` and `_Layout.cshtml` / `_Host.cshtml` files.
 
 ### Autocomplete:
 
@@ -97,7 +97,7 @@ We have refactored major parts of Blazorise internals to make use of JavaScript 
 
 `Autocomplete` now has the ability to optionally enrinch each value presented to the user with your custom html, by providing a `RenderFragment`, called `ItemContent`.
 
-Both examples can be seen on the Autocomplete page.
+Both examples can be seen on the [Autocomplete page](docs/extensions/autocomplete).
 
 ### DataGrid:
 
@@ -123,7 +123,7 @@ To disable this behaviour you may use the new `Parameter` `DetailRowStartsVisibl
 
 `DataGridColumn` no longer requires `Field` to work. You may provide a `DataGridColumn` with no `Field`, however do take note, `DataGrid` will not do any internal management for these columns for you.
 
-All of the mentioned features and examples can be seen under the DataGrid pages.
+All of the mentioned features and examples can be seen under the [DataGrid pages](docs/extensions/datagrid/getting-started).
 
 ### Public Async methods
 
@@ -136,13 +136,13 @@ In many cases, a native color input is not good enough. For instance, native col
     including the alpha value. You can localize the buttons, define a custom pallette for quick coloring, show or hide certain buttons,
     and many new features.
 
-You can see examples at the ColorPicker page.
+You can see examples at the [ColorPicker page](docs/components/color-picker).
 
 ### Markdown improvements
 
 We did a lot of improvements and new APIs on our Markdown component. It can now support toolbar customization, image uploading, theming, and many more.
 
-You can see examples at the Markdown page.
+You can see examples at the [Markdown page](docs/extensions/markdown).
 
 ### Theming improvements
 
@@ -187,7 +187,7 @@ Introduced a new Parameter `TabsRenderMode` which essentially defines how the ta
 
 The idea is to provide an easy way to increase input field readability by formatting your typed data. By using this component, you won't need to write any mind-blowing regular expressions or difficult mask patterns to format input text.
 
-You can see examples at the InputMask page.
+You can see examples at the [InputMask page](docs/components/input-mask).
 
 ### ListView component
 
@@ -195,11 +195,11 @@ Introduced the new `ListView` extension, which is based on our `ListGroup` behin
 
 List views are a flexible and powerful component for displaying a series of content in a contained scrollable view by providing a data source.
 
-You can see examples at the ListView page.
+You can see examples at the [ListView page](docs/extensions/list-view).
 
 ### Localization
 
-The `DatePicker` and `TimePicker` pickers are now fully localized with our localization system.
+The `DatePicker` and `TimePicker` pickers are now fully localized with our [localization system](docs/helpers/localization).
 
 ### Thank you!
 

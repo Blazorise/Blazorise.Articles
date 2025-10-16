@@ -49,7 +49,7 @@ We built it fully using Blazorise core elements, without any dependencies on thi
 
 As expected, it offers various types of views (Day, Week, Month, etc.), editing features, drag-and-drop, recurring events, and more. We have no doubt it will become a valuable addition to your Blazorise toolkit.
 
-You can see it in action in the Scheduler documentation pages.
+You can see it in action in the [Scheduler documentation](docs/extensions/scheduler "Link to Scheduler") pages.
 
 ### PdfViewer Component Enhancements
 
@@ -57,7 +57,7 @@ The `PdfViewer` component has received several enhancements in this release, mak
 
 #### PrintRequested Event
 
-Thanks to community contributor 11bthornton, the component now supports the `PrintRequested` event callback, which triggers when the user requests to print the PDF document. It is a small but significant improvement that enhances the user experience.
+Thanks to community contributor [11bthornton](https://github.com/11bthornton "Link to 11bthornton"), the component now supports the `PrintRequested` event callback, which triggers when the user requests to print the PDF document. It is a small but significant improvement that enhances the user experience.
 
 #### Download Feature
 
@@ -89,7 +89,7 @@ The `EditTemplate` of `DataGridColumn` now includes an `EditState` argument. Thi
 
 Based on our work with `TableCaption`, the `DataGrid` now supports a `Caption` property. This can be used to provide additional context about the displayed data, which is especially useful for accessibility. The caption is rendered as a `caption` element, improving the grid's semantic structure.
 
-You can see it in action in our new DataGrid Accessibility section.
+You can see it in action in our new [DataGrid Accessibility](docs/extensions/datagrid/features/accessibility "Link to DataGrid Accessibility") section.
 
 #### GroupSeparator for Numeric Columns
 
@@ -149,7 +149,7 @@ The `RichTextEdit` component now includes an `GetHtmlAsync` overload that allows
 
 We've introduced a new resizing feature for images and videos within the `RichTextEdit` component. Users can now directly resize multimedia content within the editor, enhancing flexibility and providing a smoother editing experience. This functionality can be conveniently enabled or disabled via the `UseResize` parameter, allowing easy customization to meet your project's specific needs.
 
-For comprehensive guidance, including usage instructions and integration examples, please refer to our RichTextEdit documentation.
+For comprehensive guidance, including usage instructions and integration examples, please refer to our [RichTextEdit documentation](docs/extensions/richtextedit).
 
 ### Some Other Improvements Worth Mentioning
 
@@ -189,11 +189,11 @@ The `ITextLocalizer` interface now includes overloads for the `GetString` method
 
 #### Steps Lazy Loading
 
-The `Steps` component now supports lazy loading, and is working simillar to our Tabs component. This means that the content of each step is only loaded when the step is activated, which can improve performance and reduce initial load times for applications with many steps or complex content.
+The `Steps` component now supports lazy loading, and is working simillar to our [Tabs](docs/components/tab "Link to Tabs") component. This means that the content of each step is only loaded when the step is activated, which can improve performance and reduce initial load times for applications with many steps or complex content.
 
 This feature was contributed by " Title="Link to brhinescot">brhinescot, and we appreciate their contribution to the Blazorise community.
 
-You can see it in action in the Steps documentation.
+You can see it in action in the [Steps documentation](docs/components/step "Link to Steps").
 
 ## Final Notes
 
@@ -201,7 +201,7 @@ We are thrilled to bring you Blazorise 1.8 with so many new features and improve
 
 As always, we encourage you to upgrade, explore the new components and enhancements, and share your feedback with us. Your contributions, bug reports, and feature suggestions drive Blazorise forward and help make it the best it can be for everyone.
 
-We greatly value community contributions. If you're interested in contributing, reporting issues, or suggesting features, visit our GitHub repository and join the discussions.
+We greatly value community contributions. If you're interested in contributing, reporting issues, or suggesting features, visit our [GitHub repository](https://github.com/Megabit/Blazorise "GitHub Repository") and join the discussions.
 
 Looking ahead, we are continuing work on Blazorise 2.0, which will introduce even more powerful features and architectural improvements. Stay tuned for previews and announcements in the coming months.
 

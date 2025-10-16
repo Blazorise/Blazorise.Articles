@@ -17,7 +17,7 @@ read-time: 30 sec
 In this release we fixed the bug with Chart serialization introduced with the latest .NET 6.
 
 Please note that this will probably be the last `0.9.4` update and everyone is advised to update their projects
-    to the latest 0.9.5 release.
+    to the latest [0.9.5 release](news/release-notes/095).
 
 ## Change Log
 
@@ -29,4 +29,4 @@ Megabit Ltd, a small organization based in Croatia, maintains the open-source co
 
 If you want to help the project and are already a part of a large organization, please consider purchasing a commercial license to help us become a sustainable business. Then we'll be able to continue working on Blazorise.
 
-With a commercial license, you get premium forum support as well as access to our private repositories and community-licensed themes. To learn more, visit us at Blazorise Commercial.
+With a commercial license, you get premium forum support as well as access to our private repositories and community-licensed themes. To learn more, visit us at [Blazorise Commercial](commercial).

@@ -48,7 +48,7 @@ We've also been experimenting with **Blazorise FluentUI** by building a small **
 
 ![BlazoriseOutlookClone](img/outlook-clone.png)
 
-If you're curious, check out the source code here: github.com/Megabit/BlazoriseOutlookClone.
+If you're curious, check out the source code here: [github.com/Megabit/BlazoriseOutlookClone](https://github.com/Megabit/BlazoriseOutlookClone).
 
 ## Full changelog
 
@@ -67,4 +67,4 @@ This is a drop-in update within the **1.8.x** line. There are no breaking change
 
 Blazorise thrives on community support. If you or your company relies on Blazorise, consider our **commercial licenses**-they help fund ongoing development while providing extra benefits like priority support, access to private repositories, and community-licensed themes.
 
-Explore licensing options here: Blazorise Commercial. Your support directly accelerates Blazorise development.
+Explore licensing options here: [Blazorise Commercial](https://blazorise.com/commercial). Your support directly accelerates Blazorise development.

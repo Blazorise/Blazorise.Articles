@@ -22,15 +22,15 @@ This release addresses key issues related to the **DataGrid**, **Markdown**, **V
 
 ### Improved Markdown File Upload Handling
 
-Managing uploaded files in the Markdown component is now more efficient. With the newly merged uploaded files callback, developers can seamlessly process multiple file uploads without unnecessary complexities. This change enhances the Markdown editing experience by reducing errors and improving user workflow.
+Managing uploaded files in the [Markdown component](docs/extensions/markdown "Link to Markdown component") is now more efficient. With the newly merged uploaded files callback, developers can seamlessly process multiple file uploads without unnecessary complexities. This change enhances the Markdown editing experience by reducing errors and improving user workflow.
 
 ### Better DataGrid Cell Editing Behavior
 
-A long-standing issue in the DataGrid where cancelling a cell edit would not restore focus has been fixed. Now, when a user cancels an edit, the focus properly returns to the relevant cell, ensuring a more intuitive and user-friendly interaction.
+A long-standing issue in the [DataGrid](docs/extensions/datagrid/features/editing "Link to DataGrid") where cancelling a cell edit would not restore focus has been fixed. Now, when a user cancels an edit, the focus properly returns to the relevant cell, ensuring a more intuitive and user-friendly interaction.
 
 ## Fix for Video Component Seeking Event
 
-The Seeking event in the Video component was previously unreliable, leading to issues when users attempted to scrub through video content. This has been fixed, allowing seamless seeking behavior and better control over video playback.
+The Seeking event in the [Video component](docs/extensions/video "Link to Video component") was previously unreliable, leading to issues when users attempted to scrub through video content. This has been fixed, allowing seamless seeking behavior and better control over video playback.
 
 We encourage you to update to version 1.7.5 to benefit from these fixes and improvements. As always, please report any issues or provide feedback to help us continue improving.
 
@@ -55,7 +55,7 @@ Your feedback is essential to us, and we appreciate your continued support and c
 
 As of now, there are no known incompatibilities with the previous Blazorise **1.6.x** releases. We encourage all users to upgrade to **1.7.5**.
 
-If you experience any unexpected behavior change in your projects after upgrading to 1.7.5, please file an issue on GitHub.
+If you experience any unexpected behavior change in your projects after upgrading to 1.7.5, please [file an issue on GitHub](https://github.com/Megabit/Blazorise/issues).
 
 ## Commercial Support
 
@@ -63,4 +63,4 @@ Blazorise is an open-source project that thrives on community contributions and 
 
 With a commercial license, you gain access to **premium forum support, private repositories, and exclusive community-licensed themes**. Your support directly contributes to the enhancement of Blazorise and ensures its continuous growth.
 
-To explore commercial licensing options, visit our website at Blazorise Commercial.
+To explore commercial licensing options, visit our website at [Blazorise Commercial](https://blazorise.com/commercial).

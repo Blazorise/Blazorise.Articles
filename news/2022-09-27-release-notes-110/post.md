@@ -18,11 +18,11 @@ It took us way too long, but finally, after six months of hard work, Blazorise 1
 
 So, what happened at that time? To start, we have made a lot of improvements on **blazorise.com**. For example, we have improved documentation to include more examples and descriptions. Also, we added a search field for much faster navigation and more internal links between pages.
 
-One of the most significant changes is that we have finally introduced new blog pages where we regularly write about C#, Blazor and .NET. Not to mention how-to guides and tutorials where you can learn more about Blazorise.
+One of the most significant changes is that we have finally introduced new [blog pages](blog) where we regularly write about C#, Blazor and .NET. Not to mention how-to guides and tutorials where you can learn more about Blazorise.
 
 There are no breaking changes in this release, but we will slowly start with some API changes by making existing APIs obsolete and introducing new APIs as replacements. Once we reach stable **v2.0**, the APIs marked with obsolete will eventually be removed.
 
-Internal changes are hard to showcase, but if you are curious to learn a bit more, we have documented all changes in 1.1 ticket on GitHub. Also, don't forget to look at 1.0.x fixes, which are also included in this release.
+Internal changes are hard to showcase, but if you are curious to learn a bit more, we have documented all changes in [1.1 ticket on GitHub](https://github.com/Megabit/Blazorise/issues/3575). Also, don't forget to look at [1.0.x fixes](https://github.com/Megabit/Blazorise/issues/3540), which are also included in this release.
 
 **Blazorise 1.1 is compatible with Blazorise 1.0.x projects and is a recommended upgrade for all 1.0.x users.**
 
@@ -47,7 +47,7 @@ To upgrade an existing Blazorise applications from **1.0.x** to **1.1**:
 
 ### 2. Tuple Values
 
-Due to a bug in Visual Studio razor tooling you might experience problems if you try to define tuple values as a component parameter. In Blazorise case, this problem might manifest itself on the Row component. For example if you have Row Gutter="(32, 16)" you will get build errors. To workaround it we have introduced new parameters, named `HorizontalGutter`, and `VerticalGutter`.
+Due to a bug in Visual Studio razor tooling you might experience problems if you try to define tuple values as a component parameter. In Blazorise case, this problem might manifest itself on the [Row component](docs/helpers/utilities/grid). For example if you have Row Gutter="(32, 16)" you will get build errors. To workaround it we have introduced new parameters, named `HorizontalGutter`, and `VerticalGutter`.
 
 To use them you will just need to define it as Row HorizontalGutter="32" VerticalGutter="16".
 
@@ -63,7 +63,7 @@ The explicit usage of Markdown extension CSS and JS files are not needed and the
 
 ## New Features 🚀
 
-Many new features have been added in Blazorise 1.1, both small and large. The following is a list of a few of the larger features that we are excited about in no particular order. For a complete list of all changes you can check out our curated changelog, as well as the 1.0.x fixes, which are also included in this release.
+Many new features have been added in Blazorise 1.1, both small and large. The following is a list of a few of the larger features that we are excited about in no particular order. For a complete list of all changes you can check out our [curated changelog](https://github.com/Megabit/Blazorise/issues/3575), as well as the [1.0.x fixes](https://github.com/Megabit/Blazorise/issues/3540), which are also included in this release.
 
 ### .NET 7 Support
 
@@ -71,23 +71,23 @@ First, we must mention that Blazorise 1.1 fully supports the new .NET 7 SDK. Cur
 
 ### FocusTrap component
 
-As a continuous work to improve AODA compatibility we have created a new FocusTrap component. FocusTrap is a component that manages focus for its descendants. This is useful when implementing overlays such as modal dialogs, which should not allow the input focus to escape while open.
+As a continuous work to improve [AODA compatibility](https://www.aoda.ca/web-accessibility-guidelines-for-compatibility-with-assistive-technology/) we have created a new FocusTrap component. FocusTrap is a component that manages focus for its descendants. This is useful when implementing overlays such as modal dialogs, which should not allow the input focus to escape while open.
 
-The new component is already part of the `Modal` which can be controlled by setting the `FocusTrap` parameter. If you wish to use new component on its own then you can look at the example on the FocusTrap page.
+The new component is already part of the `Modal` which can be controlled by setting the `FocusTrap` parameter. If you wish to use new component on its own then you can look at the example on the [FocusTrap page](docs/components/focus-trap).
 
 ### Highlighter component
 
 This is a relatively small component, but it can be beneficial when designing the UI for your application. For example, it helps you visually distinguish parts of the text by highlighting them based on the search term.
 
-If you wish to use new component look at few of the examples we have created on the Highlighter page.
+If you wish to use new component look at few of the examples we have created on the [Highlighter page](docs/components/highlighter).
 
 ### FluentValidation component
 
-One of the most requested features we get from our community is a way to validate forms by using the FluentValidation library. In this Blazorise release, we are finally bringing it.
+One of the most requested features we get from our community is a way to validate forms by using the [FluentValidation](https://github.com/FluentValidation/FluentValidation "Link to FluentValidation") library. In this Blazorise release, we are finally bringing it.
 
-The new **FluentValidation** component is created with the help of aladotnet, a community member that has implemented the feature on his GitHub repository and was willing to give it away as part of the Blazorise core repository. Fortunately, he did all the hard work. As a result, we have only made minor optimizations to the API and added examples to the documentation.
+The new **FluentValidation** component is created with the help of [aladotnet](https://github.com/aladotnet "Link to GitHub user"), a community member that has implemented the feature on his GitHub repository and was willing to give it away as part of the Blazorise core repository. Fortunately, he did all the hard work. As a result, we have only made minor optimizations to the API and added examples to the documentation.
 
-Big thanks to aladotnet for his help in making it happen.
+Big thanks to [aladotnet](https://github.com/aladotnet "Link to GitHub user") for his help in making it happen.
 
 ### DataGrid
 
@@ -132,7 +132,7 @@ I believe this feature will be handy for a lot of people.
 
 The new ModalProvider component is used to programmatically render what custom content or component you want to instantiate inside your Modal, even with the support of parameters. The usage is similar to MessageProvider, but unlike it, we have more control over what will be rendered. For example, we can define to render entire pages or forms, and ModalProvider will automatically do it for you.
 
-The usage of new ModalProvider with examples can be see at ModalProvider page.
+The usage of new ModalProvider with examples can be see at [ModalProvider page](docs/services/modal-provider).
 
 ### Autocomplete
 
@@ -177,13 +177,13 @@ This is specially useful for a use case reported by our users. When you have the
 
 You can now select items and remove selection using keyboard alone. Use navigation arrows to select an item in the dropdown.In multi-select mode use Backspace to remove most recently selected item or use **Shift-Tab** and **Enter** key to remove any previously selected item.
 
-This feature is contributed by glutio, one of our community members, and we thank you for all the effor he has done.
+This feature is contributed by [glutio](https://github.com/glutio), one of our community members, and we thank you for all the effor he has done.
 
 #### 6. AutoSelectFirstItem
 
 Introduced `AutoSelectFirstItem` parameter for single-select mode. Use this parameter to automatically select the first item from `Data` during `Autocomplete` initialization.
 
-This feature is also contributed by glutio, one of our community members.
+This feature is also contributed by [glutio](https://github.com/glutio), one of our community members.
 
 ### FileEdit
 
@@ -210,7 +210,7 @@ The new `FilePicker` will give you an enhanced File Upload control, with more ou
 - Clear and upload buttons with built in progress bar.
 - Custom templates to render items.
 
-The new component with many examples and code samples can be see at FilePicker component page.
+The new component with many examples and code samples can be see at [FilePicker component page](docs/components/file-picker).
 
 ### ListView
 
@@ -221,9 +221,9 @@ Introduced a much needed missing `ValueField` Parameter, so you may uniquely ide
 
 ### Loading Indicator
 
-This excellent component is done by glutio, one of our community members. The amount of work that went into it is astounding. The purpose of this component is, as its names suggest, to indicate to the user that a long-running operation is happening. It supports many different working scenarios, like two-way binding, methods calls via reference, global control through the service, and many more.
+This excellent component is done by [glutio](https://github.com/glutio), one of our community members. The amount of work that went into it is astounding. The purpose of this component is, as its names suggest, to indicate to the user that a long-running operation is happening. It supports many different working scenarios, like two-way binding, methods calls via reference, global control through the service, and many more.
 
-To see it in action with various examples just open the Loading Indicator page.
+To see it in action with various examples just open the [Loading Indicator](docs/extensions/loadingindicator) page.
 
 ### Other improvements
 
@@ -233,19 +233,19 @@ All our `Clicked` parameters on a Button, Link, Tab, and other components, can n
 
 ### Steps Navigation
 
-This feature was created by Jimmys20, one of our community members.
+This feature was created by [Jimmys20](https://github.com/Jimmys20), one of our community members.
 
 Basic steps navigation has no constraints, so it is possible to jump to any steps by clicking on them. However, this is usually impossible in real-world scenarios as sometimes a user is required to enter valid data before proceeding to the next step.
 
 To control the navigation between the steps, it is now possible to use `NavigationAllowed` parameter, which acts as a function that has all the information you need to validate the page switch.
 
-The new feature can be seen on Step component page.
+The new feature can be seen on [Step component](docs/components/step) page.
 
 ## PRs 💪
 
 As you have probably already noticed, we had a lot of contributions in this release, some small and some larger. So we would want once again to mention some of them that stood out and helped us make Blazorise great.
 
-#### <Anchor To="https://github.com/glutio" Target="Target.Blank">glutio</Anchor>
+#### [glutio](https://github.com/glutio)
 
 Glutio was really productive with new features in this release.
 
@@ -254,15 +254,15 @@ Improved keyboard support, and introduced of AutoSelectFirstItem on Autocomplete
     
         He created an entirely new **LoadingIndicator** component.
 
-#### <Anchor To="https://github.com/Jimmys20" Target="Target.Blank">Jimmys20</Anchor>
+#### [Jimmys20](https://github.com/Jimmys20)
 
 Jimmy helped us to improve **Steps** navigation by adding a constraint feature that enables us to control which step can be navigated.
 
-#### <Anchor To="https://github.com/EnsignPayton" Target="Target.Blank">EnsignPayton</Anchor>
+#### [EnsignPayton](https://github.com/EnsignPayton)
 
 A transient service in .NET dependency injection can lead to some nasty memory leaks. Disposing such services is hard, and EnsignPayton has helped to come up with a working solution. Based on our internal testing, memory leaks should now be minimal, if any. We hope this optimization will lead to fever errors in production environments.
 
-#### <Anchor To="https://github.com/aladotnet" Target="Target.Blank">aladotnet</Anchor>
+#### [aladotnet](https://github.com/aladotnet)
 
 The **aladotnet** has created a **FluentValidation** component and he was willing to give it away as part of the Blazorise core repository.
 
@@ -270,7 +270,7 @@ The **aladotnet** has created a **FluentValidation** component and he was willin
 
 If you want to help the project and already work for a large organization, please consider purchasing a commercial license to assist us in becoming a sustainable business. Then we'll be able to resume work on Blazorise.
 
-With a commercial license, you get premium forum support as well as access to our private repositories and community-licensed themes. To learn more, visit us at Blazorise Commercial.
+With a commercial license, you get premium forum support as well as access to our private repositories and community-licensed themes. To learn more, visit us at [Blazorise Commercial](commercial).
 
 ## Thanks, and stay tuned for more 🤝
 

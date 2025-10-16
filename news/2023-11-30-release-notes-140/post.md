@@ -18,7 +18,7 @@ Greetings to our amazing developer community! We're thrilled to announce the lat
 
 A few months have passed since the last major version, but given the number of new features included in this release, it has been well worth the wait.
 
-In our release notes, we're excited to share a new approach to naming our versions: starting from this release, each version of Blazorise will be named after a city in Croatia. This version is affectionately named Zadar. This change is more than just a naming convention; it's a celebration of our rich cultural heritage and a way to promote the beauty of Croatia.
+In our release notes, we're excited to share a new approach to naming our versions: starting from this release, each version of Blazorise will be named after a city in Croatia. This version is affectionately named [Zadar](https://en.wikipedia.org/wiki/Zadar "Link to Zadar"). This change is more than just a naming convention; it's a celebration of our rich cultural heritage and a way to promote the beauty of Croatia.
 
 By associating each release with a Croatian city, we aim to highlight the diverse and picturesque landscapes, the rich history, and the vibrant culture of our country. We believe this unique naming strategy will not only bring a distinctive identity to each Blazorise version but also offer a glimpse into the charming and scenic cities of Croatia to our global user community.
 
@@ -48,7 +48,7 @@ You should now be able to use Blazorise without any breaking changes to the API.
 
 ### Official .NET 8 Support
 
-We have made Blazorise fully compatible with .NET in our latest maintenance v1.3.3 release, but it is still worth mentioning. In this release, you can enjoy all the benefits of .NET Blazor SSR with Blazorise. We made a great deal to make it compatible on time with the .NET release back in November. We hope you will enjoy it as much as we do.
+We have made Blazorise fully compatible with .NET in our latest [maintenance v1.3.3 release](news/release-notes/133 "Link to maintenance v1.3.3 release"), but it is still worth mentioning. In this release, you can enjoy all the benefits of .NET Blazor SSR with Blazorise. We made a great deal to make it compatible on time with the .NET release back in November. We hope you will enjoy it as much as we do.
 
 Our web is also already running on .NET 8 faster than ever.
 
@@ -58,7 +58,7 @@ With the feedback from our community, we've introduced a new `InputFormat` param
 
 At this moment, almost all date formats should be supported. The only feature that is still missing is the usage of long-name days and months, eg `ddd.MM.yyyy`, or `dd.MMM.yyyy`. We are working hard on making it work in future versions.
 
-To see it in action, visit the DatePicker page
+To see it in action, visit the [DatePicker page](docs/components/date-picker "Link to DatePicker page")
 
 ### DataGrid improvements
 
@@ -123,7 +123,7 @@ We've introduced a new `TransferList` component. This component facilitates vari
 
 **Customizable Item Templates**: To cater to different content needs, the TransferList component provides the option to use templates for items. This means you can render custom content within each item, tailoring the appearance and functionality to suit specific requirements.
 
-To see it in action, visit the TransferList page
+To see it in action, visit the [TransferList page](docs/extensions/transferlist "Link to Transfer List page")
 
 ### ListGroup and ListView improvements
 
@@ -137,7 +137,7 @@ The `TabsContent` component now also supports the `RenderMode` feature. This is 
 
 In this Blazorise update, new customization features - `ShowOpacitySlider`, `ShowHueSlider`, and `ShowInputField` - have been added to the `ColorPicker` component. These options enhance user interaction by allowing adjustments in opacity, hue, and direct color value input.
 
-To see these features in action, visit the ColorPicker page in the Blazorise documentation.
+To see these features in action, visit the [ColorPicker page](docs/components/color-picker "Link to ColorPicker page") in the Blazorise documentation.
 
 ### Sticky Table and DataGrid columns
 
@@ -145,7 +145,7 @@ We are excited to announce a new feature in our DataGrid and Table component in 
 
 The new feature allows users to anchor cells or columns to either the left (Start) or right (End) side of the DataGrid. This ensures that the fixed cells or columns remain visible and in place as users scroll through the table. To utilize this feature, set the `FixedPosition` attribute to `TableColumnFixedPosition.Start` for left-side anchoring or `TableColumnFixedPosition.End` for right-side anchoring on a cell. Additionally, you must enable fixed columns on a table with the `FixedColumns` attribute.
 
-For more detailed information and examples, please refer to our DataGrid Fixed Columns documentation.
+For more detailed information and examples, please refer to [our DataGrid Fixed Columns documentation](docs/extensions/datagrid/features/fixed-columns "Link to DataGrid Fixed Columns page").
 
 ### Testing with bUnit
 
@@ -158,7 +158,7 @@ Highlights:
 - Compatible with various Blazorise providers.
 - Streamlines the setup of project dependencies.
 
-For detailed instructions and support, refer to our testing documentation. We're here to help with any issues or questions you might have.
+For detailed instructions and support, refer to our [testing documentation](docs/testing "Link to testing documentation"). We're here to help with any issues or questions you might have.
 
 ## Licensing changes
 

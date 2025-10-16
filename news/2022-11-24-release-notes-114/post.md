@@ -18,7 +18,7 @@ We released Blazorise 1.1 just a few monght ago, and like any release, there are
 
 This new **Blazorise 1.1.4** is a hotfix release to solve this and a few other minor issues that were fixed in the meantime. Blazorise 1.1.4 is a **recommended upgrade for all Blazorise 1.1 and Blazorise 1.1.3 users**.
 
-For a detailed overview of the changes that 1.1.4 included and which are also part of this new release, please read the 1.1 support notes.
+For a detailed overview of the changes that 1.1.4 included and which are also part of this new release, please read the [1.1 support notes](https://github.com/Megabit/Blazorise/issues/4147).
 
 ## Changes
 
@@ -40,7 +40,7 @@ Here are the main changes since 1.1.3-stable:
 
 As of now, there are no known incompatibilities with the previous Blazorise 1.1.x releases. We encourage all users to upgrade to 1.1.3.
 
-If you experience any unexpected behavior change in your projects after upgrading to 1.1.4, please file an issue on GitHub.
+If you experience any unexpected behavior change in your projects after upgrading to 1.1.4, please [file an issue on GitHub](https://github.com/Megabit/Blazorise/issues).
 
 ## Support
 
@@ -48,4 +48,4 @@ Megabit Ltd, a small organization based in Croatia, maintains the open-source co
 
 If you want to help the project and are already a part of a large organization, please consider purchasing a commercial license to help us become a sustainable business. Then we'll be able to continue working on Blazorise.
 
-With a commercial license, you get premium forum support as well as access to our private repositories and community-licensed themes. To learn more, visit us at Blazorise Commercial.
+With a commercial license, you get premium forum support as well as access to our private repositories and community-licensed themes. To learn more, visit us at [Blazorise Commercial](commercial).

@@ -20,7 +20,7 @@ We are pleased to announce the release of Blazorise 1.3.3. This maintenance rele
 
 ### Migration to .NET 8
 
-Blazorise 1.3.3 has been updated to be fully compatible with .NET 8. This ensures improved performance, security, and the latest features from the .NET framework. Developers migrating from older versions of .NET should refer to the .NET 8 migration documentation for a seamless transition.
+Blazorise 1.3.3 has been updated to be fully compatible with .NET 8. This ensures improved performance, security, and the latest features from the .NET framework. Developers migrating from older versions of .NET should refer to the [.NET 8 migration documentation](https://devblogs.microsoft.com/dotnet/announcing-asp-net-core-in-dotnet-8/ "Link to .NET 8 migration documentation") for a seamless transition.
 
 ### Fixed: DatePicker Validation Not Showing
 
@@ -53,10 +53,10 @@ Your feedback and contributions are what make the Blazorise community thrive. Pl
 
 As of now, there are no known incompatibilities with the previous Blazorise **1.3.x** releases. We encourage all users to upgrade to **1.3.3**.
 
-If you experience any unexpected behavior change in your projects after upgrading to 1.3.3, please file an issue on GitHub.
+If you experience any unexpected behavior change in your projects after upgrading to 1.3.3, please [file an issue on GitHub](https://github.com/Megabit/Blazorise/issues).
 
 ## Commercial Support
 
 Blazorise, an open-source component library, is maintained by Megabit Ltd, a small organization based in Croatia. We are strong advocates of the open-source ecosystem, which is why we offer Blazorise through our Community licenses at no cost. However, if you are part of a large organization and would like to support the project, we suggest purchasing a commercial license to help us maintain a sustainable business. This will enable us to continue developing Blazorise.
 
-With a commercial license, you will have access to premium forum support, private repositories and community-licensed themes. To learn more about commercial licenses, please visit our website at Blazorise Commercial.
+With a commercial license, you will have access to premium forum support, private repositories and community-licensed themes. To learn more about commercial licenses, please visit our website at [Blazorise Commercial](https://blazorise.com/commercial).

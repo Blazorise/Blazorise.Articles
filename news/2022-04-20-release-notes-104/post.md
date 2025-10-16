@@ -35,4 +35,4 @@ Blazorise is an open-source component library maintained by Megabit Ltd, a small
 
 If you'd like to support the project and are already a part of a large organization, we would like you to consider purchasing a commercial license to help us be a sustainable business. Then, we will be able to continue working on Blazorise.
 
-With a Blazorise commercial license, you get premium forum support and access to our private repositories and themes with a community license. Visit us at Blazorise Commercial to learn more.
+With a Blazorise commercial license, you get premium forum support and access to our private repositories and themes with a community license. Visit us at [Blazorise Commercial](commercial) to learn more.
