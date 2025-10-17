@@ -159,4 +159,4 @@ Together, we make Blazorise better — one post at a time.
 
 **📫 Questions or feedback?**
 
-Feel free to reach out on [Discord](https://discord.gg/FkKzXbZ), [GitHub Discussions](https://github.com/Megabit/Blazorise/discussions), or [Twitter](https://twitter.com/blazorise).
+Feel free to reach out on [Discord](https://discord.gg/cVmq8xBSnG), [GitHub Discussions](https://github.com/Megabit/Blazorise/discussions), or [Twitter](https://twitter.com/blazorise).
