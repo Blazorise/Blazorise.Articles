@@ -72,30 +72,25 @@ pinned: true
 ## 🖋️ Writing a Post
 
 1. **Create a new folder** under either `/blog` or `/news`
-
-Name it using the date and a short slug:
-
-```
-2025-10-17-my-awesome-post
-```
+   Name it using the date and a short slug:
+   ```
+   2025-10-17-my-awesome-post
+   ```
 
 2. **Add your post.md** file with YAML front matter and Markdown content.
 
 3. **Add any images** inside an `img` subfolder next to your Markdown file:
-
-```
-img/my-post-image.png
-```
+   ```
+   img/my-post-image.png
+   ```
 
 4. **Use relative paths** for images inside Markdown:
-
-```markdown
-![My Post Image](img/my-post-image.png)
-```
+   ```markdown
+   ![My Post Image](img/my-post-image.png)
+   ```
 
 5. **Create a Pull Request** to propose your post.
-
-The Blazorise team will review, approve, and merge it — triggering the publishing workflow.
+   The Blazorise team will review, approve, and merge it — triggering the publishing workflow.
 
 ---
 
@@ -106,11 +101,9 @@ When a new post is merged into the `main` branch:
 1. A GitHub Action automatically runs.
 2. It parses all Markdown posts and metadata.
 3. It builds optimized bundles:
-
-- `index.json` → summary info for all posts
-- `posts.zip` → full Markdown content
-- `version.json` → current build version
-
+   - `index.json` → summary info for all posts
+   - `posts.zip` → full Markdown content
+   - `version.json` → current build version
 4. The Blazorise Docs site automatically refreshes to display the new content.
 
 ---
@@ -122,10 +115,9 @@ When a new post is merged into the `main` branch:
 - Optimize images for web (prefer ≤ 200 KB).
 - Run spell check before committing.
 - Follow the filename convention:
-
-```
-yyyy-MM-dd-post-title
-```
+  ```
+  yyyy-MM-dd-post-title
+  ```
 
 ---
 
