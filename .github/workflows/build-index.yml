@@ -50,3 +50,10 @@ jobs:
             git commit -m "chore(runtime): update content index [skip ci]"
             git push
           fi
+      - name: Notify application to refresh bundle
+        if: ${{ success() && secrets.BLOG_REFRESH_URL != '' && secrets.BLOG_REFRESH_SECRET != '' }}
+        run: |
+          echo "Triggering blog refresh webhook..."
+          curl -sS -X POST "${{ secrets.BLOG_REFRESH_URL }}" \
+            -H "X-Refresh-Secret: ${{ secrets.BLOG_REFRESH_SECRET }}" \
+            -d '{}' || echo "Webhook failed but continuing"
