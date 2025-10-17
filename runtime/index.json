@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2025-10-17T09:13:24.353Z",
-  "commit": "353087b7ac33",
+  "generatedAt": "2025-10-17T09:19:18.008Z",
+  "commit": "163e0c200d66",
   "count": 96,
   "items": [
     {
@@ -107,7 +107,7 @@
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
       "readTime": "7 min",
-      "pinned": false
+      "pinned": true
     },
     {
       "root": "news",
@@ -287,7 +287,7 @@
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
       "readTime": "4 min",
-      "pinned": false
+      "pinned": true
     },
     {
       "root": "blog",
