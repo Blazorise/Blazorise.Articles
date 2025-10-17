@@ -10,6 +10,7 @@ author-image: /assets/img/authors/mladen.png
 category: News
 posted-on: 2025-07-07
 read-time: 7 min
+pinned: true
 ---
 
 # Announcing Blazorise 1.8 - Lokrum
