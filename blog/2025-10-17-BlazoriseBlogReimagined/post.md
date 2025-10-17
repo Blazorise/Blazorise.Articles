@@ -52,7 +52,7 @@ It's simple, fast, and refreshes itself only when a new version is pushed.
 
 Here's the best part, anyone can publish a post with just a simple Markdown file.
 
-No need for a CMS, no complex setup, and no developer-only barriers. Just open your favorite text editor, drop a new '.md' file into the blog or news folder, and push it to GitHub. That's it.
+No need for a CMS, no complex setup, and no developer-only barriers. Just open your favorite text editor, drop a new `.md` file into the blog or news folder, and push it to GitHub. That's it.
 
 We've designed the new system to make sharing your Blazorise journey effortless. Whether you're showing off your first DataGrid, solving an interesting UI challenge, or just sharing a small win, we want writing to feel natural and fun.
 
