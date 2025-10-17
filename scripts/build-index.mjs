@@ -156,6 +156,15 @@ function normalizePostedOn(posted, mdRelPath) {
   return extractDateFromPath(mdRelPath) || undefined;
 }
 
+function toBool(v) {
+  if (typeof v === 'boolean') return v;
+  if (v === undefined || v === null) return false;
+  const s = String(v).trim().toLowerCase();
+  if (s === 'true' || s === 'yes' || s === '1') return true;
+  if (s === 'false' || s === 'no' || s === '0') return false;
+  return false;
+}
+
 function compactIndexItem(mdRelPath, fm) {
   const root = rootFromPath(mdRelPath); // blog | news
   const relativeDir = relDir(mdRelPath);
@@ -175,6 +184,7 @@ function compactIndexItem(mdRelPath, fm) {
     authorName: fm.authorName || null,
     authorImage: fm.authorImage || null,
     readTime: fm.readTime || null,
+    pinned: toBool(fm.pinned) || false
   };
 }
 
