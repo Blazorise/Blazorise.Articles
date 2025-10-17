@@ -137,6 +137,25 @@ function readFrontMatter(mdPath) {
   };
 }
 
+function extractDateFromPath(mdRelPath) {
+  // e.g. "blog/2022-06-08-some-post/post.md" -> "2022-06-08"
+  const m = (mdRelPath || '').match(/\b(\d{4}-\d{2}-\d{2})\b/);
+  return m ? m[1] : undefined;
+}
+
+function normalizePostedOn(posted, mdRelPath) {
+  let v = (posted || '').trim();
+  if (v) {
+    // Try JS Date parsing; if valid, format as yyyy-MM-dd (UTC)
+    const d = new Date(v);
+    if (!isNaN(d)) {
+      return d.toISOString().split('T')[0]; // yyyy-MM-dd
+    }
+  }
+  // Fallback to the date segment from the path (matches your folder convention)
+  return extractDateFromPath(mdRelPath) || undefined;
+}
+
 function compactIndexItem(mdRelPath, fm) {
   const root = rootFromPath(mdRelPath); // blog | news
   const relativeDir = relDir(mdRelPath);
@@ -150,7 +169,7 @@ function compactIndexItem(mdRelPath, fm) {
     permalink: fm.permalink,
     title: fm.title,
     summary: fm.description,
-    postedOn: fm.postedOn,
+    postedOn: normalizePostedOn(fm.postedOn, mdRelPath),
     category: fm.category || null,
     imageUrl: fm.imageUrl || null,
     authorName: fm.authorName || null,
