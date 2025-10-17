@@ -132,6 +132,7 @@ function readFrontMatter(mdPath) {
       category: cleanStr(fm['category']),
       postedOn: cleanStr(fm['posted-on']),
       readTime: cleanStr(fm['read-time']),
+      pinned
     },
     body
   };
