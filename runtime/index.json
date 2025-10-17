@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2025-10-17T08:45:13.358Z",
-  "commit": "0d8fc0d86a71",
+  "generatedAt": "2025-10-17T09:06:00.206Z",
+  "commit": "9be83d2926b2",
   "count": 96,
   "items": [
     {
@@ -16,7 +16,8 @@
       "imageUrl": "img/v185.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -30,7 +31,8 @@
       "imageUrl": "img/v184.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -44,7 +46,8 @@
       "imageUrl": "img/v183.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -58,7 +61,8 @@
       "imageUrl": "img/blazorise-affiliate-discontinued.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -72,7 +76,8 @@
       "imageUrl": "img/v182.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -86,7 +91,8 @@
       "imageUrl": "img/v181.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -100,7 +106,8 @@
       "imageUrl": "img/v180.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "7 min"
+      "readTime": "7 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -114,7 +121,8 @@
       "imageUrl": "img/v176.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -128,7 +136,8 @@
       "imageUrl": "img/v177.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -142,7 +151,8 @@
       "imageUrl": "img/blazorise-pricing-eur-transition.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -156,7 +166,8 @@
       "imageUrl": "img/v175.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -170,7 +181,8 @@
       "imageUrl": "img/v174.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -184,7 +196,8 @@
       "imageUrl": "img/v173.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -198,7 +211,8 @@
       "imageUrl": "img/v172.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -212,7 +226,8 @@
       "imageUrl": "img/v171.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -226,7 +241,8 @@
       "imageUrl": "img/v170.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "7 min"
+      "readTime": "7 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -240,7 +256,8 @@
       "imageUrl": "img/hero.webp",
       "authorName": "Jan Tesař",
       "authorImage": "/assets/img/authors/tesy.png",
-      "readTime": "10 min"
+      "readTime": "10 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -254,7 +271,8 @@
       "imageUrl": "img/v162.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -268,7 +286,8 @@
       "imageUrl": "img/blazorise-future.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "4 min"
+      "readTime": "4 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -282,7 +301,8 @@
       "imageUrl": "img/blazor-plus-tailwind.png",
       "authorName": "Jan Tesař",
       "authorImage": "/assets/img/authors/tesy.png",
-      "readTime": "8 min"
+      "readTime": "8 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -296,7 +316,8 @@
       "imageUrl": "img/v160.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "7 min"
+      "readTime": "7 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -310,7 +331,8 @@
       "imageUrl": "img/how-to-create-social-media-share-buttons.png",
       "authorName": "Giorgi",
       "authorImage": "/assets/img/authors/giorgi.png",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -324,7 +346,8 @@
       "imageUrl": "img/how-to-implement-validation-with-captcha.png",
       "authorName": "David Moreira",
       "authorImage": "/assets/img/authors/david.png",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -338,7 +361,8 @@
       "imageUrl": "img/v152.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -352,7 +376,8 @@
       "imageUrl": "img/v153.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -366,7 +391,8 @@
       "imageUrl": "img/v161.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -380,7 +406,8 @@
       "imageUrl": "img/v151.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -394,7 +421,8 @@
       "imageUrl": "img/how-to-override-fluent-design-tokens.png",
       "authorName": "Mladen Macanovic",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -408,7 +436,8 @@
       "imageUrl": "img/v150.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "9 min"
+      "readTime": "9 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -422,7 +451,8 @@
       "imageUrl": "img/v143.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -436,7 +466,8 @@
       "imageUrl": "img/v142.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -450,7 +481,8 @@
       "imageUrl": "img/v141.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -464,7 +496,8 @@
       "imageUrl": "img/v134.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -478,7 +511,8 @@
       "imageUrl": "img/v140.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "9 min"
+      "readTime": "9 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -492,7 +526,8 @@
       "imageUrl": "img/v133.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -506,7 +541,8 @@
       "imageUrl": "img/v132.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -520,7 +556,8 @@
       "imageUrl": "img/how_to_handle_localization_in_blazorise_validation.png",
       "authorName": "David Moreira",
       "authorImage": "/assets/img/authors/david.png",
-      "readTime": "8 min"
+      "readTime": "8 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -534,7 +571,8 @@
       "imageUrl": "img/how_to_enhance_the_new_dataGrid_menu_filter.png",
       "authorName": "David Moreira",
       "authorImage": "/assets/img/authors/david.png",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -548,7 +586,8 @@
       "imageUrl": "img/v131.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -562,7 +601,8 @@
       "imageUrl": "img/v130.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "11 min"
+      "readTime": "11 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -576,7 +616,8 @@
       "imageUrl": "img/v125.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -590,7 +631,8 @@
       "imageUrl": "img/the-importance-of-javascript-in-blazorise.png",
       "authorName": "Toni Sokolov",
       "authorImage": "/assets/img/authors/tonis.png",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -604,7 +646,8 @@
       "imageUrl": "img/v124.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -618,7 +661,8 @@
       "imageUrl": "img/2023-blazorise-plans-change.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "4 min"
+      "readTime": "4 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -632,7 +676,8 @@
       "imageUrl": "img/v123.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -646,7 +691,8 @@
       "imageUrl": "img/what-is-blazorise-all-about.png",
       "authorName": "Tihana Jukić",
       "authorImage": "/assets/img/authors/tihana.png",
-      "readTime": "8 min"
+      "readTime": "8 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -660,7 +706,8 @@
       "imageUrl": "img/v122.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -674,7 +721,8 @@
       "imageUrl": "img/2022-blazorise-goals.png",
       "authorName": "Tihana Jukić",
       "authorImage": "/assets/img/authors/tihana.png",
-      "readTime": "9 min"
+      "readTime": "9 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -688,7 +736,8 @@
       "imageUrl": "img/v121.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -702,7 +751,8 @@
       "imageUrl": "img/v117.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -716,7 +766,8 @@
       "imageUrl": "img/v120.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "7 min"
+      "readTime": "7 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -730,7 +781,8 @@
       "imageUrl": "img/v116.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -744,7 +796,8 @@
       "imageUrl": "img/v115.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -758,7 +811,8 @@
       "imageUrl": "img/introducing-the-blazorise-mvc-award-program.png",
       "authorName": "Tihana Jukić",
       "authorImage": "/assets/img/authors/tihana.png",
-      "readTime": "4 min"
+      "readTime": "4 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -772,7 +826,8 @@
       "imageUrl": "img/v114.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -786,7 +841,8 @@
       "imageUrl": "img/v113.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "4 min"
+      "readTime": "4 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -800,7 +856,8 @@
       "imageUrl": "img/v112.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -814,7 +871,8 @@
       "imageUrl": "img/v111.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -828,7 +886,8 @@
       "imageUrl": "img/v110.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "10 min"
+      "readTime": "10 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -842,7 +901,8 @@
       "imageUrl": "img/create-new-blazor-app.png",
       "authorName": "James Amattey",
       "authorImage": "/assets/img/authors/james.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -856,7 +916,8 @@
       "imageUrl": "img/AsyncAwait_What_Happens_Under_The_Hood.png",
       "authorName": "Andre Santarosa",
       "authorImage": "/assets/img/authors/andresantarosa.png",
-      "readTime": "13 min"
+      "readTime": "13 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -870,7 +931,8 @@
       "imageUrl": "img/css.png",
       "authorName": "James Amattey",
       "authorImage": "/assets/img/authors/james.png",
-      "readTime": "3 min"
+      "readTime": "3 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -884,7 +946,8 @@
       "imageUrl": "img/NET7.png",
       "authorName": "James Amattey",
       "authorImage": "/assets/img/authors/james.png",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -898,7 +961,8 @@
       "imageUrl": "img/ReactiveUI_Blazorise_FluentValidation.png",
       "authorName": "Rich Bryant",
       "authorImage": "/assets/img/authors/richbryant.png",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -912,7 +976,8 @@
       "imageUrl": "img/Create_A_Tabbed_Login_and_Register_Page_In_5_Minutes_In_Blazor_With_Blazorise_Components.png",
       "authorName": "James Amattey",
       "authorImage": "/assets/img/authors/james.png",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -926,7 +991,8 @@
       "imageUrl": "img/A_Beginners_Guide_To_NET_MAUI.png",
       "authorName": "James Amattey",
       "authorImage": "/assets/img/authors/james.png",
-      "readTime": "4 min"
+      "readTime": "4 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -940,7 +1006,8 @@
       "imageUrl": "img/What_Is_Blazor_WASM.png",
       "authorName": "James Amattey",
       "authorImage": "/assets/img/authors/james.png",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -954,7 +1021,8 @@
       "imageUrl": "img/the_underlying_technology_behind_blazor_wasm.png",
       "authorName": "James Amattey",
       "authorImage": "/assets/img/authors/james.png",
-      "readTime": "4 min"
+      "readTime": "4 min",
+      "pinned": false
     },
     {
       "root": "blog",
@@ -968,7 +1036,8 @@
       "imageUrl": "img/Blazorise-Select-Component.png",
       "authorName": "David Moreira",
       "authorImage": "/assets/img/authors/david.png",
-      "readTime": "4 min"
+      "readTime": "4 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -982,7 +1051,8 @@
       "imageUrl": "img/v105.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -996,7 +1066,8 @@
       "imageUrl": "img/v106.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1010,7 +1081,8 @@
       "imageUrl": "img/v107.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1024,7 +1096,8 @@
       "imageUrl": "img/v104.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1038,7 +1111,8 @@
       "imageUrl": "img/v103.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1052,7 +1126,8 @@
       "imageUrl": "img/v102.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1066,7 +1141,8 @@
       "imageUrl": "img/v095-7.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1080,7 +1156,8 @@
       "imageUrl": "img/v101.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1094,7 +1171,8 @@
       "imageUrl": "img/v100.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "7 min"
+      "readTime": "7 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1108,7 +1186,8 @@
       "imageUrl": "img/v095-6.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1122,7 +1201,8 @@
       "imageUrl": "img/v095-5.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1136,7 +1216,8 @@
       "imageUrl": "img/v095-4.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1150,7 +1231,8 @@
       "imageUrl": "img/blazorise-plans-change.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "3 min 10 sec"
+      "readTime": "3 min 10 sec",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1164,7 +1246,8 @@
       "imageUrl": "img/v095-3.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1178,7 +1261,8 @@
       "imageUrl": "img/v095-2.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "30 sec"
+      "readTime": "30 sec",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1192,7 +1276,8 @@
       "imageUrl": "img/v095-1.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1206,7 +1291,8 @@
       "imageUrl": "img/v094-9.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "30 sec"
+      "readTime": "30 sec",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1220,7 +1306,8 @@
       "imageUrl": "img/v095.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "8 min 40 sec"
+      "readTime": "8 min 40 sec",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1234,7 +1321,8 @@
       "imageUrl": "img/v094-8.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "30 sec"
+      "readTime": "30 sec",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1248,7 +1336,8 @@
       "imageUrl": "img/v094-7.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "30 sec"
+      "readTime": "30 sec",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1262,7 +1351,8 @@
       "imageUrl": "img/v094-5.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1276,7 +1366,8 @@
       "imageUrl": "img/v094-4.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "30 sec"
+      "readTime": "30 sec",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1290,7 +1381,8 @@
       "imageUrl": "img/v094-2.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1304,7 +1396,8 @@
       "imageUrl": "img/v094-3.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1318,7 +1411,8 @@
       "imageUrl": "img/v094-1.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "1 min"
+      "readTime": "1 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1332,7 +1426,8 @@
       "imageUrl": "img/blazorise-commercial-live.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "2 min"
+      "readTime": "2 min",
+      "pinned": false
     },
     {
       "root": "news",
@@ -1346,7 +1441,8 @@
       "imageUrl": "img/blazorise-license-change.png",
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "5 min"
+      "readTime": "5 min",
+      "pinned": false
     }
   ]
 }
