@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2025-10-17T09:19:18.008Z",
-  "commit": "163e0c200d66",
-  "count": 96,
+  "generatedAt": "2025-10-17T09:38:44.600Z",
+  "commit": "730a7aaae152",
+  "count": 97,
   "items": [
+    {
+      "root": "blog",
+      "dir": "blog/2025-10-17-BlazoriseBlogReimagined",
+      "slug": "blazorise-blog-reimagined",
+      "permalink": "/blog/blazorise-blog-reimagined",
+      "title": "Blazorise Blog Reimagined – A Fresh Start for Our Stories",
+      "summary": "We rebuilt our entire blog and news platform from scratch! Learn how the new system makes it easier for everyone to write, share, and collaborate on Blazorise stories and updates.",
+      "postedOn": "2025-10-17",
+      "category": "Announcements",
+      "imageUrl": "img/blazorise-blog-reimagined.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "4 min",
+      "pinned": true
+    },
     {
       "root": "news",
       "dir": "news/2025-10-14-release-notes-185",
