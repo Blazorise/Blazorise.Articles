@@ -51,9 +51,11 @@ jobs:
             git push
           fi
       - name: Notify application to refresh bundle
-        if: ${{ success() && secrets.BLOG_REFRESH_URL != '' && secrets.BLOG_REFRESH_SECRET != '' }}
+        if: ${{ success() && env.BLOG_REFRESH_URL != '' && env.BLOG_REFRESH_SECRET != '' }}
+        env:
+          BLOG_REFRESH_URL: ${{ secrets.BLOG_REFRESH_URL }}
+          BLOG_REFRESH_SECRET: ${{ secrets.BLOG_REFRESH_SECRET }}
         run: |
-          echo "Triggering blog refresh webhook..."
-          curl -sS -X POST "${{ secrets.BLOG_REFRESH_URL }}" \
-            -H "X-Refresh-Secret: ${{ secrets.BLOG_REFRESH_SECRET }}" \
-            -d '{}' || echo "Webhook failed but continuing"
+          curl -sS -X POST "$BLOG_REFRESH_URL" \
+            -H "X-Refresh-Secret: $BLOG_REFRESH_SECRET" \
+            -d '{}' || echo "Webhook failed (non-fatal)"
