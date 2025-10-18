@@ -10,7 +10,6 @@ author-image: "/assets/img/authors/mladen.png"
 category: News
 posted-on: 2024-09-14
 read-time: 4 min
-pinned: true
 ---
 
 # Blazorise 2.0: Plans and Vision for the Future
