@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2025-10-17T15:35:57.738Z",
-  "commit": "a3d932c0b4a8",
-  "count": 97,
+  "generatedAt": "2025-10-18T18:02:15.632Z",
+  "commit": "011129977e02",
+  "count": 98,
   "items": [
+    {
+      "root": "blog",
+      "dir": "blog/2025-10-18-task-scheduling-and-background-services-in-blazor-server",
+      "slug": "task-scheduling-and-background-services-in-blazor-server",
+      "permalink": "/blog/task-scheduling-and-background-services-in-blazor-server",
+      "title": "Task Scheduling and Background Services in Blazor Server",
+      "summary": "Learn how to safely run background tasks, update the UI, and schedule recurring jobs in Blazor Server using hosted services, Quartz.NET, and InvokeAsync.",
+      "postedOn": "2025-10-18",
+      "category": "How To Guides",
+      "imageUrl": "img/blazor-server-background-tasks.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "10 min",
+      "pinned": false
+    },
     {
       "root": "blog",
       "dir": "blog/2025-10-17-BlazoriseBlogReimagined",
@@ -302,7 +317,7 @@
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
       "readTime": "4 min",
-      "pinned": true
+      "pinned": false
     },
     {
       "root": "blog",
