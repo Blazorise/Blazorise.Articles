@@ -409,5 +409,5 @@ With these pieces, you can run anything from nightly reports to real-time system
 ---
 
 **💡 Tip:**  
-This same pattern, shared data service, background processing, and safe UI updates, underpins the [Blazorise Scheduler](https://blazorise.com/docs/extensions/scheduler).  
+This same pattern, shared data service, background processing, and safe UI updates, underpins the [Blazorise Scheduler](docs/extensions/scheduler).  
 It's how recurring appointments stay accurate even when running complex background logic.
