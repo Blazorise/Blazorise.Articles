@@ -1,6 +1,6 @@
 {
   "origins": [
-    "https://blazorise.com",
+    "https://blazorise.com"
   ],
   "originsRegex": [
     "http://localhost:[0-9]+"
