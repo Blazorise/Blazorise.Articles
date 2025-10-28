@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2025-10-18T18:06:35.151Z",
-  "commit": "2b48dcd0ea23",
-  "count": 98,
+  "generatedAt": "2025-10-28T10:52:57.019Z",
+  "commit": "9827e5cbdfbf",
+  "count": 99,
   "items": [
+    {
+      "root": "blog",
+      "dir": "blog/2025-10-28-real-time-blazor-apps-signalr-and-blazorise-notifications",
+      "slug": "real-time-blazor-apps-signalr-and-blazorise-notifications",
+      "permalink": "/blog/real-time-blazor-apps-signalr-and-blazorise-notifications",
+      "title": "Real-Time Blazor Apps: Integrating SignalR and Blazorise Notifications",
+      "summary": "Learn how to build real-time Blazor Server and Blazor WebAssembly apps using SignalR, and surface live updates through Blazorise Toast notifications and ToastService.",
+      "postedOn": "2025-10-28",
+      "category": "How To Guides",
+      "imageUrl": "img/blazor-signalr-notifications.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "11 min",
+      "pinned": false
+    },
     {
       "root": "blog",
       "dir": "blog/2025-10-18-task-scheduling-and-background-services-in-blazor-server",
