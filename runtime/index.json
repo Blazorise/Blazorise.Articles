@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2025-10-28T10:52:57.019Z",
-  "commit": "9827e5cbdfbf",
-  "count": 99,
+  "generatedAt": "2025-11-05T09:16:55.120Z",
+  "commit": "c7771cd197b7",
+  "count": 100,
   "items": [
+    {
+      "root": "blog",
+      "dir": "blog/2025-11-05-handling-complex-forms-with-validation-and-dynamic-rules",
+      "slug": "handling-complex-forms-with-validation-and-dynamic-rules",
+      "permalink": "/blog/handling-complex-forms-with-validation-and-dynamic-rules",
+      "title": "Handling Complex Forms with Validation and Dynamic Rules",
+      "summary": "Learn how to build enterprise-grade Blazor forms using Blazorise Validation, with async validators, conditional rules, and dynamically generated fields.",
+      "postedOn": "2025-11-05",
+      "category": "How To Guides",
+      "imageUrl": "img/blazorise-complex-forms.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "13 min",
+      "pinned": false
+    },
     {
       "root": "blog",
       "dir": "blog/2025-10-28-real-time-blazor-apps-signalr-and-blazorise-notifications",
