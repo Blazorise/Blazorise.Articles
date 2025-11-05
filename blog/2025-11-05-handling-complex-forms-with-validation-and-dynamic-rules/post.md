@@ -375,9 +375,14 @@ In short: **it's validation the way enterprise Blazor apps actually need it to w
 
 ---
 
-## Source Code
+## Thank You for Reading
 
-All examples from this article are available in our [Blazorise Samples repository](https://github.com/Megabit/Blazorise-Samples/tree/main/ComplexFormsValidation).
+We hope this deep dive helped you understand how Blazorise Validation can simplify the most complex form scenarios- from async checks to dynamically generated layouts.
+
+If you enjoyed this article or learned something new, consider sharing it with your team or starring the [Blazorise GitHub repository](https://github.com/Megabit/Blazorise).  
+Your feedback and support help us keep improving and building the best Blazor UI framework possible.
+
+Stay tuned for more articles exploring real-world patterns, components, and architecture techniques- all built with Blazorise.
 
 ---
 
