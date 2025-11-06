@@ -360,6 +360,102 @@ This flexibility makes Blazorise suitable for systems that need to **define form
 
 ---
 
+## Integrating FluentValidation with Blazorise
+
+For developers already using **FluentValidation**, Blazorise provides a first-class integration through the [Blazorise.FluentValidation](https://blazorise.com/docs/extensions/fluent-validation) extension.
+
+This extension allows you to use your existing FluentValidation rules directly within Blazorise's validation system.  
+It combines the expressive rule syntax of FluentValidation with Blazorise's component-driven approach to form rendering.
+
+Here's a simple example of how you can plug FluentValidation into your Blazorise forms:
+
+```razor
+@using Blazorise.FluentValidation
+
+<Validations @ref="@fluentValidations"
+             Mode="ValidationMode.Manual"
+             Model="@person"
+             HandlerType="typeof(FluentValidationHandler)">
+    <Validation>
+        <Field>
+            <FieldLabel>First name</FieldLabel>
+            <TextEdit Placeholder="Enter first name..." @bind-Text="@person.FirstName">
+                <Feedback>
+                    <ValidationError />
+                </Feedback>
+            </TextEdit>
+        </Field>
+    </Validation>
+
+    <Validation>
+        <Field>
+            <FieldLabel>Last name</FieldLabel>
+            <TextEdit Placeholder="Enter last name..." @bind-Text="@person.LastName">
+                <Feedback>
+                    <ValidationError />
+                </Feedback>
+            </TextEdit>
+        </Field>
+    </Validation>
+
+    <Validation>
+        <Field>
+            <FieldLabel>Age</FieldLabel>
+            <NumericEdit Placeholder="Enter age..." @bind-Value="@person.Age">
+                <Feedback>
+                    <ValidationError />
+                </Feedback>
+            </NumericEdit>
+        </Field>
+    </Validation>
+</Validations>
+
+<Button Color="Color.Primary" Clicked="@OnSavePerson">Save</Button>
+
+@code {
+    Validations fluentValidations;
+    Person person = new();
+
+    protected async Task OnSavePerson()
+    {
+        if ( await fluentValidations.ValidateAll() )
+        {
+            // The person is validated and ready to be saved
+        }
+    }
+}
+```
+
+And the corresponding FluentValidation rule class:
+
+```csharp
+using FluentValidation;
+
+public class PersonValidator : AbstractValidator<Person>
+{
+    public PersonValidator()
+    {
+        RuleFor(vm => vm.FirstName)
+            .NotEmpty()
+            .MaximumLength(30);
+
+        RuleFor(vm => vm.LastName)
+            .NotEmpty()
+            .MaximumLength(30);
+
+        RuleFor(vm => vm.Age)
+            .GreaterThanOrEqualTo(18);
+    }
+}
+```
+
+### How It Works
+
+Blazorise automatically connects your model to FluentValidation via the `FluentValidationHandler`.  
+When you call `ValidateAll()`, Blazorise invokes your FluentValidation rules, and any validation messages are rendered through the familiar `<ValidationError />` feedback system.
+
+This makes it possible to reuse existing FluentValidation logic across Blazor, API, and server projects — while still enjoying the same consistent Blazorise form behavior.
+
 ## Summary: A Validation System Designed for Real-World Use
 
 Blazorise validation is not a thin layer over `EditForm`; it's an entirely new model designed for composability and flexibility.
