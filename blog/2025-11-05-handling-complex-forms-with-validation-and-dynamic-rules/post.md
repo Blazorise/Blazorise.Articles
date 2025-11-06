@@ -451,7 +451,8 @@ public class PersonValidator : AbstractValidator<Person>
 
 ### How It Works
 
-Blazorise automatically connects your model to FluentValidation via the `FluentValidationHandler`.  
+Blazorise automatically connects your model to FluentValidation via the `FluentValidationHandler`.
+
 When you call `ValidateAll()`, Blazorise invokes your FluentValidation rules, and any validation messages are rendered through the familiar `<ValidationError />` feedback system.
 
 This makes it possible to reuse existing FluentValidation logic across Blazor, API, and server projects — while still enjoying the same consistent Blazorise form behavior.
