@@ -2,7 +2,7 @@ name: Build content index
 
 on:
   push:
-    branches: [ releases ]
+    branches: [ main ]
     paths:
       - 'blog/**'
       - 'news/**'
