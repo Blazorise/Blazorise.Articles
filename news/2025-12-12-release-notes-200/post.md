@@ -153,6 +153,15 @@ Ensure all `Blazorise.*` packages are upgraded to **version 2.0.0**.
 
 ---
 
+## New Features
+
+### Heading Aliases
+
+New component aliases have been introduced for both `Heading` and `DisplayHeading` components to simplify usage and improve readability in markup. You can now use `Heading1` through `Heading6` as direct equivalents to `<Heading Size="HeadingSize.Is1">` through `<Heading Size="HeadingSize.Is6">`, and `DisplayHeading1` through `DisplayHeading4` as equivalents to `<DisplayHeading Size="DisplayHeadingSize.Is1">` through `<DisplayHeading Size="DisplayHeadingSize.Is4">`.
+
+These aliases make it easier to write semantically clear headings without needing to specify size attributes explicitly.
+
+
 ## Final Notes 🏁
 
 Blazorise 2.0 introduces a consistent, modernized input system and simpler APIs that make form handling easier and more intuitive.  
