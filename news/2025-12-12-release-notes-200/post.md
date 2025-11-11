@@ -97,6 +97,20 @@ To better reflect their purpose and align with modern Blazor conventions, most i
 - Renamed `CurrentPage` to `Page`
 - Removed `DataGridPageChangedEventArgs`
 
+## Layout & Grid Updates
+
+The **Row** component has been simplified and modernized with a new unified `Gutter` parameter.  
+This change replaces several older parameters with a new fluent API for controlling spacing between columns.
+
+### What Changed
+
+| Old Parameter(s) | New Equivalent |
+|------------------|----------------|
+| `(int Horizontal, int Vertical)? Gutter` | `IFluentGutter Gutter` |
+| `HorizontalGutter` | Removed |
+| `VerticalGutter` | Removed |
+| `NoGutters` | Removed |
+
 ---
 
 ### Migration Steps 🧭
