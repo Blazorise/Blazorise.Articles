@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2025-11-09T11:34:02.253Z",
-  "commit": "ccd7ca7dcf34",
-  "count": 100,
+  "generatedAt": "2025-11-12T11:01:18.952Z",
+  "commit": "805fb4ca3e37",
+  "count": 101,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2025-11-12-release-notes-186",
+      "slug": "186",
+      "permalink": "/news/release-notes/186",
+      "title": "Blazorise 1.8.6 – .NET 10 Ready",
+      "summary": "Blazorise 1.8.6 adds official support for .NET 10 and delivers multiple DataGrid and FilePicker stability fixes, ensuring a smooth transition for developers upgrading to the latest .NET platform.",
+      "postedOn": "2025-11-12",
+      "category": "News",
+      "imageUrl": "img/v186.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "blog",
       "dir": "blog/2025-11-05-handling-complex-forms-with-validation-and-dynamic-rules",
