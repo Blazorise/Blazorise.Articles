@@ -175,6 +175,11 @@ New component aliases have been introduced for both `Heading` and `DisplayHeadin
 
 These aliases make it easier to write semantically clear headings without needing to specify size attributes explicitly.
 
+### Gutters Utilities
+
+We added a new `Gutter` system that allows you to control the horizontal and vertical spacing between columns and rows directly on any `Row` component. The gutter behavior now matches Bootstrap 5's model and works consistently across all providers, including Tailwind, Bootstrap, and Bulma. You can apply gutters per axis (`OnX`, `OnY`) or on both axes at once, with full support for responsive values.
+
+Learn more in the official [Gutters Utilities](docs/helpers/utilities/gutters "Gutters Utilities") documentation page.
 
 ## Final Notes 🏁
 
