@@ -35,11 +35,12 @@ This issue existed for a long time due to the complexity of synchronizing virtua
 Everything included in **1.8.7**:
 
 - [#6270](https://github.com/Megabit/Blazorise/issues/6270): [Bug]: Errormessage in JavaScript of `table.js`
-- [#6274](https://github.com/Megabit/Blazorise/issues/6274): Autocomplete: prevent closing nested parent menu
-- [#6276](https://github.com/Megabit/Blazorise/issues/6276): Docs: only one horizontal field in a row
-- [#6277](https://github.com/Megabit/Blazorise/issues/6277): Make Select work as `AddonType.End`
+- [#6274](https://github.com/Megabit/Blazorise/issues/6274): [Bug]: Autocomplete: prevent closing nested parent menu
+- [#6276](https://github.com/Megabit/Blazorise/issues/6276): [Docs]: only one horizontal field in a row
+- [#6277](https://github.com/Megabit/Blazorise/issues/6277): [Bug]: Make Select work as `AddonType.End`
 - [#5693](https://github.com/Megabit/Blazorise/issues/5693): [Bug]: Validation on RadioGroup is not red
 - [#5197](https://github.com/Megabit/Blazorise/issues/5197): [Bug]: Arrow navigation not working properly with virtualization (long-standing issue finally resolved)
+- [#4042](https://github.com/Megabit/Blazorise/issues/4042): [Bug]: Some bootstrap styles are overridden by adding ThemeProvider and Theme
 
 ## Upgrading
 
