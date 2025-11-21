@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2025-11-12T11:01:18.952Z",
-  "commit": "805fb4ca3e37",
-  "count": 101,
+  "generatedAt": "2025-11-20T12:13:24.450Z",
+  "commit": "a09f704159a8",
+  "count": 102,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2025-11-20-release-notes-187",
+      "slug": "187",
+      "permalink": "/news/release-notes/187",
+      "title": "Blazorise 1.8.7 – Stability & Long‑Awaited Fixes",
+      "summary": "Blazorise 1.8.7 delivers several important bug fixes, including a long‑standing virtualization navigation issue, improved validation behavior, and multiple component refinements.",
+      "postedOn": "2025-11-20",
+      "category": "News",
+      "imageUrl": "img/v187.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2025-11-12-release-notes-186",
