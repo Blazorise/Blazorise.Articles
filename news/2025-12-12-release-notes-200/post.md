@@ -167,6 +167,33 @@ Ensure all `Blazorise.*` packages are upgraded to **version 2.0.0**.
 
 ---
 
+## Blazorise Charts
+
+## Remove Static Files
+
+All Charts static files are now loaded dynamicaly. Remove any mention of:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@1.28.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-streaming@2.0.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@2.2.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.2.0/dist/chartjs-plugin-zoom.min.js"></script>
+```
+
+## Scale configuration
+
+A new `ChartAxisBorder` option (surfaced on `ChartAxis.Border`) maps directly to Chart.js v4 scale border configuration, covering color, width, dash, and offset settings alongside the existing grid options.
+
+- `Grid.DrawBorder` → `Border.Display`
+- `Grid.BorderWidth` → `Border.Width`
+- `Grid.BorderColor` → `Border.Color`
+- `Grid.BorderDash` → `Border.Dash`
+- `Grid.BorderDashOffset` → `Border.DashOffset`
+
 ## New Features
 
 ### Heading Aliases
