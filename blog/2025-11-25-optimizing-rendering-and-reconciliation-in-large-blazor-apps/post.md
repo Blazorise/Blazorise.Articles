@@ -115,6 +115,35 @@ By placing expensive UI regions inside controlled `RenderFragment` instances, yo
 
 ---
 
+## Splitting the UI Into Smaller Components to Reduce Render Scope
+
+Another powerful optimization strategy, often overlooked, is **splitting large UI blocks into smaller, focused components**.
+
+Blazor renders *per component*, so by breaking a large page into multiple components, you naturally **divide the render tree into isolated subtrees**.
+
+This means:
+
+- When a small child component updates, **only that component** is re-rendered.
+- When the parent updates, children **only re-render if their parameters actually changed**.
+- The diffing process becomes faster because the subtree size is smaller.
+
+Example:
+
+```razor
+<div>
+    <Header />
+    <Filters />
+    <OrdersList Orders="@Orders" />
+    <SummaryPanel Data="@Summary" />
+</div>
+```
+
+Even if the parent receives new data, components like `<Header />` or `<Filters />` won't re-render unless their parameters change. This effectively reduces the cost of every render because the renderer can skip entire sections of the UI.
+
+**In large Blazorise apps (e.g., DataGrid, Scheduler, dashboards), splitting components is often one of the biggest wins**, because it prevents massive UI fragments from being regenerated on each state change.
+
+---
+
 ## Using `RenderFragment<T>` to Speed Up Data-Driven UIs
 
 Large data visualizations (e.g., DataGrid or Scheduler) often need to render hundreds of rows.
@@ -284,6 +313,7 @@ Large apps must minimize unnecessary rendering, stabilize UI trees, and reduce d
 
 - Use `ShouldRender` to stop unneeded re-renders.
 - Use stable `RenderFragment` instances to isolate expensive UI.
+- Splitting the UI Into Smaller Components
 - Pass immutable objects to prevent cascade renders.
 - Use keyed lists to maintain DOM stability.
 - Move heavy operations into `OnParametersSetAsync`.
