@@ -64,7 +64,7 @@ Every component can override **`ShouldRender()`**, giving you control over wheth
 
 ### Example: Preventing Unnecessary UI Updates
 
-```razor
+```cs
 @code {
     private int counter;
 
@@ -175,7 +175,7 @@ Unlike looping inline in Razor, this approach reduces re-render cost because:
 
 Adding a `@key` directive helps Blazor associate render output with stable identities.
 
-```razor
+```cs
 @foreach (var item in Items)
 {
     <div @key="item.Id">@item.Name</div>
@@ -213,7 +213,7 @@ item = item with { Name = "New Name" };
 
 Run heavy logic here, not in the render pipeline.
 
-```razor
+```cs
 protected override async Task OnParametersSetAsync()
 {
     if (Data != null)
@@ -261,7 +261,7 @@ This ensures Blazor only re-renders at most once every 100ms.
 
 Memoize expensive fragments so Blazor reuses them.
 
-```razor
+```cs
 private RenderFragment? cachedContent;
 
 protected override bool ShouldRender()
