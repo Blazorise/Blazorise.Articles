@@ -198,6 +198,13 @@ record ItemModel(int Id, string Name);
 
 This ensures children only re-render when real changes occur, not accidental reference mutations.
 
+Note: Blazor still checks parameters using reference equality; immutable records don't change that. They simply encourage stable references because you update them via `with` instead of recreating or mutating objects each render.
+
+```cs
+// Immutable update using a record
+item = item with { Name = "New Name" };
+```
+
 ---
 
 ## Overriding Lifecycle Methods for Performance
