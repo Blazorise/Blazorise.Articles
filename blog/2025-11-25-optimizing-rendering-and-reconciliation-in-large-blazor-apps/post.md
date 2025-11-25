@@ -30,8 +30,7 @@ At its core, Blazor uses a **diffing renderer**. Each time a component triggers 
 3. Diffs this tree against the previous one.
 4. Applies minimal DOM updates needed to match the new render output.
 
-This process is extremely fast **when the number of components and DOM nodes is small**.  
-But for large Blazor applications, especially dashboards, schedulers, and data grids, unnecessary re-renders can trigger large tree diffs, consuming CPU and causing UI lag.
+This process is extremely fast **when the number of components and DOM nodes is small**. But for large Blazor applications, especially dashboards, schedulers, and data grids, unnecessary re-renders can trigger large tree diffs, consuming CPU and causing UI lag.
 
 ---
 
@@ -39,19 +38,19 @@ But for large Blazor applications, especially dashboards, schedulers, and data g
 
 Blazor re-renders a component when:
 
-### Call to `StateHasChanged`
+### 1. Call to `StateHasChanged`
 
 Any event callback or external trigger that calls `StateHasChanged()` forces a re-render.
 
-### Parameter changes from a parent
+### 2. Parameter changes from a parent
 
 Whenever a parent re-renders, all children receive new parameters and re-render as well.
 
-### Cascading parameter changes
+### 3. Cascading parameter changes
 
 These trigger full re-rendering of all consumers.
 
-### `RenderFragment` content changes
+### 4. `RenderFragment` content changes
 
 Render fragments are treated as dynamic content and are always executed fresh on re-render.
 
@@ -85,8 +84,7 @@ Every component can override **`ShouldRender()`**, giving you control over wheth
 
 ### Why it matters
 
-`ShouldRender` executes **after** state has changed and **before** rendering starts.  
-Returning `false` prevents expensive diffing and DOM updating for this component and all its children.
+`ShouldRender` executes **after** state has changed and **before** rendering starts. Returning `false` prevents expensive diffing and DOM updating for this component and all its children.
 
 Use this carefully-skipping rendering means the UI might not reflect state until a later point.
 
@@ -175,7 +173,7 @@ This ensures children only re-render when real changes occur, not accidental ref
 
 ## Overriding Lifecycle Methods for Performance
 
-### `OnParametersSetAsync`
+### OnParametersSetAsync
 
 Run heavy logic here, not in the render pipeline.
 
@@ -187,7 +185,7 @@ protected override async Task OnParametersSetAsync()
 }
 ```
 
-### Avoid loading or processing data in `OnInitializedAsync` if parameters matter
+### Avoid loading or processing data in OnInitializedAsync if parameters matter
 
 When parameters determine initial loading, prefer `OnParametersSetAsync`.
 
