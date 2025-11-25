@@ -204,9 +204,21 @@ These aliases make it easier to write semantically clear headings without needin
 
 ### Gutters Utilities
 
-We added a new `Gutter` system that allows you to control the horizontal and vertical spacing between columns and rows directly on any `Row` component. The gutter behavior now matches Bootstrap 5's model and works consistently across all providers, including Tailwind, Bootstrap, and Bulma. You can apply gutters per axis (`OnX`, `OnY`) or on both axes at once, with full support for responsive values.
+We added a new `Gutter` system that allows you to control the horizontal and vertical spacing between columns and rows directly on any `Row` and `Fields` component. The gutter behavior now matches Bootstrap 5's model and works consistently across all providers, including Tailwind, Bootstrap, and Bulma. You can apply gutters per axis (`OnX`, `OnY`) or on both axes at once, with full support for responsive values.
 
 Learn more in the official [Gutters Utilities](docs/helpers/utilities/gutters "Gutters Utilities") documentation page.
+
+### Charts
+
+#### Chartjs v4
+
+We made a lot of work to bring this to life. Moving forward, all Blazorise Charts static file will be handled and loaded dynamically. Meaning you don't need to manually include `<script>` file anymore.
+
+We have also updated all charts options to support new version 4.x. 
+
+### Custom Named Axes
+
+It is now possible to configure custom named axes on the `ChartScales` options. We have introduced a new option named `AdditionalAxes`, with which you can define any number axises along with the already available `X` and `Y`.
 
 ## Final Notes 🏁
 
