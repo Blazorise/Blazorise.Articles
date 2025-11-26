@@ -22,27 +22,11 @@ To smoothly upgrade your application, follow these simple steps:
 
 Update all **Blazorise.*** package references to **2.0**.
 
-Blazorise should now work without any major breaking changes to the API.
-
-## Blazorise 2.0 Migration Guide
-
-### Unified Input API 🧩
-
-One of the most significant improvements in Blazorise 2.0 is the **unified input API**.
-Previously, different input components used inconsistent parameter names, such as `Text`, `Checked`, `Date`, or `SelectedValue`.
-Starting with 2.0, all input components now follow a **standardized pattern** using:
-
-- `Value`
-- `ValueChanged`
-- `ValueExpression`
-
-This makes binding and form integration more consistent across all Blazorise components.
+Follow the guide bellow to handle all of the breaking changes in this release.
 
 ---
 
 ### Input Component Renaming ✍️
-
-To better reflect their purpose and align with modern Blazor conventions, most input components have been renamed:
 
 | Old Name         | New Name         |
 | ---------------- | ---------------- |
@@ -58,19 +42,31 @@ To better reflect their purpose and align with modern Blazor conventions, most i
 
 ### Parameter Changes by Component ⚙️
 
-| Component                       | Old Parameter(s)                                                                                                                          | New Parameter(s)                           |
-| ----------------                | ------------------------------------------                                                                                                | --------------------------                 |
-| **Check**                       | `Checked`, `CheckedChanged`, `CheckedExpression`                                                                                          | `Value`, `ValueChanged`, `ValueExpression` |
-| **ColorEdit** / **ColorPicker** | `Color`, `ColorChanged`, `ColorExpression`                                                                                                | `Value`, `ValueChanged`, `ValueExpression` |
-| **DateEdit**                    | `Date`, `DateChanged`, `DateExpression`                                                                                                   | `Value`, `ValueChanged`, `ValueExpression` |
-| **DatePicker**                  | `Date`, `Dates`, `DateChanged`, `DatesChanged`, `DateExpression`, `DatesExpression`                                                       | `Value`, `ValueChanged`, `ValueExpression` |
-| **DropdownList**                | `SelectedValue`, `SelectedValues`, `SelectedValueChanged`, `SelectedValuesChanged`, `SelectedValueExpression`, `SelectedValuesExpression` | `Value`, `ValueChanged`, `ValueExpression` |
-| **RadioGroup**                  | `CheckedValue`, `CheckedValueChanged`, `CheckedValueExpression`                                                                           | `Value`, `ValueChanged`, `ValueExpression` |
-| **Select**                      | `SelectedValue`, `SelectedValues`, `SelectedValueChanged`, `SelectedValuesChanged`, `SelectedValueExpression`, `SelectedValuesExpression` | `Value`, `ValueChanged`, `ValueExpression` |
-| **SelectList**                  | `SelectedValue`, `SelectedValues`, `SelectedValueChanged`, `SelectedValuesChanged`, `SelectedValueExpression`, `SelectedValuesExpression` | `Value`, `ValueChanged`, `ValueExpression` |
-| **Switch**                      | `Checked`, `CheckedChanged`, `CheckedExpression`                                                                                          | `Value`, `ValueChanged`, `ValueExpression` |
-| **TextEdit** / **MemoEdit**     | `Text`, `TextChanged`, `TextExpression`                                                                                                   | `Value`, `ValueChanged`, `ValueExpression` |
-| **TimeEdit** / **TimePicker**   | `Time`, `TimeChanged`, `TimeExpression`                                                                                                   | `Value`, `ValueChanged`, `ValueExpression` |
+Rename `Text`, `Checked`, `Date`, etc. → `Value`, along with their corresponding `*Changed` and `*Expression` parameters.
+
+| Component | Old Parameter(s) | New Parameter(s) |
+| ---------------- | ------------------------------------------ | -------------------------- |
+| **Check** | `Checked`, `CheckedChanged`, `CheckedExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+| **ColorEdit** / **ColorPicker** | `Color`, `ColorChanged`, `ColorExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+| **DateEdit** | `Date`, `DateChanged`, `DateExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+| **DatePicker** | `Date`, `Dates`, `DateChanged`, `DatesChanged`, `DateExpression`, `DatesExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+| **DropdownList** | `SelectedValue`, `SelectedValues`, `SelectedValueChanged`, `SelectedValuesChanged`, `SelectedValueExpression`, `SelectedValuesExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+| **RadioGroup** | `CheckedValue`, `CheckedValueChanged`, `CheckedValueExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+| **Select** | `SelectedValue`, `SelectedValues`, `SelectedValueChanged`, `SelectedValuesChanged`, `SelectedValueExpression`, `SelectedValuesExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+| **SelectList** | `SelectedValue`, `SelectedValues`, `SelectedValueChanged`, `SelectedValuesChanged`, `SelectedValueExpression`, `SelectedValuesExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+| **Switch** | `Checked`, `CheckedChanged`, `CheckedExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+| **TextEdit** / **MemoEdit** | `Text`, `TextChanged`, `TextExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+| **TimeEdit** / **TimePicker** | `Time`, `TimeChanged`, `TimeExpression` | `Value`, `ValueChanged`, `ValueExpression` |
+
+**Example:**
+
+```razor
+<!-- Old -->
+<TextEdit @bind-Text="@Name" />
+
+<!-- New -->
+<TextInput @bind-Value="@Name" />
+```
 
 #### Additional Notes
 
@@ -106,12 +102,12 @@ To better reflect their purpose and align with modern Blazor conventions, most i
 - Renamed `CurrentPage` to `Page`
 - Removed `DataGridPageChangedEventArgs`
 
-## Layout & Grid Updates
+### Layout & Grid Updates
 
-The **Row** component has been simplified and modernized with a new unified `Gutter` parameter.
+The **Row** and **Fields** components have been simplified and modernized with a new unified `Gutter` parameter.
 This change replaces several older parameters with a new fluent API for controlling spacing between columns.
 
-### What Changed
+#### What Changed
 
 | Old Parameter(s)                         | New Equivalent         |
 | ------------------                       | ----------------       |
@@ -122,41 +118,7 @@ This change replaces several older parameters with a new fluent API for controll
 
 ---
 
-### Migration Steps 🧭
-
-#### Step 1. **Update NuGet Packages**
-
-```bash
-dotnet add package Blazorise
-dotnet add package Blazorise.Bootstrap5
-dotnet add package Blazorise.Icons.FontAwesome
-```
-
-Ensure all `Blazorise.*` packages are upgraded to **version 2.0.0**.
-
-#### Step 2 **Update Component Names**
-
-```razor
-<!-- Old -->
-<TextEdit @bind-Text="@Name" />
-
-<!-- New -->
-<TextInput @bind-Value="@Name" />
-```
-
-#### Step 3. **Update Parameter Names**
-
-- Rename `Text`, `Checked`, `Date`, etc. → `Value`
-- Rename their corresponding `*Changed` and `*Expression` parameters.
-
-#### Step 4. **Replace Deprecated Properties**
-
-- `RightAligned` → `EndAligned`
-- `CurrentPage` → `Page`
-
----
-
-## Blazorise Charts
+### Blazorise Charts
 
 ### Remove Static Files
 
