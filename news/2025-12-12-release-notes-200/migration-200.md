@@ -74,26 +74,101 @@ Rename `Text`, `Checked`, `Date`, etc. → `Value`, along with their correspondi
   - When using multiple selection modes, define `TValue` as either `IReadOnlyList<T>` or an array type (e.g. `DateTime[]` or `string[]`).
 - **Dropdown** and **DropdownList** now use `EndAligned` instead of `RightAligned`.
 
-### Remove Obsolete Options Parameters
+### Autocomplete
 
-| Component            | Old Name     | New Name       |
-| -----------          | ----------   | ----------     |
+#### Replace Obsolete  parameters
+
+| Old Parameter(s) | New Parameter(s) |
+| ---------- | ---------- |
+| `CurrentSearch` | `Search` |
+| `CurrentSearchChanged` | `SearchChanged` |
+| `Multiple` | `SelectionMode.Multiple` |
+
+### CardLink
+
+#### Replace Obsolete Parameters
+
+| Old Parameter(s) | New Parameter(s) |
+| ---------- | ---------- |
+| `Source` | `To` |
+| `Alt` | `Title` |
+
+### DataGrid
+
+Replace Obsolete Parameters
+
+| Old Parameter(s) | New Parameter(s) |
+| ---------- | ---------- |
+| `GroupRowStyling` | `AggregateRowStyling` |
+| `Navigable` | `NavigationMode.Row` |
+
+### DataGridColumn
+
+Replace Obsolete Parameters
+
+| Old Parameter(s) | New Parameter(s) |
+| ---------- | ---------- |
+| `GroupCellClass` | `AggregateCellClass` |
+| `GroupCellStyle` | `AggregateCellStyle` |
+| `PopupFieldColumnSize` | `EditFieldColumnSize` |
+
+### `CancellableRowChange<TItem>`
+
+Replace Obsolete Fields
+
+| Old Field | New Field |
+| ---------- | ---------- |
+| `Item` | `OldItem` |
+
+### `SavedRowItem<TItem>`
+
+Replace Obsolete Fields
+
+| Old Field | New Field |
+| ---------- | ---------- |
+| `Item` | `OldItem` |
+
+### VideoMedia
+
+Replace Obsolete Fields
+
+| Old Field | New Field |
+| ---------- | ---------- |
+| `Size` | `Height` |
+
+### RichTextEdit
+
+Remove completely any mention of `DynamicReference` record.
+
+#### RichTextEditOptions
+
+Remove any use of:
+
+- `QuillJsVersion`
+- `DynamicallyLoadReferences`
+- `DynamicReferences`
+
+### BlazoriseOptions
+
+#### Replace Obsolete Options
+
+| Component | Old Name | New Name |
+| ----------- | ---------- | ----------     |
 | **BlazoriseOptions** | `LicenseKey` | `ProductToken` |
 
-### Remove Obsolete Component Parameters
-
-| Component    | Old Name   | New Name   |
-| -----------  | ---------- | ---------- |
-| **CardLink** | `Source`   | `To`       |
-| **CardLink** | `Alt`      | `Title`    |
-
-### Remove Obsolete Components
+### Replace Obsolete Components
 
 | Old Component Name  | New Component Name     |
 | -----------         | ----------             |
 | `MessageAlert`      | `MessageProvider`      |
 | `PageProgressAlert` | `PageProgressProvider` |
 | `NotificationAlert` | `NotificationProvider` |
+
+### Remove Obsolete Enums
+
+| Component | Old Name     |
+| ----------- | ---------- |
+| **Match** | `Custom` |
 
 ---
 
