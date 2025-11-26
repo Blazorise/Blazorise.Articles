@@ -90,6 +90,27 @@ To better reflect their purpose and align with modern Blazor conventions, most i
   - When using multiple selection modes, define `TValue` as either `IReadOnlyList<T>` or an array type (e.g. `DateTime[]` or `string[]`).
 - **Dropdown** and **DropdownList** now use `EndAligned` instead of `RightAligned`.
 
+### Remove Obsolete Options Parameters
+
+| Component | Old Name | New Name |
+|-----------|----------|----------|
+| **BlazoriseOptions** | `LicenseKey` | `ProductToken` |
+
+### Remove Obsolete Component Parameters
+
+| Component | Old Name | New Name |
+|-----------|----------|----------|
+| **CardLink** | `Source` | `To` |
+| **CardLink** | `Alt` | `Title` |
+
+### Remove Obsolete Components
+
+| Old Component Name | New Component Name |
+|-----------|----------|----------|
+| `MessageAlert` | `MessageProvider` |
+| `PageProgressAlert` | `PageProgressProvider` |
+| `NotificationAlert` | `NotificationProvider` |
+
 ---
 
 ### DataGrid Improvements 📊
