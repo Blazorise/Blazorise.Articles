@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2025-11-20T12:13:24.450Z",
-  "commit": "a09f704159a8",
-  "count": 102,
+  "generatedAt": "2025-11-26T08:34:24.492Z",
+  "commit": "1070f28f5dd1",
+  "count": 103,
   "items": [
+    {
+      "root": "blog",
+      "dir": "blog/2025-11-25-optimizing-rendering-and-reconciliation-in-large-blazor-apps",
+      "slug": "optimizing-rendering-and-reconciliation-in-large-blazor-apps",
+      "permalink": "/blog/optimizing-rendering-and-reconciliation-in-large-blazor-apps",
+      "title": "Optimizing Rendering and Reconciliation in Large Blazor Apps",
+      "summary": "Deep dive into the Blazor renderer, component lifecycle, and advanced rendering optimizations using ShouldRender, RenderFragments, and lifecycle methods.",
+      "postedOn": "2025-11-25",
+      "category": "Architecture",
+      "imageUrl": "img/optimizing-rendering.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "14 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2025-11-20-release-notes-187",
