@@ -64,7 +64,7 @@ Every component can override **`ShouldRender()`**, giving you control over wheth
 
 ### Example: Preventing Unnecessary UI Updates
 
-```cs
+```csharp
 @code {
     private int counter;
 
@@ -175,7 +175,7 @@ Unlike looping inline in Razor, this approach reduces re-render cost because:
 
 Adding a `@key` directive helps Blazor associate render output with stable identities.
 
-```cs
+```csharp
 @foreach (var item in Items)
 {
     <div @key="item.Id">@item.Name</div>
@@ -186,24 +186,64 @@ This prevents DOM reshuffling and reduces diffing complexity.
 
 ---
 
-## Avoid Parameter Re-Renders with Immutable Objects
+## Avoid Parameter Re-Renders with Complex Parameters
 
-When passing objects as parameters, Blazor re-renders children **if the reference changes**, even if properties are identical.
+It's commonly assumed that Blazor re-renders child components only when a parameter changes.  
+However, verified tests show the following behavior:
 
-### Better: Use immutable data
+### Primitive parameters (`int`, `string`, `bool`, etc.)
+
+Blazor checks value equality.  
+If the value hasn't changed, the child component:
+
+- does **not** re-render  
+- does **not** receive `OnParametersSet`
+
+### Complex parameters (`class`, `record`, struct, etc.)
+
+Blazor always calls `SetParametersAsync` / `OnParametersSet` for these **every time the parent re-renders**, even when:
+
+- the same reference instance is passed
+- all values/property data are unchanged
+- the object is immutable (record)
+- nothing changed at all
+
+In other words, **reference stability and immutability do not prevent re-renders** for complex types.
+
+### Why records still matter
+
+Records do not affect Blazor's render pipeline.  
+But they help avoid accidental mutations and make change detection easier:
 
 ```csharp
-record ItemModel(int Id, string Name);
+item = item with { Name = "Updated" };
 ```
 
-This ensures children only re-render when real changes occur, not accidental reference mutations.
+### How to actually prevent unnecessary re-renders
+You must explicitly control rendering using `ShouldRender`:
 
-Note: Blazor still checks parameters using reference equality; immutable records don't change that. They simply encourage stable references because you update them via `with` instead of recreating or mutating objects each render.
+```csharp
+private ItemRecord? _lastItem;
 
-```cs
-// Immutable update using a record
-item = item with { Name = "New Name" };
+protected override bool ShouldRender()
+{
+    if (!Equals(_lastItem, Item))
+    {
+        _lastItem = Item;
+        return true; // UI needs update
+    }
+
+    return false; // skip render
+}
 ```
+
+This is the only reliable way to avoid unnecessary UI updates for complex parameter types.
+
+### Full test project
+
+You can verify this behavior using the reproducible test app:  
+**https://github.com/Blazorise/BlazorParametersSet**
+
 
 ---
 
@@ -213,7 +253,7 @@ item = item with { Name = "New Name" };
 
 Run heavy logic here, not in the render pipeline.
 
-```cs
+```csharp
 protected override async Task OnParametersSetAsync()
 {
     if (Data != null)
@@ -232,7 +272,7 @@ When parameters determine initial loading, prefer `OnParametersSetAsync`.
 Sometimes data changes rapidly (e.g., websocket updates).  
 Use a throttling pattern to limit re-renders.
 
-```razor
+```csharp
 @code {
     private bool pending;
 
@@ -261,7 +301,7 @@ This ensures Blazor only re-renders at most once every 100ms.
 
 Memoize expensive fragments so Blazor reuses them.
 
-```cs
+```csharp
 private RenderFragment? cachedContent;
 
 protected override bool ShouldRender()
