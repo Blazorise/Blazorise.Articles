@@ -216,9 +216,21 @@ We made a lot of work to bring this to life. Moving forward, all Blazorise Chart
 
 We have also updated all charts options to support new version 4.x. 
 
-### Custom Named Axes
+#### Custom Named Axes
 
 It is now possible to configure custom named axes on the `ChartScales` options. We have introduced a new option named `AdditionalAxes`, with which you can define any number axises along with the already available `X` and `Y`.
+
+### Validation
+
+#### Revalidation Support
+
+This feature was on our backlog for years, and the main reason why we haven't done it before is because the internals of inputs and validation where too complex to touch anything regarding it. Now that we have made the **Input** components API much cleaner we also have the freedom and ability to add more features to the validation system.
+
+One such feature is the manual revalidation of the validated input. With this feature you will finally be able to fine-tune your UI and adjust it based on your business need.
+
+It works on a single `Validation` component, or if you want to do it in batch you can run it on `Validations` component.
+
+Learn more in the official [Validation Component](docs/components/validation "Validation Component") documentation page.
 
 ## Final Notes 🏁
 
