@@ -48,7 +48,15 @@ Whenever a parent re-renders, all children receive new parameters and re-render 
 
 ### 3. Cascading parameter changes
 
-These trigger full re-rendering of all consumers.
+By default, cascading parameters trigger re-rendering of all consuming components whenever the parent re-renders, even if the actual value hasn't changed.
+
+If the cascaded value is immutable or guaranteed not to change, set:
+
+```razor
+<CascadingValue Value="..." IsFixed="true">
+```
+
+This tells Blazor not to re-send the cascading parameter on every parent render, which prevents unnecessary re-renders of all consumers.
 
 ### 4. `RenderFragment` content changes
 
@@ -104,10 +112,15 @@ When a parent component re-renders, Blazor automatically re-renders all child co
 </ChildComponent>
 
 @code {
-    RenderFragment childFragment => builder =>
+    private RenderFragment childFragment;
+
+    protected override void OnInitialized()
     {
-        builder.AddContent(0, SomeExpensiveSection());
-    };
+        childFragment = builder =>
+        {
+            builder.AddContent( 0, SomeExpensiveSection() );
+        };
+    }
 }
 ```
 
@@ -118,6 +131,8 @@ By placing expensive UI regions inside controlled `RenderFragment` instances, yo
 ## Splitting the UI Into Smaller Components to Reduce Render Scope
 
 Another powerful optimization strategy, often overlooked, is **splitting large UI blocks into smaller, focused components**.
+
+> Event handlers declared in a parent component trigger *full parent re-renders*, which re-render the entire subtree. Moving event handlers down into smaller child components dramatically reduces render scope.
 
 Blazor renders *per component*, so by breaking a large page into multiple components, you naturally **divide the render tree into isolated subtrees**.
 
@@ -163,7 +178,26 @@ Use `RenderFragment<T>` to generate UI **only for items that change**.
 }
 ```
 
-Unlike looping inline in Razor, this approach reduces re-render cost because:
+Note: `RenderFragment<T>` itself does **not** reduce re-renders unless the fragment instance is memoized. The common mistake is creating a new fragment each render.
+
+A corrected pattern uses a cached field:
+
+```csharp
+private RenderFragment<Person>? _template;
+
+protected override void OnInitialized()
+{
+    _template = person => builder =>
+    {
+        builder.AddContent(0, $"{person.FirstName} {person.LastName}");
+    };
+}
+```
+
+The optimization comes from stabilizing the delegate instance, not from `RenderFragment<T>` alone.
+
+The benefits apply only when the template is memoized. Otherwise Blazor treats it as a fresh fragment each render.
+
 
 - Template is a stable delegate
 - Only item parameters change, not the entire loop
@@ -244,7 +278,6 @@ This is the only reliable way to avoid unnecessary UI updates for complex parame
 You can verify this behavior using the reproducible test app:  
 **https://github.com/Blazorise/BlazorParametersSet**
 
-
 ---
 
 ## Overriding Lifecycle Methods for Performance
@@ -264,6 +297,22 @@ protected override async Task OnParametersSetAsync()
 ### Avoid loading or processing data in OnInitializedAsync if parameters matter
 
 When parameters determine initial loading, prefer `OnParametersSetAsync`.
+
+---
+
+## Disabling Re-Renders in Event Handlers (IHandleEvent)
+
+You can suppress automatic re-renders triggered by event handlers by implementing `IHandleEvent`:
+
+```csharp
+public class NoRenderComponent : ComponentBase, IHandleEvent
+{
+    public Task HandleEventAsync(EventCallbackWorkItem callback, object? arg)
+        => callback.InvokeAsync(arg); // invoke without StateHasChanged
+}
+```
+
+This is useful when you want fine-grained manual control over rendering.
 
 ---
 
