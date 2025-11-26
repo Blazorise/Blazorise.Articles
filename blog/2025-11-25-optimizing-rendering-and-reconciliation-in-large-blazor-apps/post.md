@@ -58,6 +58,9 @@ If the cascaded value is immutable or guaranteed not to change, set:
 
 This tells Blazor not to re-send the cascading parameter on every parent render, which prevents unnecessary re-renders of all consumers.
 
+> **Docs:** https://learn.microsoft.com/aspnet/core/blazor/components/cascading-values-and-parameters#fixed-cascading-parameters
+
+
 ### 4. `RenderFragment` content changes
 
 Render fragments are treated as dynamic content and are always executed fresh on re-render.
@@ -94,7 +97,10 @@ Every component can override **`ShouldRender()`**, giving you control over wheth
 
 `ShouldRender` executes **after** state has changed and **before** rendering starts. Returning `false` prevents expensive diffing and DOM updating for this component and all its children.
 
-Use this carefully-skipping rendering means the UI might not reflect state until a later point.
+Use this carefully—skipping rendering means the UI might not reflect state until a later point.
+
+> **Docs:** https://learn.microsoft.com/aspnet/core/blazor/components/rendering#suppress-ui-rendering
+
 
 ---
 
@@ -133,6 +139,9 @@ By placing expensive UI regions inside controlled `RenderFragment` instances, yo
 Another powerful optimization strategy, often overlooked, is **splitting large UI blocks into smaller, focused components**.
 
 > Event handlers declared in a parent component trigger *full parent re-renders*, which re-render the entire subtree. Moving event handlers down into smaller child components dramatically reduces render scope.
+
+> **Docs:** https://learn.microsoft.com/aspnet/core/blazor/components/event-handling
+
 
 Blazor renders *per component*, so by breaking a large page into multiple components, you naturally **divide the render tree into isolated subtrees**.
 
@@ -198,6 +207,7 @@ The optimization comes from stabilizing the delegate instance, not from `RenderF
 
 The benefits apply only when the template is memoized. Otherwise Blazor treats it as a fresh fragment each render.
 
+> **Docs:** https://learn.microsoft.com/aspnet/core/blazor/components/templated-components
 
 - Template is a stable delegate
 - Only item parameters change, not the entire loop
@@ -217,6 +227,9 @@ Adding a `@key` directive helps Blazor associate render output with stable ident
 ```
 
 This prevents DOM reshuffling and reduces diffing complexity.
+
+> **Docs:** https://learn.microsoft.com/aspnet/core/blazor/components/key
+
 
 ---
 
@@ -313,6 +326,9 @@ public class NoRenderComponent : ComponentBase, IHandleEvent
 ```
 
 This is useful when you want fine-grained manual control over rendering.
+
+> **Docs:** https://learn.microsoft.com/aspnet/core/blazor/components/rendering#suppress-ui-rendering
+
 
 ---
 
