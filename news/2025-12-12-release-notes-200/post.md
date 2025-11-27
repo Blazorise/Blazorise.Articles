@@ -23,6 +23,7 @@ Blazorise 2.0, codenamed **Hvar** after the beautiful island in Croatia, is a si
 
 Here's a summary of what's new in this release:
 
+- **.NET6 and .NET7**: frameworks support is removed.
 - **Unified Input API**: All input components now use the standard `Value`, `ValueChanged`, and `ValueExpression` parameters for consistency across the framework.
 - **Renamed Input Components**: Components like `TextEdit`, `DateEdit`, and `FileEdit` are now renamed to `TextInput`, `DateInput`, and `FileInput`.
 - **Extended Color Variants**: for Background and TextColor utilties.
@@ -33,6 +34,14 @@ Dive deeper below to discover the full potential of these features.
 > 💡 Planning to upgrade from 1.8.x? See the full migration guide at [/news/migration/200](/news/migration/200).
 
 ## New Features
+
+### Remove .NET6 & .NET7
+
+We have removed support for older frameworks as they were already past their LTS or STS. While we could keep them for while, they were already keeping us locked to some older APIs, and any new features would be impossible to do with Blazorise in the future.
+
+We also need to mention that .NET8 is still kept. But it will also be removed once its LTS comes to an end sometimes in the late 2026. From there on, we will omnly keep .NET9 and later.
+
+This will finally allow us to bring to life new Blazor features, will in turn will allow us to improve Blazorise even more.
 
 ### Unified Input API
 

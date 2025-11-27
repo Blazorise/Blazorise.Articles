@@ -16,6 +16,12 @@ read-time: 7 min
 
 This guide walks you through all the changes required to migrate your application from **Blazorise 1.8.x** to **Blazorise 2.0 (Hvar)**. It consolidates every update step mentioned in the 2.0 announcement post so you can follow it in one place.
 
+## Upgrade to latest .NET
+
+Before anything else it is advised to upgrade to the latest version of .NET. Blazorise as of 2.0 support .NET 8, 9 and 10. Older frameworks, .NET 6 and 7 are removed.
+
+Once you finish the upgrade and confirm everything works on the latest Blazorise 1.8.x, you can start with Blazorise migration.
+
 ## Upgrading from 1.8.x to 2.0 👨‍🔧
 
 To smoothly upgrade your application, follow these simple steps:
