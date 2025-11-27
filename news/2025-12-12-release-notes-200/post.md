@@ -25,6 +25,8 @@ Here's a summary of what's new in this release:
 
 - **Unified Input API**: All input components now use the standard `Value`, `ValueChanged`, and `ValueExpression` parameters for consistency across the framework.
 - **Renamed Input Components**: Components like `TextEdit`, `DateEdit`, and `FileEdit` are now renamed to `TextInput`, `DateInput`, and `FileInput`.
+- **Extended Color Variants**: for Background and TextColor utilties.
+- **FluentUI Theme Generator**: dynamically generate FluentUI themes.
 
 Dive deeper below to discover the full potential of these features.
 
@@ -63,6 +65,54 @@ These aliases make it easier to write semantically clear headings without needin
 We added a new `Gutter` system that allows you to control the horizontal and vertical spacing between columns and rows directly on any `Row` and `Fields` component. The gutter behavior now matches Bootstrap 5's model and works consistently across all providers, including Tailwind, Bootstrap, and Bulma. You can apply gutters per axis (`OnX`, `OnY`) or on both axes at once, with full support for responsive values.
 
 Learn more in the official [Gutters Utilities](docs/helpers/utilities/gutters "Gutters Utilities") documentation page.
+
+### Radio Component Updates
+
+Blazorise 2.0 introduces a simplified and unified binding model for Radio components. The old `Checked`, `CheckedChanged`, and `CheckedExpression` APIs have been removed and replaced by the standard `Value` / `ValueChanged` / `ValueExpression` pattern. `RadioGroup<TValue>` is now the binding surface, while each `Radio<TValue>` provides its option via Value. A radio is selected when its Value matches the group's bound value, enabling cleaner markup, predictable parsing, and consistent validation.
+
+Migrating is straightforward: replace `Checked*` APIs with Value*, and ensure each radio defines an option Value. Boolean standalone radios still work but are discouraged.
+
+**Before:**
+
+```razor
+<RadioGroup TValue="string" @bind-Value="Selected">
+    <Radio Checked="true">A</Radio>
+    <Radio Checked="false">B</Radio>
+</RadioGroup>
+```
+
+**After:**
+
+```razor
+<RadioGroup TValue="string" @bind-Value="Selected">
+    <Radio Value="A">A</Radio>
+    <Radio Value="B">B</Radio>
+</RadioGroup>
+```
+
+### Extended Color Variants
+
+Color plays a key role in user interface design, conveying hierarchy, meaning, and accessibility. With Blazorise 1.9, developers can now use **extended color variants** to fine-tune tones and add greater visual depth.
+
+Enumerations such as `Background` and `TextColor` now support **nested variants** for subtle and emphasized shades. Previously limited to base colors like `Background.Success` or `TextColor.Danger`, you can now use variants such as `Background.Success.Subtle` or `TextColor.Success.Emphasis`. This brings Blazorise utilities in line with modern design systems like Bootstrap 5.3 and FluentUI.
+
+This new system is powered by the `IEnumerationNameBuilder` infrastructure, which standardizes how enumeration values map to CSS class names across providers. For example, Bootstrap automatically generates classes such as `bg-success-subtle` or `text-success-emphasis`. It’s fully backward-compatible, ensuring a seamless upgrade path for existing applications.
+
+You can explore the full range of extended color variants in the [Colors documentation](docs/helpers/colors "Link to Colors documentation").
+
+###  Badge Subtle
+
+The `Badge` component has been enhanced with a new **Subtle** color mode. This feature introduces lighter, less saturated background tones—ideal for modern, minimalist interfaces or secondary indicators where softer emphasis is preferred.
+
+By setting the `Subtle` parameter to `true`, badges automatically adopt the new muted color variants. This ensures they blend naturally into the surrounding UI while maintaining clarity and readability. Subtle badges are particularly effective when used alongside extended color variants, allowing designers to build refined, theme-consistent experiences.
+
+You can see examples of subtle badges in the updated [Badge documentation](docs/components/badge "Link to Badge documentation").
+
+### FluentUI Theme Generator
+
+Blazorise 1.9 also introduces the **FluentUI Theme Generator**, enabling developers to easily build and customize themes based on Microsoft’s Fluent Design System. This generator allows quick configuration of colors, typography, and surface elements to create professional and consistent Fluent-inspired UIs.
+
+The goal is to provide a balance between flexibility and faithfulness to the FluentUI aesthetic, giving developers the ability to tailor visual themes while maintaining familiar design principles across all Blazorise components.
 
 ### Charts
 

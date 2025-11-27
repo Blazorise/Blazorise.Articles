@@ -73,6 +73,71 @@ Rename `Text`, `Checked`, `Date`, etc. → `Value`, along with their correspondi
 - **Select** and **DatePicker** now support both single and multiple values via their `Value` parameter.
   - When using multiple selection modes, define `TValue` as either `IReadOnlyList<T>` or an array type (e.g. `DateTime[]` or `string[]`).
 - **Dropdown** and **DropdownList** now use `EndAligned` instead of `RightAligned`.
+- **Radio** component changed so that it cannot be used as standalone anymore. Only the use within the **RadioGroup** is allowed.
+
+New usage:
+
+```razor
+<RadioGroup TValue="string" @bind-Value="Selected">
+    <Radio Value="a">Option A</Radio>
+    <Radio Value="b">Option B</Radio>
+</RadioGroup>
+@code { private string Selected { get; set; } = "a"; }
+```
+
+### Radio
+
+- Removed: `Checked`, `CheckedChanged`, `CheckedExpression`.
+- Added: unified binding via `Value` / `ValueChanged` / `ValueExpression`.
+- Behavior: selection is determined by comparing each radio's `Value` to the RadioGroup's `Value`; native `value` attribute now uses the option `Value`.
+
+**Before**
+
+```razor
+<RadioGroup TValue="string" @bind-Value="Selected">
+    <Radio Checked="true" CheckedChanged="OnCheckedA">A</Radio>
+    <Radio Checked="false" CheckedChanged="OnCheckedB">B</Radio>
+</RadioGroup>
+```
+
+**After**
+
+```razor
+<RadioGroup TValue="string" @bind-Value="Selected">
+    <Radio Value="A">A</Radio>
+    <Radio Value="B">B</Radio>
+</RadioGroup>
+```
+
+### Validations
+
+When using the `Validator` rule of the `Validation` component, you need to update the use of the `Value` argument of `ValidatorEventArgs`. In Blazorise 2.0, the `Value` will match the `TValue` parameter of the input component, so you need to update your code accordingly.
+
+For example, if you were using the `Value` argument of `ValidatorEventArgs` like this:
+
+```csharp
+private void OnValidateStartDate( ValidatorEventArgs e )
+{
+    var startValue = ( e.Value as DateOnly[] )?[0];
+
+    // ...
+}
+```
+
+You need to update it to use the `Value` parameter directly, like this:
+
+```csharp
+private void OnValidateStartDate( ValidatorEventArgs e )
+{
+    var startValue = e.Value as DateOnly?;
+
+    // ...
+}
+```
+
+### Removed BLMouseEventArgs
+
+The `BLMouseEventArgs` class has been removed in Blazorise 2.0. You should use the `MouseEventArgs` class from the `Microsoft.AspNetCore.Components.Web` namespace instead.
 
 ### Autocomplete
 
@@ -135,6 +200,25 @@ Replace Obsolete Fields
 | Old Field | New Field |
 | ---------- | ---------- |
 | `Size` | `Height` |
+
+### SnackbarLocation
+
+Replace Obsolete Enums
+
+| Old Enum | New Enum |
+| ---------- | ---------- |
+| `Start` | `BottomStart` |
+| `End` | `BottomEnd` |
+
+### SnackbarStackLocation
+
+Replace Obsolete Enums
+
+| Old Enum | New Enum |
+| ---------- | ---------- |
+| `Center` | `Default` |
+| `Start` | `BottomStart` |
+| `End` | `BottomEnd` |
 
 ### RichTextEdit
 
