@@ -147,6 +147,14 @@ It works on a single `Validation` component, or if you want to do it in batch yo
 
 Learn more in the official [Validation Component](docs/components/validation "Validation Component") documentation page.
 
+### Offcanvas Provider
+
+With the help of community member [Nex-Code](https://github.com/Nex-Code), we now have an `OffcanvasProvider` component, which mirros the structure and usage of or existing `ModalProvider` component.
+
+Big thanks to the [Nex-Code](https://github.com/Nex-Code) for helping us with this component.
+
+You can see it in action in [Offcanvas Provider](docs/services/offcanvas-provider "Offcanvas Provider") documentation page.
+
 ## Final Notes 🏁
 
 Blazorise 2.0 introduces a consistent, modernized input system and simpler APIs that make form handling easier and more intuitive.
