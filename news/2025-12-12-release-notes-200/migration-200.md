@@ -18,6 +18,8 @@ This guide walks you through all the changes required to migrate your applicatio
 
 ## Upgrade to latest .NET
 
+Dropped support for legacy frameworks by retargeting shared build properties to .NET 8, 9, and 10 only.
+
 Before anything else it is advised to upgrade to the latest version of .NET. Blazorise as of 2.0 support .NET 8, 9 and 10. Older frameworks, .NET 6 and 7 are removed.
 
 Once you finish the upgrade and confirm everything works on the latest Blazorise 1.8.x, you can start with Blazorise migration.
@@ -247,6 +249,8 @@ Remove any use of:
 | **BlazoriseOptions** | `LicenseKey` | `ProductToken` |
 
 ### Replace Obsolete Components
+
+Replaced deprecated alert components with provider-based implementations for messages, notifications, and page progress handling.
 
 | Old Component Name  | New Component Name     |
 | -----------         | ----------             |
