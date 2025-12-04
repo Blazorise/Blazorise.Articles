@@ -271,12 +271,26 @@ Replaced deprecated alert components with provider-based implementations for mes
 - Renamed `CurrentPage` to `Page`
 - Removed `DataGridPageChangedEventArgs`
 
+### DataGridColumn Width
+
+The `Width` parameter of DataGridColumn has changed from `string` type into `IFluentSizing`.
+
+Change:
+
+```razor
+<DataGridColumn Width="60px" />
+```
+
+Into:
+
+```razor
+<DataGridColumn Width="Width.Px( 60 )" />
+```
+
 ### Layout & Grid Updates
 
 The **Row** and **Fields** components have been simplified and modernized with a new unified `Gutter` parameter.
 This change replaces several older parameters with a new fluent API for controlling spacing between columns.
-
-#### What Changed
 
 | Old Parameter(s)                         | New Equivalent         |
 | ------------------                       | ----------------       |
