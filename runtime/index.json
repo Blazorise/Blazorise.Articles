@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2025-12-08T10:55:12.160Z",
-  "commit": "4ec4dbdfc44d",
+  "generatedAt": "2025-12-08T10:57:04.496Z",
+  "commit": "d4e53b646778",
   "count": 104,
   "items": [
     {
@@ -11,7 +11,7 @@
       "permalink": "/blog/migrating-from-bootstrap-blazor-or-mudblazor-to-blazorise",
       "title": "Migrating from Bootstrap Blazor or MudBlazor to Blazorise",
       "summary": "A deep, objective comparison of design philosophy, performance, extensibility, and migration strategies for teams transitioning from Bootstrap Blazor or MudBlazor to Blazorise.",
-      "postedOn": "2025-12-01",
+      "postedOn": "2025-12-08",
       "category": "Architecture",
       "imageUrl": "img/migrating-bootstrap-mudblazor-to-blazorise.png",
       "authorName": "Mladen Macanović",
