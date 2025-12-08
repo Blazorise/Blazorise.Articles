@@ -37,13 +37,13 @@ In this article, we explore the architectural differences between these framewor
 MudBlazor is a **Material Design-first** component library.  
 Its identity is tied to a specific look and feel, deeply integrated into its API surface.
 
-Pros:
+**Pros:**
 
 - Beautiful Material Design components
 - Good documentation
 - Active community
 
-Cons:
+**Cons:**
 
 - Visual identity strongly tied to Material
 - Harder to adopt custom styling systems
@@ -55,12 +55,12 @@ Cons:
 
 Bootstrap Blazor aims for **Bootstrap-native UI**, closely following the original HTML/CSS semantics.
 
-Pros:
+**Pros:**
 
 - Easy for teams already using Bootstrap
 - Simple mental model
 
-Cons:
+**Cons:**
 
 - Bootstrap-based components limit customization
 - Lower extensibility
@@ -254,7 +254,7 @@ But we reccomend Blazorise unique fluent-based utilities
 
 ## 4.3 Rewrite Complex Components with Blazorise Patterns
 
-### Example: MudTable → Blazorise DataGrid
+**Example:** MudTable → Blazorise DataGrid
 
 ```razor
 <DataGrid TItem="Order"
@@ -309,29 +309,29 @@ Example migration:
 
 ## 5. Migration Checklist
 
-### Step 1 - Identify utility classes
+**Step 1** - Identify utility classes
 
 Extract or rewrite MudBlazor CSS classes.
 
-### Step 2 - Replace fundamental components
+**Step 2** - Replace fundamental components
 
 Start with Buttons, Inputs, Forms.
 
-### Step 3 - Migrate complex components
+**Step 3** - Migrate complex components
 
 Tables → DataGrid  
 Dialogs → Modal  
 Snackbars → Alert / Toast
 
-### Step 4 - Choose a provider
+**Step 4** - Choose a provider
 
 Bootstrap, Tailwind, Material, Fluent, Bulma, AntDesign, …
 
-### Step 5 - Introduce Blazorise validation gradually
+**Step 5** - Introduce Blazorise validation gradually
 
 Replace field-by-field.
 
-### Step 6 - Optimize performance early
+**Step 6** - Optimize performance early
 
 Use:
 
