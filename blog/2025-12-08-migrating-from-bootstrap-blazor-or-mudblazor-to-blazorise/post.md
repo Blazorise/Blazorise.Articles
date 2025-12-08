@@ -8,7 +8,7 @@ image-title: Migrating to Blazorise
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: Architecture
-posted-on: 2025-12-01
+posted-on: 2025-12-08
 read-time: 16 min
 ---
 
