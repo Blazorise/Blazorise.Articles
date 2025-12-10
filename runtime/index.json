@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2025-12-08T10:57:04.496Z",
-  "commit": "d4e53b646778",
-  "count": 104,
+  "generatedAt": "2025-12-10T08:45:34.304Z",
+  "commit": "faa5d57f0479",
+  "count": 105,
   "items": [
     {
       "root": "blog",
@@ -17,6 +17,21 @@
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
       "readTime": "16 min",
+      "pinned": false
+    },
+    {
+      "root": "news",
+      "dir": "news/2025-12-10",
+      "slug": "188",
+      "permalink": "/news/release-notes/188",
+      "title": "Blazorise 1.8.8 - Component Reliability Update",
+      "summary": "Blazorise 1.8.8 delivers important reliability fixes for RichTextEdit, Autocomplete, TreeView, and DataGrid, improving consistency across core interactive components.",
+      "postedOn": "2025-11-28",
+      "category": "News",
+      "imageUrl": "img/v188.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
       "pinned": false
     },
     {
