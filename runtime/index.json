@@ -1,9 +1,39 @@
 {
   "version": 1,
-  "generatedAt": "2025-11-26T10:05:47.991Z",
-  "commit": "488e9413783b",
-  "count": 103,
+  "generatedAt": "2025-12-10T08:45:34.304Z",
+  "commit": "faa5d57f0479",
+  "count": 105,
   "items": [
+    {
+      "root": "blog",
+      "dir": "blog/2025-12-08-migrating-from-bootstrap-blazor-or-mudblazor-to-blazorise",
+      "slug": "migrating-from-bootstrap-blazor-or-mudblazor-to-blazorise",
+      "permalink": "/blog/migrating-from-bootstrap-blazor-or-mudblazor-to-blazorise",
+      "title": "Migrating from Bootstrap Blazor or MudBlazor to Blazorise",
+      "summary": "A deep, objective comparison of design philosophy, performance, extensibility, and migration strategies for teams transitioning from Bootstrap Blazor or MudBlazor to Blazorise.",
+      "postedOn": "2025-12-08",
+      "category": "Architecture",
+      "imageUrl": "img/migrating-bootstrap-mudblazor-to-blazorise.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "16 min",
+      "pinned": false
+    },
+    {
+      "root": "news",
+      "dir": "news/2025-12-10",
+      "slug": "188",
+      "permalink": "/news/release-notes/188",
+      "title": "Blazorise 1.8.8 - Component Reliability Update",
+      "summary": "Blazorise 1.8.8 delivers important reliability fixes for RichTextEdit, Autocomplete, TreeView, and DataGrid, improving consistency across core interactive components.",
+      "postedOn": "2025-11-28",
+      "category": "News",
+      "imageUrl": "img/v188.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "blog",
       "dir": "blog/2025-11-25-optimizing-rendering-and-reconciliation-in-large-blazor-apps",
