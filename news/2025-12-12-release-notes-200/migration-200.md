@@ -93,6 +93,20 @@ New usage:
 @code { private string Selected { get; set; } = "a"; }
 ```
 
+or
+
+```razor
+<Select TValue="int[]" @bind-Value="Selected" Multiple>
+    <SelectItem Value="1">One</SelectItem>
+    <SelectItem Value="2">Two</SelectItem>
+    <SelectItem Value="3">Three</SelectItem>
+    <SelectItem Value="4">Four</SelectItem>
+</Select>
+@code {
+    private int[] Selected { get; set; } = new int[] { 1 };
+}
+```
+
 ### Radio
 
 - Removed: `Checked`, `CheckedChanged`, `CheckedExpression`.
