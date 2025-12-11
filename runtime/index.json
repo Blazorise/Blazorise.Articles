@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2025-12-10T08:45:34.304Z",
-  "commit": "faa5d57f0479",
+  "generatedAt": "2025-12-10T21:40:38.975Z",
+  "commit": "3b329ae0fe9f",
   "count": 105,
   "items": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "root": "news",
-      "dir": "news/2025-12-10",
+      "dir": "news/2025-12-10-release-notes-188",
       "slug": "188",
       "permalink": "/news/release-notes/188",
       "title": "Blazorise 1.8.8 - Component Reliability Update",
