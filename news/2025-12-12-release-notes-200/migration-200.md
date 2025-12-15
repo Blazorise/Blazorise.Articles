@@ -34,6 +34,12 @@ Follow the guide bellow to handle all of the breaking changes in this release.
 
 ---
 
+Before diving into the detailed migration steps, we strongly recommend installing the **Blazorise.Analyzers NuGet** package. It is the fastest and most reliable way to identify breaking changes in your project, as it automatically flags renamed components, updated parameters, and obsolete APIs at compile time, along with clear instructions on how to fix them.
+
+Using the analyzer first allows you to resolve the majority of issues directly in your IDE, significantly reducing the need to manually scan the migration guide. Once the reported errors are addressed, the rest of the guide can be used as a reference for finer details and edge cases, making the overall migration to Blazorise 2.0 smoother and more efficient.
+
+---
+
 ### Input Component Renaming ✍️
 
 | Old Name         | New Name         |

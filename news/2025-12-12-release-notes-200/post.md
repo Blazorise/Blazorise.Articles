@@ -23,6 +23,7 @@ Blazorise 2.0, codenamed **Hvar** after the beautiful island in Croatia, is a si
 
 Here's a summary of what's new in this release:
 
+- **Blazorise Analyzer**: migration helper.
 - **.NET6 and .NET7**: frameworks support is removed.
 - **Unified Input API**: All input components now use the standard `Value`, `ValueChanged`, and `ValueExpression` parameters for consistency across the framework.
 - **Renamed Input Components**: Components like `TextEdit`, `DateEdit`, and `FileEdit` are now renamed to `TextInput`, `DateInput`, and `FileInput`.
@@ -34,6 +35,14 @@ Dive deeper below to discover the full potential of these features.
 > 💡 Planning to upgrade from 1.8.x? See the full migration guide at [/news/migration/200](/news/migration/200).
 
 ## New Features
+
+## Blazorise Analyzer
+
+Blazorise 2.0 introduces **Blazorise.Analyzers**, a brand-new NuGet package designed to make upgrading and maintaining Blazorise projects safer, faster, and more predictable. Once installed, the analyzer automatically inspects your Blazor projects at compile time and detects inconsistencies related to API changes introduced in Blazorise 2.0. Instead of discovering breaking changes at runtime, developers now get immediate feedback directly in their IDE and build output.
+
+The analyzer raises clear and actionable compile-time errors and warnings whenever it detects usage of renamed components, changed parameters, or outdated APIs. Each diagnostic includes precise guidance on what has changed and how to update your code to the new component API, significantly reducing guesswork during migration. This is especially valuable for larger projects, where manual auditing of components and parameters would otherwise be time-consuming and error-prone.
+
+By shifting upgrade validation to compile time, Blazorise.Analyzers helps teams adopt Blazorise 2.0 with confidence. It acts as a built-in upgrade assistant, ensuring your codebase stays aligned with the latest Blazorise conventions and best practices, while keeping your development workflow smooth and efficient.
 
 ### Remove .NET6 & .NET7
 
