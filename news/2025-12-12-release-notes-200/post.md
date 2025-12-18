@@ -164,6 +164,14 @@ Big thanks to the [Nex-Code](https://github.com/Nex-Code) for helping us with th
 
 You can see it in action in [Offcanvas Provider](docs/services/offcanvas-provider "Offcanvas Provider") documentation page.
 
+### Full Markdown Input Support
+
+The Markdown editor now behaves much more like other form inputs in Blazorise. It fully participates in form validation and shows validation feedback directly on the editor UI, so users can immediately see when the field is valid or has errors.
+
+Common input behaviors are now supported on the actual editor surface. Settings like read-only and disabled work as expected, custom styling and CSS classes apply to what users see, and any additional HTML attributes are carried through properly.
+
+Focusing the Markdown editor has also been improved, so keyboard users and form flows can move focus to the editor reliably. Overall, the Markdown component should feel more consistent with the rest of the Blazorise input components in real-world forms.
+
 ## Final Notes 🏁
 
 Blazorise 2.0 introduces a consistent, modernized input system and simpler APIs that make form handling easier and more intuitive.
