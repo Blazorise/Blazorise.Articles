@@ -338,6 +338,11 @@ All Charts static files are now loaded dynamicaly. Remove any mention of:
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.2.0/dist/chartjs-plugin-zoom.min.js"></script>
 ```
 
+### Blazorise SpinKit
+
+- `Color` parameter now uses Blazorise color variants (use `HexColor` for hex values).
+- `Size` parameter now uses the `Size` enum; for custom sizes set `--sk-size` or `--b-spinkit-size`.
+
 ### Scale configuration
 
 A new `ChartAxisBorder` option (surfaced on `ChartAxis.Border`) maps directly to Chart.js v4 scale border configuration, covering color, width, dash, and offset settings alongside the existing grid options.
