@@ -169,13 +169,38 @@ The `BLMouseEventArgs` class has been removed in Blazorise 2.0. You should use t
 
 ### Autocomplete
 
-#### Replace Obsolete  parameters
+#### Replace Obsolete parameters
 
 | Old Parameter(s) | New Parameter(s) |
 | ---------- | ---------- |
 | `CurrentSearch` | `Search` |
 | `CurrentSearchChanged` | `SearchChanged` |
 | `Multiple` | `SelectionMode.Multiple` |
+
+#### Remove Validation parameters
+
+Remove `Validator` and `AsyncValidator`. Wrap `Autocomplete` with `Validation` component to use Validator rules.
+
+```razor
+<Validation Validator="@ValidationRule.IsNotEmpty">
+    <Field>
+        <FieldLabel>Country</FieldLabel>
+        <FieldBody>
+            <Autocomplete TItem="Country"
+                            TValue="string"
+                            Data="@Countries"
+                            TextField="@(( item ) => item.Name)"
+                            ValueField="@(( item ) => item.Iso)"
+                            Placeholder="Select a country"
+                            @bind-SelectedValue="@selectedCountry">
+                <Feedback>
+                    <ValidationError>Please select a country.</ValidationError>
+                </Feedback>
+            </Autocomplete>
+        </FieldBody>
+    </Field>
+</Validation>
+```
 
 ### CardLink
 
