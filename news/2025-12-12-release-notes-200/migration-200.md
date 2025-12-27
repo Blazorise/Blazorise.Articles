@@ -379,3 +379,13 @@ A new `ChartAxisBorder` option (surfaced on `ChartAxis.Border`) maps directly to
 - `Grid.BorderColor` → `Border.Color`
 - `Grid.BorderDash` → `Border.Dash`
 - `Grid.BorderDashOffset` → `Border.DashOffset`
+
+### Modal
+
+Move `Centered`, `Scrollable`, and `Size` from `<ModalContent ...>` onto the parent `<Modal ...>` and leave ModalContent without those attributes. Example: 
+
+```razor
+<Modal Centered Scrollable Size="ModalSize.Large">
+    <ModalContent>...</ ModalContent>
+</Modal>
+```

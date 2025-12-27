@@ -177,6 +177,10 @@ Focusing the Markdown editor has also been improved, so keyboard users and form 
 
 Autocomplete now participates in the standard validation pipeline by inheriting `BaseInputComponent` and no longer relies on its built‑in Validation wrapper. This change makes Autocomplete behave consistently with other input components and requires it to be wrapped in `Validation`, which also fixes mismatches where errors appeared on the search field instead of the overall control. In multiple selection mode, validation now uses `SelectedValues`, `SelectedValuesChanged`, and `SelectedValuesExpression` so the selected items are validated as a single logical value. Finally, the parameter `MinLength` was renamed to `MinSearchLength` to clarify that it applies to search input length and to avoid confusion with data annotation MinLength.
 
+### Modal Parameters Centralized
+
+This release adjusts the Modal API by moving the `Centered`, `Scrollable`, and `Size` parameters from `ModalContent` up to `Modal`. ModalContent now derives these values from its parent and refreshes its classes whenever the modal-level settings change, so existing layouts and providers continue to render correctly while the configuration is centralized. All internal usages, demo pages, and documentation examples have been updated to set these options on Modal, and the FluentUI2 modal implementation now relies on the modal parameters directly. The migration analyzer has been extended to flag the removed ModalContent parameters and guide users to the new Modal equivalents.
+
 ## Final Notes 🏁
 
 Blazorise 2.0 introduces a consistent, modernized input system and simpler APIs that make form handling easier and more intuitive.
