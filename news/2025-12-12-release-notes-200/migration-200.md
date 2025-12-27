@@ -179,7 +179,8 @@ The `BLMouseEventArgs` class has been removed in Blazorise 2.0. You should use t
 
 #### Remove Validation parameters
 
-Remove `Validator` and `AsyncValidator`. Wrap `Autocomplete` with `Validation` component to use Validator rules.
+- Remove `Validator` and `AsyncValidator`. Wrap `Autocomplete` with `Validation` component to use Validator rules.
+- Rename `MinLength` into `MinSearchLength`.
 
 ```razor
 <Validation Validator="@ValidationRule.IsNotEmpty">
@@ -192,6 +193,7 @@ Remove `Validator` and `AsyncValidator`. Wrap `Autocomplete` with `Validation` c
                             TextField="@(( item ) => item.Name)"
                             ValueField="@(( item ) => item.Iso)"
                             Placeholder="Select a country"
+                            MinSearchLength="0"
                             @bind-SelectedValue="@selectedCountry">
                 <Feedback>
                     <ValidationError>Please select a country.</ValidationError>
