@@ -29,6 +29,7 @@ Here's a summary of what's new in this release:
 - **Renamed Input Components**: Components like `TextEdit`, `DateEdit`, and `FileEdit` are now renamed to `TextInput`, `DateInput`, and `FileInput`.
 - **Extended Color Variants**: for Background and TextColor utilties.
 - **FluentUI Theme Generator**: dynamically generate FluentUI themes.
+- **Autocomplete Validation Refactor**: now behaves as any other input component.
 
 Dive deeper below to discover the full potential of these features.
 
@@ -171,6 +172,10 @@ The Markdown editor now behaves much more like other form inputs in Blazorise. I
 Common input behaviors are now supported on the actual editor surface. Settings like read-only and disabled work as expected, custom styling and CSS classes apply to what users see, and any additional HTML attributes are carried through properly.
 
 Focusing the Markdown editor has also been improved, so keyboard users and form flows can move focus to the editor reliably. Overall, the Markdown component should feel more consistent with the rest of the Blazorise input components in real-world forms.
+
+### Autocomplete Validation Refactor
+
+Autocomplete now participates in the standard validation pipeline by inheriting `BaseInputComponent` and no longer relies on its built‑in Validation wrapper. This change makes Autocomplete behave consistently with other input components and requires it to be wrapped in `Validation`, which also fixes mismatches where errors appeared on the search field instead of the overall control. In multiple selection mode, validation now uses `SelectedValues`, `SelectedValuesChanged`, and `SelectedValuesExpression` so the selected items are validated as a single logical value. Finally, the parameter `MinLength` was renamed to `MinSearchLength` to clarify that it applies to search input length and to avoid confusion with data annotation MinLength.
 
 ## Final Notes 🏁
 
