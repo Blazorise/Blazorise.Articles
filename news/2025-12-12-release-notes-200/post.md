@@ -115,7 +115,7 @@ Color plays a key role in user interface design, conveying hierarchy, meaning, a
 
 Enumerations such as `Background` and `TextColor` now support **nested variants** for subtle and emphasized shades. Previously limited to base colors like `Background.Success` or `TextColor.Danger`, you can now use variants such as `Background.Success.Subtle` or `TextColor.Success.Emphasis`. This brings Blazorise utilities in line with modern design systems like Bootstrap 5.3 and FluentUI.
 
-This new system is powered by the `IEnumerationNameBuilder` infrastructure, which standardizes how enumeration values map to CSS class names across providers. For example, Bootstrap automatically generates classes such as `bg-success-subtle` or `text-success-emphasis`. It’s fully backward-compatible, ensuring a seamless upgrade path for existing applications.
+This new system is powered by the `IEnumerationNameBuilder` infrastructure, which standardizes how enumeration values map to CSS class names across providers. For example, Bootstrap automatically generates classes such as `bg-success-subtle` or `text-success-emphasis`. It's fully backward-compatible, ensuring a seamless upgrade path for existing applications.
 
 You can explore the full range of extended color variants in the [Colors documentation](docs/helpers/colors "Link to Colors documentation").
 
@@ -129,7 +129,7 @@ You can see examples of subtle badges in the updated [Badge documentation](docs/
 
 ### FluentUI Theme Generator
 
-Blazorise 1.9 also introduces the **FluentUI Theme Generator**, enabling developers to easily build and customize themes based on Microsoft’s Fluent Design System. This generator allows quick configuration of colors, typography, and surface elements to create professional and consistent Fluent-inspired UIs.
+Blazorise 1.9 also introduces the **FluentUI Theme Generator**, enabling developers to easily build and customize themes based on Microsoft's Fluent Design System. This generator allows quick configuration of colors, typography, and surface elements to create professional and consistent Fluent-inspired UIs.
 
 The goal is to provide a balance between flexibility and faithfulness to the FluentUI aesthetic, giving developers the ability to tailor visual themes while maintaining familiar design principles across all Blazorise components.
 
@@ -180,6 +180,14 @@ Autocomplete now participates in the standard validation pipeline by inheriting 
 ### Modal Parameters Centralized
 
 This release adjusts the Modal API by moving the `Centered`, `Scrollable`, and `Size` parameters from `ModalContent` up to `Modal`. ModalContent now derives these values from its parent and refreshes its classes whenever the modal-level settings change, so existing layouts and providers continue to render correctly while the configuration is centralized. All internal usages, demo pages, and documentation examples have been updated to set these options on Modal, and the FluentUI2 modal implementation now relies on the modal parameters directly. The migration analyzer has been extended to flag the removed ModalContent parameters and guide users to the new Modal equivalents.
+
+### Fluent Sizing Enhancements
+
+Fluent sizing now supports viewport units and CSS variables, making it easy to express responsive widths and heights with `Vw`, `Vh`, and `Var` alongside the existing `Px`, `Rem`, `Em`, and `Ch` helpers. Min/max constraints can be chained directly on style-based sizing, including unit-only calls when you want to define limits without a base size.
+
+Inline style output is cleaner and more consistent, with spacing between rules handled at append time instead of parsing, reducing overhead while keeping the formatting predictable. This ensures generated styles read well and remain stable across concatenations.
+
+Documentation now includes a dedicated [Fluent Sizing page](docs/helpers/utilities/fluent-sizing) with multiple examples covering predefined sizes, style- based sizing, and CSS-variable-driven values, and it's surfaced in navigation and search for easier discovery.
 
 ## Final Notes 🏁
 
