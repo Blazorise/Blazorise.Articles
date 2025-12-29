@@ -6,7 +6,7 @@ canonical: /blog/how-to-override-fluent-design-tokens
 image-url: img/how-to-override-fluent-design-tokens.png
 image-title: How to override Fluent design tokens
 author-name: Mladen Macanovic
-author-image: "/assets/img/authors/mladen.png"
+author-image: /assets/img/authors/mladen.png
 category: How To Guides
 posted-on: 2024-03-26
 read-time: 5 min
