@@ -55,7 +55,7 @@ Next up, we need to find a way to track & glue our custom filter system together
 
 We'll also go ahead and create a new `ColumnFilter` class that will hold the filtering state we need to keep for each column.
 
-```html|FilterTrackerExample
+```cs
 @code{
     private FilterTracker<FilterExample> _filterTracker = new();
 
@@ -136,7 +136,7 @@ We'll also go ahead and create a new `ColumnFilter` class that will hold the fil
 
 Now we need to update the UI so it uses our custom implementation, let's use the provided `FilterMenuTemplate` in order to do so.
 
-```html|FilterMenuTemplateExample
+```razor
 
 <FilterMenuTemplate>
     <Row>
@@ -172,7 +172,7 @@ Now that the user can submit the new filter values, and we are tracking everythi
 
 **Note:** Don't forget to set the Datagrid's parameters! `Filterable FilterMode="DataGridFilterMode.Menu" CustomFilter="MyCustomFilter"`
 
-```html|CustomFilterExample
+```cs
 @code{
     private bool MyCustomFilter( FilterExample row )
     {
@@ -231,6 +231,7 @@ Now that the user can submit the new filter values, and we are tracking everythi
 ```
 
 ### Read Data
+
 Optionally by using the Datagrid's `ReadData` feature this example still holds true, as you hold the filtering state & logic in your own hands. 
 
 You will not be using the `CustomFilter` anymore, but you will be using the `ReadData` together with the filtering state that you've tracked to apply your custom filtering logic. Of course you will have to do your own translation in order to make it work with your backend.

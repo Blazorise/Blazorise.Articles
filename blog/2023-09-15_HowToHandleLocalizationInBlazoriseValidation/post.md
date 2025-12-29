@@ -22,8 +22,7 @@ Let's start with a simple example. We have a `ValidationLocalizationExample` cla
 
 We want to validate this property and display a localized error message if the validation fails. We do so by providing the `Feedback` and `ValidationError` components in addition to the regular [Blazorise Validation](docs/components/validation) components.
 
-```html|ValidationLocalizationExample
-
+```razor
 <Validations @ref=_validationsRef HandlerType="ValidationHandlerType.DataAnnotation" Model="_model">
     <Validation>
         <Field>
@@ -55,7 +54,6 @@ We want to validate this property and display a localized error message if the v
         }
     }
 }
-
 ```
 
 ![Validation Standard Error Message](img/validation-fail-standard-error-message.png)
@@ -81,7 +79,7 @@ We'll start by creating a helper class that will be used to localize the error m
 
 This class will receive a `Microsoft.Extensions.Localization.IStringLocalizer<T>` in the constructor and will have a `Localize` method that will receive the error message and arguments and return the localized error message.
 
-```cs|MessageLocalizerHelperExample
+```cs
 public class MessageLocalizerHelper<T>
 {
     private readonly Microsoft.Extensions.Localization.IStringLocalizer<T> stringLocalizer;
@@ -132,7 +130,7 @@ The following shows a full example of how this would work:
 
 **NOTE:** This example assumes you're using Dependency Injection. Do not forget to register your dependencies!
 
-```html|ValidationLocalizationFullExample
+```razor
 <Validations @ref=_validationsRef HandlerType="ValidationHandlerType.DataAnnotation" Model="_model">
     <Validation MessageLocalizer="MessageLocalizer.Localize">
         <Field>
@@ -209,8 +207,8 @@ The following shows a full example of how this would work:
         }
     }
 }
-
 ```
+
 ## Conclusion
 
 We've looked at a simple example of how to localize the error messages that are displayed when a validation fails. We've also shown how to create a custom Message Localizer that utilizes the .NET `IStringLocalizer` to localize the error messages.

@@ -25,7 +25,7 @@ If you're looking to integrate your captcha component into your Blazorise form v
 
 Below you find a full example of the **CaptchaInput** component:
 
-```html|CaptchaInputExample
+```razor
 @inherits BaseInputComponent<bool>
 <div id="@ElementId" class="@ClassNames" style="@StyleNames">
     <Captcha @ref=captchaRef Solved="@Solved" Validate="@Validate" Expired="Expired" />
@@ -33,8 +33,8 @@ Below you find a full example of the **CaptchaInput** component:
 @Feedback
 ```
 
-```cs|CaptchaInputCsExample
-﻿#region Using directives
+```cs
+#region Using directives
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Tracing;
@@ -190,7 +190,7 @@ To use the **CaptchaInput** component, you can add it to your form like in the e
 
 Note that we're using the **ValidateRobot** method that we've already created as part of our **CaptchaInput**.
 
-```html|CaptchaInputUsage
+```razor
 <Validation Validator="@CaptchaInput.ValidateRobot">
     <Column ColumnSize="ColumnSize.IsHalf.OnDesktop">
         <CaptchaInput @bind-Value=NotARobot>

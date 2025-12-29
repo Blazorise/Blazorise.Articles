@@ -32,7 +32,7 @@ We can start with creating the class which will hold all the information related
 
 Create `Platform.cs`. We will use a record for this. Choosing the right tool to solve our problems is always a good idea. I think records are ideal for this scenario as they are basically immutable data classes, ie. unchangeable collections of values. You can read more about them [here](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record).
 
-```cs|Platform
+```cs
 public record Platform(string Name, string TextColor, string BackgroundColor, string IconName, string Href)
 {
     public static Platform X => new Platform("X", "white", "x", "fa-brands fa-x", "https://twitter.com/intent/tweet");
@@ -47,7 +47,7 @@ The next step will be to create the actual Blazor component which will be used a
 
 Create a file named `ShareButtonComponent.razor`, and write the following in it:
 
-```html|ShareButtonComponentMarkup
+```razor
 <Button TextColor="@Platform.TextColor"
         Background="@(new Background(Platform.BackgroundColor))"
         To="@Platform.Href"
@@ -60,7 +60,8 @@ Create a file named `ShareButtonComponent.razor`, and write the following in it:
     <Icon Name="@($"fa-brands {Platform.IconName}")" IconStyle="IconStyle.Light"/>
 </Button>
 ```
-```cs|ShareButtonComponentCode
+
+```cs
 @code
 {
     [Parameter, EditorRequired]
@@ -105,7 +106,7 @@ You may be wondering, what `[EditorRequired]` does, well, it is a really useful 
 
 Let's create another file inside the `/wwwroot/` folder. Let's name it `brands.css`. This CSS file will hold all of our brand colors. Here are some example colors, which you may expand further as you need to add more brands!
 
-```html|Brands
+```html
 .bg-x {
   background-color: #000000 !important;
 }
@@ -132,7 +133,7 @@ Let's create another file inside the `/wwwroot/` folder. Let's name it `brands.c
 
 Now, writing a simple CSS file is not really enough, we need to include it in our index.html's head section, so that the browser, can actually fetch our classes. Just add the following line to the `wwwroot/index.html`
 
-```html|IndexhtmlHeadSection
+```html
 <html>
 <head>
   <link href="brands.css" rel="stylesheet" />
@@ -147,7 +148,7 @@ Now, writing a simple CSS file is not really enough, we need to include it in ou
 
 And already, we are done! It's time to use your freshly created component! Inside `Index.razor` add your component like so:
 
-```html|ShareButtonUsage
+```razor
 <ShareButton Brand="@Platform.X">
     Share on
 </ShareButton>

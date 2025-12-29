@@ -60,7 +60,7 @@ With the CSS variables copied, navigate to the **wwwroot** directory of your pro
 
 Paste the copied CSS variables into this file, changing the rule name from `.fui-FluentProvider` to `:root` to apply these styles globally across your project.
 
-```html|FluentProviderThemeVariablesExample
+```html
 :root {
     --borderRadiusNone: 0;
     --borderRadiusSmall: 2px;
@@ -75,7 +75,7 @@ Paste the copied CSS variables into this file, changing the rule name from `.fui
 
 Finally, ensure the CSS file is linked in your project by adding a link to it in your `index.html` or `App.razor` file.
 
-```html|FluentProviderThemeVariables2Example
+```html
 <link href="site.css" rel="stylesheet" />
 ```
 
