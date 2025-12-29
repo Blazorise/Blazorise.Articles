@@ -389,3 +389,7 @@ Move `Centered`, `Scrollable`, and `Size` from `<ModalContent ...>` onto the par
     <ModalContent>...</ ModalContent>
 </Modal>
 ```
+
+### RichTextEdit
+
+If you were using the `<Editor>` fragment to update content, move that content to Value or `@bind-Value` because `<Editor>` is now only used for initial content when Value is null. If you have custom JS calling `OnContentChanged`, update it to pass (html, text).
