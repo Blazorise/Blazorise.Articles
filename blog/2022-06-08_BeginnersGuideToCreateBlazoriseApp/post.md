@@ -4,7 +4,7 @@ description: In this article we will learn how to create a Blazorise WebAssembly
 permalink: /blog/how-to-create-a-blazorise-application-beginners-guide
 canonical: /blog/how-to-create-a-blazorise-application-beginners-guide
 image-url: img/How_to_create_a_Blazorise_application_A_Beginners_Guide.png
-image-title: Blazorise WASM application: A Beginner's Guide
+image-title: "Blazorise WASM application: A Beginner's Guide"
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: How To Guides

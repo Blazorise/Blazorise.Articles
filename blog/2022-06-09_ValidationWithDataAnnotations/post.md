@@ -4,7 +4,7 @@ description: Learn all about how to utilize Blazorise form validation to quickly
 permalink: /blog/blazor-form-validation-with-data-annotations
 canonical: /blog/blazor-form-validation-with-data-annotations
 image-url: img/Blazorise-Form-Validation-With-Data-Annotations.png
-image-title: Blazorise Form Validation With Data Annotations: A Beginner's Guide
+image-title: "Blazorise Form Validation With Data Annotations: A Beginner's Guide"
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: How To Guides
