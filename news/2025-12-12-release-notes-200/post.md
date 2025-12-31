@@ -30,6 +30,7 @@ Here's a summary of what's new in this release:
 - **Extended Color Variants**: for Background and TextColor utilties.
 - **FluentUI Theme Generator**: dynamically generate FluentUI themes.
 - **Autocomplete Validation Refactor**: now behaves as any other input component.
+- **Tailwind 4**: Upgrade to latest version.
 
 Dive deeper below to discover the full potential of these features.
 
@@ -200,6 +201,12 @@ Documentation now includes a dedicated [Fluent Sizing page](docs/helpers/utiliti
 Blazorise 2.0 adds a new `Intent` parameter across components that previously accepted `Color`, giving you a clearer, semantic way to express primary/secondary/success/etc while keeping existing `Color` usage fully compatible. You can start using `Intent` immediately without changing your current styles.
 
 `Color.Link` remains supported for backward compatibility but is now treated as button/alert-only; using it elsewhere will surface an IDE warning so you can catch it early. This keeps existing `Button` and `Alert` behavior intact while guiding you to more consistent coloring on other components.
+
+### Tailwind 4 Upgrade
+
+Blazorise.Tailwind has moved to the latest Tailwind CSS 4.0 release, bringing the new CSS‑first engine and a refreshed build pipeline that leans on the v4 entry format with `@import`, `@utility`, and `@theme` blocks. The upgrade keeps the familiar Blazorise look while giving you faster, cleaner utility generation and modern token-driven theming, with Flowbite still in the mix for rich components.
+
+If you maintain your own Tailwind pipeline, this release is a great moment to mirror the new entry file and include the Blazorise build inputs so your app's utilities and Blazorise styles compile into a single output. Also make sure your safelist is wired in, since Blazorise uses some dynamic classnames that Tailwind won't see through content scanning alone; keeping that list connected ensures nothing disappears at build time.
 
 ## Final Notes 🏁
 

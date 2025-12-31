@@ -393,3 +393,7 @@ Move `Centered`, `Scrollable`, and `Size` from `<ModalContent ...>` onto the par
 ### RichTextEdit
 
 If you were using the `<Editor>` fragment to update content, move that content to Value or `@bind-Value` because `<Editor>` is now only used for initial content when Value is null. If you have custom JS calling `OnContentChanged`, update it to pass (html, text).
+
+### Tailwind 4
+
+If you load Flowbite from a CDN, update both the CSS and JS to Flowbite 4.0.1 (for example `https://unpkg.com/ flowbite@4.0.1/dist/flowbite.min.css` and `https://unpkg.com/flowbite@4.0.1/dist/flowbite.js`) to stay aligned with the upgraded provider.
