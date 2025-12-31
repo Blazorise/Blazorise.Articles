@@ -195,6 +195,12 @@ Inline style output is cleaner and more consistent, with spacing between rules h
 
 Documentation now includes a dedicated [Fluent Sizing page](docs/helpers/utilities/fluent-sizing) with multiple examples covering predefined sizes, style- based sizing, and CSS-variable-driven values, and it's surfaced in navigation and search for easier discovery.
 
+### Intent-based coloring
+
+Blazorise 2.0 adds a new `Intent` parameter across components that previously accepted `Color`, giving you a clearer, semantic way to express primary/secondary/success/etc while keeping existing `Color` usage fully compatible. You can start using `Intent` immediately without changing your current styles.
+
+`Color.Link` remains supported for backward compatibility but is now treated as button/alert-only; using it elsewhere will surface an IDE warning so you can catch it early. This keeps existing `Button` and `Alert` behavior intact while guiding you to more consistent coloring on other components.
+
 ## Final Notes 🏁
 
 Blazorise 2.0 introduces a consistent, modernized input system and simpler APIs that make form handling easier and more intuitive.
