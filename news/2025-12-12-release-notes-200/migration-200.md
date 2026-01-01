@@ -176,6 +176,7 @@ The `BLMouseEventArgs` class has been removed in Blazorise 2.0. You should use t
 | `CurrentSearch` | `Search` |
 | `CurrentSearchChanged` | `SearchChanged` |
 | `Multiple` | `SelectionMode.Multiple` |
+| `NotFoundContent` | `NotFoundTemplate` |
 
 #### Remove Validation parameters
 
