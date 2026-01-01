@@ -42,7 +42,7 @@ public RegisterModelValidator()
 
 And then you're going to need a library.  [BlazoriseFluentValidation](https://github.com/aladotnet/BlazoriseFluentValidation) has been around for a little while and don't let the 0.94 version on the readme page fool you, the latest on NuGet is 1.0.4. After that, two minutes of Blazorise and you've got a Registration page.
 
-```html
+```razor
 @page "/account/registration"
 @inherits ReactiveInjectableComponentBase<RegistrationViewModel>
 
@@ -190,7 +190,7 @@ We're all done in the ViewModel, we've got everything we need. So what's left?
   
 Ah yes, bindings in the View.  Here's the completed markup of the View.  
   
-```html
+```razor
 @page "/account/registration"
 @inherits ReactiveInjectableComponentBase<RegistrationViewModel>
 
@@ -256,7 +256,7 @@ public sealed class MockNavigationManager
 
 And here, just to round everything off, is one of my working unit tests.
 
-```html
+```cs
 [Theory, AutoNSubstituteData]
     public void RegistrationViewModel_ValidatesAndFiresRegisterCommand([Frozen]IAccountRepo repo, LoginModelValidator validator)
         => new TestScheduler().With(scheduler =>

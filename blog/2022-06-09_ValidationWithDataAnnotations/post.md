@@ -4,9 +4,9 @@ description: Learn all about how to utilize Blazorise form validation to quickly
 permalink: /blog/blazor-form-validation-with-data-annotations
 canonical: /blog/blazor-form-validation-with-data-annotations
 image-url: img/Blazorise-Form-Validation-With-Data-Annotations.png
-image-title: Blazorise Form Validation With Data Annotations: A Beginner's Guide
+image-title: "Blazorise Form Validation With Data Annotations: A Beginner's Guide"
 author-name: Mladen Macanović
-author-image: "/assets/img/authors/mladen.png"
+author-image: /assets/img/authors/mladen.png
 category: How To Guides
 posted-on: 2022-06-09
 read-time: 5 min
@@ -26,7 +26,7 @@ It is recommended that you already have a working Blazorise project before we be
 
 When you have finished with setting the project make sure that you also have the **MessageAlert** defined in the **App.razor**. We will use it to give feedback to the user once we have an error or a successfull form submition.
 
-```html|MessageProviderExample
+```razor
 <Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
@@ -51,7 +51,7 @@ In this class file, add the class definitions for the Countries and Cities class
 
 Refer to the following code example.
 
-```cs|ModelsExample
+```cs
 public class Employee
 {
     [Required]
@@ -165,7 +165,7 @@ On this page we will structure a fairly simple form structure that represents a 
 
 Refer to the following code example.
 
-```html|FormExample
+```razor
 @page "/"
 @using ValidationWithDataAnnotations.Models
 

@@ -68,7 +68,7 @@ With Blazor, you can create components for use across your application. Componen
 
 These components can be defined once, and called multiple times. At the very core, components are a group of HTML elements that specify the structure of a site.
 
-```html
+```razor
 <Dropdown>
     <DropdownToggle Color="Color.Primary">
         Dropdown

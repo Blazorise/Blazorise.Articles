@@ -36,7 +36,7 @@ The complex types are all built from a combination of primitive types.  Usually,
 
 For primitive types it's pretty simple to build the select. Let's go ahead and build a dropdown-list list with four employees, where their value is their employee Id, an int type.
 
-```html|SelectComponentWithPrimitiveTypeExample.razor
+```razor
 @namespace Blazorise.Docs.Pages.Blog.UsingTheSelectComponent.Examples
 
 <Row>
@@ -59,7 +59,7 @@ Although still a primitive type, an enumeration type can basically represent two
 
 Here's an example of how to properly handle an enumeration type, by configuring the settings appropriately
 
-```html|SelectComponentWithEnumTypeExample.razor
+```razor
 @namespace Blazorise.Docs.Pages.Blog.UsingTheSelectComponent.Examples
 @using System.Text.Json.Serialization
 
@@ -110,7 +110,7 @@ The easiest and most recommended way to work with complex types is to use one of
 
 Let's look at how a dropdown list with four employees would look, now with actual complex types.
 
-```html|SelectComponentWithComplexTypeExample.razor
+```razor
 @namespace Blazorise.Docs.Pages.Blog.UsingTheSelectComponent.Examples
 
 <Row>
@@ -164,7 +164,7 @@ However handling null values with the select element can be tricky, and this has
 
 So the option should be left empty, let's see this in action with a nullable type.
 
-```html|SelectComponentWithNullableTypeExample.razor
+```razor
 @namespace Blazorise.Docs.Pages.Blog.UsingTheSelectComponent.Examples
 
 <Row>

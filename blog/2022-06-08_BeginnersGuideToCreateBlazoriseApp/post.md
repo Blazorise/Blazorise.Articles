@@ -4,7 +4,7 @@ description: In this article we will learn how to create a Blazorise WebAssembly
 permalink: /blog/how-to-create-a-blazorise-application-beginners-guide
 canonical: /blog/how-to-create-a-blazorise-application-beginners-guide
 image-url: img/How_to_create_a_Blazorise_application_A_Beginners_Guide.png
-image-title: Blazorise WASM application: A Beginner's Guide
+image-title: "Blazorise WASM application: A Beginner's Guide"
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: How To Guides
@@ -40,76 +40,81 @@ We have now completed our Blazor WebAssembly project. Continue by installing the
 
 1. Right click on the project in solution explorer and click on **Manage NuGet Packages** from the dropdown menu. ![Manage NuGet Packages](img/Manage-NuGet-Packages.png)
 2. Navigate to the **Browse** tab and search for **Blazorise**. To install it, use the **Blazorise.Bootstrap5** package. Repeat for **Blazorise.Icons.FontAwesome** package. ![Install Blazorise NuGet](img/Install-Blazorise-NuGet.png)
-3. The next step is to change your **index.html** and include the Blazorise CSS source files: 
-    ```html|StaticFilesExample
-    <!DOCTYPE html>
-    <html lang="en">
+3. The next step is to change your **index.html** and include the Blazorise CSS source files:
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>BlazoriseSampleApplication</title>
-        <base href="/" />
-        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+```html
+<!DOCTYPE html>
+<html lang="en">
 
-        <link href="_content/Blazorise/blazorise.css" rel="stylesheet" />
-        <link href="_content/Blazorise.Bootstrap5/blazorise.bootstrap5.css" rel="stylesheet" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>BlazoriseSampleApplication</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-        <link href="css/app.css" rel="stylesheet" />
-        <link href="BlazoriseSampleApplication.styles.css" rel="stylesheet" />
-    </head>
+    <link href="_content/Blazorise/blazorise.css" rel="stylesheet" />
+    <link href="_content/Blazorise.Bootstrap5/blazorise.bootstrap5.css" rel="stylesheet" />
 
-    <body>
-        <div id="app">Loading...</div>
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="BlazoriseSampleApplication.styles.css" rel="stylesheet" />
+</head>
 
-        <div id="blazor-error-ui">
-            An unhandled error has occurred.
-            <a href="" class="reload">Reload</a>
-            <a class="dismiss">🗙</a>
-        </div>
-        <script src="_framework/blazor.webassembly.js"></script>
-    </body>
+<body>
+    <div id="app">Loading...</div>
 
-    </html>
-    ```
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+
+</html>
+```
+
 4. Next, define the Blazorise using in your main **_Imports.razor** file. This will instruct Visual Studio IntelliSense to suggest Blazorise components to us.
-    ```html|UsingsExample
-    @using Blazorise
-    ```
+
+```html
+@using Blazorise
+```
+
 5. Go to the **Client** folder and define the following in **Program.cs**.
-    ```cs|ServicesExample
-    using Blazorise;
-    using Blazorise.Bootstrap5;
-    using Blazorise.Icons.FontAwesome;
-    using BlazoriseSampleApplication;
-    using Microsoft.AspNetCore.Components.Web;
-    using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
-    namespace Company.WebApplication1
+```cs
+using Blazorise;
+using Blazorise.Bootstrap5;
+using Blazorise.Icons.FontAwesome;
+using BlazoriseSampleApplication;
+using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+
+namespace Company.WebApplication1
+{
+    public class Program
     {
-        public class Program
+        public static async Task Main( string[] args )
         {
-            public static async Task Main( string[] args )
-            {
-                var builder = WebAssemblyHostBuilder.CreateDefault( args );
-                builder.RootComponents.Add<App>( "#app" );
-                builder.RootComponents.Add<HeadOutlet>( "head::after" );
+            var builder = WebAssemblyHostBuilder.CreateDefault( args );
+            builder.RootComponents.Add<App>( "#app" );
+            builder.RootComponents.Add<HeadOutlet>( "head::after" );
 
-                builder.Services.AddScoped( sp => new HttpClient { BaseAddress = new Uri( builder.HostEnvironment.BaseAddress ) } );
+            builder.Services.AddScoped( sp => new HttpClient { BaseAddress = new Uri( builder.HostEnvironment.BaseAddress ) } );
 
-                builder.Services
-                    .AddBlazorise( options =>
-                    {
-                        options.Immediate = true;
-                    } )
-                    .AddBootstrap5Providers()
-                    .AddFontAwesomeIcons();
+            builder.Services
+                .AddBlazorise( options =>
+                {
+                    options.Immediate = true;
+                } )
+                .AddBootstrap5Providers()
+                .AddFontAwesomeIcons();
 
-                await builder.Build().RunAsync();
-            }
+            await builder.Build().RunAsync();
         }
     }
-    ```
+}
+```
 
 ## Setting the Simple Example
 
@@ -117,7 +122,7 @@ The last step is to adjust a default Blazor example to use Blazorise components.
 
 Go the **Counter.razor** under the **Pages** folder and copy/paste the following snippet.
 
-```html|CounterExample
+```razor
 @page "/counter"
 
 <Heading Size="HeadingSize.Is1">Counter with Blazorise</Heading>

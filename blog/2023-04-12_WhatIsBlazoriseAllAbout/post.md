@@ -54,7 +54,7 @@ Traditionally, CSS class names are used to style and customize HTML elements. De
 
 Blazorise addresses this issue using strongly typed utilities instead of CSS class names. Instead of assigning a class name to an element, developers use a strongly typed utility to set the element's attributes. For example, instead of using the CSS class name `"btn"` to style a button element, developers can use the Blazorise Button component and set its Color attribute to a strongly typed value like `Color.Primary` or `Color.Secondary`.
 
-```html|ButtonExample
+```razor
 <Button Color="Color.Primary">
     Click Me!
 </Button>
@@ -68,7 +68,7 @@ In addition to the strongly typed utility classes, Blazorise provides a **fluent
 
 For example, to define different margins for a component based on screen size, developers can use the `Margin` utility class and chain multiple rules together using fluent syntax. Here's an example:
 
-```html|FluentSyntaxExample
+```razor
 <Button Margin="Margin.Is2.OnDesktop.Is4.OnMobile">
     Click me!
 </Button>

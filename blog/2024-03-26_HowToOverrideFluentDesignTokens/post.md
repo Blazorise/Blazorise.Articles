@@ -6,7 +6,7 @@ canonical: /blog/how-to-override-fluent-design-tokens
 image-url: img/how-to-override-fluent-design-tokens.png
 image-title: How to override Fluent design tokens
 author-name: Mladen Macanovic
-author-image: "/assets/img/authors/mladen.png"
+author-image: /assets/img/authors/mladen.png
 category: How To Guides
 posted-on: 2024-03-26
 read-time: 5 min
@@ -60,7 +60,7 @@ With the CSS variables copied, navigate to the **wwwroot** directory of your pro
 
 Paste the copied CSS variables into this file, changing the rule name from `.fui-FluentProvider` to `:root` to apply these styles globally across your project.
 
-```html|FluentProviderThemeVariablesExample
+```html
 :root {
     --borderRadiusNone: 0;
     --borderRadiusSmall: 2px;
@@ -75,7 +75,7 @@ Paste the copied CSS variables into this file, changing the rule name from `.fui
 
 Finally, ensure the CSS file is linked in your project by adding a link to it in your `index.html` or `App.razor` file.
 
-```html|FluentProviderThemeVariables2Example
+```html
 <link href="site.css" rel="stylesheet" />
 ```
 

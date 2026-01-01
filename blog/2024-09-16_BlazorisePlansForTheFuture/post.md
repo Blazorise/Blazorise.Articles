@@ -6,7 +6,7 @@ canonical: /blog/blazorise-2-plans-and-vision-for-the-future
 image-url: img/blazorise-future.png
 image-text: Blazorise 2.0: Plans and Vision for the Future
 author-name: Mladen Macanović
-author-image: "/assets/img/authors/mladen.png"
+author-image: /assets/img/authors/mladen.png
 category: News
 posted-on: 2024-09-14
 read-time: 4 min

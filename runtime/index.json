@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2025-12-10T21:40:38.975Z",
-  "commit": "3b329ae0fe9f",
-  "count": 105,
+  "generatedAt": "2025-12-29T10:33:59.421Z",
+  "commit": "6f156e65a099",
+  "count": 107,
   "items": [
     {
       "root": "blog",
@@ -1172,6 +1172,36 @@
       "authorName": "David Moreira",
       "authorImage": "/assets/img/authors/david.png",
       "readTime": "4 min",
+      "pinned": false
+    },
+    {
+      "root": "blog",
+      "dir": "blog/2022-06-09_ValidationWithDataAnnotations",
+      "slug": "blazor-form-validation-with-data-annotations",
+      "permalink": "/blog/blazor-form-validation-with-data-annotations",
+      "title": "Blazorise Form Validation With Data Annotations",
+      "summary": "Learn all about how to utilize Blazorise form validation to quickly validate your input fields without the model instance.",
+      "postedOn": "2022-06-09",
+      "category": "How To Guides",
+      "imageUrl": "img/Blazorise-Form-Validation-With-Data-Annotations.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "5 min",
+      "pinned": false
+    },
+    {
+      "root": "blog",
+      "dir": "blog/2022-06-08_BeginnersGuideToCreateBlazoriseApp",
+      "slug": "how-to-create-a-blazorise-application-beginners-guide",
+      "permalink": "/blog/how-to-create-a-blazorise-application-beginners-guide",
+      "title": "How to create a Blazorise WASM application",
+      "summary": "In this article we will learn how to create a Blazorise WebAssembly (WASM) application. As an example, we will also use basic Blazorise components to setup a simple form.",
+      "postedOn": "2022-06-08",
+      "category": "How To Guides",
+      "imageUrl": "img/How_to_create_a_Blazorise_application_A_Beginners_Guide.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "5 min",
       "pinned": false
     },
     {

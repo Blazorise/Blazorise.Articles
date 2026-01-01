@@ -50,7 +50,7 @@ Images can be a tough customer. When you create a container for a div, you usual
 
 Using a [Blazorise Card Component](docs/components/card), we will demonstrate how we fit an image with 4 lines of code. 
 
-```html
+```razor
 <Card Margin="Margin.Is4.OnY">
     <CardImage Source="/img/gallery/7.jpg" Alt="Placeholder image" Class="card-image-full">
     </CardImage>
@@ -91,7 +91,7 @@ If you have a [TextEdit](docs/components/text-edit) or [FieldLabel](docs/compone
 
 > Extra tip: You can use a toltip to display additional information that is required by the user. In the demo below, we use a tooltip to demonstrate how you can use the [Blazorise Tooltip](docs/components/tooltip) component to display additional information, without increasing the size of a widget. 
 
-```html
+```razor
 <Div ElementId="tooltip-custom-target">
     <Field>
         <FieldLabel>Enter CVV</FieldLabel>

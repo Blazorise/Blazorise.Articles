@@ -44,7 +44,7 @@ To make sure your login page is accessible, you need to add a `<nav link>` to yo
 
 You can create a new one from scratch by copy/pasting the snippet below into the **NavMenu.razor** file or edit any of the preexisting div-class elements. The second option might affect other pages in the project.
 
-```html
+```razor
 <div class="nav-item px-4">
     <NavLink class="nav-link" href="login">
         <span class="oi oi-list-rich" aria-hidden="true"></span>Login
@@ -60,7 +60,7 @@ In the **Pages** folder of your Blazor project, create a new razor file and name
 
 Copy and paste the code snippet below to create the markup.
 
-```html
+```razor
 <Tabs SelectedTab="@selectedTab" SelectedTabChanged="@OnSelectedTabChanged">
     <Items>
         <Tab Name="login">Login</Tab>
@@ -106,7 +106,7 @@ Now define the selectedTab variable in the `@@code` block section of the razor p
 
 After creating the tabs component, we have to fill it with content. Since we are building a login form, the `Field` component will be embedded into the Tab Content element.
 
-```html
+```razor
 <Field>
     <FieldLabel>Email</FieldLabel>
     <TextEdit @bind-Text="@email" Placeholder="Enter email..." />
@@ -126,7 +126,7 @@ Notice how we used the [Fields component](docs/components/field) used to layout 
 
 After creating form fields, add a [Button component](docs/components/button) to submit user input.
 
-```html
+```razor
 <Button Color="Color.Primary">Login</Button>
 ```
 
@@ -138,7 +138,7 @@ You can either validate through method handlers or data annotations.
 
 The code snippet below illustrates how you can validate the email field using the method handlers.
 
-```html
+```razor
 <Validations @ref="@loginValidationsRef" Mode="ValidationMode.Manual" ValidateOnLoad="false">
     <Validation Validator="ValidationRule.IsEmail">
         <Field>
@@ -183,7 +183,7 @@ By the end, your razor page should look something like this.
 
 And the full code that includes a register page.
 
-```html
+```razor
 <Tabs SelectedTab="@selectedTab" SelectedTabChanged="@OnSelectedTabChanged" Pills FullWidth>
     <Items>
         <Tab Name="login">Login</Tab>
