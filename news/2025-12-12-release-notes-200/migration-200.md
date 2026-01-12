@@ -335,6 +335,61 @@ Into:
 <DataGridColumn Width="Width.Px( 60 )" />
 ```
 
+### DataGrid Template Contexts
+
+These templates now receive context objects instead of the raw row item. Update any code that assumes `context` is `TItem`.
+
+| Template | Old Context | New Context |
+| ---------- | ---------- | ---------- |
+| `SortDirectionTemplate` | `SortDirection` | `SortDirectionContext<TItem>` |
+| `DisplayTemplate` | `TItem` | `CellDisplayContext<TItem>` |
+| `EmptyCellTemplate` | `TItem` | `CellDisplayContext<TItem>` |
+| `DetailRowTemplate` | `TItem` | `DetailRowContext<TItem>` |
+
+**Before**
+
+```razor
+<DataGridColumn Field="@nameof(Employee.Zip)">
+    <SortDirectionTemplate>
+        <Icon Name="@(context == SortDirection.Descending ? IconName.ArrowDown : IconName.ArrowUp)" />
+    </SortDirectionTemplate>
+    <DisplayTemplate>
+        @($"{context.FirstName} {context.LastName}")
+    </DisplayTemplate>
+</DataGridColumn>
+
+<DataGrid TItem="Employee" Data="@employees">
+    <DetailRowTemplate>
+        @context.Salaries?.Count
+    </DetailRowTemplate>
+    <EmptyCellTemplate>
+        <Text Style="opacity: .5;">--</Text>
+    </EmptyCellTemplate>
+</DataGrid>
+```
+
+**After**
+
+```razor
+<DataGridColumn Field="@nameof(Employee.Zip)">
+    <SortDirectionTemplate>
+        <Icon Name="@(context.SortDirection == SortDirection.Descending ? IconName.ArrowDown : IconName.ArrowUp)" />
+    </SortDirectionTemplate>
+    <DisplayTemplate>
+        @($"{context.Item.FirstName} {context.Item.LastName}")
+    </DisplayTemplate>
+</DataGridColumn>
+
+<DataGrid TItem="Employee" Data="@employees">
+    <DetailRowTemplate>
+        @context.Item?.Salaries?.Count
+    </DetailRowTemplate>
+    <EmptyCellTemplate>
+        <Text Style="opacity: .5;">--</Text>
+    </EmptyCellTemplate>
+</DataGrid>
+```
+
 ### Layout & Grid Updates
 
 The **Row** and **Fields** components have been simplified and modernized with a new unified `Gutter` parameter.
