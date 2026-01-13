@@ -446,9 +446,14 @@ Move `Centered`, `Scrollable`, and `Size` from `<ModalContent ...>` onto the par
 </Modal>
 ```
 
-### CardTitle
+### Card
 
-- `int? Size` parameter is changed to `CardTitleSize? Size`
+The `Size` parameter is now accepting enum as a value.
+
+| Component | Old Parameter(s) | New Parameter(s) |
+| ---------- | ---------- | ---------- |
+| `CardTitle` | `int? Size` | `HeadingSize? Size` |
+| `CardSubtitle` | `int Size` | `HeadingSize? Size` |
 
 ### RichTextEdit
 
