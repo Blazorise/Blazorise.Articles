@@ -30,6 +30,7 @@ Here's a summary of what's new in this release:
 - **Extended Color Variants**: for Background and TextColor utilties.
 - **FluentUI Theme Generator**: dynamically generate FluentUI themes.
 - **Autocomplete Validation Refactor**: now behaves as any other input component.
+- **Accessibility Improvements**: Across Inputs, Layouts, and Providers.
 - **Tailwind 4**: Upgrade to latest version.
 
 Dive deeper below to discover the full potential of these features.
@@ -219,6 +220,12 @@ The [styling documentation](docs/helpers/utilities/styling) has been expanded wi
 In Blazorise 2.0 we updated DataGrid template contexts for `SortDirectionTemplate`, `DisplayTemplate`, `EmptyCellTemplate`, and `DetailRowTemplate` to use dedicated context objects instead of passing raw items or enums. We did this to make template APIs more consistent and to expose the extra metadata that template authors were repeatedly reaching for via custom lookups or casts.
 
 For users, this means templates can make richer UI decisions with less boilerplate: you now get direct access to the row item plus helpful details like the column, row index, formatted display value, and sort state in one place. The result is simpler template code, fewer fragile casts, and more flexibility when customizing DataGrid visuals.
+
+## Accessibility Improvements Across Inputs, Layouts, and Providers
+
+This update expands Blazorise accessibility coverage without breaking existing APIs by wiring core input ARIA semantics consistently across all providers and extensions. Input components now expose typed `AriaInvalid` and `AriaDescribedBy` parameters, and the framework automatically falls back to validation and field help metadata when you don’t specify them. This means screen readers can reliably announce validation errors and help text, while advanced users can still override ARIA explicitly. Autocomplete and rich text/markdown inputs now propagate these ARIA values to their primary interactive surfaces, and the change is aligned across Bootstrap, Bootstrap5, Bulma, AntDesign, FluentUI2, Material, and Tailwind.
+
+We also brought interactive, non‑input UI elements in line with ARIA expectations across providers: accordions, dropdowns, modals, offcanvas panels, tabs, pagination, toasts, alerts, and validation messages now emit consistent aria-expanded/controls, dialog labeling, live region behavior, and role metadata. These changes improve keyboard and assistive technology behavior while preserving provider-specific rendering. In short, you get a more accessible baseline out of the box, fewer manual ARIA tweaks in app code, and a consistent experience regardless of which UI provider you use.
 
 ## Final Notes 🏁
 
