@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "generatedAt": "2026-01-07T08:53:11.973Z",
-  "commit": "71559ab64323",
-  "count": 108,
+  "generatedAt": "2026-01-16T09:20:48.154Z",
+  "commit": "845a6ee44de1",
+  "count": 109,
   "items": [
     {
       "root": "blog",
@@ -32,6 +32,21 @@
       "authorName": "Mladen Macanović",
       "authorImage": "/assets/img/authors/mladen.png",
       "readTime": "16 min",
+      "pinned": false
+    },
+    {
+      "root": "news",
+      "dir": "news/2026-01-16-release-notes-189",
+      "slug": "189",
+      "permalink": "/news/release-notes/189",
+      "title": "Blazorise 1.8.9 - Editing & Overlay Fixes",
+      "summary": "Blazorise 1.8.9 delivers key reliability fixes for DataGrid rapid editing and Autocomplete dropdown positioning inside FilterMenuTemplate, plus several targeted stability improvements.",
+      "postedOn": "2025-12-05",
+      "category": "News",
+      "imageUrl": "img/v189.png",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
       "pinned": false
     },
     {
