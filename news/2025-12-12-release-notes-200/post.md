@@ -177,6 +177,16 @@ It works on a single `Validation` component, or if you want to do it in batch yo
 
 Learn more in the official [Validation Component](docs/components/validation "Validation Component") documentation page.
 
+#### Autocomplete Validation Refactor
+
+Autocomplete now participates in the standard validation pipeline by inheriting `BaseInputComponent` and no longer relies on its built‑in Validation wrapper. This change makes Autocomplete behave consistently with other input components and requires it to be wrapped in `Validation`, which also fixes mismatches where errors appeared on the search field instead of the overall control. In multiple selection mode, validation now uses `SelectedValues`, `SelectedValuesChanged`, and `SelectedValuesExpression` so the selected items are validated as a single logical value. Finally, the parameter `MinLength` was renamed to `MinSearchLength` to clarify that it applies to search input length and to avoid confusion with data annotation MinLength.
+
+#### RichTextEdit Validation Refactor
+
+This release updates `RichTextEdit` to inherit from `BaseInputComponent` and adds full validation support, bringing it in line with other inputs. RichTextEdit now supports `Value/@bind-Value` for HTML content, applies validation styling on the root, and validates against the editor's plain-text representation so empty rich text (such as a blank paragraph) is treated as empty.
+
+External Value updates now flow into **Quill** safely, while internal typing avoids DOM re-renders that could disrupt the caret. Read-only behavior now respects both `ReadOnly` and `Disabled`. Documentation and demo examples were updated to use `Value/@bind-Value`, and a new RichTextEdit validation example was added. Tests were added for RichTextEdit validation behavior, along with bUnit JS interop support and test component wiring.
+
 ### Offcanvas Provider
 
 With the help of community member [Nex-Code](https://github.com/Nex-Code), we now have an `OffcanvasProvider` component, which mirrors the structure and usage of or existing `ModalProvider` component.
@@ -192,16 +202,6 @@ The Markdown editor now behaves much more like other form inputs in Blazorise. I
 Common input behaviors are now supported on the actual editor surface. Settings like read-only and disabled work as expected, custom styling and CSS classes apply to what users see, and any additional HTML attributes are carried through properly.
 
 Focusing the Markdown editor has also been improved, so keyboard users and form flows can move focus to the editor reliably. Overall, the Markdown component should feel more consistent with the rest of the Blazorise input components in real-world forms.
-
-### Autocomplete Validation Refactor
-
-Autocomplete now participates in the standard validation pipeline by inheriting `BaseInputComponent` and no longer relies on its built‑in Validation wrapper. This change makes Autocomplete behave consistently with other input components and requires it to be wrapped in `Validation`, which also fixes mismatches where errors appeared on the search field instead of the overall control. In multiple selection mode, validation now uses `SelectedValues`, `SelectedValuesChanged`, and `SelectedValuesExpression` so the selected items are validated as a single logical value. Finally, the parameter `MinLength` was renamed to `MinSearchLength` to clarify that it applies to search input length and to avoid confusion with data annotation MinLength.
-
-### RichTextEdit Validation Refactor
-
-This release updates `RichTextEdit` to inherit from `BaseInputComponent` and adds full validation support, bringing it in line with other inputs. RichTextEdit now supports `Value/@bind-Value` for HTML content, applies validation styling on the root, and validates against the editor's plain-text representation so empty rich text (such as a blank paragraph) is treated as empty.
-
-External Value updates now flow into **Quill** safely, while internal typing avoids DOM re-renders that could disrupt the caret. Read-only behavior now respects both `ReadOnly` and `Disabled`. Documentation and demo examples were updated to use `Value/@bind-Value`, and a new RichTextEdit validation example was added. Tests were added for RichTextEdit validation behavior, along with bUnit JS interop support and test component wiring.
 
 ### Modal Parameters Centralized
 
