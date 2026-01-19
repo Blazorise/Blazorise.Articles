@@ -25,10 +25,10 @@ Here's a summary of what's new in this release:
 
 - **Blazorise Migration CLI**: a command-line tool to analyze, preview, and apply Blazorise 2.0 migration changes.
 - **Blazorise Analyzer**: compile-time diagnostics that detect breaking changes and guide upgrades.
-- **.NET6 and .NET7**: frameworks support is removed.
+- **.NET6 and .NET7**: framework support has been removed.
 - **Unified Input API**: All input components now use the standard `Value`, `ValueChanged`, and `ValueExpression` parameters for consistency across the framework.
 - **Renamed Input Components**: Components like `TextEdit`, `DateEdit`, and `FileEdit` are now renamed to `TextInput`, `DateInput`, and `FileInput`.
-- **Extended Color Variants**: for Background and TextColor utilties.
+- **Extended Color Variants**: for Background and TextColor utilities.
 - **FluentUI Theme Generator**: dynamically generate FluentUI themes.
 - **Autocomplete Validation Refactor**: now behaves as any other input component.
 - **Accessibility Improvements**: Across Inputs, Layouts, and Providers.
@@ -69,7 +69,7 @@ While the migrator handles many breaking changes automatically, some updates req
 
 We have removed support for older frameworks as they were already past their LTS or STS. While we could keep them for while, they were already keeping us locked to some older APIs, and any new features would be impossible to do with Blazorise in the future.
 
-We also need to mention that .NET8 is still kept. But it will also be removed once its LTS comes to an end sometimes in the late 2026. From there on, we will only keep .NET9 and later.
+We also need to mention that .NET8 is still kept. But it will also be removed once its LTS comes to an end sometime in late 2026. From there on, we will only keep .NET9 and later.
 
 This will finally allow us to bring to life new Blazor features, which in turn will allow us to improve Blazorise even more.
 
@@ -171,7 +171,7 @@ It is now possible to configure custom named axes on the `ChartScales` options. 
 
 This feature was on our backlog for years, and the main reason why we haven't done it before is because the internals of inputs and validation were too complex to touch anything regarding it. Now that we have made the **Input** components API much cleaner we also have the freedom and ability to add more features to the validation system.
 
-One such feature is the manual revalidation of the validated input. With this feature you will finally be able to fine-tune your UI and adjust it based on your business need.
+One such feature is the manual revalidation of the validated input. With this feature you will finally be able to fine-tune your UI and adjust it based on your business needs.
 
 It works on a single `Validation` component, or if you want to do it in batch you can run it on `Validations` component.
 
