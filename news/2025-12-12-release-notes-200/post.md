@@ -38,8 +38,8 @@ Dive deeper below to discover the full potential of these features.
 
 > 💡 Planning to upgrade from 1.8.x?  
 > Review the migration notes and use the Blazorise Migration CLI to upgrade safely.  
-> 👉 Migration guide: [news/migration/200](/news/migration/200)  
-> 👉 Migration CLI docs: [docs/migration](/docs/migration)
+> 👉 Migration guide: [news/migration/200](news/migration/200)  
+> 👉 Migration CLI docs: [docs/migration](docs/migration)
 
 ## New Features
 
@@ -61,9 +61,9 @@ The migrator analyzes your solution or project, reports required migration chang
 
 The recommended workflow is to first analyze your solution, review the reported changes, preview file updates with `--dry-run`, and then apply the migration with backups enabled.
 
-For full usage instructions, examples, and command options, see the [docs/migration](dedicated migration documentation).
+For full usage instructions, examples, and command options, see the [dedicated migration documentation](docs/migration).
 
-While the migrator handles many breaking changes automatically, some updates require manual review. The [news/migration/200](migration notes) document behavioral changes, removed APIs, and upgrade considerations that cannot be applied automatically.
+While the migrator handles many breaking changes automatically, some updates require manual review. The [migration notes](news/migration/200) document behavioral changes, removed APIs, and upgrade considerations that cannot be applied automatically.
 
 ### Remove .NET6 & .NET7
 
