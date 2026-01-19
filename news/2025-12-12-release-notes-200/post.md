@@ -69,9 +69,9 @@ While the migrator handles many breaking changes automatically, some updates req
 
 We have removed support for older frameworks as they were already past their LTS or STS. While we could keep them for while, they were already keeping us locked to some older APIs, and any new features would be impossible to do with Blazorise in the future.
 
-We also need to mention that .NET8 is still kept. But it will also be removed once its LTS comes to an end sometimes in the late 2026. From there on, we will omnly keep .NET9 and later.
+We also need to mention that .NET8 is still kept. But it will also be removed once its LTS comes to an end sometimes in the late 2026. From there on, we will only keep .NET9 and later.
 
-This will finally allow us to bring to life new Blazor features, will in turn will allow us to improve Blazorise even more.
+This will finally allow us to bring to life new Blazor features, which in turn will allow us to improve Blazorise even more.
 
 ### Unified Input API
 
@@ -139,7 +139,7 @@ This new system is powered by the `IEnumerationNameBuilder` infrastructure, whic
 
 You can explore the full range of extended color variants in the [Colors documentation](docs/helpers/colors "Link to Colors documentation").
 
-###  Badge Subtle
+### Badge Subtle
 
 The `Badge` component has been enhanced with a new **Subtle** color mode. This feature introduces lighter, less saturated background tones—ideal for modern, minimalist interfaces or secondary indicators where softer emphasis is preferred.
 
@@ -163,13 +163,13 @@ We have also updated all charts options to support new version 4.x.
 
 #### Custom Named Axes
 
-It is now possible to configure custom named axes on the `ChartScales` options. We have introduced a new option named `AdditionalAxes`, with which you can define any number axises along with the already available `X` and `Y`.
+It is now possible to configure custom named axes on the `ChartScales` options. We have introduced a new option named `AdditionalAxes`, with which you can define any number axes along with the already available `X` and `Y`.
 
 ### Validation
 
 #### Revalidation Support
 
-This feature was on our backlog for years, and the main reason why we haven't done it before is because the internals of inputs and validation where too complex to touch anything regarding it. Now that we have made the **Input** components API much cleaner we also have the freedom and ability to add more features to the validation system.
+This feature was on our backlog for years, and the main reason why we haven't done it before is because the internals of inputs and validation were too complex to touch anything regarding it. Now that we have made the **Input** components API much cleaner we also have the freedom and ability to add more features to the validation system.
 
 One such feature is the manual revalidation of the validated input. With this feature you will finally be able to fine-tune your UI and adjust it based on your business need.
 
@@ -179,7 +179,7 @@ Learn more in the official [Validation Component](docs/components/validation "Va
 
 ### Offcanvas Provider
 
-With the help of community member [Nex-Code](https://github.com/Nex-Code), we now have an `OffcanvasProvider` component, which mirros the structure and usage of or existing `ModalProvider` component.
+With the help of community member [Nex-Code](https://github.com/Nex-Code), we now have an `OffcanvasProvider` component, which mirrors the structure and usage of or existing `ModalProvider` component.
 
 Big thanks to the [Nex-Code](https://github.com/Nex-Code) for helping us with this component.
 
