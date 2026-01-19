@@ -51,6 +51,8 @@ The analyzer raises clear and actionable compile-time errors and warnings whenev
 
 By shifting upgrade validation to compile time, Blazorise.Analyzers helps teams adopt Blazorise 2.0 with confidence. It acts as a built-in upgrade assistant, ensuring your codebase stays aligned with the latest Blazorise conventions and best practices, while keeping your development workflow smooth and efficient.
 
+For a complete upgrade path, pair the analyzer diagnostics with the Migration CLI and review the migration notes for manual changes and behavioral differences.
+
 ## Blazorise Migration CLI
 
 Blazorise 2.0 introduces the **Blazorise Migration CLI**, a command-line tool designed to help upgrade existing Blazorise 1.x projects in a safe, reviewable, and predictable way.
@@ -60,6 +62,8 @@ The migrator analyzes your solution or project, reports required migration chang
 The recommended workflow is to first analyze your solution, review the reported changes, preview file updates with `--dry-run`, and then apply the migration with backups enabled.
 
 For full usage instructions, examples, and command options, see the [docs/migration](dedicated migration documentation).
+
+While the migrator handles many breaking changes automatically, some updates require manual review. The [news/migration/200](migration notes) document behavioral changes, removed APIs, and upgrade considerations that cannot be applied automatically.
 
 ### Remove .NET6 & .NET7
 
