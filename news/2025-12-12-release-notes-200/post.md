@@ -23,7 +23,8 @@ Blazorise 2.0, codenamed **Hvar** after the beautiful island in Croatia, is a si
 
 Here's a summary of what's new in this release:
 
-- **Blazorise Analyzer**: migration helper.
+- **Blazorise Migration CLI**: a command-line tool to analyze, preview, and apply Blazorise 2.0 migration changes.
+- **Blazorise Analyzer**: compile-time diagnostics that detect breaking changes and guide upgrades.
 - **.NET6 and .NET7**: frameworks support is removed.
 - **Unified Input API**: All input components now use the standard `Value`, `ValueChanged`, and `ValueExpression` parameters for consistency across the framework.
 - **Renamed Input Components**: Components like `TextEdit`, `DateEdit`, and `FileEdit` are now renamed to `TextInput`, `DateInput`, and `FileInput`.
@@ -35,7 +36,10 @@ Here's a summary of what's new in this release:
 
 Dive deeper below to discover the full potential of these features.
 
-> 💡 Planning to upgrade from 1.8.x? See the full migration guide at [/news/migration/200](/news/migration/200).
+> 💡 Planning to upgrade from 1.8.x?  
+> Review the migration notes and use the Blazorise Migration CLI to upgrade safely.  
+> 👉 Migration guide: [news/migration/200](/news/migration/200)  
+> 👉 Migration CLI docs: [docs/migration](/docs/migration)
 
 ## New Features
 
@@ -46,6 +50,16 @@ Blazorise 2.0 introduces **Blazorise.Analyzers**, a brand-new NuGet package desi
 The analyzer raises clear and actionable compile-time errors and warnings whenever it detects usage of renamed components, changed parameters, or outdated APIs. Each diagnostic includes precise guidance on what has changed and how to update your code to the new component API, significantly reducing guesswork during migration. This is especially valuable for larger projects, where manual auditing of components and parameters would otherwise be time-consuming and error-prone.
 
 By shifting upgrade validation to compile time, Blazorise.Analyzers helps teams adopt Blazorise 2.0 with confidence. It acts as a built-in upgrade assistant, ensuring your codebase stays aligned with the latest Blazorise conventions and best practices, while keeping your development workflow smooth and efficient.
+
+## Blazorise Migration CLI
+
+Blazorise 2.0 introduces the **Blazorise Migration CLI**, a command-line tool designed to help upgrade existing Blazorise 1.x projects in a safe, reviewable, and predictable way.
+
+The migrator analyzes your solution or project, reports required migration changes, and can apply them automatically when you are ready. All changes can be previewed in advance using dry-run mode, and optional backups ensure you can roll back if needed.
+
+The recommended workflow is to first analyze your solution, review the reported changes, preview file updates with `--dry-run`, and then apply the migration with backups enabled.
+
+For full usage instructions, examples, and command options, see the [docs/migration](dedicated migration documentation).
 
 ### Remove .NET6 & .NET7
 
