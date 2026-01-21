@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-01-16T09:20:48.154Z",
-  "commit": "845a6ee44de1",
-  "count": 109,
+  "generatedAt": "2026-01-21T08:55:30.714Z",
+  "commit": "974f5e8d340e",
+  "count": 110,
   "items": [
+    {
+      "root": "blog",
+      "dir": "blog/2026-01-21-responsive-layout-strategies-using-blazorise-grid-and-breakpoints",
+      "slug": "responsive-layout-strategies-using-blazorise-grid-and-breakpoints",
+      "permalink": "/blog/responsive-layout-strategies-using-blazorise-grid-and-breakpoints",
+      "title": "Responsive Layout Strategies Using Blazorise Grid & Breakpoints",
+      "summary": "Practical guidance on building responsive, maintainable layouts in Blazorise using Grid, Flex utilities, and mobile-first breakpoint helpers.",
+      "postedOn": "2026-01-21",
+      "category": "How To Guides",
+      "imageUrl": "img/responsive-layout.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "6 min",
+      "pinned": false
+    },
     {
       "root": "blog",
       "dir": "blog/2026-01-07-why-component-libraries-like-blazorise-are-key-to-blazors-adoption",
