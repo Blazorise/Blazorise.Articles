@@ -33,6 +33,7 @@ Here's a summary of what's new in this release:
 - **Autocomplete Validation Refactor**: now behaves as any other input component.
 - **Accessibility Improvements**: Across Inputs, Layouts, and Providers.
 - **Tailwind 4**: Upgrade to latest version.
+- **MCP Server**: AI documentation access.
 
 Dive deeper below to discover the full potential of these features.
 
@@ -229,11 +230,11 @@ If you maintain your own Tailwind pipeline, this release is a great moment to mi
 
 ### Bulma 1 Upgrade
 
-This release updates the **Blazorise.Bulma** provider and demo to align with **Bulma 1.0.4**, bringing the styling baseline up to date and matching Bulma’s modern CSS variable system. We revised the vendor Sass imports to include only the non-component utilities we need, trimmed legacy utilities, and adjusted class-provider mappings so spacing and helpers reflect the new utility naming. The upgrade was done to keep the provider compatible with current Bulma behavior, reduce custom overrides, and make future maintenance easier.
+This release updates the **Blazorise.Bulma** provider and demo to align with **Bulma 1.0.4**, bringing the styling baseline up to date and matching Bulma's modern CSS variable system. We revised the vendor Sass imports to include only the non-component utilities we need, trimmed legacy utilities, and adjusted class-provider mappings so spacing and helpers reflect the new utility naming. The upgrade was done to keep the provider compatible with current Bulma behavior, reduce custom overrides, and make future maintenance easier.
 
-We shifted theme generation toward Bulma’s native color palette logic instead of hardcoded hover/active/disabled values. Button states, tags, notifications, text helpers, inputs, background helpers, and borders now rely on Bulma’s variables for native colors, while custom variants like secondary still get explicit rules. We also implemented Bulma-style palette and “on scheme” calculations so text colors match the contrast-driven behavior users expect from the official Bulma theme.
+We shifted theme generation toward Bulma's native color palette logic instead of hardcoded hover/active/disabled values. Button states, tags, notifications, text helpers, inputs, background helpers, and borders now rely on Bulma's variables for native colors, while custom variants like secondary still get explicit rules. We also implemented Bulma-style palette and “on scheme” calculations so text colors match the contrast-driven behavior users expect from the official Bulma theme.
 
-Along the way we fixed several layout and component issues exposed by the upgrade, including button group/dropdown borders and sizing, radio button groups alignment, and addon sizing in form demos. Breadcrumb active styling now follows Bulma’s active color logic, and navbar text contrast uses Bulma’s invert variables so backgrounds and text stay in harmony. The result is a cleaner integration that behaves like Bulma out of the box while preserving Blazorise-specific features.
+Along the way we fixed several layout and component issues exposed by the upgrade, including button group/dropdown borders and sizing, radio button groups alignment, and addon sizing in form demos. Breadcrumb active styling now follows Bulma's active color logic, and navbar text contrast uses Bulma's invert variables so backgrounds and text stay in harmony. The result is a cleaner integration that behaves like Bulma out of the box while preserving Blazorise-specific features.
 
 ## Typed Classes Customization & Per-Utility Targeting
 
@@ -253,9 +254,15 @@ This release adds `SetStatus` to `Blazorise.LoadingIndicator`, letting you push 
 
 ## Accessibility Improvements Across Inputs, Layouts, and Providers
 
-This update expands Blazorise accessibility coverage without breaking existing APIs by wiring core input ARIA semantics consistently across all providers and extensions. Input components now expose typed `AriaInvalid` and `AriaDescribedBy` parameters, and the framework automatically falls back to validation and field help metadata when you don’t specify them. This means screen readers can reliably announce validation errors and help text, while advanced users can still override ARIA explicitly. Autocomplete and rich text/markdown inputs now propagate these ARIA values to their primary interactive surfaces, and the change is aligned across Bootstrap, Bootstrap5, Bulma, AntDesign, FluentUI2, Material, and Tailwind.
+This update expands Blazorise accessibility coverage without breaking existing APIs by wiring core input ARIA semantics consistently across all providers and extensions. Input components now expose typed `AriaInvalid` and `AriaDescribedBy` parameters, and the framework automatically falls back to validation and field help metadata when you don't specify them. This means screen readers can reliably announce validation errors and help text, while advanced users can still override ARIA explicitly. Autocomplete and rich text/markdown inputs now propagate these ARIA values to their primary interactive surfaces, and the change is aligned across Bootstrap, Bootstrap5, Bulma, AntDesign, FluentUI2, Material, and Tailwind.
 
 We also brought interactive, non‑input UI elements in line with ARIA expectations across providers: accordions, dropdowns, modals, offcanvas panels, tabs, pagination, toasts, alerts, and validation messages now emit consistent aria-expanded/controls, dialog labeling, live region behavior, and role metadata. These changes improve keyboard and assistive technology behavior while preserving provider-specific rendering. In short, you get a more accessible baseline out of the box, fewer manual ARIA tweaks in app code, and a consistent experience regardless of which UI provider you use.
+
+## MCP Server
+
+For Blazorise 2.0, we've introduced an MCP (Model Context Protocol) server that allows AI tools to access Blazorise documentation and code examples directly, in a structured and up-to-date way. Instead of relying on incomplete or outdated model knowledge, MCP-compatible clients can query the same documentation developers read, down to individual pages and example snippets, at the moment a question is asked.
+
+For users, this means more accurate answers when working with Blazorise components, fewer hallucinated APIs, and guidance that reflects the current state of the framework. As AI-assisted development becomes more common, the MCP server ensures that Blazorise integrations remain predictable, trustworthy, and aligned with the official documentation.
 
 ## Final Notes 🏁
 
