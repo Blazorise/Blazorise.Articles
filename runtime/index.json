@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-01-21T08:55:30.714Z",
-  "commit": "974f5e8d340e",
-  "count": 110,
+  "generatedAt": "2026-01-26T10:29:09.716Z",
+  "commit": "0f2a75d70b37",
+  "count": 111,
   "items": [
+    {
+      "root": "blog",
+      "dir": "blog/2026-01-26-building-a-design-system-on-top-of-blazorise",
+      "slug": "building-a-design-system-on-top-of-blazorise",
+      "permalink": "/blog/building-a-design-system-on-top-of-blazorise",
+      "title": "Building a Design System on Top of Blazorise",
+      "summary": "How to layer Blazorise into a product-grade design system with abstracted components, opinionated wrappers, and sustainable versioning and docs.",
+      "postedOn": "2026-01-26",
+      "category": "Architecture",
+      "imageUrl": "img/design-system-blazorise.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "9 min",
+      "pinned": false
+    },
     {
       "root": "blog",
       "dir": "blog/2026-01-21-responsive-layout-strategies-using-blazorise-grid-and-breakpoints",
