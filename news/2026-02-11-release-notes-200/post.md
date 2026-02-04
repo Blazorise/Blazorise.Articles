@@ -44,7 +44,7 @@ Dive deeper below to discover the full potential of these features.
 
 ## New Features
 
-## Blazorise Analyzer
+### Blazorise Analyzer
 
 Blazorise 2.0 introduces **Blazorise.Analyzers**, a brand-new NuGet package designed to make upgrading and maintaining Blazorise projects safer, faster, and more predictable. Once installed, the analyzer automatically inspects your Blazor projects at compile time and detects inconsistencies related to API changes introduced in Blazorise 2.0. Instead of discovering breaking changes at runtime, developers now get immediate feedback directly in their IDE and build output.
 
@@ -54,7 +54,7 @@ By shifting upgrade validation to compile time, Blazorise.Analyzers helps teams 
 
 For a complete upgrade path, pair the analyzer diagnostics with the Migration CLI and review the migration notes for manual changes and behavioral differences.
 
-## Blazorise Migration CLI
+### Blazorise Migration CLI
 
 Blazorise 2.0 introduces the **Blazorise Migration CLI**, a command-line tool designed to help upgrade existing Blazorise 1.x projects in a safe, reviewable, and predictable way.
 
@@ -236,29 +236,29 @@ We shifted theme generation toward Bulma's native color palette logic instead of
 
 Along the way we fixed several layout and component issues exposed by the upgrade, including button group/dropdown borders and sizing, radio button groups alignment, and addon sizing in form demos. Breadcrumb active styling now follows Bulma's active color logic, and navbar text contrast uses Bulma's invert variables so backgrounds and text stay in harmony. The result is a cleaner integration that behaves like Bulma out of the box while preserving Blazorise-specific features.
 
-## Typed Classes Customization & Per-Utility Targeting
+### Typed Classes Customization & Per-Utility Targeting
 
 This release adds typed `Classes` and `Styles` maps for complex components, so you can target wrapper and inner elements (`Self`, `Wrapper`, `Content`, etc.) without relying on fragile CSS selectors. Utility helpers now support per-utility targeting via `OnSelf`/`OnWrapper`, with `UtilityTarget` remaining the default, making it easier to direct spacing and other utilities to the correct element across providers.
 
 The [styling documentation](docs/helpers/utilities/styling) has been expanded with clearer guidance, a `UtilityTarget` example, and a provider support matrix to help users understand which keys apply per component and provider configuration.
 
-## DataGrid Template Contexts
+### DataGrid Template Contexts
 
 In Blazorise 2.0 we updated DataGrid template contexts for `SortDirectionTemplate`, `DisplayTemplate`, `EmptyCellTemplate`, and `DetailRowTemplate` to use dedicated context objects instead of passing raw items or enums. We did this to make template APIs more consistent and to expose the extra metadata that template authors were repeatedly reaching for via custom lookups or casts.
 
 For users, this means templates can make richer UI decisions with less boilerplate: you now get direct access to the row item plus helpful details like the column, row index, formatted display value, and sort state in one place. The result is simpler template code, fewer fragile casts, and more flexibility when customizing DataGrid visuals.
 
-## LoadingIndicator Status
+### LoadingIndicator Status
 
 This release adds `SetStatus` to `Blazorise.LoadingIndicator`, letting you push status text and optional progress updates through the service or component so the UI can reflect multi‑step work in real time. IndicatorTemplate now receives a `LoadingIndicatorContext` derived from the current status, making it straightforward to render custom messages (and progress) alongside your spinner while keeping the existing API surface clean and flexible for both local and application‑wide indicators.
 
-## Accessibility Improvements Across Inputs, Layouts, and Providers
+### Accessibility Improvements Across Inputs, Layouts, and Providers
 
 This update expands Blazorise accessibility coverage without breaking existing APIs by wiring core input ARIA semantics consistently across all providers and extensions. Input components now expose typed `AriaInvalid` and `AriaDescribedBy` parameters, and the framework automatically falls back to validation and field help metadata when you don't specify them. This means screen readers can reliably announce validation errors and help text, while advanced users can still override ARIA explicitly. Autocomplete and rich text/markdown inputs now propagate these ARIA values to their primary interactive surfaces, and the change is aligned across Bootstrap, Bootstrap5, Bulma, AntDesign, FluentUI2, Material, and Tailwind.
 
 We also brought interactive, non‑input UI elements in line with ARIA expectations across providers: accordions, dropdowns, modals, offcanvas panels, tabs, pagination, toasts, alerts, and validation messages now emit consistent aria-expanded/controls, dialog labeling, live region behavior, and role metadata. These changes improve keyboard and assistive technology behavior while preserving provider-specific rendering. In short, you get a more accessible baseline out of the box, fewer manual ARIA tweaks in app code, and a consistent experience regardless of which UI provider you use.
 
-## MCP Server
+### MCP Server
 
 For Blazorise 2.0, we've introduced an MCP (Model Context Protocol) server that allows AI tools to access Blazorise documentation and code examples directly, in a structured and up-to-date way. Instead of relying on incomplete or outdated model knowledge, MCP-compatible clients can query the same documentation developers read, down to individual pages and example snippets, at the moment a question is asked.
 
