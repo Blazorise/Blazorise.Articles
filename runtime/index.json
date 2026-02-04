@@ -1,9 +1,39 @@
 {
   "version": 1,
-  "generatedAt": "2026-01-21T08:55:30.714Z",
-  "commit": "974f5e8d340e",
-  "count": 110,
+  "generatedAt": "2026-02-04T08:52:52.101Z",
+  "commit": "802bc8723009",
+  "count": 112,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-02-04-release-notes-1810",
+      "slug": "1810",
+      "permalink": "/news/release-notes/1810",
+      "title": "Blazorise 1.8.10 - Table Scrolling & Globalization Improvements",
+      "summary": "Blazorise 1.8.10 delivers a fix for Table ScrollToRow visibility, adds support for Invariant Globalization, and resolves Signature Pad input issues on iOS Safari.",
+      "postedOn": "2026-02-04",
+      "category": "News",
+      "imageUrl": "img/v1810.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
+    {
+      "root": "blog",
+      "dir": "blog/2026-01-26-building-a-design-system-on-top-of-blazorise",
+      "slug": "building-a-design-system-on-top-of-blazorise",
+      "permalink": "/blog/building-a-design-system-on-top-of-blazorise",
+      "title": "Building a Design System on Top of Blazorise",
+      "summary": "How to layer Blazorise into a product-grade design system with abstracted components, opinionated wrappers, and sustainable versioning and docs.",
+      "postedOn": "2026-01-26",
+      "category": "Architecture",
+      "imageUrl": "img/design-system-blazorise.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "9 min",
+      "pinned": false
+    },
     {
       "root": "blog",
       "dir": "blog/2026-01-21-responsive-layout-strategies-using-blazorise-grid-and-breakpoints",
