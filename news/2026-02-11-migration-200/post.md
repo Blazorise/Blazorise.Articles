@@ -8,7 +8,7 @@ image-title: Migrating to Blazorise 2.0
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: News
-posted-on: 2025-12-12
+posted-on: 2026-02-11
 read-time: 7 min
 ---
 
