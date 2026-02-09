@@ -283,6 +283,10 @@ In Blazorise 2.0 we updated DataGrid template contexts for `SortDirectionTemplat
 
 For users, this means templates can make richer UI decisions with less boilerplate: you now get direct access to the row item plus helpful details like the column, row index, formatted display value, and sort state in one place. The result is simpler template code, fewer fragile casts, and more flexibility when customizing DataGrid visuals.
 
+### DataGrid Grouping State and Change Notifications
+
+Blazorise DataGrid now includes first-class support for grouping state persistence and grouping change notifications. `DataGridState<TItem>` has been extended with `ColumnGroupingStates` so grouped columns can be saved and restored alongside existing grid state, enabling reliable deep-linking and stateful UX scenarios. In addition, a new `GroupingChanged` callback with `DataGridGroupingChangedEventArgs<TItem>` is raised when grouped columns are added or removed, providing current and previous grouped columns plus change metadata, making URL synchronization, analytics, and parent-level state management much easier without render-cycle polling workarounds.
+
 ### LoadingIndicator Status
 
 This release adds `SetStatus` to `Blazorise.LoadingIndicator`, letting you push status text and optional progress updates through the service or component so the UI can reflect multi‑step work in real time. IndicatorTemplate now receives a `LoadingIndicatorContext` derived from the current status, making it straightforward to render custom messages (and progress) alongside your spinner while keeping the existing API surface clean and flexible for both local and application‑wide indicators.
