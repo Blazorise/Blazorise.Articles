@@ -1,10 +1,10 @@
 ---
-title: Announcing Blazorise 2.0 - Hvar
-description: Blazorise 2.0, codenamed Hvar after the beautiful island in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
+title: Announcing Blazorise 2.0 - Velebit
+description: Blazorise 2.0, codenamed Velebit after the beautiful island in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
 permalink: /news/release-notes/200
 canonical: /news/release-notes/200
 image-url: img/v200.png
-image-title: Announcing Blazorise 2.0 - Hvar
+image-title: Announcing Blazorise 2.0 - Velebit
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: News
@@ -17,7 +17,7 @@ pinned: true
 
 When we released Blazorise 1.8, we promised that the next version would be a major one, 2.0.
 
-Blazorise 2.0, codenamed **Hvar** after the beautiful island in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
+Blazorise 2.0, codenamed **Velebit** after the beautiful island in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
 
 ## Key Blazorise 2.0 Highlights 💡
 

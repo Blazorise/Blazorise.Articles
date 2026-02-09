@@ -1,6 +1,6 @@
 ---
 title: Migrating to Blazorise 2.0
-description: Full step-by-step migration guide for upgrading applications from Blazorise 1.8.x to the new Blazorise 2.0 (Hvar) release.
+description: Full step-by-step migration guide for upgrading applications from Blazorise 1.8.x to the new Blazorise 2.0 (Velebit) release.
 permalink: /news/migration/200
 canonical: /news/migration/200
 image-url: img/v200.png
@@ -14,7 +14,7 @@ read-time: 7 min
 
 ## Blazorise 2.0 Migration Guide
 
-This guide walks you through all the changes required to migrate your application from **Blazorise 1.8.x** to **Blazorise 2.0 (Hvar)**. It consolidates every update step mentioned in the 2.0 announcement post so you can follow it in one place.
+This guide walks you through all the changes required to migrate your application from **Blazorise 1.8.x** to **Blazorise 2.0 (Velebit)**. It consolidates every update step mentioned in the 2.0 announcement post so you can follow it in one place.
 
 ## Upgrade to latest .NET
 
