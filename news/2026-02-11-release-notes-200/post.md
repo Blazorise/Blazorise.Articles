@@ -8,8 +8,8 @@ image-title: Announcing Blazorise 2.0 - Hvar
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: News
-posted-on: 2025-12-12
-read-time: 7 min
+posted-on: 2026-02-11
+read-time: 14 min
 pinned: true
 ---
 
@@ -25,6 +25,7 @@ Here's a summary of what's new in this release:
 
 - **Blazorise Migration CLI**: a command-line tool to analyze, preview, and apply Blazorise 2.0 migration changes.
 - **Blazorise Analyzer**: compile-time diagnostics that detect breaking changes and guide upgrades.
+- **MCP Server**: AI documentation and API access.
 - **.NET6 and .NET7**: framework support has been removed.
 - **Unified Input API**: All input components now use the standard `Value`, `ValueChanged`, and `ValueExpression` parameters for consistency across the framework.
 - **Renamed Input Components**: Components like `TextEdit`, `DateEdit`, and `FileEdit` are now renamed to `TextInput`, `DateInput`, and `FileInput`.
@@ -33,7 +34,6 @@ Here's a summary of what's new in this release:
 - **Autocomplete Validation Refactor**: now behaves as any other input component.
 - **Accessibility Improvements**: Across Inputs, Layouts, and Providers.
 - **Tailwind 4**: Upgrade to latest version.
-- **MCP Server**: AI documentation access.
 
 Dive deeper below to discover the full potential of these features.
 
@@ -42,7 +42,11 @@ Dive deeper below to discover the full potential of these features.
 > 👉 Migration guide: [news/migration/200](news/migration/200)  
 > 👉 Migration CLI docs: [docs/migration](docs/migration)
 
-## New Features
+## New Tools and Migration
+
+In this release there will be a lot of small breaking and behavior changes. So, before we continue it is advised to mention our very new tools that will help you in the process. Blazorise Analyzer, and Migration CLI, are really reccomended for 2.0.
+
+For those of you who are still used to manual migration, visit the [news/migration/200](migration page) for detailed list of all API changes in 2.0.
 
 ### Blazorise Analyzer
 
@@ -66,11 +70,19 @@ For full usage instructions, examples, and command options, see the [dedicated m
 
 While the migrator handles many breaking changes automatically, some updates require manual review. The [migration notes](news/migration/200) document behavioral changes, removed APIs, and upgrade considerations that cannot be applied automatically.
 
-### Remove .NET6 & .NET7
+### MCP Server
 
-We have removed support for older frameworks as they were already past their LTS or STS. While we could keep them for while, they were already keeping us locked to some older APIs, and any new features would be impossible to do with Blazorise in the future.
+For Blazorise 2.0, we've introduced an MCP (Model Context Protocol) server that allows AI tools to access Blazorise documentation and code examples directly, in a structured and up-to-date way. Instead of relying on incomplete or outdated model knowledge, MCP-compatible clients can query the same documentation developers read, down to individual pages and example snippets, at the moment a question is asked.
 
-We also need to mention that .NET8 is still kept. But it will also be removed once its LTS comes to an end sometime in late 2026. From there on, we will only keep .NET9 and later.
+For users, this means more accurate answers when working with Blazorise components, fewer hallucinated APIs, and guidance that reflects the current state of the framework. As AI-assisted development becomes more common, the MCP server ensures that Blazorise integrations remain predictable, trustworthy, and aligned with the official documentation.
+
+## New Features and Changes
+
+### Removed .NET6 & .NET7 Support
+
+We have removed support for older frameworks as they were already past their LTS and STS. While we could keep them for while, they were already keeping us locked to some older APIs, and any new features would be impossible to do with Blazorise in the future.
+
+We also need to mention that .NET8 is still kept. But it will also be removed once its LTS comes to an end, sometime in the late 2026. From there on, we will only keep .NET9 and later.
 
 This will finally allow us to bring to life new Blazor features, which in turn will allow us to improve Blazorise even more.
 
@@ -104,6 +116,8 @@ These aliases make it easier to write semantically clear headings without needin
 
 We added a new `Gutter` system that allows you to control the horizontal and vertical spacing between columns and rows directly on any `Row` and `Fields` component. The gutter behavior now matches Bootstrap 5's model and works consistently across all providers, including Tailwind, Bootstrap, and Bulma. You can apply gutters per axis (`OnX`, `OnY`) or on both axes at once, with full support for responsive values.
 
+![Gutters Utilities](img/gutters.png)
+
 Learn more in the official [Gutters Utilities](docs/helpers/utilities/gutters "Gutters Utilities") documentation page.
 
 ### Radio Component Updates
@@ -136,6 +150,8 @@ Color plays a key role in user interface design, conveying hierarchy, meaning, a
 
 Enumerations such as `Background` and `TextColor` now support **nested variants** for subtle and emphasized shades. Previously limited to base colors like `Background.Success` or `TextColor.Danger`, you can now use variants such as `Background.Success.Subtle` or `TextColor.Success.Emphasis`. This brings Blazorise utilities in line with modern design systems like Bootstrap 5.3 and FluentUI.
 
+![Color Variants](img/colors.png)
+
 This new system is powered by the `IEnumerationNameBuilder` infrastructure, which standardizes how enumeration values map to CSS class names across providers. For example, Bootstrap automatically generates classes such as `bg-success-subtle` or `text-success-emphasis`. It's fully backward-compatible, ensuring a seamless upgrade path for existing applications.
 
 You can explore the full range of extended color variants in the [Colors documentation](docs/helpers/colors "Link to Colors documentation").
@@ -145,6 +161,8 @@ You can explore the full range of extended color variants in the [Colors documen
 The `Badge` component has been enhanced with a new **Subtle** color mode. This feature introduces lighter, less saturated background tones—ideal for modern, minimalist interfaces or secondary indicators where softer emphasis is preferred.
 
 By setting the `Subtle` parameter to `true`, badges automatically adopt the new muted color variants. This ensures they blend naturally into the surrounding UI while maintaining clarity and readability. Subtle badges are particularly effective when used alongside extended color variants, allowing designers to build refined, theme-consistent experiences.
+
+![Badge Subtle Variants](img/badge-colors.png)
 
 You can see examples of subtle badges in the updated [Badge documentation](docs/components/badge "Link to Badge documentation").
 
@@ -158,7 +176,20 @@ The goal is to provide a balance between flexibility and faithfulness to the Flu
 
 #### Chartjs v4
 
-We made a lot of work to bring this to life. Moving forward, all Blazorise Charts static file will be handled and loaded dynamically. Meaning you don't need to manually include `<script>` file anymore.
+We made a lot of work to bring this to life. Moving forward, all Blazorise Charts static file will be handled and loaded dynamically by Blazorise. 
+
+Meaning, you don't need to manually include `<script>` file anymore, and you will need to remove all static files from your `App.razor`/`_Host.cshtml`/`index.shtml` file.
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@1.28.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-streaming@2.0.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@2.2.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.2.0/dist/chartjs-plugin-zoom.min.js"></script>
+```
 
 We have also updated all charts options to support new version 4.x.
 
@@ -186,6 +217,8 @@ Autocomplete now participates in the standard validation pipeline by inheriting 
 
 This release updates `RichTextEdit` to inherit from `BaseInputComponent` and adds full validation support, bringing it in line with other inputs. RichTextEdit now supports `Value/@bind-Value` for HTML content, applies validation styling on the root, and validates against the editor's plain-text representation so empty rich text (such as a blank paragraph) is treated as empty.
 
+![RichTextEdit Validation](img/rte-validation.png)
+
 External Value updates now flow into **Quill** safely, while internal typing avoids DOM re-renders that could disrupt the caret. Read-only behavior now respects both `ReadOnly` and `Disabled`. Documentation and demo examples were updated to use `Value/@bind-Value`, and a new RichTextEdit validation example was added. Tests were added for RichTextEdit validation behavior, along with bUnit JS interop support and test component wiring.
 
 ### Offcanvas Provider
@@ -199,6 +232,8 @@ You can see it in action in [Offcanvas Provider](docs/services/offcanvas-provide
 ### Full Markdown Input Support
 
 The Markdown editor now behaves much more like other form inputs in Blazorise. It fully participates in form validation and shows validation feedback directly on the editor UI, so users can immediately see when the field is valid or has errors.
+
+![Markdown Validation](img/markdown-validation.png)
 
 Common input behaviors are now supported on the actual editor surface. Settings like read-only and disabled work as expected, custom styling and CSS classes apply to what users see, and any additional HTML attributes are carried through properly.
 
@@ -257,12 +292,6 @@ This release adds `SetStatus` to `Blazorise.LoadingIndicator`, letting you push 
 This update expands Blazorise accessibility coverage without breaking existing APIs by wiring core input ARIA semantics consistently across all providers and extensions. Input components now expose typed `AriaInvalid` and `AriaDescribedBy` parameters, and the framework automatically falls back to validation and field help metadata when you don't specify them. This means screen readers can reliably announce validation errors and help text, while advanced users can still override ARIA explicitly. Autocomplete and rich text/markdown inputs now propagate these ARIA values to their primary interactive surfaces, and the change is aligned across Bootstrap, Bootstrap5, Bulma, AntDesign, FluentUI2, Material, and Tailwind.
 
 We also brought interactive, non‑input UI elements in line with ARIA expectations across providers: accordions, dropdowns, modals, offcanvas panels, tabs, pagination, toasts, alerts, and validation messages now emit consistent aria-expanded/controls, dialog labeling, live region behavior, and role metadata. These changes improve keyboard and assistive technology behavior while preserving provider-specific rendering. In short, you get a more accessible baseline out of the box, fewer manual ARIA tweaks in app code, and a consistent experience regardless of which UI provider you use.
-
-### MCP Server
-
-For Blazorise 2.0, we've introduced an MCP (Model Context Protocol) server that allows AI tools to access Blazorise documentation and code examples directly, in a structured and up-to-date way. Instead of relying on incomplete or outdated model knowledge, MCP-compatible clients can query the same documentation developers read, down to individual pages and example snippets, at the moment a question is asked.
-
-For users, this means more accurate answers when working with Blazorise components, fewer hallucinated APIs, and guidance that reflects the current state of the framework. As AI-assisted development becomes more common, the MCP server ensures that Blazorise integrations remain predictable, trustworthy, and aligned with the official documentation.
 
 ## Final Notes 🏁
 
