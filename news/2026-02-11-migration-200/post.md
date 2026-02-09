@@ -34,9 +34,13 @@ Follow the guide bellow to handle all of the breaking changes in this release.
 
 ---
 
-Before diving into the detailed migration steps, we strongly recommend installing the **Blazorise.Analyzers NuGet** package. It is the fastest and most reliable way to identify breaking changes in your project, as it automatically flags renamed components, updated parameters, and obsolete APIs at compile time, along with clear instructions on how to fix them.
+Before diving into the detailed migration steps, we strongly recommend installing the **Blazorise.Analyzers NuGet** package. It is the fastest and most reliable way to identify breaking changes in your project, as it flags renamed components, updated parameters, and obsolete APIs directly at compile time, along with clear guidance on how to resolve them.
 
-Using the analyzer first allows you to resolve the majority of issues directly in your IDE, significantly reducing the need to manually scan the migration guide. Once the reported errors are addressed, the rest of the guide can be used as a reference for finer details and edge cases, making the overall migration to Blazorise 2.0 smoother and more efficient.
+Using the analyzer first allows you to fix the majority of issues directly in your IDE, significantly reducing the need to manually scan the migration guide. Once the reported errors are resolved, the rest of the guide can be used as a reference for finer details and edge cases, making the overall migration to Blazorise 2.0 smoother and more predictable.
+
+In addition, we highly recommend installing the **Blazorise Migration CLI** tool. This tool can automatically migrate most of your codebase, handling the bulk of repetitive and mechanical changes for you. After it runs, only a small set of complex or hard-to-automate fixes typically remain, which can then be addressed manually.
+
+The installation and usage instructions for the Migration CLI are available on the [docs/migration](Migration page), and for Analyzer it can be found on [docs/analyzer](Analyzer page).
 
 ---
 
@@ -96,7 +100,9 @@ New usage:
     <Radio Value="a">Option A</Radio>
     <Radio Value="b">Option B</Radio>
 </RadioGroup>
-@code { private string Selected { get; set; } = "a"; }
+@code {
+    private string Selected { get; set; } = "a";
+}
 ```
 
 or
@@ -143,6 +149,8 @@ When using the `Validator` rule of the `Validation` component, you need to updat
 
 For example, if you were using the `Value` argument of `ValidatorEventArgs` like this:
 
+**Before**
+
 ```csharp
 private void OnValidateStartDate( ValidatorEventArgs e )
 {
@@ -151,6 +159,8 @@ private void OnValidateStartDate( ValidatorEventArgs e )
     // ...
 }
 ```
+
+**After**
 
 You need to update it to use the `Value` parameter directly, like this:
 

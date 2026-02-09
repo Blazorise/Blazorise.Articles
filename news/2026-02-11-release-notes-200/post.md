@@ -41,6 +41,7 @@ Dive deeper below to discover the full potential of these features.
 > Review the migration notes and use the Blazorise Migration CLI to upgrade safely.  
 > 👉 Migration guide: [news/migration/200](news/migration/200)  
 > 👉 Migration CLI docs: [docs/migration](docs/migration)
+> 👉 Analyzer docs: [docs/analyzer](docs/analyzer)
 
 ## New Tools and Migration
 
