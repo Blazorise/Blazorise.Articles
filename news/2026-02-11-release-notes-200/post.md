@@ -274,15 +274,23 @@ Focus handling has also been improved, ensuring reliable keyboard navigation and
 
 ### Offcanvas Provider
 
-With the help of community member [Nex-Code](https://github.com/Nex-Code), we now have an `OffcanvasProvider` component, which mirrors the structure and usage of or existing `ModalProvider` component.
+Thanks to a contribution from community member [Nex-Code](https://github.com/Nex-Code), Blazorise now includes an `OffcanvasProvider` component that mirrors the structure and usage of the existing `ModalProvider`.
 
-Big thanks to the [Nex-Code](https://github.com/Nex-Code) for helping us with this component.
+This provider enables consistent, centralized management of offcanvas components using the same patterns already familiar from modals.
 
-You can see it in action in [Offcanvas Provider](docs/services/offcanvas-provider "Offcanvas Provider") documentation page.
+A big thank-you to [Nex-Code](https://github.com/Nex-Code) for their contribution and collaboration on this feature.
+
+You can see it in action in the [Offcanvas Provider documentation](docs/services/offcanvas-provider "Offcanvas Provider").
 
 ### Modal Parameters Centralized
 
-This release adjusts the Modal API by moving the `Centered`, `Scrollable`, and `Size` parameters from `ModalContent` up to `Modal`. ModalContent now derives these values from its parent and refreshes its classes whenever the modal-level settings change, so existing layouts and providers continue to render correctly while the configuration is centralized. All internal usages, demo pages, and documentation examples have been updated to set these options on Modal, and the FluentUI2 modal implementation now relies on the modal parameters directly. The migration analyzer has been extended to flag the removed ModalContent parameters and guide users to the new Modal equivalents.
+The Modal API has been refined by moving the `Centered`, `Scrollable`, and `Size` parameters from `ModalContent` to `Modal`.
+
+`ModalContent` now derives these values from its parent and automatically refreshes its CSS classes when modal-level settings change. This ensures existing layouts and providers continue to render correctly while centralizing configuration at the modal level.
+
+All internal usages, demo pages, and documentation examples have been updated to configure these options on `Modal`. The FluentUI2 modal implementation now relies directly on modal-level parameters.
+
+To assist with migration, the analyzer has been extended to detect removed `ModalContent` parameters and guide users toward the corresponding `Modal` replacements.
 
 ### Fluent Sizing Enhancements
 
