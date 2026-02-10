@@ -3,7 +3,7 @@ title: Migrating to Blazorise 2.0
 description: Full step-by-step migration guide for upgrading applications from Blazorise 1.8.x to the new Blazorise 2.0 (Velebit) release.
 permalink: /news/migration/200
 canonical: /news/migration/200
-image-url: img/v200.png
+image-url: img/v200-migration.jpg
 image-title: Migrating to Blazorise 2.0
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
