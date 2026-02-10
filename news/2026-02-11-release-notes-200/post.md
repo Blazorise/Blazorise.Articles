@@ -13,34 +13,36 @@ read-time: 14 min
 pinned: true
 ---
 
-## Blazorise 2.0 - Release Notes
+# Blazorise 2.0 - Release Notes
 
 When we released Blazorise 1.8, we promised that the next version would be a major one, 2.0.
 
-Blazorise 2.0, codenamed **Velebit** after the beautiful island in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
+Blazorise 2.0, codenamed **Velebit** after the majestic mountain range in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
+
+The codename **Velebit** represents the largest and most foundational step in Blazorise’s evolution so far. Named after Croatia’s most significant mountain range, it symbolizes strength, stability, and a solid backbone, qualities that define this major 2.0 release.
 
 ## Key Blazorise 2.0 Highlights 💡
 
-Here's a summary of what's new in this release:
+Below is an overview of the most important additions and changes in this release:
 
 - **Blazorise Migration CLI**: a command-line tool to analyze, preview, and apply Blazorise 2.0 migration changes.
-- **Blazorise Analyzer**: compile-time diagnostics that detect breaking changes and guide upgrades.
-- **MCP Server**: AI documentation and API access.
-- **.NET6 and .NET7**: framework support has been removed.
-- **Unified Input API**: All input components now use the standard `Value`, `ValueChanged`, and `ValueExpression` parameters for consistency across the framework.
-- **Renamed Input Components**: Components like `TextEdit`, `DateEdit`, and `FileEdit` are now renamed to `TextInput`, `DateInput`, and `FileInput`.
-- **Extended Color Variants**: for Background and TextColor utilities.
-- **FluentUI Theme Generator**: dynamically generate FluentUI themes.
-- **Autocomplete Validation Refactor**: now behaves as any other input component.
-- **Accessibility Improvements**: Across Inputs, Layouts, and Providers.
-- **Tailwind 4**: Upgrade to latest version.
+- **Blazorise Analyzer**: compile-time diagnostics that detect breaking changes and provide actionable upgrade guidance.
+- **MCP Server**: AI-powered documentation and API access.
+- **.NET 6 and .NET 7**: framework support has been removed.
+- **Unified Input API**: all input components now follow the standard `Value`, `ValueChanged`, and `ValueExpression` pattern for consistent data binding.
+- **Renamed Input Components**: components such as `TextEdit`, `DateEdit`, and `FileEdit` have been renamed to `TextInput`, `DateInput`, and `FileInput`.
+- **Extended Color Variants**: expanded Background and TextColor utility options.
+- **FluentUI Theme Generator**: dynamically generate and customize FluentUI themes.
+- **Autocomplete Validation Refactor**: validation behavior is now aligned with other input components.
+- **Accessibility Improvements**: enhancements across inputs, layouts, and providers.
+- **Tailwind CSS v4**: upgraded to the latest major version.
 
-Dive deeper below to discover the full potential of these features.
+Explore the sections below to learn more about each feature and how they elevate your Blazorise experience.
 
-> 💡 Planning to upgrade from 1.8.x?  
-> Review the migration notes and use the Blazorise Migration CLI to upgrade safely.  
+> 💡 **Upgrading from 1.8.x?**  
+> Review the migration notes and use the Blazorise Migration CLI to ensure a smooth and safe upgrade.  
 > 👉 Migration guide: [news/migration/200](news/migration/200)  
-> 👉 Migration CLI docs: [docs/migration](docs/migration)
+> 👉 Migration CLI docs: [docs/migration](docs/migration)  
 > 👉 Analyzer docs: [docs/analyzer](docs/analyzer)
 
 ## New Tools and Migration
@@ -159,7 +161,7 @@ You can explore the full range of extended color variants in the [Colors documen
 
 ### Badge Subtle
 
-The `Badge` component has been enhanced with a new **Subtle** color mode. This feature introduces lighter, less saturated background tones—ideal for modern, minimalist interfaces or secondary indicators where softer emphasis is preferred.
+The `Badge` component has been enhanced with a new **Subtle** color mode. This feature introduces lighter, less saturated background tones, ideal for modern, minimalist interfaces or secondary indicators where softer emphasis is preferred.
 
 By setting the `Subtle` parameter to `true`, badges automatically adopt the new muted color variants. This ensures they blend naturally into the surrounding UI while maintaining clarity and readability. Subtle badges are particularly effective when used alongside extended color variants, allowing designers to build refined, theme-consistent experiences.
 
