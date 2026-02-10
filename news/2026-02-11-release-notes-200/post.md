@@ -55,19 +55,19 @@ For teams that prefer or require a fully manual upgrade process, refer to the [m
 
 ### Blazorise Analyzer
 
-Blazorise 2.0 introduces **Blazorise.Analyzers**, a new NuGet package designed to make upgrading and maintaining Blazorise projects safer, faster, and more predictable. Once installed, the analyzer inspects your Blazor projects at compile time and detects API inconsistencies introduced in Blazorise 2.0.
+**Blazorise.Analyzers** is a new NuGet package designed to make upgrading and maintaining Blazorise projects safer, faster, and more predictable. Once installed, the analyzer inspects your Blazor projects at compile time and detects API inconsistencies introduced in version 2.0.
 
 Instead of discovering breaking changes at runtime, developers receive immediate feedback directly in their IDE and build output. The analyzer reports clear, actionable compile-time warnings and errors when it detects renamed components, changed parameters, or usage of deprecated APIs.
 
 Each diagnostic provides precise guidance on what has changed and how to update your code to the new API, significantly reducing guesswork during migration. This is especially valuable for larger codebases, where manual audits would otherwise be time-consuming and error-prone.
 
-By shifting upgrade validation to compile time, **Blazorise.Analyzers** acts as a built-in upgrade assistant—helping teams adopt Blazorise 2.0 with confidence while keeping development workflows efficient and predictable.
+By shifting upgrade validation to compile time, **Blazorise.Analyzers** acts as a built-in upgrade assistant—helping teams adopt the new major version with confidence while keeping development workflows efficient and predictable.
 
 For a complete upgrade experience, pair the analyzer diagnostics with the Migration CLI and review the migration notes for manual changes and behavioral differences.
 
 ### Blazorise Migration CLI
 
-Blazorise 2.0 also introduces the **Blazorise Migration CLI**, a command-line tool designed to upgrade existing Blazorise 1.x projects in a safe, reviewable, and predictable manner.
+The **Blazorise Migration CLI** is a command-line tool designed to upgrade existing Blazorise 1.x projects in a safe, reviewable, and predictable manner.
 
 The migrator analyzes your solution or project, reports the required changes, and can apply them automatically when you are ready. All modifications can be previewed in advance using a dry-run mode, and optional backups ensure you can safely roll back if needed.
 
@@ -83,25 +83,29 @@ While the migrator automates many breaking changes, some updates require manual 
 
 ### MCP Server
 
-Blazorise 2.0 introduces an MCP (Model Context Protocol) server that enables AI tools to access Blazorise documentation and code examples directly in a structured and up-to-date format.
+An MCP (Model Context Protocol) server is now available to enable AI tools to access Blazorise documentation and code examples directly in a structured and up-to-date format.
 
 Instead of relying on incomplete or outdated model knowledge, MCP-compatible clients can query the same documentation developers use—down to individual pages and example snippets—at the moment a question is asked.
 
-For developers, this means more accurate AI-assisted guidance, fewer hallucinated APIs, and answers that reflect the current state of the framework. As AI-assisted development becomes increasingly common, the MCP server ensures that Blazorise integrations remain reliable, trustworthy, and fully aligned with the official documentation.
+For developers, this results in more accurate AI-assisted guidance, fewer hallucinated APIs, and answers that reflect the current state of the framework. As AI-assisted development becomes increasingly common, the MCP server helps ensure that Blazorise integrations remain reliable, trustworthy, and fully aligned with the official documentation.
 
 ## New Features and Changes
 
-### Removed .NET6 & .NET7 Support
+### Removed .NET 6 and .NET 7 Support
 
-We have removed support for older frameworks as they were already past their LTS and STS. While we could keep them for while, they were already keeping us locked to some older APIs, and any new features would be impossible to do with Blazorise in the future.
+Support for **.NET 6** and **.NET 7** has been removed in Blazorise 2.0. Both frameworks have reached the end of their respective LTS and STS lifecycles, and continuing to support them would increasingly limit the evolution of the framework.
 
-We also need to mention that .NET8 is still kept. But it will also be removed once its LTS comes to an end, sometime in the late 2026. From there on, we will only keep .NET9 and later.
+While it would have been possible to keep these targets for a little longer, they already constrained Blazorise to older APIs and prevented the adoption of newer Blazor and .NET capabilities. Maintaining compatibility with outdated frameworks would make future features significantly harder—or in some cases impossible—to implement.
 
-This will finally allow us to bring to life new Blazor features, which in turn will allow us to improve Blazorise even more.
+Support for **.NET 8** remains in place. However, once .NET 8 reaches the end of its LTS lifecycle (expected in late 2026), it will also be removed. From that point forward, Blazorise will target **.NET 9 and later** only.
+
+This change unlocks access to the latest Blazor platform features and allows us to continue improving Blazorise with modern, performant, and future-proof capabilities.
 
 ### Unified Input API
 
-Blazorise 2.0 introduces a fully **unified input API** across all form components. Every input now consistently uses `Value`, `ValueChanged`, and `ValueExpression`, making data binding predictable and significantly simplifying form development.
+Blazorise 2.0 introduces a fully **unified input API** across all form components. Every input now consistently uses the standard `Value`, `ValueChanged`, and `ValueExpression` parameters, making data binding predictable and significantly simplifying form development.
+
+This alignment removes long-standing inconsistencies between input components and enables more intuitive patterns when working with forms, validation, and custom inputs.
 
 **Before (1.8.x):**
 
@@ -119,25 +123,33 @@ Blazorise 2.0 introduces a fully **unified input API** across all form component
 <Check @bind-Value="@IsChecked" />
 ```
 
+By standardizing how values are bound, Blazorise 2.0 makes forms easier to reason about, easier to refactor, and more consistent across the entire component library.
+
 ### Heading Aliases
 
-New component aliases have been introduced for both `Heading` and `DisplayHeading` components to simplify usage and improve readability in markup. You can now use `Heading1` through `Heading6` as direct equivalents to `<Heading Size="HeadingSize.Is1">` through `<Heading Size="HeadingSize.Is6">`, and `DisplayHeading1` through `DisplayHeading4` as equivalents to `<DisplayHeading Size="DisplayHeadingSize.Is1">` through `<DisplayHeading Size="DisplayHeadingSize.Is4">`.
+New component aliases are now available for both `Heading` and `DisplayHeading`, simplifying usage and improving markup readability.
 
-These aliases make it easier to write semantically clear headings without needing to specify size attributes explicitly.
+You can use `Heading1` through `Heading6` as direct equivalents to `<Heading Size="HeadingSize.Is1">` through `<Heading Size="HeadingSize.Is6">`, and `DisplayHeading1` through `DisplayHeading4` as equivalents to `<DisplayHeading Size="DisplayHeadingSize.Is1">` through `<DisplayHeading Size="DisplayHeadingSize.Is4">`.
+
+These aliases make it easier to write semantically clear headings without explicitly specifying size parameters, resulting in cleaner and more expressive markup.
 
 ### Gutters Utilities
 
-We added a new `Gutter` system that allows you to control the horizontal and vertical spacing between columns and rows directly on any `Row` and `Fields` component. The gutter behavior now matches Bootstrap 5's model and works consistently across all providers, including Tailwind, Bootstrap, and Bulma. You can apply gutters per axis (`OnX`, `OnY`) or on both axes at once, with full support for responsive values.
+A new **Gutter** system allows you to control horizontal and vertical spacing between columns and rows directly on `Row` and `Fields` components.
+
+The gutter behavior follows the Bootstrap 5 model and works consistently across all providers, including Bootstrap, Tailwind, and Bulma. Gutters can be applied per axis (`OnX`, `OnY`) or on both axes simultaneously, with full support for responsive values.
 
 ![Gutters Utilities](img/gutters.png)
 
-Learn more in the official [Gutters Utilities](docs/helpers/utilities/gutters "Gutters Utilities") documentation page.
+For more details and usage examples, see the official [Gutters Utilities documentation](docs/helpers/utilities/gutters "Gutters Utilities").
 
 ### Radio Component Updates
 
-Blazorise 2.0 introduces a simplified and unified binding model for Radio components. The old `Checked`, `CheckedChanged`, and `CheckedExpression` APIs have been removed and replaced by the standard `Value` / `ValueChanged` / `ValueExpression` pattern. `RadioGroup<TValue>` is now the binding surface, while each `Radio<TValue>` provides its option via Value. A radio is selected when its Value matches the group's bound value, enabling cleaner markup, predictable parsing, and consistent validation.
+Radio components now use a simplified and unified binding model. The legacy `Checked`, `CheckedChanged`, and `CheckedExpression` APIs have been removed in favor of the standard `Value`, `ValueChanged`, and `ValueExpression` pattern.
 
-Migrating is straightforward: replace `Checked*` APIs with Value*, and ensure each radio defines an option Value. Boolean standalone radios still work but are discouraged.
+`RadioGroup<TValue>` is now the primary binding surface, while each `Radio<TValue>` defines its option through the `Value` parameter. A radio is selected when its value matches the bound value of the group, resulting in cleaner markup, predictable value parsing, and consistent validation behavior.
+
+Migration is straightforward: replace `Checked*` APIs with their `Value*` counterparts and ensure each radio defines an explicit option value. Standalone boolean radios are still supported but are discouraged in favor of grouped, value-based usage.
 
 **Before:**
 
@@ -157,41 +169,45 @@ Migrating is straightforward: replace `Checked*` APIs with Value*, and ensure ea
 </RadioGroup>
 ```
 
+This brings Radio components fully in line with the unified input model introduced across the framework, making them easier to reason about and more consistent with other form inputs.
+
 ### Extended Color Variants
 
-Color plays a key role in user interface design, conveying hierarchy, meaning, and accessibility. With Blazorise 1.9, developers can now use **extended color variants** to fine-tune tones and add greater visual depth.
+Color plays a key role in user interface design, conveying hierarchy, meaning, and accessibility. Extended color variants make it possible to fine-tune tones and introduce greater visual depth across your UI.
 
-Enumerations such as `Background` and `TextColor` now support **nested variants** for subtle and emphasized shades. Previously limited to base colors like `Background.Success` or `TextColor.Danger`, you can now use variants such as `Background.Success.Subtle` or `TextColor.Success.Emphasis`. This brings Blazorise utilities in line with modern design systems like Bootstrap 5.3 and FluentUI.
+Enumerations such as `Background` and `TextColor` now support **nested variants** for subtle and emphasized shades. Previously limited to base colors like `Background.Success` or `TextColor.Danger`, you can now use variants such as `Background.Success.Subtle` or `TextColor.Success.Emphasis`. This aligns Blazorise utilities with modern design systems like Bootstrap 5.3 and FluentUI.
 
 ![Color Variants](img/colors.png)
 
-This new system is powered by the `IEnumerationNameBuilder` infrastructure, which standardizes how enumeration values map to CSS class names across providers. For example, Bootstrap automatically generates classes such as `bg-success-subtle` or `text-success-emphasis`. It's fully backward-compatible, ensuring a seamless upgrade path for existing applications.
+This system is powered by the `IEnumerationNameBuilder` infrastructure, which standardizes how enumeration values map to CSS class names across providers. For example, Bootstrap automatically generates classes such as `bg-success-subtle` or `text-success-emphasis`. The implementation is fully backward-compatible, ensuring a smooth upgrade path for existing applications.
 
 You can explore the full range of extended color variants in the [Colors documentation](docs/helpers/colors "Link to Colors documentation").
 
 ### Badge Subtle
 
-The `Badge` component has been enhanced with a new **Subtle** color mode. This feature introduces lighter, less saturated background tones, ideal for modern, minimalist interfaces or secondary indicators where softer emphasis is preferred.
+The `Badge` component has been enhanced with a new **Subtle** color mode. This introduces lighter, less saturated background tones—ideal for modern, minimalist interfaces or secondary indicators where softer emphasis is preferred.
 
-By setting the `Subtle` parameter to `true`, badges automatically adopt the new muted color variants. This ensures they blend naturally into the surrounding UI while maintaining clarity and readability. Subtle badges are particularly effective when used alongside extended color variants, allowing designers to build refined, theme-consistent experiences.
+By setting the `Subtle` parameter to `true`, badges automatically adopt muted color variants that blend naturally into the surrounding UI while maintaining clarity and readability. Subtle badges pair especially well with extended color variants, enabling more refined and theme-consistent designs.
 
 ![Badge Subtle Variants](img/badge-colors.png)
 
-You can see examples of subtle badges in the updated [Badge documentation](docs/components/badge "Link to Badge documentation").
+Examples of subtle badges can be found in the updated [Badge documentation](docs/components/badge "Link to Badge documentation").
 
 ### FluentUI Theme Generator
 
-Blazorise 1.9 also introduces the **FluentUI Theme Generator**, enabling developers to easily build and customize themes based on Microsoft's Fluent Design System. This generator allows quick configuration of colors, typography, and surface elements to create professional and consistent Fluent-inspired UIs.
+The new **FluentUI Theme Generator** makes it easy to build and customize themes based on Microsoft’s Fluent Design System. It allows quick configuration of colors, typography, and surface elements to create professional, cohesive Fluent-inspired interfaces.
 
-The goal is to provide a balance between flexibility and faithfulness to the FluentUI aesthetic, giving developers the ability to tailor visual themes while maintaining familiar design principles across all Blazorise components.
+The generator strikes a balance between flexibility and fidelity to the FluentUI aesthetic, giving developers control over visual customization while preserving consistent design principles across all Blazorise components.
 
 ### Charts
 
-#### Chartjs v4
+#### Chart.js v4
 
-We made a lot of work to bring this to life. Moving forward, all Blazorise Charts static file will be handled and loaded dynamically by Blazorise. 
+Chart support has been fully updated to **Chart.js v4**, with significant improvements to how chart assets are managed and loaded.
 
-Meaning, you don't need to manually include `<script>` file anymore, and you will need to remove all static files from your `App.razor`/`_Host.cshtml`/`index.shtml` file.
+All Chart.js–related static files are now handled and loaded dynamically by Blazorise. This means you no longer need to manually include `<script>` references, and any existing Chart.js scripts should be removed from `App.razor`, `_Host.cshtml`, or `index.html`.
+
+The following script references are no longer required and should be removed:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
@@ -204,11 +220,15 @@ Meaning, you don't need to manually include `<script>` file anymore, and you wil
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.2.0/dist/chartjs-plugin-zoom.min.js"></script>
 ```
 
-We have also updated all charts options to support new version 4.x.
+In addition, all chart configuration options have been updated to align with the **Chart.js 4.x API**.
+
+This change simplifies setup, reduces the risk of version mismatches, and ensures a more predictable charting experience across all hosting models.
 
 #### Custom Named Axes
 
-It is now possible to configure custom named axes on the `ChartScales` options. We have introduced a new option named `AdditionalAxes`, with which you can define any number axes along with the already available `X` and `Y`.
+Charts now support custom named axes through the `ChartScales` configuration.
+
+A new `AdditionalAxes` option allows you to define any number of extra axes in addition to the standard `X` and `Y` axes. This enables more advanced scenarios such as multiple value scales, mixed chart types, and fine-grained control over axis behavior and layout.
 
 ### Validation
 
