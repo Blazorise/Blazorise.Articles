@@ -42,9 +42,18 @@ In addition, we highly recommend installing the **Blazorise Migration CLI** tool
 
 The installation and usage instructions for the Migration CLI are available on the [docs/migration](Migration page), and for Analyzer it can be found on [docs/analyzer](Analyzer page).
 
+### Automatically Handled by Migration CLI
+
+✔ Input renames (`TextEdit` → `TextInput`)  
+✔ `Checked*` → `Value*` parameter updates  
+✔ ModalContent → Modal parameter moves  
+✔ Chart.js static file removal  
+✖ Validation logic changes  
+✖ Custom template contexts  
+
 ---
 
-### Input Component Renaming ✍️
+### Unified Input API (Conceptual Change)
 
 | Old Name         | New Name         |
 | ---------------- | ---------------- |

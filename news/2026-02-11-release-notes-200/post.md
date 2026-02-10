@@ -21,6 +21,8 @@ Blazorise 2.0, codenamed **Velebit** after the majestic mountain range in Croati
 
 The codename **Velebit** represents the largest and most foundational step in Blazorise's evolution so far. Named after Croatia's most significant mountain range, it symbolizes strength, stability, and a solid backbone, qualities that define this major 2.0 release.
 
+Blazorise 2.0 focuses on consistency over convenience, semantic APIs over ad-hoc options, and compile-time safety over runtime surprises. Many changes in this release remove long-standing inconsistencies to establish a stronger foundation for future features.
+
 ## Key Blazorise 2.0 Highlights 💡
 
 Below is an overview of the most important additions and changes in this release:
@@ -91,7 +93,7 @@ For developers, this results in more accurate AI-assisted guidance, fewer halluc
 
 ## New Features and Changes
 
-### Removed .NET 6 and .NET 7 Support
+### Removed .NET 6 and .NET 7 Support ⚠️ Breaking
 
 Support for **.NET 6** and **.NET 7** has been removed in Blazorise 2.0. Both frameworks have reached the end of their respective LTS and STS lifecycles, and continuing to support them would increasingly limit the evolution of the framework.
 
@@ -101,7 +103,7 @@ Support for **.NET 8** remains in place. However, once .NET 8 reaches the end of
 
 This change unlocks access to the latest Blazor platform features and allows us to continue improving Blazorise with modern, performant, and future-proof capabilities.
 
-### Unified Input API
+### Unified Input API ⚠️ Breaking
 
 Blazorise 2.0 introduces a fully **unified input API** across all form components. Every input now consistently uses the standard `Value`, `ValueChanged`, and `ValueExpression` parameters, making data binding predictable and significantly simplifying form development.
 
