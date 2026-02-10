@@ -19,7 +19,7 @@ When we released Blazorise 1.8, we promised that the next version would be a maj
 
 Blazorise 2.0, codenamed **Velebit** after the majestic mountain range in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
 
-The codename **Velebit** represents the largest and most foundational step in Blazorise’s evolution so far. Named after Croatia’s most significant mountain range, it symbolizes strength, stability, and a solid backbone, qualities that define this major 2.0 release.
+The codename **Velebit** represents the largest and most foundational step in Blazorise's evolution so far. Named after Croatia's most significant mountain range, it symbolizes strength, stability, and a solid backbone, qualities that define this major 2.0 release.
 
 ## Key Blazorise 2.0 Highlights 💡
 
@@ -47,7 +47,7 @@ Explore the sections below to learn more about each feature and how they elevate
 
 ## New Tools and Migration
 
-Blazorise 2.0 introduces a number of small breaking and behavioral changes. Before diving into the details, it’s important to highlight the new tooling designed specifically to make upgrading to 2.0 safer and more approachable.
+Blazorise 2.0 introduces a number of small breaking and behavioral changes. Before diving into the details, it's important to highlight the new tooling designed specifically to make upgrading to 2.0 safer and more approachable.
 
 To support a smooth transition, we strongly recommend using both the **Blazorise Analyzer** and the **Blazorise Migration CLI** when upgrading to Blazorise 2.0.
 
@@ -61,7 +61,7 @@ Instead of discovering breaking changes at runtime, developers receive immediate
 
 Each diagnostic provides precise guidance on what has changed and how to update your code to the new API, significantly reducing guesswork during migration. This is especially valuable for larger codebases, where manual audits would otherwise be time-consuming and error-prone.
 
-By shifting upgrade validation to compile time, **Blazorise.Analyzers** acts as a built-in upgrade assistant—helping teams adopt the new major version with confidence while keeping development workflows efficient and predictable.
+By shifting upgrade validation to compile time, **Blazorise.Analyzers** acts as a built-in upgrade assistant, helping teams adopt the new major version with confidence while keeping development workflows efficient and predictable.
 
 For a complete upgrade experience, pair the analyzer diagnostics with the Migration CLI and review the migration notes for manual changes and behavioral differences.
 
@@ -85,7 +85,7 @@ While the migrator automates many breaking changes, some updates require manual 
 
 An MCP (Model Context Protocol) server is now available to enable AI tools to access Blazorise documentation and code examples directly in a structured and up-to-date format.
 
-Instead of relying on incomplete or outdated model knowledge, MCP-compatible clients can query the same documentation developers use—down to individual pages and example snippets—at the moment a question is asked.
+Instead of relying on incomplete or outdated model knowledge, MCP-compatible clients can query the same documentation developers use, down to individual pages and example snippets, at the moment a question is asked.
 
 For developers, this results in more accurate AI-assisted guidance, fewer hallucinated APIs, and answers that reflect the current state of the framework. As AI-assisted development becomes increasingly common, the MCP server helps ensure that Blazorise integrations remain reliable, trustworthy, and fully aligned with the official documentation.
 
@@ -95,7 +95,7 @@ For developers, this results in more accurate AI-assisted guidance, fewer halluc
 
 Support for **.NET 6** and **.NET 7** has been removed in Blazorise 2.0. Both frameworks have reached the end of their respective LTS and STS lifecycles, and continuing to support them would increasingly limit the evolution of the framework.
 
-While it would have been possible to keep these targets for a little longer, they already constrained Blazorise to older APIs and prevented the adoption of newer Blazor and .NET capabilities. Maintaining compatibility with outdated frameworks would make future features significantly harder—or in some cases impossible—to implement.
+While it would have been possible to keep these targets for a little longer, they already constrained Blazorise to older APIs and prevented the adoption of newer Blazor and .NET capabilities. Maintaining compatibility with outdated frameworks would make future features significantly harder, or in some cases impossible, to implement.
 
 Support for **.NET 8** remains in place. However, once .NET 8 reaches the end of its LTS lifecycle (expected in late 2026), it will also be removed. From that point forward, Blazorise will target **.NET 9 and later** only.
 
@@ -185,7 +185,7 @@ You can explore the full range of extended color variants in the [Colors documen
 
 ### Badge Subtle
 
-The `Badge` component has been enhanced with a new **Subtle** color mode. This introduces lighter, less saturated background tones—ideal for modern, minimalist interfaces or secondary indicators where softer emphasis is preferred.
+The `Badge` component has been enhanced with a new **Subtle** color mode. This introduces lighter, less saturated background tones, ideal for modern, minimalist interfaces or secondary indicators where softer emphasis is preferred.
 
 By setting the `Subtle` parameter to `true`, badges automatically adopt muted color variants that blend naturally into the surrounding UI while maintaining clarity and readability. Subtle badges pair especially well with extended color variants, enabling more refined and theme-consistent designs.
 
@@ -195,7 +195,7 @@ Examples of subtle badges can be found in the updated [Badge documentation](docs
 
 ### FluentUI Theme Generator
 
-The new **FluentUI Theme Generator** makes it easy to build and customize themes based on Microsoft’s Fluent Design System. It allows quick configuration of colors, typography, and surface elements to create professional, cohesive Fluent-inspired interfaces.
+The new **FluentUI Theme Generator** makes it easy to build and customize themes based on Microsoft's Fluent Design System. It allows quick configuration of colors, typography, and surface elements to create professional, cohesive Fluent-inspired interfaces.
 
 The generator strikes a balance between flexibility and fidelity to the FluentUI aesthetic, giving developers control over visual customization while preserving consistent design principles across all Blazorise components.
 
@@ -236,7 +236,7 @@ A new `AdditionalAxes` option allows you to define any number of extra axes in a
 
 Revalidation has been a long-standing request. Previously, the complexity of input and validation internals made it difficult to safely introduce this capability. With the Input component APIs now significantly simplified, it became possible to extend the validation system in a more flexible and predictable way.
 
-Manual revalidation allows you to explicitly re-run validation logic for inputs when your UI or business rules change. This makes it easier to fine-tune validation behavior and react to state changes that aren’t directly triggered by user input.
+Manual revalidation allows you to explicitly re-run validation logic for inputs when your UI or business rules change. This makes it easier to fine-tune validation behavior and react to state changes that aren't directly triggered by user input.
 
 Revalidation can be triggered on a single `Validation` component or applied in batch using the `Validations` component.
 
@@ -254,7 +254,7 @@ To improve clarity, the `MinLength` parameter was renamed to `MinSearchLength`, 
 
 `RichTextEdit` has been updated to inherit from `BaseInputComponent` and now fully supports validation, bringing it in line with other input components.
 
-The editor now uses `Value` / `@bind-Value` for HTML content, applies validation styling at the root level, and validates against the editor’s plain-text representation. This ensures that visually empty content—such as a blank paragraph—is correctly treated as empty for validation purposes.
+The editor now uses `Value` / `@bind-Value` for HTML content, applies validation styling at the root level, and validates against the editor's plain-text representation. This ensures that visually empty content, such as a blank paragraph, is correctly treated as empty for validation purposes.
 
 ![RichTextEdit Validation](img/rte-validation.png)
 
@@ -294,59 +294,86 @@ To assist with migration, the analyzer has been extended to detect removed `Moda
 
 ### Fluent Sizing Enhancements
 
-Fluent sizing now supports viewport units and CSS variables, making it easy to express responsive widths and heights with `Vw`, `Vh`, and `Var` alongside the existing `Px`, `Rem`, `Em`, and `Ch` helpers. Min/max constraints can be chained directly on style-based sizing, including unit-only calls when you want to define limits without a base size.
+Fluent sizing now supports viewport units and CSS variables, making it easy to express responsive widths and heights using `Vw`, `Vh`, and `Var`, alongside the existing `Px`, `Rem`, `Em`, and `Ch` helpers.
 
-Inline style output is cleaner and more consistent, with spacing between rules handled at append time instead of parsing, reducing overhead while keeping the formatting predictable. This ensures generated styles read well and remain stable across concatenations.
+Minimum and maximum constraints can be chained directly on style-based sizing, including unit-only calls when you want to define limits without specifying a base size.
 
-Documentation now includes a dedicated [Fluent Sizing page](docs/helpers/utilities/fluent-sizing) with multiple examples covering predefined sizes, style- based sizing, and CSS-variable-driven values, and it's surfaced in navigation and search for easier discovery.
+Inline style output is now cleaner and more consistent. Spacing between rules is handled at append time rather than through parsing, reducing overhead while keeping formatting predictable and stable across concatenations.
 
-### Intent-based coloring
+A dedicated [Fluent Sizing documentation page](docs/helpers/utilities/fluent-sizing) has been added, with examples covering predefined sizes, style-based sizing, and CSS-variable-driven values. The page is also surfaced in navigation and search for easier discovery.
 
-Blazorise 2.0 adds a new `Intent` parameter across components that previously accepted `Color`, giving you a clearer, semantic way to express primary/secondary/success/etc while keeping existing `Color` usage fully compatible. You can start using `Intent` immediately without changing your current styles.
+### Intent-Based Coloring
 
-`Color.Link` remains supported for backward compatibility but is now treated as button/alert-only; using it elsewhere will surface an IDE warning so you can catch it early. This keeps existing `Button` and `Alert` behavior intact while guiding you to more consistent coloring on other components.
+A new `Intent` parameter is now available across components that previously accepted `Color`, providing a clearer, more semantic way to express intent such as primary, secondary, success, or danger, while remaining fully compatible with existing `Color` usage.
+
+You can start using `Intent` immediately without changing current styles. `Color.Link` remains supported for backward compatibility but is now limited to button and alert components. Using it elsewhere will surface an IDE warning, helping you catch inconsistencies early while preserving existing behavior.
 
 ### Tailwind 4 Upgrade
 
-Blazorise.Tailwind has moved to the latest Tailwind CSS 4.0 release, bringing the new CSS‑first engine and a refreshed build pipeline that leans on the v4 entry format with `@import`, `@utility`, and `@theme` blocks. The upgrade keeps the familiar Blazorise look while giving you faster, cleaner utility generation and modern token-driven theming, with Flowbite still in the mix for rich components.
+Blazorise.Tailwind has been upgraded to **Tailwind CSS 4.0**, adopting the new CSS-first engine and a modernized build pipeline based on the v4 entry format with `@import`, `@utility`, and `@theme` blocks.
 
-If you maintain your own Tailwind pipeline, this release is a great moment to mirror the new entry file and include the Blazorise build inputs so your app's utilities and Blazorise styles compile into a single output. Also make sure your safelist is wired in, since Blazorise uses some dynamic classnames that Tailwind won't see through content scanning alone; keeping that list connected ensures nothing disappears at build time.
+The upgrade preserves the familiar Blazorise look while delivering faster, cleaner utility generation and more flexible, token-driven theming. Flowbite remains integrated for rich, prebuilt components.
+
+If you maintain a custom Tailwind pipeline, this release is a good opportunity to align with the new entry file format and include the Blazorise build inputs so both your application utilities and Blazorise styles compile into a single output. Be sure your safelist is properly configured, Blazorise relies on some dynamically generated class names that Tailwind's content scanning may not detect automatically.
 
 ### Bulma 1 Upgrade
 
-This release updates the **Blazorise.Bulma** provider and demo to align with **Bulma 1.0.4**, bringing the styling baseline up to date and matching Bulma's modern CSS variable system. We revised the vendor Sass imports to include only the non-component utilities we need, trimmed legacy utilities, and adjusted class-provider mappings so spacing and helpers reflect the new utility naming. The upgrade was done to keep the provider compatible with current Bulma behavior, reduce custom overrides, and make future maintenance easier.
+The **Blazorise.Bulma** provider and demos have been updated to align with **Bulma 1.0.4**, bringing the styling baseline up to date and fully embracing Bulma's modern CSS variable system.
 
-We shifted theme generation toward Bulma's native color palette logic instead of hardcoded hover/active/disabled values. Button states, tags, notifications, text helpers, inputs, background helpers, and borders now rely on Bulma's variables for native colors, while custom variants like secondary still get explicit rules. We also implemented Bulma-style palette and “on scheme” calculations so text colors match the contrast-driven behavior users expect from the official Bulma theme.
+Vendor Sass imports were revised to include only the non-component utilities required by Blazorise, legacy utilities were trimmed, and class-provider mappings were adjusted so spacing and helper utilities reflect Bulma's updated naming conventions. These changes reduce custom overrides, improve compatibility with current Bulma behavior, and simplify future maintenance.
 
-Along the way we fixed several layout and component issues exposed by the upgrade, including button group/dropdown borders and sizing, radio button groups alignment, and addon sizing in form demos. Breadcrumb active styling now follows Bulma's active color logic, and navbar text contrast uses Bulma's invert variables so backgrounds and text stay in harmony. The result is a cleaner integration that behaves like Bulma out of the box while preserving Blazorise-specific features.
+Theme generation has also shifted toward Bulma's native color palette logic rather than relying on hardcoded hover, active, and disabled values. Button states, tags, notifications, text helpers, inputs, background helpers, and borders now derive their colors directly from Bulma variables, while custom variants such as `secondary` continue to use explicit rules. Bulma-style palette and “on scheme” calculations are now applied so text colors follow the same contrast-driven behavior as the official Bulma theme.
+
+Several layout and component issues uncovered during the upgrade were also resolved, including button group and dropdown borders and sizing, radio group alignment, and addon sizing in form demos. Breadcrumb active states now follow Bulma's active color logic, and navbar text contrast uses Bulma's invert variables to keep backgrounds and text visually balanced.
+
+Overall, this upgrade results in a cleaner, more native Bulma integration that behaves as expected out of the box while preserving Blazorise-specific features and extensibility.
 
 ### Typed Classes Customization & Per-Utility Targeting
 
-This release adds typed `Classes` and `Styles` maps for complex components, so you can target wrapper and inner elements (`Self`, `Wrapper`, `Content`, etc.) without relying on fragile CSS selectors. Utility helpers now support per-utility targeting via `OnSelf`/`OnWrapper`, with `UtilityTarget` remaining the default, making it easier to direct spacing and other utilities to the correct element across providers.
+Typed `Classes` and `Styles` maps are now available for complex components, allowing you to target wrapper and inner elements, such as `Self`, `Wrapper`, and `Content`, without relying on fragile CSS selectors.
 
-The [styling documentation](docs/helpers/utilities/styling) has been expanded with clearer guidance, a `UtilityTarget` example, and a provider support matrix to help users understand which keys apply per component and provider configuration.
+Utility helpers have also been extended with per-utility targeting through `OnSelf` and `OnWrapper`, while `UtilityTarget` remains the default behavior. This makes it easier to apply spacing, sizing, and other utilities to the correct element, consistently across providers.
+
+The [Styling documentation](docs/helpers/utilities/styling) has been expanded with clearer guidance, practical examples, including `UtilityTarget` usage, and a provider support matrix to help you understand which keys are available per component and provider configuration.
 
 ### DataGrid Template Contexts
 
-In Blazorise 2.0 we updated DataGrid template contexts for `SortDirectionTemplate`, `DisplayTemplate`, `EmptyCellTemplate`, and `DetailRowTemplate` to use dedicated context objects instead of passing raw items or enums. We did this to make template APIs more consistent and to expose the extra metadata that template authors were repeatedly reaching for via custom lookups or casts.
+DataGrid template contexts have been updated to use dedicated context objects for `SortDirectionTemplate`, `DisplayTemplate`, `EmptyCellTemplate`, and `DetailRowTemplate`, replacing the previous approach of passing raw items or enums.
 
-For users, this means templates can make richer UI decisions with less boilerplate: you now get direct access to the row item plus helpful details like the column, row index, formatted display value, and sort state in one place. The result is simpler template code, fewer fragile casts, and more flexibility when customizing DataGrid visuals.
+This change makes template APIs more consistent and exposes commonly needed metadata directly, rather than requiring custom lookups or fragile casts. Templates now receive the row item alongside useful details such as the column, row index, formatted display value, and sort state, all in one place.
+
+The result is cleaner template code, less boilerplate, and greater flexibility when customizing DataGrid visuals.
 
 ### DataGrid Grouping State and Change Notifications
 
-Blazorise DataGrid now includes first-class support for grouping state persistence and grouping change notifications. `DataGridState<TItem>` has been extended with `ColumnGroupingStates` so grouped columns can be saved and restored alongside existing grid state, enabling reliable deep-linking and stateful UX scenarios. In addition, a new `GroupingChanged` callback with `DataGridGroupingChangedEventArgs<TItem>` is raised when grouped columns are added or removed, providing current and previous grouped columns plus change metadata, making URL synchronization, analytics, and parent-level state management much easier without render-cycle polling workarounds.
+The DataGrid now provides first-class support for grouping state persistence and grouping change notifications.
+
+`DataGridState<TItem>` has been extended with `ColumnGroupingStates`, allowing grouped columns to be saved and restored together with the rest of the grid state. This enables reliable deep-linking and stateful UX scenarios where grouping must survive reloads or navigation.
+
+In addition, a new `GroupingChanged` callback with `DataGridGroupingChangedEventArgs<TItem>` is raised whenever grouped columns are added or removed. The event includes both the current and previous grouping state, along with change metadata, making it straightforward to synchronize URLs, collect analytics, or manage parent-level state, without relying on render-cycle polling or workarounds.
 
 ### LoadingIndicator Status
 
-This release adds `SetStatus` to `Blazorise.LoadingIndicator`, letting you push status text and optional progress updates through the service or component so the UI can reflect multi‑step work in real time. IndicatorTemplate now receives a `LoadingIndicatorContext` derived from the current status, making it straightforward to render custom messages (and progress) alongside your spinner while keeping the existing API surface clean and flexible for both local and application‑wide indicators.
+`Blazorise.LoadingIndicator` now supports status updates via a new `SetStatus` API, allowing you to push descriptive text and optional progress information through the service or component.
+
+This enables the UI to reflect multi-step operations in real time, rather than showing a static loading indicator. The `IndicatorTemplate` now receives a `LoadingIndicatorContext` derived from the current status, making it easy to render custom messages and progress indicators alongside the spinner.
+
+The existing API surface remains clean and flexible, supporting both local and application-wide loading indicators while enabling richer, more informative loading experiences.
 
 ### Accessibility Improvements Across Inputs, Layouts, and Providers
 
-This update expands Blazorise accessibility coverage without breaking existing APIs by wiring core input ARIA semantics consistently across all providers and extensions. Input components now expose typed `AriaInvalid` and `AriaDescribedBy` parameters, and the framework automatically falls back to validation and field help metadata when you don't specify them. This means screen readers can reliably announce validation errors and help text, while advanced users can still override ARIA explicitly. Autocomplete and rich text/markdown inputs now propagate these ARIA values to their primary interactive surfaces, and the change is aligned across Bootstrap, Bootstrap5, Bulma, AntDesign, FluentUI2, Material, and Tailwind.
+Accessibility support has been expanded across Blazorise without breaking existing APIs by applying consistent ARIA semantics to core input components across all providers and extensions.
 
-We also brought interactive, non‑input UI elements in line with ARIA expectations across providers: accordions, dropdowns, modals, offcanvas panels, tabs, pagination, toasts, alerts, and validation messages now emit consistent aria-expanded/controls, dialog labeling, live region behavior, and role metadata. These changes improve keyboard and assistive technology behavior while preserving provider-specific rendering. In short, you get a more accessible baseline out of the box, fewer manual ARIA tweaks in app code, and a consistent experience regardless of which UI provider you use.
+Input components now expose typed `AriaInvalid` and `AriaDescribedBy` parameters. When these are not explicitly set, the framework automatically derives appropriate ARIA attributes from validation state and field help metadata. This ensures screen readers can reliably announce validation errors and descriptive help text, while still allowing advanced users to override ARIA behavior when needed.
+
+Autocomplete and rich text / markdown inputs now propagate these ARIA attributes to their primary interactive surfaces. The behavior is aligned across all supported providers, including Bootstrap, Bootstrap5, Bulma, AntDesign, FluentUI2, Material, and Tailwind.
+
+Beyond inputs, interactive non-input components have also been aligned with ARIA expectations across providers. Accordions, dropdowns, modals, offcanvas panels, tabs, pagination, toasts, alerts, and validation messages now emit consistent `aria-expanded` and `aria-controls` attributes, dialog labeling, live region behavior, and role metadata.
+
+The result is a stronger accessibility baseline out of the box, improved keyboard and assistive technology behavior, fewer manual ARIA adjustments in application code, and a consistent experience regardless of the chosen UI provider.
 
 ## Final Notes 🏁
 
-Blazorise 2.0 introduces a consistent, modernized input system and simpler APIs that make form handling easier and more intuitive.
-Review your input components and update bindings for a smooth migration.
+Blazorise 2.0 delivers a more consistent and modern foundation, with a unified input system and simplified APIs that make form handling clearer, more predictable, and easier to extend.
+
+As you upgrade, take time to review your input components and update bindings where needed. Doing so will ensure a smooth migration and allow you to fully benefit from the improvements introduced in this major release.
