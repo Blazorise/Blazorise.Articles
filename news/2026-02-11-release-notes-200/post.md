@@ -234,25 +234,33 @@ A new `AdditionalAxes` option allows you to define any number of extra axes in a
 
 #### Revalidation Support
 
-This feature was on our backlog for years, and the main reason why we haven't done it before is because the internals of inputs and validation were too complex to touch anything regarding it. Now that we have made the **Input** components API much cleaner we also have the freedom and ability to add more features to the validation system.
+Revalidation has been a long-standing request. Previously, the complexity of input and validation internals made it difficult to safely introduce this capability. With the Input component APIs now significantly simplified, it became possible to extend the validation system in a more flexible and predictable way.
 
-One such feature is the manual revalidation of the validated input. With this feature you will finally be able to fine-tune your UI and adjust it based on your business needs.
+Manual revalidation allows you to explicitly re-run validation logic for inputs when your UI or business rules change. This makes it easier to fine-tune validation behavior and react to state changes that aren’t directly triggered by user input.
 
-It works on a single `Validation` component, or if you want to do it in batch you can run it on `Validations` component.
+Revalidation can be triggered on a single `Validation` component or applied in batch using the `Validations` component.
 
-Learn more in the official [Validation Component](docs/components/validation "Validation Component") documentation page.
+For usage details and examples, see the official [Validation Component documentation](docs/components/validation "Validation Component").
 
 #### Autocomplete Validation Refactor
 
-Autocomplete now participates in the standard validation pipeline by inheriting `BaseInputComponent` and no longer relies on its built‑in Validation wrapper. This change makes Autocomplete behave consistently with other input components and requires it to be wrapped in `Validation`, which also fixes mismatches where errors appeared on the search field instead of the overall control. In multiple selection mode, validation now uses `SelectedValues`, `SelectedValuesChanged`, and `SelectedValuesExpression` so the selected items are validated as a single logical value. Finally, the parameter `MinLength` was renamed to `MinSearchLength` to clarify that it applies to search input length and to avoid confusion with data annotation MinLength.
+`Autocomplete` now participates in the standard validation pipeline by inheriting from `BaseInputComponent` and no longer relies on its built-in validation wrapper. As a result, it behaves consistently with other input components and must be wrapped in a `Validation` component.
+
+This change also resolves issues where validation errors were displayed on the search input instead of the overall control. In multiple selection mode, validation now operates on `SelectedValues`, `SelectedValuesChanged`, and `SelectedValuesExpression`, ensuring that selected items are validated as a single logical value.
+
+To improve clarity, the `MinLength` parameter was renamed to `MinSearchLength`, reflecting that it applies to the search input length rather than data annotation validation.
 
 #### RichTextEdit Validation Refactor
 
-This release updates `RichTextEdit` to inherit from `BaseInputComponent` and adds full validation support, bringing it in line with other inputs. RichTextEdit now supports `Value/@bind-Value` for HTML content, applies validation styling on the root, and validates against the editor's plain-text representation so empty rich text (such as a blank paragraph) is treated as empty.
+`RichTextEdit` has been updated to inherit from `BaseInputComponent` and now fully supports validation, bringing it in line with other input components.
+
+The editor now uses `Value` / `@bind-Value` for HTML content, applies validation styling at the root level, and validates against the editor’s plain-text representation. This ensures that visually empty content—such as a blank paragraph—is correctly treated as empty for validation purposes.
 
 ![RichTextEdit Validation](img/rte-validation.png)
 
-External Value updates now flow into **Quill** safely, while internal typing avoids DOM re-renders that could disrupt the caret. Read-only behavior now respects both `ReadOnly` and `Disabled`. Documentation and demo examples were updated to use `Value/@bind-Value`, and a new RichTextEdit validation example was added. Tests were added for RichTextEdit validation behavior, along with bUnit JS interop support and test component wiring.
+External `Value` updates are safely synchronized with **Quill**, while internal typing avoids unnecessary DOM re-renders that could disrupt caret positioning. Read-only behavior now correctly respects both `ReadOnly` and `Disabled` states.
+
+Documentation and demos have been updated to use `Value` / `@bind-Value`, and a new RichTextEdit validation example has been added. Additional tests were introduced to cover validation behavior, including bUnit JS interop support and supporting test infrastructure.
 
 ### Offcanvas Provider
 
