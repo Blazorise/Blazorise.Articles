@@ -47,37 +47,47 @@ Explore the sections below to learn more about each feature and how they elevate
 
 ## New Tools and Migration
 
-In this release there will be a lot of small breaking and behavior changes. So, before we continue it is advised to mention our very new tools that will help you in the process. Blazorise Analyzer, and Migration CLI, are really reccomended for 2.0.
+Blazorise 2.0 introduces a number of small breaking and behavioral changes. Before diving into the details, it’s important to highlight the new tooling designed specifically to make upgrading to 2.0 safer and more approachable.
 
-For those of you who are still used to manual migration, visit the [news/migration/200](migration page) for detailed list of all API changes in 2.0.
+To support a smooth transition, we strongly recommend using both the **Blazorise Analyzer** and the **Blazorise Migration CLI** when upgrading to Blazorise 2.0.
+
+For teams that prefer or require a fully manual upgrade process, refer to the [migration guide](news/migration/200), which contains a comprehensive list of all API changes and behavioral differences introduced in 2.0.
 
 ### Blazorise Analyzer
 
-Blazorise 2.0 introduces **Blazorise.Analyzers**, a brand-new NuGet package designed to make upgrading and maintaining Blazorise projects safer, faster, and more predictable. Once installed, the analyzer automatically inspects your Blazor projects at compile time and detects inconsistencies related to API changes introduced in Blazorise 2.0. Instead of discovering breaking changes at runtime, developers now get immediate feedback directly in their IDE and build output.
+Blazorise 2.0 introduces **Blazorise.Analyzers**, a new NuGet package designed to make upgrading and maintaining Blazorise projects safer, faster, and more predictable. Once installed, the analyzer inspects your Blazor projects at compile time and detects API inconsistencies introduced in Blazorise 2.0.
 
-The analyzer raises clear and actionable compile-time errors and warnings whenever it detects usage of renamed components, changed parameters, or outdated APIs. Each diagnostic includes precise guidance on what has changed and how to update your code to the new component API, significantly reducing guesswork during migration. This is especially valuable for larger projects, where manual auditing of components and parameters would otherwise be time-consuming and error-prone.
+Instead of discovering breaking changes at runtime, developers receive immediate feedback directly in their IDE and build output. The analyzer reports clear, actionable compile-time warnings and errors when it detects renamed components, changed parameters, or usage of deprecated APIs.
 
-By shifting upgrade validation to compile time, Blazorise.Analyzers helps teams adopt Blazorise 2.0 with confidence. It acts as a built-in upgrade assistant, ensuring your codebase stays aligned with the latest Blazorise conventions and best practices, while keeping your development workflow smooth and efficient.
+Each diagnostic provides precise guidance on what has changed and how to update your code to the new API, significantly reducing guesswork during migration. This is especially valuable for larger codebases, where manual audits would otherwise be time-consuming and error-prone.
 
-For a complete upgrade path, pair the analyzer diagnostics with the Migration CLI and review the migration notes for manual changes and behavioral differences.
+By shifting upgrade validation to compile time, **Blazorise.Analyzers** acts as a built-in upgrade assistant—helping teams adopt Blazorise 2.0 with confidence while keeping development workflows efficient and predictable.
+
+For a complete upgrade experience, pair the analyzer diagnostics with the Migration CLI and review the migration notes for manual changes and behavioral differences.
 
 ### Blazorise Migration CLI
 
-Blazorise 2.0 introduces the **Blazorise Migration CLI**, a command-line tool designed to help upgrade existing Blazorise 1.x projects in a safe, reviewable, and predictable way.
+Blazorise 2.0 also introduces the **Blazorise Migration CLI**, a command-line tool designed to upgrade existing Blazorise 1.x projects in a safe, reviewable, and predictable manner.
 
-The migrator analyzes your solution or project, reports required migration changes, and can apply them automatically when you are ready. All changes can be previewed in advance using dry-run mode, and optional backups ensure you can roll back if needed.
+The migrator analyzes your solution or project, reports the required changes, and can apply them automatically when you are ready. All modifications can be previewed in advance using a dry-run mode, and optional backups ensure you can safely roll back if needed.
 
-The recommended workflow is to first analyze your solution, review the reported changes, preview file updates with `--dry-run`, and then apply the migration with backups enabled.
+A recommended workflow is to:
+1. Analyze your solution
+2. Review the reported migration changes
+3. Preview file updates using `--dry-run`
+4. Apply the migration with backups enabled
 
-For full usage instructions, examples, and command options, see the [dedicated migration documentation](docs/migration).
+For full usage instructions, examples, and available command options, see the [Migration CLI documentation](docs/migration).
 
-While the migrator handles many breaking changes automatically, some updates require manual review. The [migration notes](news/migration/200) document behavioral changes, removed APIs, and upgrade considerations that cannot be applied automatically.
+While the migrator automates many breaking changes, some updates require manual review. The [migration notes](news/migration/200) document behavioral changes, removed APIs, and upgrade considerations that cannot be applied automatically.
 
 ### MCP Server
 
-For Blazorise 2.0, we've introduced an MCP (Model Context Protocol) server that allows AI tools to access Blazorise documentation and code examples directly, in a structured and up-to-date way. Instead of relying on incomplete or outdated model knowledge, MCP-compatible clients can query the same documentation developers read, down to individual pages and example snippets, at the moment a question is asked.
+Blazorise 2.0 introduces an MCP (Model Context Protocol) server that enables AI tools to access Blazorise documentation and code examples directly in a structured and up-to-date format.
 
-For users, this means more accurate answers when working with Blazorise components, fewer hallucinated APIs, and guidance that reflects the current state of the framework. As AI-assisted development becomes more common, the MCP server ensures that Blazorise integrations remain predictable, trustworthy, and aligned with the official documentation.
+Instead of relying on incomplete or outdated model knowledge, MCP-compatible clients can query the same documentation developers use—down to individual pages and example snippets—at the moment a question is asked.
+
+For developers, this means more accurate AI-assisted guidance, fewer hallucinated APIs, and answers that reflect the current state of the framework. As AI-assisted development becomes increasingly common, the MCP server ensures that Blazorise integrations remain reliable, trustworthy, and fully aligned with the official documentation.
 
 ## New Features and Changes
 
