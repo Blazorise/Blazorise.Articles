@@ -262,6 +262,16 @@ External `Value` updates are safely synchronized with **Quill**, while internal 
 
 Documentation and demos have been updated to use `Value` / `@bind-Value`, and a new RichTextEdit validation example has been added. Additional tests were introduced to cover validation behavior, including bUnit JS interop support and supporting test infrastructure.
 
+#### Full Markdown Input Support
+
+The Markdown editor now behaves like a first-class form input. It fully participates in form validation and displays validation feedback directly on the editor UI, allowing users to immediately see when the field is valid or contains errors.
+
+![Markdown Validation](img/markdown-validation.png)
+
+Common input behaviors are now applied to the editor surface itself. Read-only and disabled states behave as expected, custom CSS classes and styling are rendered where users see them, and additional HTML attributes are correctly propagated.
+
+Focus handling has also been improved, ensuring reliable keyboard navigation and smoother form flows. Overall, the Markdown component now feels consistent with other Blazorise input components when used in real-world forms and validation scenarios.
+
 ### Offcanvas Provider
 
 With the help of community member [Nex-Code](https://github.com/Nex-Code), we now have an `OffcanvasProvider` component, which mirrors the structure and usage of or existing `ModalProvider` component.
@@ -269,16 +279,6 @@ With the help of community member [Nex-Code](https://github.com/Nex-Code), we no
 Big thanks to the [Nex-Code](https://github.com/Nex-Code) for helping us with this component.
 
 You can see it in action in [Offcanvas Provider](docs/services/offcanvas-provider "Offcanvas Provider") documentation page.
-
-### Full Markdown Input Support
-
-The Markdown editor now behaves much more like other form inputs in Blazorise. It fully participates in form validation and shows validation feedback directly on the editor UI, so users can immediately see when the field is valid or has errors.
-
-![Markdown Validation](img/markdown-validation.png)
-
-Common input behaviors are now supported on the actual editor surface. Settings like read-only and disabled work as expected, custom styling and CSS classes apply to what users see, and any additional HTML attributes are carried through properly.
-
-Focusing the Markdown editor has also been improved, so keyboard users and form flows can move focus to the editor reliably. Overall, the Markdown component should feel more consistent with the rest of the Blazorise input components in real-world forms.
 
 ### Modal Parameters Centralized
 
