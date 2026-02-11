@@ -1,9 +1,39 @@
 {
   "version": 1,
-  "generatedAt": "2026-02-04T08:52:52.101Z",
-  "commit": "802bc8723009",
-  "count": 112,
+  "generatedAt": "2026-02-11T09:06:25.106Z",
+  "commit": "97e033c330df",
+  "count": 114,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-02-11-release-notes-200",
+      "slug": "200",
+      "permalink": "/news/release-notes/200",
+      "title": "Announcing Blazorise 2.0 - Velebit",
+      "summary": "Blazorise 2.0, codenamed Velebit after the beautiful island in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.",
+      "postedOn": "2026-02-11",
+      "category": "News",
+      "imageUrl": "img/v200.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "14 min",
+      "pinned": true
+    },
+    {
+      "root": "news",
+      "dir": "news/2026-02-11-migration-200",
+      "slug": "200",
+      "permalink": "/news/migration/200",
+      "title": "Migrating to Blazorise 2.0",
+      "summary": "Full step-by-step migration guide for upgrading applications from Blazorise 1.8.x to the new Blazorise 2.0 (Velebit) release.",
+      "postedOn": "2026-02-11",
+      "category": "News",
+      "imageUrl": "img/v200-migration.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "7 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-02-04-release-notes-1810",
