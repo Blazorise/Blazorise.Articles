@@ -1,6 +1,6 @@
 ---
 title: Announcing Blazorise 2.0 - Velebit
-description: Blazorise 2.0, codenamed Velebit after the beautiful island in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
+description: Blazorise 2.0, codenamed Velebit after the majestic mountain range in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
 permalink: /news/release-notes/200
 canonical: /news/release-notes/200
 image-url: img/v200.jpg
