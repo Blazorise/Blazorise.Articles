@@ -22,6 +22,7 @@ Blazorise 2.1, codenamed **Mosor** after the majestic mountain range in Croatia,
 Below is an overview of the most important additions and changes in this release:
 
 - **DataGrid Self Reference**: Show hierarchical data inside of DataGrid.
+- **PdfViewer**: Now Supports Password-Protected PDFs
 
 ## Upgrading from 2.0.x to 2.1 👨‍🔧
 
@@ -33,13 +34,19 @@ Blazorise should work without any major breaking changes to the API.
 
 ## New Features & Enhancements 🚀
 
-## DataGrid Self Reference
+### DataGrid Self Reference
 
 One of the most requested features is finally here. DataGrid Self Reference mode allows you to display hierarchical data structures directly within the DataGrid, enabling parent–child relationships from a single data source. Items can reference other items in the same collection (for example via ParentId → Id), allowing you to naturally represent structured data without reshaping or duplicating it.
 
 This makes it possible to build rich hierarchical interfaces similar to a Tree View, but with the full power of a table. You can combine expandable tree-like rows with standard DataGrid capabilities such as sorting, filtering, templating, editing, and paging, delivering both clarity and flexibility in one unified component.
 
 With Self Reference mode, hierarchical data becomes a first-class DataGrid scenario, simplifying implementation while keeping the experience powerful and consistent.
+
+### PdfViewer Password
+
+Blazorise `PdfViewer` now supports opening password-protected PDF documents directly in-app. When an encrypted file is loaded, the viewer detects that a password is required and triggers a password request flow instead of failing silently. By default, this flow uses `ModalService` to show a built-in prompt, allowing end users to enter the password and continue reading the document without leaving the current workflow.
+
+For teams that need custom UX, the feature also includes an extensibility API so developers can handle password requests with their own dialog or interaction pattern, while still using the same secure loading pipeline. We also added prompt validation and localization-ready text support through `PasswordPromptOptions`, so labels and messages can match your app language and style. Full usage examples and API details are available in the [PdfViewer documentation](docs/extensions/pdfviewer).
 
 ## Final Notes
 
