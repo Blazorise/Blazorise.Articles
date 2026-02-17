@@ -1,0 +1,46 @@
+---
+title: Announcing Blazorise 2.1 - Mosor
+description: Blazorise 2.1, codenamed Mosor after the majestic mountain range in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
+permalink: /news/release-notes/210
+canonical: /news/release-notes/210
+image-url: img/v210.jpg
+image-title: Announcing Blazorise 2.1 - Mosor
+author-name: Mladen Macanović
+author-image: /assets/img/authors/mladen.png
+category: News
+posted-on: 2026-04-07
+read-time: 8 min
+pinned: true
+---
+
+# Blazorise 2.1 - Release Notes
+
+Blazorise 2.1, codenamed **Mosor** after the majestic mountain range in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. 
+
+## Key Blazorise 2.1 Highlights 💡
+
+Below is an overview of the most important additions and changes in this release:
+
+- **DataGrid Self Reference**: Show hierarchical data inside of DataGrid.
+
+## Upgrading from 2.0.x to 2.1 👨‍🔧
+
+To smoothly upgrade your application, follow these simple steps:
+
+Update all **Blazorise.*** package references to **2.1**.
+
+Blazorise should work without any major breaking changes to the API.
+
+## New Features & Enhancements 🚀
+
+## DataGrid Self Reference
+
+One of the most requested features is finally here. DataGrid Self Reference mode allows you to display hierarchical data structures directly within the DataGrid, enabling parent–child relationships from a single data source. Items can reference other items in the same collection (for example via ParentId → Id), allowing you to naturally represent structured data without reshaping or duplicating it.
+
+This makes it possible to build rich hierarchical interfaces similar to a Tree View, but with the full power of a table. You can combine expandable tree-like rows with standard DataGrid capabilities such as sorting, filtering, templating, editing, and paging, delivering both clarity and flexibility in one unified component.
+
+With Self Reference mode, hierarchical data becomes a first-class DataGrid scenario, simplifying implementation while keeping the experience powerful and consistent.
+
+## Final Notes
+
+We are thrilled to bring you Blazorise 2.1 with so many new features and improvements. This release reflects our commitment to continuously enhancing the framework based on community feedback and evolving application needs.
