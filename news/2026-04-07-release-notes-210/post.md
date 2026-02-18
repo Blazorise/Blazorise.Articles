@@ -22,7 +22,8 @@ Blazorise 2.1, codenamed **Mosor** after the majestic mountain range in Croatia,
 Below is an overview of the most important additions and changes in this release:
 
 - **DataGrid Self Reference**: Show hierarchical data inside of DataGrid.
-- **PdfViewer**: Now Supports Password-Protected PDFs
+- **PdfViewer**: Now Supports Password-Protected PDFs.
+- **BarDropdownToggle**: Combined link and toggle.
 
 ## Upgrading from 2.0.x to 2.1 👨‍🔧
 
@@ -47,6 +48,12 @@ With Self Reference mode, hierarchical data becomes a first-class DataGrid scena
 Blazorise `PdfViewer` now supports opening password-protected PDF documents directly in-app. When an encrypted file is loaded, the viewer detects that a password is required and triggers a password request flow instead of failing silently. By default, this flow uses `ModalService` to show a built-in prompt, allowing end users to enter the password and continue reading the document without leaving the current workflow.
 
 For teams that need custom UX, the feature also includes an extensibility API so developers can handle password requests with their own dialog or interaction pattern, while still using the same secure loading pipeline. We also added prompt validation and localization-ready text support through `PasswordPromptOptions`, so labels and messages can match your app language and style. Full usage examples and API details are available in the [PdfViewer documentation](docs/extensions/pdfviewer).
+
+### BarDropdownToggle: Smoother Sidebar Navigation
+
+`BarDropdownToggle` has been significantly improved for sidebar and nested menu scenarios. You can now use it as both a navigation link and a dropdown trigger, so users can follow a route and still expand or collapse child items from the same control. Active-route highlighting now follows link matching rules more reliably, and click handling has been refined so expanding a menu is less likely to trigger unwanted navigation.
+
+Customization has also expanded in a user-facing way. Teams can now control dropdown toggle icon behavior more precisely, including hiding the icon when needed and configuring icon appearance through theme options. In practice, this makes side navigation feel cleaner, more predictable, and easier to align with each app’s visual style across supported UI providers.
 
 ## Final Notes
 
