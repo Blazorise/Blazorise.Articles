@@ -43,11 +43,17 @@ This makes it possible to build rich hierarchical interfaces similar to a Tree V
 
 With Self Reference mode, hierarchical data becomes a first-class DataGrid scenario, simplifying implementation while keeping the experience powerful and consistent.
 
-### PdfViewer Password
+### PdfViewer Password Prompt
 
 Blazorise `PdfViewer` now supports opening password-protected PDF documents directly in-app. When an encrypted file is loaded, the viewer detects that a password is required and triggers a password request flow instead of failing silently. By default, this flow uses `ModalService` to show a built-in prompt, allowing end users to enter the password and continue reading the document without leaving the current workflow.
 
 For teams that need custom UX, the feature also includes an extensibility API so developers can handle password requests with their own dialog or interaction pattern, while still using the same secure loading pipeline. We also added prompt validation and localization-ready text support through `PasswordPromptOptions`, so labels and messages can match your app language and style. Full usage examples and API details are available in the [PdfViewer documentation](docs/extensions/pdfviewer).
+
+### PDF Viewer Download Prompt
+
+Downloading from the PDF Viewer now gives you meaningful file names instead of always saving as `document.pdf`. The viewer can automatically suggest a name based on the PDF’s metadata (such as document title) or the source file name, making it much easier to keep multiple downloads organized.
+
+You can also enable a filename prompt before download so users can review and change the name in place. The prompt is localized, supports validation, and still keeps downloads simple for users who just want to click once and save.
 
 ### BarDropdownToggle: Smoother Sidebar Navigation
 
