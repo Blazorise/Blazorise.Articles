@@ -24,6 +24,7 @@ Below is an overview of the most important additions and changes in this release
 - **DataGrid Self Reference**: Show hierarchical data inside of DataGrid.
 - **PdfViewer**: Now Supports Password-Protected PDFs.
 - **BarDropdownToggle**: Combined link and toggle.
+- **PasswordStrength**: For detailed password UX.
 
 ## Upgrading from 2.0.x to 2.1 👨‍🔧
 
@@ -60,6 +61,12 @@ You can also enable a filename prompt before download so users can review and ch
 `BarDropdownToggle` has been significantly improved for sidebar and nested menu scenarios. You can now use it as both a navigation link and a dropdown trigger, so users can follow a route and still expand or collapse child items from the same control. Active-route highlighting now follows link matching rules more reliably, and click handling has been refined so expanding a menu is less likely to trigger unwanted navigation.
 
 Customization has also expanded in a user-facing way. Teams can now control dropdown toggle icon behavior more precisely, including hiding the icon when needed and configuring icon appearance through theme options. In practice, this makes side navigation feel cleaner, more predictable, and easier to align with each app’s visual style across supported UI providers.
+
+### PasswordStrength Component
+
+This release introduces `PasswordStrength`, a new password input component designed to help users create stronger passwords in real time. It behaves like a standard text input while adding live strength scoring, rule-by-rule guidance, optional show/hide password toggle, and seamless integration with Blazorise validation flows so error and success feedback appear where users expect them.
+
+`PasswordStrength` is fully localizable and rule-driven, letting you configure requirements such as minimum length, uppercase, lowercase, numbers, special characters, and blocked/common password checks. The component also supports visual customization through dedicated classes and styles APIs, including configurable colors for the toggle button and rule states, and now relies on provider-specific addons validation behavior to ensure consistent rendering across UI providers without leaking provider-incompatible validation classes.
 
 ## Final Notes
 
