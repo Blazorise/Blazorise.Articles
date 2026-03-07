@@ -37,37 +37,19 @@ Blazorise should work without any major breaking changes to the API.
 
 ## New Features & Enhancements 🚀
 
-### Material 3 Provider (New)
+## Material 3 Provider (New)
 
-Blazorise now introduces a **Material 3 design system provider**, bringing full support for Google's latest Material guidelines to the framework.
+Blazorise now introduces a **Material 3 design system provider**, bringing support for Google's latest Material design guidelines to the framework.
 
-This provider replaces the legacy **Material provider that was previously built on Bootstrap 4**, which had unfortunately been **unmaintained for several years**. While we initially intended to keep the old provider for compatibility, maintaining it alongside modern Blazorise development proved impractical. The new Material 3 implementation ensures long-term sustainability and alignment with current design standards.
+This new provider replaces the legacy **Material theme that was previously built on Bootstrap 4**. That implementation had been unmaintained for several years and had fallen behind both the Blazorise ecosystem and modern design standards. While we initially considered keeping it for compatibility, maintaining it alongside the rest of the framework proved impractical. The new provider ensures a modern, sustainable Material implementation moving forward.
 
-#### From BeerCSS to a Full Material 3 Implementation
+Development originally started using **BeerCSS** as a foundation. It provided a promising base for quickly experimenting with Material 3 styling and component structure. However, as we began integrating it into real-world applications, its limitations became apparent. Larger applications require consistent layout behavior, predictable spacing, and a broader set of UI components. In practice we encountered issues such as inconsistent placements, spacing differences, and missing components needed for production scenarios.
 
-The development of the new provider originally started with **BeerCSS** as a foundation. BeerCSS offered a promising base for implementing Material 3 concepts quickly and allowed us to experiment with the visual language and component styling.
+As a result, Blazorise significantly extends that foundation. The new provider introduces **many custom CSS rules and layout adjustments** to ensure consistent behavior across components, as well as **additional components not present in BeerCSS**. In practice, the Material 3 provider should be considered a **full Blazorise implementation of the Material 3 design system**, rather than a simple wrapper around an external library.
 
-However, as we began integrating it into real-world application scenarios, several limitations became apparent. Large applications require strict consistency in layout, spacing, and component behavior. We encountered issues such as:
+From an API perspective, **all existing Blazorise component APIs remain unchanged**. Applications using Blazorise components will continue to work the same way from a code standpoint. However, if your project relied on **custom CSS targeting the previous Bootstrap-based Material styles**, those overrides will likely need to be updated to match the new structure.
 
-- inconsistent element spacing and alignment
-- limited flexibility for complex layouts
-- missing components required for production applications
-
-To address these limitations, we significantly extended the foundation. Blazorise now includes **a large set of custom CSS rules and structural adjustments** that ensure predictable layout behavior across components. In addition, we implemented **many components that are not provided by Material design system**, making the provider suitable for full-scale application development.
-
-Today, the Material 3 provider should be considered a **complete Blazorise implementation of the Material 3 design system**, rather than a thin wrapper around an external library.
-
-#### API Compatibility
-
-A key goal during development was to **preserve the existing Blazorise API surface**. All Blazorise components continue to behave the same from a programming perspective. This means that migrating from the previous Material provider does **not require changes to your component code**.
-
-However, if your application relied on **custom CSS overrides targeting the old Bootstrap-based Material styles**, those styles will likely need to be updated to match the new Material 3 structure and class names.
-
-#### A Modern Material Experience for Blazor
-
-With this release, Blazorise becomes **the first Blazor component library providing a Material 3–compliant design system**. The new provider delivers a modern visual language, improved layout consistency, and a foundation that will continue to evolve with the Blazorise ecosystem.
-
-We're excited to finally bring **Material 3 to Blazorise applications** and look forward to expanding its capabilities in future releases.
+With this release, Blazorise becomes **the first Blazor component library providing a Material 3–compliant design system**, offering a modern visual foundation for building Blazor applications going forward.
 
 ### DataGrid Self Reference
 
