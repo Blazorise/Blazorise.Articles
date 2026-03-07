@@ -21,6 +21,7 @@ Blazorise 2.1, codenamed **Mosor** after the majestic mountain range in Croatia,
 
 Below is an overview of the most important additions and changes in this release:
 
+- **Material 3**: New design system provider.
 - **DataGrid Self Reference**: Show hierarchical data inside of DataGrid.
 - **PdfViewer**: Now Supports Password-Protected PDFs.
 - **BarDropdownToggle**: Combined link and toggle.
@@ -35,6 +36,38 @@ Update all **Blazorise.*** package references to **2.1**.
 Blazorise should work without any major breaking changes to the API.
 
 ## New Features & Enhancements 🚀
+
+### Material 3 Provider (New)
+
+Blazorise now introduces a **Material 3 design system provider**, bringing full support for Google's latest Material guidelines to the framework.
+
+This provider replaces the legacy **Material provider that was previously built on Bootstrap 4**, which had unfortunately been **unmaintained for several years**. While we initially intended to keep the old provider for compatibility, maintaining it alongside modern Blazorise development proved impractical. The new Material 3 implementation ensures long-term sustainability and alignment with current design standards.
+
+#### From BeerCSS to a Full Material 3 Implementation
+
+The development of the new provider originally started with **BeerCSS** as a foundation. BeerCSS offered a promising base for implementing Material 3 concepts quickly and allowed us to experiment with the visual language and component styling.
+
+However, as we began integrating it into real-world application scenarios, several limitations became apparent. Large applications require strict consistency in layout, spacing, and component behavior. We encountered issues such as:
+
+- inconsistent element spacing and alignment
+- limited flexibility for complex layouts
+- missing components required for production applications
+
+To address these limitations, we significantly extended the foundation. Blazorise now includes **a large set of custom CSS rules and structural adjustments** that ensure predictable layout behavior across components. In addition, we implemented **many components that are not provided by Material design system**, making the provider suitable for full-scale application development.
+
+Today, the Material 3 provider should be considered a **complete Blazorise implementation of the Material 3 design system**, rather than a thin wrapper around an external library.
+
+#### API Compatibility
+
+A key goal during development was to **preserve the existing Blazorise API surface**. All Blazorise components continue to behave the same from a programming perspective. This means that migrating from the previous Material provider does **not require changes to your component code**.
+
+However, if your application relied on **custom CSS overrides targeting the old Bootstrap-based Material styles**, those styles will likely need to be updated to match the new Material 3 structure and class names.
+
+#### A Modern Material Experience for Blazor
+
+With this release, Blazorise becomes **the first Blazor component library providing a Material 3–compliant design system**. The new provider delivers a modern visual language, improved layout consistency, and a foundation that will continue to evolve with the Blazorise ecosystem.
+
+We're excited to finally bring **Material 3 to Blazorise applications** and look forward to expanding its capabilities in future releases.
 
 ### DataGrid Self Reference
 
@@ -52,7 +85,7 @@ For teams that need custom UX, the feature also includes an extensibility API so
 
 ### PDF Viewer Download Prompt
 
-Downloading from the PDF Viewer now gives you meaningful file names instead of always saving as `document.pdf`. The viewer can automatically suggest a name based on the PDF’s metadata (such as document title) or the source file name, making it much easier to keep multiple downloads organized.
+Downloading from the PDF Viewer now gives you meaningful file names instead of always saving as `document.pdf`. The viewer can automatically suggest a name based on the PDF's metadata (such as document title) or the source file name, making it much easier to keep multiple downloads organized.
 
 You can also enable a filename prompt before download so users can review and change the name in place. The prompt is localized, supports validation, and still keeps downloads simple for users who just want to click once and save.
 
@@ -60,7 +93,7 @@ You can also enable a filename prompt before download so users can review and ch
 
 `BarDropdownToggle` has been significantly improved for sidebar and nested menu scenarios. You can now use it as both a navigation link and a dropdown trigger, so users can follow a route and still expand or collapse child items from the same control. Active-route highlighting now follows link matching rules more reliably, and click handling has been refined so expanding a menu is less likely to trigger unwanted navigation.
 
-Customization has also expanded in a user-facing way. Teams can now control dropdown toggle icon behavior more precisely, including hiding the icon when needed and configuring icon appearance through theme options. In practice, this makes side navigation feel cleaner, more predictable, and easier to align with each app’s visual style across supported UI providers.
+Customization has also expanded in a user-facing way. Teams can now control dropdown toggle icon behavior more precisely, including hiding the icon when needed and configuring icon appearance through theme options. In practice, this makes side navigation feel cleaner, more predictable, and easier to align with each app's visual style across supported UI providers.
 
 ### PasswordStrength Component
 
