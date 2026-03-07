@@ -51,6 +51,16 @@ From an API perspective, **all existing Blazorise component APIs remain unchange
 
 With this release, Blazorise becomes **the first Blazor component library providing a Material 3–compliant design system**, offering a modern visual foundation for building Blazor applications going forward.
 
+## RichTextEdit Improvements
+
+This release brings several improvements to the **RichTextEdit** component, with a focus on cleaner pasted content and more flexible editor configuration.
+
+A notable addition is **`UseSanitizedPaste`**, which enables sanitization of pasted HTML so that only tags supported by the editor are preserved. This is especially useful when users paste content from external sources such as websites, office documents, or other editors, where the resulting markup often contains unsupported or unnecessary elements. By trimming pasted HTML to a supported set of tags, RichTextEdit helps maintain cleaner output, more consistent formatting, and better control over stored content.
+
+We have also added **per-component control over plugin loading**. Previously, plugin configuration was only available at the global level, which made it difficult to tailor editor behavior for different scenarios within the same application. With this release, plugins can now be configured individually for each RichTextEdit instance.
+
+This allows you to keep one editor minimal while enabling a richer plugin set in another, depending on the needs of each form or workflow.
+
 ### DataGrid Self Reference
 
 One of the most requested features is finally here. DataGrid Self Reference mode allows you to display hierarchical data structures directly within the DataGrid, enabling parent–child relationships from a single data source. Items can reference other items in the same collection (for example via ParentId → Id), allowing you to naturally represent structured data without reshaping or duplicating it.
