@@ -93,6 +93,14 @@ This release introduces `PasswordStrength`, a new password input component desig
 
 `PasswordStrength` is fully localizable and rule-driven, letting you configure requirements such as minimum length, uppercase, lowercase, numbers, special characters, and blocked/common password checks. The component also supports visual customization through dedicated classes and styles APIs, including configurable colors for the toggle button and rule states, and now relies on provider-specific addons validation behavior to ensure consistent rendering across UI providers without leaking provider-incompatible validation classes.
 
+## RangeSlider
+
+This release introduces `RangeSlider`, a new generic Blazorise input component for selecting a numeric range with two handles. It is built around a strongly typed `RangeSliderValue<TValue>`, making it easier to work with range values in a clear and type-safe way.
+
+`RangeSlider` includes support for `Min`, `Max`, and `Step`, along with optional **value tooltips** and **accessible handle labels** for improved usability. It also provides configurable behavior for how the two handles interact, including options such as `ClampToOtherHandle` and `AllowEqualValues`, with drag clamping to ensure smooth and predictable interaction while dragging.
+
+The component is fully integrated across supported Blazorise UI providers, with provider-specific styling and renderers, as well as theme color support for consistent visual integration with the rest of your application.
+
 ## Final Notes
 
 We are thrilled to bring you Blazorise 2.1 with so many new features and improvements. This release reflects our commitment to continuously enhancing the framework based on community feedback and evolving application needs.
