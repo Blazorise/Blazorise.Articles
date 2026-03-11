@@ -1,9 +1,39 @@
 {
   "version": 1,
-  "generatedAt": "2026-02-11T09:10:26.532Z",
-  "commit": "93887e36588d",
-  "count": 114,
+  "generatedAt": "2026-03-06T08:51:03.163Z",
+  "commit": "d85db8a49e21",
+  "count": 116,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-03-06-release-notes-202",
+      "slug": "202",
+      "permalink": "/news/release-notes/202",
+      "title": "Blazorise 2.0.2 - Accessibility and Stability Improvements",
+      "summary": "Blazorise 2.0.2 focuses on critical stability fixes, improved accessibility, better keyboard navigation, and several DataGrid and Tailwind theming corrections.",
+      "postedOn": "2026-03-06",
+      "category": "News",
+      "imageUrl": "img/v202.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
+    {
+      "root": "news",
+      "dir": "news/2026-02-24-release-notes-201",
+      "slug": "201",
+      "permalink": "/news/release-notes/201",
+      "title": "Blazorise 2.0.1 - First Stability Update for 2.0",
+      "summary": "Blazorise 2.0.1 delivers important fixes across NumericPicker, DatePicker, DataGrid, Collapse, and Charts, refining the 2.0 experience based on early production feedback.",
+      "postedOn": "2026-02-24",
+      "category": "News",
+      "imageUrl": "img/v201.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-02-11-release-notes-200",
