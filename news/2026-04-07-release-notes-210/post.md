@@ -93,13 +93,22 @@ This release introduces `PasswordStrength`, a new password input component desig
 
 `PasswordStrength` is fully localizable and rule-driven, letting you configure requirements such as minimum length, uppercase, lowercase, numbers, special characters, and blocked/common password checks. The component also supports visual customization through dedicated classes and styles APIs, including configurable colors for the toggle button and rule states, and now relies on provider-specific addons validation behavior to ensure consistent rendering across UI providers without leaking provider-incompatible validation classes.
 
-## RangeSlider
+## RangeSlider Component
 
 This release introduces `RangeSlider`, a new generic Blazorise input component for selecting a numeric range with two handles. It is built around a strongly typed `RangeSliderValue<TValue>`, making it easier to work with range values in a clear and type-safe way.
 
 `RangeSlider` includes support for `Min`, `Max`, and `Step`, along with optional **value tooltips** and **accessible handle labels** for improved usability. It also provides configurable behavior for how the two handles interact, including options such as `ClampToOtherHandle` and `AllowEqualValues`, with drag clamping to ensure smooth and predictable interaction while dragging.
 
 The component is fully integrated across supported Blazorise UI providers, with provider-specific styling and renderers, as well as theme color support for consistent visual integration with the rest of your application.
+
+## TransferList Improvements
+
+You can now define **custom Start and End captions**, allowing each side of the transfer list to better reflect the meaning of its contents in your specific workflow. This makes the component clearer in scenarios where the default labels are too generic or do not match the domain language of the application.
+
+We have also introduced **additional parameters for controlling visual and interaction details**, including options for configuring **icon names, icon sizes, and related UI elements**. These additions provide more flexibility when aligning TransferList with your application's design system or when fine-tuning the component for specific usability needs.
+
+Overall, these enhancements make TransferList more adaptable, easier to integrate into custom interfaces, and better suited for applications that require more control over component presentation.
+
 
 ## Final Notes
 
