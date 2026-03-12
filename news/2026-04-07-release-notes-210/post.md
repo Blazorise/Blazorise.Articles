@@ -93,7 +93,7 @@ This release introduces `PasswordStrength`, a new password input component desig
 
 `PasswordStrength` is fully localizable and rule-driven, letting you configure requirements such as minimum length, uppercase, lowercase, numbers, special characters, and blocked/common password checks. The component also supports visual customization through dedicated classes and styles APIs, including configurable colors for the toggle button and rule states, and now relies on provider-specific addons validation behavior to ensure consistent rendering across UI providers without leaking provider-incompatible validation classes.
 
-## RangeSlider Component
+### RangeSlider Component
 
 This release introduces `RangeSlider`, a new generic Blazorise input component for selecting a numeric range with two handles. It is built around a strongly typed `RangeSliderValue<TValue>`, making it easier to work with range values in a clear and type-safe way.
 
@@ -101,7 +101,7 @@ This release introduces `RangeSlider`, a new generic Blazorise input component f
 
 The component is fully integrated across supported Blazorise UI providers, with provider-specific styling and renderers, as well as theme color support for consistent visual integration with the rest of your application.
 
-## TransferList Improvements
+### TransferList Improvements
 
 You can now define **custom Start and End captions**, allowing each side of the transfer list to better reflect the meaning of its contents in your specific workflow. This makes the component clearer in scenarios where the default labels are too generic or do not match the domain language of the application.
 
@@ -109,6 +109,15 @@ We have also introduced **additional parameters for controlling visual and inter
 
 Overall, these enhancements make TransferList more adaptable, easier to integrate into custom interfaces, and better suited for applications that require more control over component presentation.
 
+### Field Accessibility Improvements
+
+This release improves **Field-based form accessibility** by automatically associating labels, help text, and validation metadata with the correct controls, reducing manual setup while producing more accessible markup by default.
+
+We added automatic `FieldLabel` linking for standard `Field` layouts, including automatic use of the HTML **`for`** attribute for labelable controls and `aria-labelledby` for non-labelable controls such as `ColorPicker`, `RadioGroup`, `RichTextEdit`, `Markdown`, and `SignaturePad`. We also introduced explicit `AriaLabelledBy` support and refactored ARIA handling to rely on resolved getters rather than mutable backing state, resulting in more predictable behavior.
+
+To give developers centralized control, this release adds `BlazoriseAccessibilityOptions` under `BlazoriseOptions`, with global switches for automatic `for`, `aria-labelledby`, `aria-invalid`, and `aria-describedby` behavior. These options are **enabled by default**.
+
+Automatic linking works best when a `Field` contains **one primary interactive control**. For custom or ambiguous layouts, explicit **`FieldLabel.For`** remains available.
 
 ## Final Notes
 
