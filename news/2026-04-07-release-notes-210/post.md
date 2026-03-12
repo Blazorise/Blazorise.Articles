@@ -119,6 +119,10 @@ To give developers centralized control, this release adds `BlazoriseAccessibilit
 
 Automatic linking works best when a `Field` contains **one primary interactive control**. For custom or ambiguous layouts, explicit **`FieldLabel.For`** remains available.
 
+### Scheduler Slot Styling
+
+Scheduler now supports custom slot styling through the new `SlotStylingTemplate` parameter. The template receives a `SchedulerSlotContext` with slot details such as `Start`, `End`, `Section`, and a mutable `SchedulerSlotStyling` object, allowing styles and classes to be applied dynamically per slot. This makes it easier to highlight working hours, unavailable periods, special dates, or other scheduler ranges across day, week, work-week, and month views without replacing the built-in slot rendering.
+
 ## Final Notes
 
 We are thrilled to bring you Blazorise 2.1 with so many new features and improvements. This release reflects our commitment to continuously enhancing the framework based on community feedback and evolving application needs.
