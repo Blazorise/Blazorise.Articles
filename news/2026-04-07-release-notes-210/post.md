@@ -123,6 +123,15 @@ Automatic linking works best when a `Field` contains **one primary interactive c
 
 Scheduler now supports custom slot styling through the new `SlotStylingTemplate` parameter. The template receives a `SchedulerSlotContext` with slot details such as `Start`, `End`, `Section`, and a mutable `SchedulerSlotStyling` object, allowing styles and classes to be applied dynamically per slot. This makes it easier to highlight working hours, unavailable periods, special dates, or other scheduler ranges across day, week, work-week, and month views without replacing the built-in slot rendering.
 
+### OneTimeInput
+
+A new component in **Blazorise.Components** designed for entering **one-time passwords (OTPs), verification codes, and other short grouped tokens**.
+
+`OneTimeInput` supports configurable slot counts through `Digits`, as well as custom visual grouping with `Group`, making it easy to adapt the component to different code formats and UX requirements. It also includes automatic focus movement while typing, multi-character paste distribution across slots, and keyboard navigation, providing a smooth and user-friendly input experience.
+
+The component is fully integrated with the standard **Blazorise validation pipeline**, making it straightforward to use in forms that require validation, feedback, and consistent behavior alongside other Blazorise inputs.
+
+
 ## Final Notes
 
 We are thrilled to bring you Blazorise 2.1 with so many new features and improvements. This release reflects our commitment to continuously enhancing the framework based on community feedback and evolving application needs.
