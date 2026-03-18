@@ -55,7 +55,7 @@ With this release, Blazorise becomes **the first Blazor component library provid
 
 This release brings several improvements to the **RichTextEdit** component, with a focus on cleaner pasted content and more flexible editor configuration.
 
-A notable addition is **`UseSanitizedPaste`**, which enables sanitization of pasted HTML so that only tags supported by the editor are preserved. This is especially useful when users paste content from external sources such as websites, office documents, or other editors, where the resulting markup often contains unsupported or unnecessary elements. By trimming pasted HTML to a supported set of tags, RichTextEdit helps maintain cleaner output, more consistent formatting, and better control over stored content.
+A notable addition is `UseSanitizedPaste`, which enables sanitization of pasted HTML so that only tags supported by the editor are preserved. This is especially useful when users paste content from external sources such as websites, office documents, or other editors, where the resulting markup often contains unsupported or unnecessary elements. By trimming pasted HTML to a supported set of tags, RichTextEdit helps maintain cleaner output, more consistent formatting, and better control over stored content.
 
 We have also added **per-component control over plugin loading**. Previously, plugin configuration was only available at the global level, which made it difficult to tailor editor behavior for different scenarios within the same application. With this release, plugins can now be configured individually for each RichTextEdit instance.
 
@@ -113,11 +113,11 @@ Overall, these enhancements make TransferList more adaptable, easier to integrat
 
 This release improves **Field-based form accessibility** by automatically associating labels, help text, and validation metadata with the correct controls, reducing manual setup while producing more accessible markup by default.
 
-We added automatic `FieldLabel` linking for standard `Field` layouts, including automatic use of the HTML **`for`** attribute for labelable controls and `aria-labelledby` for non-labelable controls such as `ColorPicker`, `RadioGroup`, `RichTextEdit`, `Markdown`, and `SignaturePad`. We also introduced explicit `AriaLabelledBy` support and refactored ARIA handling to rely on resolved getters rather than mutable backing state, resulting in more predictable behavior.
+We added automatic `FieldLabel` linking for standard `Field` layouts, including automatic use of the HTML `for` attribute for labelable controls and `aria-labelledby` for non-labelable controls such as `ColorPicker`, `RadioGroup`, `RichTextEdit`, `Markdown`, and `SignaturePad`. We also introduced explicit `AriaLabelledBy` support and refactored ARIA handling to rely on resolved getters rather than mutable backing state, resulting in more predictable behavior.
 
 To give developers centralized control, this release adds `BlazoriseAccessibilityOptions` under `BlazoriseOptions`, with global switches for automatic `for`, `aria-labelledby`, `aria-invalid`, and `aria-describedby` behavior. These options are **enabled by default**.
 
-Automatic linking works best when a `Field` contains **one primary interactive control**. For custom or ambiguous layouts, explicit **`FieldLabel.For`** remains available.
+Automatic linking works best when a `Field` contains **one primary interactive control**. For custom or ambiguous layouts, explicit `FieldLabel.For` remains available.
 
 ### Scheduler Slot Styling
 
@@ -131,6 +131,13 @@ A new component in **Blazorise.Components** designed for entering **one-time pas
 
 The component is fully integrated with the standard **Blazorise validation pipeline**, making it straightforward to use in forms that require validation, feedback, and consistent behavior alongside other Blazorise inputs.
 
+## Semantic Form Grouping
+
+This release adds support for **semantic form grouping** in Blazorise by allowing the existing `Field` and `Fields` components to opt into **grouped behavior**. When used in this mode, `FieldLabel` and `FieldsLabel` render a `legend`, making grouped scenarios such as **radio groups, checkbox groups, and multi-input sections** fit naturally into the existing Blazorise form API.
+
+This improves accessibility by integrating grouped labels with the current `aria-labelledby` behavior, allowing related controls to be associated more clearly with their group label. At the same time, `FieldSet` and `Legend` remain available as **standalone native wrappers**, so semantic HTML can still be used directly without inheriting `Field` or `FieldLabel` behavior.
+
+To support these scenarios, `FieldSet` and `Legend` include dedicated class-provider support for **horizontal layouts, validation states, required indicators, and screen reader styling**. This release also adds **documentation, demos, and test coverage** for the new grouped form patterns.
 
 ## Final Notes
 
