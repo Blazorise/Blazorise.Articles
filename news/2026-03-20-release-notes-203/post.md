@@ -22,7 +22,7 @@ This release not only resolves several issues around DataGrid filtering and inpu
 
 ### New Gantt Component
 
-Blazorise now includes a fully featured **Gantt component**, bringing powerful project planning and timeline visualization capabilities directly into the framework.
+Blazorise now includes a fully featured [Gantt component](docs/extensions/gantt), bringing powerful project planning and timeline visualization capabilities directly into the framework.
 
 ![Gantt Component](img/gantt.jpg)
 
@@ -30,7 +30,7 @@ This component was developed as part of the [Blazorise Custom Work program](http
 
 Through this program, companies can sponsor features or request custom development with clearly defined scope and delivery terms. When possible, sponsored work is generalized and contributed back to the core framework.
 
-Thanks to this collaboration, the Gantt component is now available to the entire community as part of the standard 2.0 release line.
+Thanks to this collaboration, the [Gantt component](docs/extensions/gantt) is now available to the entire community as part of the standard 2.0 release line.
 
 The Gantt component includes a wide range of features, including support for **editing, filtering, hierarchical tree structures, drag-and-drop interactions, and complex node relationships**. It is designed to handle real-world project management scenarios while staying consistent with Blazorise design principles and theming.
 
