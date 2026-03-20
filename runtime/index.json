@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-06T08:51:03.163Z",
-  "commit": "d85db8a49e21",
-  "count": 116,
+  "generatedAt": "2026-03-20T09:12:53.932Z",
+  "commit": "c51fa9a90c90",
+  "count": 117,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-03-20-release-notes-203",
+      "slug": "203",
+      "permalink": "/news/release-notes/203",
+      "title": "Blazorise 2.0.3 - Introducing the New Gantt Component",
+      "summary": "Blazorise 2.0.3 introduces a powerful new Gantt component along with improvements to DataGrid filtering and MemoInput behavior.",
+      "postedOn": "2026-03-20",
+      "category": "News",
+      "imageUrl": "img/v203.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-03-06-release-notes-202",
