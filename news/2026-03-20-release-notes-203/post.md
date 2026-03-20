@@ -26,7 +26,7 @@ Blazorise now includes a fully featured [Gantt component](docs/extensions/gantt)
 
 ![Gantt Component](img/gantt.jpg)
 
-This component was developed as part of the [Blazorise Custom Work program](https://blazorise.com/custom-work "Link to Blazorise Custom Work").
+This component was developed as part of the [Blazorise Custom Work program](custom-work "Link to Blazorise Custom Work").
 
 Through this program, companies can sponsor features or request custom development with clearly defined scope and delivery terms. When possible, sponsored work is generalized and contributed back to the core framework.
 
@@ -67,8 +67,8 @@ Simply update your NuGet packages to version **2.0.3**. No breaking changes or m
 
 Blazorise continues to grow thanks to community contributions and customer support. The introduction of the Gantt component highlights how collaboration and custom development efforts can benefit the entire ecosystem.
 
-If your organization needs custom components or features, explore the [Blazorise Custom Work program](https://blazorise.com/custom-work "Link to Blazorise Custom Work").
+If your organization needs custom components or features, explore the [Blazorise Custom Work program](custom-work "Link to Blazorise Custom Work").
 
-For commercial licensing and continued support of the project [Blazorise Commercial](https://blazorise.com/pricing "Link to Blazorise Commercial").
+For commercial licensing and continued support of the project [Blazorise Commercial](pricing "Link to Blazorise Commercial").
 
 Your support helps ensure the continued evolution of Blazorise for modern .NET applications.
