@@ -21,7 +21,8 @@ Blazorise 2.1, codenamed **Mosor** after the majestic mountain range in Croatia,
 
 Below is an overview of the most important additions and changes in this release:
 
-- **Material 3**: New design system provider.
+- **Material 3 Provider**: New design system based on Google Material 3 design system.
+- **AntDesign v6 Provider**: Major modernization for visuals, theming, and component behavior.
 - **DataGrid Self Reference**: Show hierarchical data inside of DataGrid.
 - **PdfViewer**: Now Supports Password-Protected PDFs.
 - **BarDropdownToggle**: Combined link and toggle.
@@ -37,7 +38,7 @@ Blazorise should work without any major breaking changes to the API.
 
 ## New Features & Enhancements 🚀
 
-## Material 3 Provider (New)
+### Material 3 Provider (New)
 
 Blazorise now introduces a **Material 3 design system provider**, bringing support for Google's latest Material design guidelines to the framework.
 
@@ -51,7 +52,13 @@ From an API perspective, **all existing Blazorise component APIs remain unchange
 
 With this release, Blazorise becomes **the first Blazor component library providing a Material 3–compliant design system**, offering a modern visual foundation for building Blazor applications going forward.
 
-## RichTextEdit Improvements
+### AntDesign v6 Provider
+
+This release brings a major modernization of the **Blazorise.AntDesign** provider, aligning it more closely with the structure, styling, and behavior of modern **Ant Design v6**. Large parts of the provider were updated from older v4-era assumptions to newer markup, classes, and **CSS variable token-based styling**, resulting in a more accurate Ant Design look and feel across the component library.
+
+The update includes broad improvements across buttons, sliders, navigation, forms, tables, popups, and responsive layouts. Styling now relies more on native **Ant Design CSS variables** and less on legacy Sass theme maps, making runtime theming more consistent and maintainable. Alongside the visual refresh, this release also delivers many fixes and usability improvements in areas such as validation, overlays, mobile behavior, menus, and component interaction polish.
+
+### RichTextEdit Improvements
 
 This release brings several improvements to the **RichTextEdit** component, with a focus on cleaner pasted content and more flexible editor configuration.
 
