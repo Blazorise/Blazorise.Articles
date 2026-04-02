@@ -138,13 +138,21 @@ A new component in **Blazorise.Components** designed for entering **one-time pas
 
 The component is fully integrated with the standard **Blazorise validation pipeline**, making it straightforward to use in forms that require validation, feedback, and consistent behavior alongside other Blazorise inputs.
 
-## Semantic Form Grouping
+### Semantic Form Grouping
 
 This release adds support for **semantic form grouping** in Blazorise by allowing the existing `Field` and `Fields` components to opt into **grouped behavior**. When used in this mode, `FieldLabel` and `FieldsLabel` render a `legend`, making grouped scenarios such as **radio groups, checkbox groups, and multi-input sections** fit naturally into the existing Blazorise form API.
 
 This improves accessibility by integrating grouped labels with the current `aria-labelledby` behavior, allowing related controls to be associated more clearly with their group label. At the same time, `FieldSet` and `Legend` remain available as **standalone native wrappers**, so semantic HTML can still be used directly without inheriting `Field` or `FieldLabel` behavior.
 
 To support these scenarios, `FieldSet` and `Legend` include dedicated class-provider support for **horizontal layouts, validation states, required indicators, and screen reader styling**. This release also adds **documentation, demos, and test coverage** for the new grouped form patterns.
+
+### Responsive Breakpoint Service
+
+This release introduces a new **shared responsive breakpoint service**, providing a centralized and reusable way to handle runtime breakpoint detection across Blazorise.
+
+Previously, responsive behavior relied on component-specific logic and interop. With this update, breakpoint detection is now standardized, allowing any component to react to viewport changes without duplicating logic. A new `BreakpointObserver` component also enables a declarative approach to rendering content based on active breakpoints.
+
+Breakpoint handling is now aligned with each provider's actual breakpoint definitions instead of shared hardcoded values, ensuring consistent behavior across layouts.
 
 ## Final Notes
 
