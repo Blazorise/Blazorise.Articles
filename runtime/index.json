@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-20T12:18:18.973Z",
-  "commit": "4794be19cdd9",
-  "count": 117,
+  "generatedAt": "2026-04-03T07:09:36.844Z",
+  "commit": "055227b4f9cb",
+  "count": 118,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-04-03-release-notes-204",
+      "slug": "204",
+      "permalink": "/news/release-notes/204",
+      "title": "Blazorise 2.0.4 - Usability and Stability Improvements",
+      "summary": "Blazorise 2.0.4 brings improvements to DataGrid keyboard navigation, fixes Select value handling, and resolves multiple issues across components and providers.",
+      "postedOn": "2026-04-03",
+      "category": "News",
+      "imageUrl": "img/v204.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-03-20-release-notes-203",
