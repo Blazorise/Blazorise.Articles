@@ -34,6 +34,19 @@ Upgrading your application is straightforward, just follow these steps:
 
 Update all **Blazorise.*** package references to **2.1**.
 
+```cs
+<PackageVersion Include="Blazorise" Version="2.0.4" />
+<PackageVersion Include="Blazorise.Bootstrap5" Version="2.0.4" />
+```
+
+change to
+
+
+```cs
+<PackageVersion Include="Blazorise" Version="2.1.0" />
+<PackageVersion Include="Blazorise.Bootstrap5" Version="2.1.0" />
+```
+
 Blazorise should work without any major breaking changes to the API.
 
 ## New Features & Enhancements 🚀
@@ -42,19 +55,23 @@ Blazorise should work without any major breaking changes to the API.
 
 With this release, Blazorise introduces a **Material 3 design system provider**, adding support for Google's latest design guidelines.
 
-This new provider replaces the legacy **Material theme that was previously built on Bootstrap 4**. That implementation had been unmaintained for several years and had fallen behind both the Blazorise ecosystem and modern design standards. While we initially considered keeping it for compatibility, maintaining it alongside the rest of the framework proved impractical. The new provider ensures a modern, sustainable Material implementation moving forward.
+![Material 3 Provider](img/material.png)
 
-Development originally started using **BeerCSS** as a foundation. It provided a promising base for quickly experimenting with Material 3 styling and component structure. However, as we began integrating it into real-world applications, its limitations became apparent. Larger applications require consistent layout behavior, predictable spacing, and a broader set of UI components. In practice we encountered issues such as inconsistent placements, spacing differences, and missing components needed for production scenarios.
+This new provider replaces the legacy **Material CSS framework that was previously built on Bootstrap 4**. That implementation had been unmaintained for several years and had fallen behind both the Blazorise ecosystem and modern design standards. While we initially considered keeping it for compatibility, maintaining it alongside the rest of the framework proved impractical. The new provider ensures a modern, sustainable Material implementation moving forward.
+
+Development originally started using [BeerCSS]() as a foundation. It provided a promising base for quickly experimenting with Material 3 styling and component structure. However, as we began integrating it into real-world applications, its limitations became apparent. Larger applications require consistent layout behavior, predictable spacing, and a broader set of UI components. In practice we encountered issues such as inconsistent placements, spacing differences, and missing components needed for production scenarios.
 
 As a result, Blazorise significantly extends that foundation. The new provider introduces **many custom CSS rules and layout adjustments** to ensure consistent behavior across components, as well as **additional components not present in BeerCSS**. In practice, the Material 3 provider should be considered a **full Blazorise implementation of the Material 3 design system**, rather than a simple wrapper around an external library.
 
 From an API perspective, **all existing Blazorise component APIs remain unchanged**. Applications using Blazorise components will continue to work the same way from a code standpoint. However, if your project relied on **custom CSS targeting the previous Bootstrap-based Material styles**, those overrides will likely need to be updated to match the new structure.
 
-With this release, Blazorise becomes **the first Blazor component library providing a Material 3–compliant design system**, offering a modern visual foundation for building Blazor applications going forward.
+With this release, Blazorise becomes **the first Blazor component library providing a Material 3-compliant design system**, offering a modern visual foundation for building Blazor applications going forward.
 
 ### AntDesign v6 Provider
 
-In this update, the **Blazorise.AntDesign** provider has been significantly modernized, aligning it more closely with the structure, styling, and behavior of modern **Ant Design v6**. Large parts of the provider were updated from older v4-era assumptions to newer markup, classes, and **CSS variable token-based styling**, resulting in a more accurate Ant Design look and feel across the component library.
+In this update, the **Blazorise.AntDesign** provider has been significantly modernized, aligning it more closely with the structure, styling, and behavior of modern **Ant Design v6**. Large parts of the provider were updated from older **v4**-era assumptions to newer markup, classes, and **CSS variable token-based styling**, resulting in a more accurate Ant Design look and feel across the component library.
+
+![Material 3 Provider](img/ant-design.png)
 
 The update includes broad improvements across buttons, sliders, navigation, forms, tables, popups, and responsive layouts. Styling now relies more on native **Ant Design CSS variables** and less on legacy Sass theme maps, making runtime theming more consistent and maintainable. Alongside the visual refresh, this release also delivers many fixes and usability improvements in areas such as validation, overlays, mobile behavior, menus, and component interaction polish.
 
@@ -70,7 +87,9 @@ This allows you to keep one editor minimal while enabling a richer plugin set in
 
 ### DataGrid Self Reference
 
-A highly requested feature has finally arrived. DataGrid Self Reference mode allows you to display hierarchical data structures directly within the DataGrid, enabling parent–child relationships from a single data source. Items can reference other items in the same collection (for example via ParentId → Id), allowing you to naturally represent structured data without reshaping or duplicating it.
+A highly requested feature has finally arrived. DataGrid Self Reference mode allows you to display hierarchical data structures directly within the DataGrid, enabling parent-child relationships from a single data source. Items can reference other items in the same collection (for example via ParentId → Id), allowing you to naturally represent structured data without reshaping or duplicating it.
+
+![DataGrid Self Reference](img/datagrid-self-reference.png)
 
 This makes it possible to build rich hierarchical interfaces similar to a Tree View, but with the full power of a table. You can combine expandable tree-like rows with standard DataGrid capabilities such as sorting, filtering, templating, editing, and paging, delivering both clarity and flexibility in one unified component.
 
@@ -79,6 +98,8 @@ With Self Reference mode, hierarchical data becomes a first-class DataGrid scena
 ### PdfViewer Password Prompt
 
 The Blazorise `PdfViewer` now allows password-protected PDFs to be opened directly within the app. When an encrypted file is loaded, the viewer detects that a password is required and triggers a password request flow instead of failing silently. By default, this flow uses `ModalService` to show a built-in prompt, allowing end users to enter the password and continue reading the document without leaving the current workflow.
+
+![PdfViewer Password Prompt](img/pdf-viewer-pass.png)
 
 For teams that need custom UX, the feature also includes an extensibility API so developers can handle password requests with their own dialog or interaction pattern, while still using the same secure loading pipeline. We also added prompt validation and localization-ready text support through `PasswordPromptOptions`, so labels and messages can match your app language and style. Full usage examples and API details are available in the [PdfViewer documentation](docs/extensions/pdfviewer).
 
@@ -98,11 +119,15 @@ Customization has also expanded in a user-facing way. Teams can now control drop
 
 A new component, `PasswordStrength`, has been introduced to help users create stronger passwords in real time. It behaves like a standard text input while adding live strength scoring, rule-by-rule guidance, optional show/hide password toggle, and seamless integration with Blazorise validation flows so error and success feedback appear where users expect them.
 
+![PasswordStrength Component](img/password-strength.png)
+
 `PasswordStrength` is fully localizable and rule-driven, letting you configure requirements such as minimum length, uppercase, lowercase, numbers, special characters, and blocked/common password checks. The component also supports visual customization through dedicated classes and styles APIs, including configurable colors for the toggle button and rule states, and now relies on provider-specific addons validation behavior to ensure consistent rendering across UI providers without leaking provider-incompatible validation classes.
 
 ### RangeSlider Component
 
 `RangeSlider` is a new generic input component for selecting numeric ranges using two handles. It is built around a strongly typed `RangeSliderValue<TValue>`, making it easier to work with range values in a clear and type-safe way.
+
+![RangeSlider Component](img/range-slider.png)
 
 `RangeSlider` includes support for `Min`, `Max`, and `Step`, along with optional **value tooltips** and **accessible handle labels** for improved usability. It also provides configurable behavior for how the two handles interact, including options such as `ClampToOtherHandle` and `AllowEqualValues`, with drag clamping to ensure smooth and predictable interaction while dragging.
 
@@ -130,9 +155,11 @@ Automatic linking works best when a `Field` contains **one primary interactive c
 
 Custom slot styling is now supported in Scheduler through the new `SlotStylingTemplate` parameter. The template receives a `SchedulerSlotContext` with slot details such as `Start`, `End`, `Section`, and a mutable `SchedulerSlotStyling` object, allowing styles and classes to be applied dynamically per slot. This makes it easier to highlight working hours, unavailable periods, special dates, or other scheduler ranges across day, week, work-week, and month views without replacing the built-in slot rendering.
 
-### OneTimeInput
+### OneTimeInput Component
 
 Introducing a new component in **Blazorise.Components** for entering **one-time passwords (OTPs), verification codes, and other grouped tokens**.
+
+![OneTimeInput Component](img/one-time.png)
 
 `OneTimeInput` supports configurable slot counts through `Digits`, as well as custom visual grouping with `Group`, making it easy to adapt the component to different code formats and UX requirements. It also includes automatic focus movement while typing, multi-character paste distribution across slots, and keyboard navigation, providing a smooth and user-friendly input experience.
 
