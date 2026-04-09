@@ -8,7 +8,7 @@ image-title: Announcing Blazorise 2.1 - Mosor
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: News
-posted-on: 2026-04-07
+posted-on: 2026-04-15
 read-time: 8 min
 pinned: true
 ---
