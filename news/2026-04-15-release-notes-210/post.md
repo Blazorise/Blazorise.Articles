@@ -87,6 +87,8 @@ Alongside the visual refresh, this release also delivers many fixes and usabilit
 
 This release introduces two brand new icon packages: **Blazorise.Icons.AntDesign** and **Blazorise.Icons.Lucide**.
 
+![Icons](img/icons.png)
+
 Both packages are implemented using **SVG-based icons**, offering improved rendering quality, better scalability, and more flexibility compared to existing icon providers that rely on CSS-based approaches. This makes them more suitable for modern UI scenarios where crisp visuals and customization are important.
 
 These packages expand the available icon options in Blazorise while aligning with widely used icon sets from the Ant Design and Lucide ecosystems.
