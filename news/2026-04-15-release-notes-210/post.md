@@ -15,9 +15,9 @@ pinned: true
 
 # Blazorise 2.1 - Release Notes
 
-Codenamed **Mosor**, after the Croatian mountain range, Blazorise 2.1 is a major release bringing a wide range of new features, refinements, and performance improvements. This is also **one of the largest releases in Blazorise history**, both in terms of the amount of work delivered and the scope of changes across the framework.
+Codenamed **Mosor**, after the Croatian mountain range next to our hometown, Split, **Blazorise 2.1** is a major release packed with new features, refinements, and performance boosts. It's also one of our biggest updates yet, both in terms of what's new and how much the framework has evolved.
 
-It introduces **new design system providers**, several **new components**, and significant improvements to existing ones, along with deeper alignment to modern UI standards and better long-term maintainability.
+You'll find **new design system providers**, several all-**new components**, and big improvements to the ones you already know. We've also made sure everything lines up with modern UI standards and is easier to maintain for the long haul.
 
 ## Key Blazorise 2.1 Highlights 💡
 
@@ -32,7 +32,7 @@ Here are some of the most notable additions and updates:
 
 ## Upgrading from 2.0.x to 2.1 👨‍🔧
 
-Upgrading your application is straightforward:
+Upgrading your application is simple:
 
 Update all **Blazorise.*** package references to **2.1**.
 
@@ -210,7 +210,7 @@ For usage details and examples, see the [BreakpointObserver documentation](docs/
 
 ## Final Notes
 
-Blazorise 2.1 is one of the most extensive releases we've delivered so far, bringing together new providers, new components, and meaningful improvements across the entire framework.
+Blazorise 2.1 is one of our most extensive releases yet, bringing together new providers, new components, and meaningful improvements throughout the framework.
 
 This release reflects a strong focus on **modernization, consistency, and long-term maintainability**. From the introduction of Material 3 and the AntDesign v6 overhaul, to new building blocks like `RangeSlider` and `OneTimeInput`, and improvements in accessibility and responsive behavior, Blazorise continues to evolve to meet real-world application needs.
 
