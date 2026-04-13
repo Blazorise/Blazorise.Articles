@@ -210,6 +210,8 @@ Previously, responsive behavior relied on component-specific logic and interop. 
 
 Breakpoint handling is now aligned with each provider's actual breakpoint definitions instead of shared hardcoded values, ensuring consistent behavior across layouts.
 
+For usage details and examples, see the [BreakpointObserver documentation](docs/components/breakpoint-observer).
+
 ## Final Notes
 
 We're excited to share Blazorise 2.1, packed with new features and improvements. This release reflects our commitment to continuously enhancing the framework based on community feedback and evolving application needs.
