@@ -47,7 +47,9 @@ change to
 <PackageVersion Include="Blazorise.Bootstrap5" Version="2.1.0" />
 ```
 
-Blazorise should work without any major breaking changes to the API.
+Most Blazorise component APIs remain unchanged, but this release includes small provider-level breaking changes for apps that depend on old Material or AntDesign assets, icon setup, or custom provider CSS internals.
+
+> Migration notes: [news/migration/210](news/migration/210)
 
 ## New Features & Enhancements 🚀
 
