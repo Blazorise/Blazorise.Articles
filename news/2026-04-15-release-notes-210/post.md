@@ -76,7 +76,7 @@ From an API perspective, **all existing Blazorise component APIs remain unchange
 
 With this release, Blazorise becomes **the first Blazor component library providing a Material 3-compliant design system**, offering a modern visual foundation for building Blazor applications going forward.
 
-### AntDesign v6 Provider
+### AntDesign v6 Provider (New)
 
 In this update, the **Blazorise.AntDesign** provider has been significantly modernized, aligning it more closely with the structure, styling, and behavior of modern **Ant Design v6**. Large parts of the provider were updated from older **v4**-era assumptions to newer markup, classes, and **CSS variable token-based styling**, resulting in a more accurate Ant Design look and feel across the component library.
 
@@ -92,7 +92,7 @@ Blazorise 2.1 also introduces a native **Blazorise.Icons.AntDesign** package. Ne
 
 Alongside the visual refresh, this release also delivers many fixes and usability improvements in areas such as validation, overlays, mobile behavior, menus, and component interaction polish.
 
-### New Icon Packages
+### Icon Packages (New)
 
 This release introduces two brand new icon packages: **Blazorise.Icons.AntDesign** and **Blazorise.Icons.Lucide**.
 
@@ -144,7 +144,7 @@ Sidebar and nested navigation are now smoother thanks to improvements in `BarDro
 
 Customization has also expanded in a user-facing way. Teams can now control dropdown toggle icon behavior more precisely, including hiding the icon when needed and configuring icon appearance through theme options. In practice, this makes side navigation feel cleaner, more predictable, and easier to align with each app's visual style across supported UI providers.
 
-### PasswordStrength Component
+### PasswordStrength Component (New)
 
 A new component, `PasswordStrength`, has been introduced to help users create stronger passwords in real time. It behaves like a standard text input while adding live strength scoring, rule-by-rule guidance, optional show/hide password toggle, and seamless integration with Blazorise validation flows so error and success feedback appear where users expect them.
 
@@ -152,7 +152,7 @@ A new component, `PasswordStrength`, has been introduced to help users create st
 
 `PasswordStrength` is fully localizable and rule-driven, letting you configure requirements such as minimum length, uppercase, lowercase, numbers, special characters, and blocked/common password checks. The component also supports visual customization through dedicated classes and styles APIs, including configurable colors for the toggle button and rule states, and now relies on provider-specific addons validation behavior to ensure consistent rendering across UI providers without leaking provider-incompatible validation classes.
 
-### RangeSlider Component
+### RangeSlider Component (New)
 
 `RangeSlider` is a new generic input component for selecting numeric ranges using two handles. It is built around a strongly typed `RangeSliderValue<TValue>`, making it easier to work with range values in a clear and type-safe way.
 
