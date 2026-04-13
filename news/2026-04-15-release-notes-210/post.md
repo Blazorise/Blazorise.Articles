@@ -214,4 +214,12 @@ For usage details and examples, see the [BreakpointObserver documentation](docs/
 
 ## Final Notes
 
-We're excited to share Blazorise 2.1, packed with new features and improvements. This release reflects our commitment to continuously enhancing the framework based on community feedback and evolving application needs.
+Blazorise 2.1 is one of the most extensive releases we've delivered so far, bringing together new providers, new components, and meaningful improvements across the entire framework.
+
+This release reflects a strong focus on **modernization, consistency, and long-term maintainability**. From the introduction of Material 3 and the AntDesign v6 overhaul, to new building blocks like `RangeSlider` and `OneTimeInput`, and improvements in accessibility and responsive behavior, Blazorise continues to evolve to meet real-world application needs.
+
+As always, we encourage you to review the migration notes, explore the updated documentation, and try out the new features in your projects.
+
+If you need help integrating Blazorise into your application or require custom components and features, you can learn more about our **custom development services** here: [https://blazorise.com/custom-work](https://blazorise.com/custom-work)
+
+Thank you for being part of the Blazorise community ❤️
