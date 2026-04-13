@@ -14,13 +14,13 @@ read-time: 5 min
 
 # Migrating Material and AntDesign Provider Assets in Blazorise 2.1
 
-These notes cover the provider setup, static asset, icon package, and styling migration changes introduced with the Blazorise 2.1 Material and AntDesign providers.
+This guide will help you smoothly transition your Blazorise app to version 2.1, focusing on updates to the Material and AntDesign providers. We’ll walk through what’s changed, what you need to check, and how to update your assets, icons, and styles with minimal headaches.
 
-These are semi-breaking changes mainly for applications that still reference old provider assets, old icon setup, or custom CSS targeting provider internals. They are not general Blazorise API breaking changes for most applications.
+Most users won’t notice major changes, but if your app still relies on old provider files, icons, or custom CSS that digs into provider internals, you’ll need to make some updates. For most projects, the Blazorise APIs themselves haven’t changed, so you shouldn’t run into major breakage.
 
 ## Summary
 
-Review your application if it depends on any of the following:
+You should double-check your app if you use any of the following:
 
 - Old Material framework CSS or JavaScript files.
 - jQuery, Popper, or Bootstrap JavaScript references that were included only for the old Material provider.
