@@ -13,10 +13,6 @@ read-time: 12 min
 pinned: true
 ---
 
-Here's a cleaner, slightly more polished rephrasing while keeping the same structure and tone:
-
----
-
 # Blazorise 2.1 - Release Notes
 
 Codenamed **Mosor**, after the Croatian mountain range, Blazorise 2.1 is a major release bringing a wide range of new features, refinements, and performance improvements. This is also **one of the largest releases in Blazorise history**, both in terms of the amount of work delivered and the scope of changes across the framework.
