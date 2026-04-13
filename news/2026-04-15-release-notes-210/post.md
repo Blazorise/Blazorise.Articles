@@ -83,6 +83,16 @@ Blazorise 2.1 also introduces a native **Blazorise.Icons.AntDesign** package. Ne
 
 Alongside the visual refresh, this release also delivers many fixes and usability improvements in areas such as validation, overlays, mobile behavior, menus, and component interaction polish.
 
+### New Icon Packages
+
+This release introduces two brand new icon packages: **Blazorise.Icons.AntDesign** and **Blazorise.Icons.Lucide**.
+
+Both packages are implemented using **SVG-based icons**, offering improved rendering quality, better scalability, and more flexibility compared to existing icon providers that rely on CSS-based approaches. This makes them more suitable for modern UI scenarios where crisp visuals and customization are important.
+
+These packages expand the available icon options in Blazorise while aligning with widely used icon sets from the Ant Design and Lucide ecosystems.
+
+Usage details and integration examples are available in the updated [docs/extensions/icons](Icons documentation page).
+
 ### RichTextEdit Improvements
 
 The **RichTextEdit** component receives several enhancements in this release, with a focus on cleaner pasted content and more flexible editor configuration.
