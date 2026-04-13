@@ -9,28 +9,34 @@ author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: News
 posted-on: 2026-04-15
-read-time: 8 min
+read-time: 12 min
 pinned: true
+---
+
+Here's a cleaner, slightly more polished rephrasing while keeping the same structure and tone:
+
 ---
 
 # Blazorise 2.1 - Release Notes
 
-Codenamed **Mosor** after the Croatian mountain range, Blazorise 2.1 delivers a major update packed with new features, refinements, and performance improvements.
+Codenamed **Mosor**, after the Croatian mountain range, Blazorise 2.1 is a major release bringing a wide range of new features, refinements, and performance improvements. This is also **one of the largest releases in Blazorise history**, both in terms of the amount of work delivered and the scope of changes across the framework.
+
+It introduces **new design system providers**, several **new components**, and significant improvements to existing ones, along with deeper alignment to modern UI standards and better long-term maintainability.
 
 ## Key Blazorise 2.1 Highlights 💡
 
-Here's a quick overview of the most notable additions and changes:
+Here are some of the most notable additions and updates:
 
-- **Material 3 Provider**: New design system based on Google Material 3 design system.
-- **AntDesign v6 Provider**: Major modernization for visuals, theming, and component behavior.
-- **DataGrid Self Reference**: Show hierarchical data inside of DataGrid.
-- **PdfViewer**: Now Supports Password-Protected PDFs.
-- **BarDropdownToggle**: Combined link and toggle.
-- **PasswordStrength**: For detailed password UX.
+- **Material 3 Provider**: A new design system based on Google's Material 3 guidelines.
+- **AntDesign v6 Provider**: Significant modernization of visuals, theming, and component behavior.
+- **DataGrid Self Reference**: Display hierarchical data directly within the DataGrid.
+- **PdfViewer**: Now supports password-protected PDFs.
+- **BarDropdownToggle**: Combines navigation link and dropdown toggle into a single component.
+- **PasswordStrength**: Enhanced password input with real-time strength feedback.
 
 ## Upgrading from 2.0.x to 2.1 👨‍🔧
 
-Upgrading your application is straightforward, just follow these steps:
+Upgrading your application is straightforward:
 
 Update all **Blazorise.*** package references to **2.1**.
 
@@ -39,15 +45,14 @@ Update all **Blazorise.*** package references to **2.1**.
 <PackageVersion Include="Blazorise.Bootstrap5" Version="2.0.4" />
 ```
 
-change to
-
+Change to:
 
 ```cs
 <PackageVersion Include="Blazorise" Version="2.1.0" />
 <PackageVersion Include="Blazorise.Bootstrap5" Version="2.1.0" />
 ```
 
-Most Blazorise component APIs remain unchanged, but this release includes small provider-level breaking changes for apps that depend on old Material or AntDesign assets, icon setup, or custom provider CSS internals.
+Most Blazorise component APIs remain unchanged. However, this release includes minor provider-level breaking changes, particularly for applications relying on the legacy Material or AntDesign implementations, custom provider CSS, or older icon setups.
 
 > Migration notes: [news/migration/210](news/migration/210)
 
