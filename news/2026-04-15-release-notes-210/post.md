@@ -73,9 +73,15 @@ With this release, Blazorise becomes **the first Blazor component library provid
 
 In this update, the **Blazorise.AntDesign** provider has been significantly modernized, aligning it more closely with the structure, styling, and behavior of modern **Ant Design v6**. Large parts of the provider were updated from older **v4**-era assumptions to newer markup, classes, and **CSS variable token-based styling**, resulting in a more accurate Ant Design look and feel across the component library.
 
-![Material 3 Provider](img/ant-design.png)
+![AntDesign v6 Provider](img/ant-design.png)
 
-The update includes broad improvements across buttons, sliders, navigation, forms, tables, popups, and responsive layouts. Styling now relies more on native **Ant Design CSS variables** and less on legacy Sass theme maps, making runtime theming more consistent and maintainable. Alongside the visual refresh, this release also delivers many fixes and usability improvements in areas such as validation, overlays, mobile behavior, menus, and component interaction polish.
+The provider now ships the required Ant Design styles directly through Blazorise. Applications should use the bundled `_content/Blazorise.AntDesign/antd.css` file instead of older external Ant Design v4 CDN stylesheets such as `antd.min.css`.
+
+The update includes broad improvements across buttons, sliders, navigation, forms, tables, popups, and responsive layouts. Styling now relies more on native **Ant Design CSS variables** and less on legacy Sass theme maps, making runtime theming more consistent and maintainable. Custom CSS that targets Ant Design v4 selectors, DOM assumptions, or old token names may need review.
+
+Blazorise 2.1 also introduces a native **Blazorise.Icons.AntDesign** package. New AntDesign apps should prefer `.AddAntDesignIcons()` and `_content/Blazorise.Icons.AntDesign/blazorise.icons.antdesign.css` for the current provider-default icon look. Existing apps that intentionally use FontAwesome can keep it, but should review any `FontAwesomeIcons.*` usage or custom FontAwesome class names before switching.
+
+Alongside the visual refresh, this release also delivers many fixes and usability improvements in areas such as validation, overlays, mobile behavior, menus, and component interaction polish.
 
 ### RichTextEdit Improvements
 
