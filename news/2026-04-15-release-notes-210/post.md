@@ -59,6 +59,8 @@ With this release, Blazorise introduces a **Material 3 design system provider**,
 
 ![Material 3 Provider](img/material.png)
 
+You can see the new Material 3 provider in action in the [Material demo](https://demos.blazorise.com/wasm/material/).
+
 This new provider replaces the legacy **Material CSS framework that was previously built on Bootstrap 4**. That implementation had been unmaintained for several years and had fallen behind both the Blazorise ecosystem and modern design standards. While we initially considered keeping it for compatibility, maintaining it alongside the rest of the framework proved impractical. The new provider ensures a modern, sustainable Material implementation moving forward.
 
 Development originally started using [BeerCSS]() as a foundation. It provided a promising base for quickly experimenting with Material 3 styling and component structure. However, as we began integrating it into real-world applications, its limitations became apparent. Larger applications require consistent layout behavior, predictable spacing, and a broader set of UI components. In practice we encountered issues such as inconsistent placements, spacing differences, and missing components needed for production scenarios.
@@ -74,6 +76,8 @@ With this release, Blazorise becomes **the first Blazor component library provid
 In this update, the **Blazorise.AntDesign** provider has been significantly modernized, aligning it more closely with the structure, styling, and behavior of modern **Ant Design v6**. Large parts of the provider were updated from older **v4**-era assumptions to newer markup, classes, and **CSS variable token-based styling**, resulting in a more accurate Ant Design look and feel across the component library.
 
 ![AntDesign v6 Provider](img/ant-design.png)
+
+You can see the new AntDesign v6 provider in action in the [AntDesign demo](https://demos.blazorise.com/wasm/antdesign/).
 
 The provider now ships the required Ant Design styles directly through Blazorise. Applications should use the bundled `_content/Blazorise.AntDesign/antd.css` file instead of older external Ant Design v4 CDN stylesheets such as `antd.min.css`.
 
