@@ -25,6 +25,7 @@ Here are some of the most notable additions and updates:
 
 - **Material 3 Provider**: A new design system based on Google's Material 3 guidelines.
 - **AntDesign v6 Provider**: Significant modernization of visuals, theming, and component behavior.
+- **Blazorise Maps**: New provider-neutral maps extension with markers, shapes, and interactive features.
 - **DataGrid Self Reference**: Display hierarchical data directly within the DataGrid.
 - **PdfViewer**: Now supports password-protected PDFs.
 - **BarDropdownToggle**: Combines navigation link and dropdown toggle into a single component.
@@ -99,6 +100,18 @@ Both packages are implemented using **SVG-based icons**, offering improved rende
 These packages expand the available icon options in Blazorise while aligning with widely used icon sets from the Ant Design and Lucide ecosystems.
 
 Usage details and integration examples are available in the updated [docs/extensions/icons](Icons documentation page).
+
+### Maps Component (New)
+
+Blazorise 2.1 introduces **Blazorise.Maps**, a new extension for building **interactive maps** using a provider-neutral component model.
+
+![Maps Component](img/maps.png)
+
+The first implementation is powered by **Leaflet**, while the public API remains fully abstracted around Blazorise concepts such as maps, layers, markers, and shapes. This keeps applications independent of the underlying provider and allows additional providers to be supported in the future.
+
+The extension includes core components like `Map`, `MapTileLayer`, `MapMarker`, and `MapMarkerLayer<TItem>` for data-driven markers, along with shape components such as `MapCircle`, `MapPolyline`, and `MapPolygon`. It also supports common map features including events, programmatic navigation, and dynamic synchronization between the bound view and the rendered map.
+
+This feature was **completed just in time for the final release**, and includes documentation, demos, and practical examples to help you get started quickly.
 
 ### RichTextEdit Improvements
 
