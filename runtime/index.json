@@ -1,9 +1,39 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-03T07:09:36.844Z",
-  "commit": "055227b4f9cb",
-  "count": 118,
+  "generatedAt": "2026-04-15T07:09:30.193Z",
+  "commit": "5f22116fa7ff",
+  "count": 120,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-04-15-release-notes-210",
+      "slug": "210",
+      "permalink": "/news/release-notes/210",
+      "title": "Announcing Blazorise 2.1 - Mosor",
+      "summary": "Blazorise 2.1, codenamed Mosor after the majestic mountain range in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.",
+      "postedOn": "2026-04-15",
+      "category": "News",
+      "imageUrl": "img/v210.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "12 min",
+      "pinned": true
+    },
+    {
+      "root": "news",
+      "dir": "news/2026-04-15-migration-210",
+      "slug": "210",
+      "permalink": "/news/migration/210",
+      "title": "Migrating Material and AntDesign Provider Assets in Blazorise 2.1",
+      "summary": "Migration notes for the Blazorise 2.1 Material 3 and AntDesign v6 provider asset, icon package, and styling changes.",
+      "postedOn": "2026-04-15",
+      "category": "News",
+      "imageUrl": "img/v210-migration.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "5 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-04-03-release-notes-204",
