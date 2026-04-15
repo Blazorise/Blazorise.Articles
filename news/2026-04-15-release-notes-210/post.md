@@ -99,7 +99,7 @@ Both packages are implemented using **SVG-based icons**, offering improved rende
 
 These packages expand the available icon options in Blazorise while aligning with widely used icon sets from the Ant Design and Lucide ecosystems.
 
-Usage details and integration examples are available in the updated [docs/extensions/icons](Icons documentation page).
+Usage details and integration examples are available in the updated [Icons documentation page](docs/extensions/icons).
 
 ### Maps Component (New)
 
