@@ -18,6 +18,12 @@ This guide will help you smoothly transition your Blazorise app to version 2.1, 
 
 Most users won’t notice major changes, but if your app still relies on old provider files, icons, or custom CSS that digs into provider internals, you’ll need to make some updates. For most projects, the Blazorise APIs themselves haven’t changed, so you shouldn’t run into major breakage.
 
+## Recommended Upgrade Path
+
+The recommended way to update an application to Blazorise 2.1 is to use **Blazorise.Migrator** first. The migrator handles the common mechanical updates and helps reduce the amount of manual work needed during the upgrade.
+
+After running the migrator, use the notes below to review provider assets, icon setup, and any custom CSS that depends on old Material or AntDesign internals.
+
 ## Summary
 
 You should double-check your app if you use any of the following:
