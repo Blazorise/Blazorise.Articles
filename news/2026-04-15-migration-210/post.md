@@ -1,5 +1,5 @@
 ---
-title: Migrating Material and AntDesign Provider Assets in Blazorise 2.1
+title: Migrating Material and AntDesign Assets in Blazorise 2.1
 description: Migration notes for the Blazorise 2.1 Material 3 and AntDesign v6 provider asset, icon package, and styling changes.
 permalink: /news/migration/210
 canonical: /news/migration/210

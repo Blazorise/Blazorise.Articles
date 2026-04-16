@@ -1,5 +1,5 @@
 ---
-title: Blazorise 1.8.10 - Table Scrolling & Globalization Improvements
+title: Blazorise 1.8.10 - Table Scroll & Globalization Fixes
 description: Blazorise 1.8.10 delivers a fix for Table ScrollToRow visibility, adds support for Invariant Globalization, and resolves Signature Pad input issues on iOS Safari.
 permalink: /news/release-notes/1810
 canonical: /news/release-notes/1810

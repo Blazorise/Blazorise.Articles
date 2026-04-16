@@ -1,5 +1,5 @@
 ---
-title: Responsive Layout Strategies Using Blazorise Grid & Breakpoints
+title: Responsive Layout with Blazorise Grid & Breakpoints
 description: Practical guidance on building responsive, maintainable layouts in Blazorise using Grid, Flex utilities, and mobile-first breakpoint helpers.
 permalink: /blog/responsive-layout-strategies-using-blazorise-grid-and-breakpoints
 canonical: /blog/responsive-layout-strategies-using-blazorise-grid-and-breakpoints

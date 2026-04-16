@@ -1,6 +1,6 @@
 ---
 title: Announcing Blazorise 2.1 - Mosor
-description: Blazorise 2.1, codenamed Mosor after the majestic mountain range in Croatia, is a significant update that brings a host of new features, enhancements, and optimizations to the framework. This release focuses on improving the developer experience, enhancing performance, and expanding the capabilities of Blazorise components.
+description: Blazorise 2.1, codenamed Mosor, adds new components, provider updates, performance work, and UX improvements across the framework for a smoother developer experience.
 permalink: /news/release-notes/210
 canonical: /news/release-notes/210
 image-url: img/v210.jpg

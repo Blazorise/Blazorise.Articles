@@ -1,5 +1,5 @@
 ---
-title: Real-Time Blazor Apps: Integrating SignalR and Blazorise Notifications
+title: Real-Time Blazor Apps with SignalR and Blazorise
 description: Learn how to build real-time Blazor Server and Blazor WebAssembly apps using SignalR, and surface live updates through Blazorise Toast notifications and ToastService.
 permalink: /blog/real-time-blazor-apps-signalr-and-blazorise-notifications
 canonical: /blog/real-time-blazor-apps-signalr-and-blazorise-notifications

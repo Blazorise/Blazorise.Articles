@@ -36,7 +36,7 @@ The .NET SDK installs all the tools and libraries to develop, debug, test and ru
 Currently the SDKs that are compatible with Blazor Applications are
 
 - .NET 7 [Currently available in preview](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.100-preview.7-windows-arm64-installer)
-- .NET 6 [LTS](https://github.com/dotnet/core/blob/main/release-notes/6.0/6.0.8/6.0.8.md?WT.mc_id=dotnet-35129-website)
+- .NET 6 [LTS](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 - .NET 5 [Not Supported](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-5.0.408-windows-x86-installer)
 
 ### An Integrated Development Environment

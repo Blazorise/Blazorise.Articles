@@ -1,5 +1,5 @@
 ---
-title: Why Component Libraries Like Blazorise Are Key to Blazor's Adoption
+title: Why Blazorise Helps Drive Blazor Adoption
 description: How strong UI ecosystems accelerate Blazor adoption in enterprise environments, with behind-the-scenes insights into Blazorise's design philosophy.
 permalink: /blog/why-component-libraries-like-blazorise-are-key-to-blazors-adoption
 canonical: /blog/why-component-libraries-like-blazorise-are-key-to-blazors-adoption
