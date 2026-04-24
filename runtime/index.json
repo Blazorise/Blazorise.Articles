@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-16T12:47:34.273Z",
-  "commit": "abe21596e851",
-  "count": 120,
+  "generatedAt": "2026-04-24T08:16:08.177Z",
+  "commit": "2e8aa02ab1f6",
+  "count": 121,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-04-24-release-notes-211",
+      "slug": "211",
+      "permalink": "/news/release-notes/211",
+      "title": "Blazorise 2.1.1 - Stability Update and Package Maintenance",
+      "summary": "Blazorise 2.1.1 resolves a critical Bootstrap upgrade issue, updates dependencies, and introduces synchronized charts along with several fixes.",
+      "postedOn": "2026-04-24",
+      "category": "News",
+      "imageUrl": "img/v211.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-04-15-release-notes-210",
