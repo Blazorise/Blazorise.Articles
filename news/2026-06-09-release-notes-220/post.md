@@ -50,3 +50,13 @@ Blazorise 2.2 introduces **Blazorise.Barcode**, a new extension for generating b
 The component supports a wide range of common symbologies, including **Code 128, EAN, UPC, QR Code, Data Matrix, PDF417, Aztec**, and more, making it suitable for various business and data encoding scenarios.
 
 It also provides flexible configuration options such as **rendering mode, symbol sizing, scale, colors, rotation, value display and alignment, and image padding**, allowing precise control over barcode appearance and layout.
+
+### Validation Warning Support
+
+Validation now supports a new **warning state**, allowing you to provide feedback that does not block form submission.
+
+With `ValidationStatus.Warning` and the `ValidationWarning` component, you can highlight potential issues or recommendations while still letting users continue. This is useful for scenarios like weak password suggestions or optional field guidance where strict validation is not required.
+
+The new `ValidationFeedback` component groups all feedback types (`None`, `Warning`, `Success`, and `Error`) into a single, consistent API, making it easier to manage validation UI.
+
+Updated [documentation include examples](docs/components/validation) of how to use warning-based validation in real scenarios.
