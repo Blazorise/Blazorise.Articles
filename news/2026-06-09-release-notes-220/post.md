@@ -60,3 +60,13 @@ With `ValidationStatus.Warning` and the `ValidationWarning` component, you can h
 The new `ValidationFeedback` component groups all feedback types (`None`, `Warning`, `Success`, and `Error`) into a single, consistent API, making it easier to manage validation UI.
 
 Updated [documentation include examples](docs/components/validation) of how to use warning-based validation in real scenarios.
+
+### TreeView Drag & Drop
+
+TreeView now supports **drag-and-drop**, making it easy to reorder nodes and move items within a hierarchy.
+
+You can enable dragging with `Draggable` and allow reordering with `Reorderable`, including inserting nodes before or after others. Built-in behavior handles moving nodes within **mutable collections** automatically, so basic scenarios work out of the box.
+
+For more control, you can use `CanDragNode` and `CanDropNode` to restrict allowed operations, and `NodeDropped` to fully customize what happens on drop. If not handled, TreeView falls back to its default move logic.
+
+The feature includes clear **visual drop indicators** for inserting before, after, or as a child node, helping users understand where items will be placed.
