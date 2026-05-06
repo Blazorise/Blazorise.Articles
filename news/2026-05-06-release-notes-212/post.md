@@ -66,9 +66,9 @@ Simply update your NuGet packages to version **2.1.2**. No migration steps or br
 
 ## Thank you & commercial support
 
-Thank you to everyone who reported issues and provided feedback. These updates help improve the reliability, accessibility, and consistency of the framework across real-world applications.
+Thank you to everyone who reported issues and helped improve the framework. Each update helps make Blazorise more stable and reliable for production use.
 
 For commercial licensing and support:  
-[Blazorise Commercial](pricing "Link to Blazorise Commercial")
+https://blazorise.com/pricing
 
-Your support helps ensure the continued evolution of Blazorise for modern .NET applications.
+Your support helps ensure the continued evolution of Blazorise.
