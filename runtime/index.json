@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-24T08:16:08.177Z",
-  "commit": "2e8aa02ab1f6",
-  "count": 121,
+  "generatedAt": "2026-05-06T09:34:43.804Z",
+  "commit": "5141506fe18b",
+  "count": 122,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-05-06-release-notes-212",
+      "slug": "212",
+      "permalink": "/news/release-notes/212",
+      "title": "Blazorise 2.1.2 - Accessibility and Scheduler Improvements",
+      "summary": "Blazorise 2.1.2 improves MessageService behavior, fixes Scheduler month view rendering, and resolves multiple issues across providers and components.",
+      "postedOn": "2026-05-06",
+      "category": "News",
+      "imageUrl": "img/v212.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-04-24-release-notes-211",
