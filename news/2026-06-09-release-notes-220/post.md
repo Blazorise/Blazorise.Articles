@@ -82,3 +82,13 @@ Animation behavior has also been improved for visibility-based scenarios. Enter 
 A new `AnimatedSize` mode enables smoother drawer, sidebar, and disclosure-style animations by animating the actual occupied width or height of the element. This allows surrounding content to move naturally during expand and collapse instead of abruptly shifting.
 
 The component now automatically loads its required runtime script, removing the need to manually add the Animate script tag. Documentation and demos were also expanded with new examples covering viewport reveal, visibility toggles, animated sizing, manual triggering, and custom keyframe animations.
+
+### Gestures Component (New)
+
+A new `Gestures` component has been added for building **touch and pointer-driven interactions** in Blazorise.
+
+The component supports common mobile and touch scenarios such as **swipes, taps, and long presses**, while also exposing gesture lifecycle events for start, movement, and end tracking. Swipe detection can be configured for specific directions, and gesture behavior can be fine-tuned through options such as swipe distance, velocity thresholds, tap duration, long-press duration, and movement tolerance.
+
+`Gestures` also includes features for real-world UI integration, including the ability to temporarily disable gesture handling, control browser touch behavior through `TouchAction`, and safely use gestures alongside buttons, links, inputs, and other interactive elements.
+
+Documentation and demos include practical examples such as swipe galleries, sidebar gestures, and gesture lifecycle handling.
