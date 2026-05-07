@@ -70,3 +70,15 @@ You can enable dragging with `Draggable` and allow reordering with `Reorderable`
 For more control, you can use `CanDragNode` and `CanDropNode` to restrict allowed operations, and `NodeDropped` to fully customize what happens on drop. If not handled, TreeView falls back to its default move logic.
 
 The feature includes clear **visual drop indicators** for inserting before, after, or as a child node, helping users understand where items will be placed.
+
+### Animate Improvements
+
+The **Animate** component has been significantly expanded with support for fully custom animations and improved layout-aware transitions.
+
+You can now define animations directly in C# using `AnimationDefinition` and `AnimationFrame`, along with custom easing functions through `EasingDefinition`, including support for cubic-bezier curves. This makes it possible to create reusable animation behaviors without relying on external CSS keyframes.
+
+Animation behavior has also been improved for visibility-based scenarios. Enter and exit transitions now work more naturally with the `Visible` parameter, and the new `AnimateOnInitialRender` option allows you to control whether animations should run during the first render.
+
+A new `AnimatedSize` mode enables smoother drawer, sidebar, and disclosure-style animations by animating the actual occupied width or height of the element. This allows surrounding content to move naturally during expand and collapse instead of abruptly shifting.
+
+The component now automatically loads its required runtime script, removing the need to manually add the Animate script tag. Documentation and demos were also expanded with new examples covering viewport reveal, visibility toggles, animated sizing, manual triggering, and custom keyframe animations.
