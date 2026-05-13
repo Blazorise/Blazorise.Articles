@@ -92,3 +92,9 @@ The component supports common mobile and touch scenarios such as **swipes, taps,
 `Gestures` also includes features for real-world UI integration, including the ability to temporarily disable gesture handling, control browser touch behavior through `TouchAction`, and safely use gestures alongside buttons, links, inputs, and other interactive elements.
 
 Documentation and demos include practical examples such as swipe galleries, sidebar gestures, and gesture lifecycle handling.
+
+### Carousel Improvements
+
+Carousel now supports **custom templates** for indicators, navigation buttons, and captions, making it easier to fully customize the appearance and behavior of slideshows.
+
+Support for **swipe gestures** has also been added through the new `Swipeable` parameter, allowing touch-based slide navigation without requiring additional gesture markup or wrappers.
