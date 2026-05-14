@@ -98,3 +98,9 @@ Documentation and demos include practical examples such as swipe galleries, side
 Carousel now supports **custom templates** for indicators, navigation buttons, and captions, making it easier to fully customize the appearance and behavior of slideshows.
 
 Support for **swipe gestures** has also been added through the new `Swipeable` parameter, allowing touch-based slide navigation without requiring additional gesture markup or wrappers.
+
+### Bootstrap 5 Provider Update
+
+The [Bootstrap 5](docs/usage/bootstrap5) provider has been updated to **Bootstrap 5.3.8**.
+
+This update improves support for newer Bootstrap 5.3 utility classes, including subtle color variants, border utilities, themed badges, alerts, tables, and improved contrast handling. Theming behavior continues to respect `LuminanceThreshold`, while adding additional contrast fallback logic to improve readability where needed.
