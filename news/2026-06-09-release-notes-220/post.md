@@ -104,3 +104,11 @@ Support for **swipe gestures** has also been added through the new `Swipeable` p
 The [Bootstrap 5](docs/usage/bootstrap5) provider has been updated to **Bootstrap 5.3.8**.
 
 This update improves support for newer Bootstrap 5.3 utility classes, including subtle color variants, border utilities, themed badges, alerts, tables, and improved contrast handling. Theming behavior continues to respect `LuminanceThreshold`, while adding additional contrast fallback logic to improve readability where needed.
+
+### Bootstrap 5 Bar Improvements
+
+The **Bootstrap 5 Bar** component has been reworked to align more closely with native Bootstrap navigation structure and styling. Vertical and horizontal modes now rely more on standard Bootstrap class names, reducing dependence on older `b-bar-*` classes and improving compatibility with custom Bootstrap styling.
+
+This update includes improvements across sidebar layout, spacing, active and hover states, icon alignment, brand and toggler positioning, and mobile navigation behavior. Collapsed vertical bars were also refined with better centered icon layouts and improved popout dropdown positioning, especially for `BarEnd` menus.
+
+Several issues around embedded components and nested content were resolved by tightening Bar-specific styling scopes, preventing dropdown menus and sidebar styles from interfering with components such as autocomplete inputs. Theme generation and documentation styling were also updated to better match Bootstrap 5 navigation behavior while preserving existing layout header sizing through `--b-bar-horizontal-height`.
