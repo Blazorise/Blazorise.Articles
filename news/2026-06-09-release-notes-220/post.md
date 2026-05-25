@@ -112,3 +112,15 @@ The **Bootstrap 5 Bar** component has been reworked to align more closely with n
 This update includes improvements across sidebar layout, spacing, active and hover states, icon alignment, brand and toggler positioning, and mobile navigation behavior. Collapsed vertical bars were also refined with better centered icon layouts and improved popout dropdown positioning, especially for `BarEnd` menus.
 
 Several issues around embedded components and nested content were resolved by tightening Bar-specific styling scopes, preventing dropdown menus and sidebar styles from interfering with components such as autocomplete inputs. Theme generation and documentation styling were also updated to better match Bootstrap 5 navigation behavior while preserving existing layout header sizing through `--b-bar-horizontal-height`.
+
+### SVG Charts (New)
+
+A new `Blazorise.Charts.Svg` extension has been added, bringing **native SVG chart rendering** to Blazorise using C# and Blazor.
+
+The new charting system supports a wide range of chart types, including **line, area, bar, column, pie, doughnut, radar, polar area, scatter, bubble, and mixed charts**. Charts can be configured either declaratively through child components or programmatically through data and options models.
+
+SVG charts include built-in support for features such as titles, legends, tooltips, multiple axes, stacked charts, time axes, custom colors, labels, animations, accessibility metadata, and chart events. Advanced capabilities like **annotations, data labels, streaming, trendlines, and zoom/pan** are implemented through a plugin-style architecture, allowing chart functionality to grow without increasing base component complexity.
+
+Streaming support enables live-updating charts with rolling windows, animated scrolling, reverse direction, and continuous data retention for real-time scenarios.
+
+Documentation and demos were added for all supported chart types and advanced chart features, including animation, plugins, streaming, and custom styling.
