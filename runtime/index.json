@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-05-06T09:34:43.804Z",
-  "commit": "5141506fe18b",
-  "count": 122,
+  "generatedAt": "2026-05-22T08:22:57.390Z",
+  "commit": "b4149a3ea927",
+  "count": 123,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-05-22-release-notes-213",
+      "slug": "213",
+      "permalink": "/news/release-notes/213",
+      "title": "Blazorise 2.1.3 - DatePicker Range Improvements",
+      "summary": "Blazorise 2.1.3 improves DatePicker range behavior and includes accessibility and validation fixes across multiple components.",
+      "postedOn": "2026-05-22",
+      "category": "News",
+      "imageUrl": "img/v213.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-05-06-release-notes-212",
