@@ -124,3 +124,15 @@ SVG charts include built-in support for features such as titles, legends, toolti
 Streaming support enables live-updating charts with rolling windows, animated scrolling, reverse direction, and continuous data retention for real-time scenarios.
 
 Documentation and demos were added for all supported chart types and advanced chart features, including animation, plugins, streaming, and custom styling.
+
+### On-Screen Keyboard (New)
+
+A new **on-screen keyboard** has been added to Blazorise, designed for **touch devices, kiosks, accessibility scenarios, and fullscreen applications**.
+
+The keyboard can be enabled globally through accessibility options or configured per input with `OnScreenKeyboard`, and works across a wide range of components including text inputs, numeric inputs, date and time pickers, memos, DataGrid editors, modals, and validation scenarios. Input targeting can also be customized through `OnScreenKeyboardInputType`.
+
+The feature supports multiple keyboard layouts, configurable sizing, customizable key styling and templates, special-character rows, Shift handling, punctuation keys, and culture-aware numeric input. It also includes more advanced behaviors such as caret insertion, selected-text replacement, Enter-key handling, automatic scroll adjustment, and live composition support for date and time inputs.
+
+Interestingly, this is a feature we originally explored before the Blazorise 2.0 architecture changes, but at the time the internal input structure made it difficult to implement cleanly across all providers and edge cases. After the refactoring work introduced in 2.0, we revisited the idea and found the implementation significantly more manageable, even for more complex scenarios like date and time pickers.
+
+The release also includes updated demos, documentation, and extensive test coverage for configuration, validation, DataGrid integration, provider rendering, keyboard layouts, and scrolling behavior.
