@@ -138,3 +138,13 @@ The feature supports multiple keyboard layouts, configurable sizing, customizabl
 Interestingly, this is a feature we originally explored before the Blazorise 2.0 architecture changes, but at the time the internal input structure made it difficult to implement cleanly across all providers and edge cases. After the refactoring work introduced in 2.0, we revisited the idea and found the implementation significantly more manageable, even for more complex scenarios like date and time pickers.
 
 The release also includes updated demos, documentation, and extensive test coverage for configuration, validation, DataGrid integration, provider rendering, keyboard layouts, and scrolling behavior.
+
+### PivotGrid (New)
+
+A new **`PivotGrid`** component has been added, providing a powerful way to **summarize, group, and analyze data** through a familiar pivot table experience.
+
+`PivotGrid` allows records to be grouped by row and column dimensions, calculate aggregate values, and display totals and subtotals in a tabular layout. It supports both **local data binding** and **external data loading**, making it suitable for everything from in-memory datasets to large server-driven reporting scenarios.
+
+The component includes support for **paging, row virtualization, expandable groups, totals and subtotals, runtime field selection, and filtering through a built-in field chooser**. Custom aggregation logic can be implemented through the `Aggregator` API, while templates and styling hooks provide full control over headers, cells, and displayed values.
+
+Designed for reporting and analytical applications, `PivotGrid` makes it easy to build interactive data summaries without requiring a separate reporting tool. Documentation, demos, and API reference material are included to help you get started quickly.
