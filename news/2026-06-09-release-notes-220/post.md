@@ -1,21 +1,23 @@
 ---
-title: Announcing Blazorise 2.2 - Mosor
-description: Blazorise 2.2, codenamed Mosor, adds new components, provider updates, performance work, and UX improvements across the framework for a smoother developer experience.
+title: Announcing Blazorise 2.2 - Cetina
+description: Blazorise 2.2, codenamed Cetina, is named after one of the most powerful rivers in Croatia, originating beneath the highest mountain in Croatia.
 permalink: /news/release-notes/220
 canonical: /news/release-notes/220
 image-url: img/v220.jpg
-image-title: Announcing Blazorise 2.2 - Mosor
+image-title: Announcing Blazorise 2.2 - Cetina
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: News
-posted-on: 2026-06-09
+posted-on: 2026-06-04
 read-time: 12 min
 pinned: true
 ---
 
 # Blazorise 2.2 - Release Notes
 
-Codenamed **Mosor**, after the Croatian mountain range next to our hometown, Split, **Blazorise 2.2** is a major release packed with new features, refinements, and performance boosts. It's also one of our biggest updates yet, both in terms of what's new and how much the framework has evolved.
+Blazorise 2.2, codenamed Cetina, is named after one of the most powerful rivers in Croatia, originating beneath the highest mountain in Croatia. 
+
+It signifies resilience and endurance, flexibility within the framework, a strong foundation and architectural base, clean design, responsive UI and a whole load of new components.
 
 ## Key Blazorise 2.2 Highlights 💡
 
