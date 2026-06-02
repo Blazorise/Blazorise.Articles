@@ -10,7 +10,6 @@ author-image: /assets/img/authors/mladen.png
 category: News
 posted-on: 2026-04-15
 read-time: 12 min
-pinned: true
 ---
 
 # Blazorise 2.1 - Release Notes
