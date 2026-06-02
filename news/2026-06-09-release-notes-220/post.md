@@ -19,6 +19,18 @@ Blazorise 2.2, codenamed **Cetina**, takes its name from one of Croatia's most p
 
 This release is one of the most feature-rich updates we've delivered, introducing a new SVG charting engine, a fully integrated on-screen keyboard, and PivotGrid for spreadsheet-style analytics and reporting. Together with improvements across animations, touch interactions, validation, accessibility, and provider integrations, Blazorise 2.2 continues to expand what developers can build with a single, consistent component framework.
 
+## Website and Documentation Refresh
+
+Alongside the framework improvements in Blazorise 2.2, we've also spent time refining the overall experience of our website and documentation.
+
+The most visible change is a redesigned documentation sidebar, which presents information in a more structured and discoverable way. Navigation has been reorganized to make it easier to find components, extensions, guides, and API documentation, while providing more context directly within the menu.
+
+We also simplified the overall site structure by merging the previous **News** and **Blog** sections into a single **Blog** experience, making it easier to browse release announcements, articles, and updates from one place.
+
+The top navigation bar has been streamlined as well. Several text-based links have been replaced with icons, creating a cleaner layout and giving more space to the content itself. At the same time, we revisited the site's color palette and adjusted it with accessibility and contrast in mind, improving readability across both the website and documentation.
+
+Together, these changes make it easier to explore Blazorise, discover available features, and find the information you're looking for.
+
 ## Key Blazorise 2.2 Highlights
 
 Here are some of the most notable additions and updates:
@@ -51,8 +63,6 @@ Change to:
 ```
 
 ## New Features & Enhancements
-
-
 
 ### SVG Charts (New)
 
