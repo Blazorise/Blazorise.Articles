@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-04T08:07:31.908Z",
-  "commit": "afc3442db05a",
-  "count": 124,
+  "generatedAt": "2026-06-16T08:30:53.212Z",
+  "commit": "69702bac87f8",
+  "count": 125,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-06-16-release-notes-221",
+      "slug": "221",
+      "permalink": "/news/release-notes/221",
+      "title": "Blazorise 2.2.1 - Accessibility and DataGrid Improvements",
+      "summary": "Blazorise 2.2.1 improves MessageService accessibility, resolves DataGrid rapid editing issues, and includes fixes across charts, navigation, providers, and components.",
+      "postedOn": "2026-06-16",
+      "category": "News",
+      "imageUrl": "img/v221.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-06-04-release-notes-220",
