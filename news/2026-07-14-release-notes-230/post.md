@@ -51,6 +51,12 @@ By default, the Year view continues to display **monthly columns**, preserving t
 
 This provides a more granular view of long-running projects while keeping the familiar Year view layout, making it easier to visualize schedules, milestones, and task progress throughout the year.
 
+### Gantt Milestones
+
+The **Gantt** component now supports **milestones**, making it easier to highlight important dates and events alongside your project timeline.
+
+Milestones can be placed at **exact dates and times**, customized through templates and styling, and optionally included when automatically calculating the visible timeline range. This makes it simple to call out key project events such as releases, deadlines, approvals, or other important checkpoints without representing them as regular tasks.
+
 ## Final Notes
 
 
