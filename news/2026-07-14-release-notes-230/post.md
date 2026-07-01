@@ -57,6 +57,16 @@ The **Gantt** component now supports **milestones**, making it easier to highlig
 
 Milestones can be placed at **exact dates and times**, customized through templates and styling, and optionally included when automatically calculating the visible timeline range. This makes it simple to call out key project events such as releases, deadlines, approvals, or other important checkpoints without representing them as regular tasks.
 
+### Scheduler Custom Fields
+
+The **Scheduler** now offers much greater flexibility when customizing the **Add/Edit Appointment** dialog.
+
+Using the new **`SchedulerColumns`** and **`SchedulerColumn`** components, you can add editors for your own appointment model properties, making it easy to capture application-specific information such as colors, categories, locations, or any other custom fields. These values are automatically loaded and saved as part of the standard scheduler editing workflow.
+
+Built-in appointment fields such as **Title**, **Start**, **End**, **AllDay**, **Description**, and **RecurrenceRule** can also be replaced with your own editor templates. This allows you to fully customize the editing experience while continuing to use the Scheduler's built-in state management, validation, and save logic.
+
+In addition, Scheduler appointments now support **custom display templates** and improved styling, making it possible to visually reflect custom properties such as appointment colors directly within the calendar.
+
 ## Final Notes
 
 
