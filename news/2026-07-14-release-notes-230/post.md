@@ -67,6 +67,12 @@ Built-in appointment fields such as **Title**, **Start**, **End**, **AllDay**, *
 
 In addition, Scheduler appointments now support **custom display templates** and improved styling, making it possible to visually reflect custom properties such as appointment colors directly within the calendar.
 
+### PdfViewer Continuous Scrolling
+
+**PdfViewer** now supports **continuous scrolling**, allowing documents to be viewed as a single vertically scrollable document instead of one page at a time.
+
+By setting `Mode="PdfViewerMode.Continuous"`, users can scroll naturally through all pages while the viewer keeps the current page, toolbar navigation, and page tracking synchronized. This provides a more familiar reading experience for longer documents while preserving the existing navigation features.
+
 ## Final Notes
 
 
