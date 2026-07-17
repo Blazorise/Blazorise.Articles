@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-16T08:30:53.212Z",
-  "commit": "69702bac87f8",
-  "count": 125,
+  "generatedAt": "2026-07-17T07:35:38.483Z",
+  "commit": "d682f5c38529",
+  "count": 126,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-07-17-release-notes-222",
+      "slug": "222",
+      "permalink": "/news/release-notes/222",
+      "title": "Blazorise 2.2.2 - Svg Charts Improvements and Component Fixes",
+      "summary": "Blazorise 2.2.2 brings major improvements to the new Svg Charts component along with fixes for Autocomplete, Scheduler, DataGrid, Dropdowns, Carousel, and more.",
+      "postedOn": "2026-07-17",
+      "category": "News",
+      "imageUrl": "img/v222.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-06-16-release-notes-221",
