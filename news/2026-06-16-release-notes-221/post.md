@@ -46,15 +46,15 @@ Blazorise 2.2.1 also includes fixes for navigation components, ColorPicker updat
 
 All changes included in **2.2.1**:
 
-- [#6620](https://github.com/Megabit/Blazorise/issues/6620) Bar: hide vertical scrollbar while allowing to scroll
+- [#6620](https://github.com/Megabit/Blazorise/pull/6620) Bar: hide vertical scrollbar while allowing to scroll
 - [#6618](https://github.com/Megabit/Blazorise/issues/6618) Blazorise.Tailwind applies global typography to the bare p selector, overriding host styles
 - [#6621](https://github.com/Megabit/Blazorise/issues/6621) Claude fails to connect to Blazorise MCP
 - [#6626](https://github.com/Megabit/Blazorise/issues/6626) MessageService modal dialogs lack keyboard accessibility: no focus trap and no Escape key dismiss
-- [#6628](https://github.com/Megabit/Blazorise/issues/6628) BarDropdown: fix the closing of current dropdown menu
+- [#6628](https://github.com/Megabit/Blazorise/pull/6628) BarDropdown: fix the closing of current dropdown menu
 - [#6625](https://github.com/Megabit/Blazorise/issues/6625) DataGrid Batch and Rapid Editing - bug
 - [#6616](https://github.com/Megabit/Blazorise/issues/6616) Cursor on mouse hover over tab incorrect after update to 2.2
 - [#6615](https://github.com/Megabit/Blazorise/issues/6615) Textcolor on buttons changed to black in 2.2
-- [#6633](https://github.com/Megabit/Blazorise/issues/6633) ColorPicker: fix update of Value parameter
+- [#6633](https://github.com/Megabit/Blazorise/pull/6633) ColorPicker: fix update of Value parameter
 - [#6622](https://github.com/Megabit/Blazorise/issues/6622) Charts.Svg - Automatic axis-label thinning (auto-skip / max-ticks) like the Chart.js-based Blazorise.Charts
 
 ## Upgrading
