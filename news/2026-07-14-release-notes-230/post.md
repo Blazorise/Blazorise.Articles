@@ -41,7 +41,45 @@ Change to:
 <PackageVersion Include="Blazorise.Bootstrap5" Version="2.3.0" />
 ```
 
-## New Features & Enhancements
+## New Features
+
+### Reporting
+
+Reporting is one of the largest additions to Blazorise. The original goal was to build a reporting solution that felt like a natural part of the framework, with a visual designer, flexible layouts, and support for common business reporting scenarios.
+
+As development progressed, it became clear that the report designer required several advanced UI capabilities that didn't yet exist in Blazorise. Rather than implementing them only for Reporting, we decided to build them as reusable components that could benefit the entire framework.
+
+The Reporting extension now provides a declarative, band-based reporting system with support for headers, footers, detail and group bands, tables, images, shapes, subreports, expressions, aggregates, and multiple data sources including objects, `DataSet`, `DataTable`, CSV, and SQL.
+
+The built-in designer supports drag-and-drop editing, rulers, grid snapping, alignment tools, undo/redo, keyboard shortcuts, property editing, and report serialization. Reports can be previewed as HTML or PDF, and rendering has been optimized for larger reports through targeted refreshes, cached pagination, and reduced processing overhead.
+
+#### DockLayout
+
+One of the first supporting components created during Reporting development was **DockLayout**.
+
+The report designer required an IDE-style workspace with movable and dockable panels, so instead of building that functionality specifically for Reporting, we turned it into a standalone component.
+
+DockLayout supports resizable panes, horizontal and vertical splits, tabbed layouts, drag-and-drop docking, auto-hide panels, pinning, flyout panes, and layout persistence. Although it powers the Reporting designer, it can also be used independently in applications that require complex, customizable workspaces.
+
+#### ContextMenu
+
+The report designer also needed a flexible context menu system, which led to the new **ContextMenu** component.
+
+What started as an internal requirement quickly became a fully featured menu component supporting nested menus, groups, headers, checkable items, toolbar layouts, programmatic control, lifecycle events, and automatic positioning. Like DockLayout, it is available as a standalone component for any Blazorise application.
+
+#### PDF Generation
+
+Reporting also required reliable document generation, which resulted in the new **Blazorise.Pdf** extension.
+
+The library provides a declarative API for creating PDF documents directly from Blazor, with support for pages, text, images, tables, shapes, custom fonts, margins, borders, colors, and Unicode text. Reports use this PDF generator for export and preview, with generated documents displayed through the existing **PdfViewer** component.
+
+#### Core Improvements
+
+Building Reporting also led to several improvements in the Blazorise core.
+
+A new lightweight `BaseStyledComponent` was introduced to simplify component development, document observation was extended to better support global pointer interactions, and new provider styling was added for Reporting, DockLayout, and ContextMenu. Although these changes are mostly internal, they provide a stronger foundation for future components.
+
+## Enhancements
 
 ### Gantt Year View Improvements
 
@@ -72,6 +110,32 @@ In addition, Scheduler appointments now support **custom display templates** and
 **PdfViewer** now supports **continuous scrolling**, allowing documents to be viewed as a single vertically scrollable document instead of one page at a time.
 
 By setting `Mode="PdfViewerMode.Continuous"`, users can scroll naturally through all pages while the viewer keeps the current page, toolbar navigation, and page tracking synchronized. This provides a more familiar reading experience for longer documents while preserving the existing navigation features.
+
+### Fluent CSS Value Shorthands
+
+Working with CSS values in C# is now more concise thanks to new **Fluent CSS value shorthands**.
+
+Instead of using helper methods such as `Width.Rem(8)` or `Gap.Rem(1)`, you can now write values more naturally using extension methods like `8.Rem()`, `50.Percent()`, or `1.25.Rem()`. The existing APIs remain fully supported, so you can adopt the new syntax at your own pace.
+
+```razor
+<Div Width="8.Rem()"
+     Height="50.Percent()"
+     Gap="1.Rem()"
+     TextSize="1.25.Rem()" />
+```
+
+Sizing values can also be extended with **`Min`** and **`Max`** constraints, making it easy to express responsive sizing in a fluent way.
+
+```razor
+<Div Width="20.Rem().Min(12).Max(30)" />
+```
+
+In addition, sizing builders now support **percentage-based** and **calculated (`calc`)** values, providing greater flexibility when defining layouts directly in C#.
+
+```razor
+<Div Width="Width.Percent(50)"
+     Height="@(Height.Calc("100vh - 4rem"))" />
+```
 
 ## Final Notes
 
