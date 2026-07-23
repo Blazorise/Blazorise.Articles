@@ -137,19 +137,13 @@ In addition, sizing builders now support **percentage-based** and **calculated (
      Height="@(Height.Calc("100vh - 4rem"))" />
 ```
 
-### ResizeHandle (New)
+### Resizer (New)
 
-A new **`ResizeHandle`** component makes it easy to add **resizable layouts** to panels, sidebars, `Bar` components, and other UI elements.
+The new **`Resizer`** component provides a simple way to add **resizable boundaries** to existing elements without requiring a predefined layout or container.
 
-The component supports both **pointer and keyboard interaction**, along with configurable minimum and maximum size constraints, external resize targets, CSS custom properties, and coordinated resizing of elements on both sides of the handle. This makes it simple to build flexible, user-adjustable layouts without implementing custom resize logic.
+It supports both **pointer and keyboard interaction**, configurable minimum and maximum size constraints, external resize targets, CSS custom properties, and coordinated resizing of elements on both sides of the boundary. You can also customize the resize handle's position, thickness, and appearance, while listening for resize events to react to size changes in your application.
 
-By default, resize handles are transparent, but you can optionally display a provider-specific gutter and grip using `ShowGutter`.
-
-```razor
-<ResizeHandle ShowGutter />
-```
-
-This provides a consistent and reusable way to add resizing behavior across your Blazorise applications.
+An optional provider-specific gutter can also be displayed to give users a more visible resize handle when needed.
 
 ## Final Notes
 
