@@ -145,6 +145,14 @@ It supports both **pointer and keyboard interaction**, configurable minimum and 
 
 An optional provider-specific gutter can also be displayed to give users a more visible resize handle when needed.
 
+### Custom CSS Colors
+
+Blazorise components now support **custom CSS colors**, making it easier to use your own design system alongside the built-in theme colors.
+
+Properties such as **`Color`**, **`TextColor`**, **`Background`**, and **`BorderColor`** now accept standard CSS color values, including hexadecimal colors, `rgb()`, `rgba()`, `hsl()`, and CSS variables. You can assign colors directly as strings or create them using the new `CssColor` helpers.
+
+This support is available consistently across standard Blazorise components, border utilities, and **SVG Charts**, while existing contextual theme colors continue to work exactly as before.
+
 ## Final Notes
 
 
