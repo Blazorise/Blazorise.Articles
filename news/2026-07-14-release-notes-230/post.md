@@ -47,7 +47,7 @@ Change to:
 
 Reporting is one of the largest additions to Blazorise. The original goal was to build a reporting solution that felt like a natural part of the framework, with a visual designer, flexible layouts, and support for common business reporting scenarios.
 
-As development progressed, it became clear that the report designer required several advanced UI capabilities that didn't yet exist in Blazorise. Rather than implementing them only for Reporting, we decided to build them as reusable components that could benefit the entire framework.
+As development progressed, it became clear that the report designer required several advanced UI capabilities that didn't yet exist in Blazorise. Rather than implementing them only for Reporting, we decided to build them as reusable components that could benefit the entire framework. This work resulted in `DockLayout`, `ContextMenu`, `PropertyGrid`, and `Blazorise.Pdf`, all of which can now be used independently.
 
 The Reporting extension now provides a declarative, band-based reporting system with support for headers, footers, detail and group bands, tables, images, shapes, subreports, expressions, aggregates, and multiple data sources including objects, `DataSet`, `DataTable`, CSV, and SQL.
 
@@ -66,6 +66,16 @@ DockLayout supports resizable panes, horizontal and vertical splits, tabbed layo
 The report designer also needed a flexible context menu system, which led to the new **ContextMenu** component.
 
 What started as an internal requirement quickly became a fully featured menu component supporting nested menus, groups, headers, checkable items, toolbar layouts, programmatic control, lifecycle events, and automatic positioning. Like DockLayout, it is available as a standalone component for any Blazorise application.
+
+### PropertyGrid
+
+The Reporting designer also needed a flexible way to edit properties, which led to the new **PropertyGrid** component.
+
+Instead of building a property editor exclusively for Reporting, we created a reusable PropertyGrid that can be used across any Blazorise application. It supports both **manual** and **schema-driven** configuration, making it suitable for everything from simple settings panels to complex object editors.
+
+PropertyGrid includes typed editors, grouping, alphabetical sorting, search, descriptions, contextual help, actions, templates, constrained scrolling, and accessibility support. Each Blazorise UI provider implements its own styling to ensure the component integrates naturally with the active design system.
+
+Reporting now uses `PropertyGridView` instead of its original internal property editor. Property schemas are cached and only rebuilt when necessary, improving interaction performance while preserving scroll position during editing.
 
 #### PDF Generation
 
