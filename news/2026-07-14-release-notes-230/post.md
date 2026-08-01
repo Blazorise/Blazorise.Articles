@@ -163,6 +163,18 @@ Properties such as **`Color`**, **`TextColor`**, **`Background`**, and **`Border
 
 This support is available consistently across standard Blazorise components, border utilities, and **SVG Charts**, while existing contextual theme colors continue to work exactly as before.
 
+### DatePicker and TimePicker
+
+One of the biggest improvements in this release is a complete rewrite of **DatePicker** and **TimePicker**.
+
+For many years these components relied on the **Flatpickr** JavaScript library. While it served us well, it gradually became harder to maintain and extend as the rest of Blazorise continued to evolve. Rather than continuing to depend on an external library, we decided to replace it with a **first-party implementation built with Blazor and C#**.
+
+The new implementation preserves the existing public APIs, making migration straightforward while giving us full control over future development. It also introduces several new capabilities, including improved keyboard navigation, better accessibility, adaptive popup positioning, enhanced month and week navigation, and context-aware actions such as **"This month"** and **"This week"**.
+
+Owning the entire implementation means we can continue improving DatePicker and TimePicker without being limited by an external dependency, making these components a stronger foundation for future releases.
+
+Explore the available options and examples in the [DatePicker documentation](docs/components/date-picker) and [TimePicker documentation](docs/components/time-picker).
+
 ## Final Notes
 
 
