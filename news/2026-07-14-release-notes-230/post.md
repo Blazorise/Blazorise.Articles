@@ -175,6 +175,18 @@ Owning the entire implementation means we can continue improving DatePicker and 
 
 Explore the available options and examples in the [DatePicker documentation](docs/components/date-picker) and [TimePicker documentation](docs/components/time-picker).
 
+### CodeEditor (New)
+
+The original goal behind **CodeEditor** wasn't just to build another source code editor. We wanted a component that could also be used for **domain-specific editors**, configuration files, scripting languages, formulas, and other application-specific editing scenarios.
+
+Instead of imposing language rules or editor behavior, CodeEditor provides the infrastructure while leaving the editing experience under your control. Applications can define their own syntax, completion, formatting, validation, and diagnostics through strongly typed APIs.
+
+The component includes two-way binding, configurable languages and themes, code completion, snippet insertion, formatting, keyboard shortcuts, selection management, and programmatic control. It also supports **immediate, deferred, and debounced** value updates, allowing you to choose the editing experience that best fits your application.
+
+Multiple editor instances can run independently on the same page, while pending changes are safely preserved during focus changes or component disposal.
+
+Explore the available options and examples in the [CodeEditor documentation](docs/extensions/code-editor).
+
 ## Final Notes
 
 
