@@ -53,19 +53,21 @@ The Reporting extension now provides a declarative, band-based reporting system 
 
 The built-in designer supports drag-and-drop editing, rulers, grid snapping, alignment tools, undo/redo, keyboard shortcuts, property editing, and report serialization. Reports can be previewed as HTML or PDF, and rendering has been optimized for larger reports through targeted refreshes, cached pagination, and reduced processing overhead.
 
+Throughout development we also spent considerable time refining the overall experience. The designer now preserves its state more reliably while switching between Design and Preview, asynchronous operations are more robust, accessibility and localization have been improved, and the public APIs were polished to better match the rest of Blazorise.
+
 #### DockLayout
 
 One of the first supporting components created during Reporting development was **DockLayout**.
 
 The report designer required an IDE-style workspace with movable and dockable panels, so instead of building that functionality specifically for Reporting, we turned it into a standalone component.
 
-DockLayout supports resizable panes, horizontal and vertical splits, tabbed layouts, drag-and-drop docking, auto-hide panels, pinning, flyout panes, and layout persistence. Although it powers the Reporting designer, it can also be used independently in applications that require complex, customizable workspaces.
+DockLayout supports resizable panes, horizontal and vertical splits, tabbed layouts, drag-and-drop docking, auto-hide panels, pinning, flyout panes, and layout persistence. During development we also refined pane management, layout persistence, accessibility, localization, and rendering performance, making the component more reliable for real-world applications.
 
 #### ContextMenu
 
 The report designer also needed a flexible context menu system, which led to the new **ContextMenu** component.
 
-What started as an internal requirement quickly became a fully featured menu component supporting nested menus, groups, headers, checkable items, toolbar layouts, programmatic control, lifecycle events, and automatic positioning. Like DockLayout, it is available as a standalone component for any Blazorise application.
+What started as an internal requirement quickly became a fully featured menu component supporting nested menus, groups, headers, checkable items, toolbar layouts, and programmatic control. Along the way we refined keyboard navigation, accessibility, focus handling, lifecycle events, and provider styling so it behaves consistently with the rest of Blazorise.
 
 ### PropertyGrid
 
@@ -77,17 +79,11 @@ PropertyGrid includes typed editors, grouping, alphabetical sorting, search, des
 
 Reporting now uses `PropertyGridView` instead of its original internal property editor. Property schemas are cached and only rebuilt when necessary, improving interaction performance while preserving scroll position during editing.
 
-#### PDF Generation
+#### PDF
 
 Reporting also required reliable document generation, which resulted in the new **Blazorise.Pdf** extension.
 
-The library provides a declarative API for creating PDF documents directly from Blazor, with support for pages, text, images, tables, shapes, custom fonts, margins, borders, colors, and Unicode text. Reports use this PDF generator for export and preview, with generated documents displayed through the existing **PdfViewer** component.
-
-#### Core Improvements
-
-Building Reporting also led to several improvements in the Blazorise core.
-
-A new lightweight `BaseStyledComponent` was introduced to simplify component development, document observation was extended to better support global pointer interactions, and new provider styling was added for Reporting, DockLayout, and ContextMenu. Although these changes are mostly internal, they provide a stronger foundation for future components.
+The library provides a declarative API for creating PDF documents directly from Blazor... We also invested time in making PDF generation more reliable, with better diagnostics, cancellation support, safer resource loading, and a more consistent API.
 
 ## Enhancements
 
