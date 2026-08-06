@@ -87,7 +87,11 @@ The library provides a declarative API for creating PDF documents directly from 
 
 ## Enhancements
 
-### Gantt Year View Improvements
+While Reporting is the largest addition in this release, we also spent time improving many existing components across Blazorise. Some changes add entirely new capabilities, while others remove long-standing limitations and make everyday development a little easier.
+
+## Enhancements
+
+### Gantt Improvements
 
 The **Gantt Year View** now supports **weekly timelines**, making it easier to plan and review projects at a finer level of detail across an entire year.
 
@@ -95,13 +99,13 @@ By default, the Year view continues to display **monthly columns**, preserving t
 
 This provides a more granular view of long-running projects while keeping the familiar Year view layout, making it easier to visualize schedules, milestones, and task progress throughout the year.
 
-### Gantt Milestones
+#### Milestones
 
 The **Gantt** component now supports **milestones**, making it easier to highlight important dates and events alongside your project timeline.
 
 Milestones can be placed at **exact dates and times**, customized through templates and styling, and optionally included when automatically calculating the visible timeline range. This makes it simple to call out key project events such as releases, deadlines, approvals, or other important checkpoints without representing them as regular tasks.
 
-### Scheduler Custom Fields
+### Scheduler Improvements
 
 The **Scheduler** now offers much greater flexibility when customizing the **Add/Edit Appointment** dialog.
 
@@ -111,13 +115,13 @@ Built-in appointment fields such as **Title**, **Start**, **End**, **AllDay**, *
 
 In addition, Scheduler appointments now support **custom display templates** and improved styling, making it possible to visually reflect custom properties such as appointment colors directly within the calendar.
 
-### PdfViewer Continuous Scrolling
+### PdfViewer Improvements
 
 **PdfViewer** now supports **continuous scrolling**, allowing documents to be viewed as a single vertically scrollable document instead of one page at a time.
 
 By setting `Mode="PdfViewerMode.Continuous"`, users can scroll naturally through all pages while the viewer keeps the current page, toolbar navigation, and page tracking synchronized. This provides a more familiar reading experience for longer documents while preserving the existing navigation features.
 
-### Fluent CSS Value Shorthands
+### Styling Improvements
 
 Working with CSS values in C# is now more concise thanks to new **Fluent CSS value shorthands**.
 
@@ -151,13 +155,15 @@ It supports both **pointer and keyboard interaction**, configurable minimum and 
 
 An optional provider-specific gutter can also be displayed to give users a more visible resize handle when needed.
 
-### Custom CSS Colors
+#### Custom CSS Colors
 
 Blazorise components now support **custom CSS colors**, making it easier to use your own design system alongside the built-in theme colors.
 
 Properties such as **`Color`**, **`TextColor`**, **`Background`**, and **`BorderColor`** now accept standard CSS color values, including hexadecimal colors, `rgb()`, `rgba()`, `hsl()`, and CSS variables. You can assign colors directly as strings or create them using the new `CssColor` helpers.
 
 This support is available consistently across standard Blazorise components, border utilities, and **SVG Charts**, while existing contextual theme colors continue to work exactly as before.
+
+The next group of improvements focuses on everyday UI development, giving you more control over styling, resizing, input components, and editing experiences.
 
 ### DatePicker and TimePicker
 
@@ -185,5 +191,10 @@ Explore the available options and examples in the [CodeEditor documentation](doc
 
 ## Final Notes
 
+Looking back, this release turned out much larger than originally planned. What started with Reporting grew into several reusable components including DockLayout, ContextMenu, PropertyGrid, and PDF generation. Along the way we also revisited existing components such as DatePicker, TimePicker, Gantt, Scheduler, and many others, making them easier to use and easier for us to maintain.
+
+As always, many of these improvements came from community feedback, customer projects, and ideas discovered while building other features. Thank you to everyone who reported issues, suggested improvements, tested previews, and continues to use Blazorise.
+
+If you need help integrating Blazorise into your applications or require custom components and features tailored to your project, visit https://blazorise.com/custom-work.
 
 ## Goodbye
