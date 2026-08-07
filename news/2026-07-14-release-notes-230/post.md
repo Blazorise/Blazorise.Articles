@@ -1,6 +1,6 @@
 ---
 title: Announcing Blazorise 2.3 - Jadro
-description: Blazorise 2.3, codenamed Jadro, is named after one of the most powerful rivers in Croatia, originating beneath the highest mountain in Croatia.
+description: Blazorise 2.3 introduces Reporting, CodeEditor, first-party DatePicker and TimePicker components, and several new reusable UI building blocks.
 permalink: /news/release-notes/230
 canonical: /news/release-notes/230
 image-url: img/v230.jpg
@@ -9,23 +9,30 @@ author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: News
 posted-on: 2026-07-14
-read-time: 12 min
+read-time: 10 min
 pinned: true
 ---
 
 # Blazorise 2.3 - Release Notes
 
+Blazorise 2.3, codenamed **Jadro**, is named after the Jadro River in Solin, Croatia.
 
+This release started with a simple idea: *build a Reporting solution for Blazorise*. Once work began, it quickly became clear that a report designer needed several things that did not yet exist in the framework. Instead of building them only for Reporting, we turned them into reusable components that everyone can use.
+
+That became the main story of Blazorise 2.3. Reporting is the largest addition, but the work behind it also gave us DockLayout, ContextMenu, PropertyGrid, and PDF generation. The release also introduces CodeEditor and Resizer, replaces the Flatpickr-based DatePicker and TimePicker with our own Blazor and C# implementation, and improves Gantt, Scheduler, PdfViewer, and styling.
 
 ## Key Blazorise 2.3 Highlights
 
-Here are some of the most notable additions and updates:
+Here are some of the most important additions and updates:
 
-- **Gantt Year View**: Added support for weekly timelines.
+- **Reporting**: Create and design business reports, connect them to different data sources, and preview them as HTML or PDF.
+- **Reusable Reporting Components**: DockLayout, ContextMenu, PropertyGrid, and Blazorise.Pdf are available as standalone components.
+- **CodeEditor**: Build source-code and application-specific editors with completion, validation, diagnostics, and formatting.
+- **DatePicker and TimePicker**: Rebuilt with Blazor and C#, removing the Flatpickr dependency while keeping the existing public APIs.
+- **Gantt and Scheduler**: Weekly Gantt timelines, milestones, custom Scheduler fields, and custom appointment editors.
+- **Layout and Styling**: A new Resizer component, shorter CSS value syntax, and support for custom CSS colors.
 
 ## Upgrading from 2.2.x to 2.3
-
-Upgrading your application is simple:
 
 Update all **Blazorise.*** package references to **2.3**.
 
@@ -34,167 +41,138 @@ Update all **Blazorise.*** package references to **2.3**.
 <PackageVersion Include="Blazorise.Bootstrap5" Version="2.2.*" />
 ```
 
-Change to:
+Change them to:
 
 ```cs
 <PackageVersion Include="Blazorise" Version="2.3.0" />
 <PackageVersion Include="Blazorise.Bootstrap5" Version="2.3.0" />
 ```
 
-## New Features
+## Reporting and the Components It Needed
 
-### Reporting
+Reporting is one of the largest features we have built for Blazorise. The goal was to provide a reporting system that felt like part of the framework, with a visual designer and enough flexibility for common business reports.
 
-Reporting is one of the largest additions to Blazorise. The original goal was to build a reporting solution that felt like a natural part of the framework, with a visual designer, flexible layouts, and support for common business reporting scenarios.
+Reports use a familiar band-based model and can work with application objects, tabular data, CSV files, and SQL sources. The expression system covers formulas, totals, grouping, and formatting, while reports can be previewed as HTML or PDF.
 
-As development progressed, it became clear that the report designer required several advanced UI capabilities that didn't yet exist in Blazorise. Rather than implementing them only for Reporting, we decided to build them as reusable components that could benefit the entire framework. This work resulted in `DockLayout`, `ContextMenu`, `PropertyGrid`, and `Blazorise.Pdf`, all of which can now be used independently.
+The designer focuses on the tasks users expect from a visual reporting tool. You can drag fields and report elements onto the page, move and resize them, edit their properties, align items, and undo changes. Report definitions and designer state can also be saved and loaded.
 
-The Reporting extension now provides a declarative, band-based reporting system with support for headers, footers, detail and group bands, tables, images, shapes, subreports, expressions, aggregates, and multiple data sources including objects, `DataSet`, `DataTable`, CSV, and SQL.
+A large amount of work went into the parts that are less visible but important in real applications. The designer keeps its layout and editing state when switching between Design and Preview, longer operations can be cancelled, older preview results cannot replace newer ones, and larger reports refresh more efficiently. Accessibility, localization, theming, and error handling were also brought in line with the rest of Blazorise.
 
-The built-in designer supports drag-and-drop editing, rulers, grid snapping, alignment tools, undo/redo, keyboard shortcuts, property editing, and report serialization. Reports can be previewed as HTML or PDF, and rendering has been optimized for larger reports through targeted refreshes, cached pagination, and reduced processing overhead.
+### DockLayout
 
-Throughout development we also spent considerable time refining the overall experience. The designer now preserves its state more reliably while switching between Design and Preview, asynchronous operations are more robust, accessibility and localization have been improved, and the public APIs were polished to better match the rest of Blazorise.
+The first missing piece was the designer workspace. Reporting needed panels that users could move, resize, group into tabs, hide, and restore.
 
-#### DockLayout
+That work became **DockLayout**, a standalone component for building IDE-style and user-configurable layouts. Applications can create horizontal and vertical splits, dock panes by dragging them, and save the layout so it can be restored later.
 
-One of the first supporting components created during Reporting development was **DockLayout**.
+DockLayout is used by the Reporting designer, but it can also be used for dashboards, admin tools, editors, and other applications that need a flexible workspace.
 
-The report designer required an IDE-style workspace with movable and dockable panels, so instead of building that functionality specifically for Reporting, we turned it into a standalone component.
+### ContextMenu
 
-DockLayout supports resizable panes, horizontal and vertical splits, tabbed layouts, drag-and-drop docking, auto-hide panels, pinning, flyout panes, and layout persistence. During development we also refined pane management, layout persistence, accessibility, localization, and rendering performance, making the component more reliable for real-world applications.
+The designer also needed actions close to the object being edited, which led to the new **ContextMenu** component.
 
-#### ContextMenu
-
-The report designer also needed a flexible context menu system, which led to the new **ContextMenu** component.
-
-What started as an internal requirement quickly became a fully featured menu component supporting nested menus, groups, headers, checkable items, toolbar layouts, and programmatic control. Along the way we refined keyboard navigation, accessibility, focus handling, lifecycle events, and provider styling so it behaves consistently with the rest of Blazorise.
+ContextMenu covers the common menu cases, including nested items, checked items, groups, keyboard navigation, and opening from either a target element or application code. Focus handling, accessibility, and menu positioning are built in, so it behaves like a complete Blazorise component rather than a Reporting-only helper.
 
 ### PropertyGrid
 
-The Reporting designer also needed a flexible way to edit properties, which led to the new **PropertyGrid** component.
+Once a report element was selected, users needed a clear way to inspect and change its settings. That became the new **PropertyGrid** component.
 
-Instead of building a property editor exclusively for Reporting, we created a reusable PropertyGrid that can be used across any Blazorise application. It supports both **manual** and **schema-driven** configuration, making it suitable for everything from simple settings panels to complex object editors.
+PropertyGrid can be defined manually or generated from a schema. It provides typed editors, grouping, search, descriptions, templates, and actions without forcing applications to build a separate form for every object type.
 
-PropertyGrid includes typed editors, grouping, alphabetical sorting, search, descriptions, contextual help, actions, templates, constrained scrolling, and accessibility support. Each Blazorise UI provider implements its own styling to ensure the component integrates naturally with the active design system.
+Reporting uses PropertyGrid for its designer, but the component can also be used for settings pages, configuration tools, admin screens, and other object-editing scenarios.
 
-Reporting now uses `PropertyGridView` instead of its original internal property editor. Property schemas are cached and only rebuilt when necessary, improving interaction performance while preserving scroll position during editing.
+### PDF Generation
 
-#### PDF
+Reporting also needed PDF preview and export, which led to the new **Blazorise.Pdf** extension.
 
-Reporting also required reliable document generation, which resulted in the new **Blazorise.Pdf** extension.
+PDF documents can be created with Razor components or fluent builders. The API covers the main building blocks needed for business documents, including text, images, shapes, and tables, with support for Unicode and custom fonts.
 
-The library provides a declarative API for creating PDF documents directly from Blazor... We also invested time in making PDF generation more reliable, with better diagnostics, cancellation support, safer resource loading, and a more consistent API.
+The generator also includes cancellation, diagnostics, resource limits, and safer loading of remote images and fonts. Reporting uses it for preview and download, but it can be used independently anywhere an application needs to create PDF files.
 
-## Enhancements
+### PdfViewer Continuous Scrolling
 
-While Reporting is the largest addition in this release, we also spent time improving many existing components across Blazorise. Some changes add entirely new capabilities, while others remove long-standing limitations and make everyday development a little easier.
+To make longer reports and documents easier to read, `PdfViewer` now has a continuous scrolling mode.
 
-## Enhancements
+Set `Mode="PdfViewerMode.Continuous"` to show all pages in one vertical view. Page tracking and toolbar navigation stay synchronized as the user scrolls.
+
+The Reporting work also led to smaller improvements in the Blazorise core, including a lighter base class for styled components and better support for global pointer interactions. These changes are mostly internal, but they help the new components follow the same rules as the rest of the framework.
+
+## CodeEditor
+
+The goal behind **CodeEditor** was not only to edit common programming languages. We also wanted it to work for configuration files, formulas, scripts, and languages defined by the application itself.
+
+CodeEditor provides the editor while leaving language rules under application control. Applications can add their own completion, diagnostics, formatting, validation, snippets, and syntax rules through strongly typed APIs.
+
+It also supports different value update modes, so changes can be applied immediately, after editing, or with a delay. Multiple editors can run independently on the same page, and pending changes are kept when focus moves or the component is removed.
+
+Explore the available options and examples in the [CodeEditor documentation](docs/extensions/code-editor).
+
+## DatePicker and TimePicker
+
+Another large part of this release is the complete rewrite of **DatePicker** and **TimePicker**.
+
+For years, both components relied on the Flatpickr JavaScript library. It served us well, but it became harder to maintain and limited how much control we had over fixes and new features. We decided to replace it with our own implementation built with Blazor and C#.
+
+The rewrite keeps the existing public APIs and the behavior applications already depend on. At the same time, it gives us direct control over keyboard navigation, accessibility, popup placement, month and week navigation, and provider styling.
+
+The most important benefit is long-term ownership. We can now improve these components without waiting for changes in an external library or working around its limits.
+
+Explore the available options and examples in the [DatePicker documentation](docs/components/date-picker) and [TimePicker documentation](docs/components/time-picker).
+
+## Planning and Scheduling
+
+We also returned to Gantt and Scheduler, with changes focused on planning detail and application-specific data.
 
 ### Gantt Improvements
 
-The **Gantt Year View** now supports **weekly timelines**, making it easier to plan and review projects at a finer level of detail across an entire year.
+The **Gantt Year View** can now use weekly columns when a month-based view is too broad. The existing monthly scale remains the default, while `TimelineScale="GanttYearViewTimelineScale.Week"` shows one column per week across the year.
 
-By default, the Year view continues to display **monthly columns**, preserving the existing behavior. When more detailed planning is needed, you can switch to **weekly columns** by setting the new `TimelineScale` parameter to `Week`.
-
-This provides a more granular view of long-running projects while keeping the familiar Year view layout, making it easier to visualize schedules, milestones, and task progress throughout the year.
-
-#### Milestones
-
-The **Gantt** component now supports **milestones**, making it easier to highlight important dates and events alongside your project timeline.
-
-Milestones can be placed at **exact dates and times**, customized through templates and styling, and optionally included when automatically calculating the visible timeline range. This makes it simple to call out key project events such as releases, deadlines, approvals, or other important checkpoints without representing them as regular tasks.
+Gantt also supports **milestones** for important dates such as releases, approvals, and deadlines. They can be placed at exact dates and times, styled or templated, and included when the visible timeline range is calculated.
 
 ### Scheduler Improvements
 
-The **Scheduler** now offers much greater flexibility when customizing the **Add/Edit Appointment** dialog.
+Scheduler appointments often contain more than the built-in title, dates, and description. The Add/Edit Appointment dialog can now include editors for custom model fields through `SchedulerColumns` and `SchedulerColumn`.
 
-Using the new **`SchedulerColumns`** and **`SchedulerColumn`** components, you can add editors for your own appointment model properties, making it easy to capture application-specific information such as colors, categories, locations, or any other custom fields. These values are automatically loaded and saved as part of the standard scheduler editing workflow.
+Applications can also replace the editor used for a built-in field while keeping the Scheduler's normal validation, state handling, and save flow. Custom appointment templates and improved background styling make it possible to show those values directly in the calendar.
 
-Built-in appointment fields such as **Title**, **Start**, **End**, **AllDay**, **Description**, and **RecurrenceRule** can also be replaced with your own editor templates. This allows you to fully customize the editing experience while continuing to use the Scheduler's built-in state management, validation, and save logic.
+## Layout and Styling
 
-In addition, Scheduler appointments now support **custom display templates** and improved styling, making it possible to visually reflect custom properties such as appointment colors directly within the calendar.
+The remaining changes focus on smaller building blocks that make layouts and styling easier to control.
 
-### PdfViewer Improvements
+### Resizer
 
-**PdfViewer** now supports **continuous scrolling**, allowing documents to be viewed as a single vertically scrollable document instead of one page at a time.
+The new **Resizer** component adds a resizable boundary to an existing panel, sidebar, or other element without requiring a full docking layout.
 
-By setting `Mode="PdfViewerMode.Continuous"`, users can scroll naturally through all pages while the viewer keeps the current page, toolbar navigation, and page tracking synchronized. This provides a more familiar reading experience for longer documents while preserving the existing navigation features.
+It works with pointer and keyboard input, can resize one or both sides of a boundary, and supports size limits, external targets, custom thickness, and resize events. The handle can stay transparent or show a provider-specific gutter when a visible grip is needed.
 
-### Styling Improvements
+### Fluent CSS Value Shorthands
 
-Working with CSS values in C# is now more concise thanks to new **Fluent CSS value shorthands**.
-
-Instead of using helper methods such as `Width.Rem(8)` or `Gap.Rem(1)`, you can now write values more naturally using extension methods like `8.Rem()`, `50.Percent()`, or `1.25.Rem()`. The existing APIs remain fully supported, so you can adopt the new syntax at your own pace.
+CSS values can now be written with shorter numeric extension methods:
 
 ```razor
-<Div Width="8.Rem()"
-     Height="50.Percent()"
+<Div Width="20.Rem().Min(12).Max(30)"
+     Height="@(Height.Calc( "100vh - 4rem" ))"
      Gap="1.Rem()"
      TextSize="1.25.Rem()" />
 ```
 
-Sizing values can also be extended with **`Min`** and **`Max`** constraints, making it easy to express responsive sizing in a fluent way.
+Existing forms such as `Width.Rem(8)` and `Gap.Rem(1)` remain supported, so applications can adopt the shorter syntax gradually.
 
-```razor
-<Div Width="20.Rem().Min(12).Max(30)" />
-```
+### Custom CSS Colors
 
-In addition, sizing builders now support **percentage-based** and **calculated (`calc`)** values, providing greater flexibility when defining layouts directly in C#.
+`Color`, `TextColor`, `Background`, and `BorderColor` now accept custom CSS values in addition to the existing theme colors.
 
-```razor
-<Div Width="Width.Percent(50)"
-     Height="@(Height.Calc("100vh - 4rem"))" />
-```
-
-### Resizer (New)
-
-The new **`Resizer`** component provides a simple way to add **resizable boundaries** to existing elements without requiring a predefined layout or container.
-
-It supports both **pointer and keyboard interaction**, configurable minimum and maximum size constraints, external resize targets, CSS custom properties, and coordinated resizing of elements on both sides of the boundary. You can also customize the resize handle's position, thickness, and appearance, while listening for resize events to react to size changes in your application.
-
-An optional provider-specific gutter can also be displayed to give users a more visible resize handle when needed.
-
-#### Custom CSS Colors
-
-Blazorise components now support **custom CSS colors**, making it easier to use your own design system alongside the built-in theme colors.
-
-Properties such as **`Color`**, **`TextColor`**, **`Background`**, and **`BorderColor`** now accept standard CSS color values, including hexadecimal colors, `rgb()`, `rgba()`, `hsl()`, and CSS variables. You can assign colors directly as strings or create them using the new `CssColor` helpers.
-
-This support is available consistently across standard Blazorise components, border utilities, and **SVG Charts**, while existing contextual theme colors continue to work exactly as before.
-
-The next group of improvements focuses on everyday UI development, giving you more control over styling, resizing, input components, and editing experiences.
-
-### DatePicker and TimePicker
-
-One of the biggest improvements in this release is a complete rewrite of **DatePicker** and **TimePicker**.
-
-For many years these components relied on the **Flatpickr** JavaScript library. While it served us well, it gradually became harder to maintain and extend as the rest of Blazorise continued to evolve. Rather than continuing to depend on an external library, we decided to replace it with a **first-party implementation built with Blazor and C#**.
-
-The new implementation preserves the existing public APIs, making migration straightforward while giving us full control over future development. It also introduces several new capabilities, including improved keyboard navigation, better accessibility, adaptive popup positioning, enhanced month and week navigation, and context-aware actions such as **"This month"** and **"This week"**.
-
-Owning the entire implementation means we can continue improving DatePicker and TimePicker without being limited by an external dependency, making these components a stronger foundation for future releases.
-
-Explore the available options and examples in the [DatePicker documentation](docs/components/date-picker) and [TimePicker documentation](docs/components/time-picker).
-
-### CodeEditor (New)
-
-The original goal behind **CodeEditor** wasn't just to build another source code editor. We wanted a component that could also be used for **domain-specific editors**, configuration files, scripting languages, formulas, and other application-specific editing scenarios.
-
-Instead of imposing language rules or editor behavior, CodeEditor provides the infrastructure while leaving the editing experience under your control. Applications can define their own syntax, completion, formatting, validation, and diagnostics through strongly typed APIs.
-
-The component includes two-way binding, configurable languages and themes, code completion, snippet insertion, formatting, keyboard shortcuts, selection management, and programmatic control. It also supports **immediate, deferred, and debounced** value updates, allowing you to choose the editing experience that best fits your application.
-
-Multiple editor instances can run independently on the same page, while pending changes are safely preserved during focus changes or component disposal.
-
-Explore the available options and examples in the [CodeEditor documentation](docs/extensions/code-editor).
+This includes common CSS color formats and CSS variables, either passed as strings or created with the new `CssColor` helpers. The same color values work across regular components, border utilities, and SVG Charts.
 
 ## Final Notes
 
-Looking back, this release turned out much larger than originally planned. What started with Reporting grew into several reusable components including DockLayout, ContextMenu, PropertyGrid, and PDF generation. Along the way we also revisited existing components such as DatePicker, TimePicker, Gantt, Scheduler, and many others, making them easier to use and easier for us to maintain.
+Blazorise 2.3 started with Reporting, but it became much more than one new extension.
 
-As always, many of these improvements came from community feedback, customer projects, and ideas discovered while building other features. Thank you to everyone who reported issues, suggested improvements, tested previews, and continues to use Blazorise.
+Reporting needed a workspace, so we built DockLayout. It needed object editing, so PropertyGrid became a standalone component. It needed actions close to the selected item, so ContextMenu moved into the core. It needed document output, so PDF generation became its own extension.
 
-If you need help integrating Blazorise into your applications or require custom components and features tailored to your project, visit https://blazorise.com/custom-work.
+That same approach continued across the release. We replaced a dependency we no longer wanted to rely on, added new building blocks, and improved existing components based on problems found in real applications.
 
-## Goodbye
+Many of these changes came from community feedback, customer projects, support requests, and our own work with Blazorise. Thank you to everyone who reported issues, suggested features, tested previews, and contributed to the project.
+
+If you need help integrating Blazorise into your application or need a custom component for your project, visit our [custom development services](https://blazorise.com/custom-work).
+
+We hope Blazorise 2.3 gives you more ways to build reporting tools, editors, planning systems, and business applications. Thank you for continuing to use and support Blazorise.
