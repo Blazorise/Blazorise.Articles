@@ -62,6 +62,8 @@ The designer focuses on the tasks users expect from a visual reporting tool. You
 
 We also spent a lot of time on the parts users don't immediately see, but that matter in real applications. The designer keeps its layout and editing state when switching between Design and Preview, longer operations can be cancelled, older preview results cannot replace newer ones, and larger reports refresh more efficiently. Accessibility, localization, theming, and error handling were also brought in line with the rest of Blazorise.
 
+Explore the designer, data sources, expressions, and examples in the [Reporting documentation](docs/extensions/reporting).
+
 ### DockLayout
 
 The first missing piece was the designer workspace. Reporting needed panels that users could move, resize, group into tabs, hide, and restore.
@@ -72,17 +74,23 @@ That work became **DockLayout**, a standalone component for building IDE-style a
 
 DockLayout is used by the Reporting designer, but it can also be used for dashboards, admin tools, editors, and other applications that need a flexible workspace.
 
+See the [DockLayout documentation](docs/components/dock-layout) for layout and docking examples.
+
 ### ContextMenu
 
 The designer also needed context-specific actions for the object being edited, which led to the new **ContextMenu** component.
 
 ContextMenu covers the common menu cases, including nested items, checked items, groups, keyboard navigation, and opening from either a target element or application code. Focus handling, accessibility, and menu positioning are built in, so it behaves like a complete Blazorise component rather than a Reporting-only helper.
 
+See the [ContextMenu documentation](docs/components/context-menu) for usage examples.
+
 ### PropertyGrid
 
 Once a report element was selected, users needed a clear way to inspect and change its settings. That became the new **PropertyGrid** component.
 
 PropertyGrid can build editors manually or from a schema, with support for grouping, search, descriptions, templates, and actions. Reporting uses it in the designer, but it can also be used for settings pages, configuration tools, admin screens, and other object-editing scenarios.
+
+See the [PropertyGrid documentation](docs/components/property-grid) for manual and schema-driven examples.
 
 ### PDF Generation
 
@@ -91,6 +99,8 @@ Reporting also needed PDF preview and export, which led to the new **Blazorise.P
 PDF documents can be created with Razor components or fluent builders. The API covers the main building blocks needed for business documents, including text, images, shapes, and tables, with support for Unicode and custom fonts.
 
 We also spent time making PDF generation safe and reliable for real applications, especially when working with external images and fonts. Reporting uses it for preview and download, but the PDF extension can be used independently anywhere you need to create PDF files.
+
+See the [PDF documentation](docs/extensions/pdf) for document generation examples.
 
 ## CodeEditor
 
@@ -124,11 +134,15 @@ To make longer reports and documents easier to read, `PdfViewer` now has a conti
 
 Set `Mode="PdfViewerMode.Continuous"` to show all pages in one vertical view. Page tracking and toolbar navigation stay synchronized as the user scrolls.
 
+See the [PdfViewer documentation](docs/extensions/pdfviewer) for configuration and examples.
+
 ## Resizer
 
 The new **Resizer** component adds a resizable boundary to an existing panel, sidebar, or other element without requiring a full docking layout.
 
 Resizer works with both pointer and keyboard input and can resize one or both sides of a boundary. It can remain invisible or show a provider-specific gutter when users need a clear resize handle.
+
+See the [Resizer documentation](docs/components/resizer) for usage examples.
 
 ## Planning and Scheduling
 
@@ -142,11 +156,15 @@ The **Gantt Year View** can now use weekly columns when a month-based view is to
 
 Gantt also supports **milestones** for important dates such as releases, approvals, and deadlines. They can be placed at exact dates and times, styled or templated, and included when the visible timeline range is calculated.
 
+See the [Gantt documentation](docs/extensions/gantt) for timeline and milestone examples.
+
 ### Scheduler Improvements
 
 Scheduler appointments often contain more than the built-in title, dates, and description. The Add/Edit Appointment dialog can now include editors for custom model fields through `SchedulerColumns` and `SchedulerColumn`.
 
 Applications can also replace the editor used for a built-in field while keeping the Scheduler's normal validation, state handling, and save flow. Custom appointment templates and improved background styling make it possible to show those values directly in the calendar.
+
+See the [Scheduler documentation](docs/extensions/scheduler) for custom editor and appointment examples.
 
 ## Smaller Improvements
 
