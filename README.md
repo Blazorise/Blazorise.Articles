@@ -47,7 +47,6 @@ category: Announcements
 posted-on: 2025-10-17
 read-time: 4 min
 pinned: true
-video: GC5E8ie2pdM
 ---
 ```
 
@@ -67,7 +66,6 @@ video: GC5E8ie2pdM
 | **posted-on** | Date of publication in `yyyy-MM-dd` format |
 | **read-time** | Estimated read time (e.g. `5 min`) |
 | **pinned** | (Optional) If `true`, the post is featured at the top |
-| **video** | (Optional) YouTube video ID (for example, `GC5E8ie2pdM`) |
 
 ---
 
@@ -89,6 +87,11 @@ video: GC5E8ie2pdM
 4. **Use relative paths** for images inside Markdown:
    ```markdown
    ![My Post Image](img/my-post-image.png)
+   ```
+
+   Embed a YouTube video anywhere in the post using its video ID:
+   ```markdown
+   {% youtube GC5E8ie2pdM %}
    ```
 
 5. **Create a Pull Request** to propose your post.

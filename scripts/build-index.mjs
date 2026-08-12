@@ -80,7 +80,7 @@ function fixFrontMatterText(rawMd) {
   const rest = rawMd.slice(boundary + 4);         // skip "\n---"
 
   const fixedYaml = yamlBlock
-    .split(/\r?\n/)
+    .split('\n')
     .map(line => {
       // Only handle "key: value" (simple top-level scalars)
       const m = /^([A-Za-z0-9_-]+)\s*:\s*(.*)$/.exec(line);
@@ -133,7 +133,6 @@ function readFrontMatter(mdPath) {
       postedOn: cleanStr(fm['posted-on']),
       readTime: cleanStr(fm['read-time']),
       pinned: cleanStr(fm['pinned']),
-      video: cleanStr(fm['video']),
     },
     body
   };
@@ -186,8 +185,7 @@ function compactIndexItem(mdRelPath, fm) {
     authorName: fm.authorName || null,
     authorImage: fm.authorImage || null,
     readTime: fm.readTime || null,
-    pinned: toBool(fm.pinned) || false,
-    video: fm.video || null
+    pinned: toBool(fm.pinned) || false
   };
 }
 
