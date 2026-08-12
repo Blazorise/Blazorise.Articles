@@ -62,7 +62,7 @@ The designer focuses on the tasks users expect from a visual reporting tool. You
 
 We also spent a lot of time on the parts users don't immediately see, but that matter in real applications. The designer keeps its layout and editing state when switching between Design and Preview, longer operations can be cancelled, older preview results cannot replace newer ones, and larger reports refresh more efficiently. Accessibility, localization, theming, and error handling were also brought in line with the rest of Blazorise.
 
-Explore the designer, data sources, expressions, and examples in the [Reporting documentation](docs/extensions/reporting).
+The [Reporting documentation](docs/extensions/reporting) covers the designer, data sources, expressions, and complete examples.
 
 ### DockLayout
 
@@ -74,7 +74,7 @@ That work became **DockLayout**, a standalone component for building IDE-style a
 
 DockLayout is used by the Reporting designer, but it can also be used for dashboards, admin tools, editors, and other applications that need a flexible workspace.
 
-See the [DockLayout documentation](docs/components/dock-layout) for layout and docking examples.
+More layout and docking examples are available in the [DockLayout documentation](docs/components/dock-layout).
 
 ### ContextMenu
 
@@ -82,7 +82,7 @@ The designer also needed context-specific actions for the object being edited, w
 
 ContextMenu covers the common menu cases, including nested items, checked items, groups, keyboard navigation, and opening from either a target element or application code. Focus handling, accessibility, and menu positioning are built in, so it behaves like a complete Blazorise component rather than a Reporting-only helper.
 
-See the [ContextMenu documentation](docs/components/context-menu) for usage examples.
+For more examples, visit the [ContextMenu documentation](docs/components/context-menu).
 
 ### PropertyGrid
 
@@ -90,7 +90,7 @@ Once a report element was selected, users needed a clear way to inspect and chan
 
 PropertyGrid can build editors manually or from a schema, with support for grouping, search, descriptions, templates, and actions. Reporting uses it in the designer, but it can also be used for settings pages, configuration tools, admin screens, and other object-editing scenarios.
 
-See the [PropertyGrid documentation](docs/components/property-grid) for manual and schema-driven examples.
+Manual and schema-driven setups are covered in the [PropertyGrid documentation](docs/components/property-grid).
 
 ### PDF Generation
 
@@ -100,7 +100,7 @@ PDF documents can be created with Razor components or fluent builders. The API c
 
 We also spent time making PDF generation safe and reliable for real applications, especially when working with external images and fonts. Reporting uses it for preview and download, but the PDF extension can be used independently anywhere you need to create PDF files.
 
-See the [PDF documentation](docs/extensions/pdf) for document generation examples.
+The [PDF documentation](docs/extensions/pdf) includes setup and document generation examples.
 
 ## CodeEditor
 
@@ -112,7 +112,7 @@ CodeEditor handles the editor itself, while your application defines the languag
 
 It also supports different value update modes, so changes can be applied immediately, after editing, or with a delay. Multiple editors can run independently on the same page, and pending changes are kept when focus moves or the component is removed.
 
-Explore the available options and examples in the [CodeEditor documentation](docs/extensions/code-editor).
+You can find setup, configuration, and examples in the [CodeEditor documentation](docs/extensions/code-editor).
 
 ## DatePicker and TimePicker
 
@@ -126,7 +126,7 @@ The rewrite keeps the existing public APIs and the behavior applications already
 
 The most important benefit is long-term ownership. We can now improve these components without waiting for changes in an external library or working around its limits.
 
-Explore the available options and examples in the [DatePicker documentation](docs/components/date-picker) and [TimePicker documentation](docs/components/time-picker).
+More details and examples are available in the [DatePicker documentation](docs/components/date-picker) and [TimePicker documentation](docs/components/time-picker).
 
 ## PdfViewer Continuous Scrolling
 
@@ -134,7 +134,7 @@ To make longer reports and documents easier to read, `PdfViewer` now has a conti
 
 Set `Mode="PdfViewerMode.Continuous"` to show all pages in one vertical view. Page tracking and toolbar navigation stay synchronized as the user scrolls.
 
-See the [PdfViewer documentation](docs/extensions/pdfviewer) for configuration and examples.
+Configuration and examples are covered in the [PdfViewer documentation](docs/extensions/pdfviewer).
 
 ## Resizer
 
@@ -142,7 +142,7 @@ The new **Resizer** component adds a resizable boundary to an existing panel, si
 
 Resizer works with both pointer and keyboard input and can resize one or both sides of a boundary. It can remain invisible or show a provider-specific gutter when users need a clear resize handle.
 
-See the [Resizer documentation](docs/components/resizer) for usage examples.
+The [Resizer documentation](docs/components/resizer) shows how to add resizing to existing layouts.
 
 ## Planning and Scheduling
 
@@ -156,7 +156,7 @@ The **Gantt Year View** can now use weekly columns when a month-based view is to
 
 Gantt also supports **milestones** for important dates such as releases, approvals, and deadlines. They can be placed at exact dates and times, styled or templated, and included when the visible timeline range is calculated.
 
-See the [Gantt documentation](docs/extensions/gantt) for timeline and milestone examples.
+Weekly timelines, milestones, and other examples are available in the [Gantt documentation](docs/extensions/gantt).
 
 ### Scheduler Improvements
 
@@ -164,7 +164,7 @@ Scheduler appointments often contain more than the built-in title, dates, and de
 
 Applications can also replace the editor used for a built-in field while keeping the Scheduler's normal validation, state handling, and save flow. Custom appointment templates and improved background styling make it possible to show those values directly in the calendar.
 
-See the [Scheduler documentation](docs/extensions/scheduler) for custom editor and appointment examples.
+The [Scheduler documentation](docs/extensions/scheduler) includes examples for custom editors and appointment templates.
 
 ## Smaller Improvements
 
