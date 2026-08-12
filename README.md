@@ -47,6 +47,7 @@ category: Announcements
 posted-on: 2025-10-17
 read-time: 4 min
 pinned: true
+video: GC5E8ie2pdM
 ---
 ```
 
@@ -66,6 +67,7 @@ pinned: true
 | **posted-on** | Date of publication in `yyyy-MM-dd` format |
 | **read-time** | Estimated read time (e.g. `5 min`) |
 | **pinned** | (Optional) If `true`, the post is featured at the top |
+| **video** | (Optional) YouTube video ID (for example, `GC5E8ie2pdM`) |
 
 ---
 
