@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-17T07:35:38.483Z",
-  "commit": "d682f5c38529",
-  "count": 126,
+  "generatedAt": "2026-08-07T09:03:50.832Z",
+  "commit": "6b8cd5708dc0",
+  "count": 127,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-08-07-release-notes-223",
+      "slug": "223",
+      "permalink": "/news/release-notes/223",
+      "title": "Blazorise 2.2.3 - Validation, Autocomplete, and Svg Charts Improvements",
+      "summary": "Blazorise 2.2.3 fixes validation on disabled fields, improves Autocomplete keyboard selection, and includes fixes for DatePicker, Svg Charts, and documentation.",
+      "postedOn": "2026-08-07",
+      "category": "News",
+      "imageUrl": "img/v223.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-07-17-release-notes-222",
