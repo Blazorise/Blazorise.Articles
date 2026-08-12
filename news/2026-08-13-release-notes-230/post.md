@@ -21,6 +21,8 @@ This release started with a simple idea: *build a Reporting solution for Blazori
 
 That became the main story of Blazorise 2.3. Reporting is the largest addition, but the work behind it also gave us DockLayout, ContextMenu, PropertyGrid, and PDF generation. The release also introduces CodeEditor and Resizer, replaces the Flatpickr-based DatePicker and TimePicker with our own Blazor and C# implementation, and improves Gantt, Scheduler, PdfViewer, and styling.
 
+{% youtube h0ffIJ7ZO4U %}
+
 ## Key Blazorise 2.3 Highlights
 
 Here are some of the most important additions and updates:
