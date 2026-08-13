@@ -89,6 +89,11 @@ pinned: true
    ![My Post Image](img/my-post-image.png)
    ```
 
+   Embed a YouTube video anywhere in the post using its video ID:
+   ```markdown
+   {% youtube GC5E8ie2pdM %}
+   ```
+
 5. **Create a Pull Request** to propose your post.
    The Blazorise team will review, approve, and merge it — triggering the publishing workflow.
 
