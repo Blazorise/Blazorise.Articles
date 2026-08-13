@@ -13,8 +13,6 @@ read-time: 10 min
 pinned: true
 ---
 
-# Blazorise 2.3 - Release Notes
-
 Blazorise 2.3, codenamed **Jadro**, is named after the Jadro River in Solin, Croatia.
 
 This release started with a simple idea: *build a Reporting solution for Blazorise*. Once work began, it quickly became clear that a report designer needed several things that did not yet exist in the framework. Instead of building them only for Reporting, we turned them into reusable components that everyone can use.
