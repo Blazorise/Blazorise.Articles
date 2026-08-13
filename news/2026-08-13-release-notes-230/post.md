@@ -13,9 +13,9 @@ read-time: 10 min
 pinned: true
 ---
 
-Blazorise 2.3, codenamed **Jadro**, is named after the Jadro River in Solin, Croatia.
+Blazorise 2.3 is codenamed **Jadro**, after the river that runs through Solin, Croatia, an ancient city known as Salona in Roman times.
 
-This release started with a simple idea: *build a Reporting solution for Blazorise*. Once work began, it quickly became clear that a report designer needed several things that did not yet exist in the framework. Instead of building them only for Reporting, we turned them into reusable components that everyone can use.
+The release itself started with a simple idea: _build a Reporting solution for Blazorise_. Once work began, it quickly became clear that a report designer needed several things that did not yet exist in the framework. Instead of building them only for Reporting, we turned them into reusable components that everyone can use.
 
 That became the main story of Blazorise 2.3. But Reporting is only part of the release. We also added CodeEditor and Resizer, rebuilt DatePicker and TimePicker with Blazor and C#, and continued improving Gantt, Scheduler, PdfViewer, and styling.
 
