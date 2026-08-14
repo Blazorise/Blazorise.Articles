@@ -13,28 +13,29 @@ read-time: 15 min
 pinned: false
 ---
 
-# Intégration des cartes IGN (France) dans le composant Blazorise.Map
+# Integration of french IGN Maps into Blazorise.Map component
 
-Cet article présente un guide rapide pour intégrer des fonds de carte IGN (Institut national de l'information géographique et forestière) dans des composants Map de Blazorise. 
-Le service fournit également un service de géocodage pour résoudre des adresses en coordonnées géographiques (latitude / longitude). Nous allons pouvoir également utiliser ce service pour centrer la carte sur une adresse donnée.
+This article provides a quick guide to integrating IGN (National Institute of Geographic and Forest Information) base maps into Blazorise Map components.
+The service also provides a geocoding service to convert addresses into geographic coordinates (latitude/longitude). We can also use this service to center the map on a given address.
 
-## Présentation rapide du service IGN
+## A Quick Overview of the IGN Service
 
-L'IGN fournit des fonds de carte, orthophotos et jeux de données thématiques accessibles via des services web (WMTS, WMS, géocodage). Ces services permettent de :
+The IGN provides base maps, orthophotos, and thematic datasets accessible via web services (WMTS, WMS, geocoding). These services allow users to:
 
-- afficher des fonds cartographiques multi‑résolution (plans, orthophotos),
-- superposer des couches thématiques (parcelles, cours d'eau, infrastructures),
-- effectuer du géocodage (obtenir des coordonnées à partir d'une adresse),
-- contrôler l'affichage via des paramètres de tuile (TileMatrixSet) et de format d'image.
+- display multi-resolution base maps (maps, orthophotos),
+- overlay thematic layers (parcels, waterways, infrastructure),
+- perform geocoding (obtain coordinates from an address),
+- control the display using tile parameters (TileMatrixSet) and image format settings.
 
-## Récupération d'une tuile IGN
+## Retrieving an IGN tile
 
-Le principe consiste à construire une URL de tuile en fonction de la couche IGN souhaitée, du format d'image et de la grille de tuiles (TileMatrixSet). L'envoi de la requête ainsi construite permet de récupérer l'image de la tuile correspondante.
+The process involves constructing a tile URL based on the desired IGN layer, the image format, and the tile grid (TileMatrixSet). Sending the request constructed in this way retrieves the image of the corresponding tile.
 
-Une requête est de la forme : `https://data.geopf.fr/wmts?SERVICE=WMTS&amp;VERSION=1.0.0&amp;REQUEST=GetTile&amp;LAYER=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2&amp;STYLE=normal&amp;FORMAT=image/png&amp;TILEMATRIXSET=PM_0_19&amp;TILEMATRIX={z}&amp;TILEROW={y}&amp;TILECOL={x}`
+A request takes the following form: `https://data.geopf.fr/wmts?SERVICE=WMTS&amp;VERSION=1.0.0&amp;REQUEST=GetTile&amp;LAYER=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2&amp;STYLE=normal&amp;FORMAT=image/png&amp;TILEMATRIXSET=PM_0_19&amp;TILEMATRIX={z}&amp;TILEROW={y}&amp;TILECOL={x}`
 
-Nous allons dans un premier temps créer une liste de couches de tuiles IGN "de référence", c'est à dire les plus communément utilisées pour des applications web. Ces couches sont exposées par l'enum `IgnLayers`.
-Une méthode `GetIgnMap(IgnLayers layer)` permet de récupérer l'URL de tuile correspondante à la couche IGN demandée.
+First, we will create a list of “reference” IGN tile layers—that is, those most commonly used for web applications. These layers are exposed by the `IgnLayers` enumeration.
+
+The `GetIgnMap(IgnLayers layer)` method retrieves the tile URL corresponding to the requested IGN layer. 
 
 ```csharp
     private record IgnMapInfo(IgnLayers Layer, string LayerName, ImageFormats ImageFormat, TileMatrixSets TileMatrixSet, string Style = "normal");
@@ -76,10 +77,10 @@ Une méthode `GetIgnMap(IgnLayers layer)` permet de récupérer l'URL de tuile c
     }
 ```
 
-Le format d'image retourné par l'API IGN peut être `image/png` ou `image/jpeg`. En général, les tuiles au format png peuvent servir de couche (ou calque) du fait de leur transparence. Celles au format jpg ne servent souvent que de fonds de carte.
-Le paramètre `TileMatrixSet` définit la grille de tuiles utilisée pour la couche (ex : PM_0_19 pour les plans IGN, PM_6_18 pour les cours d'eau). C'est une donnée qui est propre à chaque couche IGN et qui est documentée dans l'API IGN.
+The image format returned by the IGN API can be `image/png` or `image/jpeg`. In general, PNG tiles can be used as layers because of their transparency. JPEG tiles are often used only as basemaps.
+The `TileMatrixSet` parameter defines the tile grid used for the layer (e.g., PM_0_19 for IGN maps, PM_6_18 for waterways). This information is specific to each IGN layer and is documented in the IGN API.
 
-Voici les trois enumérations qui seront utilisées pour les formats d'image, les grilles de tuiles et les noms des couches :
+Here are the three enumerations that will be used for image formats, tile grids, and layer names:
 ```csharp
     public enum ImageFormats
     {
@@ -129,11 +130,10 @@ Voici les trois enumérations qui seront utilisées pour les formats d'image, le
     }
 ```
 
-## Exemples d'usage
+## Examples of use
 
-### 1) Couches prédéfinies via l'enum IgnLayers
+### 1) Predefined layers in the IgnLayers enum
 
-<!-- Images d'exemple : remplacer par de vraies illustrations dans /wwwroot/images ou dossier docs -->
 ![Plan IGN - Multiple layers](img/sample1.jpg)
 ![Parcelles cadastrales](img/cadastral.jpg)
 
@@ -160,14 +160,13 @@ Voici les trois enumérations qui seront utilisées pour les formats d'image, le
 </Map>
 ```
 
-Explication :
-- `GetIgnMap(IgnLayers.xxx)` retourne le template d'URL pour la couche IGN demandée.
-- On peut empiler plusieurs `MapTileLayer` avec des `ZIndex` différents pour composer la carte (fond, couches intermédiaires, surcouches d'éléments vectoriels).
-- `Opacity` permet d'ajuster la visibilité d'une couche sans changer sa source.
+Explanation:
+- `GetIgnMap(IgnLayers.xxx)` returns the URL template for the requested IGN layer.
+- You can stack multiple `MapTileLayer` instances with different `ZIndex` values to build the map (background, intermediate layers, vector overlay layers).
+- `Opacity` allows you to adjust a layer's visibility without changing its source.
 
-### 2) Couches personnalisées (non pré-définies)
+### 2) Custom layer
 
-<!-- Image d'exemple pour une couche thématique personnalisée -->
 ![Couche thématique - Biomethane](img/biomethane.jpg)
 
 ```razor
@@ -177,11 +176,11 @@ Explication :
 			  ZIndex="0" />
 ```
 
-Explication :
-- Lorsque la couche IGN n'est pas dans l'enum `IgnLayers`, utilisez la surcharge qui accepte un `layerId` explicite, le format d'image et la grille de tuiles.
-- Ceci est utile pour des couches métier spécifiques exposées par l'API IGN (ex : jeux de données thématiques).
+Explanation:
+- When the IGN layer is not in the `IgnLayers` enumeration, use the overload that accepts an explicit `layerId`, the image format, and the tile grid.
+- This is useful for specific business layers exposed by the IGN API (e.g., thematic datasets).
 
-### 3) Résolution d'adresses : GetCoordinatesFromAddressAsync
+### 3) Address to GPS coordinates : GetCoordinatesFromAddressAsync
 
 The Blazorise Map component can be centered on a specific address given GPS latitude and longitude data. The IGN service also provides a geocoding API to resolve addresses into coordinates, so let's see how to use it.
 
