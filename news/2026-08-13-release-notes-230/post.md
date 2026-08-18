@@ -8,7 +8,7 @@ image-title: Announcing Blazorise 2.3 - Jadro
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: News
-posted-on: 2026-07-14
+posted-on: 2026-08-14
 read-time: 10 min
 pinned: true
 ---
