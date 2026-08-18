@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-13T08:25:25.196Z",
-  "commit": "4eae6b3e67e2",
+  "generatedAt": "2026-08-18T05:29:30.353Z",
+  "commit": "47b9db76d5c3",
   "count": 128,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-08-13-release-notes-230",
+      "slug": "230",
+      "permalink": "/news/release-notes/230",
+      "title": "Announcing Blazorise 2.3 - Jadro",
+      "summary": "Blazorise 2.3 introduces Reporting, CodeEditor, first-party DatePicker and TimePicker components, and several new reusable UI building blocks.",
+      "postedOn": "2026-08-14",
+      "category": "News",
+      "imageUrl": "img/v230.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "10 min",
+      "pinned": true
+    },
     {
       "root": "news",
       "dir": "news/2026-08-07-release-notes-223",
@@ -33,21 +48,6 @@
       "authorImage": "/assets/img/authors/mladen.png",
       "readTime": "2 min",
       "pinned": false
-    },
-    {
-      "root": "news",
-      "dir": "news/2026-08-13-release-notes-230",
-      "slug": "230",
-      "permalink": "/news/release-notes/230",
-      "title": "Announcing Blazorise 2.3 - Jadro",
-      "summary": "Blazorise 2.3 introduces Reporting, CodeEditor, first-party DatePicker and TimePicker components, and several new reusable UI building blocks.",
-      "postedOn": "2026-07-14",
-      "category": "News",
-      "imageUrl": "img/v230.jpg",
-      "authorName": "Mladen Macanović",
-      "authorImage": "/assets/img/authors/mladen.png",
-      "readTime": "10 min",
-      "pinned": true
     },
     {
       "root": "news",
