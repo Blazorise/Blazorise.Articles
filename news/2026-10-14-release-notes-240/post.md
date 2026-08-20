@@ -37,6 +37,20 @@ Change them to:
 <PackageVersion Include="Blazorise.Bootstrap5" Version="2.4.0" />
 ```
 
+### Video Improvements
+
+The **Video** component has been rebuilt on **Video.js v10**, replacing the previous Plyr-based implementation.
+
+![Video](img/video.jpg)
+
+We made the change because video playback has grown beyond simple video files. Applications increasingly need streaming formats and external providers, and Video.js gives us a better base for supporting those scenarios while keeping the Blazorise API familiar.
+
+The new implementation works with regular video and audio files, while adding better support for **HLS, DASH, YouTube, Vimeo, captions, quality selection, playback speed, and DRM-protected streams**. Integrations are loaded only when needed, and player assets are packaged locally to make deployment more predictable, especially for applications with stricter security policies.
+
+We also improved accessibility, localization, cleanup, and handling of multiple players on the same page.
+
+Moving to Video.js gives us more control over where the component goes next and makes it easier to support new streaming formats, providers, and browser capabilities in future releases.
+
 ### Tooltip Improvements
 
 **Tooltip** is now fully Blazor-native and no longer depends on **Tippy.js**, continuing our work to remove external JavaScript dependencies where we can provide the same functionality directly in Blazorise.
