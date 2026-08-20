@@ -68,3 +68,13 @@ With the implementation now under our control, Tooltip can continue to improve w
 Older browsers continue to work through a fallback, so existing applications don't lose autosizing support.
 
 We also reduced the JavaScript needed by MemoInput. The optional script used for tab handling is now loaded only when that feature is actually enabled.
+
+### FluentUI2 Visual Refresh
+
+The **FluentUI2** provider has received a visual refresh to more closely follow the upcoming **Fluent v3** design language.
+
+We updated design tokens, sizing, spacing, and interaction states across the provider, with noticeable improvements to buttons, icon buttons, pagination, and navigation elements.
+
+The **Bar** also received a larger rewrite. Horizontal and vertical navigation now use FluentUI2-specific styling instead of relying on shared behavior that was harder to adapt to Fluent's design. This improves responsive and collapsed navigation, nested menus, active and hover states, alignment, badges, and dark mode contrast.
+
+The goal is to make FluentUI2 applications feel more consistent with the direction Microsoft is taking Fluent while keeping the existing Blazorise APIs and Bar features intact.
