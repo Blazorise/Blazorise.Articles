@@ -60,3 +60,11 @@ A new `TooltipContent` fragment also makes tooltips much more flexible. Instead 
 External triggers, themes, delays, interactive content, inline detection, and provider-specific styling continue to work as expected. The `AppendTo` parameter remains for compatibility, but is now obsolete and has no effect.
 
 With the implementation now under our control, Tooltip can continue to improve without relying on an external library.
+
+### MemoInput Improvements
+
+**MemoInput** autosizing now uses native browser capabilities where available, resulting in smoother resizing and more consistent behavior across UI providers.
+
+Older browsers continue to work through a fallback, so existing applications don't lose autosizing support.
+
+We also reduced the JavaScript needed by MemoInput. The optional script used for tab handling is now loaded only when that feature is actually enabled.
