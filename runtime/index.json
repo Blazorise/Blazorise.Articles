@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-18T05:29:30.353Z",
-  "commit": "47b9db76d5c3",
-  "count": 128,
+  "generatedAt": "2026-08-21T07:33:12.790Z",
+  "commit": "f2869a3a86ab",
+  "count": 129,
   "items": [
+    {
+      "root": "blog",
+      "dir": "blog/2026-08-13-IGN-maps-in-map-component",
+      "slug": "ignmaps",
+      "permalink": "/blog/ignmaps",
+      "title": "Integrating French IGN Maps into the Blazorise Map Component",
+      "summary": "Learn how to display IGN raster maps and thematic layers in Blazorise Maps, and center a map by geocoding a French address.",
+      "postedOn": "2026-08-21",
+      "category": "Community",
+      "imageUrl": "img/ignmaps.jpg",
+      "authorName": "Christophe Gerbier",
+      "authorImage": "img/mbn_logo.png",
+      "readTime": "12 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-08-13-release-notes-230",
