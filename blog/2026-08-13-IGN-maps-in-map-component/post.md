@@ -13,6 +13,8 @@ read-time: 12 min
 pinned: false
 ---
 
+# Integrating French IGN Maps into the Blazorise Map Component
+
 The [French National Institute of Geographic and Forest Information (IGN)](https://www.ign.fr/) publishes base maps, aerial photography, and thematic datasets through the Géoplateforme web services. This guide shows how to use the raster WMTS service with the Blazorise `Map` component and how to center the map by geocoding a French address.
 
 The examples use Blazorise Maps 2.3 or later and the public IGN services available at the time of publication.

@@ -12,6 +12,8 @@ posted-on: 2022-11-08
 read-time: 4 min
 ---
 
+# Maintenance Release: Blazorise 1.1.3
+
 This Blazorise version was supposed to be just a minor maintenance release. Instead, we got a few relatively large features and announcements.
 
 ## .NET 7 Support
