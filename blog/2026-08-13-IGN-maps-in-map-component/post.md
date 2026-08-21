@@ -1,8 +1,8 @@
 ---
 title: Integrating French IGN Maps into the Blazorise Map Component
 description: Learn how to display IGN raster maps and thematic layers in Blazorise Maps, and center a map by geocoding a French address.
-permalink: /blog/ignmaps
-canonical: /blog/ignmaps
+permalink: /blog/integrating-french-ign-maps-into-the-blazorise-map-component
+canonical: /blog/integrating-french-ign-maps-into-the-blazorise-map-component
 image-url: img/ignmaps.jpg
 image-title: French IGN maps displayed with Blazorise Maps
 author-name: Christophe Gerbier
