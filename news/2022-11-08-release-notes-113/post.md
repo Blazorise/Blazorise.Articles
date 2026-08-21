@@ -1,18 +1,16 @@
 ---
-title: <Text Style="text-decoration: line-through;">Maintenance</Text> Release: Blazorise 1.1.3
+title: Maintenance Release: Blazorise 1.1.3
 description: This blog post contains the changelog of the most recent bug fixes included in the Blazorise v1.1.3 release.
 permalink: /news/release-notes/113
 canonical: /news/release-notes/113
 image-url: img/v113.png
-image-title: <Text Style="text-decoration: line-through;">Maintenance</Text> Release: Blazorise 1.1.3
+image-title: Maintenance Release: Blazorise 1.1.3
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: News
 posted-on: 2022-11-08
 read-time: 4 min
 ---
-
-# <Text Style="text-decoration: line-through;">Maintenance</Text> Release: Blazorise 1.1.3
 
 This Blazorise version was supposed to be just a minor maintenance release. Instead, we got a few relatively large features and announcements.
 
