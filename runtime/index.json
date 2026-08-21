@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-21T07:56:27.730Z",
-  "commit": "47fe8104676a",
+  "generatedAt": "2026-08-21T10:10:08.624Z",
+  "commit": "e2e8f43d9304",
   "count": 129,
   "items": [
     {
@@ -1299,7 +1299,7 @@
       "dir": "news/2022-11-08-release-notes-113",
       "slug": "113",
       "permalink": "/news/release-notes/113",
-      "title": "<Text Style=\"text-decoration: line-through;\">Maintenance</Text> Release: Blazorise 1.1.3",
+      "title": "Maintenance Release: Blazorise 1.1.3",
       "summary": "This blog post contains the changelog of the most recent bug fixes included in the Blazorise v1.1.3 release.",
       "postedOn": "2022-11-08",
       "category": "News",
