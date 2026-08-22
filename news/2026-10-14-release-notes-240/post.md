@@ -78,3 +78,13 @@ We updated design tokens, sizing, spacing, and interaction states across the pro
 The **Bar** also received a larger rewrite. Horizontal and vertical navigation now use FluentUI2-specific styling instead of relying on shared behavior that was harder to adapt to Fluent's design. This improves responsive and collapsed navigation, nested menus, active and hover states, alignment, badges, and dark mode contrast.
 
 The goal is to make FluentUI2 applications feel more consistent with the direction Microsoft is taking Fluent while keeping the existing Blazorise APIs and Bar features intact.
+
+## Smaller Improvements
+
+### Alternative Text Naming
+
+Image-related components now use a consistent `Text` parameter for alternative text.
+
+Existing parameters such as `CardImage.Alt`, `FigureImage.AlternateText`, `Cropper.Alt`, and `QRCode.Alt` remain available for compatibility but are now obsolete. Existing applications will continue to work, while new code should use `Text`.
+
+We also improved accessibility for **QRCode** and **Cropper**, ensuring the provided text is correctly passed to the rendered image and accessibility attributes.
