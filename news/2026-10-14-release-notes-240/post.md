@@ -61,6 +61,14 @@ External triggers, themes, delays, interactive content, inline detection, and pr
 
 With the implementation now under our control, Tooltip can continue to improve without relying on an external library.
 
+### SVG Chart Data Dragging
+
+**SVG Charts** can now be used as visual editors, allowing users to change data values directly on the chart.
+
+Instead of adjusting values in a separate form and then checking the result, users can drag values and immediately see how those changes affect the chart. This works well for scenarios such as **forecasting, capacity planning, allocation, and scenario modeling**.
+
+Data dragging works across several chart types, including stacked, point-based, and radial charts. It also supports pointer and keyboard interaction, snapping, cancellation, and read-only controls, giving applications control over how values can be changed.
+
 ### MemoInput Improvements
 
 **MemoInput** autosizing now uses native browser capabilities where available, resulting in smoother resizing and more consistent behavior across UI providers.
