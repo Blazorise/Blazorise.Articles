@@ -51,6 +51,16 @@ We also improved accessibility, localization, cleanup, and handling of multiple 
 
 Moving to Video.js gives us more control over where the component goes next and makes it easier to support new streaming formats, providers, and browser capabilities in future releases.
 
+### Addons Validation Feedback
+
+We have finally fixed a long-standing issue with **validation inside Addons**.
+
+Validation messages could previously break the input group layout, push trailing addons onto another line, or cause rounded corners to render incorrectly. Feedback is now linked to each individual input while being displayed below the complete addon group, keeping the layout intact even when multiple inputs have validation messages.
+
+The recommended structure now places `Validation` around each input inside its addon, with messages defined through the input's `Feedback` content.
+
+Existing applications using the old structure can be updated automatically with **Blazorise.Migrator**.
+
 ### Tooltip Improvements
 
 **Tooltip** is now fully Blazor-native and no longer depends on **Tippy.js**, continuing our work to remove external JavaScript dependencies where we can provide the same functionality directly in Blazorise.
