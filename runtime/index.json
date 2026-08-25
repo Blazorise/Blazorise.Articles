@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-21T10:31:09.155Z",
-  "commit": "ebbca2d78e6e",
-  "count": 129,
+  "generatedAt": "2026-08-25T07:45:49.904Z",
+  "commit": "20bce5e98939",
+  "count": 130,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-08-25-release-notes-231",
+      "slug": "231",
+      "permalink": "/news/release-notes/231",
+      "title": "Blazorise 2.3.1 - First Maintenance Update for 2.3",
+      "summary": "Blazorise 2.3.1 brings the first maintenance update for the 2.3 release with backend Report rendering, modal focus fixes, DatePicker improvements, provider consistency updates, and smaller WebAssembly demos.",
+      "postedOn": "2026-08-25",
+      "category": "News",
+      "imageUrl": "img/v231.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "3 min",
+      "pinned": false
+    },
     {
       "root": "blog",
       "dir": "blog/2026-08-13-IGN-maps-in-map-component",
