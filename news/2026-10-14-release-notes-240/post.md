@@ -106,3 +106,11 @@ Image-related components now use a consistent `Text` parameter for alternative t
 Existing parameters such as `CardImage.Alt`, `FigureImage.AlternateText`, `Cropper.Alt`, and `QRCode.Alt` remain available for compatibility but are now obsolete. Existing applications will continue to work, while new code should use `Text`.
 
 We also improved accessibility for **QRCode** and **Cropper**, ensuring the provided text is correctly passed to the rendered image and accessibility attributes.
+
+### DisplayFormat Improvements
+
+`DisplayFormat` now accepts standard **.NET format specifiers** directly, making formatting shorter and easier to read.
+
+You can now use formats such as `C` or `dd.MM.yyyy` without wrapping them in a composite format. Existing formats such as `{0:C}` continue to work, so no changes are required in current applications.
+
+The same formatting behavior is now available across **DataGrid, PivotGrid, and Gantt**.
