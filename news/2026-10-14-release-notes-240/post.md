@@ -114,3 +114,11 @@ We also improved accessibility for **QRCode** and **Cropper**, ensuring the prov
 You can now use formats such as `C` or `dd.MM.yyyy` without wrapping them in a composite format. Existing formats such as `{0:C}` continue to work, so no changes are required in current applications.
 
 The same formatting behavior is now available across **DataGrid, PivotGrid, and Gantt**.
+
+### Drag & Drop Improvements
+
+Drag & drop placeholders can now show **custom content**, making it easier to give users clear feedback about where an item will be placed while dragging.
+
+![Drag & Drop](img/dragdrop.jpg)
+
+We also improved drop targeting around the first item in a zone, making reordering and moving items between drop zones more accurate and predictable.
