@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-25T07:45:49.904Z",
-  "commit": "20bce5e98939",
-  "count": 130,
+  "generatedAt": "2026-09-08T06:59:18.854Z",
+  "commit": "2147597510e1",
+  "count": 131,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-09-08-release-notes-232",
+      "slug": "232",
+      "permalink": "/news/release-notes/232",
+      "title": "Blazorise 2.3.2 - Performance and Stability Improvements",
+      "summary": "Blazorise 2.3.2 improves Graph performance with large datasets, speeds up Autocomplete keyboard navigation, improves SVG Charts, and fixes DatePicker and FluentUI issues.",
+      "postedOn": "2026-09-08",
+      "category": "News",
+      "imageUrl": "img/v232.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-08-25-release-notes-231",
