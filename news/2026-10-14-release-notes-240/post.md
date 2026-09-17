@@ -122,3 +122,11 @@ Drag & drop placeholders can now show **custom content**, making it easier to gi
 ![Drag & Drop](img/dragdrop.jpg)
 
 We also improved drop targeting around the first item in a zone, making reordering and moving items between drop zones more accurate and predictable.
+
+### Configurable Animations and Smoother Drag & Drop
+
+Animations are useful for showing users what changed, but sometimes an immediate response works better. **Accordion, Collapse, Alert, Carousel, and Dropdown** now expose `Animated` and `AnimationDuration`, allowing animations to be disabled or their speed adjusted per component.
+
+**DragDrop** also gains optional reorder animations. As an item is dragged, surrounding items move out of the way and a moving placeholder shows exactly where it will be dropped. The placeholder can be hidden or customized with your own content.
+
+We also improved **Dropdown** positioning and submenu transitions, along with smoother Alert dismissal and movement of surrounding content. These changes make animations and drag-and-drop interactions more consistent across Blazorise providers.
