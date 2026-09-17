@@ -130,3 +130,9 @@ Animations are useful for showing users what changed, but sometimes an immediate
 **DragDrop** also gains optional reorder animations. As an item is dragged, surrounding items move out of the way and a moving placeholder shows exactly where it will be dropped. The placeholder can be hidden or customized with your own content.
 
 We also improved **Dropdown** positioning and submenu transitions, along with smoother Alert dismissal and movement of surrounding content. These changes make animations and drag-and-drop interactions more consistent across Blazorise providers.
+
+### Kbd Component
+
+The new `<Kbd>` component provides a simple way to display keyboard keys and shortcuts in instructions, help text, and tutorials.
+
+It makes shortcuts such as `Ctrl` + `S` or `Esc` easier to recognize and keeps their appearance consistent with the active Blazorise provider.
