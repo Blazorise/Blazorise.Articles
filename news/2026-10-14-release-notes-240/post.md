@@ -136,3 +136,11 @@ We also improved **Dropdown** positioning and submenu transitions, along with sm
 The new `<Kbd>` component provides a simple way to display keyboard keys and shortcuts in instructions, help text, and tutorials.
 
 It makes shortcuts such as `Ctrl` + `S` or `Esc` easier to recognize and keeps their appearance consistent with the active Blazorise provider.
+
+### Tabs Accessibility Improvements
+
+**Tabs** are now easier to use with both keyboards and screen readers across all Blazorise providers.
+
+Users can move between tabs with the **arrow keys**, jump to the first or last tab with **Home** and **End**, and select a tab with **Enter** or **Space**. Disabled and hidden tabs are skipped automatically, while moving between tabs keeps the current content visible until another tab is selected.
+
+We also improved focus handling and the connection between tabs and their content, giving keyboard and screen reader users a clearer and more predictable experience.
