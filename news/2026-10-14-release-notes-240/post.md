@@ -144,3 +144,11 @@ It makes shortcuts such as `Ctrl` + `S` or `Esc` easier to recognize and keeps t
 Users can move between tabs with the **arrow keys**, jump to the first or last tab with **Home** and **End**, and select a tab with **Enter** or **Space**. Disabled and hidden tabs are skipped automatically, while moving between tabs keeps the current content visible until another tab is selected.
 
 We also improved focus handling and the connection between tabs and their content, giving keyboard and screen reader users a clearer and more predictable experience.
+
+### ZIndex Utility
+
+Managing overlapping elements such as dropdowns, modals, tooltips, and custom overlays can easily lead to hardcoded `z-index` values that behave differently across CSS providers.
+
+The new **`ZIndex`** utility gives you a consistent way to control these layers directly from Blazorise. Named values such as `ZIndex.Dropdown`, `ZIndex.Modal`, and `ZIndex.Tooltip` automatically use the correct stacking values for the active provider, so your components appear in the right order without provider-specific CSS.
+
+For custom layouts, you can also use numbered levels, negative levels, or an exact integer value when more control is needed.
