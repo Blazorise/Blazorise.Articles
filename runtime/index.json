@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-08T06:59:18.854Z",
-  "commit": "2147597510e1",
-  "count": 131,
+  "generatedAt": "2026-09-29T08:41:24.697Z",
+  "commit": "1ae3608d2b05",
+  "count": 132,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-09-29-release-notes-233",
+      "slug": "233",
+      "permalink": "/news/release-notes/233",
+      "title": "Blazorise 2.3.3 - Custom Colors, Scheduler Improvements, and a New Website",
+      "summary": "Blazorise 2.3.3 adds arbitrary colors across components, improves Scheduler, DataGrid, NumericPicker, and Charts, and introduces a redesigned Blazorise website.",
+      "postedOn": "2026-09-29",
+      "category": "News",
+      "imageUrl": "img/v233.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "3 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-09-08-release-notes-232",
