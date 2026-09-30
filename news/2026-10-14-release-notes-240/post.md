@@ -137,13 +137,15 @@ The new `<Kbd>` component provides a simple way to display keyboard keys and sho
 
 It makes shortcuts such as `Ctrl` + `S` or `Esc` easier to recognize and keeps their appearance consistent with the active Blazorise provider.
 
-### Tabs Accessibility Improvements
+### Tabs and Steps Improvements
 
-**Tabs** are now easier to use with both keyboards and screen readers across all Blazorise providers.
+This release finally adds **vertical Steps**, a feature that has been on our backlog for a long time and was requested many times by Blazorise users. Steps can now be placed beside their content, making them much better suited for longer forms, setup flows, and full-page wizards where a horizontal layout doesn't work well.
 
-Users can move between tabs with the **arrow keys**, jump to the first or last tab with **Home** and **End**, and select a tab with **Enter** or **Space**. Disabled and hidden tabs are skipped automatically, while moving between tabs keeps the current content visible until another tab is selected.
+Along with vertical mode, Steps gained more control over how they are positioned and spread across the available space. We also refreshed their appearance across all supported providers, with clearer focus states, better spacing, improved selection colors, and cleaner connecting lines.
 
-We also improved focus handling and the connection between tabs and their content, giving keyboard and screen reader users a clearer and more predictable experience.
+**Tabs** and **Steps** also received accessibility improvements for keyboard and screen reader users. Tabs now support arrow-key navigation, **Home** and **End** for jumping between the first and last tab, and **Enter** or **Space** for selection. Disabled and hidden tabs are skipped automatically, with improved focus handling and clearer links between tabs and their content.
+
+Together, these changes make Tabs and Steps easier to use across a wider range of layouts and more predictable for users who navigate without a mouse.
 
 ### ZIndex Utility
 
