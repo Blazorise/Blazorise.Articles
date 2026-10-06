@@ -154,3 +154,11 @@ Managing overlapping elements such as dropdowns, modals, tooltips, and custom ov
 The new **`ZIndex`** utility gives you a consistent way to control these layers directly from Blazorise. Named values such as `ZIndex.Dropdown`, `ZIndex.Modal`, and `ZIndex.Tooltip` automatically use the correct stacking values for the active provider, so your components appear in the right order without provider-specific CSS.
 
 For custom layouts, you can also use numbered levels, negative levels, or an exact integer value when more control is needed.
+
+### Ghost Buttons
+
+Buttons can now use the new **`Ghost`** appearance for actions that should remain subtle until users interact with them.
+
+Ghost buttons are transparent and borderless by default, while still providing clear hover, focus, and active states. They work with `Color` across all supported UI providers and are useful for toolbars, inline actions, filters, and other places where regular buttons can add too much visual weight.
+
+We are already using Ghost buttons throughout Blazorise in places such as **Gantt actions, DataGrid filters, and the PdfViewer toolbar**, with optional support in the Reporting and PropertyGrid toolbars as well.
