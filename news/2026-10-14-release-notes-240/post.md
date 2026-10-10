@@ -162,3 +162,13 @@ Buttons can now use the new **`Ghost`** appearance for actions that should remai
 Ghost buttons are transparent and borderless by default, while still providing clear hover, focus, and active states. They work with `Color` across all supported UI providers and are useful for toolbars, inline actions, filters, and other places where regular buttons can add too much visual weight.
 
 We are already using Ghost buttons throughout Blazorise in places such as **Gantt actions, DataGrid filters, and the PdfViewer toolbar**, with optional support in the Reporting and PropertyGrid toolbars as well.
+
+### ColorPicker Improvements
+
+As part of our ongoing work to remove external JavaScript dependencies, ColorPicker has been completely rebuilt using native Blazor and Blazorise components.
+
+Like DatePicker and TimePicker before it, ColorPicker previously relied on an external library. While it worked, maintaining and customizing it across different CSS providers was becoming increasingly difficult. With the new implementation, we have full control over its behavior and styling, making it easier to maintain and improve in future releases.
+
+The new ColorPicker includes a more complete color selection experience, with gradient sliders, color palettes, HEXA and RGBA inputs, and clipboard support. We also added Save, Clear, and Cancel actions, improved keyboard navigation and responsiveness, and made animations customizable.
+
+The result is a ColorPicker that feels more consistent with the rest of Blazorise, works better across supported design systems, and no longer depends on an external JavaScript library.
