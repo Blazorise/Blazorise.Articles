@@ -178,3 +178,13 @@ Optional menu animations and improved Ribbon integration help ColorPicker fit mo
 Horizontal sliders work well in forms, but they aren't always the best choice. In narrow side panels, toolbars, and controls arranged from top to bottom, a vertical slider can make better use of the available space. It's also a natural fit for interfaces such as volume controls, brightness settings, and other adjustments where users expect to move a value up or down.
 
 The new orientation keeps Slider useful in both horizontal and vertical layouts, so you can choose the direction that works best for your application. Examples are available in the demos and documentation.
+
+### Tailwind Class Merger
+
+Overriding default component styles in Tailwind could sometimes be frustrating. Adding a new utility class didn't always produce the expected result because it could conflict with classes already applied by the component.
+
+We've improved how the **Tailwind provider handles conflicting utility classes**. Important (`!`) utilities now take priority, while conflicting classes with the same priority follow the last one defined. This makes styling more predictable and reduces the need for custom CSS.
+
+For example, setting `Padding="Padding.Is3.OnY"` on a Button now correctly replaces its default vertical padding while keeping the horizontal padding unchanged. Similarly, setting `Margin="Margin.Is4"` on a Row replaces its default negative horizontal margin.
+
+These changes make it easier to customize Blazorise components using Tailwind utilities without fighting their default styles.
