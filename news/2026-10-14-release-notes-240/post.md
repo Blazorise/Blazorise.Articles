@@ -165,10 +165,16 @@ We are already using Ghost buttons throughout Blazorise in places such as **Gant
 
 ### ColorPicker Improvements
 
-As part of our ongoing work to remove external JavaScript dependencies, ColorPicker has been completely rebuilt using native Blazor and Blazorise components.
+As part of our ongoing work to remove external JavaScript dependencies, **ColorPicker** has been rebuilt using Blazor and Blazorise components. Like our recent DatePicker and TimePicker rewrite, this gives us more control over how the component works and makes it easier to maintain across supported UI providers.
 
-Like DatePicker and TimePicker before it, ColorPicker previously relied on an external library. While it worked, maintaining and customizing it across different CSS providers was becoming increasingly difficult. With the new implementation, we have full control over its behavior and styling, making it easier to maintain and improve in future releases.
+The new picker lets users choose colors from a **square selection area or color wheel**, fine-tune them with gradient sliders, select palette swatches, or enter HEXA and RGBA values directly. We also improved everyday use with a compact input layout, a copy button, and clear **Save, Cancel, and Clear** actions.
 
-The new ColorPicker includes a more complete color selection experience, with gradient sliders, color palettes, HEXA and RGBA inputs, and clipboard support. We also added Save, Clear, and Cancel actions, improved keyboard navigation and responsiveness, and made animations customizable.
+Optional menu animations and improved Ribbon integration help ColorPicker fit more naturally into different parts of an application.
 
-The result is a ColorPicker that feels more consistent with the rest of Blazorise, works better across supported design systems, and no longer depends on an external JavaScript library.
+### Vertical Slider
+
+**Slider** now supports **vertical orientation**, giving developers another way to fit value controls into their layouts without having to build a custom slider.
+
+Horizontal sliders work well in forms, but they aren't always the best choice. In narrow side panels, toolbars, and controls arranged from top to bottom, a vertical slider can make better use of the available space. It's also a natural fit for interfaces such as volume controls, brightness settings, and other adjustments where users expect to move a value up or down.
+
+The new orientation keeps Slider useful in both horizontal and vertical layouts, so you can choose the direction that works best for your application. Examples are available in the demos and documentation.
