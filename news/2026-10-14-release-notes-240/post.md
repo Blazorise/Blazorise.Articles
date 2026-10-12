@@ -131,7 +131,7 @@ Data dragging works across several chart types, including stacked, point-based, 
 
 Drag-and-drop interactions are easier to follow when users can see where an item will land. **DragDrop** now supports optional reorder animations that move surrounding items aside as you drag, with a moving placeholder to show the drop position.
 
-![Drag & Drop](img/dragdrop.jpg)
+![Drag & Drop](img/dragdrop.gif)
 
 Placeholders can display your own content or be hidden when needed. We also improved drop targeting around the first item in a zone, making reordering and moving items between zones more accurate.
 
