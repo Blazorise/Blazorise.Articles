@@ -1,10 +1,10 @@
 ---
-title: Announcing Blazorise 2.4
+title: Announcing Blazorise 2.4 - Bura
 description: Blazorise 2.4 focuses on improving existing components, replacing older dependencies, refreshing UI providers, and making everyday interactions more reliable.
 permalink: /news/release-notes/240
 canonical: /news/release-notes/240
 image-url: img/v240.jpg
-image-title: Announcing Blazorise 2.4
+image-title: Announcing Blazorise 2.4 - Bura
 author-name: Mladen Macanović
 author-image: /assets/img/authors/mladen.png
 category: News
@@ -15,7 +15,9 @@ pinned: true
 
 # Blazorise 2.4 - Release Notes
 
-Blazorise 2.4 is a different kind of release. Instead of focusing on one large new component, we spent much of our time going back to the parts of the framework people already use every day.
+Blazorise 2.4, codenamed **Bura**, takes its name from the strong wind that blows along the Croatian Adriatic coast.
+
+This is a different kind of release. Instead of focusing on one large new component, we spent much of our time going back to the parts of the framework people already use every day.
 
 Some components have been rebuilt to remove old dependencies. Others received long-requested features, better keyboard support, cleaner styling, or fixes that had been on our list for a while. We also made changes that should make the framework easier to maintain and improve in future releases.
 
@@ -30,6 +32,7 @@ Here are the changes that best represent this release:
 - **Better interactions**: SVG Chart data dragging, smoother drag-and-drop, and configurable animations.
 - **Tabs and Steps**: Better accessibility and the long-requested vertical Steps layout.
 - **Provider updates**: A FluentUI2 visual refresh and more predictable Tailwind utility overrides.
+- **Fluent utility performance**: Cached utility values make repeated styling calls faster and avoid allocations for cached combinations.
 - **More styling control**: Ghost buttons, a ZIndex utility, and vertical Slider support.
 - **Ribbon (New)**: A command interface for editors and other tools, with flexible layouts, contextual tabs, and file menus.
 - **Kbd (New)**: A consistent way to show keyboard keys and shortcuts.
@@ -54,6 +57,8 @@ Change them to:
 
 While most of this release is about improving what we already have, **Ribbon** is one of the new additions. We built it for applications where a simple toolbar isn't enough, such as document editors, spreadsheets, and design tools. As more commands are added, users need a way to find them without filling the screen with buttons.
 
+![Ribbon](img/ribbon.jpg)
+
 The new `Blazorise.Ribbon` extension organizes commands into tabs and groups, with buttons, dropdowns, galleries, and color pickers. It offers **classic and simplified layouts**, so applications can choose between showing more tools at once or keeping the interface compact. Frequently used commands can stay available in a quick-access toolbar, and contextual tabs can appear when the user is working with something that needs its own tools.
 
 We also wanted file operations to feel natural in an editor. Ribbon includes a compact file menu as well as **backstage pages** for actions such as opening, saving, and printing, without losing the current workspace. Keyboard navigation, localization, and options for rendering and animations are included, and a Word-style demo shows how the pieces work together.
@@ -75,6 +80,8 @@ With the implementation now under our control, we can improve Tooltip without wa
 ### ColorPicker Improvements
 
 The same work continued with **ColorPicker**, which has been rebuilt using Blazor and Blazorise components. Like our recent DatePicker and TimePicker rewrite, this removes another external JavaScript dependency and gives us more control over how the picker works across UI providers.
+
+![ColorPicker](img/color-picker.jpg)
 
 The new picker lets users choose colors from a **square selection area or color wheel**, fine-tune them with gradient sliders, select palette swatches, or enter HEXA and RGBA values directly. We also improved everyday use with a compact input layout, a copy button, and clear **Save, Cancel, and Clear** actions.
 
@@ -110,6 +117,8 @@ A second area of focus was how components feel when people use them. We wanted t
 
 Some of the biggest user-facing improvements are about making existing components more interactive. **SVG Charts** can now act as visual editors, letting users change values directly on the chart.
 
+![SVG Chart Data Dragging](img/svg-data.gif)
+
 Instead of adjusting values in a separate form and then checking the result, users can drag values and immediately see how those changes affect the chart. This works well for scenarios such as **forecasting, capacity planning, allocation, and scenario modeling**.
 
 Data dragging works across several chart types, including stacked, point-based, and radial charts. It also supports pointer and keyboard interaction, snapping, cancellation, and read-only controls, giving applications control over how values can be changed.
@@ -130,6 +139,8 @@ Dropdown positioning and submenu transitions were improved too, along with smoot
 
 One long-requested improvement is finally here: **vertical Steps**. It has been on our backlog for a long time and was requested many times by Blazorise users. Steps can now be placed beside their content, making them much better suited for longer forms, setup flows, and full-page wizards where a horizontal layout doesn't work well.
 
+![Steps](img/steps.jpg)
+
 Along with vertical mode, Steps gained more control over how they are positioned and spread across the available space. We also refreshed their appearance across all supported providers, with clearer focus states, better spacing, improved selection colors, and cleaner connecting lines.
 
 **Tabs** and **Steps** also received accessibility improvements for keyboard and screen reader users. Tabs now support arrow-key navigation, **Home** and **End** for jumping between the first and last tab, and **Enter** or **Space** for selection. Disabled and hidden tabs are skipped automatically, with improved focus handling and clearer links between tabs and their content.
@@ -147,6 +158,8 @@ The new orientation keeps Slider useful in both horizontal and vertical layouts,
 ### Addons Validation Feedback
 
 We also fixed a long-standing layout issue with **validation inside Addons**.
+
+![Addons Validation](img/addon-validation.jpg)
 
 Validation messages could previously break the input group layout, push trailing addons onto another line, or cause rounded corners to render incorrectly. Feedback is now linked to each individual input while being displayed below the complete addon group, keeping the layout intact even when multiple inputs have validation messages.
 
@@ -194,6 +207,22 @@ The new **`ZIndex`** utility gives you a consistent way to control these layers 
 
 For custom layouts, you can also use numbered levels, negative levels, or an exact integer value when more control is needed.
 
+## Faster Fluent Utilities
+
+Fluent utilities are used throughout Blazorise to build spacing, sizing, and other styles. Many components request the same values over and over, so we looked at how much work was being repeated behind the scenes.
+
+**Fluent utility calls now reuse cached values and their generated classes or styles**, instead of rebuilding them each time. In local .NET 10 benchmarks, repeated lookups of a representative set of DataGrid and layout expressions were about **90% faster**, with no allocations for cached combinations. These are measurements of the utility calls themselves, not full component rendering or page performance. The first use can cost a little more because the cache needs to be populated.
+
+We also made chains returned by the static fluent APIs **immutable**, so reusing a cached value cannot accidentally change it elsewhere. When extending a chain, keep the returned value:
+
+```csharp
+var sizing = 8.Rem().Min(4).Max(12);
+```
+
+The caches have size limits to avoid unbounded memory growth, including a separate limit for numeric values that change frequently. Directly constructed builders keep their existing mutable behavior.
+
+This is mostly an internal improvement, but it reduces repeated work in components that use fluent utilities heavily and gives us a better base for future performance work.
+
 ## Smaller Improvements
 
 Finally, a few smaller changes make everyday development a little easier without requiring new component patterns.
@@ -217,6 +246,8 @@ We also improved accessibility for **QRCode** and **Cropper**, ensuring the prov
 ### Kbd Component
 
 The new `<Kbd>` component provides a simple way to display keyboard keys and shortcuts in instructions, help text, and tutorials.
+
+![Kbd](img/kbd.jpg)
 
 It makes shortcuts such as `Ctrl` + `S` or `Esc` easier to recognize and keeps their appearance consistent with the active Blazorise provider.
 
