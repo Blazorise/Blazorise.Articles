@@ -23,6 +23,10 @@ Some components have been rebuilt to remove old dependencies. Others received lo
 
 There are new additions too. **Ribbon** is the largest, giving applications a familiar way to organize editing commands, while smaller additions such as **Kbd** fill other gaps. Still, the main goal of 2.4 is to make Blazorise more reliable, easier to customize, and better prepared for what comes next.
 
+{% youtube lN_MSyrq6-U %}
+
+> This song was playing quite a lot while I was working on Blazorise 2.4. It's been one of my personal favorites for years, so I thought I'd share it here as well.
+
 ## Key Blazorise 2.4 Highlights
 
 Here are the changes that best represent this release:
