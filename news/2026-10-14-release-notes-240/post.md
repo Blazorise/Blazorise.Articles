@@ -75,6 +75,8 @@ One of our ongoing goals is to reduce the amount of external code we depend on w
 
 **Tooltip** is now fully Blazor-native and no longer depends on **Tippy.js**. It is one example of where we can replace an external JavaScript library with our own Blazorise implementation.
 
+![Tooltip](img/tooltip.gif)
+
 A new `TooltipContent` fragment also makes tooltips much more flexible. Instead of being limited to simple text, tooltips can now contain rich content built with Blazorise components, typography, and utilities. The existing `Text` parameter remains available when only simple content is needed.
 
 External triggers, themes, delays, interactive content, inline detection, and provider-specific styling continue to work as expected. The `AppendTo` parameter remains for compatibility, but is now obsolete and has no effect.
@@ -85,7 +87,7 @@ With the implementation under our control, we can improve Tooltip without waitin
 
 The same work continued with **ColorPicker**, which has been rebuilt using Blazor and Blazorise components. Like our recent DatePicker and TimePicker rewrite, this removes another external JavaScript dependency and gives us more control over how the picker works across UI providers.
 
-![ColorPicker](img/color-picker.jpg)
+![ColorPicker](img/color-picker.gif)
 
 The new picker lets users choose colors from a **square selection area or color wheel**, fine-tune them with gradient sliders, select palette swatches, or enter HEXA and RGBA values directly. We also improved everyday use with a compact input layout, a copy button, and clear **Save, Cancel, and Clear** actions.
 
