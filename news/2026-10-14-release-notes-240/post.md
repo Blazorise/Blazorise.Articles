@@ -15,7 +15,7 @@ pinned: true
 
 # Blazorise 2.4 - Release Notes
 
-Blazorise 2.4, codenamed **Bura**, takes its name from the strong wind that blows along the Croatian Adriatic coast.
+Blazorise 2.4, codenamed [Bura](https://en.wikipedia.org/wiki/Bora_(wind)), takes its name from the strong wind that blows along the Croatian Adriatic coast.
 
 This release is a little different. Instead of building another large set of new components, we spent much of our time improving the parts of Blazorise people already use every day.
 
