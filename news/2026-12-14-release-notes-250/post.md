@@ -50,3 +50,15 @@ Previously, applications often needed to wrap each interactive root in a separat
 `ThemeProvider` can also use the registered theme without requiring an explicit `Theme` parameter. When theme settings change, calling `ThemeHasChanged()` updates subscribed components automatically.
 
 This makes it easier to manage application-wide themes without repeating configuration across different parts of your Blazor application.
+
+### FilePicker File Binding Improvements
+
+FilePicker now supports two-way file binding through `@bind-Files`, making it easier to manage attachments in forms where users need to return and continue working later.
+
+Previously, FilePicker was mainly focused on selecting new files. Now applications can also preload existing attachments, so users can reopen a form and see files they previously added. The bound list stays in sync as files are selected, removed, or cleared.
+
+Preloaded files can contain just metadata for files already stored on the server, or include their content through `Data` or `StreamFactory`. This also makes it possible to restore locally cached files and upload them later, which is useful for drafts and workflows where users don't submit everything at once.
+
+For larger files, `StreamFactory` allows content to be read in chunks and provides a fresh stream for each upload attempt, without keeping the entire file in memory.
+
+Applications remain responsible for storing and restoring files, but FilePicker now handles the UI and binding needed to make these workflows much easier to build.
