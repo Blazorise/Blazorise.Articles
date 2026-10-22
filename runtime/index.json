@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-14T09:12:39.519Z",
-  "commit": "62e560ecb511",
-  "count": 133,
+  "generatedAt": "2026-10-22T07:37:28.890Z",
+  "commit": "8d568941d943",
+  "count": 134,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-10-22-release-notes-241",
+      "slug": "241",
+      "permalink": "/news/release-notes/241",
+      "title": "Blazorise 2.4.1 - Tooltip Fixes, DataGrid Improvements, and Better Documentation",
+      "summary": "Blazorise 2.4.1 fixes issues with the new Tooltip, improves DataGrid scrolling and filtering, and makes component documentation easier to read and use.",
+      "postedOn": "2026-10-22",
+      "category": "News",
+      "imageUrl": "img/v241.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "3 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-10-14-release-notes-240",
