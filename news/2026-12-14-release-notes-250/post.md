@@ -62,3 +62,13 @@ Preloaded files can contain just metadata for files already stored on the server
 For larger files, `StreamFactory` allows content to be read in chunks and provides a fresh stream for each upload attempt, without keeping the entire file in memory.
 
 Applications remain responsible for storing and restoring files, but FilePicker now handles the UI and binding needed to make these workflows much easier to build.
+
+### DataGrid Loading Improvements
+
+**DataGrid** now gives you more control over how loading is displayed, making it easier to keep the interface clear while data is being fetched or refreshed.
+
+With the new `LoadingDisplayMode` parameter, you can choose between three behaviors. **Overlay** keeps existing rows and pagination visible behind a translucent loading layer, **Replace** displays loading content instead of the rows, and **None** disables the loading indicator entirely.
+
+Both Overlay and Replace automatically show a compact, localized spinner when no custom `LoadingTemplate` is provided. If you already use a custom loading template, DataGrid now centers it automatically.
+
+The default behavior remains unchanged, so existing applications continue to work as before. Updated documentation and examples show how to use the new loading options.
