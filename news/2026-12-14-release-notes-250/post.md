@@ -72,3 +72,13 @@ With the new `LoadingDisplayMode` parameter, you can choose between three behavi
 Both Overlay and Replace automatically show a compact, localized spinner when no custom `LoadingTemplate` is provided. If you already use a custom loading template, DataGrid now centers it automatically.
 
 The default behavior remains unchanged, so existing applications continue to work as before. Updated documentation and examples show how to use the new loading options.
+
+### Bar Theming Improvements
+
+Customizing Bar colors is now more flexible, with new theming support for both horizontal and vertical navigation.
+
+Previously, Bar theming was mainly focused on vertical layouts. With the new `ThemeBarOptions.ColorScope` option, you can choose whether custom colors apply to horizontal bars, vertical bars, or both. This makes it easier to keep navigation consistent across top menus, sidebars, and other application layouts.
+
+Theming now covers backgrounds, hover and active states, brand elements, and dropdown menus. The `ThemeContrast` option also lets you choose between light and dark color palettes, helping maintain readable navigation across different themes.
+
+We also improved Material Bar theming in both orientations and fixed smaller visual issues in AntDesign and Material, including hover underline positioning and sidebar badge alignment.
