@@ -73,6 +73,16 @@ Both Overlay and Replace automatically show a compact, localized spinner when no
 
 The default behavior remains unchanged, so existing applications continue to work as before. Updated documentation and examples show how to use the new loading options.
 
+### DataGrid Named Column Aggregates
+
+**DataGrid** now supports aggregates for calculated columns, making it easier to display totals and summaries even when a column isn't directly bound to a data field.
+
+Previously, aggregates relied on field names, which made it difficult to summarize calculated columns or show different aggregates for columns using the same field.
+
+With the new `Name` parameter on columns and `ColumnName` on aggregates, you can now target a specific column directly. This allows you to display different summaries for the same underlying data or calculate totals for columns that use custom templates and calculated values.
+
+Named columns take priority when matching aggregates, while existing field-based aggregates continue to work as before. No changes are required for applications using the current approach.
+
 ### Bar Theming Improvements
 
 Customizing Bar colors is now more flexible, with new theming support for both horizontal and vertical navigation.
