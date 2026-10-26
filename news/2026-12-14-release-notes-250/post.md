@@ -83,6 +83,16 @@ With the new `Name` parameter on columns and `ColumnName` on aggregates, you can
 
 Named columns take priority when matching aggregates, while existing field-based aggregates continue to work as before. No changes are required for applications using the current approach.
 
+### DataGrid Accessibility Improvements
+
+**DataGrid** is now easier to use with a keyboard or screen reader, with improvements to sorting, pagination, and visual feedback across supported UI providers.
+
+Users can now **sort columns and navigate between pages using the keyboard**, without relying on a mouse. Screen readers also receive clearer information about the current sort direction and pagination controls, making it easier to understand and navigate the data.
+
+We improved hover and focus states so users can more easily see which elements they're interacting with. Page selectors now include localized labels, making pagination more accessible across different languages.
+
+Alongside these changes, we fixed pager alignment and refined pagination styling in **FluentUI2** and **AntDesign**, keeping the experience more consistent across providers.
+
 ### Bar Theming Improvements
 
 Customizing Bar colors is now more flexible, with new theming support for both horizontal and vertical navigation.
