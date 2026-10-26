@@ -92,3 +92,13 @@ Previously, Bar theming was mainly focused on vertical layouts. With the new `Th
 Theming now covers backgrounds, hover and active states, brand elements, and dropdown menus. The `ThemeContrast` option also lets you choose between light and dark color palettes, helping maintain readable navigation across different themes.
 
 We also improved Material Bar theming in both orientations and fixed smaller visual issues in AntDesign and Material, including hover underline positioning and sidebar badge alignment.
+
+### DragHandle Component
+
+The new `DragHandle` component gives users a dedicated area for dragging items, making drag-and-drop interfaces easier to use when items contain buttons, inputs, or other interactive elements.
+
+Previously, making an entire item draggable could interfere with normal interactions, especially when users wanted to select text, click a button, or edit a field. With `DragHandle`, dragging starts only from the designated handle, leaving the rest of the item fully interactive.
+
+The drag cursor also appears only when hovering over an enabled handle, making it clearer where users can start dragging. Existing draggable items without handles continue to work as before.
+
+This is especially useful for **sortable lists, cards, and form builders**, where dragging and interacting with item content need to work together.
