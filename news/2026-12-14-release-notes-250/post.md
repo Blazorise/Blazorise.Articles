@@ -93,6 +93,18 @@ We improved hover and focus states so users can more easily see which elements t
 
 Alongside these changes, we fixed pager alignment and refined pagination styling in **FluentUI2** and **AntDesign**, keeping the experience more consistent across providers.
 
+### DataGrid Deferred Filtering
+
+**DataGrid** now supports **deferred filtering**, giving users more control over when filters are applied.
+
+Previously, changing a filter would immediately refresh the results. This could lead to unnecessary data requests, especially when users needed to configure filters across several columns.
+
+With deferred filtering, users can adjust multiple filters first and then apply them all at once. This keeps the displayed data unchanged while filters are being configured, making the experience smoother and reducing unnecessary server requests.
+
+To enable it, set `FilterApplyMode="DataGridFilterApplyMode.Deferred"` and call `ApplyFilters()` from your own button when the user is ready. Both filter rows and filter menus are supported.
+
+The existing immediate filtering behavior remains the default, so current applications continue to work without changes.
+
 ### Bar Theming Improvements
 
 Customizing Bar colors is now more flexible, with new theming support for both horizontal and vertical navigation.
