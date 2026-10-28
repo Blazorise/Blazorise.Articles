@@ -136,3 +136,13 @@ Previously, making an entire item draggable could interfere with normal interact
 The drag cursor also appears only when hovering over an enabled handle, making it clearer where users can start dragging. Existing draggable items without handles continue to work as before.
 
 This is especially useful for **sortable lists, cards, and form builders**, where dragging and interacting with item content need to work together.
+
+### FileInput Localization
+
+**FileInput** now provides a more consistent experience across languages and UI providers, making file uploads feel more natural in multilingual applications.
+
+The browse button and default **“No file selected”** message now follow the application's selected language. When users switch languages, these labels update automatically without requiring the component to be recreated. Custom placeholders continue to work as before, and selected filenames are displayed once files are chosen.
+
+We also improved **Tailwind FileInput styling** to better match other Blazorise input components. File inputs now use consistent heights, spacing, typography, and size options, fixing the extra height that could make them look out of place in forms and input groups.
+
+These improvements also apply to **FilePicker**, which uses FileInput internally. The native file selection dialog itself continues to follow the browser or operating system's language.
