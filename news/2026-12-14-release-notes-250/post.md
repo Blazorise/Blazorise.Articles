@@ -105,6 +105,18 @@ To enable it, set `FilterApplyMode="DataGridFilterApplyMode.Deferred"` and call 
 
 The existing immediate filtering behavior remains the default, so current applications continue to work without changes.
 
+### DataGrid Date Comparison Improvements
+
+**DataGrid** now gives you more control over how date and time values are compared when filtering, sorting, and grouping.
+
+Previously, these operations used the full date and time value. This could make common scenarios difficult, such as filtering all records from a particular day or grouping records by date when their timestamps were different.
+
+With the new `DateComparisonMode.DateOnly` option, DataGrid can compare just the calendar date while keeping the original timestamps unchanged. Users can filter entire days or date ranges, group records by day, and sort dates without considering the time.
+
+Each operation can be configured independently through `FilterComparisonMode`, `SortComparisonMode`, and `GroupComparisonMode`. For example, you can group records by day while still sorting them by their full timestamp.
+
+All three options default to `DateTime`, so existing applications continue to behave as before.
+
 ### Bar Theming Improvements
 
 Customizing Bar colors is now more flexible, with new theming support for both horizontal and vertical navigation.
