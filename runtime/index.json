@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-22T07:37:28.890Z",
-  "commit": "8d568941d943",
-  "count": 134,
+  "generatedAt": "2026-11-05T11:38:41.133Z",
+  "commit": "2f730ddcbc84",
+  "count": 135,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-11-05-release-notes-242",
+      "slug": "242",
+      "permalink": "/news/release-notes/242",
+      "title": "Blazorise 2.4.2 - DataGrid Virtualization Fixes and .NET 11 RC3 Support",
+      "summary": "Blazorise 2.4.2 fixes long-standing virtualized DataGrid row height issues, adds .NET 11 RC3 support, restores DatePicker ordinal suffixes, and improves SVG Charts spacing.",
+      "postedOn": "2026-11-05",
+      "category": "News",
+      "imageUrl": "img/v242.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "3 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-10-22-release-notes-241",
