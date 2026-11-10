@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-05T11:38:41.133Z",
-  "commit": "2f730ddcbc84",
-  "count": 135,
+  "generatedAt": "2026-11-10T19:15:08.679Z",
+  "commit": "3c846d4c171a",
+  "count": 136,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-11-10-release-notes-243",
+      "slug": "243",
+      "permalink": "/news/release-notes/243",
+      "title": "Blazorise 2.4.3 - Day-One Support for .NET 11",
+      "summary": "Blazorise 2.4.3 adds support for the final release of .NET 11, just hours after its launch, along with fixes for the Report Designer.",
+      "postedOn": "2026-11-10",
+      "category": "News",
+      "imageUrl": "img/v243.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-11-05-release-notes-242",
