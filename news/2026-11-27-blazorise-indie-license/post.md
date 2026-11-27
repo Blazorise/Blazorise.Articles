@@ -32,7 +32,7 @@ Indie is our way of addressing both challenges. It simplifies our licensing proc
 
 Blazorise Indie is designed for solo developers who build and own their own products.
 
-Each license covers one registered project with an annual revenue below **€25,000**, whether it's a personal project, a side business, a SaaS application, or another independently developed product.
+To qualify for Indie, your organization's total annual revenue must be below **€25,000**. Each license covers one registered project, whether it's a personal project, a side business, a SaaS application, or another independently developed product.
 
 With an Indie license, you can:
 
@@ -57,7 +57,7 @@ We don't want licensing costs to stand in the way of your next idea.
 
 Indie allows you to start small, launch your product, find your first customers, and grow your business without committing to a more expensive license from the beginning.
 
-Once your project's annual revenue reaches €25,000, you'll need to upgrade to Professional at your next renewal. You can also upgrade at any time if you need dedicated support or additional benefits.
+Once your organization's total annual revenue reaches €25,000, you'll need to upgrade to Professional at your next renewal. You can also upgrade at any time if you need dedicated support or additional benefits.
 
 You can compare all available plans on our [pricing page](https://blazorise.com/pricing).
 
