@@ -1,9 +1,24 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-10T19:15:08.679Z",
-  "commit": "3c846d4c171a",
-  "count": 136,
+  "generatedAt": "2026-11-27T09:02:21.999Z",
+  "commit": "1554845b0d0f",
+  "count": 137,
   "items": [
+    {
+      "root": "news",
+      "dir": "news/2026-11-27-blazorise-indie-license",
+      "slug": "blazorise-indie-license",
+      "permalink": "/news/blazorise-indie-license",
+      "title": "Introducing the Blazorise Indie License",
+      "summary": "Build and sell your own Blazor product with Blazorise Indie for €149 per year per registered project.",
+      "postedOn": "2026-11-27",
+      "category": "News",
+      "imageUrl": "img/blazorise-indie-license.jpg",
+      "authorName": "Mladen Macanović",
+      "authorImage": "/assets/img/authors/mladen.png",
+      "readTime": "2 min",
+      "pinned": false
+    },
     {
       "root": "news",
       "dir": "news/2026-11-10-release-notes-243",
